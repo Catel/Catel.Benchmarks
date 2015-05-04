@@ -39,24 +39,31 @@ namespace Catel.Benchmarks.Factories
             return GetTestCases("Level 3 models", ModelBaseTestHelper.CreateComputerSettingsObject());
         }
 
+        public IEnumerable<SerializationPerformanceTestConfiguration> ComplexObjectGraph()
+        {
+            return GetTestCases("Complex object graph", ComplexSerializationHierarchy.CreateComplexHierarchy());
+        }
+
         // TODO: Circular references model
-        // TODO: Advanced complex graph
         // TODO: with 1 modifier
         // TODO: with 2 modifier
         // TODO: with 3 modifier
 
         public IEnumerable<SerializationPerformanceTestConfiguration> GetTestCases(string description, ModelBase model)
         {
+            var batchSizes = new[] { 1, 5, 10, 25, 50, 100, 250 };
+
             var implementations = new List<Type>();
             implementations.Add(typeof(BinarySerializer));
             implementations.Add(typeof(JsonSerializer));
             implementations.Add(typeof(XmlSerializer));
+            //implementations.Add(typeof(YamlSerializer));
 
             foreach (var implementation in implementations)
             {
                 var runAction = new Action<IPerformanceTestCaseConfiguration>(c =>
                 {
-                    var serializationTestConfig = (SerializationPerformanceTestConfiguration) c;
+                    var serializationTestConfig = (SerializationPerformanceTestConfiguration)c;
                     var typeFactory = TypeFactory.Default;
                     var serializer = (IModelBaseSerializer)typeFactory.CreateInstance(c.TargetImplementationType);
 
@@ -66,17 +73,22 @@ namespace Catel.Benchmarks.Factories
                     }
                 });
 
-                yield return new SerializationPerformanceTestConfiguration(model)
+                for (int i = 0; i < batchSizes.Length; i++)
                 {
-                    Identifier = implementation.FullName,
-                    TestName = description,
-                    TargetImplementationType = implementation,
-                    Size = 0,
-                    Count = 1,
-                    //Prepare = prepare,
-                    Run = runAction,
-                    IsReusable = false,
-                };
+                    yield return new SerializationPerformanceTestConfiguration(model)
+                    {
+                        Identifier = implementation.FullName,
+                        //TestName = string.Format("{0} - {1}", implementation.FullName, batchSizes[i]),
+                        TestName = description,
+                        TargetImplementationType = implementation,
+                        Size = 0,
+                        Count = batchSizes[i],
+                        //Divider = batchSizes[i],
+                        //Prepare = prepare,
+                        Run = runAction,
+                        IsReusable = true,
+                    };
+                }
             }
         }
     }
