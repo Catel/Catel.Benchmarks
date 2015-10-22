@@ -65,7 +65,7 @@ namespace Catel.Benchmarks.Factories
                 {
                     var serializationTestConfig = (SerializationPerformanceTestConfiguration)c;
                     var typeFactory = TypeFactory.Default;
-                    var serializer = (IModelBaseSerializer)typeFactory.CreateInstance(c.TargetImplementationType);
+                    var serializer = (ISerializer)typeFactory.CreateInstance(c.TargetImplementationType);
 
                     using (var memoryStream = new MemoryStream())
                     {
