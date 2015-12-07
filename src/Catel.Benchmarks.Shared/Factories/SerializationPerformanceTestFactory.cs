@@ -24,71 +24,76 @@ namespace Catel.Benchmarks.Factories
 
     public class SerializationPerformanceTestFactory
     {
+        // Note: the higher the number, the longer it takes but the more accurate the numbers will be
+        private const int NumberOfRuns = 5;
+
         public IEnumerable<SerializationPerformanceTestConfiguration> Level1Models()
         {
-            return GetTestCases("Level 1 models", ModelBaseTestHelper.CreateIniEntryObject());
+            return GetTestCases("Level 1 models", ModelBaseTestHelper.CreateIniEntryObject);
         }
 
         public IEnumerable<SerializationPerformanceTestConfiguration> Level2Models()
         {
-            return GetTestCases("Level 2 models", ModelBaseTestHelper.CreateIniFileObject());
+            return GetTestCases("Level 2 models", ModelBaseTestHelper.CreateIniFileObject);
         }
 
         public IEnumerable<SerializationPerformanceTestConfiguration> Level3Models()
         {
-            return GetTestCases("Level 3 models", ModelBaseTestHelper.CreateComputerSettingsObject());
+            return GetTestCases("Level 3 models", ModelBaseTestHelper.CreateComputerSettingsObject);
         }
 
         public IEnumerable<SerializationPerformanceTestConfiguration> ComplexObjectGraph()
         {
-            return GetTestCases("Complex object graph", ComplexSerializationHierarchy.CreateComplexHierarchy());
+            return GetTestCases("Complex object graph", ComplexSerializationHierarchy.CreateComplexHierarchy);
         }
 
-        // TODO: Circular references model
-        // TODO: with 1 modifier
-        // TODO: with 2 modifier
-        // TODO: with 3 modifier
-
-        public IEnumerable<SerializationPerformanceTestConfiguration> GetTestCases(string description, ModelBase model)
+        public IEnumerable<SerializationPerformanceTestConfiguration> GetTestCases(string testName, Func<ModelBase> modelFactory)
         {
-            var batchSizes = new[] { 1, 5, 10, 25, 50, 100, 250 };
-
             var implementations = new List<Type>();
             implementations.Add(typeof(BinarySerializer));
             implementations.Add(typeof(JsonSerializer));
             implementations.Add(typeof(XmlSerializer));
             //implementations.Add(typeof(YamlSerializer));
 
+            var typeFactory = TypeFactory.Default;
+
             foreach (var implementation in implementations)
             {
+                var prepareAction = new Action<IPerformanceTestCaseConfiguration>(c =>
+                {
+                    var serializationTestConfig = (SerializationPerformanceTestConfiguration)c;
+
+                    serializationTestConfig.Serializer.Warmup();
+                });
+
                 var runAction = new Action<IPerformanceTestCaseConfiguration>(c =>
                 {
                     var serializationTestConfig = (SerializationPerformanceTestConfiguration)c;
-                    var typeFactory = TypeFactory.Default;
-                    var serializer = (ISerializer)typeFactory.CreateInstance(c.TargetImplementationType);
+                    var serializer = serializationTestConfig.Serializer;
+                    var testModel = serializationTestConfig.TestModel;
 
                     using (var memoryStream = new MemoryStream())
                     {
-                        serializer.Serialize(serializationTestConfig.TestModel, memoryStream);
+                        serializer.Serialize(testModel, memoryStream);
                     }
                 });
 
-                for (int i = 0; i < batchSizes.Length; i++)
+                yield return new SerializationPerformanceTestConfiguration(typeFactory.CreateInstance(implementation) as ISerializer, modelFactory())
                 {
-                    yield return new SerializationPerformanceTestConfiguration(model)
-                    {
-                        Identifier = string.Format("{0} - {1}", implementation.FullName, IdentifierHelper.GetIdentifier()),
-                        //TestName = string.Format("{0} - {1}", implementation.FullName, batchSizes[i]),
-                        TestName = description,
-                        TargetImplementationType = implementation,
-                        Size = 0,
-                        Count = batchSizes[i],
-                        //Divider = batchSizes[i],
-                        //Prepare = prepare,
-                        Run = runAction,
-                        IsReusable = true,
-                    };
-                }
+                    // A few notes: 
+                    // 1. The identifier is unique for the number of lines / bars in the plots
+                    // 2. In .Benchmark(config.TestName, [testCase]), the [testCase] determines the name (use to differentiate in versions)
+
+                    Identifier = implementation.FullName,
+                    TestName = testName,
+                    TargetImplementationType = implementation,
+                    //Size = batchSizes[i],
+                    Count = NumberOfRuns,
+                    //Divider = batchSizes[i],
+                    Prepare = prepareAction,
+                    Run = runAction,
+                    IsReusable = true,
+                };
             }
         }
     }

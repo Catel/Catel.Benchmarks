@@ -13,12 +13,11 @@ namespace Catel.Benchmarks.Infrastructure
     {
         protected CatelPerformanceTestCaseConfigurationBase()
         {
-            Identifier = IdentifierHelper.GetIdentifier();
         }
 
         public override string ToString()
         {
-            return TestName;
+            return string.Format("{0}", IdentifierHelper.GetIdentifier());
         }
     }
 }

@@ -7,23 +7,24 @@
 
 namespace Catel.Benchmarks.Infrastructure
 {
+    using System.Collections.Generic;
+    using Catel.Runtime.Serialization;
     using Data;
 
     public class SerializationPerformanceTestConfiguration : CatelPerformanceTestCaseConfigurationBase
     {
         #region Constructors
-        public SerializationPerformanceTestConfiguration(ModelBase testModel)
+        public SerializationPerformanceTestConfiguration(ISerializer serializer, ModelBase testModel)
         {
+            Serializer = serializer;
             TestModel = testModel;
         }
         #endregion
 
         #region Properties
+        public ISerializer Serializer { get; private set; }
+
         public ModelBase TestModel { get; private set; }
-        #endregion
-
-        #region Methods
-
         #endregion
     }
 }
