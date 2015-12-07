@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.Benchmarks", "Catel.Benchmarks\Catel.Benchmarks.csproj", "{59DA31C5-75AD-46E2-ADB8-3CE406E63811}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{27115CCC-C1EE-4864-A4EA-87D26BC8A736}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{5AED8118-8A9E-4F8F-BD95-AF02876A23BF}"
@@ -19,7 +17,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{4EABD9E9-5F2
 		..\lib\repositories.config = ..\lib\repositories.config
 	EndProjectSection
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Catel.Benchmarks.Shared", "Catel.Benchmarks.Shared\Catel.Benchmarks.Shared.shproj", "{210AE7FC-543F-4D63-B0E0-2765D7B5CEB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.Benchmarks.4.4.0", "Catel.Benchmarks.4.4.0\Catel.Benchmarks.4.4.0.csproj", "{59DA31C5-75AD-46E2-ADB8-3CE406E63811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catel.Benchmarks.4.3.0", "Catel.Benchmarks.4.3.0\Catel.Benchmarks.4.3.0.csproj", "{4FB5C919-85D0-43D3-9001-0A634FDB8923}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Catel.Benchmarks.Shared\Catel.Benchmarks.Shared.projitems*{4fb5c919-85d0-43d3-9001-0a634fdb8923}*SharedItemsImports = 4
+		Catel.Benchmarks.Shared\Catel.Benchmarks.Shared.projitems*{59da31c5-75ad-46e2-adb8-3ce406e63811}*SharedItemsImports = 4
+		Catel.Benchmarks.Shared\Catel.Benchmarks.Shared.projitems*{210ae7fc-543f-4d63-b0e0-2765d7b5ceb1}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -29,11 +38,17 @@ Global
 		{59DA31C5-75AD-46E2-ADB8-3CE406E63811}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59DA31C5-75AD-46E2-ADB8-3CE406E63811}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59DA31C5-75AD-46E2-ADB8-3CE406E63811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB5C919-85D0-43D3-9001-0A634FDB8923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB5C919-85D0-43D3-9001-0A634FDB8923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB5C919-85D0-43D3-9001-0A634FDB8923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB5C919-85D0-43D3-9001-0A634FDB8923}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{210AE7FC-543F-4D63-B0E0-2765D7B5CEB1} = {27115CCC-C1EE-4864-A4EA-87D26BC8A736}
 		{59DA31C5-75AD-46E2-ADB8-3CE406E63811} = {27115CCC-C1EE-4864-A4EA-87D26BC8A736}
+		{4FB5C919-85D0-43D3-9001-0A634FDB8923} = {27115CCC-C1EE-4864-A4EA-87D26BC8A736}
 	EndGlobalSection
 EndGlobal

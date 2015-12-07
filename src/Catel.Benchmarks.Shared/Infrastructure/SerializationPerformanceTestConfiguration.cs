@@ -10,7 +10,7 @@ namespace Catel.Benchmarks.Infrastructure
     using Data;
     using NUnitBenchmarker.Configuration;
 
-    public class SerializationPerformanceTestConfiguration : PerformanceTestCaseConfigurationBase
+    public class SerializationPerformanceTestConfiguration : CatelPerformanceTestCaseConfigurationBase
     {
         #region Constructors
         public SerializationPerformanceTestConfiguration(ModelBase testModel)
@@ -24,10 +24,7 @@ namespace Catel.Benchmarks.Infrastructure
         #endregion
 
         #region Methods
-        public override string ToString()
-        {
-            return TestName;
-        }
+
         #endregion
     }
 }
