@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4FB5C919-85D0-43D3-9001-0A634FDB8923}</ProjectGuid>
+    <ProjectGuid>{55DCCBA8-7861-493D-9180-42A62C6E828D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Catel.Benchmarks</RootNamespace>
@@ -18,26 +18,26 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\output\debug\Catel.Benchmarks.4.3.0\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;CATEL_4_3</DefineConstants>
+    <OutputPath>..\..\output\debug\Catel.Benchmarks.4.2.0\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CATEL_4_2</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <NoWarn>1591;1998</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\output\release\Catel.Benchmarks.4.3.0\</OutputPath>
-    <DefineConstants>TRACE;CATEL_4_3</DefineConstants>
+    <OutputPath>..\..\output\release\Catel.Benchmarks.4.2.0\</OutputPath>
+    <DefineConstants>TRACE;CATEL_4_2</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <NoWarn>1591;1998</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Catel.Core">
-      <HintPath>..\..\lib\Catel.Core.4.3.0\lib\net40\Catel.Core.dll</HintPath>
+      <HintPath>..\..\lib\Catel.Core.4.2.0\lib\net40\Catel.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Catel.Fody.Attributes">
@@ -45,7 +45,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Catel.Serialization.Json">
-      <HintPath>..\..\lib\Catel.Serialization.Json.4.3.0\lib\net40\Catel.Serialization.Json.dll</HintPath>
+      <HintPath>..\..\lib\Catel.Serialization.Json.4.2.0\lib\net40\Catel.Serialization.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Threading.Tasks">
@@ -91,7 +91,6 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.IO">
       <HintPath>..\..\lib\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
       <Private>True</Private>
@@ -115,14 +114,14 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <Compile Include="IdentifierHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="FodyWeavers.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="IdentifierHelper.cs" />
   </ItemGroup>
   <Import Project="..\Catel.Benchmarks.Shared\Catel.Benchmarks.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

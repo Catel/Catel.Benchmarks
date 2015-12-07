@@ -8,7 +8,6 @@
 namespace Catel.Benchmarks.Infrastructure
 {
     using Data;
-    using NUnitBenchmarker.Configuration;
 
     public class SerializationPerformanceTestConfiguration : CatelPerformanceTestCaseConfigurationBase
     {

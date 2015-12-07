@@ -77,7 +77,7 @@ namespace Catel.Benchmarks.Factories
                 {
                     yield return new SerializationPerformanceTestConfiguration(model)
                     {
-                        Identifier = implementation.FullName,
+                        Identifier = string.Format("{0} - {1}", implementation.FullName, IdentifierHelper.GetIdentifier()),
                         //TestName = string.Format("{0} - {1}", implementation.FullName, batchSizes[i]),
                         TestName = description,
                         TargetImplementationType = implementation,
