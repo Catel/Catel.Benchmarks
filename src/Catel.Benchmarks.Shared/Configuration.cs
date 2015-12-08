@@ -7,6 +7,7 @@
 
 namespace Catel.Benchmarks
 {
+    using System.IO;
     using NUnit.Framework;
     using NUnitBenchmarker;
 
@@ -15,13 +16,17 @@ namespace Catel.Benchmarks
     {
         public Configuration()
         {
-            
+
         }
 
         [TearDown]
         public void TestFixtureTearDown()
         {
-            Benchmarker.ExportAllResults();
+            var resultsFolder = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "results");
+            resultsFolder = Path.GetFullPath(resultsFolder);
+
+            // When using the UI, we will export all tests instead of the local run only
+            Benchmarker.ExportAllResultsInUi(resultsFolder);
         }
     }
 }

@@ -29,22 +29,22 @@ namespace Catel.Benchmarks.Factories
 
         public IEnumerable<SerializationPerformanceTestConfiguration> Level1Models()
         {
-            return GetTestCases("Level 1 models", ModelBaseTestHelper.CreateIniEntryObject);
+            return GetTestCases("Serialization - Level 1 models", ModelBaseTestHelper.CreateIniEntryObject);
         }
 
         public IEnumerable<SerializationPerformanceTestConfiguration> Level2Models()
         {
-            return GetTestCases("Level 2 models", ModelBaseTestHelper.CreateIniFileObject);
+            return GetTestCases("Serialization - Level 2 models", ModelBaseTestHelper.CreateIniFileObject);
         }
 
         public IEnumerable<SerializationPerformanceTestConfiguration> Level3Models()
         {
-            return GetTestCases("Level 3 models", ModelBaseTestHelper.CreateComputerSettingsObject);
+            return GetTestCases("Serialization - Level 3 models", ModelBaseTestHelper.CreateComputerSettingsObject);
         }
 
         public IEnumerable<SerializationPerformanceTestConfiguration> ComplexObjectGraph()
         {
-            return GetTestCases("Complex object graph", ComplexSerializationHierarchy.CreateComplexHierarchy);
+            return GetTestCases("Serialization - Complex object graph", ComplexSerializationHierarchy.CreateComplexHierarchy);
         }
 
         public IEnumerable<SerializationPerformanceTestConfiguration> GetTestCases(string testName, Func<ModelBase> modelFactory)
