@@ -25,7 +25,7 @@ namespace Catel.Benchmarks.Factories
     public class SerializationPerformanceTestFactory
     {
         // Note: the higher the number, the longer it takes but the more accurate the numbers will be
-        private const int NumberOfRuns = 5;
+        private const int NumberOfRuns = 100;
 
         public IEnumerable<SerializationPerformanceTestConfiguration> Level1Models()
         {
@@ -80,16 +80,11 @@ namespace Catel.Benchmarks.Factories
 
                 yield return new SerializationPerformanceTestConfiguration(typeFactory.CreateInstance(implementation) as ISerializer, modelFactory())
                 {
-                    // A few notes: 
-                    // 1. The identifier is unique for the number of lines / bars in the plots
-                    // 2. In .Benchmark(config.TestName, [testCase]), the [testCase] determines the name (use to differentiate in versions)
-
                     Identifier = implementation.FullName,
+                    Version = IdentifierHelper.GetIdentifier(),
                     TestName = testName,
                     TargetImplementationType = implementation,
-                    //Size = batchSizes[i],
                     Count = NumberOfRuns,
-                    //Divider = batchSizes[i],
                     Prepare = prepareAction,
                     Run = runAction,
                     IsReusable = true,

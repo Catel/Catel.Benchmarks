@@ -14,10 +14,5 @@ namespace Catel.Benchmarks.Infrastructure
         protected CatelPerformanceTestCaseConfigurationBase()
         {
         }
-
-        public override string ToString()
-        {
-            return string.Format("{0}", IdentifierHelper.GetIdentifier());
-        }
     }
 }
