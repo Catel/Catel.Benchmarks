@@ -5,11 +5,12 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 
-namespace Catel.Benchmarks.Infrastructure
+namespace Catel.Benchmarks.Runtime.Serialization
 {
     using System.Collections.Generic;
     using Catel.Runtime.Serialization;
     using Data;
+    using Infrastructure;
 
     public class SerializationPerformanceTestConfiguration : CatelPerformanceTestCaseConfigurationBase
     {

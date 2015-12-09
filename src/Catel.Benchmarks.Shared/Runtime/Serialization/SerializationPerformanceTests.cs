@@ -7,13 +7,8 @@
 
 namespace Catel.Benchmarks.Runtime.Serialization
 {
-    using Factories;
-    using Infrastructure;
-    using IoC;
     using NUnit.Framework;
     using NUnitBenchmarker;
-    using System;
-    using Catel.Runtime.Serialization.Binary;
 
     [TestFixture]
     internal class SerializationPerformanceTests

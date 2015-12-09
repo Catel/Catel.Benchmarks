@@ -5,21 +5,17 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 
-namespace Catel.Benchmarks.Factories
+namespace Catel.Benchmarks.Runtime.Serialization
 {
     using System;
     using System.Collections.Generic;
     using System.IO;
-    using System.Linq;
     using Catel.Runtime.Serialization;
     using Catel.Runtime.Serialization.Binary;
     using Catel.Runtime.Serialization.Json;
     using Catel.Runtime.Serialization.Xml;
     using Data;
-    using Infrastructure;
     using IoC;
-    using Models;
-    using NUnitBenchmarker;
     using NUnitBenchmarker.Configuration;
 
     public class SerializationPerformanceTestFactory

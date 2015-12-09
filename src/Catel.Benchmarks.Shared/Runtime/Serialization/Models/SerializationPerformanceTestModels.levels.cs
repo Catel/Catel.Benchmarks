@@ -5,7 +5,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 
-namespace Catel.Benchmarks.Models
+namespace Catel.Benchmarks.Runtime.Serialization
 {
     using System;
     using System.Collections.Generic;
