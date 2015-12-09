@@ -5,26 +5,23 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 
-namespace Catel.Benchmarks.Runtime.Serialization
+namespace Catel.Benchmarks.Data.ModelBase.GetValue
 {
     using Catel.Data;
-    using Catel.Runtime.Serialization;
     using Infrastructure;
+    using Models;
 
-    public class SerializationPerformanceTestConfiguration : CatelPerformanceTestCaseConfigurationBase
+    public class GetValuePerformanceTestConfiguration : CatelPerformanceTestCaseConfigurationBase
     {
         #region Constructors
-        public SerializationPerformanceTestConfiguration(ISerializer serializer, ModelBase testModel)
+        public GetValuePerformanceTestConfiguration(ModelBasePerformanceTestModel testModel)
         {
-            Serializer = serializer;
             TestModel = testModel;
         }
         #endregion
 
         #region Properties
-        public ISerializer Serializer { get; private set; }
-
-        public ModelBase TestModel { get; private set; }
+        public ModelBasePerformanceTestModel TestModel { get; private set; }
         #endregion
     }
 }

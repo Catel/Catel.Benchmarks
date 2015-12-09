@@ -10,19 +10,16 @@ namespace Catel.Benchmarks.Runtime.Serialization
     using System;
     using System.Collections.Generic;
     using System.IO;
+    using Catel.Data;
     using Catel.Runtime.Serialization;
     using Catel.Runtime.Serialization.Binary;
     using Catel.Runtime.Serialization.Json;
     using Catel.Runtime.Serialization.Xml;
-    using Data;
     using IoC;
     using NUnitBenchmarker.Configuration;
 
     public class SerializationPerformanceTestFactory
     {
-        // Note: the higher the number, the longer it takes but the more accurate the numbers will be
-        private const int NumberOfRuns = 100;
-
         public IEnumerable<SerializationPerformanceTestConfiguration> Level1Models()
         {
             return GetTestCases("Serialization - Level 1 models", ModelBaseTestHelper.CreateIniEntryObject);
@@ -80,7 +77,7 @@ namespace Catel.Benchmarks.Runtime.Serialization
                     Version = IdentifierHelper.GetIdentifier(),
                     TestName = testName,
                     TargetImplementationType = implementation,
-                    Count = NumberOfRuns,
+                    Count = Settings.NumberOfRuns,
                     Prepare = prepareAction,
                     Run = runAction,
                     IsReusable = true,

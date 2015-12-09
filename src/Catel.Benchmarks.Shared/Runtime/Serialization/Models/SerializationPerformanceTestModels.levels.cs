@@ -11,7 +11,7 @@ namespace Catel.Benchmarks.Runtime.Serialization
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.Runtime.Serialization;
-    using Data;
+    using Catel.Data;
 
     public enum IniEntryType
     {
