@@ -9,23 +9,19 @@
     <Import_RootNamespace>Catel.Benchmarks</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Configuration.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\ModelBase\GetValue\GetValuePerformanceTestConfiguration.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\ModelBase\GetValue\GetValuePerformanceTestFactory.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\ModelBase\GetValue\GetValuePerformanceTests.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BenchmarkConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ModelBase\GetValue\ModelBase_GetValue_Benchmark.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\ModelBase\Models\ModelBasePerformanceTestModels.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\ModelBase\SetValue\SetValuePerformanceTestConfiguration.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\ModelBase\SetValue\SetValuePerformanceTestFactory.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Data\ModelBase\SetValue\SetValuePerformanceTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IdentifierHelper.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Infrastructure\CatelPerformanceTestCaseConfigurationBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)..\SolutionAssemblyInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Program.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Properties\AssemblyInfo.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Runtime\Serialization\Models\SerializationPerformanceTestModels.complex.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Runtime\Serialization\Models\SerializationPerformanceTestModels.levels.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Runtime\Serialization\SerializationPerformanceTestConfiguration.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Runtime\Serialization\SerializationPerformanceTestFactory.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Runtime\Serialization\SerializationPerformanceTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Data\ModelBase\SetValue\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Infrastructure\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Runtime\Serialization\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Runtime\Serialization\Models\" />
   </ItemGroup>
 </Project>

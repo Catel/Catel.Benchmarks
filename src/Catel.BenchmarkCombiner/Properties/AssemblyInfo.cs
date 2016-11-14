@@ -8,9 +8,9 @@ using System.Reflection;
 
 // All other assembly info is defined in SharedAssembly.cs
 
-[assembly: AssemblyTitle("Catel.Benchmarks")]
-[assembly: AssemblyProduct("Catel.Benchmarks")]
-[assembly: AssemblyDescription("Catel Benchmarks")]
+[assembly: AssemblyTitle("Catel.BenchmarkCombiner")]
+[assembly: AssemblyProduct("Catel.BenchmarkCombiner")]
+[assembly: AssemblyDescription("Catel BenchmarkCombiner")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 

@@ -27,5 +27,14 @@ namespace Catel.Benchmarks.Data.ModelBase.Models
         }
 
         public static readonly PropertyData IntPropertyProperty = RegisterProperty("IntProperty", typeof(int), null);
+
+
+        public bool BoolProperty
+        {
+            get { return GetValue<bool>(BoolPropertyProperty); }
+            set { SetValue(BoolPropertyProperty, value); }
+        }
+
+        public static readonly PropertyData BoolPropertyProperty = RegisterProperty("BoolProperty", typeof(bool), null);
     }
 }
