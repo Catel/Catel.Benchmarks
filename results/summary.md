@@ -1,20 +1,26 @@
 # Benchmarks
 
-Benchmark report generated on 15-nov-2016 11:50
+Benchmark report generated on 15-nov-2016 11:52
 
-All timings are average time per operation (thus the time represents a single operation).
+All timings are average time per operation (thus the time r
 
-**Legend**
+**Legend**
+
 *ns = nanosecond*
+
 *μs = microsecond (= 1000 nanoseconds)*
+
 *ms = millisecond (= 1000 microseconds)*
+
 
 ## ModelBase_GetValue_Benchmark
 
 ### GetBoolValue
 
 Fastest: **Catel.Benchmarks.4.2.0**
+
 Slowest: Catel.Benchmarks.4.4.0
+
 
 <table>
 <tr>
@@ -30,7 +36,9 @@ Slowest: Catel.Benchmarks.4.4.0
 ### GetIntValue
 
 Fastest: **Catel.Benchmarks.4.2.0**
+
 Slowest: Catel.Benchmarks.4.4.0
+
 
 <table>
 <tr>
@@ -46,7 +54,9 @@ Slowest: Catel.Benchmarks.4.4.0
 ### GetStringValue
 
 Fastest: **Catel.Benchmarks.4.2.0**
+
 Slowest: Catel.Benchmarks.4.4.0
+
 
 <table>
 <tr>

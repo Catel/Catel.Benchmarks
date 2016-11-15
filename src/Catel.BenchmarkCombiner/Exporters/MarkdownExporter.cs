@@ -27,12 +27,12 @@ namespace Catel.BenchmarkCombiner.Exporters
                     streamWriter.WriteLine();
                     streamWriter.WriteLine($"Benchmark report generated on {DateTime.Now.ToString("dd-MMM-yyyy HH:mm")}");
                     streamWriter.WriteLine();
-                    streamWriter.WriteLine("All timings are average time per operation (thus the time represents a single operation).");
+                    streamWriter.WriteLine("All timings are average time per operation (thus the time r");
                     streamWriter.WriteLine();
-                    streamWriter.WriteLine("**Legend**\r");
-                    streamWriter.WriteLine("*ns = nanosecond*");
-                    streamWriter.WriteLine("*μs = microsecond (= 1000 nanoseconds)*");
-                    streamWriter.WriteLine("*ms = millisecond (= 1000 microseconds)*");
+                    streamWriter.WriteLine("**Legend**\n");
+                    streamWriter.WriteLine("*ns = nanosecond*\n");
+                    streamWriter.WriteLine("*μs = microsecond (= 1000 nanoseconds)*\n");
+                    streamWriter.WriteLine("*ms = millisecond (= 1000 microseconds)*\n");
                     streamWriter.WriteLine();
 
                     var measurementGroups = exportSummaries.ConvertToMeasurementGroups();
@@ -50,8 +50,8 @@ namespace Catel.BenchmarkCombiner.Exporters
                             var fastest = measurementGroupGroup.Fastest();
                             var slowest = measurementGroupGroup.Slowest();
 
-                            streamWriter.WriteLine($"Fastest: **{fastest.Version}**");
-                            streamWriter.WriteLine($"Slowest: {slowest.Version}");
+                            streamWriter.WriteLine($"Fastest: **{fastest.Version}**\n");
+                            streamWriter.WriteLine($"Slowest: {slowest.Version}\n");
                             streamWriter.WriteLine();
 
                             WriteTableAsHtml(measurementGroupGroup, streamWriter);
