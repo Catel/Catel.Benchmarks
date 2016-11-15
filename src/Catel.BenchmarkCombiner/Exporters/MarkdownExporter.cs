@@ -27,6 +27,13 @@ namespace Catel.BenchmarkCombiner.Exporters
                     streamWriter.WriteLine();
                     streamWriter.WriteLine($"Benchmark report generated on {DateTime.Now.ToString("dd-MMM-yyyy HH:mm")}");
                     streamWriter.WriteLine();
+                    streamWriter.WriteLine("All timings are average time per operation (thus the time represents a single operation).");
+                    streamWriter.WriteLine();
+                    streamWriter.WriteLine("**Legend**\r");
+                    streamWriter.WriteLine("*ns = nanosecond*");
+                    streamWriter.WriteLine("*μs = microsecond (= 1000 nanoseconds)*");
+                    streamWriter.WriteLine("*ms = millisecond (= 1000 microseconds)*");
+                    streamWriter.WriteLine();
 
                     var measurementGroups = exportSummaries.ConvertToMeasurementGroups();
 
@@ -44,7 +51,6 @@ namespace Catel.BenchmarkCombiner.Exporters
                             var slowest = measurementGroupGroup.Slowest();
 
                             streamWriter.WriteLine($"Fastest: **{fastest.Version}**");
-                            streamWriter.WriteLine();
                             streamWriter.WriteLine($"Slowest: {slowest.Version}");
                             streamWriter.WriteLine();
 
@@ -71,12 +77,22 @@ namespace Catel.BenchmarkCombiner.Exporters
 
             streamWriter.WriteLine("</tr>");
 
+            // Table content - nanoseconds
+            streamWriter.WriteLine("<tr>");
+
+            foreach (var version in measurementGroup.Measurements)
+            {
+                streamWriter.Write($"<td align=\"right\">{version.AverageNanoSecondsPerOperation:0.000} ns</td>");
+            }
+
+            streamWriter.WriteLine("</tr>");
+
             // Table content - microseconds
             streamWriter.WriteLine("<tr>");
 
             foreach (var version in measurementGroup.Measurements)
             {
-                streamWriter.Write($"<td>{version.AverageNanoSecondsPerOperation.ConvertNanoSecondsToMicroSeconds():F} μs</td>");
+                streamWriter.Write($"<td align=\"right\">{version.AverageNanoSecondsPerOperation.ConvertNanoSecondsToMicroSeconds():0.000} μs</td>");
             }
 
             streamWriter.WriteLine("</tr>");
@@ -86,7 +102,7 @@ namespace Catel.BenchmarkCombiner.Exporters
 
             foreach (var version in measurementGroup.Measurements)
             {
-                streamWriter.Write($"<td>{version.AverageNanoSecondsPerOperation.ConvertNanoSecondsToMilliSeconds():F} ms</td>");
+                streamWriter.Write($"<td align=\"right\">{version.AverageNanoSecondsPerOperation.ConvertNanoSecondsToMilliSeconds():0.000} ms</td>");
             }
 
             streamWriter.WriteLine("</tr>");

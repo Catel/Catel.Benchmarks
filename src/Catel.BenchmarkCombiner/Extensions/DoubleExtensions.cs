@@ -19,7 +19,7 @@ namespace Catel.BenchmarkCombiner
         public static double ConvertNanoSecondsToMilliSeconds(this double nanoSeconds)
         {
             var microSeconds = nanoSeconds.ConvertNanoSecondsToMicroSeconds();
-            var milliSeconds = microSeconds/1000d;
+            var milliSeconds = microSeconds / 1000d;
 
             return milliSeconds;
         }
