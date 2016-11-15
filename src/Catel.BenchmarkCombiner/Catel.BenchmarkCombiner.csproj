@@ -24,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <NoWarn>1591;1998</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,8 +36,13 @@
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <NoWarn>1591;1998</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Catel.Core, Version=4.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\Catel.Core.4.5.3\lib\net45\Catel.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
       <HintPath>..\..\lib\CsvHelper.2.16.3.0\lib\net45\CsvHelper.dll</HintPath>
       <Private>True</Private>
@@ -62,9 +68,15 @@
     <Compile Include="Exporters\ExporterBase.cs" />
     <Compile Include="Exporters\Interfaces\IExporter.cs" />
     <Compile Include="Exporters\MarkdownExporter.cs" />
+    <Compile Include="Extensions\DoubleExtensions.cs" />
     <Compile Include="Models\ExportSummary.cs" />
+    <Compile Include="Models\Extensions\ExportSummaryExtensions.cs" />
+    <Compile Include="Models\Extensions\MeasurementExtensions.cs" />
+    <Compile Include="Models\Extensions\MeasurementGroupExtensions.cs" />
     <Compile Include="Models\Maps\MeasurementCsvMap.cs" />
     <Compile Include="Models\Measurement.cs" />
+    <Compile Include="Models\MeasurementGroup.cs" />
+    <Compile Include="Models\VersionMeasurements.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -10,23 +10,38 @@ namespace Catel.BenchmarkCombiner
     using System;
     using System.Collections.Generic;
     using System.Diagnostics;
+    using System.Globalization;
     using System.IO;
     using CsvHelper;
     using CsvHelper.Configuration;
     using Exporters;
+    using Logging;
     using Models.Maps;
 
     class Program
     {
+        private static readonly ILog Log = LogManager.GetCurrentClassLogger();
+
         #region Methods
         static void Main(string[] args)
         {
+            var consoleLogger = new ConsoleLogListener
+            {
+                IgnoreCatelLogging = true
+            };
+
+#if DEBUG
+            LogManager.AddDebugListener(true);
+#endif
+
+            LogManager.AddListener(consoleLogger);
+
             // Important note: set all the other benchmark projects as dependency for this project. Then you only
             // have to run this one and everything will be combined
 
             var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
             var outputDirectory = Path.GetFullPath(Path.Combine(baseDirectory, ".."));
-            var exportDirectory = Path.GetFullPath(Path.Combine(baseDirectory, "..", "..", "results"));
+            var exportDirectory = Path.GetFullPath(Path.Combine(baseDirectory, "..", "..", "..", "results"));
 
             var summaries = new List<ExportSummary>();
 
@@ -46,11 +61,15 @@ namespace Catel.BenchmarkCombiner
 
             if (summaries.Count > 0)
             {
+                Directory.CreateDirectory(exportDirectory);
+
                 var exporters = new List<IExporter>();
                 exporters.Add(new MarkdownExporter());
 
                 foreach (var exporter in exporters)
                 {
+                    Log.Info($"Exporting using '{exporter.GetType().Name}' to '{exportDirectory}'");
+
                     exporter.Export(exportDirectory, summaries);
                 }
             }
@@ -64,6 +83,8 @@ namespace Catel.BenchmarkCombiner
                 return null;
             }
 
+            Log.Info($"Running benchmark at '{exe}'");
+
             var processStartInfo = new ProcessStartInfo(exe)
             {
                 WorkingDirectory = directory,
@@ -75,11 +96,7 @@ namespace Catel.BenchmarkCombiner
             var directoryInfo = new DirectoryInfo(directory);
             var outputDirectory = Path.Combine(directory, "BenchmarkDotNet.Artifacts", "results");
 
-            var summary = new ExportSummary
-            {
-                Title = directoryInfo.Name,
-                Directory = outputDirectory
-            };
+            var measurements = new List<Measurement>();
 
             if (Directory.Exists(outputDirectory))
             {
@@ -87,12 +104,15 @@ namespace Catel.BenchmarkCombiner
                 var configuration = new CsvConfiguration
                 {
                     Delimiter = ";",
+                    CultureInfo = new CultureInfo("en-US")
                 };
 
                 configuration.AutoMap<MeasurementCsvMap>();
 
                 foreach (var measurementsCsvFile in Directory.GetFiles(outputDirectory, "*-measurements.csv", SearchOption.TopDirectoryOnly))
                 {
+                    Log.Info($"Reading benchmark measurements from '{measurementsCsvFile}'");
+
                     using (var stream = new FileStream(measurementsCsvFile, FileMode.Open, FileAccess.Read))
                     {
                         using (var csvReader = factory.CreateReader(new StreamReader(stream), configuration))
@@ -100,15 +120,21 @@ namespace Catel.BenchmarkCombiner
                             while (csvReader.Read())
                             {
                                 var record = csvReader.GetRecord<Measurement>();
-                                summary.Measurements.Add(record);
+                                measurements.Add(record);
                             }
                         }
                     }
                 }
             }
 
+            var summary = new ExportSummary(measurements)
+            {
+                Title = directoryInfo.Name,
+                Directory = outputDirectory
+            };
+
             return summary;
         }
-        #endregion
+#endregion
     }
 }

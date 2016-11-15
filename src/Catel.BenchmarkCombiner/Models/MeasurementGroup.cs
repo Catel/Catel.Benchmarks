@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="ExportSummary.cs" company="Catel development team">
+// <copyright file="MeasurementGroup.cs" company="Catel development team">
 //   Copyright (c) 2008 - 2016 Catel development team. All rights reserved.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
@@ -9,17 +9,17 @@ namespace Catel.BenchmarkCombiner
 {
     using System.Collections.Generic;
 
-    public class ExportSummary
+    public class MeasurementGroup
     {
-        public ExportSummary(IEnumerable<Measurement> measurements)
+        public MeasurementGroup()
         {
-            Measurements = new List<Measurement>(measurements);
+            Measurements = new List<VersionMeasurements>();
         }
 
-        public string Title { get; set; }
+        public string Container { get; set; }
 
-        public string Directory { get; set; }
+        public string Benchmark { get; set; }
 
-        public List<Measurement> Measurements { get; private set; }
+        public List<VersionMeasurements> Measurements { get; private set; }
     }
 }

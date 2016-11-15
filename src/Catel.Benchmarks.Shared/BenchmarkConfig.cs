@@ -27,7 +27,7 @@ namespace Catel.Benchmarks
             Add(HtmlExporter.Default);
             Add(CsvExporter.Default);
             Add(CsvMeasurementsExporter.Default);
-            Add(RPlotExporter.Default);
+            //Add(RPlotExporter.Default);
 
             // Loggers
             Add(ConsoleLogger.Default);

@@ -7,6 +7,9 @@
 
 namespace Catel.BenchmarkCombiner
 {
+    using System.Diagnostics;
+
+    [DebuggerDisplay("{Target_Type}.{Target_Method} => {Measurement_Microseconds} μs")]
     public class Measurement
     {
         public string Target { get; set; }
@@ -73,16 +76,21 @@ namespace Catel.BenchmarkCombiner
 
         public string Params { get; set; }
 
-        public string Measurement_LaunchIndex { get; set; }
+        public int Measurement_LaunchIndex { get; set; }
 
         public string Measurement_IterationMode { get; set; }
 
-        public string Measurement_IterationIndex { get; set; }
+        public int Measurement_IterationIndex { get; set; }
 
-        public string Measurement_Nanoseconds { get; set; }
+        public double Measurement_Nanoseconds { get; set; }
 
-        public string Measurement_Operations { get; set; }
+        public double Measurement_Microseconds
+        {
+            get { return Measurement_Nanoseconds.ConvertNanoSecondsToMicroSeconds(); }
+        }
 
-        public string Measurement_Value { get; set; }
+        public int Measurement_Operations { get; set; }
+
+        public double Measurement_Value { get; set; }
     }
 }

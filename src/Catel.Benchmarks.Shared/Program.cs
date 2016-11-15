@@ -14,9 +14,6 @@ namespace Catel.Benchmarks
     using System.Collections.Generic;
     using System;
     using BenchmarkDotNet.Attributes;
-    using BenchmarkDotNet.Configs;
-    using BenchmarkDotNet.Exporters;
-    using BenchmarkDotNet.Exporters.Csv;
 
     public static class Program
     {
