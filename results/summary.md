@@ -1,6 +1,6 @@
 # Benchmarks
 
-Benchmark report generated on 15-nov-2016 12:54
+Benchmark report generated on 15-nov-2016 13:26
 
 All timings are average time per operation (thus the time represents a single operation)
 
@@ -14,6 +14,14 @@ All timings are average time per operation (thus the time represents a single op
 
 
 ## Table of contents
+* [Log_Disabled_Benchmark](#Log_Disabled_Benchmark)
+  * [Log_Info](#Log_Disabled_Benchmark_Log_Info)
+  * [Log_Info_Format_WithBoxing](#Log_Disabled_Benchmark_Log_Info_Format_WithBoxing)
+  * [Log_Info_Format_WithoutBoxing](#Log_Disabled_Benchmark_Log_Info_Format_WithoutBoxing)
+* [Log_Enabled_Benchmark](#Log_Enabled_Benchmark)
+  * [Log_Info](#Log_Enabled_Benchmark_Log_Info)
+  * [Log_Info_Format_WithBoxing](#Log_Enabled_Benchmark_Log_Info_Format_WithBoxing)
+  * [Log_Info_Format_WithoutBoxing](#Log_Enabled_Benchmark_Log_Info_Format_WithoutBoxing)
 * [ModelBase_GetValue_Benchmark](#ModelBase_GetValue_Benchmark)
   * [GetBoolValue](#ModelBase_GetValue_Benchmark_GetBoolValue)
   * [GetIntValue](#ModelBase_GetValue_Benchmark_GetIntValue)
@@ -38,6 +46,118 @@ All timings are average time per operation (thus the time represents a single op
   * [SerializeLevel2Models](#Serialization_Xml_Benchmark_SerializeLevel2Models)
   * [SerializeLevel3Models](#Serialization_Xml_Benchmark_SerializeLevel3Models)
 
+## <a name="Log_Disabled_Benchmark"></a>Log_Disabled_Benchmark
+
+### <a name="Log_Disabled_Benchmark_Log_Info"></a>Log_Info
+
+Fastest: **Catel.Benchmarks.4.5.0**
+
+Slowest: Catel.Benchmarks.4.5.4
+
+
+<table>
+<tr>
+<th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
+<tr>
+<td align="right">9,461 ns</td><td align="right">9,751 ns</td><td align="right">9,658 ns</td><td align="right">10,058 ns</td><td align="right">9,849 ns</td></tr>
+<tr>
+<td align="right">0,009 μs</td><td align="right">0,010 μs</td><td align="right">0,010 μs</td><td align="right">0,010 μs</td><td align="right">0,010 μs</td></tr>
+<tr>
+<td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
+</table>
+
+### <a name="Log_Disabled_Benchmark_Log_Info_Format_WithBoxing"></a>Log_Info_Format_WithBoxing
+
+Fastest: **Catel.Benchmarks.4.4.0**
+
+Slowest: Catel.Benchmarks.4.2.0
+
+
+<table>
+<tr>
+<th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
+<tr>
+<td align="right">18,451 ns</td><td align="right">18,282 ns</td><td align="right">18,150 ns</td><td align="right">18,152 ns</td><td align="right">18,342 ns</td></tr>
+<tr>
+<td align="right">0,018 μs</td><td align="right">0,018 μs</td><td align="right">0,018 μs</td><td align="right">0,018 μs</td><td align="right">0,018 μs</td></tr>
+<tr>
+<td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
+</table>
+
+### <a name="Log_Disabled_Benchmark_Log_Info_Format_WithoutBoxing"></a>Log_Info_Format_WithoutBoxing
+
+Fastest: **Catel.Benchmarks.4.2.0**
+
+Slowest: Catel.Benchmarks.4.5.4
+
+
+<table>
+<tr>
+<th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
+<tr>
+<td align="right">14,205 ns</td><td align="right">14,533 ns</td><td align="right">14,912 ns</td><td align="right">14,730 ns</td><td align="right">15,288 ns</td></tr>
+<tr>
+<td align="right">0,014 μs</td><td align="right">0,015 μs</td><td align="right">0,015 μs</td><td align="right">0,015 μs</td><td align="right">0,015 μs</td></tr>
+<tr>
+<td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
+</table>
+
+## <a name="Log_Enabled_Benchmark"></a>Log_Enabled_Benchmark
+
+### <a name="Log_Enabled_Benchmark_Log_Info"></a>Log_Info
+
+Fastest: **Catel.Benchmarks.4.2.0**
+
+Slowest: Catel.Benchmarks.4.5.0
+
+
+<table>
+<tr>
+<th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
+<tr>
+<td align="right">545,322 ns</td><td align="right">550,151 ns</td><td align="right">548,530 ns</td><td align="right">578,390 ns</td><td align="right">554,128 ns</td></tr>
+<tr>
+<td align="right">0,545 μs</td><td align="right">0,550 μs</td><td align="right">0,549 μs</td><td align="right">0,578 μs</td><td align="right">0,554 μs</td></tr>
+<tr>
+<td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td></tr>
+</table>
+
+### <a name="Log_Enabled_Benchmark_Log_Info_Format_WithBoxing"></a>Log_Info_Format_WithBoxing
+
+Fastest: **Catel.Benchmarks.4.5.4**
+
+Slowest: Catel.Benchmarks.4.2.0
+
+
+<table>
+<tr>
+<th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
+<tr>
+<td align="right">915,028 ns</td><td align="right">882,808 ns</td><td align="right">900,852 ns</td><td align="right">885,793 ns</td><td align="right">875,425 ns</td></tr>
+<tr>
+<td align="right">0,915 μs</td><td align="right">0,883 μs</td><td align="right">0,901 μs</td><td align="right">0,886 μs</td><td align="right">0,875 μs</td></tr>
+<tr>
+<td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td></tr>
+</table>
+
+### <a name="Log_Enabled_Benchmark_Log_Info_Format_WithoutBoxing"></a>Log_Info_Format_WithoutBoxing
+
+Fastest: **Catel.Benchmarks.4.5.4**
+
+Slowest: Catel.Benchmarks.4.2.0
+
+
+<table>
+<tr>
+<th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
+<tr>
+<td align="right">836,376 ns</td><td align="right">791,739 ns</td><td align="right">789,057 ns</td><td align="right">814,603 ns</td><td align="right">780,298 ns</td></tr>
+<tr>
+<td align="right">0,836 μs</td><td align="right">0,792 μs</td><td align="right">0,789 μs</td><td align="right">0,815 μs</td><td align="right">0,780 μs</td></tr>
+<tr>
+<td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td></tr>
+</table>
+
 ## <a name="ModelBase_GetValue_Benchmark"></a>ModelBase_GetValue_Benchmark
 
 ### <a name="ModelBase_GetValue_Benchmark_GetBoolValue"></a>GetBoolValue
@@ -51,9 +171,9 @@ Slowest: Catel.Benchmarks.4.4.0
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
 <tr>
-<td align="right">134,360 ns</td><td align="right">154,999 ns</td><td align="right">177,196 ns</td><td align="right">155,488 ns</td><td align="right">156,377 ns</td></tr>
+<td align="right">134,087 ns</td><td align="right">151,829 ns</td><td align="right">176,585 ns</td><td align="right">153,732 ns</td><td align="right">155,988 ns</td></tr>
 <tr>
-<td align="right">0,134 μs</td><td align="right">0,155 μs</td><td align="right">0,177 μs</td><td align="right">0,155 μs</td><td align="right">0,156 μs</td></tr>
+<td align="right">0,134 μs</td><td align="right">0,152 μs</td><td align="right">0,177 μs</td><td align="right">0,154 μs</td><td align="right">0,156 μs</td></tr>
 <tr>
 <td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -69,9 +189,9 @@ Slowest: Catel.Benchmarks.4.4.0
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
 <tr>
-<td align="right">135,286 ns</td><td align="right">155,170 ns</td><td align="right">179,017 ns</td><td align="right">154,970 ns</td><td align="right">157,003 ns</td></tr>
+<td align="right">133,008 ns</td><td align="right">155,218 ns</td><td align="right">177,254 ns</td><td align="right">156,776 ns</td><td align="right">155,936 ns</td></tr>
 <tr>
-<td align="right">0,135 μs</td><td align="right">0,155 μs</td><td align="right">0,179 μs</td><td align="right">0,155 μs</td><td align="right">0,157 μs</td></tr>
+<td align="right">0,133 μs</td><td align="right">0,155 μs</td><td align="right">0,177 μs</td><td align="right">0,157 μs</td><td align="right">0,156 μs</td></tr>
 <tr>
 <td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -87,9 +207,9 @@ Slowest: Catel.Benchmarks.4.4.0
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
 <tr>
-<td align="right">126,500 ns</td><td align="right">150,434 ns</td><td align="right">172,893 ns</td><td align="right">149,412 ns</td><td align="right">147,998 ns</td></tr>
+<td align="right">125,666 ns</td><td align="right">148,711 ns</td><td align="right">172,876 ns</td><td align="right">146,894 ns</td><td align="right">148,669 ns</td></tr>
 <tr>
-<td align="right">0,126 μs</td><td align="right">0,150 μs</td><td align="right">0,173 μs</td><td align="right">0,149 μs</td><td align="right">0,148 μs</td></tr>
+<td align="right">0,126 μs</td><td align="right">0,149 μs</td><td align="right">0,173 μs</td><td align="right">0,147 μs</td><td align="right">0,149 μs</td></tr>
 <tr>
 <td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -100,42 +220,6 @@ Slowest: Catel.Benchmarks.4.4.0
 
 Fastest: **Catel.Benchmarks.4.3.0**
 
-Slowest: Catel.Benchmarks.4.2.0
-
-
-<table>
-<tr>
-<th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
-<tr>
-<td align="right">1402,897 ns</td><td align="right">1654,351 ns</td><td align="right">1775,562 ns</td><td align="right">1666,569 ns</td><td align="right">1717,308 ns</td></tr>
-<tr>
-<td align="right">1,403 μs</td><td align="right">1,654 μs</td><td align="right">1,776 μs</td><td align="right">1,667 μs</td><td align="right">1,717 μs</td></tr>
-<tr>
-<td align="right">0,001 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td></tr>
-</table>
-
-### <a name="ModelBase_SetValue_Benchmark_SetIntValue"></a>SetIntValue
-
-Fastest: **Catel.Benchmarks.4.5.4**
-
-Slowest: Catel.Benchmarks.4.2.0
-
-
-<table>
-<tr>
-<th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
-<tr>
-<td align="right">1486,212 ns</td><td align="right">1794,853 ns</td><td align="right">1872,308 ns</td><td align="right">1846,808 ns</td><td align="right">1779,526 ns</td></tr>
-<tr>
-<td align="right">1,486 μs</td><td align="right">1,795 μs</td><td align="right">1,872 μs</td><td align="right">1,847 μs</td><td align="right">1,780 μs</td></tr>
-<tr>
-<td align="right">0,001 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td></tr>
-</table>
-
-### <a name="ModelBase_SetValue_Benchmark_SetStringValue"></a>SetStringValue
-
-Fastest: **Catel.Benchmarks.4.3.0**
-
 Slowest: Catel.Benchmarks.4.4.0
 
 
@@ -143,9 +227,45 @@ Slowest: Catel.Benchmarks.4.4.0
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
 <tr>
-<td align="right">1425,612 ns</td><td align="right">1527,252 ns</td><td align="right">1485,016 ns</td><td align="right">1814,875 ns</td><td align="right">1786,702 ns</td></tr>
+<td align="right">1419,164 ns</td><td align="right">1589,679 ns</td><td align="right">1500,339 ns</td><td align="right">1796,197 ns</td><td align="right">1709,789 ns</td></tr>
 <tr>
-<td align="right">1,426 μs</td><td align="right">1,527 μs</td><td align="right">1,485 μs</td><td align="right">1,815 μs</td><td align="right">1,787 μs</td></tr>
+<td align="right">1,419 μs</td><td align="right">1,590 μs</td><td align="right">1,500 μs</td><td align="right">1,796 μs</td><td align="right">1,710 μs</td></tr>
+<tr>
+<td align="right">0,001 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td></tr>
+</table>
+
+### <a name="ModelBase_SetValue_Benchmark_SetIntValue"></a>SetIntValue
+
+Fastest: **Catel.Benchmarks.4.4.0**
+
+Slowest: Catel.Benchmarks.4.5.4
+
+
+<table>
+<tr>
+<th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
+<tr>
+<td align="right">1698,137 ns</td><td align="right">1797,150 ns</td><td align="right">1606,385 ns</td><td align="right">1871,193 ns</td><td align="right">1989,077 ns</td></tr>
+<tr>
+<td align="right">1,698 μs</td><td align="right">1,797 μs</td><td align="right">1,606 μs</td><td align="right">1,871 μs</td><td align="right">1,989 μs</td></tr>
+<tr>
+<td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td></tr>
+</table>
+
+### <a name="ModelBase_SetValue_Benchmark_SetStringValue"></a>SetStringValue
+
+Fastest: **Catel.Benchmarks.4.3.0**
+
+Slowest: Catel.Benchmarks.4.2.0
+
+
+<table>
+<tr>
+<th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
+<tr>
+<td align="right">1429,812 ns</td><td align="right">1565,441 ns</td><td align="right">1372,772 ns</td><td align="right">1881,890 ns</td><td align="right">1806,109 ns</td></tr>
+<tr>
+<td align="right">1,430 μs</td><td align="right">1,565 μs</td><td align="right">1,373 μs</td><td align="right">1,882 μs</td><td align="right">1,806 μs</td></tr>
 <tr>
 <td align="right">0,001 ms</td><td align="right">0,002 ms</td><td align="right">0,001 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td></tr>
 </table>
@@ -163,16 +283,16 @@ Slowest: Catel.Benchmarks.4.5.4
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
 <tr>
-<td align="right">253758,502 ns</td><td align="right">256776,075 ns</td><td align="right">258258,216 ns</td><td align="right">274977,051 ns</td><td align="right">625197,830 ns</td></tr>
+<td align="right">249748,159 ns</td><td align="right">255573,416 ns</td><td align="right">262350,924 ns</td><td align="right">273197,080 ns</td><td align="right">626696,513 ns</td></tr>
 <tr>
-<td align="right">253,759 μs</td><td align="right">256,776 μs</td><td align="right">258,258 μs</td><td align="right">274,977 μs</td><td align="right">625,198 μs</td></tr>
+<td align="right">249,748 μs</td><td align="right">255,573 μs</td><td align="right">262,351 μs</td><td align="right">273,197 μs</td><td align="right">626,697 μs</td></tr>
 <tr>
-<td align="right">0,254 ms</td><td align="right">0,257 ms</td><td align="right">0,258 ms</td><td align="right">0,275 ms</td><td align="right">0,625 ms</td></tr>
+<td align="right">0,250 ms</td><td align="right">0,256 ms</td><td align="right">0,262 ms</td><td align="right">0,273 ms</td><td align="right">0,627 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Binary_Benchmark_SerializeLevel1Models"></a>SerializeLevel1Models
 
-Fastest: **Catel.Benchmarks.4.2.0**
+Fastest: **Catel.Benchmarks.4.3.0**
 
 Slowest: Catel.Benchmarks.4.5.4
 
@@ -181,16 +301,16 @@ Slowest: Catel.Benchmarks.4.5.4
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
 <tr>
-<td align="right">51704,893 ns</td><td align="right">52286,590 ns</td><td align="right">55158,707 ns</td><td align="right">59067,554 ns</td><td align="right">387838,735 ns</td></tr>
+<td align="right">52646,859 ns</td><td align="right">51917,008 ns</td><td align="right">53701,540 ns</td><td align="right">58025,758 ns</td><td align="right">384156,276 ns</td></tr>
 <tr>
-<td align="right">51,705 μs</td><td align="right">52,287 μs</td><td align="right">55,159 μs</td><td align="right">59,068 μs</td><td align="right">387,839 μs</td></tr>
+<td align="right">52,647 μs</td><td align="right">51,917 μs</td><td align="right">53,702 μs</td><td align="right">58,026 μs</td><td align="right">384,156 μs</td></tr>
 <tr>
-<td align="right">0,052 ms</td><td align="right">0,052 ms</td><td align="right">0,055 ms</td><td align="right">0,059 ms</td><td align="right">0,388 ms</td></tr>
+<td align="right">0,053 ms</td><td align="right">0,052 ms</td><td align="right">0,054 ms</td><td align="right">0,058 ms</td><td align="right">0,384 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Binary_Benchmark_SerializeLevel2Models"></a>SerializeLevel2Models
 
-Fastest: **Catel.Benchmarks.4.3.0**
+Fastest: **Catel.Benchmarks.4.5.4**
 
 Slowest: Catel.Benchmarks.4.5.0
 
@@ -199,11 +319,11 @@ Slowest: Catel.Benchmarks.4.5.0
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
 <tr>
-<td align="right">167058,953 ns</td><td align="right">172406,325 ns</td><td align="right">179090,536 ns</td><td align="right">187467,441 ns</td><td align="right">531069,891 ns</td></tr>
+<td align="right">168013,648 ns</td><td align="right">171684,734 ns</td><td align="right">175901,426 ns</td><td align="right">188717,054 ns</td><td align="right">529896,621 ns</td></tr>
 <tr>
-<td align="right">167,059 μs</td><td align="right">172,406 μs</td><td align="right">179,091 μs</td><td align="right">187,467 μs</td><td align="right">531,070 μs</td></tr>
+<td align="right">168,014 μs</td><td align="right">171,685 μs</td><td align="right">175,901 μs</td><td align="right">188,717 μs</td><td align="right">529,897 μs</td></tr>
 <tr>
-<td align="right">0,167 ms</td><td align="right">0,172 ms</td><td align="right">0,179 ms</td><td align="right">0,187 ms</td><td align="right">0,531 ms</td></tr>
+<td align="right">0,168 ms</td><td align="right">0,172 ms</td><td align="right">0,176 ms</td><td align="right">0,189 ms</td><td align="right">0,530 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Binary_Benchmark_SerializeLevel3Models"></a>SerializeLevel3Models
@@ -217,31 +337,31 @@ Slowest: Catel.Benchmarks.4.5.4
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
 <tr>
-<td align="right">830003,054 ns</td><td align="right">867874,791 ns</td><td align="right">869711,351 ns</td><td align="right">940493,611 ns</td><td align="right">1323467,311 ns</td></tr>
+<td align="right">844312,693 ns</td><td align="right">875771,631 ns</td><td align="right">886991,710 ns</td><td align="right">924632,009 ns</td><td align="right">1323712,761 ns</td></tr>
 <tr>
-<td align="right">830,003 μs</td><td align="right">867,875 μs</td><td align="right">869,711 μs</td><td align="right">940,494 μs</td><td align="right">1323,467 μs</td></tr>
+<td align="right">844,313 μs</td><td align="right">875,772 μs</td><td align="right">886,992 μs</td><td align="right">924,632 μs</td><td align="right">1323,713 μs</td></tr>
 <tr>
-<td align="right">0,830 ms</td><td align="right">0,868 ms</td><td align="right">0,870 ms</td><td align="right">0,940 ms</td><td align="right">1,323 ms</td></tr>
+<td align="right">0,844 ms</td><td align="right">0,876 ms</td><td align="right">0,887 ms</td><td align="right">0,925 ms</td><td align="right">1,324 ms</td></tr>
 </table>
 
 ## <a name="Serialization_Json_Benchmark"></a>Serialization_Json_Benchmark
 
 ### <a name="Serialization_Json_Benchmark_SerializeComplexObjectGraph"></a>SerializeComplexObjectGraph
 
-Fastest: **Catel.Benchmarks.4.2.0**
+Fastest: **Catel.Benchmarks.4.4.0**
 
-Slowest: Catel.Benchmarks.4.5.0
+Slowest: Catel.Benchmarks.4.2.0
 
 
 <table>
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th></tr>
 <tr>
-<td align="right">16703470,361 ns</td><td align="right">16714399,506 ns</td><td align="right">17023907,568 ns</td><td align="right">17466815,061 ns</td></tr>
+<td align="right">17363926,120 ns</td><td align="right">16941573,881 ns</td><td align="right">16787271,593 ns</td><td align="right">16968018,978 ns</td></tr>
 <tr>
-<td align="right">16703,470 μs</td><td align="right">16714,400 μs</td><td align="right">17023,908 μs</td><td align="right">17466,815 μs</td></tr>
+<td align="right">17363,926 μs</td><td align="right">16941,574 μs</td><td align="right">16787,272 μs</td><td align="right">16968,019 μs</td></tr>
 <tr>
-<td align="right">16,703 ms</td><td align="right">16,714 ms</td><td align="right">17,024 ms</td><td align="right">17,467 ms</td></tr>
+<td align="right">17,364 ms</td><td align="right">16,942 ms</td><td align="right">16,787 ms</td><td align="right">16,968 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Json_Benchmark_SerializeLevel1Models"></a>SerializeLevel1Models
@@ -255,14 +375,32 @@ Slowest: Catel.Benchmarks.4.5.0
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th></tr>
 <tr>
-<td align="right">697245,554 ns</td><td align="right">701311,099 ns</td><td align="right">703591,910 ns</td><td align="right">711486,966 ns</td></tr>
+<td align="right">696814,078 ns</td><td align="right">711330,129 ns</td><td align="right">699867,167 ns</td><td align="right">713804,373 ns</td></tr>
 <tr>
-<td align="right">697,246 μs</td><td align="right">701,311 μs</td><td align="right">703,592 μs</td><td align="right">711,487 μs</td></tr>
+<td align="right">696,814 μs</td><td align="right">711,330 μs</td><td align="right">699,867 μs</td><td align="right">713,804 μs</td></tr>
 <tr>
-<td align="right">0,697 ms</td><td align="right">0,701 ms</td><td align="right">0,704 ms</td><td align="right">0,711 ms</td></tr>
+<td align="right">0,697 ms</td><td align="right">0,711 ms</td><td align="right">0,700 ms</td><td align="right">0,714 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Json_Benchmark_SerializeLevel2Models"></a>SerializeLevel2Models
+
+Fastest: **Catel.Benchmarks.4.4.0**
+
+Slowest: Catel.Benchmarks.4.5.0
+
+
+<table>
+<tr>
+<th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th></tr>
+<tr>
+<td align="right">2800784,166 ns</td><td align="right">2785613,113 ns</td><td align="right">2773756,312 ns</td><td align="right">2813559,724 ns</td></tr>
+<tr>
+<td align="right">2800,784 μs</td><td align="right">2785,613 μs</td><td align="right">2773,756 μs</td><td align="right">2813,560 μs</td></tr>
+<tr>
+<td align="right">2,801 ms</td><td align="right">2,786 ms</td><td align="right">2,774 ms</td><td align="right">2,814 ms</td></tr>
+</table>
+
+### <a name="Serialization_Json_Benchmark_SerializeLevel3Models"></a>SerializeLevel3Models
 
 Fastest: **Catel.Benchmarks.4.4.0**
 
@@ -273,29 +411,11 @@ Slowest: Catel.Benchmarks.4.2.0
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th></tr>
 <tr>
-<td align="right">2876358,184 ns</td><td align="right">2799030,688 ns</td><td align="right">2783620,817 ns</td><td align="right">2803865,423 ns</td></tr>
+<td align="right">13666484,028 ns</td><td align="right">13409344,531 ns</td><td align="right">13200582,981 ns</td><td align="right">13345493,098 ns</td></tr>
 <tr>
-<td align="right">2876,358 μs</td><td align="right">2799,031 μs</td><td align="right">2783,621 μs</td><td align="right">2803,865 μs</td></tr>
+<td align="right">13666,484 μs</td><td align="right">13409,345 μs</td><td align="right">13200,583 μs</td><td align="right">13345,493 μs</td></tr>
 <tr>
-<td align="right">2,876 ms</td><td align="right">2,799 ms</td><td align="right">2,784 ms</td><td align="right">2,804 ms</td></tr>
-</table>
-
-### <a name="Serialization_Json_Benchmark_SerializeLevel3Models"></a>SerializeLevel3Models
-
-Fastest: **Catel.Benchmarks.4.3.0**
-
-Slowest: Catel.Benchmarks.4.2.0
-
-
-<table>
-<tr>
-<th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th></tr>
-<tr>
-<td align="right">13658854,599 ns</td><td align="right">13322079,410 ns</td><td align="right">13346999,168 ns</td><td align="right">13455642,821 ns</td></tr>
-<tr>
-<td align="right">13658,855 μs</td><td align="right">13322,079 μs</td><td align="right">13346,999 μs</td><td align="right">13455,643 μs</td></tr>
-<tr>
-<td align="right">13,659 ms</td><td align="right">13,322 ms</td><td align="right">13,347 ms</td><td align="right">13,456 ms</td></tr>
+<td align="right">13,666 ms</td><td align="right">13,409 ms</td><td align="right">13,201 ms</td><td align="right">13,345 ms</td></tr>
 </table>
 
 ## <a name="Serialization_Xml_Benchmark"></a>Serialization_Xml_Benchmark
@@ -311,16 +431,16 @@ Slowest: Catel.Benchmarks.4.3.0
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
 <tr>
-<td align="right">723975,347 ns</td><td align="right">728263,964 ns</td><td align="right">878329,452 ns</td><td align="right">900121,924 ns</td><td align="right">1313812,664 ns</td></tr>
+<td align="right">712591,663 ns</td><td align="right">724758,280 ns</td><td align="right">893178,157 ns</td><td align="right">901623,243 ns</td><td align="right">1315341,196 ns</td></tr>
 <tr>
-<td align="right">723,975 μs</td><td align="right">728,264 μs</td><td align="right">878,329 μs</td><td align="right">900,122 μs</td><td align="right">1313,813 μs</td></tr>
+<td align="right">712,592 μs</td><td align="right">724,758 μs</td><td align="right">893,178 μs</td><td align="right">901,623 μs</td><td align="right">1315,341 μs</td></tr>
 <tr>
-<td align="right">0,724 ms</td><td align="right">0,728 ms</td><td align="right">0,878 ms</td><td align="right">0,900 ms</td><td align="right">1,314 ms</td></tr>
+<td align="right">0,713 ms</td><td align="right">0,725 ms</td><td align="right">0,893 ms</td><td align="right">0,902 ms</td><td align="right">1,315 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Xml_Benchmark_SerializeLevel1Models"></a>SerializeLevel1Models
 
-Fastest: **Catel.Benchmarks.4.5.4**
+Fastest: **Catel.Benchmarks.4.2.0**
 
 Slowest: Catel.Benchmarks.4.3.0
 
@@ -329,11 +449,11 @@ Slowest: Catel.Benchmarks.4.3.0
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
 <tr>
-<td align="right">88673,266 ns</td><td align="right">91049,875 ns</td><td align="right">132193,112 ns</td><td align="right">138354,284 ns</td><td align="right">479519,432 ns</td></tr>
+<td align="right">87393,127 ns</td><td align="right">90321,317 ns</td><td align="right">135441,262 ns</td><td align="right">141624,592 ns</td><td align="right">479333,146 ns</td></tr>
 <tr>
-<td align="right">88,673 μs</td><td align="right">91,050 μs</td><td align="right">132,193 μs</td><td align="right">138,354 μs</td><td align="right">479,519 μs</td></tr>
+<td align="right">87,393 μs</td><td align="right">90,321 μs</td><td align="right">135,441 μs</td><td align="right">141,625 μs</td><td align="right">479,333 μs</td></tr>
 <tr>
-<td align="right">0,089 ms</td><td align="right">0,091 ms</td><td align="right">0,132 ms</td><td align="right">0,138 ms</td><td align="right">0,480 ms</td></tr>
+<td align="right">0,087 ms</td><td align="right">0,090 ms</td><td align="right">0,135 ms</td><td align="right">0,142 ms</td><td align="right">0,479 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Xml_Benchmark_SerializeLevel2Models"></a>SerializeLevel2Models
@@ -347,28 +467,28 @@ Slowest: Catel.Benchmarks.4.3.0
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
 <tr>
-<td align="right">322623,825 ns</td><td align="right">323078,882 ns</td><td align="right">466722,221 ns</td><td align="right">490394,416 ns</td><td align="right">863349,094 ns</td></tr>
+<td align="right">315460,775 ns</td><td align="right">316055,278 ns</td><td align="right">468307,869 ns</td><td align="right">499777,533 ns</td><td align="right">881910,555 ns</td></tr>
 <tr>
-<td align="right">322,624 μs</td><td align="right">323,079 μs</td><td align="right">466,722 μs</td><td align="right">490,394 μs</td><td align="right">863,349 μs</td></tr>
+<td align="right">315,461 μs</td><td align="right">316,055 μs</td><td align="right">468,308 μs</td><td align="right">499,778 μs</td><td align="right">881,911 μs</td></tr>
 <tr>
-<td align="right">0,323 ms</td><td align="right">0,323 ms</td><td align="right">0,467 ms</td><td align="right">0,490 ms</td><td align="right">0,863 ms</td></tr>
+<td align="right">0,315 ms</td><td align="right">0,316 ms</td><td align="right">0,468 ms</td><td align="right">0,500 ms</td><td align="right">0,882 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Xml_Benchmark_SerializeLevel3Models"></a>SerializeLevel3Models
 
-Fastest: **Catel.Benchmarks.4.2.0**
+Fastest: **Catel.Benchmarks.4.4.0**
 
-Slowest: Catel.Benchmarks.4.5.4
+Slowest: Catel.Benchmarks.4.3.0
 
 
 <table>
 <tr>
 <th>Catel.Benchmarks.4.2.0</th><th>Catel.Benchmarks.4.3.0</th><th>Catel.Benchmarks.4.4.0</th><th>Catel.Benchmarks.4.5.0</th><th>Catel.Benchmarks.4.5.4</th></tr>
 <tr>
-<td align="right">1563116,423 ns</td><td align="right">1635764,118 ns</td><td align="right">2187647,980 ns</td><td align="right">2321153,581 ns</td><td align="right">2867191,697 ns</td></tr>
+<td align="right">1556761,486 ns</td><td align="right">1569709,919 ns</td><td align="right">2224730,011 ns</td><td align="right">2330369,992 ns</td><td align="right">2982203,083 ns</td></tr>
 <tr>
-<td align="right">1563,116 μs</td><td align="right">1635,764 μs</td><td align="right">2187,648 μs</td><td align="right">2321,154 μs</td><td align="right">2867,192 μs</td></tr>
+<td align="right">1556,761 μs</td><td align="right">1569,710 μs</td><td align="right">2224,730 μs</td><td align="right">2330,370 μs</td><td align="right">2982,203 μs</td></tr>
 <tr>
-<td align="right">1,563 ms</td><td align="right">1,636 ms</td><td align="right">2,188 ms</td><td align="right">2,321 ms</td><td align="right">2,867 ms</td></tr>
+<td align="right">1,557 ms</td><td align="right">1,570 ms</td><td align="right">2,225 ms</td><td align="right">2,330 ms</td><td align="right">2,982 ms</td></tr>
 </table>
 
