@@ -9,3 +9,8 @@ To run the benchmarks, run the `Catel.BenchmarkCombiner` project. It should have
 ## Viewing results
 
 The results will automatically be exported to the `/results` folder. We are still working on a combined report that compares all the different versions.
+
+## Latest benchmark results
+
+[Results summary](results/summary.md)
+
