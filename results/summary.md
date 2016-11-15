@@ -1,6 +1,6 @@
 # Benchmarks
 
-Benchmark report generated on 15-nov-2016 12:52
+Benchmark report generated on 15-nov-2016 12:54
 
 All timings are average time per operation (thus the time represents a single operation)
 
@@ -13,7 +13,7 @@ All timings are average time per operation (thus the time represents a single op
 *ms = millisecond (= 1000 microseconds)*
 
 
-# Table of contents
+## Table of contents
 * [ModelBase_GetValue_Benchmark](#ModelBase_GetValue_Benchmark)
   * [GetBoolValue](#ModelBase_GetValue_Benchmark_GetBoolValue)
   * [GetIntValue](#ModelBase_GetValue_Benchmark_GetIntValue)

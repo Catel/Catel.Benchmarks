@@ -14,20 +14,23 @@ namespace Catel.BenchmarkCombiner.Exporters
 
     public class MarkdownExporter : ExporterBase
     {
+        private const string FileName = "summary.md";
+
         #region Methods
         public override void Export(string targetDirectory, List<ExportSummary> exportSummaries)
         {
-            var outputFileName = Path.Combine(targetDirectory, "summary.md");
+            var outputFileName = Path.Combine(targetDirectory, FileName);
 
             using (var stream = new FileStream(outputFileName, FileMode.Create, FileAccess.Write))
             {
                 using (var streamWriter = new StreamWriter(stream))
                 {
+                    // Header
                     streamWriter.WriteLine("# Benchmarks");
                     streamWriter.WriteLine();
                     streamWriter.WriteLine($"Benchmark report generated on {DateTime.Now.ToString("dd-MMM-yyyy HH:mm")}");
                     streamWriter.WriteLine();
-                    streamWriter.WriteLine("All timings are average time per operation (thus the time r");
+                    streamWriter.WriteLine("All timings are average time per operation (thus the time represents a single operation)");
                     streamWriter.WriteLine();
                     streamWriter.WriteLine("**Legend**\n");
                     streamWriter.WriteLine("*ns = nanosecond*\n");
@@ -37,14 +40,32 @@ namespace Catel.BenchmarkCombiner.Exporters
 
                     var measurementGroups = exportSummaries.ConvertToMeasurementGroups();
 
+                    // Table of contents
+                    streamWriter.WriteLine("## Table of contents");
+
                     foreach (var measurementGroup in measurementGroups.GroupBy(x => x.Container))
                     {
-                        streamWriter.WriteLine($"## {measurementGroup.Key}");
+                        streamWriter.WriteLine($"* [{measurementGroup.Key}](#{measurementGroup.Key})");
+
+                        foreach (var measurementGroupGroup in measurementGroup)
+                        {
+                            var linkId = $"{measurementGroup.Key}_{measurementGroupGroup.Benchmark}";
+                            streamWriter.WriteLine($"  * [{measurementGroupGroup.Benchmark}](#{linkId})");
+                        }
+                    }
+
+                    streamWriter.WriteLine();
+
+                    // Data
+                    foreach (var measurementGroup in measurementGroups.GroupBy(x => x.Container))
+                    {
+                        streamWriter.WriteLine($"## <a name=\"{measurementGroup.Key}\"></a>{measurementGroup.Key}");
                         streamWriter.WriteLine();
 
                         foreach (var measurementGroupGroup in measurementGroup)
                         {
-                            streamWriter.WriteLine($"### {measurementGroupGroup.Benchmark}");
+                            var linkId = $"{measurementGroup.Key}_{measurementGroupGroup.Benchmark}";
+                            streamWriter.WriteLine($"### <a name=\"{linkId}\"></a>{measurementGroupGroup.Benchmark}");
                             streamWriter.WriteLine();
 
                             var fastest = measurementGroupGroup.Fastest();
