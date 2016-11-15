@@ -13,13 +13,13 @@ namespace Catel.BenchmarkCombiner
     {
         public static VersionMeasurements Slowest(this MeasurementGroup group)
         {
-            var ordered = group.Measurements.OrderBy(x => x.AverageNanoSeconds);
+            var ordered = group.Measurements.OrderBy(x => x.AverageNanoSecondsPerOperation);
             return ordered.LastOrDefault();
         }
 
         public static VersionMeasurements Fastest(this MeasurementGroup group)
         {
-            var ordered = group.Measurements.OrderBy(x => x.AverageNanoSeconds);
+            var ordered = group.Measurements.OrderBy(x => x.AverageNanoSecondsPerOperation);
             return ordered.FirstOrDefault();
         }
     }
