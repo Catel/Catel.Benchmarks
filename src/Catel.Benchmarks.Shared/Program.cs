@@ -24,6 +24,11 @@ namespace Catel.Benchmarks
 
             foreach (var type in allTypes)
             {
+                if (!type.IsClassEx() || type.IsAbstractEx())
+                {
+                    continue;
+                }
+
                 var methods = type.GetMethodsEx();
 
                 foreach (var method in methods)
