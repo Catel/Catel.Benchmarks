@@ -8,6 +8,7 @@ Host Runtime=Clr 4.0.30319.42000, Arch=64-bit RELEASE [RyuJIT]
 GC=Concurrent Workstation
 JitModules=clrjit-v4.6.1586.0
 Job Runtime(s):
+	Clr 4.0.30319.42000, Arch=64-bit RELEASE [RyuJIT]
 
 
 ```
@@ -17,9 +18,3 @@ Job Runtime(s):
 
 
 
-
-Benchmarks with issues:
-  Serialization_Json_Benchmark.SerializeLevel1Models: DefaultJob
-  Serialization_Json_Benchmark.SerializeLevel2Models: DefaultJob
-  Serialization_Json_Benchmark.SerializeLevel3Models: DefaultJob
-  Serialization_Json_Benchmark.SerializeComplexObjectGraph: DefaultJob
