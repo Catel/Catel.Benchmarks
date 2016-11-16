@@ -43,8 +43,6 @@ namespace Catel.BenchmarkCombiner
             var outputDirectory = Path.GetFullPath(Path.Combine(baseDirectory, ".."));
             var exportDirectory = Path.GetFullPath(Path.Combine(baseDirectory, "..", "..", "..", "results"));
 
-            var summaries = new List<ExportSummary>();
-
             foreach (var directory in Directory.GetDirectories(outputDirectory))
             {
                 if (baseDirectory.Equals(directory, StringComparison.OrdinalIgnoreCase))
@@ -52,13 +50,10 @@ namespace Catel.BenchmarkCombiner
                     continue;
                 }
 
-                var summary = RunBenchmarks(directory);
-                if (summary != null)
-                {
-                    summaries.Add(summary);
-                }
+                RunBenchmarks(directory);
             }
 
+            var summaries = FindExportSummaries(exportDirectory);
             if (summaries.Count > 0)
             {
                 Directory.CreateDirectory(exportDirectory);
@@ -75,12 +70,12 @@ namespace Catel.BenchmarkCombiner
             }
         }
 
-        static ExportSummary RunBenchmarks(string directory)
+        static void RunBenchmarks(string directory)
         {
             var exe = Path.Combine(directory, "Catel.Benchmarks.exe");
             if (!File.Exists(exe))
             {
-                return null;
+                return;
             }
 
             Log.Info($"Running benchmark at '{exe}'");
@@ -92,48 +87,58 @@ namespace Catel.BenchmarkCombiner
 
             var process = Process.Start(processStartInfo);
             process.WaitForExit();
+        }
 
-            var directoryInfo = new DirectoryInfo(directory);
-            var outputDirectory = Path.Combine(directory, "BenchmarkDotNet.Artifacts", "results");
+        static List<ExportSummary> FindExportSummaries(string outputDirectory)
+        {
+            var summaries = new List<ExportSummary>();
 
-            var measurements = new List<Measurement>();
-
-            if (Directory.Exists(outputDirectory))
+            foreach (var directory in Directory.GetDirectories(outputDirectory, "*", SearchOption.TopDirectoryOnly))
             {
-                var factory = new CsvFactory();
-                var configuration = new CsvConfiguration
+                var directoryInfo = new DirectoryInfo(directory);
+                var summaryOutputDirectory = Path.Combine(directory, "results");
+
+                var measurements = new List<Measurement>();
+
+                if (Directory.Exists(summaryOutputDirectory))
                 {
-                    Delimiter = ";",
-                    CultureInfo = new CultureInfo("en-US")
-                };
-
-                configuration.AutoMap<MeasurementCsvMap>();
-
-                foreach (var measurementsCsvFile in Directory.GetFiles(outputDirectory, "*-measurements.csv", SearchOption.TopDirectoryOnly))
-                {
-                    Log.Info($"Reading benchmark measurements from '{measurementsCsvFile}'");
-
-                    using (var stream = new FileStream(measurementsCsvFile, FileMode.Open, FileAccess.Read))
+                    var factory = new CsvFactory();
+                    var configuration = new CsvConfiguration
                     {
-                        using (var csvReader = factory.CreateReader(new StreamReader(stream), configuration))
+                        Delimiter = ";",
+                        CultureInfo = new CultureInfo("en-US")
+                    };
+
+                    configuration.AutoMap<MeasurementCsvMap>();
+
+                    foreach (var measurementsCsvFile in Directory.GetFiles(summaryOutputDirectory, "*-measurements.csv", SearchOption.TopDirectoryOnly))
+                    {
+                        Log.Info($"Reading benchmark measurements from '{measurementsCsvFile}'");
+
+                        using (var stream = new FileStream(measurementsCsvFile, FileMode.Open, FileAccess.Read))
                         {
-                            while (csvReader.Read())
+                            using (var csvReader = factory.CreateReader(new StreamReader(stream), configuration))
                             {
-                                var record = csvReader.GetRecord<Measurement>();
-                                measurements.Add(record);
+                                while (csvReader.Read())
+                                {
+                                    var record = csvReader.GetRecord<Measurement>();
+                                    measurements.Add(record);
+                                }
                             }
                         }
                     }
                 }
+
+                var summary = new ExportSummary(measurements)
+                {
+                    Title = directoryInfo.Name,
+                    Directory = summaryOutputDirectory
+                };
+
+                summaries.Add(summary);
             }
 
-            var summary = new ExportSummary(measurements)
-            {
-                Title = directoryInfo.Name,
-                Directory = outputDirectory
-            };
-
-            return summary;
+            return summaries;
         }
 #endregion
     }
