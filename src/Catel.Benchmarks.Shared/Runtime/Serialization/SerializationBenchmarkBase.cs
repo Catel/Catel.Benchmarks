@@ -33,7 +33,7 @@ namespace Catel.Benchmarks.Runtime.Serialization
         {
             using (var memoryStream = new MemoryStream())
             {
-#if CATEL_4_5_4
+#if CATEL_4_5_4 || CATEL_5_0
                 serializer.Serialize(testModel, memoryStream, null);
 #else
                 serializer.Serialize(testModel, memoryStream);
