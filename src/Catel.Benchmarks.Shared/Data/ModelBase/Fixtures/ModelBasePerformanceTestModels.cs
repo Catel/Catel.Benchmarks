@@ -5,7 +5,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 
-namespace Catel.Benchmarks.Data.ModelBase.Models
+namespace Catel.Benchmarks.Data.ModelBase.Fixtures
 {
     using Catel.Data;
 

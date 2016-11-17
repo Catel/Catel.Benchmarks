@@ -43,14 +43,19 @@ namespace Catel.BenchmarkCombiner
             var outputDirectory = Path.GetFullPath(Path.Combine(baseDirectory, ".."));
             var exportDirectory = Path.GetFullPath(Path.Combine(baseDirectory, "..", "..", "..", "results"));
 
-            foreach (var directory in Directory.GetDirectories(outputDirectory))
+            Console.WriteLine("Do you want to run benchmarks now? (y/n)");
+            var keyInfo = Console.ReadKey();
+            if (string.Equals(keyInfo.KeyChar.ToString(), "y", StringComparison.OrdinalIgnoreCase))
             {
-                if (baseDirectory.Equals(directory, StringComparison.OrdinalIgnoreCase))
+                foreach (var directory in Directory.GetDirectories(outputDirectory))
                 {
-                    continue;
-                }
+                    if (baseDirectory.Equals(directory, StringComparison.OrdinalIgnoreCase))
+                    {
+                        continue;
+                    }
 
-                RunBenchmarks(directory);
+                    RunBenchmarks(directory);
+                }
             }
 
             var summaries = FindExportSummaries(exportDirectory);

@@ -5,34 +5,31 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 
-namespace Catel.Benchmarks.ModelBase.GetValue
+namespace Catel.Benchmarks.ModelBase.SetValue
 {
     using BenchmarkDotNet.Attributes;
-    using Data.ModelBase.Models;
+    using Data.ModelBase.Fixtures;
 
-    public class ModelBase_GetValue_Benchmark
+    public class ModelBase_SetValue_Benchmark
     {
         private readonly ModelBasePerformanceTestModel _model = new ModelBasePerformanceTestModel();
 
         [Benchmark]
-        public string GetStringValue()
+        public void SetStringValue()
         {
-            var value = _model.StringProperty;
-            return value;
+            _model.StringProperty = "test value";
         }
 
         [Benchmark]
-        public int GetIntValue()
+        public void SetIntValue()
         {
-            var value = _model.IntProperty;
-            return value;
+            _model.IntProperty = 42;
         }
 
         [Benchmark]
-        public bool GetBoolValue()
+        public void SetBoolValue()
         {
-            var value = _model.BoolProperty;
-            return value;
+            _model.BoolProperty = true;
         }
     }
 }
