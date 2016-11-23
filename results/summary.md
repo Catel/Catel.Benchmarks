@@ -1,6 +1,6 @@
 # Benchmarks
 
-Benchmark report generated on 17-nov-2016 14:54
+Benchmark report generated on 23-nov-2016 23:08
 
 All timings are average time per operation (thus the time represents a single operation)
 
@@ -58,18 +58,18 @@ All timings are average time per operation (thus the time represents a single op
 
 ### <a name="FastDateTime_vs_DateTime_Benchmark_DateTime_Now"></a>DateTime_Now
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
 
 <table>
 <tr>
 <th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">302,471 ns</td><td align="right">302,533 ns</td></tr>
+<td align="right">305,225 ns</td><td align="right">302,533 ns</td></tr>
 <tr>
-<td align="right">0,302 μs</td><td align="right">0,303 μs</td></tr>
+<td align="right">0,305 μs</td><td align="right">0,303 μs</td></tr>
 <tr>
 <td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -85,9 +85,9 @@ Slowest: 4.5.4
 <tr>
 <th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">35,913 ns</td><td align="right">35,882 ns</td></tr>
+<td align="right">37,507 ns</td><td align="right">35,882 ns</td></tr>
 <tr>
-<td align="right">0,036 μs</td><td align="right">0,036 μs</td></tr>
+<td align="right">0,038 μs</td><td align="right">0,036 μs</td></tr>
 <tr>
 <td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -105,7 +105,7 @@ Slowest: 4.5.4
 <tr>
 <th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">5,474 ns</td><td align="right">5,398 ns</td></tr>
+<td align="right">5,494 ns</td><td align="right">5,398 ns</td></tr>
 <tr>
 <td align="right">0,005 μs</td><td align="right">0,005 μs</td></tr>
 <tr>
@@ -123,7 +123,7 @@ Slowest: 4.5.4
 <tr>
 <th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">6,061 ns</td><td align="right">6,001 ns</td></tr>
+<td align="right">6,035 ns</td><td align="right">6,001 ns</td></tr>
 <tr>
 <td align="right">0,006 μs</td><td align="right">0,006 μs</td></tr>
 <tr>
@@ -143,16 +143,16 @@ Slowest: 4.5.0
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">10,151 ns</td><td align="right">9,887 ns</td><td align="right">9,686 ns</td><td align="right">10,786 ns</td><td align="right">10,087 ns</td><td align="right">5,475 ns</td></tr>
+<td align="right">9,396 ns</td><td align="right">9,603 ns</td><td align="right">9,658 ns</td><td align="right">10,263 ns</td><td align="right">9,905 ns</td><td align="right">5,511 ns</td></tr>
 <tr>
-<td align="right">0,010 μs</td><td align="right">0,010 μs</td><td align="right">0,010 μs</td><td align="right">0,011 μs</td><td align="right">0,010 μs</td><td align="right">0,005 μs</td></tr>
+<td align="right">0,009 μs</td><td align="right">0,010 μs</td><td align="right">0,010 μs</td><td align="right">0,010 μs</td><td align="right">0,010 μs</td><td align="right">0,006 μs</td></tr>
 <tr>
 <td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
 
 ### <a name="Log_Disabled_Benchmark_Log_Info_Format_WithBoxing"></a>Log_Info_Format_WithBoxing
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
 Slowest: 4.5.0
 
@@ -161,16 +161,16 @@ Slowest: 4.5.0
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">20,006 ns</td><td align="right">18,387 ns</td><td align="right">19,257 ns</td><td align="right">20,218 ns</td><td align="right">18,323 ns</td><td align="right">18,275 ns</td></tr>
+<td align="right">18,195 ns</td><td align="right">18,275 ns</td><td align="right">18,324 ns</td><td align="right">18,647 ns</td><td align="right">18,160 ns</td><td align="right">18,386 ns</td></tr>
 <tr>
-<td align="right">0,020 μs</td><td align="right">0,018 μs</td><td align="right">0,019 μs</td><td align="right">0,020 μs</td><td align="right">0,018 μs</td><td align="right">0,018 μs</td></tr>
+<td align="right">0,018 μs</td><td align="right">0,018 μs</td><td align="right">0,018 μs</td><td align="right">0,019 μs</td><td align="right">0,018 μs</td><td align="right">0,018 μs</td></tr>
 <tr>
 <td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
 
 ### <a name="Log_Disabled_Benchmark_Log_Info_Format_WithoutBoxing"></a>Log_Info_Format_WithoutBoxing
 
-Fastest: **4.4.0**
+Fastest: **4.2.0**
 
 Slowest: 4.5.0
 
@@ -179,9 +179,9 @@ Slowest: 4.5.0
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">15,924 ns</td><td align="right">14,865 ns</td><td align="right">14,814 ns</td><td align="right">16,164 ns</td><td align="right">15,019 ns</td><td align="right">14,889 ns</td></tr>
+<td align="right">13,978 ns</td><td align="right">14,876 ns</td><td align="right">14,559 ns</td><td align="right">15,337 ns</td><td align="right">15,105 ns</td><td align="right">15,044 ns</td></tr>
 <tr>
-<td align="right">0,016 μs</td><td align="right">0,015 μs</td><td align="right">0,015 μs</td><td align="right">0,016 μs</td><td align="right">0,015 μs</td><td align="right">0,015 μs</td></tr>
+<td align="right">0,014 μs</td><td align="right">0,015 μs</td><td align="right">0,015 μs</td><td align="right">0,015 μs</td><td align="right">0,015 μs</td><td align="right">0,015 μs</td></tr>
 <tr>
 <td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -199,34 +199,34 @@ Slowest: 4.5.0
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">555,889 ns</td><td align="right">549,912 ns</td><td align="right">552,242 ns</td><td align="right">587,981 ns</td><td align="right">294,355 ns</td><td align="right">282,661 ns</td></tr>
+<td align="right">552,392 ns</td><td align="right">543,244 ns</td><td align="right">571,849 ns</td><td align="right">615,365 ns</td><td align="right">310,560 ns</td><td align="right">282,360 ns</td></tr>
 <tr>
-<td align="right">0,556 μs</td><td align="right">0,550 μs</td><td align="right">0,552 μs</td><td align="right">0,588 μs</td><td align="right">0,294 μs</td><td align="right">0,283 μs</td></tr>
+<td align="right">0,552 μs</td><td align="right">0,543 μs</td><td align="right">0,572 μs</td><td align="right">0,615 μs</td><td align="right">0,311 μs</td><td align="right">0,282 μs</td></tr>
 <tr>
 <td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
 
 ### <a name="Log_Enabled_Benchmark_Log_Info_Format_WithBoxing"></a>Log_Info_Format_WithBoxing
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
-Slowest: 4.5.0
+Slowest: 4.4.0
 
 
 <table>
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">853,605 ns</td><td align="right">845,836 ns</td><td align="right">881,253 ns</td><td align="right">904,093 ns</td><td align="right">605,349 ns</td><td align="right">655,389 ns</td></tr>
+<td align="right">837,259 ns</td><td align="right">864,796 ns</td><td align="right">867,287 ns</td><td align="right">849,704 ns</td><td align="right">599,774 ns</td><td align="right">585,402 ns</td></tr>
 <tr>
-<td align="right">0,854 μs</td><td align="right">0,846 μs</td><td align="right">0,881 μs</td><td align="right">0,904 μs</td><td align="right">0,605 μs</td><td align="right">0,655 μs</td></tr>
+<td align="right">0,837 μs</td><td align="right">0,865 μs</td><td align="right">0,867 μs</td><td align="right">0,850 μs</td><td align="right">0,600 μs</td><td align="right">0,585 μs</td></tr>
 <tr>
 <td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td></tr>
 </table>
 
 ### <a name="Log_Enabled_Benchmark_Log_Info_Format_WithoutBoxing"></a>Log_Info_Format_WithoutBoxing
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
 Slowest: 4.5.0
 
@@ -235,9 +235,9 @@ Slowest: 4.5.0
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">786,109 ns</td><td align="right">776,831 ns</td><td align="right">817,759 ns</td><td align="right">880,080 ns</td><td align="right">509,936 ns</td><td align="right">512,987 ns</td></tr>
+<td align="right">770,808 ns</td><td align="right">768,706 ns</td><td align="right">768,409 ns</td><td align="right">777,968 ns</td><td align="right">562,349 ns</td><td align="right">510,701 ns</td></tr>
 <tr>
-<td align="right">0,786 μs</td><td align="right">0,777 μs</td><td align="right">0,818 μs</td><td align="right">0,880 μs</td><td align="right">0,510 μs</td><td align="right">0,513 μs</td></tr>
+<td align="right">0,771 μs</td><td align="right">0,769 μs</td><td align="right">0,768 μs</td><td align="right">0,778 μs</td><td align="right">0,562 μs</td><td align="right">0,511 μs</td></tr>
 <tr>
 <td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td></tr>
 </table>
@@ -255,9 +255,9 @@ Slowest: 4.4.0
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">133,040 ns</td><td align="right">154,524 ns</td><td align="right">180,225 ns</td><td align="right">158,575 ns</td><td align="right">158,136 ns</td><td align="right">157,226 ns</td></tr>
+<td align="right">133,617 ns</td><td align="right">154,333 ns</td><td align="right">176,464 ns</td><td align="right">158,714 ns</td><td align="right">154,366 ns</td><td align="right">155,717 ns</td></tr>
 <tr>
-<td align="right">0,133 μs</td><td align="right">0,155 μs</td><td align="right">0,180 μs</td><td align="right">0,159 μs</td><td align="right">0,158 μs</td><td align="right">0,157 μs</td></tr>
+<td align="right">0,134 μs</td><td align="right">0,154 μs</td><td align="right">0,176 μs</td><td align="right">0,159 μs</td><td align="right">0,154 μs</td><td align="right">0,156 μs</td></tr>
 <tr>
 <td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -273,9 +273,9 @@ Slowest: 4.4.0
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">133,820 ns</td><td align="right">155,763 ns</td><td align="right">179,971 ns</td><td align="right">159,434 ns</td><td align="right">156,537 ns</td><td align="right">162,008 ns</td></tr>
+<td align="right">136,130 ns</td><td align="right">156,614 ns</td><td align="right">177,626 ns</td><td align="right">156,998 ns</td><td align="right">157,609 ns</td><td align="right">157,023 ns</td></tr>
 <tr>
-<td align="right">0,134 μs</td><td align="right">0,156 μs</td><td align="right">0,180 μs</td><td align="right">0,159 μs</td><td align="right">0,157 μs</td><td align="right">0,162 μs</td></tr>
+<td align="right">0,136 μs</td><td align="right">0,157 μs</td><td align="right">0,178 μs</td><td align="right">0,157 μs</td><td align="right">0,158 μs</td><td align="right">0,157 μs</td></tr>
 <tr>
 <td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -291,9 +291,9 @@ Slowest: 4.4.0
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">127,640 ns</td><td align="right">148,287 ns</td><td align="right">176,632 ns</td><td align="right">152,029 ns</td><td align="right">147,552 ns</td><td align="right">146,508 ns</td></tr>
+<td align="right">126,880 ns</td><td align="right">149,179 ns</td><td align="right">173,269 ns</td><td align="right">149,309 ns</td><td align="right">147,645 ns</td><td align="right">153,090 ns</td></tr>
 <tr>
-<td align="right">0,128 μs</td><td align="right">0,148 μs</td><td align="right">0,177 μs</td><td align="right">0,152 μs</td><td align="right">0,148 μs</td><td align="right">0,147 μs</td></tr>
+<td align="right">0,127 μs</td><td align="right">0,149 μs</td><td align="right">0,173 μs</td><td align="right">0,149 μs</td><td align="right">0,148 μs</td><td align="right">0,153 μs</td></tr>
 <tr>
 <td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -301,24 +301,6 @@ Slowest: 4.4.0
 ## <a name="ModelBase_SetValue_Benchmark"></a>ModelBase_SetValue_Benchmark
 
 ### <a name="ModelBase_SetValue_Benchmark_SetBoolValue"></a>SetBoolValue
-
-Fastest: **4.2.0**
-
-Slowest: 4.5.4
-
-
-<table>
-<tr>
-<th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td align="right">1356,469 ns</td><td align="right">1537,931 ns</td><td align="right">1564,199 ns</td><td align="right">1756,294 ns</td><td align="right">1924,213 ns</td><td align="right">1410,638 ns</td></tr>
-<tr>
-<td align="right">1,356 μs</td><td align="right">1,538 μs</td><td align="right">1,564 μs</td><td align="right">1,756 μs</td><td align="right">1,924 μs</td><td align="right">1,411 μs</td></tr>
-<tr>
-<td align="right">0,001 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,001 ms</td></tr>
-</table>
-
-### <a name="ModelBase_SetValue_Benchmark_SetIntValue"></a>SetIntValue
 
 Fastest: **5.0.0**
 
@@ -329,11 +311,29 @@ Slowest: 4.5.4
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">1820,822 ns</td><td align="right">1908,455 ns</td><td align="right">1672,938 ns</td><td align="right">1982,634 ns</td><td align="right">2059,326 ns</td><td align="right">1512,544 ns</td></tr>
+<td align="right">1601,803 ns</td><td align="right">1660,327 ns</td><td align="right">1520,620 ns</td><td align="right">1820,596 ns</td><td align="right">1892,032 ns</td><td align="right">1399,320 ns</td></tr>
 <tr>
-<td align="right">1,821 μs</td><td align="right">1,908 μs</td><td align="right">1,673 μs</td><td align="right">1,983 μs</td><td align="right">2,059 μs</td><td align="right">1,513 μs</td></tr>
+<td align="right">1,602 μs</td><td align="right">1,660 μs</td><td align="right">1,521 μs</td><td align="right">1,821 μs</td><td align="right">1,892 μs</td><td align="right">1,399 μs</td></tr>
 <tr>
-<td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td></tr>
+<td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,001 ms</td></tr>
+</table>
+
+### <a name="ModelBase_SetValue_Benchmark_SetIntValue"></a>SetIntValue
+
+Fastest: **5.0.0**
+
+Slowest: 4.5.0
+
+
+<table>
+<tr>
+<th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td align="right">1506,226 ns</td><td align="right">1625,895 ns</td><td align="right">1617,764 ns</td><td align="right">1926,060 ns</td><td align="right">1684,920 ns</td><td align="right">1396,248 ns</td></tr>
+<tr>
+<td align="right">1,506 μs</td><td align="right">1,626 μs</td><td align="right">1,618 μs</td><td align="right">1,926 μs</td><td align="right">1,685 μs</td><td align="right">1,396 μs</td></tr>
+<tr>
+<td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,001 ms</td></tr>
 </table>
 
 ### <a name="ModelBase_SetValue_Benchmark_SetStringValue"></a>SetStringValue
@@ -347,31 +347,31 @@ Slowest: 4.5.0
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">1473,032 ns</td><td align="right">1383,606 ns</td><td align="right">1561,474 ns</td><td align="right">1666,596 ns</td><td align="right">1629,216 ns</td><td align="right">1153,065 ns</td></tr>
+<td align="right">1478,548 ns</td><td align="right">1375,609 ns</td><td align="right">1408,330 ns</td><td align="right">1519,240 ns</td><td align="right">1512,504 ns</td><td align="right">1213,078 ns</td></tr>
 <tr>
-<td align="right">1,473 μs</td><td align="right">1,384 μs</td><td align="right">1,561 μs</td><td align="right">1,667 μs</td><td align="right">1,629 μs</td><td align="right">1,153 μs</td></tr>
+<td align="right">1,479 μs</td><td align="right">1,376 μs</td><td align="right">1,408 μs</td><td align="right">1,519 μs</td><td align="right">1,513 μs</td><td align="right">1,213 μs</td></tr>
 <tr>
-<td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,001 ms</td></tr>
+<td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,001 ms</td></tr>
 </table>
 
 ## <a name="Serialization_Binary_Benchmark"></a>Serialization_Binary_Benchmark
 
 ### <a name="Serialization_Binary_Benchmark_SerializeComplexObjectGraph"></a>SerializeComplexObjectGraph
 
-Fastest: **4.3.0**
+Fastest: **4.2.0**
 
-Slowest: 4.5.4
+Slowest: 5.0.0
 
 
 <table>
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">264074,456 ns</td><td align="right">258630,270 ns</td><td align="right">265892,298 ns</td><td align="right">279936,137 ns</td><td align="right">701804,235 ns</td><td align="right">676775,983 ns</td></tr>
+<td align="right">254053,686 ns</td><td align="right">254070,953 ns</td><td align="right">262815,165 ns</td><td align="right">273101,409 ns</td><td align="right">684228,547 ns</td><td align="right">697312,597 ns</td></tr>
 <tr>
-<td align="right">264,074 μs</td><td align="right">258,630 μs</td><td align="right">265,892 μs</td><td align="right">279,936 μs</td><td align="right">701,804 μs</td><td align="right">676,776 μs</td></tr>
+<td align="right">254,054 μs</td><td align="right">254,071 μs</td><td align="right">262,815 μs</td><td align="right">273,101 μs</td><td align="right">684,229 μs</td><td align="right">697,313 μs</td></tr>
 <tr>
-<td align="right">0,264 ms</td><td align="right">0,259 ms</td><td align="right">0,266 ms</td><td align="right">0,280 ms</td><td align="right">0,702 ms</td><td align="right">0,677 ms</td></tr>
+<td align="right">0,254 ms</td><td align="right">0,254 ms</td><td align="right">0,263 ms</td><td align="right">0,273 ms</td><td align="right">0,684 ms</td><td align="right">0,697 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Binary_Benchmark_SerializeLevel1Models"></a>SerializeLevel1Models
@@ -385,47 +385,47 @@ Slowest: 4.5.4
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">54477,966 ns</td><td align="right">56025,649 ns</td><td align="right">54666,452 ns</td><td align="right">58438,911 ns</td><td align="right">435269,284 ns</td><td align="right">432006,586 ns</td></tr>
+<td align="right">51831,579 ns</td><td align="right">51916,135 ns</td><td align="right">57954,210 ns</td><td align="right">57994,150 ns</td><td align="right">426826,556 ns</td><td align="right">426090,254 ns</td></tr>
 <tr>
-<td align="right">54,478 μs</td><td align="right">56,026 μs</td><td align="right">54,666 μs</td><td align="right">58,439 μs</td><td align="right">435,269 μs</td><td align="right">432,007 μs</td></tr>
+<td align="right">51,832 μs</td><td align="right">51,916 μs</td><td align="right">57,954 μs</td><td align="right">57,994 μs</td><td align="right">426,827 μs</td><td align="right">426,090 μs</td></tr>
 <tr>
-<td align="right">0,054 ms</td><td align="right">0,056 ms</td><td align="right">0,055 ms</td><td align="right">0,058 ms</td><td align="right">0,435 ms</td><td align="right">0,432 ms</td></tr>
+<td align="right">0,052 ms</td><td align="right">0,052 ms</td><td align="right">0,058 ms</td><td align="right">0,058 ms</td><td align="right">0,427 ms</td><td align="right">0,426 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Binary_Benchmark_SerializeLevel2Models"></a>SerializeLevel2Models
 
-Fastest: **4.2.0**
+Fastest: **4.3.0**
 
-Slowest: 4.5.4
+Slowest: 5.0.0
 
 
 <table>
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">174650,442 ns</td><td align="right">176159,594 ns</td><td align="right">177739,444 ns</td><td align="right">186256,406 ns</td><td align="right">581873,274 ns</td><td align="right">579116,234 ns</td></tr>
+<td align="right">172867,983 ns</td><td align="right">169813,116 ns</td><td align="right">179939,699 ns</td><td align="right">186242,655 ns</td><td align="right">575405,848 ns</td><td align="right">578357,640 ns</td></tr>
 <tr>
-<td align="right">174,650 μs</td><td align="right">176,160 μs</td><td align="right">177,739 μs</td><td align="right">186,256 μs</td><td align="right">581,873 μs</td><td align="right">579,116 μs</td></tr>
+<td align="right">172,868 μs</td><td align="right">169,813 μs</td><td align="right">179,940 μs</td><td align="right">186,243 μs</td><td align="right">575,406 μs</td><td align="right">578,358 μs</td></tr>
 <tr>
-<td align="right">0,175 ms</td><td align="right">0,176 ms</td><td align="right">0,178 ms</td><td align="right">0,186 ms</td><td align="right">0,582 ms</td><td align="right">0,579 ms</td></tr>
+<td align="right">0,173 ms</td><td align="right">0,170 ms</td><td align="right">0,180 ms</td><td align="right">0,186 ms</td><td align="right">0,575 ms</td><td align="right">0,578 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Binary_Benchmark_SerializeLevel3Models"></a>SerializeLevel3Models
 
 Fastest: **4.2.0**
 
-Slowest: 4.5.4
+Slowest: 5.0.0
 
 
 <table>
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">881091,661 ns</td><td align="right">884835,083 ns</td><td align="right">884573,263 ns</td><td align="right">942858,573 ns</td><td align="right">1445299,300 ns</td><td align="right">1431866,643 ns</td></tr>
+<td align="right">857355,536 ns</td><td align="right">857467,210 ns</td><td align="right">885101,037 ns</td><td align="right">926414,875 ns</td><td align="right">1367355,727 ns</td><td align="right">1386286,585 ns</td></tr>
 <tr>
-<td align="right">881,092 μs</td><td align="right">884,835 μs</td><td align="right">884,573 μs</td><td align="right">942,859 μs</td><td align="right">1445,299 μs</td><td align="right">1431,867 μs</td></tr>
+<td align="right">857,356 μs</td><td align="right">857,467 μs</td><td align="right">885,101 μs</td><td align="right">926,415 μs</td><td align="right">1367,356 μs</td><td align="right">1386,287 μs</td></tr>
 <tr>
-<td align="right">0,881 ms</td><td align="right">0,885 ms</td><td align="right">0,885 ms</td><td align="right">0,943 ms</td><td align="right">1,445 ms</td><td align="right">1,432 ms</td></tr>
+<td align="right">0,857 ms</td><td align="right">0,857 ms</td><td align="right">0,885 ms</td><td align="right">0,926 ms</td><td align="right">1,367 ms</td><td align="right">1,386 ms</td></tr>
 </table>
 
 ## <a name="Serialization_Json_Benchmark"></a>Serialization_Json_Benchmark
@@ -434,77 +434,57 @@ Slowest: 4.5.4
 
 Fastest: **4.3.0**
 
-Slowest: 4.5.0
+Slowest: 4.5.4
 
 
 <table>
 <tr>
-<th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>5.0.0</th></tr>
+<th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">16974024,819 ns</td><td align="right">16836855,019 ns</td><td align="right">16895604,950 ns</td><td align="right">17439959,538 ns</td><td align="right">17431893,916 ns</td></tr>
+<td align="right">17950536,510 ns</td><td align="right">16853080,766 ns</td><td align="right">17141231,031 ns</td><td align="right">16927254,248 ns</td><td align="right">18820603,225 ns</td><td align="right">17445108,742 ns</td></tr>
 <tr>
-<td align="right">16974,025 μs</td><td align="right">16836,855 μs</td><td align="right">16895,605 μs</td><td align="right">17439,960 μs</td><td align="right">17431,894 μs</td></tr>
+<td align="right">17950,537 μs</td><td align="right">16853,081 μs</td><td align="right">17141,231 μs</td><td align="right">16927,254 μs</td><td align="right">18820,603 μs</td><td align="right">17445,109 μs</td></tr>
 <tr>
-<td align="right">16,974 ms</td><td align="right">16,837 ms</td><td align="right">16,896 ms</td><td align="right">17,440 ms</td><td align="right">17,432 ms</td></tr>
+<td align="right">17,951 ms</td><td align="right">16,853 ms</td><td align="right">17,141 ms</td><td align="right">16,927 ms</td><td align="right">18,821 ms</td><td align="right">17,445 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Json_Benchmark_SerializeLevel1Models"></a>SerializeLevel1Models
 
-Fastest: **4.3.0**
+Fastest: **4.2.0**
 
 Slowest: 5.0.0
 
 
 <table>
 <tr>
-<th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>5.0.0</th></tr>
+<th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">738826,421 ns</td><td align="right">703000,003 ns</td><td align="right">706751,489 ns</td><td align="right">720505,614 ns</td><td align="right">1102680,254 ns</td></tr>
+<td align="right">705044,805 ns</td><td align="right">710124,279 ns</td><td align="right">706052,908 ns</td><td align="right">717292,273 ns</td><td align="right">1121476,811 ns</td><td align="right">1143489,768 ns</td></tr>
 <tr>
-<td align="right">738,826 μs</td><td align="right">703,000 μs</td><td align="right">706,751 μs</td><td align="right">720,506 μs</td><td align="right">1102,680 μs</td></tr>
+<td align="right">705,045 μs</td><td align="right">710,124 μs</td><td align="right">706,053 μs</td><td align="right">717,292 μs</td><td align="right">1121,477 μs</td><td align="right">1143,490 μs</td></tr>
 <tr>
-<td align="right">0,739 ms</td><td align="right">0,703 ms</td><td align="right">0,707 ms</td><td align="right">0,721 ms</td><td align="right">1,103 ms</td></tr>
+<td align="right">0,705 ms</td><td align="right">0,710 ms</td><td align="right">0,706 ms</td><td align="right">0,717 ms</td><td align="right">1,121 ms</td><td align="right">1,143 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Json_Benchmark_SerializeLevel2Models"></a>SerializeLevel2Models
 
 Fastest: **4.4.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
 
 <table>
 <tr>
-<th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>5.0.0</th></tr>
+<th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">2839165,904 ns</td><td align="right">2849408,332 ns</td><td align="right">2812727,399 ns</td><td align="right">2909318,252 ns</td><td align="right">3249592,478 ns</td></tr>
+<td align="right">2819345,600 ns</td><td align="right">2802595,727 ns</td><td align="right">2797340,627 ns</td><td align="right">2846512,144 ns</td><td align="right">3269198,134 ns</td><td align="right">3257766,669 ns</td></tr>
 <tr>
-<td align="right">2839,166 μs</td><td align="right">2849,408 μs</td><td align="right">2812,727 μs</td><td align="right">2909,318 μs</td><td align="right">3249,592 μs</td></tr>
+<td align="right">2819,346 μs</td><td align="right">2802,596 μs</td><td align="right">2797,341 μs</td><td align="right">2846,512 μs</td><td align="right">3269,198 μs</td><td align="right">3257,767 μs</td></tr>
 <tr>
-<td align="right">2,839 ms</td><td align="right">2,849 ms</td><td align="right">2,813 ms</td><td align="right">2,909 ms</td><td align="right">3,250 ms</td></tr>
+<td align="right">2,819 ms</td><td align="right">2,803 ms</td><td align="right">2,797 ms</td><td align="right">2,847 ms</td><td align="right">3,269 ms</td><td align="right">3,258 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Json_Benchmark_SerializeLevel3Models"></a>SerializeLevel3Models
-
-Fastest: **4.4.0**
-
-Slowest: 4.5.0
-
-
-<table>
-<tr>
-<th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>5.0.0</th></tr>
-<tr>
-<td align="right">14060171,027 ns</td><td align="right">13340263,379 ns</td><td align="right">13325679,409 ns</td><td align="right">14323426,581 ns</td><td align="right">13880631,126 ns</td></tr>
-<tr>
-<td align="right">14060,171 μs</td><td align="right">13340,263 μs</td><td align="right">13325,679 μs</td><td align="right">14323,427 μs</td><td align="right">13880,631 μs</td></tr>
-<tr>
-<td align="right">14,060 ms</td><td align="right">13,340 ms</td><td align="right">13,326 ms</td><td align="right">14,323 ms</td><td align="right">13,881 ms</td></tr>
-</table>
-
-## <a name="Serialization_Xml_Benchmark"></a>Serialization_Xml_Benchmark
-
-### <a name="Serialization_Xml_Benchmark_SerializeComplexObjectGraph"></a>SerializeComplexObjectGraph
 
 Fastest: **4.3.0**
 
@@ -515,11 +495,31 @@ Slowest: 4.5.4
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">753179,465 ns</td><td align="right">733776,768 ns</td><td align="right">868150,050 ns</td><td align="right">990957,303 ns</td><td align="right">1452579,218 ns</td><td align="right">1386418,762 ns</td></tr>
+<td align="right">13685613,987 ns</td><td align="right">13181783,962 ns</td><td align="right">13252394,566 ns</td><td align="right">13346558,597 ns</td><td align="right">14153938,418 ns</td><td align="right">14008624,159 ns</td></tr>
 <tr>
-<td align="right">753,179 μs</td><td align="right">733,777 μs</td><td align="right">868,150 μs</td><td align="right">990,957 μs</td><td align="right">1452,579 μs</td><td align="right">1386,419 μs</td></tr>
+<td align="right">13685,614 μs</td><td align="right">13181,784 μs</td><td align="right">13252,395 μs</td><td align="right">13346,559 μs</td><td align="right">14153,938 μs</td><td align="right">14008,624 μs</td></tr>
 <tr>
-<td align="right">0,753 ms</td><td align="right">0,734 ms</td><td align="right">0,868 ms</td><td align="right">0,991 ms</td><td align="right">1,453 ms</td><td align="right">1,386 ms</td></tr>
+<td align="right">13,686 ms</td><td align="right">13,182 ms</td><td align="right">13,252 ms</td><td align="right">13,347 ms</td><td align="right">14,154 ms</td><td align="right">14,009 ms</td></tr>
+</table>
+
+## <a name="Serialization_Xml_Benchmark"></a>Serialization_Xml_Benchmark
+
+### <a name="Serialization_Xml_Benchmark_SerializeComplexObjectGraph"></a>SerializeComplexObjectGraph
+
+Fastest: **4.2.0**
+
+Slowest: 4.5.4
+
+
+<table>
+<tr>
+<th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td align="right">716087,699 ns</td><td align="right">739647,732 ns</td><td align="right">876922,361 ns</td><td align="right">932483,425 ns</td><td align="right">1368339,423 ns</td><td align="right">1356756,097 ns</td></tr>
+<tr>
+<td align="right">716,088 μs</td><td align="right">739,648 μs</td><td align="right">876,922 μs</td><td align="right">932,483 μs</td><td align="right">1368,339 μs</td><td align="right">1356,756 μs</td></tr>
+<tr>
+<td align="right">0,716 ms</td><td align="right">0,740 ms</td><td align="right">0,877 ms</td><td align="right">0,932 ms</td><td align="right">1,368 ms</td><td align="right">1,357 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Xml_Benchmark_SerializeLevel1Models"></a>SerializeLevel1Models
@@ -533,16 +533,16 @@ Slowest: 4.5.4
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">95328,274 ns</td><td align="right">90567,987 ns</td><td align="right">130959,801 ns</td><td align="right">152428,778 ns</td><td align="right">531457,643 ns</td><td align="right">528359,066 ns</td></tr>
+<td align="right">89680,676 ns</td><td align="right">89277,361 ns</td><td align="right">132363,152 ns</td><td align="right">145195,942 ns</td><td align="right">529618,695 ns</td><td align="right">524537,003 ns</td></tr>
 <tr>
-<td align="right">95,328 μs</td><td align="right">90,568 μs</td><td align="right">130,960 μs</td><td align="right">152,429 μs</td><td align="right">531,458 μs</td><td align="right">528,359 μs</td></tr>
+<td align="right">89,681 μs</td><td align="right">89,277 μs</td><td align="right">132,363 μs</td><td align="right">145,196 μs</td><td align="right">529,619 μs</td><td align="right">524,537 μs</td></tr>
 <tr>
-<td align="right">0,095 ms</td><td align="right">0,091 ms</td><td align="right">0,131 ms</td><td align="right">0,152 ms</td><td align="right">0,531 ms</td><td align="right">0,528 ms</td></tr>
+<td align="right">0,090 ms</td><td align="right">0,089 ms</td><td align="right">0,132 ms</td><td align="right">0,145 ms</td><td align="right">0,530 ms</td><td align="right">0,525 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Xml_Benchmark_SerializeLevel2Models"></a>SerializeLevel2Models
 
-Fastest: **4.3.0**
+Fastest: **4.2.0**
 
 Slowest: 4.5.4
 
@@ -551,29 +551,29 @@ Slowest: 4.5.4
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">335097,330 ns</td><td align="right">327458,206 ns</td><td align="right">459009,045 ns</td><td align="right">532839,562 ns</td><td align="right">944107,504 ns</td><td align="right">919589,776 ns</td></tr>
+<td align="right">319827,414 ns</td><td align="right">322964,149 ns</td><td align="right">464239,348 ns</td><td align="right">515051,456 ns</td><td align="right">933239,887 ns</td><td align="right">923625,340 ns</td></tr>
 <tr>
-<td align="right">335,097 μs</td><td align="right">327,458 μs</td><td align="right">459,009 μs</td><td align="right">532,840 μs</td><td align="right">944,108 μs</td><td align="right">919,590 μs</td></tr>
+<td align="right">319,827 μs</td><td align="right">322,964 μs</td><td align="right">464,239 μs</td><td align="right">515,051 μs</td><td align="right">933,240 μs</td><td align="right">923,625 μs</td></tr>
 <tr>
-<td align="right">0,335 ms</td><td align="right">0,327 ms</td><td align="right">0,459 ms</td><td align="right">0,533 ms</td><td align="right">0,944 ms</td><td align="right">0,920 ms</td></tr>
+<td align="right">0,320 ms</td><td align="right">0,323 ms</td><td align="right">0,464 ms</td><td align="right">0,515 ms</td><td align="right">0,933 ms</td><td align="right">0,924 ms</td></tr>
 </table>
 
 ### <a name="Serialization_Xml_Benchmark_SerializeLevel3Models"></a>SerializeLevel3Models
 
-Fastest: **4.3.0**
+Fastest: **4.2.0**
 
-Slowest: 4.5.4
+Slowest: 5.0.0
 
 
 <table>
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">1732570,730 ns</td><td align="right">1603113,938 ns</td><td align="right">2230568,737 ns</td><td align="right">2497885,513 ns</td><td align="right">3072563,961 ns</td><td align="right">2953022,582 ns</td></tr>
+<td align="right">1562416,523 ns</td><td align="right">1596208,513 ns</td><td align="right">2188265,211 ns</td><td align="right">2362494,739 ns</td><td align="right">2938769,968 ns</td><td align="right">2952078,311 ns</td></tr>
 <tr>
-<td align="right">1732,571 μs</td><td align="right">1603,114 μs</td><td align="right">2230,569 μs</td><td align="right">2497,886 μs</td><td align="right">3072,564 μs</td><td align="right">2953,023 μs</td></tr>
+<td align="right">1562,417 μs</td><td align="right">1596,209 μs</td><td align="right">2188,265 μs</td><td align="right">2362,495 μs</td><td align="right">2938,770 μs</td><td align="right">2952,078 μs</td></tr>
 <tr>
-<td align="right">1,733 ms</td><td align="right">1,603 ms</td><td align="right">2,231 ms</td><td align="right">2,498 ms</td><td align="right">3,073 ms</td><td align="right">2,953 ms</td></tr>
+<td align="right">1,562 ms</td><td align="right">1,596 ms</td><td align="right">2,188 ms</td><td align="right">2,362 ms</td><td align="right">2,939 ms</td><td align="right">2,952 ms</td></tr>
 </table>
 
 ## <a name="ViewModelBase_Benchmark"></a>ViewModelBase_Benchmark
@@ -589,10 +589,10 @@ Slowest: 4.5.0
 <tr>
 <th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td align="right">30800,571 ns</td><td align="right">33359,787 ns</td><td align="right">33415,775 ns</td><td align="right">34287,458 ns</td><td align="right">33752,348 ns</td><td align="right">22920,182 ns</td></tr>
+<td align="right">31166,244 ns</td><td align="right">32847,224 ns</td><td align="right">33651,092 ns</td><td align="right">34852,924 ns</td><td align="right">32927,461 ns</td><td align="right">22812,336 ns</td></tr>
 <tr>
-<td align="right">30,801 μs</td><td align="right">33,360 μs</td><td align="right">33,416 μs</td><td align="right">34,287 μs</td><td align="right">33,752 μs</td><td align="right">22,920 μs</td></tr>
+<td align="right">31,166 μs</td><td align="right">32,847 μs</td><td align="right">33,651 μs</td><td align="right">34,853 μs</td><td align="right">32,927 μs</td><td align="right">22,812 μs</td></tr>
 <tr>
-<td align="right">0,031 ms</td><td align="right">0,033 ms</td><td align="right">0,033 ms</td><td align="right">0,034 ms</td><td align="right">0,034 ms</td><td align="right">0,023 ms</td></tr>
+<td align="right">0,031 ms</td><td align="right">0,033 ms</td><td align="right">0,034 ms</td><td align="right">0,035 ms</td><td align="right">0,033 ms</td><td align="right">0,023 ms</td></tr>
 </table>
 
