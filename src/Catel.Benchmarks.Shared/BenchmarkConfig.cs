@@ -22,11 +22,11 @@ namespace Catel.Benchmarks
             KeepBenchmarkFiles = true;
 
             // Exporters
-            Add(MarkdownExporter.Default);
-            Add(MarkdownExporter.GitHub);
-            Add(AsciiDocExporter.Default);
-            Add(HtmlExporter.Default);
-            Add(CsvExporter.Default);
+            //Add(MarkdownExporter.Default);
+            //Add(MarkdownExporter.GitHub);
+            //Add(AsciiDocExporter.Default);
+            //Add(HtmlExporter.Default);
+            //Add(CsvExporter.Default);
             Add(CsvMeasurementsExporter.Default);
             //Add(RPlotExporter.Default);
 

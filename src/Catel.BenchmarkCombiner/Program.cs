@@ -15,6 +15,7 @@ namespace Catel.BenchmarkCombiner
     using CsvHelper;
     using CsvHelper.Configuration;
     using Exporters;
+    using IoC;
     using Logging;
     using Models.Maps;
 
@@ -43,44 +44,53 @@ namespace Catel.BenchmarkCombiner
             var outputDirectory = Path.GetFullPath(Path.Combine(baseDirectory, ".."));
             var exportDirectory = Path.GetFullPath(Path.Combine(baseDirectory, "..", "..", "..", "results"));
 
+            var benchmarkDuration = TimeSpan.Zero;
+
             Console.WriteLine("Do you want to run benchmarks now? (y/n)");
             var keyInfo = Console.ReadKey();
             if (string.Equals(keyInfo.KeyChar.ToString(), "y", StringComparison.OrdinalIgnoreCase))
             {
-                foreach (var directory in Directory.GetDirectories(outputDirectory))
-                {
-                    if (baseDirectory.Equals(directory, StringComparison.OrdinalIgnoreCase))
-                    {
-                        continue;
-                    }
+                var stopwatch = Stopwatch.StartNew();
 
-                    RunBenchmarks(directory);
-                }
+                RunBenchmarks(baseDirectory, outputDirectory);
+
+                stopwatch.Stop();
+
+                benchmarkDuration = stopwatch.Elapsed;
             }
 
-            var summaries = FindExportSummaries(exportDirectory);
-            if (summaries.Count > 0)
-            {
-                Directory.CreateDirectory(exportDirectory);
-
-                var exporters = new List<IExporter>();
-                exporters.Add(new MarkdownExporter());
-
-                foreach (var exporter in exporters)
-                {
-                    Log.Info($"Exporting using '{exporter.GetType().Name}' to '{exportDirectory}'");
-
-                    exporter.Export(exportDirectory, summaries);
-                }
-            }
+            CreateExportSummary(exportDirectory, benchmarkDuration);
         }
 
-        static void RunBenchmarks(string directory)
+        static void RunBenchmarks(string baseDirectory, string outputDirectory)
+        {
+            var stopwatch = Stopwatch.StartNew();
+            var benchmarkCount = 0;
+
+            foreach (var directory in Directory.GetDirectories(outputDirectory))
+            {
+                if (baseDirectory.Equals(directory, StringComparison.OrdinalIgnoreCase))
+                {
+                    continue;
+                }
+
+                if (RunBenchmarksForSpecificVersion(directory))
+                {
+                    benchmarkCount++;
+                }
+            }
+
+            stopwatch.Stop();
+
+            Log.Info($"Running {benchmarkCount} benchmarks took '{stopwatch.Elapsed}'");
+        }
+
+        static bool RunBenchmarksForSpecificVersion(string directory)
         {
             var exe = Path.Combine(directory, "Catel.Benchmarks.exe");
             if (!File.Exists(exe))
             {
-                return;
+                return false;
             }
 
             Log.Info($"Running benchmark at '{exe}'");
@@ -90,8 +100,48 @@ namespace Catel.BenchmarkCombiner
                 WorkingDirectory = directory,
             };
 
+            var stopwatch = Stopwatch.StartNew();
+
             var process = Process.Start(processStartInfo);
             process.WaitForExit();
+
+            stopwatch.Stop();
+
+            var directoryInfo = new DirectoryInfo(directory);
+
+            Log.Info($"Running benchmarks took '{stopwatch.Elapsed}' for '{directoryInfo.Name}'");
+
+            return true;
+        }
+
+        static void CreateExportSummary(string exportDirectory, TimeSpan benchmarkDuration)
+        {
+            var stopwatch = Stopwatch.StartNew();
+
+            var summaries = FindExportSummaries(exportDirectory);
+            if (summaries.Count > 0)
+            {
+                var exportContext = new ExportContext(exportDirectory, summaries)
+                {
+                    BenchmarkDuration = benchmarkDuration
+                };
+
+                Directory.CreateDirectory(exportDirectory);
+
+                var exporters = new List<IExporter>();
+                exporters.Add(new MarkdownExporter());
+
+                foreach (var exporter in exporters)
+                {
+                    Log.Info($"Exporting using '{exporter.GetType().Name}' to '{exportDirectory}'");
+
+                    exporter.Export(exportContext);
+                }
+            }
+
+            stopwatch.Stop();
+
+            Log.Info($"Generating {summaries.Count} export summary took '{stopwatch.Elapsed}'");
         }
 
         static List<ExportSummary> FindExportSummaries(string outputDirectory)

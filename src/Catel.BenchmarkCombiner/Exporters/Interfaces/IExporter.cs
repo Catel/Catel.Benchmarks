@@ -7,12 +7,10 @@
 
 namespace Catel.BenchmarkCombiner.Exporters
 {
-    using System.Collections.Generic;
-
     public interface IExporter
     {
         #region Methods
-        void Export(string targetDirectory, List<ExportSummary> exportSummaries);
+        void Export(ExportContext exportContext);
         #endregion
     }
 }

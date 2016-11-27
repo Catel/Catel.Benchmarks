@@ -17,9 +17,9 @@ namespace Catel.BenchmarkCombiner.Exporters
         private const string FileName = "summary.md";
 
         #region Methods
-        public override void Export(string targetDirectory, List<ExportSummary> exportSummaries)
+        public override void Export(ExportContext exportContext)
         {
-            var outputFileName = Path.Combine(targetDirectory, FileName);
+            var outputFileName = Path.Combine(exportContext.ExportDirectory, FileName);
 
             using (var stream = new FileStream(outputFileName, FileMode.Create, FileAccess.Write))
             {
@@ -30,6 +30,13 @@ namespace Catel.BenchmarkCombiner.Exporters
                     streamWriter.WriteLine();
                     streamWriter.WriteLine($"Benchmark report generated on {DateTime.Now.ToString("dd-MMM-yyyy HH:mm")}");
                     streamWriter.WriteLine();
+
+                    if (exportContext.BenchmarkDuration > TimeSpan.Zero)
+                    {
+                        streamWriter.WriteLine($"Running the benchmarks took {exportContext.BenchmarkDuration}");
+                        streamWriter.WriteLine();
+                    }
+
                     streamWriter.WriteLine("All timings are average time per operation (thus the time represents a single operation)");
                     streamWriter.WriteLine();
                     streamWriter.WriteLine("**Legend**\n");
@@ -38,7 +45,7 @@ namespace Catel.BenchmarkCombiner.Exporters
                     streamWriter.WriteLine("*ms = millisecond (= 1000 microseconds)*\n");
                     streamWriter.WriteLine();
 
-                    var measurementGroups = exportSummaries.ConvertToMeasurementGroups();
+                    var measurementGroups = exportContext.ExportSummaries.ConvertToMeasurementGroups();
 
                     // Table of contents
                     streamWriter.WriteLine("## Table of contents");
