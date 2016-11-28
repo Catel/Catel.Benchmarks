@@ -44,6 +44,9 @@ namespace Catel.BenchmarkCombiner.Exporters
                     streamWriter.WriteLine("*μs = microsecond (= 1000 nanoseconds)*\n");
                     streamWriter.WriteLine("*ms = millisecond (= 1000 microseconds)*\n");
                     streamWriter.WriteLine();
+                    streamWriter.Write("If versions behave the same (e.g. result in exactly the same values), this report will show ");
+                    streamWriter.Write("the highest version to represent the most recent state at best.");
+                    streamWriter.WriteLine();
 
                     var measurementGroups = exportContext.ExportSummaries.ConvertToMeasurementGroups();
 
@@ -266,10 +269,16 @@ namespace Catel.BenchmarkCombiner.Exporters
 
         private void WriteMemorySummaryLine(string title, VersionMeasurements least, VersionMeasurements most, StreamWriter streamWriter)
         {
+            var hasMost = most != null;
+            var leastValue = hasMost ? least.Version : "-";
+            var mostValue = hasMost ? most.Version : "-";
+
             streamWriter.WriteLine("<tr>");
             streamWriter.WriteLine($"<td>{title}</td>");
-            streamWriter.WriteLine($"<td>{least.Version}</td>");
-            streamWriter.WriteLine($"<td>{most.Version}</td>");
+
+            streamWriter.WriteLine($"<td align=\"right\">{leastValue}</td>");
+            streamWriter.WriteLine($"<td align=\"right\">{mostValue}</td>");
+
             streamWriter.WriteLine("</tr>");
         }
         #endregion
