@@ -1,6 +1,6 @@
 # Benchmarks
 
-Benchmark report generated on 28-nov-2016 18:09
+Benchmark report generated on 28-nov-2016 18:18
 
 All timings are average time per operation (thus the time represents a single operation)
 
@@ -116,7 +116,9 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">40</td></tr>
+<td>Allocated Bytes</td><td align="right">40</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,039</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -179,7 +181,9 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">0</td></tr>
+<td>Allocated Bytes</td><td align="right">0</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,000</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -244,7 +248,9 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">0</td></tr>
+<td>Allocated Bytes</td><td align="right">0</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,000</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -307,7 +313,9 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">0</td></tr>
+<td>Allocated Bytes</td><td align="right">0</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,000</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -372,7 +380,9 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">0</td></tr>
+<td>Allocated Bytes</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">0</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,000</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -435,7 +445,9 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><td align="right">56</td></tr>
+<td>Allocated Bytes</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,055</td><td align="right">0,055</td><td align="right">0,055</td><td align="right">0,055</td><td align="right">0,055</td><td align="right">0,055</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -498,7 +510,9 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">32</td><td align="right">32</td><td align="right">32</td><td align="right">32</td><td align="right">32</td><td align="right">32</td></tr>
+<td>Allocated Bytes</td><td align="right">32</td><td align="right">32</td><td align="right">32</td><td align="right">32</td><td align="right">32</td><td align="right">32</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,031</td><td align="right">0,031</td><td align="right">0,031</td><td align="right">0,031</td><td align="right">0,031</td><td align="right">0,031</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -563,7 +577,9 @@ Slowest: 4.2.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">224</td><td align="right">224</td><td align="right">224</td><td align="right">256</td><td align="right">216</td><td align="right">192</td></tr>
+<td>Allocated Bytes</td><td align="right">224</td><td align="right">224</td><td align="right">224</td><td align="right">256</td><td align="right">216</td><td align="right">192</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,219</td><td align="right">0,219</td><td align="right">0,219</td><td align="right">0,250</td><td align="right">0,211</td><td align="right">0,188</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -626,7 +642,9 @@ Slowest: 4.4.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">392</td><td align="right">392</td><td align="right">392</td><td align="right">424</td><td align="right">384</td><td align="right">384</td></tr>
+<td>Allocated Bytes</td><td align="right">392</td><td align="right">392</td><td align="right">392</td><td align="right">424</td><td align="right">384</td><td align="right">384</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,383</td><td align="right">0,383</td><td align="right">0,383</td><td align="right">0,414</td><td align="right">0,375</td><td align="right">0,375</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -689,7 +707,9 @@ Slowest: 4.2.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">384</td><td align="right">384</td><td align="right">384</td><td align="right">416</td><td align="right">376</td><td align="right">376</td></tr>
+<td>Allocated Bytes</td><td align="right">384</td><td align="right">384</td><td align="right">384</td><td align="right">416</td><td align="right">376</td><td align="right">376</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,375</td><td align="right">0,375</td><td align="right">0,375</td><td align="right">0,406</td><td align="right">0,367</td><td align="right">0,367</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -754,7 +774,9 @@ Slowest: 4.4.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Allocated Bytes</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -817,7 +839,9 @@ Slowest: 4.4.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Allocated Bytes</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -880,7 +904,9 @@ Slowest: 4.4.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Allocated Bytes</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -945,7 +971,9 @@ Slowest: 4.4.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">472</td><td align="right">504</td><td align="right">504</td><td align="right">624</td><td align="right">624</td><td align="right">408</td></tr>
+<td>Allocated Bytes</td><td align="right">472</td><td align="right">504</td><td align="right">504</td><td align="right">624</td><td align="right">624</td><td align="right">408</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,461</td><td align="right">0,492</td><td align="right">0,492</td><td align="right">0,609</td><td align="right">0,609</td><td align="right">0,398</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,001</td><td align="right">0,001</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -1008,7 +1036,9 @@ Slowest: 4.5.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">472</td><td align="right">504</td><td align="right">504</td><td align="right">624</td><td align="right">624</td><td align="right">408</td></tr>
+<td>Allocated Bytes</td><td align="right">472</td><td align="right">504</td><td align="right">504</td><td align="right">624</td><td align="right">624</td><td align="right">408</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,461</td><td align="right">0,492</td><td align="right">0,492</td><td align="right">0,609</td><td align="right">0,609</td><td align="right">0,398</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,001</td><td align="right">0,001</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -1071,7 +1101,9 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">448</td><td align="right">480</td><td align="right">480</td><td align="right">600</td><td align="right">600</td><td align="right">384</td></tr>
+<td>Allocated Bytes</td><td align="right">448</td><td align="right">480</td><td align="right">480</td><td align="right">600</td><td align="right">600</td><td align="right">384</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,438</td><td align="right">0,469</td><td align="right">0,469</td><td align="right">0,586</td><td align="right">0,586</td><td align="right">0,375</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,001</td><td align="right">0,001</td><td align="right">0,000</td></tr>
 </table>
 
 
@@ -1136,7 +1168,9 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">79520</td><td align="right">79520</td><td align="right">80840</td><td align="right">85166</td><td align="right">110028</td><td align="right">109863</td></tr>
+<td>Allocated Bytes</td><td align="right">79520</td><td align="right">79520</td><td align="right">80840</td><td align="right">85166</td><td align="right">110028</td><td align="right">109863</td><tr>
+<td>Allocated Kilobytes</td><td align="right">77,656</td><td align="right">77,656</td><td align="right">78,945</td><td align="right">83,170</td><td align="right">107,449</td><td align="right">107,288</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,076</td><td align="right">0,076</td><td align="right">0,077</td><td align="right">0,081</td><td align="right">0,105</td><td align="right">0,105</td></tr>
 </table>
 
 
@@ -1199,7 +1233,9 @@ Slowest: 5.0.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">19824</td><td align="right">19824</td><td align="right">20166</td><td align="right">21464</td><td align="right">39041</td><td align="right">38943</td></tr>
+<td>Allocated Bytes</td><td align="right">19824</td><td align="right">19824</td><td align="right">20166</td><td align="right">21464</td><td align="right">39041</td><td align="right">38943</td><tr>
+<td>Allocated Kilobytes</td><td align="right">19,359</td><td align="right">19,359</td><td align="right">19,693</td><td align="right">20,961</td><td align="right">38,126</td><td align="right">38,030</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,019</td><td align="right">0,019</td><td align="right">0,019</td><td align="right">0,020</td><td align="right">0,037</td><td align="right">0,037</td></tr>
 </table>
 
 
@@ -1262,7 +1298,9 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">59121</td><td align="right">59122</td><td align="right">60459</td><td align="right">64846</td><td align="right">87643</td><td align="right">87470</td></tr>
+<td>Allocated Bytes</td><td align="right">59121</td><td align="right">59122</td><td align="right">60459</td><td align="right">64846</td><td align="right">87643</td><td align="right">87470</td><tr>
+<td>Allocated Kilobytes</td><td align="right">57,735</td><td align="right">57,736</td><td align="right">59,042</td><td align="right">63,326</td><td align="right">85,589</td><td align="right">85,420</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,056</td><td align="right">0,056</td><td align="right">0,058</td><td align="right">0,062</td><td align="right">0,084</td><td align="right">0,083</td></tr>
 </table>
 
 
@@ -1325,7 +1363,9 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">262613</td><td align="right">262613</td><td align="right">268903</td><td align="right">288600</td><td align="right">337023</td><td align="right">336489</td></tr>
+<td>Allocated Bytes</td><td align="right">262613</td><td align="right">262613</td><td align="right">268903</td><td align="right">288600</td><td align="right">337023</td><td align="right">336489</td><tr>
+<td>Allocated Kilobytes</td><td align="right">256,458</td><td align="right">256,458</td><td align="right">262,601</td><td align="right">281,836</td><td align="right">329,124</td><td align="right">328,603</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,250</td><td align="right">0,250</td><td align="right">0,256</td><td align="right">0,275</td><td align="right">0,321</td><td align="right">0,321</td></tr>
 </table>
 
 
@@ -1390,7 +1430,9 @@ Slowest: 4.2.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">1429262</td><td align="right">1429262</td><td align="right">1455125</td><td align="right">1483791</td><td align="right">1559567</td><td align="right">1561615</td></tr>
+<td>Allocated Bytes</td><td align="right">1429262</td><td align="right">1429262</td><td align="right">1455125</td><td align="right">1483791</td><td align="right">1559567</td><td align="right">1561615</td><tr>
+<td>Allocated Kilobytes</td><td align="right">1395,764</td><td align="right">1395,764</td><td align="right">1421,021</td><td align="right">1449,015</td><td align="right">1523,015</td><td align="right">1525,015</td><tr>
+<td>Allocated Megabytes</td><td align="right">1,363</td><td align="right">1,363</td><td align="right">1,388</td><td align="right">1,415</td><td align="right">1,487</td><td align="right">1,489</td></tr>
 </table>
 
 
@@ -1453,7 +1495,9 @@ Slowest: 5.0.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">66421</td><td align="right">66421</td><td align="right">67376</td><td align="right">69216</td><td align="right">87723</td><td align="right">87450</td></tr>
+<td>Allocated Bytes</td><td align="right">66421</td><td align="right">66421</td><td align="right">67376</td><td align="right">69216</td><td align="right">87723</td><td align="right">87450</td><tr>
+<td>Allocated Kilobytes</td><td align="right">64,864</td><td align="right">64,864</td><td align="right">65,797</td><td align="right">67,594</td><td align="right">85,667</td><td align="right">85,400</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,063</td><td align="right">0,063</td><td align="right">0,064</td><td align="right">0,066</td><td align="right">0,084</td><td align="right">0,083</td></tr>
 </table>
 
 
@@ -1516,7 +1560,9 @@ Slowest: 5.0.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">246724</td><td align="right">246750</td><td align="right">248783</td><td align="right">256130</td><td align="right">283650</td><td align="right">283522</td></tr>
+<td>Allocated Bytes</td><td align="right">246724</td><td align="right">246750</td><td align="right">248783</td><td align="right">256130</td><td align="right">283650</td><td align="right">283522</td><tr>
+<td>Allocated Kilobytes</td><td align="right">240,941</td><td align="right">240,967</td><td align="right">242,952</td><td align="right">250,127</td><td align="right">277,002</td><td align="right">276,877</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,235</td><td align="right">0,235</td><td align="right">0,237</td><td align="right">0,244</td><td align="right">0,271</td><td align="right">0,270</td></tr>
 </table>
 
 
@@ -1579,7 +1625,9 @@ Slowest: 5.0.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">1150026</td><td align="right">1150026</td><td align="right">1159270</td><td align="right">1203723</td><td align="right">1267211</td><td align="right">1268233</td></tr>
+<td>Allocated Bytes</td><td align="right">1150026</td><td align="right">1150026</td><td align="right">1159270</td><td align="right">1203723</td><td align="right">1267211</td><td align="right">1268233</td><tr>
+<td>Allocated Kilobytes</td><td align="right">1123,072</td><td align="right">1123,072</td><td align="right">1132,100</td><td align="right">1175,511</td><td align="right">1237,511</td><td align="right">1238,509</td><tr>
+<td>Allocated Megabytes</td><td align="right">1,097</td><td align="right">1,097</td><td align="right">1,106</td><td align="right">1,148</td><td align="right">1,209</td><td align="right">1,209</td></tr>
 </table>
 
 
@@ -1644,7 +1692,9 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">544348</td><td align="right">544341</td><td align="right">550235</td><td align="right">559516</td><td align="right">587122</td><td align="right">587002</td></tr>
+<td>Allocated Bytes</td><td align="right">544348</td><td align="right">544341</td><td align="right">550235</td><td align="right">559516</td><td align="right">587122</td><td align="right">587002</td><tr>
+<td>Allocated Kilobytes</td><td align="right">531,590</td><td align="right">531,583</td><td align="right">537,339</td><td align="right">546,402</td><td align="right">573,361</td><td align="right">573,244</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,519</td><td align="right">0,519</td><td align="right">0,525</td><td align="right">0,534</td><td align="right">0,560</td><td align="right">0,560</td></tr>
 </table>
 
 
@@ -1707,7 +1757,9 @@ Slowest: 5.0.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">115961</td><td align="right">115961</td><td align="right">117638</td><td align="right">120588</td><td align="right">138491</td><td align="right">138417</td></tr>
+<td>Allocated Bytes</td><td align="right">115961</td><td align="right">115961</td><td align="right">117638</td><td align="right">120588</td><td align="right">138491</td><td align="right">138417</td><tr>
+<td>Allocated Kilobytes</td><td align="right">113,243</td><td align="right">113,243</td><td align="right">114,881</td><td align="right">117,762</td><td align="right">135,245</td><td align="right">135,173</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,111</td><td align="right">0,111</td><td align="right">0,112</td><td align="right">0,115</td><td align="right">0,132</td><td align="right">0,132</td></tr>
 </table>
 
 
@@ -1770,7 +1822,9 @@ Slowest: 5.0.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">396409</td><td align="right">396408</td><td align="right">402325</td><td align="right">412037</td><td align="right">437381</td><td align="right">437253</td></tr>
+<td>Allocated Bytes</td><td align="right">396409</td><td align="right">396408</td><td align="right">402325</td><td align="right">412037</td><td align="right">437381</td><td align="right">437253</td><tr>
+<td>Allocated Kilobytes</td><td align="right">387,118</td><td align="right">387,117</td><td align="right">392,896</td><td align="right">402,380</td><td align="right">427,130</td><td align="right">427,005</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,378</td><td align="right">0,378</td><td align="right">0,384</td><td align="right">0,393</td><td align="right">0,417</td><td align="right">0,417</td></tr>
 </table>
 
 
@@ -1833,7 +1887,9 @@ Slowest: 5.0.0
 <td>Gen 1</td><td align="right">0</td><td align="right">48</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">1800006</td><td align="right">1799911</td><td align="right">1826443</td><td align="right">1868794</td><td align="right">1930773</td><td align="right">1930305</td></tr>
+<td>Allocated Bytes</td><td align="right">1800006</td><td align="right">1799911</td><td align="right">1826443</td><td align="right">1868794</td><td align="right">1930773</td><td align="right">1930305</td><tr>
+<td>Allocated Kilobytes</td><td align="right">1757,818</td><td align="right">1757,726</td><td align="right">1783,636</td><td align="right">1824,994</td><td align="right">1885,521</td><td align="right">1885,063</td><tr>
+<td>Allocated Megabytes</td><td align="right">1,717</td><td align="right">1,717</td><td align="right">1,742</td><td align="right">1,782</td><td align="right">1,841</td><td align="right">1,841</td></tr>
 </table>
 
 
@@ -1898,7 +1954,9 @@ Slowest: 4.5.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">7625</td><td align="right">7747</td><td align="right">7676</td><td align="right">7541</td><td align="right">7548</td><td align="right">6195</td></tr>
+<td>Allocated Bytes</td><td align="right">7625</td><td align="right">7747</td><td align="right">7676</td><td align="right">7541</td><td align="right">7548</td><td align="right">6195</td><tr>
+<td>Allocated Kilobytes</td><td align="right">7,446</td><td align="right">7,565</td><td align="right">7,496</td><td align="right">7,364</td><td align="right">7,371</td><td align="right">6,050</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,006</td></tr>
 </table>
 
 

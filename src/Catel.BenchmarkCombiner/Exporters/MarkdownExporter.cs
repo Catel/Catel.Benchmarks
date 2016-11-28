@@ -262,6 +262,24 @@ namespace Catel.BenchmarkCombiner.Exporters
                 streamWriter.Write($"<td align=\"right\">{version.AverageAllocatedBytesPer1000Operations}</td>");
             }
 
+            // Table content - Allocated kilo bytes
+            streamWriter.WriteLine("<tr>");
+            streamWriter.Write("<td>Allocated Kilobytes</td>");
+
+            foreach (var version in measurementGroup.Measurements)
+            {
+                streamWriter.Write($"<td align=\"right\">{version.AverageAllocatedBytesPer1000Operations.ConvertBytesToKilobytes():0.000}</td>");
+            }
+
+            // Table content - Allocated mega bytes
+            streamWriter.WriteLine("<tr>");
+            streamWriter.Write("<td>Allocated Megabytes</td>");
+
+            foreach (var version in measurementGroup.Measurements)
+            {
+                streamWriter.Write($"<td align=\"right\">{version.AverageAllocatedBytesPer1000Operations.ConvertBytesToMegabytes():0.000}</td>");
+            }
+
             streamWriter.WriteLine("</tr>");
 
             streamWriter.WriteLine("</table>");

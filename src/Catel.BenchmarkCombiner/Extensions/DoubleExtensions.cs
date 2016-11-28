@@ -23,5 +23,20 @@ namespace Catel.BenchmarkCombiner
 
             return milliSeconds;
         }
+
+        public static double ConvertBytesToKilobytes(this double bytes)
+        {
+            var kilobytes = bytes / 1024d;
+
+            return kilobytes;
+        }
+
+        public static double ConvertBytesToMegabytes(this double bytes)
+        {
+            var kilobytes = bytes.ConvertBytesToKilobytes();
+            var megabytes = kilobytes / 1024d;
+
+            return megabytes;
+        }
     }
 }
