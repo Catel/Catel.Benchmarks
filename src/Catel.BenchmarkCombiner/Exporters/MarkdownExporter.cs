@@ -75,14 +75,11 @@ namespace Catel.BenchmarkCombiner.Exporters
                             streamWriter.WriteLine($"### <a name=\"{linkId}\"></a>{measurementGroupGroup.Benchmark}");
                             streamWriter.WriteLine();
 
-                            var fastest = measurementGroupGroup.Fastest();
-                            var slowest = measurementGroupGroup.Slowest();
+                            // Performance
+                            WritePerformance(measurementGroupGroup, streamWriter);
 
-                            streamWriter.WriteLine($"Fastest: **{fastest.Version}**\n");
-                            streamWriter.WriteLine($"Slowest: {slowest.Version}\n");
-                            streamWriter.WriteLine();
-
-                            WriteTableAsHtml(measurementGroupGroup, streamWriter);
+                            // Memory
+                            WriteMemory(measurementGroupGroup, streamWriter);
 
                             streamWriter.WriteLine();
                         }
@@ -91,12 +88,33 @@ namespace Catel.BenchmarkCombiner.Exporters
             }
         }
 
-        private void WriteTableAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter)
+        private void WritePerformance(MeasurementGroup measurementGroup, StreamWriter streamWriter)
+        {
+            streamWriter.WriteLine($"#### Performance\n");
+
+            WritePerformanceSummaryAsHtml(measurementGroup, streamWriter);
+            WritePerformanceTableAsHtml(measurementGroup, streamWriter);
+
+            streamWriter.WriteLine();
+        }
+
+        private void WritePerformanceSummaryAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter)
+        {
+            var fastest = measurementGroup.Fastest();
+            var slowest = measurementGroup.Slowest();
+            streamWriter.WriteLine($"Fastest: **{fastest.Version}**\n");
+            streamWriter.WriteLine($"Slowest: {slowest.Version}\n");
+
+            streamWriter.WriteLine();
+        }
+
+        private void WritePerformanceTableAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter)
         {
             streamWriter.WriteLine("<table>");
 
             // Table header
             streamWriter.WriteLine("<tr>");
+            streamWriter.Write("<th> </th>");
 
             foreach (var version in measurementGroup.Measurements)
             {
@@ -107,6 +125,7 @@ namespace Catel.BenchmarkCombiner.Exporters
 
             // Table content - nanoseconds
             streamWriter.WriteLine("<tr>");
+            streamWriter.Write("<td>Average ns / operation</td>");
 
             foreach (var version in measurementGroup.Measurements)
             {
@@ -117,6 +136,7 @@ namespace Catel.BenchmarkCombiner.Exporters
 
             // Table content - microseconds
             streamWriter.WriteLine("<tr>");
+            streamWriter.Write("<td>Average μs / operation</td>");
 
             foreach (var version in measurementGroup.Measurements)
             {
@@ -127,6 +147,7 @@ namespace Catel.BenchmarkCombiner.Exporters
 
             // Table content - milliseconds
             streamWriter.WriteLine("<tr>");
+            streamWriter.Write("<td>Average ms / operation</td>");
 
             foreach (var version in measurementGroup.Measurements)
             {
@@ -138,31 +159,118 @@ namespace Catel.BenchmarkCombiner.Exporters
             streamWriter.WriteLine("</table>");
         }
 
-        private void WriteTableAsMarkdown(MeasurementGroup measurementGroup, StreamWriter streamWriter)
+        private void WriteMemory(MeasurementGroup measurementGroup, StreamWriter streamWriter)
         {
+            streamWriter.WriteLine($"#### Memory (per 1k operations)\n");
+
+            WriteMemorySummaryAsHtml(measurementGroup, streamWriter);
+            WriteMemoryTableAsHtml(measurementGroup, streamWriter);
+
+            streamWriter.WriteLine();
+        }
+
+        private void WriteMemorySummaryAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter)
+        {
+            streamWriter.WriteLine("<table>");
+
             // Table header
+            streamWriter.WriteLine("<tr>");
+            streamWriter.WriteLine("<th>Name</th>");
+            streamWriter.WriteLine("<th>Least</th>");
+            streamWriter.WriteLine("<th>Most</th>");
+            streamWriter.WriteLine("</tr>");
+
+            // Gen 0
+            var leastGen0 = measurementGroup.LeastGen0();
+            var mostGen0 = measurementGroup.MostGen0();
+            WriteMemorySummaryLine("Gen 0", leastGen0, mostGen0, streamWriter);
+
+            // Gen 1
+            var leastGen1 = measurementGroup.LeastGen1();
+            var mostGen1 = measurementGroup.MostGen1();
+            WriteMemorySummaryLine("Gen 1", leastGen1, mostGen1, streamWriter);
+
+            // Gen 2
+            var leastGen2 = measurementGroup.LeastGen2();
+            var mostGen2 = measurementGroup.MostGen2();
+            WriteMemorySummaryLine("Gen 2", leastGen2, mostGen2, streamWriter);
+
+            // Allocated bytes
+            var leastAllocatedBytes = measurementGroup.LeastAllocatedBytes();
+            var mostAllocatedBytes = measurementGroup.MostAllocatedBytes();
+            WriteMemorySummaryLine("Allocated Bytes", leastAllocatedBytes, mostAllocatedBytes, streamWriter);
+
+            streamWriter.WriteLine("</table>");
+
+            streamWriter.WriteLine();
+        }
+
+        private void WriteMemoryTableAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter)
+        {
+            streamWriter.WriteLine("<table>");
+
+            // Table header
+            streamWriter.WriteLine("<tr>");
+            streamWriter.Write("<th> </th>");
             foreach (var version in measurementGroup.Measurements)
             {
-                streamWriter.Write($"| {version.Version} ");
+                streamWriter.Write($"<th>{version.Version}</th>");
             }
 
-            streamWriter.WriteLine("|");
+            streamWriter.WriteLine("</tr>");
 
-            // Table splitter
-            for (var i = 0; i < measurementGroup.Measurements.Count; i++)
-            {
-                streamWriter.Write("|---:");
-            }
+            // Table content - Gen 0
+            streamWriter.WriteLine("<tr>");
+            streamWriter.Write("<td>Gen 0</td>");
 
-            streamWriter.WriteLine("|");
-
-            // Table content
             foreach (var version in measurementGroup.Measurements)
             {
-                streamWriter.Write($"| {version.AverageNanoSecondsPerOperation.ConvertNanoSecondsToMicroSeconds()} μs ");
+                streamWriter.Write($"<td align=\"right\">{version.AverageGen0Per1000Operations}</td>");
             }
 
-            streamWriter.WriteLine("|");
+            streamWriter.WriteLine("</tr>");
+
+            // Table content - Gen 1
+            streamWriter.WriteLine("<tr>");
+            streamWriter.Write("<td>Gen 1</td>");
+
+            foreach (var version in measurementGroup.Measurements)
+            {
+                streamWriter.Write($"<td align=\"right\">{version.AverageGen1Per1000Operations}</td>");
+            }
+
+            streamWriter.WriteLine("</tr>");
+
+            // Table content - Gen 2
+            streamWriter.WriteLine("<tr>");
+            streamWriter.Write("<td>Gen 2</td>");
+
+            foreach (var version in measurementGroup.Measurements)
+            {
+                streamWriter.Write($"<td align=\"right\">{version.AverageGen2Per1000Operations}</td>");
+            }
+
+            // Table content - Allocated bytes
+            streamWriter.WriteLine("<tr>");
+            streamWriter.Write("<td>Allocated Bytes</td>");
+
+            foreach (var version in measurementGroup.Measurements)
+            {
+                streamWriter.Write($"<td align=\"right\">{version.AverageAllocatedBytesPer1000Operations}</td>");
+            }
+
+            streamWriter.WriteLine("</tr>");
+
+            streamWriter.WriteLine("</table>");
+        }
+
+        private void WriteMemorySummaryLine(string title, VersionMeasurements least, VersionMeasurements most, StreamWriter streamWriter)
+        {
+            streamWriter.WriteLine("<tr>");
+            streamWriter.WriteLine($"<td>{title}</td>");
+            streamWriter.WriteLine($"<td>{least.Version}</td>");
+            streamWriter.WriteLine($"<td>{most.Version}</td>");
+            streamWriter.WriteLine("</tr>");
         }
         #endregion
     }

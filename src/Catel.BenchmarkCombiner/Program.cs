@@ -161,10 +161,11 @@ namespace Catel.BenchmarkCombiner
                     var configuration = new CsvConfiguration
                     {
                         Delimiter = ";",
-                        CultureInfo = new CultureInfo("en-US")
+                        CultureInfo = new CultureInfo("en-US"),
+                        IgnoreHeaderWhiteSpace = false
                     };
 
-                    configuration.AutoMap<MeasurementCsvMap>();
+                    configuration.RegisterClassMap<MeasurementCsvMap>();
 
                     foreach (var measurementsCsvFile in Directory.GetFiles(summaryOutputDirectory, "*-measurements.csv", SearchOption.TopDirectoryOnly))
                     {

@@ -51,6 +51,13 @@ namespace Catel.BenchmarkCombiner.Models.Maps
             Map(x => x.Measurement_Nanoseconds).Name("Measurement_Nanoseconds");
             Map(x => x.Measurement_Operations).Name("Measurement_Operations");
             Map(x => x.Measurement_Value).Name("Measurement_Value");
+
+            // Additional columns only available with the memory diagnoser
+            // Would be nice if this was optional, but too much work for now
+            Map(x => x.Gen0).Name("Gen 0").Default(0d);
+            Map(x => x.Gen1).Name("Gen 1").Default(0d);
+            Map(x => x.Gen2).Name("Gen 2").Default(0d);
+            Map(x => x.AllocatedBytes).Name("Allocated Bytes").Default(0d);
         }
     }
 }
