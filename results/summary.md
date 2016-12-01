@@ -1,6 +1,6 @@
 # Benchmarks
 
-Benchmark report generated on 28-nov-2016 18:18
+Benchmark report generated on 01-dec-2016 23:32
 
 All timings are average time per operation (thus the time represents a single operation)
 
@@ -14,6 +14,24 @@ All timings are average time per operation (thus the time represents a single op
 
 
 If versions behave the same (e.g. result in exactly the same values), this report will show the highest version to represent the most recent state at best.
+
+## Host environment information
+
+BenchmarkDotNet=v0.10.0-develop
+
+OS=Microsoft Windows NT 6.2.9200.0
+
+Processor=Intel(R) Core(TM) i7-3960X CPU 3.30GHz, ProcessorCount=8
+
+Frequency=3222557 Hz, Resolution=310.3126 ns, Timer=TSC
+
+Host Runtime=Clr 4.0.30319.42000, Arch=32-bit RELEASE [AttachedDebugger]
+
+GC=Concurrent Workstation
+
+JitModules=clrjit-v4.6.1586.0
+
+
 ## Table of contents
 * [FastDateTime_vs_DateTime_Benchmark](#FastDateTime_vs_DateTime_Benchmark)
   * [DateTime_Now](#FastDateTime_vs_DateTime_Benchmark_DateTime_Now)

@@ -48,6 +48,17 @@ namespace Catel.BenchmarkCombiner.Exporters
                     streamWriter.Write("the highest version to represent the most recent state at best.");
                     streamWriter.WriteLine();
 
+                    streamWriter.WriteLine();
+                    streamWriter.WriteLine("## Host environment information");
+                    streamWriter.WriteLine();
+
+                    foreach (var hostEnvironmentInfo in exportContext.HostEnvironmentInfo)
+                    {
+                        streamWriter.WriteLine($"{hostEnvironmentInfo}\n");
+                    }
+
+                    streamWriter.WriteLine();
+
                     var measurementGroups = exportContext.ExportSummaries.ConvertToMeasurementGroups();
 
                     // Table of contents

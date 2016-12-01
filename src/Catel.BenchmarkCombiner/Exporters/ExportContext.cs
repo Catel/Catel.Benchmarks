@@ -14,9 +14,12 @@ namespace Catel.BenchmarkCombiner.Exporters
     {
         public ExportContext(string exportDirectory, List<ExportSummary> exportSummaries)
         {
+            HostEnvironmentInfo = new List<string>();
             ExportDirectory = exportDirectory;
             ExportSummaries = exportSummaries;
         }
+
+        public List<string> HostEnvironmentInfo { get; private set; }
 
         public string ExportDirectory { get; }
 

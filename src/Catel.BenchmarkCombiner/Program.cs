@@ -12,6 +12,7 @@ namespace Catel.BenchmarkCombiner
     using System.Diagnostics;
     using System.Globalization;
     using System.IO;
+    using BenchmarkDotNet.Environments;
     using CsvHelper;
     using CsvHelper.Configuration;
     using Exporters;
@@ -125,6 +126,9 @@ namespace Catel.BenchmarkCombiner
                 {
                     BenchmarkDuration = benchmarkDuration
                 };
+
+                var hostEnvironmentInfo = HostEnvironmentInfo.GetCurrent();
+                exportContext.HostEnvironmentInfo.AddRange(hostEnvironmentInfo.ToFormattedString());
 
                 Directory.CreateDirectory(exportDirectory);
 
