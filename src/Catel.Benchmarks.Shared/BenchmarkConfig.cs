@@ -9,6 +9,7 @@ namespace Catel.Benchmarks
 {
     using BenchmarkDotNet.Analysers;
     using BenchmarkDotNet.Configs;
+    using BenchmarkDotNet.Diagnosers;
     using BenchmarkDotNet.Exporters;
     using BenchmarkDotNet.Exporters.Csv;
     using BenchmarkDotNet.Loggers;
@@ -21,11 +22,11 @@ namespace Catel.Benchmarks
             KeepBenchmarkFiles = true;
 
             // Exporters
-            Add(MarkdownExporter.Default);
-            Add(MarkdownExporter.GitHub);
-            Add(AsciiDocExporter.Default);
-            Add(HtmlExporter.Default);
-            Add(CsvExporter.Default);
+            //Add(MarkdownExporter.Default);
+            //Add(MarkdownExporter.GitHub);
+            //Add(AsciiDocExporter.Default);
+            //Add(HtmlExporter.Default);
+            //Add(CsvExporter.Default);
             Add(CsvMeasurementsExporter.Default);
             //Add(RPlotExporter.Default);
 
@@ -37,6 +38,7 @@ namespace Catel.Benchmarks
             Add(OutliersAnalyser.Default);
 
             // Diagnosers
+            Add(MemoryDiagnoser.Default);
 
             // Validators
             Add((IValidator)BaselineValidator.FailOnError);

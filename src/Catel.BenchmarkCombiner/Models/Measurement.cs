@@ -92,5 +92,13 @@ namespace Catel.BenchmarkCombiner
         public int Measurement_Operations { get; set; }
 
         public double Measurement_Value { get; set; }
+
+        public double Gen0 { get; set; }
+
+        public double Gen1 { get; set; }
+
+        public double Gen2 { get; set; }
+
+        public double AllocatedBytes { get; set; }
     }
 }

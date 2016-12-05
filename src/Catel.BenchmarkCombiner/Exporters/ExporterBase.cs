@@ -7,10 +7,8 @@
 
 namespace Catel.BenchmarkCombiner.Exporters
 {
-    using System.Collections.Generic;
-
     public abstract class ExporterBase : IExporter
     {
-        public abstract void Export(string targetDirectory, List<ExportSummary> exportSummaries);
+        public abstract void Export(ExportContext exportContext);
     }
 }

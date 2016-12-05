@@ -22,50 +22,32 @@ namespace Catel.BenchmarkCombiner
 
         public double AverageNanoSeconds
         {
-            get
-            {
-                var measurements = GetResultMeasurements();
-                if (measurements.Count == 0)
-                {
-                    return 0d;
-                }
-
-                var average = measurements.Average(x => x.Measurement_Nanoseconds);
-                return average;
-            }
+            get { return CalculateAverage(x => x.Measurement_Nanoseconds); }
         }
 
         public double AverageNanoSecondsPerOperation
         {
-            get
-            {
-                var measurements = GetResultMeasurements();
-                if (measurements.Count == 0)
-                {
-                    return 0d;
-                }
-
-                var average = measurements.Average(x => x.GetAverageNanoSecondsPerOperation());
-                return average;
-            }
+            get { return CalculateAverage(x => x.GetAverageNanoSecondsPerOperation()); }
         }
 
-        public Measurement Slowest
+        public double AverageGen0Per1000Operations
         {
-            get
-            {
-                var measurements = GetResultMeasurements();
-                return measurements.OrderBy(x => x.Measurement_Nanoseconds).LastOrDefault();
-            }
+            get { return CalculateAverage(x => x.Gen0); }
         }
 
-        public Measurement Fastest
+        public double AverageGen1Per1000Operations
         {
-            get
-            {
-                var measurements = GetResultMeasurements();
-                return measurements.OrderBy(x => x.Measurement_Nanoseconds).LastOrDefault();
-            }
+            get { return CalculateAverage(x => x.Gen1); }
+        }
+
+        public double AverageGen2Per1000Operations
+        {
+            get { return CalculateAverage(x => x.Gen2); }
+        }
+
+        public double AverageAllocatedBytesPer1000Operations
+        {
+            get { return CalculateAverage(x => x.AllocatedBytes); }
         }
 
         public List<Measurement> Measurements { get; private set; }
@@ -78,6 +60,18 @@ namespace Catel.BenchmarkCombiner
                                       select measurement).ToList();
 
             return resultMeasurements;
+        }
+
+        private double CalculateAverage(Func<Measurement, double> predicate)
+        {
+            var measurements = GetResultMeasurements();
+            if (measurements.Count == 0)
+            {
+                return 0d;
+            }
+
+            var average = measurements.Average(predicate);
+            return average;
         }
     }
 }

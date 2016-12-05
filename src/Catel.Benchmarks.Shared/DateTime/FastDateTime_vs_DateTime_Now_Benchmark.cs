@@ -6,9 +6,6 @@
 
 #if !CATEL_4_2 && !CATEL_4_3 && !CATEL_4_4 && (!CATEL_4_5 || CATEL_4_5_4)
 
-// Note: temporarily disabled
-#if !CATEL_5_0_0
-
 namespace Catel.Benchmarks.DateTime
 {
     using Catel;
@@ -30,7 +27,5 @@ namespace Catel.Benchmarks.DateTime
         }
     }
 }
-
-#endif
 
 #endif
