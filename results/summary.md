@@ -1,8 +1,6 @@
 # Benchmarks
 
-Benchmark report generated on 08-dec-2016 09:30
-
-Running the benchmarks took 01:03:14.9146947
+Benchmark report generated on 01-jun-2017 21:17
 
 All timings are average time per operation (thus the time represents a single operation)
 
@@ -19,19 +17,11 @@ If versions behave the same (e.g. result in exactly the same values), this repor
 
 ## Host environment information
 
-BenchmarkDotNet=v0.10.0-develop
+BenchmarkDotNet=v0.10.6, OS=Windows 10 Redstone 2 (10.0.15063)
 
-OS=Microsoft Windows NT 6.2.9200.0
+Processor=Intel Core i7-3960X CPU 3.30GHz (Ivy Bridge), ProcessorCount=8
 
-Processor=Intel(R) Core(TM) i7-3960X CPU 3.30GHz, ProcessorCount=8
-
-Frequency=3222557 Hz, Resolution=310.3126 ns, Timer=TSC
-
-Host Runtime=Clr 4.0.30319.42000, Arch=32-bit RELEASE [AttachedDebugger]
-
-GC=Concurrent Workstation
-
-JitModules=clrjit-v4.6.1586.0
+Frequency=10000000 Hz, Resolution=100.0000 ns, Timer=UNKNOWN
 
 
 ## Table of contents
@@ -61,6 +51,14 @@ JitModules=clrjit-v4.6.1586.0
   * [SetBoolValue](#ModelBase_SetValue_Benchmark_SetBoolValue)
   * [SetIntValue](#ModelBase_SetValue_Benchmark_SetIntValue)
   * [SetStringValue](#ModelBase_SetValue_Benchmark_SetStringValue)
+* [PropertyBag_GetPropertyValue_Benchmark](#PropertyBag_GetPropertyValue_Benchmark)
+  * [GetBoolValue](#PropertyBag_GetPropertyValue_Benchmark_GetBoolValue)
+  * [GetIntValue](#PropertyBag_GetPropertyValue_Benchmark_GetIntValue)
+  * [GetStringValue](#PropertyBag_GetPropertyValue_Benchmark_GetStringValue)
+* [PropertyBag_SetPropertyValue_Benchmark](#PropertyBag_SetPropertyValue_Benchmark)
+  * [SetBoolValue](#PropertyBag_SetPropertyValue_Benchmark_SetBoolValue)
+  * [SetIntValue](#PropertyBag_SetPropertyValue_Benchmark_SetIntValue)
+  * [SetStringValue](#PropertyBag_SetPropertyValue_Benchmark_SetStringValue)
 * [Serialization_Binary_Benchmark](#Serialization_Binary_Benchmark)
   * [SerializeComplexObjectGraph](#Serialization_Binary_Benchmark_SerializeComplexObjectGraph)
   * [SerializeLevel1Models](#Serialization_Binary_Benchmark_SerializeLevel1Models)
@@ -87,6 +85,136 @@ JitModules=clrjit-v4.6.1586.0
 
 Fastest: **4.2.0**
 
+Slowest: 5.0.0
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">120,121 ns</td><td align="right">121,469 ns</td><td align="right">120,611 ns</td><td align="right">246,835 ns</td><td align="right">242,016 ns</td><td align="right">246,987 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">0,120 μs</td><td align="right">0,121 μs</td><td align="right">0,121 μs</td><td align="right">0,247 μs</td><td align="right">0,242 μs</td><td align="right">0,247 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">4.4.0</td>
+<td align="right">4.5.0</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">4.4.0</td>
+<td align="right">4.5.0</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">225</td><td align="right">285</td><td align="right">225</td><td align="right">675</td><td align="right">675</td><td align="right">675</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">136</td><td align="right">136</td><td align="right">136</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,133</td><td align="right">0,133</td><td align="right">0,133</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
+</table>
+
+
+### <a name="CacheStorage_Benchmark_GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy"></a>GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy
+
+#### Performance
+
+Fastest: **4.3.0**
+
+Slowest: 4.5.0
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">121,893 ns</td><td align="right">121,641 ns</td><td align="right">122,328 ns</td><td align="right">252,996 ns</td><td align="right">249,272 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">0,122 μs</td><td align="right">0,122 μs</td><td align="right">0,122 μs</td><td align="right">0,253 μs</td><td align="right">0,249 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">4.4.0</td>
+<td align="right">4.5.0</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">4.4.0</td>
+<td align="right">4.5.0</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">225</td><td align="right">225</td><td align="right">225</td><td align="right">675</td><td align="right">675</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">136</td><td align="right">136</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,133</td><td align="right">0,133</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
+</table>
+
+
+### <a name="CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache"></a>GetValue_From_An_Already_Initialized_Cache
+
+#### Performance
+
+Fastest: **4.4.0**
+
 Slowest: 4.5.0
 
 
@@ -94,9 +222,9 @@ Slowest: 4.5.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">122,227 ns</td><td align="right">143,395 ns</td><td align="right">142,636 ns</td><td align="right">275,208 ns</td><td align="right">269,129 ns</td><td align="right">267,717 ns</td></tr>
+<td>Average ns / operation</td><td align="right">97,071 ns</td><td align="right">96,925 ns</td><td align="right">93,937 ns</td><td align="right">228,946 ns</td><td align="right">224,634 ns</td><td align="right">218,594 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">0,122 μs</td><td align="right">0,143 μs</td><td align="right">0,143 μs</td><td align="right">0,275 μs</td><td align="right">0,269 μs</td><td align="right">0,268 μs</td></tr>
+<td>Average μs / operation</td><td align="right">0,097 μs</td><td align="right">0,097 μs</td><td align="right">0,094 μs</td><td align="right">0,229 μs</td><td align="right">0,225 μs</td><td align="right">0,219 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -135,137 +263,7 @@ Slowest: 4.5.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">130</td><td align="right">138</td><td align="right">130</td></tr>
-<tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
-<tr>
-<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">136</td><td align="right">136</td><td align="right">136</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,133</td><td align="right">0,133</td><td align="right">0,133</td><tr>
-<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
-</table>
-
-
-### <a name="CacheStorage_Benchmark_GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy"></a>GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy
-
-#### Performance
-
-Fastest: **4.2.0**
-
-Slowest: 4.5.0
-
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th></tr>
-<tr>
-<td>Average ns / operation</td><td align="right">123,160 ns</td><td align="right">145,383 ns</td><td align="right">145,735 ns</td><td align="right">276,027 ns</td></tr>
-<tr>
-<td>Average μs / operation</td><td align="right">0,123 μs</td><td align="right">0,145 μs</td><td align="right">0,146 μs</td><td align="right">0,276 μs</td></tr>
-<tr>
-<td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
-</table>
-
-#### Memory (per 1k operations)
-
-<table>
-<tr>
-<th>Name</th>
-<th>Least</th>
-<th>Most</th>
-</tr>
-<tr>
-<td>Gen 0</td>
-<td align="right">4.4.0</td>
-<td align="right">4.5.0</td>
-</tr>
-<tr>
-<td>Gen 1</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Gen 2</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Allocated Bytes</td>
-<td align="right">4.4.0</td>
-<td align="right">4.5.0</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th></tr>
-<tr>
-<td>Gen 0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">122</td></tr>
-<tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
-<tr>
-<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">136</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,133</td><tr>
-<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
-</table>
-
-
-### <a name="CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache"></a>GetValue_From_An_Already_Initialized_Cache
-
-#### Performance
-
-Fastest: **4.2.0**
-
-Slowest: 4.5.4
-
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Average ns / operation</td><td align="right">96,416 ns</td><td align="right">105,332 ns</td><td align="right">105,555 ns</td><td align="right">234,141 ns</td><td align="right">237,502 ns</td><td align="right">232,719 ns</td></tr>
-<tr>
-<td>Average μs / operation</td><td align="right">0,096 μs</td><td align="right">0,105 μs</td><td align="right">0,106 μs</td><td align="right">0,234 μs</td><td align="right">0,238 μs</td><td align="right">0,233 μs</td></tr>
-<tr>
-<td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
-</table>
-
-#### Memory (per 1k operations)
-
-<table>
-<tr>
-<th>Name</th>
-<th>Least</th>
-<th>Most</th>
-</tr>
-<tr>
-<td>Gen 0</td>
-<td align="right">4.4.0</td>
-<td align="right">4.5.0</td>
-</tr>
-<tr>
-<td>Gen 1</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Gen 2</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Allocated Bytes</td>
-<td align="right">4.4.0</td>
-<td align="right">4.5.0</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Gen 0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">101</td><td align="right">101</td><td align="right">85</td></tr>
+<td>Gen 0</td><td align="right">465</td><td align="right">465</td><td align="right">465</td><td align="right">585</td><td align="right">1185</td><td align="right">1185</td></tr>
 <tr>
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
@@ -291,9 +289,9 @@ Slowest: 5.0.0
 <tr>
 <th> </th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">301,905 ns</td><td align="right">301,933 ns</td></tr>
+<td>Average ns / operation</td><td align="right">316,220 ns</td><td align="right">320,135 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">0,302 μs</td><td align="right">0,302 μs</td></tr>
+<td>Average μs / operation</td><td align="right">0,316 μs</td><td align="right">0,320 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -308,8 +306,8 @@ Slowest: 5.0.0
 </tr>
 <tr>
 <td>Gen 0</td>
-<td align="right">-</td>
-<td align="right">-</td>
+<td align="right">5.0.0</td>
+<td align="right">4.5.4</td>
 </tr>
 <tr>
 <td>Gen 1</td>
@@ -332,13 +330,13 @@ Slowest: 5.0.0
 <tr>
 <th> </th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Gen 0</td><td align="right">315</td><td align="right">315</td></tr>
 <tr>
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">40</td><td align="right">40</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,039</td><td align="right">0,039</td><tr>
+<td>Allocated Bytes</td><td align="right">64</td><td align="right">64</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,063</td><td align="right">0,063</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
@@ -347,18 +345,18 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
 
 <table>
 <tr>
 <th> </th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">35,120 ns</td><td align="right">35,672 ns</td></tr>
+<td>Average ns / operation</td><td align="right">108,188 ns</td><td align="right">108,145 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">0,035 μs</td><td align="right">0,036 μs</td></tr>
+<td>Average μs / operation</td><td align="right">0,108 μs</td><td align="right">0,108 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -373,8 +371,8 @@ Slowest: 5.0.0
 </tr>
 <tr>
 <td>Gen 0</td>
-<td align="right">-</td>
-<td align="right">-</td>
+<td align="right">5.0.0</td>
+<td align="right">4.5.4</td>
 </tr>
 <tr>
 <td>Gen 1</td>
@@ -388,8 +386,8 @@ Slowest: 5.0.0
 </tr>
 <tr>
 <td>Allocated Bytes</td>
-<td align="right">-</td>
-<td align="right">-</td>
+<td align="right">5.0.0</td>
+<td align="right">4.5.4</td>
 </tr>
 </table>
 
@@ -397,13 +395,13 @@ Slowest: 5.0.0
 <tr>
 <th> </th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Gen 0</td><td align="right">465</td><td align="right">465</td></tr>
 <tr>
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,000</td><td align="right">0,000</td><tr>
+<td>Allocated Bytes</td><td align="right">24</td><td align="right">24</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,023</td><td align="right">0,023</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
@@ -423,9 +421,9 @@ Slowest: 4.5.4
 <tr>
 <th> </th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">5,483 ns</td><td align="right">5,478 ns</td></tr>
+<td>Average ns / operation</td><td align="right">11,645 ns</td><td align="right">11,512 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">0,005 μs</td><td align="right">0,005 μs</td></tr>
+<td>Average μs / operation</td><td align="right">0,012 μs</td><td align="right">0,012 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -440,8 +438,8 @@ Slowest: 4.5.4
 </tr>
 <tr>
 <td>Gen 0</td>
-<td align="right">-</td>
-<td align="right">-</td>
+<td align="right">5.0.0</td>
+<td align="right">4.5.4</td>
 </tr>
 <tr>
 <td>Gen 1</td>
@@ -455,8 +453,8 @@ Slowest: 4.5.4
 </tr>
 <tr>
 <td>Allocated Bytes</td>
-<td align="right">-</td>
-<td align="right">-</td>
+<td align="right">5.0.0</td>
+<td align="right">4.5.4</td>
 </tr>
 </table>
 
@@ -464,13 +462,13 @@ Slowest: 4.5.4
 <tr>
 <th> </th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Gen 0</td><td align="right">3825</td><td align="right">3825</td></tr>
 <tr>
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,000</td><td align="right">0,000</td><tr>
+<td>Allocated Bytes</td><td align="right">24</td><td align="right">24</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,023</td><td align="right">0,023</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
@@ -479,18 +477,18 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
 
 <table>
 <tr>
 <th> </th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">6,041 ns</td><td align="right">6,077 ns</td></tr>
+<td>Average ns / operation</td><td align="right">12,775 ns</td><td align="right">12,727 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">0,006 μs</td><td align="right">0,006 μs</td></tr>
+<td>Average μs / operation</td><td align="right">0,013 μs</td><td align="right">0,013 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -505,8 +503,8 @@ Slowest: 5.0.0
 </tr>
 <tr>
 <td>Gen 0</td>
-<td align="right">-</td>
-<td align="right">-</td>
+<td align="right">5.0.0</td>
+<td align="right">4.5.4</td>
 </tr>
 <tr>
 <td>Gen 1</td>
@@ -520,8 +518,8 @@ Slowest: 5.0.0
 </tr>
 <tr>
 <td>Allocated Bytes</td>
-<td align="right">-</td>
-<td align="right">-</td>
+<td align="right">5.0.0</td>
+<td align="right">4.5.4</td>
 </tr>
 </table>
 
@@ -529,13 +527,13 @@ Slowest: 5.0.0
 <tr>
 <th> </th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Gen 0</td><td align="right">3825</td><td align="right">3825</td></tr>
 <tr>
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,000</td><td align="right">0,000</td><tr>
+<td>Allocated Bytes</td><td align="right">24</td><td align="right">24</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,023</td><td align="right">0,023</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
@@ -546,18 +544,18 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.3.0**
 
-Slowest: 4.5.0
+Slowest: 5.0.0
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">9,653 ns</td><td align="right">9,306 ns</td><td align="right">9,570 ns</td><td align="right">10,237 ns</td><td align="right">10,229 ns</td><td align="right">5,562 ns</td></tr>
+<td>Average ns / operation</td><td align="right">4,992 ns</td><td align="right">4,945 ns</td><td align="right">4,982 ns</td><td align="right">5,213 ns</td><td align="right">5,180 ns</td><td align="right">5,219 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">0,010 μs</td><td align="right">0,009 μs</td><td align="right">0,010 μs</td><td align="right">0,010 μs</td><td align="right">0,010 μs</td><td align="right">0,006 μs</td></tr>
+<td>Average μs / operation</td><td align="right">0,005 μs</td><td align="right">0,005 μs</td><td align="right">0,005 μs</td><td align="right">0,005 μs</td><td align="right">0,005 μs</td><td align="right">0,005 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -572,8 +570,8 @@ Slowest: 4.5.0
 </tr>
 <tr>
 <td>Gen 0</td>
-<td align="right">5.0.0</td>
-<td align="right">4.4.0</td>
+<td align="right">-</td>
+<td align="right">-</td>
 </tr>
 <tr>
 <td>Gen 1</td>
@@ -587,8 +585,8 @@ Slowest: 4.5.0
 </tr>
 <tr>
 <td>Allocated Bytes</td>
-<td align="right">5.0.0</td>
-<td align="right">4.2.0</td>
+<td align="right">-</td>
+<td align="right">-</td>
 </tr>
 </table>
 
@@ -596,13 +594,13 @@ Slowest: 4.5.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">737</td><td align="right">1701</td><td align="right">1705</td><td align="right">749</td><td align="right">721</td><td align="right">0</td></tr>
+<td>Gen 0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">0</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,000</td><tr>
+<td>Allocated Bytes</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
@@ -613,81 +611,16 @@ Slowest: 4.5.0
 
 Fastest: **4.3.0**
 
-Slowest: 4.5.0
+Slowest: 4.2.0
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">18,296 ns</td><td align="right">17,973 ns</td><td align="right">18,565 ns</td><td align="right">18,877 ns</td><td align="right">18,808 ns</td><td align="right">18,864 ns</td></tr>
+<td>Average ns / operation</td><td align="right">18,794 ns</td><td align="right">17,781 ns</td><td align="right">18,742 ns</td><td align="right">18,623 ns</td><td align="right">18,289 ns</td><td align="right">18,247 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">0,018 μs</td><td align="right">0,018 μs</td><td align="right">0,019 μs</td><td align="right">0,019 μs</td><td align="right">0,019 μs</td><td align="right">0,019 μs</td></tr>
-<tr>
-<td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
-</table>
-
-#### Memory (per 1k operations)
-
-<table>
-<tr>
-<th>Name</th>
-<th>Least</th>
-<th>Most</th>
-</tr>
-<tr>
-<td>Gen 0</td>
-<td align="right">5.0.0</td>
-<td align="right">4.4.0</td>
-</tr>
-<tr>
-<td>Gen 1</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Gen 2</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Allocated Bytes</td>
-<td align="right">5.0.0</td>
-<td align="right">4.2.0</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Gen 0</td><td align="right">2031</td><td align="right">2027</td><td align="right">2043</td><td align="right">2031</td><td align="right">2031</td><td align="right">2023</td></tr>
-<tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
-<tr>
-<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,055</td><td align="right">0,055</td><td align="right">0,055</td><td align="right">0,055</td><td align="right">0,055</td><td align="right">0,055</td><tr>
-<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
-</table>
-
-
-### <a name="Log_Disabled_Benchmark_Log_Info_Format_WithoutBoxing"></a>Log_Info_Format_WithoutBoxing
-
-#### Performance
-
-Fastest: **4.3.0**
-
-Slowest: 4.5.0
-
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Average ns / operation</td><td align="right">14,832 ns</td><td align="right">13,986 ns</td><td align="right">14,559 ns</td><td align="right">14,979 ns</td><td align="right">14,862 ns</td><td align="right">14,913 ns</td></tr>
-<tr>
-<td>Average μs / operation</td><td align="right">0,015 μs</td><td align="right">0,014 μs</td><td align="right">0,015 μs</td><td align="right">0,015 μs</td><td align="right">0,015 μs</td><td align="right">0,015 μs</td></tr>
+<td>Average μs / operation</td><td align="right">0,019 μs</td><td align="right">0,018 μs</td><td align="right">0,019 μs</td><td align="right">0,019 μs</td><td align="right">0,018 μs</td><td align="right">0,018 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -726,7 +659,72 @@ Slowest: 4.5.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">1071</td><td align="right">1067</td><td align="right">1071</td><td align="right">1075</td><td align="right">1071</td><td align="right">1059</td></tr>
+<td>Gen 0</td><td align="right">5066</td><td align="right">4470</td><td align="right">4470</td><td align="right">5662</td><td align="right">4470</td><td align="right">4470</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><td align="right">56</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,055</td><td align="right">0,055</td><td align="right">0,055</td><td align="right">0,055</td><td align="right">0,055</td><td align="right">0,055</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
+</table>
+
+
+### <a name="Log_Disabled_Benchmark_Log_Info_Format_WithoutBoxing"></a>Log_Info_Format_WithoutBoxing
+
+#### Performance
+
+Fastest: **4.4.0**
+
+Slowest: 5.0.0
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">14,955 ns</td><td align="right">14,446 ns</td><td align="right">14,439 ns</td><td align="right">15,188 ns</td><td align="right">15,156 ns</td><td align="right">15,512 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">0,015 μs</td><td align="right">0,014 μs</td><td align="right">0,014 μs</td><td align="right">0,015 μs</td><td align="right">0,015 μs</td><td align="right">0,016 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">5.0.0</td>
+<td align="right">4.5.4</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">5.0.0</td>
+<td align="right">4.2.0</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">2550</td><td align="right">2550</td><td align="right">3400</td><td align="right">2550</td><td align="right">4080</td><td align="right">2550</td></tr>
 <tr>
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
@@ -752,9 +750,9 @@ Slowest: 4.5.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">543,203 ns</td><td align="right">538,220 ns</td><td align="right">548,089 ns</td><td align="right">556,829 ns</td><td align="right">288,857 ns</td><td align="right">277,223 ns</td></tr>
+<td>Average ns / operation</td><td align="right">568,913 ns</td><td align="right">549,913 ns</td><td align="right">562,566 ns</td><td align="right">569,825 ns</td><td align="right">442,703 ns</td><td align="right">346,256 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">0,543 μs</td><td align="right">0,538 μs</td><td align="right">0,548 μs</td><td align="right">0,557 μs</td><td align="right">0,289 μs</td><td align="right">0,277 μs</td></tr>
+<td>Average μs / operation</td><td align="right">0,569 μs</td><td align="right">0,550 μs</td><td align="right">0,563 μs</td><td align="right">0,570 μs</td><td align="right">0,443 μs</td><td align="right">0,346 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -769,8 +767,8 @@ Slowest: 4.5.0
 </tr>
 <tr>
 <td>Gen 0</td>
-<td align="right">4.4.0</td>
-<td align="right">4.5.4</td>
+<td align="right">4.3.0</td>
+<td align="right">5.0.0</td>
 </tr>
 <tr>
 <td>Gen 1</td>
@@ -793,13 +791,13 @@ Slowest: 4.5.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">90</td><td align="right">90</td><td align="right">78</td><td align="right">135</td><td align="right">333</td><td align="right">206</td></tr>
+<td>Gen 0</td><td align="right">858</td><td align="right">495</td><td align="right">825</td><td align="right">608</td><td align="right">945</td><td align="right">1007</td></tr>
 <tr>
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">224</td><td align="right">224</td><td align="right">224</td><td align="right">256</td><td align="right">216</td><td align="right">160</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,219</td><td align="right">0,219</td><td align="right">0,219</td><td align="right">0,250</td><td align="right">0,211</td><td align="right">0,156</td><tr>
+<td>Allocated Bytes</td><td align="right">200</td><td align="right">200</td><td align="right">200</td><td align="right">232</td><td align="right">192</td><td align="right">160</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,195</td><td align="right">0,195</td><td align="right">0,195</td><td align="right">0,227</td><td align="right">0,188</td><td align="right">0,156</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
@@ -808,18 +806,18 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
-Slowest: 4.5.0
+Slowest: 4.2.0
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">845,024 ns</td><td align="right">861,554 ns</td><td align="right">857,620 ns</td><td align="right">975,709 ns</td><td align="right">594,934 ns</td><td align="right">620,091 ns</td></tr>
+<td>Average ns / operation</td><td align="right">895,107 ns</td><td align="right">875,064 ns</td><td align="right">883,620 ns</td><td align="right">876,391 ns</td><td align="right">747,612 ns</td><td align="right">669,535 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">0,845 μs</td><td align="right">0,862 μs</td><td align="right">0,858 μs</td><td align="right">0,976 μs</td><td align="right">0,595 μs</td><td align="right">0,620 μs</td></tr>
+<td>Average μs / operation</td><td align="right">0,895 μs</td><td align="right">0,875 μs</td><td align="right">0,884 μs</td><td align="right">0,876 μs</td><td align="right">0,748 μs</td><td align="right">0,670 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td></tr>
 </table>
@@ -834,8 +832,8 @@ Slowest: 4.5.0
 </tr>
 <tr>
 <td>Gen 0</td>
+<td align="right">5.0.0</td>
 <td align="right">4.4.0</td>
-<td align="right">4.5.4</td>
 </tr>
 <tr>
 <td>Gen 1</td>
@@ -858,7 +856,7 @@ Slowest: 4.5.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">68</td><td align="right">72</td><td align="right">64</td><td align="right">67</td><td align="right">285</td><td align="right">247</td></tr>
+<td>Gen 0</td><td align="right">975</td><td align="right">975</td><td align="right">1170</td><td align="right">1050</td><td align="right">945</td><td align="right">870</td></tr>
 <tr>
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
@@ -875,16 +873,16 @@ Slowest: 4.5.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.4.0
+Slowest: 4.2.0
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">775,744 ns</td><td align="right">767,375 ns</td><td align="right">786,876 ns</td><td align="right">777,761 ns</td><td align="right">509,392 ns</td><td align="right">504,148 ns</td></tr>
+<td>Average ns / operation</td><td align="right">813,804 ns</td><td align="right">799,502 ns</td><td align="right">809,514 ns</td><td align="right">812,000 ns</td><td align="right">595,730 ns</td><td align="right">585,540 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">0,776 μs</td><td align="right">0,767 μs</td><td align="right">0,787 μs</td><td align="right">0,778 μs</td><td align="right">0,509 μs</td><td align="right">0,504 μs</td></tr>
+<td>Average μs / operation</td><td align="right">0,814 μs</td><td align="right">0,800 μs</td><td align="right">0,810 μs</td><td align="right">0,812 μs</td><td align="right">0,596 μs</td><td align="right">0,586 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td></tr>
 </table>
@@ -899,8 +897,8 @@ Slowest: 4.4.0
 </tr>
 <tr>
 <td>Gen 0</td>
-<td align="right">4.2.0</td>
-<td align="right">4.5.4</td>
+<td align="right">5.0.0</td>
+<td align="right">4.5.0</td>
 </tr>
 <tr>
 <td>Gen 1</td>
@@ -923,7 +921,7 @@ Slowest: 4.4.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">41</td><td align="right">57</td><td align="right">57</td><td align="right">83</td><td align="right">281</td><td align="right">240</td></tr>
+<td>Gen 0</td><td align="right">1008</td><td align="right">945</td><td align="right">945</td><td align="right">1035</td><td align="right">930</td><td align="right">855</td></tr>
 <tr>
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
@@ -940,7 +938,7 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **5.0.0**
 
 Slowest: 4.4.0
 
@@ -949,9 +947,9 @@ Slowest: 4.4.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">131,399 ns</td><td align="right">153,102 ns</td><td align="right">174,914 ns</td><td align="right">155,991 ns</td><td align="right">153,972 ns</td><td align="right">157,013 ns</td></tr>
+<td>Average ns / operation</td><td align="right">122,640 ns</td><td align="right">125,438 ns</td><td align="right">143,713 ns</td><td align="right">121,375 ns</td><td align="right">122,308 ns</td><td align="right">119,191 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">0,131 μs</td><td align="right">0,153 μs</td><td align="right">0,175 μs</td><td align="right">0,156 μs</td><td align="right">0,154 μs</td><td align="right">0,157 μs</td></tr>
+<td>Average μs / operation</td><td align="right">0,123 μs</td><td align="right">0,125 μs</td><td align="right">0,144 μs</td><td align="right">0,121 μs</td><td align="right">0,122 μs</td><td align="right">0,119 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -1007,16 +1005,16 @@ Slowest: 4.4.0
 
 Fastest: **4.2.0**
 
-Slowest: 4.4.0
+Slowest: 4.5.4
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">132,275 ns</td><td align="right">161,848 ns</td><td align="right">177,211 ns</td><td align="right">156,109 ns</td><td align="right">154,040 ns</td><td align="right">155,700 ns</td></tr>
+<td>Average ns / operation</td><td align="right">119,935 ns</td><td align="right">121,650 ns</td><td align="right">144,413 ns</td><td align="right">126,046 ns</td><td align="right">208,105 ns</td><td align="right">120,101 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">0,132 μs</td><td align="right">0,162 μs</td><td align="right">0,177 μs</td><td align="right">0,156 μs</td><td align="right">0,154 μs</td><td align="right">0,156 μs</td></tr>
+<td>Average μs / operation</td><td align="right">0,120 μs</td><td align="right">0,122 μs</td><td align="right">0,144 μs</td><td align="right">0,126 μs</td><td align="right">0,208 μs</td><td align="right">0,120 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -1070,7 +1068,7 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **5.0.0**
 
 Slowest: 4.4.0
 
@@ -1079,9 +1077,9 @@ Slowest: 4.4.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">128,277 ns</td><td align="right">149,643 ns</td><td align="right">173,261 ns</td><td align="right">147,606 ns</td><td align="right">147,311 ns</td><td align="right">147,520 ns</td></tr>
+<td>Average ns / operation</td><td align="right">117,949 ns</td><td align="right">128,725 ns</td><td align="right">141,531 ns</td><td align="right">114,184 ns</td><td align="right">113,960 ns</td><td align="right">112,312 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">0,128 μs</td><td align="right">0,150 μs</td><td align="right">0,173 μs</td><td align="right">0,148 μs</td><td align="right">0,147 μs</td><td align="right">0,148 μs</td></tr>
+<td>Average μs / operation</td><td align="right">0,118 μs</td><td align="right">0,129 μs</td><td align="right">0,142 μs</td><td align="right">0,114 μs</td><td align="right">0,114 μs</td><td align="right">0,112 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
@@ -1139,18 +1137,18 @@ Slowest: 4.4.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.5.0
+Slowest: 4.2.0
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">1409,387 ns</td><td align="right">1643,837 ns</td><td align="right">1668,441 ns</td><td align="right">1799,848 ns</td><td align="right">1768,981 ns</td><td align="right">1345,502 ns</td></tr>
+<td>Average ns / operation</td><td align="right">1674,262 ns</td><td align="right">1564,675 ns</td><td align="right">1625,202 ns</td><td align="right">1673,432 ns</td><td align="right">1642,373 ns</td><td align="right">1353,861 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">1,409 μs</td><td align="right">1,644 μs</td><td align="right">1,668 μs</td><td align="right">1,800 μs</td><td align="right">1,769 μs</td><td align="right">1,346 μs</td></tr>
+<td>Average μs / operation</td><td align="right">1,674 μs</td><td align="right">1,565 μs</td><td align="right">1,625 μs</td><td align="right">1,673 μs</td><td align="right">1,642 μs</td><td align="right">1,354 μs</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right">0,001 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,001 ms</td></tr>
+<td>Average ms / operation</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,001 ms</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1163,8 +1161,8 @@ Slowest: 4.5.0
 </tr>
 <tr>
 <td>Gen 0</td>
-<td align="right">4.4.0</td>
-<td align="right">4.2.0</td>
+<td align="right">5.0.0</td>
+<td align="right">4.5.0</td>
 </tr>
 <tr>
 <td>Gen 1</td>
@@ -1187,7 +1185,7 @@ Slowest: 4.5.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">113</td><td align="right">0</td><td align="right">0</td><td align="right">4</td><td align="right">12</td><td align="right">68</td></tr>
+<td>Gen 0</td><td align="right">585</td><td align="right">615</td><td align="right">738</td><td align="right">765</td><td align="right">765</td><td align="right">495</td></tr>
 <tr>
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
@@ -1211,9 +1209,9 @@ Slowest: 4.5.4
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">1628,483 ns</td><td align="right">1672,462 ns</td><td align="right">1774,639 ns</td><td align="right">1713,037 ns</td><td align="right">1919,123 ns</td><td align="right">1324,557 ns</td></tr>
+<td>Average ns / operation</td><td align="right">1717,114 ns</td><td align="right">1704,175 ns</td><td align="right">1592,737 ns</td><td align="right">1794,517 ns</td><td align="right">2042,450 ns</td><td align="right">1355,651 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">1,628 μs</td><td align="right">1,672 μs</td><td align="right">1,775 μs</td><td align="right">1,713 μs</td><td align="right">1,919 μs</td><td align="right">1,325 μs</td></tr>
+<td>Average μs / operation</td><td align="right">1,717 μs</td><td align="right">1,704 μs</td><td align="right">1,593 μs</td><td align="right">1,795 μs</td><td align="right">2,042 μs</td><td align="right">1,356 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,001 ms</td></tr>
 </table>
@@ -1228,8 +1226,8 @@ Slowest: 4.5.4
 </tr>
 <tr>
 <td>Gen 0</td>
-<td align="right">4.4.0</td>
-<td align="right">4.2.0</td>
+<td align="right">5.0.0</td>
+<td align="right">4.5.0</td>
 </tr>
 <tr>
 <td>Gen 1</td>
@@ -1252,7 +1250,7 @@ Slowest: 4.5.4
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">113</td><td align="right">0</td><td align="right">0</td><td align="right">8</td><td align="right">12</td><td align="right">64</td></tr>
+<td>Gen 0</td><td align="right">585</td><td align="right">615</td><td align="right">615</td><td align="right">765</td><td align="right">765</td><td align="right">528</td></tr>
 <tr>
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
@@ -1276,9 +1274,9 @@ Slowest: 4.5.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">1398,817 ns</td><td align="right">1407,735 ns</td><td align="right">1470,580 ns</td><td align="right">1674,029 ns</td><td align="right">1590,622 ns</td><td align="right">1164,700 ns</td></tr>
+<td>Average ns / operation</td><td align="right">1368,907 ns</td><td align="right">1325,960 ns</td><td align="right">1388,004 ns</td><td align="right">1559,613 ns</td><td align="right">1507,306 ns</td><td align="right">1203,929 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">1,399 μs</td><td align="right">1,408 μs</td><td align="right">1,471 μs</td><td align="right">1,674 μs</td><td align="right">1,591 μs</td><td align="right">1,165 μs</td></tr>
+<td>Average μs / operation</td><td align="right">1,369 μs</td><td align="right">1,326 μs</td><td align="right">1,388 μs</td><td align="right">1,560 μs</td><td align="right">1,507 μs</td><td align="right">1,204 μs</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,001 ms</td><td align="right">0,002 ms</td><td align="right">0,002 ms</td><td align="right">0,001 ms</td></tr>
 </table>
@@ -1294,7 +1292,7 @@ Slowest: 4.5.0
 <tr>
 <td>Gen 0</td>
 <td align="right">5.0.0</td>
-<td align="right">4.5.4</td>
+<td align="right">4.3.0</td>
 </tr>
 <tr>
 <td>Gen 1</td>
@@ -1317,7 +1315,7 @@ Slowest: 4.5.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">82</td><td align="right">109</td><td align="right">109</td><td align="right">152</td><td align="right">168</td><td align="right">29</td></tr>
+<td>Gen 0</td><td align="right">592</td><td align="right">858</td><td align="right">585</td><td align="right">735</td><td align="right">735</td><td align="right">465</td></tr>
 <tr>
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
@@ -1328,26 +1326,288 @@ Slowest: 4.5.0
 </table>
 
 
-## <a name="Serialization_Binary_Benchmark"></a>Serialization_Binary_Benchmark
+## <a name="PropertyBag_GetPropertyValue_Benchmark"></a>PropertyBag_GetPropertyValue_Benchmark
 
-### <a name="Serialization_Binary_Benchmark_SerializeComplexObjectGraph"></a>SerializeComplexObjectGraph
+### <a name="PropertyBag_GetPropertyValue_Benchmark_GetBoolValue"></a>GetBoolValue
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **5.0.0**
 
-Slowest: 4.5.4
+Slowest: 4.2.0
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">250575,641 ns</td><td align="right">252080,481 ns</td><td align="right">262872,466 ns</td><td align="right">270053,601 ns</td><td align="right">670569,059 ns</td><td align="right">663113,897 ns</td></tr>
+<td>Average ns / operation</td><td align="right">89,793 ns</td><td align="right">89,286 ns</td><td align="right">89,133 ns</td><td align="right">74,208 ns</td><td align="right">73,462 ns</td><td align="right">72,025 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">250,576 μs</td><td align="right">252,080 μs</td><td align="right">262,872 μs</td><td align="right">270,054 μs</td><td align="right">670,569 μs</td><td align="right">663,114 μs</td></tr>
+<td>Average μs / operation</td><td align="right">0,090 μs</td><td align="right">0,089 μs</td><td align="right">0,089 μs</td><td align="right">0,074 μs</td><td align="right">0,073 μs</td><td align="right">0,072 μs</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right">0,251 ms</td><td align="right">0,252 ms</td><td align="right">0,263 ms</td><td align="right">0,270 ms</td><td align="right">0,671 ms</td><td align="right">0,663 ms</td></tr>
+<td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
+</table>
+
+
+### <a name="PropertyBag_GetPropertyValue_Benchmark_GetIntValue"></a>GetIntValue
+
+#### Performance
+
+Fastest: **4.5.0**
+
+Slowest: 4.2.0
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">89,935 ns</td><td align="right">89,624 ns</td><td align="right">88,237 ns</td><td align="right">73,025 ns</td><td align="right">73,660 ns</td><td align="right">73,173 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">0,090 μs</td><td align="right">0,090 μs</td><td align="right">0,088 μs</td><td align="right">0,073 μs</td><td align="right">0,074 μs</td><td align="right">0,073 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
+</table>
+
+
+### <a name="PropertyBag_GetPropertyValue_Benchmark_GetStringValue"></a>GetStringValue
+
+#### Performance
+
+Fastest: **5.0.0**
+
+Slowest: 4.2.0
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">96,427 ns</td><td align="right">95,890 ns</td><td align="right">94,720 ns</td><td align="right">78,613 ns</td><td align="right">79,425 ns</td><td align="right">77,438 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">0,096 μs</td><td align="right">0,096 μs</td><td align="right">0,095 μs</td><td align="right">0,079 μs</td><td align="right">0,079 μs</td><td align="right">0,077 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
+</table>
+
+
+## <a name="PropertyBag_SetPropertyValue_Benchmark"></a>PropertyBag_SetPropertyValue_Benchmark
+
+### <a name="PropertyBag_SetPropertyValue_Benchmark_SetBoolValue"></a>SetBoolValue
+
+#### Performance
+
+Fastest: **5.0.0**
+
+Slowest: 4.2.0
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">197,241 ns</td><td align="right">196,513 ns</td><td align="right">194,230 ns</td><td align="right">167,784 ns</td><td align="right">166,527 ns</td><td align="right">115,115 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">0,197 μs</td><td align="right">0,197 μs</td><td align="right">0,194 μs</td><td align="right">0,168 μs</td><td align="right">0,167 μs</td><td align="right">0,115 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">5.0.0</td>
+<td align="right">4.2.0</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">5.0.0</td>
+<td align="right">4.2.0</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">225</td><td align="right">225</td><td align="right">225</td><td align="right">225</td><td align="right">225</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">0</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,000</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
+</table>
+
+
+### <a name="PropertyBag_SetPropertyValue_Benchmark_SetIntValue"></a>SetIntValue
+
+#### Performance
+
+Fastest: **5.0.0**
+
+Slowest: 4.2.0
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">191,672 ns</td><td align="right">189,058 ns</td><td align="right">189,124 ns</td><td align="right">165,839 ns</td><td align="right">165,965 ns</td><td align="right">110,291 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">0,192 μs</td><td align="right">0,189 μs</td><td align="right">0,189 μs</td><td align="right">0,166 μs</td><td align="right">0,166 μs</td><td align="right">0,110 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1367,6 +1627,400 @@ Slowest: 4.5.4
 <td>Gen 1</td>
 <td align="right">-</td>
 <td align="right">-</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">5.0.0</td>
+<td align="right">4.2.0</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">225</td><td align="right">225</td><td align="right">225</td><td align="right">330</td><td align="right">315</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">24</td><td align="right">0</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,023</td><td align="right">0,000</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
+</table>
+
+
+### <a name="PropertyBag_SetPropertyValue_Benchmark_SetStringValue"></a>SetStringValue
+
+#### Performance
+
+Fastest: **4.5.4**
+
+Slowest: 4.2.0
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">96,567 ns</td><td align="right">94,735 ns</td><td align="right">96,335 ns</td><td align="right">70,109 ns</td><td align="right">68,187 ns</td><td align="right">70,783 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">0,097 μs</td><td align="right">0,095 μs</td><td align="right">0,096 μs</td><td align="right">0,070 μs</td><td align="right">0,068 μs</td><td align="right">0,071 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td><td align="right">0,000 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
+</table>
+
+
+## <a name="Serialization_Binary_Benchmark"></a>Serialization_Binary_Benchmark
+
+### <a name="Serialization_Binary_Benchmark_SerializeComplexObjectGraph"></a>SerializeComplexObjectGraph
+
+#### Performance
+
+Fastest: **4.3.0**
+
+Slowest: 4.5.4
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">275350,562 ns</td><td align="right">273340,166 ns</td><td align="right">284869,142 ns</td><td align="right">292684,857 ns</td><td align="right">753217,005 ns</td><td align="right">744250,945 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">275,351 μs</td><td align="right">273,340 μs</td><td align="right">284,869 μs</td><td align="right">292,685 μs</td><td align="right">753,217 μs</td><td align="right">744,251 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">0,275 ms</td><td align="right">0,273 ms</td><td align="right">0,285 ms</td><td align="right">0,293 ms</td><td align="right">0,753 ms</td><td align="right">0,744 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">5.0.0</td>
+<td align="right">4.5.0</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">4.5.0</td>
+<td align="right">4.5.4</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">4.3.0</td>
+<td align="right">4.5.4</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">375</td><td align="right">375</td><td align="right">390</td><td align="right">405</td><td align="right">255</td><td align="right">255</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">30</td><td align="right">30</td><td align="right">30</td><td align="right">30</td><td align="right">45</td><td align="right">45</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">80223</td><td align="right">80079</td><td align="right">81403</td><td align="right">85723</td><td align="right">110736</td><td align="right">106806</td><tr>
+<td>Allocated Kilobytes</td><td align="right">78,343</td><td align="right">78,202</td><td align="right">79,495</td><td align="right">83,714</td><td align="right">108,141</td><td align="right">104,303</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,077</td><td align="right">0,076</td><td align="right">0,078</td><td align="right">0,082</td><td align="right">0,106</td><td align="right">0,102</td></tr>
+</table>
+
+
+### <a name="Serialization_Binary_Benchmark_SerializeLevel1Models"></a>SerializeLevel1Models
+
+#### Performance
+
+Fastest: **4.3.0**
+
+Slowest: 4.5.4
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">58037,457 ns</td><td align="right">57024,081 ns</td><td align="right">59474,804 ns</td><td align="right">64484,751 ns</td><td align="right">497195,280 ns</td><td align="right">491286,894 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">58,037 μs</td><td align="right">57,024 μs</td><td align="right">59,475 μs</td><td align="right">64,485 μs</td><td align="right">497,195 μs</td><td align="right">491,287 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">0,058 ms</td><td align="right">0,057 ms</td><td align="right">0,059 ms</td><td align="right">0,064 ms</td><td align="right">0,497 ms</td><td align="right">0,491 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">5.0.0</td>
+<td align="right">4.2.0</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">4.5.0</td>
+<td align="right">4.2.0</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">4.3.0</td>
+<td align="right">4.5.4</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">1224</td><td align="right">765</td><td align="right">390</td><td align="right">405</td><td align="right">90</td><td align="right">90</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">48</td><td align="right">30</td><td align="right">15</td><td align="right">15</td><td align="right">30</td><td align="right">30</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">19999</td><td align="right">19928</td><td align="right">20270</td><td align="right">21569</td><td align="right">39225</td><td align="right">38801</td><tr>
+<td>Allocated Kilobytes</td><td align="right">19,530</td><td align="right">19,461</td><td align="right">19,795</td><td align="right">21,063</td><td align="right">38,306</td><td align="right">37,892</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,019</td><td align="right">0,019</td><td align="right">0,019</td><td align="right">0,021</td><td align="right">0,037</td><td align="right">0,037</td></tr>
+</table>
+
+
+### <a name="Serialization_Binary_Benchmark_SerializeLevel2Models"></a>SerializeLevel2Models
+
+#### Performance
+
+Fastest: **4.3.0**
+
+Slowest: 4.5.4
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">201412,251 ns</td><td align="right">184230,239 ns</td><td align="right">194143,846 ns</td><td align="right">198508,862 ns</td><td align="right">659218,211 ns</td><td align="right">650878,071 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">201,412 μs</td><td align="right">184,230 μs</td><td align="right">194,144 μs</td><td align="right">198,509 μs</td><td align="right">659,218 μs</td><td align="right">650,878 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">0,201 ms</td><td align="right">0,184 ms</td><td align="right">0,194 ms</td><td align="right">0,199 ms</td><td align="right">0,659 ms</td><td align="right">0,651 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">5.0.0</td>
+<td align="right">4.5.0</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">4.5.0</td>
+<td align="right">4.5.4</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">4.3.0</td>
+<td align="right">4.5.4</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">570</td><td align="right">570</td><td align="right">585</td><td align="right">630</td><td align="right">210</td><td align="right">195</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">30</td><td align="right">30</td><td align="right">30</td><td align="right">30</td><td align="right">45</td><td align="right">45</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">59384</td><td align="right">59242</td><td align="right">60582</td><td align="right">64970</td><td align="right">87914</td><td align="right">85931</td><tr>
+<td>Allocated Kilobytes</td><td align="right">57,992</td><td align="right">57,854</td><td align="right">59,162</td><td align="right">63,447</td><td align="right">85,854</td><td align="right">83,917</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,057</td><td align="right">0,056</td><td align="right">0,058</td><td align="right">0,062</td><td align="right">0,084</td><td align="right">0,082</td></tr>
+</table>
+
+
+### <a name="Serialization_Binary_Benchmark_SerializeLevel3Models"></a>SerializeLevel3Models
+
+#### Performance
+
+Fastest: **4.3.0**
+
+Slowest: 4.5.4
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">963589,160 ns</td><td align="right">907739,982 ns</td><td align="right">937438,822 ns</td><td align="right">966982,732 ns</td><td align="right">1486250,742 ns</td><td align="right">1483136,732 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">963,589 μs</td><td align="right">907,740 μs</td><td align="right">937,439 μs</td><td align="right">966,983 μs</td><td align="right">1486,251 μs</td><td align="right">1483,137 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">0,964 ms</td><td align="right">0,908 ms</td><td align="right">0,937 ms</td><td align="right">0,967 ms</td><td align="right">1,486 ms</td><td align="right">1,483 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">4.5.0</td>
+<td align="right">4.4.0</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">4.5.0</td>
+<td align="right">4.4.0</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">4.3.0</td>
+<td align="right">4.5.4</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">630</td><td align="right">630</td><td align="right">645</td><td align="right">345</td><td align="right">405</td><td align="right">390</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">84</td><td align="right">75</td><td align="right">90</td><td align="right">45</td><td align="right">75</td><td align="right">75</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">263122</td><td align="right">262616</td><td align="right">268910</td><td align="right">288620</td><td align="right">337554</td><td align="right">327787</td><tr>
+<td>Allocated Kilobytes</td><td align="right">256,955</td><td align="right">256,461</td><td align="right">262,607</td><td align="right">281,855</td><td align="right">329,643</td><td align="right">320,104</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,251</td><td align="right">0,250</td><td align="right">0,256</td><td align="right">0,275</td><td align="right">0,322</td><td align="right">0,313</td></tr>
+</table>
+
+
+## <a name="Serialization_Json_Benchmark"></a>Serialization_Json_Benchmark
+
+### <a name="Serialization_Json_Benchmark_SerializeComplexObjectGraph"></a>SerializeComplexObjectGraph
+
+#### Performance
+
+Fastest: **4.3.0**
+
+Slowest: 5.0.0
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">18356338,143 ns</td><td align="right">17930872,760 ns</td><td align="right">17971804,107 ns</td><td align="right">18026533,462 ns</td><td align="right">18764256,272 ns</td><td align="right">18768181,563 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">18356,338 μs</td><td align="right">17930,873 μs</td><td align="right">17971,804 μs</td><td align="right">18026,533 μs</td><td align="right">18764,256 μs</td><td align="right">18768,182 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">18,356 ms</td><td align="right">17,931 ms</td><td align="right">17,972 ms</td><td align="right">18,027 ms</td><td align="right">18,764 ms</td><td align="right">18,768 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">5.0.0</td>
+<td align="right">4.3.0</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">5.0.0</td>
+<td align="right">4.3.0</td>
 </tr>
 <tr>
 <td>Gen 2</td>
@@ -1384,148 +2038,18 @@ Slowest: 4.5.4
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">32</td><td align="right">40</td><td align="right">32</td><td align="right">47</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Gen 0</td><td align="right">105</td><td align="right">700</td><td align="right">119</td><td align="right">105</td><td align="right">105</td><td align="right">105</td></tr>
 <tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
-<tr>
-<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">79520</td><td align="right">79521</td><td align="right">80840</td><td align="right">85166</td><td align="right">110028</td><td align="right">108648</td><tr>
-<td>Allocated Kilobytes</td><td align="right">77,656</td><td align="right">77,657</td><td align="right">78,945</td><td align="right">83,170</td><td align="right">107,449</td><td align="right">106,102</td><tr>
-<td>Allocated Megabytes</td><td align="right">0,076</td><td align="right">0,076</td><td align="right">0,077</td><td align="right">0,081</td><td align="right">0,105</td><td align="right">0,104</td></tr>
-</table>
-
-
-### <a name="Serialization_Binary_Benchmark_SerializeLevel1Models"></a>SerializeLevel1Models
-
-#### Performance
-
-Fastest: **4.2.0**
-
-Slowest: 4.5.4
-
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Average ns / operation</td><td align="right">50353,709 ns</td><td align="right">52729,063 ns</td><td align="right">56338,321 ns</td><td align="right">57867,727 ns</td><td align="right">423134,284 ns</td><td align="right">420578,826 ns</td></tr>
-<tr>
-<td>Average μs / operation</td><td align="right">50,354 μs</td><td align="right">52,729 μs</td><td align="right">56,338 μs</td><td align="right">57,868 μs</td><td align="right">423,134 μs</td><td align="right">420,579 μs</td></tr>
-<tr>
-<td>Average ms / operation</td><td align="right">0,050 ms</td><td align="right">0,053 ms</td><td align="right">0,056 ms</td><td align="right">0,058 ms</td><td align="right">0,423 ms</td><td align="right">0,421 ms</td></tr>
-</table>
-
-#### Memory (per 1k operations)
-
-<table>
-<tr>
-<th>Name</th>
-<th>Least</th>
-<th>Most</th>
-</tr>
-<tr>
-<td>Gen 0</td>
-<td align="right">5.0.0</td>
-<td align="right">4.5.0</td>
-</tr>
-<tr>
-<td>Gen 1</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Gen 2</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Allocated Bytes</td>
-<td align="right">4.3.0</td>
-<td align="right">4.5.4</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Gen 0</td><td align="right">36</td><td align="right">36</td><td align="right">36</td><td align="right">47</td><td align="right">0</td><td align="right">0</td></tr>
-<tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Gen 1</td><td align="right">30</td><td align="right">200</td><td align="right">34</td><td align="right">30</td><td align="right">30</td><td align="right">30</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">19824</td><td align="right">19824</td><td align="right">20166</td><td align="right">21464</td><td align="right">39041</td><td align="right">38591</td><tr>
-<td>Allocated Kilobytes</td><td align="right">19,359</td><td align="right">19,359</td><td align="right">19,693</td><td align="right">20,961</td><td align="right">38,126</td><td align="right">37,687</td><tr>
-<td>Allocated Megabytes</td><td align="right">0,019</td><td align="right">0,019</td><td align="right">0,019</td><td align="right">0,020</td><td align="right">0,037</td><td align="right">0,037</td></tr>
+<td>Allocated Bytes</td><td align="right">1430549</td><td align="right">1431056</td><td align="right">1452571</td><td align="right">1490723</td><td align="right">1560847</td><td align="right">1537040</td><tr>
+<td>Allocated Kilobytes</td><td align="right">1397,021</td><td align="right">1397,516</td><td align="right">1418,526</td><td align="right">1455,784</td><td align="right">1524,265</td><td align="right">1501,016</td><tr>
+<td>Allocated Megabytes</td><td align="right">1,364</td><td align="right">1,365</td><td align="right">1,385</td><td align="right">1,422</td><td align="right">1,489</td><td align="right">1,466</td></tr>
 </table>
 
 
-### <a name="Serialization_Binary_Benchmark_SerializeLevel2Models"></a>SerializeLevel2Models
-
-#### Performance
-
-Fastest: **4.2.0**
-
-Slowest: 5.0.0
-
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Average ns / operation</td><td align="right">170409,387 ns</td><td align="right">173010,086 ns</td><td align="right">182441,548 ns</td><td align="right">183185,510 ns</td><td align="right">568491,650 ns</td><td align="right">569289,430 ns</td></tr>
-<tr>
-<td>Average μs / operation</td><td align="right">170,409 μs</td><td align="right">173,010 μs</td><td align="right">182,442 μs</td><td align="right">183,186 μs</td><td align="right">568,492 μs</td><td align="right">569,289 μs</td></tr>
-<tr>
-<td>Average ms / operation</td><td align="right">0,170 ms</td><td align="right">0,173 ms</td><td align="right">0,182 ms</td><td align="right">0,183 ms</td><td align="right">0,568 ms</td><td align="right">0,569 ms</td></tr>
-</table>
-
-#### Memory (per 1k operations)
-
-<table>
-<tr>
-<th>Name</th>
-<th>Least</th>
-<th>Most</th>
-</tr>
-<tr>
-<td>Gen 0</td>
-<td align="right">5.0.0</td>
-<td align="right">4.5.0</td>
-</tr>
-<tr>
-<td>Gen 1</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Gen 2</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Allocated Bytes</td>
-<td align="right">4.3.0</td>
-<td align="right">4.5.4</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Gen 0</td><td align="right">118</td><td align="right">118</td><td align="right">129</td><td align="right">160</td><td align="right">0</td><td align="right">0</td></tr>
-<tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
-<tr>
-<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">59122</td><td align="right">59121</td><td align="right">60459</td><td align="right">64846</td><td align="right">87644</td><td align="right">86192</td><tr>
-<td>Allocated Kilobytes</td><td align="right">57,736</td><td align="right">57,735</td><td align="right">59,042</td><td align="right">63,326</td><td align="right">85,590</td><td align="right">84,172</td><tr>
-<td>Allocated Megabytes</td><td align="right">0,056</td><td align="right">0,056</td><td align="right">0,058</td><td align="right">0,062</td><td align="right">0,084</td><td align="right">0,082</td></tr>
-</table>
-
-
-### <a name="Serialization_Binary_Benchmark_SerializeLevel3Models"></a>SerializeLevel3Models
+### <a name="Serialization_Json_Benchmark_SerializeLevel1Models"></a>SerializeLevel1Models
 
 #### Performance
 
@@ -1538,11 +2062,76 @@ Slowest: 4.5.4
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">869651,510 ns</td><td align="right">851998,903 ns</td><td align="right">877779,599 ns</td><td align="right">921756,978 ns</td><td align="right">1367246,096 ns</td><td align="right">1358553,199 ns</td></tr>
+<td>Average ns / operation</td><td align="right">762351,849 ns</td><td align="right">744862,168 ns</td><td align="right">754537,919 ns</td><td align="right">769751,659 ns</td><td align="right">1233808,188 ns</td><td align="right">1211859,328 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">869,652 μs</td><td align="right">851,999 μs</td><td align="right">877,780 μs</td><td align="right">921,757 μs</td><td align="right">1367,246 μs</td><td align="right">1358,553 μs</td></tr>
+<td>Average μs / operation</td><td align="right">762,352 μs</td><td align="right">744,862 μs</td><td align="right">754,538 μs</td><td align="right">769,752 μs</td><td align="right">1233,808 μs</td><td align="right">1211,859 μs</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right">0,870 ms</td><td align="right">0,852 ms</td><td align="right">0,878 ms</td><td align="right">0,922 ms</td><td align="right">1,367 ms</td><td align="right">1,359 ms</td></tr>
+<td>Average ms / operation</td><td align="right">0,762 ms</td><td align="right">0,745 ms</td><td align="right">0,755 ms</td><td align="right">0,770 ms</td><td align="right">1,234 ms</td><td align="right">1,212 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">5.0.0</td>
+<td align="right">4.5.0</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">5.0.0</td>
+<td align="right">4.2.0</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">4.3.0</td>
+<td align="right">4.5.4</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">150</td><td align="right">150</td><td align="right">150</td><td align="right">165</td><td align="right">90</td><td align="right">90</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">45</td><td align="right">30</td><td align="right">45</td><td align="right">45</td><td align="right">30</td><td align="right">30</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">66606</td><td align="right">66442</td><td align="right">67281</td><td align="right">69755</td><td align="right">87173</td><td align="right">86424</td><tr>
+<td>Allocated Kilobytes</td><td align="right">65,045</td><td align="right">64,885</td><td align="right">65,704</td><td align="right">68,120</td><td align="right">85,130</td><td align="right">84,398</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,064</td><td align="right">0,063</td><td align="right">0,064</td><td align="right">0,067</td><td align="right">0,083</td><td align="right">0,082</td></tr>
+</table>
+
+
+### <a name="Serialization_Json_Benchmark_SerializeLevel2Models"></a>SerializeLevel2Models
+
+#### Performance
+
+Fastest: **4.5.0**
+
+Slowest: 4.5.4
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">3028862,793 ns</td><td align="right">3034786,355 ns</td><td align="right">3187480,410 ns</td><td align="right">3014357,266 ns</td><td align="right">3596501,146 ns</td><td align="right">3496882,884 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">3028,863 μs</td><td align="right">3034,786 μs</td><td align="right">3187,480 μs</td><td align="right">3014,357 μs</td><td align="right">3596,501 μs</td><td align="right">3496,883 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">3,029 ms</td><td align="right">3,035 ms</td><td align="right">3,187 ms</td><td align="right">3,014 ms</td><td align="right">3,597 ms</td><td align="right">3,497 ms</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1556,12 +2145,12 @@ Slowest: 4.5.4
 <tr>
 <td>Gen 0</td>
 <td align="right">4.4.0</td>
-<td align="right">5.0.0</td>
+<td align="right">4.5.0</td>
 </tr>
 <tr>
 <td>Gen 1</td>
-<td align="right">-</td>
-<td align="right">-</td>
+<td align="right">4.2.0</td>
+<td align="right">4.3.0</td>
 </tr>
 <tr>
 <td>Gen 2</td>
@@ -1570,7 +2159,7 @@ Slowest: 4.5.4
 </tr>
 <tr>
 <td>Allocated Bytes</td>
-<td align="right">4.3.0</td>
+<td align="right">4.2.0</td>
 <td align="right">4.5.4</td>
 </tr>
 </table>
@@ -1579,211 +2168,14 @@ Slowest: 4.5.4
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">14</td><td align="right">14</td><td align="right">14</td><td align="right">21</td><td align="right">47</td><td align="right">59</td></tr>
+<td>Gen 0</td><td align="right">135</td><td align="right">135</td><td align="right">135</td><td align="right">170</td><td align="right">165</td><td align="right">165</td></tr>
 <tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
-<tr>
-<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">262613</td><td align="right">262613</td><td align="right">268899</td><td align="right">288596</td><td align="right">337022</td><td align="right">330726</td><tr>
-<td>Allocated Kilobytes</td><td align="right">256,458</td><td align="right">256,458</td><td align="right">262,597</td><td align="right">281,832</td><td align="right">329,123</td><td align="right">322,975</td><tr>
-<td>Allocated Megabytes</td><td align="right">0,250</td><td align="right">0,250</td><td align="right">0,256</td><td align="right">0,275</td><td align="right">0,321</td><td align="right">0,315</td></tr>
-</table>
-
-
-## <a name="Serialization_Json_Benchmark"></a>Serialization_Json_Benchmark
-
-### <a name="Serialization_Json_Benchmark_SerializeComplexObjectGraph"></a>SerializeComplexObjectGraph
-
-#### Performance
-
-Fastest: **4.3.0**
-
-Slowest: 4.5.4
-
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Average ns / operation</td><td align="right">17402176,026 ns</td><td align="right">16593257,791 ns</td><td align="right">16713437,238 ns</td><td align="right">16781747,383 ns</td><td align="right">17614972,282 ns</td><td align="right">17324725,144 ns</td></tr>
-<tr>
-<td>Average μs / operation</td><td align="right">17402,176 μs</td><td align="right">16593,258 μs</td><td align="right">16713,437 μs</td><td align="right">16781,747 μs</td><td align="right">17614,972 μs</td><td align="right">17324,725 μs</td></tr>
-<tr>
-<td>Average ms / operation</td><td align="right">17,402 ms</td><td align="right">16,593 ms</td><td align="right">16,713 ms</td><td align="right">16,782 ms</td><td align="right">17,615 ms</td><td align="right">17,325 ms</td></tr>
-</table>
-
-#### Memory (per 1k operations)
-
-<table>
-<tr>
-<th>Name</th>
-<th>Least</th>
-<th>Most</th>
-</tr>
-<tr>
-<td>Gen 0</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Gen 1</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Gen 2</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Allocated Bytes</td>
-<td align="right">4.3.0</td>
-<td align="right">4.5.4</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Gen 0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
-<tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Gen 1</td><td align="right">30</td><td align="right">45</td><td align="right">45</td><td align="right">43</td><td align="right">45</td><td align="right">45</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">1429262</td><td align="right">1429262</td><td align="right">1455125</td><td align="right">1483791</td><td align="right">1559567</td><td align="right">1558541</td><tr>
-<td>Allocated Kilobytes</td><td align="right">1395,764</td><td align="right">1395,764</td><td align="right">1421,021</td><td align="right">1449,015</td><td align="right">1523,015</td><td align="right">1522,013</td><tr>
-<td>Allocated Megabytes</td><td align="right">1,363</td><td align="right">1,363</td><td align="right">1,388</td><td align="right">1,415</td><td align="right">1,487</td><td align="right">1,486</td></tr>
-</table>
-
-
-### <a name="Serialization_Json_Benchmark_SerializeLevel1Models"></a>SerializeLevel1Models
-
-#### Performance
-
-Fastest: **4.2.0**
-
-Slowest: 4.5.4
-
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Average ns / operation</td><td align="right">693299,242 ns</td><td align="right">696734,306 ns</td><td align="right">703925,207 ns</td><td align="right">711441,951 ns</td><td align="right">1103686,690 ns</td><td align="right">1091509,893 ns</td></tr>
-<tr>
-<td>Average μs / operation</td><td align="right">693,299 μs</td><td align="right">696,734 μs</td><td align="right">703,925 μs</td><td align="right">711,442 μs</td><td align="right">1103,687 μs</td><td align="right">1091,510 μs</td></tr>
-<tr>
-<td>Average ms / operation</td><td align="right">0,693 ms</td><td align="right">0,697 ms</td><td align="right">0,704 ms</td><td align="right">0,711 ms</td><td align="right">1,104 ms</td><td align="right">1,092 ms</td></tr>
-</table>
-
-#### Memory (per 1k operations)
-
-<table>
-<tr>
-<th>Name</th>
-<th>Least</th>
-<th>Most</th>
-</tr>
-<tr>
-<td>Gen 0</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Gen 1</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Gen 2</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Allocated Bytes</td>
-<td align="right">4.3.0</td>
-<td align="right">4.5.4</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Gen 0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
-<tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
-<tr>
-<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">66433</td><td align="right">66433</td><td align="right">67376</td><td align="right">69216</td><td align="right">87721</td><td align="right">86665</td><tr>
-<td>Allocated Kilobytes</td><td align="right">64,876</td><td align="right">64,876</td><td align="right">65,797</td><td align="right">67,594</td><td align="right">85,665</td><td align="right">84,634</td><tr>
-<td>Allocated Megabytes</td><td align="right">0,063</td><td align="right">0,063</td><td align="right">0,064</td><td align="right">0,066</td><td align="right">0,084</td><td align="right">0,083</td></tr>
-</table>
-
-
-### <a name="Serialization_Json_Benchmark_SerializeLevel2Models"></a>SerializeLevel2Models
-
-#### Performance
-
-Fastest: **4.2.0**
-
-Slowest: 4.5.4
-
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Average ns / operation</td><td align="right">2768003,470 ns</td><td align="right">2790006,572 ns</td><td align="right">2770446,050 ns</td><td align="right">2788929,529 ns</td><td align="right">3236314,713 ns</td><td align="right">3208357,800 ns</td></tr>
-<tr>
-<td>Average μs / operation</td><td align="right">2768,003 μs</td><td align="right">2790,007 μs</td><td align="right">2770,446 μs</td><td align="right">2788,930 μs</td><td align="right">3236,315 μs</td><td align="right">3208,358 μs</td></tr>
-<tr>
-<td>Average ms / operation</td><td align="right">2,768 ms</td><td align="right">2,790 ms</td><td align="right">2,770 ms</td><td align="right">2,789 ms</td><td align="right">3,236 ms</td><td align="right">3,208 ms</td></tr>
-</table>
-
-#### Memory (per 1k operations)
-
-<table>
-<tr>
-<th>Name</th>
-<th>Least</th>
-<th>Most</th>
-</tr>
-<tr>
-<td>Gen 0</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Gen 1</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Gen 2</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Allocated Bytes</td>
-<td align="right">4.3.0</td>
-<td align="right">4.5.4</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Gen 0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
-<tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
-<tr>
-<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">246733</td><td align="right">246725</td><td align="right">248783</td><td align="right">256130</td><td align="right">283650</td><td align="right">281474</td><tr>
-<td>Allocated Kilobytes</td><td align="right">240,950</td><td align="right">240,942</td><td align="right">242,952</td><td align="right">250,127</td><td align="right">277,002</td><td align="right">274,877</td><tr>
-<td>Allocated Megabytes</td><td align="right">0,235</td><td align="right">0,235</td><td align="right">0,237</td><td align="right">0,244</td><td align="right">0,271</td><td align="right">0,268</td></tr>
+<td>Allocated Bytes</td><td align="right">245634</td><td align="right">246147</td><td align="right">250243</td><td align="right">257595</td><td align="right">285752</td><td align="right">279785</td><tr>
+<td>Allocated Kilobytes</td><td align="right">239,877</td><td align="right">240,378</td><td align="right">244,378</td><td align="right">251,558</td><td align="right">279,055</td><td align="right">273,228</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,234</td><td align="right">0,235</td><td align="right">0,239</td><td align="right">0,246</td><td align="right">0,273</td><td align="right">0,267</td></tr>
 </table>
 
 
@@ -1791,20 +2183,20 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **4.3.0**
 
-Slowest: 5.0.0
+Slowest: 4.4.0
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">13110833,642 ns</td><td align="right">13194537,735 ns</td><td align="right">13137860,545 ns</td><td align="right">13315286,523 ns</td><td align="right">13981905,667 ns</td><td align="right">14158849,634 ns</td></tr>
+<td>Average ns / operation</td><td align="right">14218864,967 ns</td><td align="right">14213849,291 ns</td><td align="right">15156057,109 ns</td><td align="right">14421660,649 ns</td><td align="right">14838944,018 ns</td><td align="right">14888927,645 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">13110,834 μs</td><td align="right">13194,538 μs</td><td align="right">13137,861 μs</td><td align="right">13315,287 μs</td><td align="right">13981,906 μs</td><td align="right">14158,850 μs</td></tr>
+<td>Average μs / operation</td><td align="right">14218,865 μs</td><td align="right">14213,849 μs</td><td align="right">15156,057 μs</td><td align="right">14421,661 μs</td><td align="right">14838,944 μs</td><td align="right">14888,928 μs</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right">13,111 ms</td><td align="right">13,195 ms</td><td align="right">13,138 ms</td><td align="right">13,315 ms</td><td align="right">13,982 ms</td><td align="right">14,159 ms</td></tr>
+<td>Average ms / operation</td><td align="right">14,219 ms</td><td align="right">14,214 ms</td><td align="right">15,156 ms</td><td align="right">14,422 ms</td><td align="right">14,839 ms</td><td align="right">14,889 ms</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1817,13 +2209,13 @@ Slowest: 5.0.0
 </tr>
 <tr>
 <td>Gen 0</td>
-<td align="right">-</td>
-<td align="right">-</td>
+<td align="right">4.5.0</td>
+<td align="right">4.5.4</td>
 </tr>
 <tr>
 <td>Gen 1</td>
-<td align="right">-</td>
-<td align="right">-</td>
+<td align="right">5.0.0</td>
+<td align="right">4.2.0</td>
 </tr>
 <tr>
 <td>Gen 2</td>
@@ -1841,14 +2233,14 @@ Slowest: 5.0.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Gen 0</td><td align="right">165</td><td align="right">165</td><td align="right">165</td><td align="right">165</td><td align="right">180</td><td align="right">180</td></tr>
 <tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Gen 1</td><td align="right">45</td><td align="right">45</td><td align="right">45</td><td align="right">45</td><td align="right">45</td><td align="right">45</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">1150026</td><td align="right">1150026</td><td align="right">1159270</td><td align="right">1203723</td><td align="right">1267211</td><td align="right">1255433</td><tr>
-<td>Allocated Kilobytes</td><td align="right">1123,072</td><td align="right">1123,072</td><td align="right">1132,100</td><td align="right">1175,511</td><td align="right">1237,511</td><td align="right">1226,009</td><tr>
-<td>Allocated Megabytes</td><td align="right">1,097</td><td align="right">1,097</td><td align="right">1,106</td><td align="right">1,148</td><td align="right">1,209</td><td align="right">1,197</td></tr>
+<td>Allocated Bytes</td><td align="right">1144996</td><td align="right">1143319</td><td align="right">1166988</td><td align="right">1202064</td><td align="right">1266197</td><td align="right">1241898</td><tr>
+<td>Allocated Kilobytes</td><td align="right">1118,160</td><td align="right">1116,522</td><td align="right">1139,637</td><td align="right">1173,891</td><td align="right">1236,521</td><td align="right">1212,791</td><tr>
+<td>Allocated Megabytes</td><td align="right">1,092</td><td align="right">1,090</td><td align="right">1,113</td><td align="right">1,146</td><td align="right">1,208</td><td align="right">1,184</td></tr>
 </table>
 
 
@@ -1867,76 +2259,11 @@ Slowest: 5.0.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">710672,952 ns</td><td align="right">713087,933 ns</td><td align="right">860653,075 ns</td><td align="right">901437,217 ns</td><td align="right">1340999,643 ns</td><td align="right">1348150,853 ns</td></tr>
+<td>Average ns / operation</td><td align="right">736482,721 ns</td><td align="right">776716,456 ns</td><td align="right">907421,491 ns</td><td align="right">944012,740 ns</td><td align="right">1441733,097 ns</td><td align="right">1467758,675 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">710,673 μs</td><td align="right">713,088 μs</td><td align="right">860,653 μs</td><td align="right">901,437 μs</td><td align="right">1341,000 μs</td><td align="right">1348,151 μs</td></tr>
+<td>Average μs / operation</td><td align="right">736,483 μs</td><td align="right">776,716 μs</td><td align="right">907,421 μs</td><td align="right">944,013 μs</td><td align="right">1441,733 μs</td><td align="right">1467,759 μs</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right">0,711 ms</td><td align="right">0,713 ms</td><td align="right">0,861 ms</td><td align="right">0,901 ms</td><td align="right">1,341 ms</td><td align="right">1,348 ms</td></tr>
-</table>
-
-#### Memory (per 1k operations)
-
-<table>
-<tr>
-<th>Name</th>
-<th>Least</th>
-<th>Most</th>
-</tr>
-<tr>
-<td>Gen 0</td>
-<td align="right">4.4.0</td>
-<td align="right">4.2.0</td>
-</tr>
-<tr>
-<td>Gen 1</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Gen 2</td>
-<td align="right">-</td>
-<td align="right">-</td>
-</tr>
-<tr>
-<td>Allocated Bytes</td>
-<td align="right">4.2.0</td>
-<td align="right">4.5.4</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Gen 0</td><td align="right">528</td><td align="right">516</td><td align="right">174</td><td align="right">202</td><td align="right">209</td><td align="right">209</td></tr>
-<tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
-<tr>
-<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">544345</td><td align="right">544349</td><td align="right">550231</td><td align="right">559505</td><td align="right">587110</td><td align="right">585800</td><tr>
-<td>Allocated Kilobytes</td><td align="right">531,587</td><td align="right">531,591</td><td align="right">537,335</td><td align="right">546,392</td><td align="right">573,350</td><td align="right">572,070</td><tr>
-<td>Allocated Megabytes</td><td align="right">0,519</td><td align="right">0,519</td><td align="right">0,525</td><td align="right">0,534</td><td align="right">0,560</td><td align="right">0,559</td></tr>
-</table>
-
-
-### <a name="Serialization_Xml_Benchmark_SerializeLevel1Models"></a>SerializeLevel1Models
-
-#### Performance
-
-Fastest: **4.3.0**
-
-Slowest: 5.0.0
-
-
-<table>
-<tr>
-<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
-<tr>
-<td>Average ns / operation</td><td align="right">89042,126 ns</td><td align="right">86139,082 ns</td><td align="right">128190,975 ns</td><td align="right">141219,319 ns</td><td align="right">509877,562 ns</td><td align="right">514893,958 ns</td></tr>
-<tr>
-<td>Average μs / operation</td><td align="right">89,042 μs</td><td align="right">86,139 μs</td><td align="right">128,191 μs</td><td align="right">141,219 μs</td><td align="right">509,878 μs</td><td align="right">514,894 μs</td></tr>
-<tr>
-<td>Average ms / operation</td><td align="right">0,089 ms</td><td align="right">0,086 ms</td><td align="right">0,128 ms</td><td align="right">0,141 ms</td><td align="right">0,510 ms</td><td align="right">0,515 ms</td></tr>
+<td>Average ms / operation</td><td align="right">0,736 ms</td><td align="right">0,777 ms</td><td align="right">0,907 ms</td><td align="right">0,944 ms</td><td align="right">1,442 ms</td><td align="right">1,468 ms</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1950,12 +2277,12 @@ Slowest: 5.0.0
 <tr>
 <td>Gen 0</td>
 <td align="right">5.0.0</td>
-<td align="right">4.3.0</td>
+<td align="right">4.2.0</td>
 </tr>
 <tr>
 <td>Gen 1</td>
-<td align="right">-</td>
-<td align="right">-</td>
+<td align="right">5.0.0</td>
+<td align="right">4.2.0</td>
 </tr>
 <tr>
 <td>Gen 2</td>
@@ -1973,18 +2300,18 @@ Slowest: 5.0.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">969</td><td align="right">977</td><td align="right">414</td><td align="right">422</td><td align="right">17</td><td align="right">10</td></tr>
+<td>Gen 0</td><td align="right">2112</td><td align="right">1320</td><td align="right">1335</td><td align="right">1350</td><td align="right">705</td><td align="right">705</td></tr>
 <tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Gen 1</td><td align="right">292</td><td align="right">181</td><td align="right">180</td><td align="right">192</td><td align="right">120</td><td align="right">108</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">115961</td><td align="right">115961</td><td align="right">117638</td><td align="right">120589</td><td align="right">138488</td><td align="right">138054</td><tr>
-<td>Allocated Kilobytes</td><td align="right">113,243</td><td align="right">113,243</td><td align="right">114,881</td><td align="right">117,763</td><td align="right">135,242</td><td align="right">134,818</td><tr>
-<td>Allocated Megabytes</td><td align="right">0,111</td><td align="right">0,111</td><td align="right">0,112</td><td align="right">0,115</td><td align="right">0,132</td><td align="right">0,132</td></tr>
+<td>Allocated Bytes</td><td align="right">544313</td><td align="right">544212</td><td align="right">550086</td><td align="right">559305</td><td align="right">587104</td><td align="right">583219</td><tr>
+<td>Allocated Kilobytes</td><td align="right">531,556</td><td align="right">531,457</td><td align="right">537,193</td><td align="right">546,196</td><td align="right">573,344</td><td align="right">569,550</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,519</td><td align="right">0,519</td><td align="right">0,525</td><td align="right">0,533</td><td align="right">0,560</td><td align="right">0,556</td></tr>
 </table>
 
 
-### <a name="Serialization_Xml_Benchmark_SerializeLevel2Models"></a>SerializeLevel2Models
+### <a name="Serialization_Xml_Benchmark_SerializeLevel1Models"></a>SerializeLevel1Models
 
 #### Performance
 
@@ -1997,11 +2324,11 @@ Slowest: 5.0.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">309453,470 ns</td><td align="right">310592,011 ns</td><td align="right">447209,481 ns</td><td align="right">502668,734 ns</td><td align="right">915491,548 ns</td><td align="right">915704,652 ns</td></tr>
+<td>Average ns / operation</td><td align="right">92965,802 ns</td><td align="right">95053,641 ns</td><td align="right">139167,108 ns</td><td align="right">150403,845 ns</td><td align="right">585252,624 ns</td><td align="right">585495,586 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">309,453 μs</td><td align="right">310,592 μs</td><td align="right">447,209 μs</td><td align="right">502,669 μs</td><td align="right">915,492 μs</td><td align="right">915,705 μs</td></tr>
+<td>Average μs / operation</td><td align="right">92,966 μs</td><td align="right">95,054 μs</td><td align="right">139,167 μs</td><td align="right">150,404 μs</td><td align="right">585,253 μs</td><td align="right">585,496 μs</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right">0,309 ms</td><td align="right">0,311 ms</td><td align="right">0,447 ms</td><td align="right">0,503 ms</td><td align="right">0,915 ms</td><td align="right">0,916 ms</td></tr>
+<td>Average ms / operation</td><td align="right">0,093 ms</td><td align="right">0,095 ms</td><td align="right">0,139 ms</td><td align="right">0,150 ms</td><td align="right">0,585 ms</td><td align="right">0,585 ms</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -2015,12 +2342,12 @@ Slowest: 5.0.0
 <tr>
 <td>Gen 0</td>
 <td align="right">5.0.0</td>
-<td align="right">4.3.0</td>
+<td align="right">4.2.0</td>
 </tr>
 <tr>
 <td>Gen 1</td>
-<td align="right">-</td>
-<td align="right">-</td>
+<td align="right">4.4.0</td>
+<td align="right">4.2.0</td>
 </tr>
 <tr>
 <td>Gen 2</td>
@@ -2038,14 +2365,79 @@ Slowest: 5.0.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">812</td><td align="right">820</td><td align="right">348</td><td align="right">363</td><td align="right">123</td><td align="right">107</td></tr>
+<td>Gen 0</td><td align="right">2400</td><td align="right">2250</td><td align="right">1140</td><td align="right">1170</td><td align="right">330</td><td align="right">330</td></tr>
 <tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Gen 1</td><td align="right">112</td><td align="right">76</td><td align="right">44</td><td align="right">45</td><td align="right">45</td><td align="right">45</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">396412</td><td align="right">396404</td><td align="right">402326</td><td align="right">412033</td><td align="right">437406</td><td align="right">436058</td><tr>
-<td>Allocated Kilobytes</td><td align="right">387,121</td><td align="right">387,113</td><td align="right">392,896</td><td align="right">402,376</td><td align="right">427,154</td><td align="right">425,838</td><tr>
-<td>Allocated Megabytes</td><td align="right">0,378</td><td align="right">0,378</td><td align="right">0,384</td><td align="right">0,393</td><td align="right">0,417</td><td align="right">0,416</td></tr>
+<td>Allocated Bytes</td><td align="right">115961</td><td align="right">115909</td><td align="right">117560</td><td align="right">120561</td><td align="right">138495</td><td align="right">138107</td><tr>
+<td>Allocated Kilobytes</td><td align="right">113,243</td><td align="right">113,192</td><td align="right">114,805</td><td align="right">117,735</td><td align="right">135,249</td><td align="right">134,870</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,111</td><td align="right">0,111</td><td align="right">0,112</td><td align="right">0,115</td><td align="right">0,132</td><td align="right">0,132</td></tr>
+</table>
+
+
+### <a name="Serialization_Xml_Benchmark_SerializeLevel2Models"></a>SerializeLevel2Models
+
+#### Performance
+
+Fastest: **4.2.0**
+
+Slowest: 4.5.4
+
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Average ns / operation</td><td align="right">331511,262 ns</td><td align="right">335924,154 ns</td><td align="right">496169,277 ns</td><td align="right">515439,492 ns</td><td align="right">1007785,452 ns</td><td align="right">1006749,918 ns</td></tr>
+<tr>
+<td>Average μs / operation</td><td align="right">331,511 μs</td><td align="right">335,924 μs</td><td align="right">496,169 μs</td><td align="right">515,439 μs</td><td align="right">1007,785 μs</td><td align="right">1006,750 μs</td></tr>
+<tr>
+<td>Average ms / operation</td><td align="right">0,332 ms</td><td align="right">0,336 ms</td><td align="right">0,496 ms</td><td align="right">0,515 ms</td><td align="right">1,008 ms</td><td align="right">1,007 ms</td></tr>
+</table>
+
+#### Memory (per 1k operations)
+
+<table>
+<tr>
+<th>Name</th>
+<th>Least</th>
+<th>Most</th>
+</tr>
+<tr>
+<td>Gen 0</td>
+<td align="right">5.0.0</td>
+<td align="right">4.4.0</td>
+</tr>
+<tr>
+<td>Gen 1</td>
+<td align="right">5.0.0</td>
+<td align="right">4.4.0</td>
+</tr>
+<tr>
+<td>Gen 2</td>
+<td align="right">-</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Allocated Bytes</td>
+<td align="right">4.3.0</td>
+<td align="right">4.5.4</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
+<tr>
+<td>Gen 0</td><td align="right">1920</td><td align="right">1920</td><td align="right">1950</td><td align="right">990</td><td align="right">525</td><td align="right">525</td></tr>
+<tr>
+<td>Gen 1</td><td align="right">165</td><td align="right">165</td><td align="right">170</td><td align="right">82</td><td align="right">60</td><td align="right">60</td></tr>
+<tr>
+<td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
+<td>Allocated Bytes</td><td align="right">396417</td><td align="right">396236</td><td align="right">402196</td><td align="right">411951</td><td align="right">437383</td><td align="right">435476</td><tr>
+<td>Allocated Kilobytes</td><td align="right">387,126</td><td align="right">386,949</td><td align="right">392,770</td><td align="right">402,296</td><td align="right">427,132</td><td align="right">425,270</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,378</td><td align="right">0,378</td><td align="right">0,384</td><td align="right">0,393</td><td align="right">0,417</td><td align="right">0,415</td></tr>
 </table>
 
 
@@ -2053,7 +2445,7 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.3.0**
+Fastest: **4.2.0**
 
 Slowest: 5.0.0
 
@@ -2062,11 +2454,11 @@ Slowest: 5.0.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">1563714,294 ns</td><td align="right">1561240,486 ns</td><td align="right">2169791,208 ns</td><td align="right">2257862,668 ns</td><td align="right">2878593,600 ns</td><td align="right">2927218,456 ns</td></tr>
+<td>Average ns / operation</td><td align="right">1624078,052 ns</td><td align="right">1654548,167 ns</td><td align="right">2281299,316 ns</td><td align="right">2458125,070 ns</td><td align="right">3048982,617 ns</td><td align="right">3086688,285 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">1563,714 μs</td><td align="right">1561,240 μs</td><td align="right">2169,791 μs</td><td align="right">2257,863 μs</td><td align="right">2878,594 μs</td><td align="right">2927,218 μs</td></tr>
+<td>Average μs / operation</td><td align="right">1624,078 μs</td><td align="right">1654,548 μs</td><td align="right">2281,299 μs</td><td align="right">2458,125 μs</td><td align="right">3048,983 μs</td><td align="right">3086,688 μs</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right">1,564 ms</td><td align="right">1,561 ms</td><td align="right">2,170 ms</td><td align="right">2,258 ms</td><td align="right">2,879 ms</td><td align="right">2,927 ms</td></tr>
+<td>Average ms / operation</td><td align="right">1,624 ms</td><td align="right">1,655 ms</td><td align="right">2,281 ms</td><td align="right">2,458 ms</td><td align="right">3,049 ms</td><td align="right">3,087 ms</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -2084,7 +2476,7 @@ Slowest: 5.0.0
 </tr>
 <tr>
 <td>Gen 1</td>
-<td align="right">5.0.0</td>
+<td align="right">4.4.0</td>
 <td align="right">4.2.0</td>
 </tr>
 <tr>
@@ -2094,7 +2486,7 @@ Slowest: 5.0.0
 </tr>
 <tr>
 <td>Allocated Bytes</td>
-<td align="right">4.2.0</td>
+<td align="right">4.3.0</td>
 <td align="right">4.5.4</td>
 </tr>
 </table>
@@ -2103,14 +2495,14 @@ Slowest: 5.0.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">952</td><td align="right">416</td><td align="right">388</td><td align="right">411</td><td align="right">429</td><td align="right">418</td></tr>
+<td>Gen 0</td><td align="right">2628</td><td align="right">2190</td><td align="right">1095</td><td align="right">1125</td><td align="right">1170</td><td align="right">1155</td></tr>
 <tr>
-<td>Gen 1</td><td align="right">52</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Gen 1</td><td align="right">432</td><td align="right">360</td><td align="right">172</td><td align="right">180</td><td align="right">185</td><td align="right">189</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">1799898</td><td align="right">1800015</td><td align="right">1826460</td><td align="right">1868703</td><td align="right">1930729</td><td align="right">1924383</td><tr>
-<td>Allocated Kilobytes</td><td align="right">1757,713</td><td align="right">1757,827</td><td align="right">1783,652</td><td align="right">1824,905</td><td align="right">1885,478</td><td align="right">1879,280</td><tr>
-<td>Allocated Megabytes</td><td align="right">1,717</td><td align="right">1,717</td><td align="right">1,742</td><td align="right">1,782</td><td align="right">1,841</td><td align="right">1,835</td></tr>
+<td>Allocated Bytes</td><td align="right">1799941</td><td align="right">1799782</td><td align="right">1825939</td><td align="right">1868295</td><td align="right">1930644</td><td align="right">1921165</td><tr>
+<td>Allocated Kilobytes</td><td align="right">1757,755</td><td align="right">1757,600</td><td align="right">1783,144</td><td align="right">1824,507</td><td align="right">1885,395</td><td align="right">1876,138</td><tr>
+<td>Allocated Megabytes</td><td align="right">1,717</td><td align="right">1,716</td><td align="right">1,741</td><td align="right">1,782</td><td align="right">1,841</td><td align="right">1,832</td></tr>
 </table>
 
 
@@ -2129,11 +2521,11 @@ Slowest: 4.4.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average ns / operation</td><td align="right">33909,666 ns</td><td align="right">34381,279 ns</td><td align="right">34754,180 ns</td><td align="right">33659,856 ns</td><td align="right">32424,348 ns</td><td align="right">23382,522 ns</td></tr>
+<td>Average ns / operation</td><td align="right">34933,355 ns</td><td align="right">34713,335 ns</td><td align="right">35275,914 ns</td><td align="right">34034,155 ns</td><td align="right">33805,335 ns</td><td align="right">23092,638 ns</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right">33,910 μs</td><td align="right">34,381 μs</td><td align="right">34,754 μs</td><td align="right">33,660 μs</td><td align="right">32,424 μs</td><td align="right">23,383 μs</td></tr>
+<td>Average μs / operation</td><td align="right">34,933 μs</td><td align="right">34,713 μs</td><td align="right">35,276 μs</td><td align="right">34,034 μs</td><td align="right">33,805 μs</td><td align="right">23,093 μs</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right">0,034 ms</td><td align="right">0,034 ms</td><td align="right">0,035 ms</td><td align="right">0,034 ms</td><td align="right">0,032 ms</td><td align="right">0,023 ms</td></tr>
+<td>Average ms / operation</td><td align="right">0,035 ms</td><td align="right">0,035 ms</td><td align="right">0,035 ms</td><td align="right">0,034 ms</td><td align="right">0,034 ms</td><td align="right">0,023 ms</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -2146,13 +2538,13 @@ Slowest: 4.4.0
 </tr>
 <tr>
 <td>Gen 0</td>
+<td align="right">4.3.0</td>
 <td align="right">4.5.4</td>
-<td align="right">5.0.0</td>
 </tr>
 <tr>
 <td>Gen 1</td>
-<td align="right">-</td>
-<td align="right">-</td>
+<td align="right">4.3.0</td>
+<td align="right">4.5.4</td>
 </tr>
 <tr>
 <td>Gen 2</td>
@@ -2162,7 +2554,7 @@ Slowest: 4.4.0
 <tr>
 <td>Allocated Bytes</td>
 <td align="right">5.0.0</td>
-<td align="right">4.3.0</td>
+<td align="right">4.4.0</td>
 </tr>
 </table>
 
@@ -2170,13 +2562,13 @@ Slowest: 4.4.0
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">114</td></tr>
+<td>Gen 0</td><td align="right">570</td><td align="right">513</td><td align="right">684</td><td align="right">551</td><td align="right">874</td><td align="right">570</td></tr>
 <tr>
-<td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
+<td>Gen 1</td><td align="right">200</td><td align="right">178</td><td align="right">237</td><td align="right">187</td><td align="right">300</td><td align="right">203</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">7651</td><td align="right">7747</td><td align="right">7676</td><td align="right">7572</td><td align="right">7530</td><td align="right">6149</td><tr>
-<td>Allocated Kilobytes</td><td align="right">7,472</td><td align="right">7,565</td><td align="right">7,496</td><td align="right">7,395</td><td align="right">7,354</td><td align="right">6,005</td><tr>
+<td>Allocated Bytes</td><td align="right">7546</td><td align="right">7654</td><td align="right">7755</td><td align="right">7542</td><td align="right">7578</td><td align="right">6146</td><tr>
+<td>Allocated Kilobytes</td><td align="right">7,369</td><td align="right">7,475</td><td align="right">7,573</td><td align="right">7,365</td><td align="right">7,400</td><td align="right">6,002</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,006</td></tr>
 </table>
 
