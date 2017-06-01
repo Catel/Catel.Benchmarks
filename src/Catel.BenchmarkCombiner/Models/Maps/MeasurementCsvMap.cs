@@ -20,7 +20,8 @@ namespace Catel.BenchmarkCombiner.Models.Maps
             Map(x => x.Job_Id).Name("Job_Id");
             Map(x => x.Job_AnalyzeLaunchVariance).Name("Job_AnalyzeLaunchVariance");
             Map(x => x.Job_EvaluateOverhead).Name("Job_EvaluateOverhead");
-            Map(x => x.Job_MaxStdErrRelative).Name("Job_MaxStdErrRelative");
+            Map(x => x.Job_MaxAbsoluteError).Name("Job_MaxAbsoluteError");
+            Map(x => x.Job_MaxRelativeError).Name("Job_MaxRelativeError");
             Map(x => x.Job_MinInvokeCount).Name("Job_MinInvokeCount");
             Map(x => x.Job_MinIterationTime).Name("Job_MinIterationTime");
             Map(x => x.Job_RemoveOutliers).Name("Job_RemoveOutliers");
@@ -32,6 +33,7 @@ namespace Catel.BenchmarkCombiner.Models.Maps
             Map(x => x.Job_Concurrent).Name("Job_Concurrent");
             Map(x => x.Job_CpuGroups).Name("Job_CpuGroups");
             Map(x => x.Job_Force).Name("Job_Force");
+            Map(x => x.Job_RetainVm).Name("Job_RetainVm");
             Map(x => x.Job_Server).Name("Job_Server");
             Map(x => x.Job_Clock).Name("Job_Clock");
             Map(x => x.Job_EngineFactory).Name("Job_EngineFactory");

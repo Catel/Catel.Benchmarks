@@ -26,7 +26,9 @@ namespace Catel.BenchmarkCombiner
 
         public string Job_EvaluateOverhead { get; set; }
 
-        public string Job_MaxStdErrRelative { get; set; }
+        public string Job_MaxAbsoluteError { get; set; }
+
+        public string Job_MaxRelativeError { get; set; }
 
         public string Job_MinInvokeCount { get; set; }
 
@@ -49,6 +51,8 @@ namespace Catel.BenchmarkCombiner
         public string Job_CpuGroups { get; set; }
 
         public string Job_Force { get; set; }
+
+        public string Job_RetainVm { get; set; }
 
         public string Job_Server { get; set; }
 
