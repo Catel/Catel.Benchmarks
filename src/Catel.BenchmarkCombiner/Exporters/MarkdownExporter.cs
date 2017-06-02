@@ -14,6 +14,9 @@ namespace Catel.BenchmarkCombiner.Exporters
 
     public class MarkdownExporter : ExporterBase
     {
+        private const string DecreasedBackgroundColor = "#A8D08D";
+        private const string IncreasedBackgroundColor = "#FF4949";
+
         private const string FileName = "summary.md";
 
         #region Methods
@@ -46,6 +49,9 @@ namespace Catel.BenchmarkCombiner.Exporters
                     streamWriter.WriteLine();
                     streamWriter.Write("If versions behave the same (e.g. result in exactly the same values), this report will show ");
                     streamWriter.Write("the highest version to represent the most recent state at best.");
+                    streamWriter.WriteLine();
+                    streamWriter.Write("If a higher version is at least 3% slower than the previous one, it will have a red background. ");
+                    streamWriter.Write("If it is at least 3% faster, it will have a green background.");
                     streamWriter.WriteLine();
 
                     streamWriter.WriteLine();
@@ -138,39 +144,51 @@ namespace Catel.BenchmarkCombiner.Exporters
             streamWriter.WriteLine("</tr>");
 
             // Table content - nanoseconds
-            streamWriter.WriteLine("<tr>");
-            streamWriter.Write("<td>Average ns / operation</td>");
-
-            foreach (var version in measurementGroup.Measurements)
-            {
-                streamWriter.Write($"<td align=\"right\">{version.AverageNanoSecondsPerOperation:0.000} ns</td>");
-            }
-
-            streamWriter.WriteLine("</tr>");
+            WritePerformanceTableRowAsHtml(measurementGroup, streamWriter, "ns", x => x.AverageNanoSecondsPerOperation);
 
             // Table content - microseconds
-            streamWriter.WriteLine("<tr>");
-            streamWriter.Write("<td>Average μs / operation</td>");
-
-            foreach (var version in measurementGroup.Measurements)
-            {
-                streamWriter.Write($"<td align=\"right\">{version.AverageNanoSecondsPerOperation.ConvertNanoSecondsToMicroSeconds():0.000} μs</td>");
-            }
-
-            streamWriter.WriteLine("</tr>");
+            WritePerformanceTableRowAsHtml(measurementGroup, streamWriter, "μs", x => x.AverageNanoSecondsPerOperation.ConvertNanoSecondsToMicroSeconds());
 
             // Table content - milliseconds
+            WritePerformanceTableRowAsHtml(measurementGroup, streamWriter, "ms", x => x.AverageNanoSecondsPerOperation.ConvertNanoSecondsToMilliSeconds());
+
+            streamWriter.WriteLine("</table>");
+        }
+
+        private void WritePerformanceTableRowAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter, string unit, Func<VersionMeasurements, double> valueRetriever)
+        {
             streamWriter.WriteLine("<tr>");
-            streamWriter.Write("<td>Average ms / operation</td>");
+            streamWriter.Write($"<td>Average {unit} / operation</td>");
+
+            VersionMeasurements lastVersion = null;
 
             foreach (var version in measurementGroup.Measurements)
             {
-                streamWriter.Write($"<td align=\"right\">{version.AverageNanoSecondsPerOperation.ConvertNanoSecondsToMilliSeconds():0.000} ms</td>");
+                var background = "#FFFFFF";
+
+                var currentValue = valueRetriever(version);
+
+                if (lastVersion != null)
+                {
+                    var previousValue = valueRetriever(lastVersion);
+
+                    if (currentValue.IsLarger(previousValue))
+                    {
+                        background = IncreasedBackgroundColor;
+                    }
+                    else if (currentValue.IsSmaller(previousValue))
+                    {
+
+                        background = DecreasedBackgroundColor;
+                    }
+                }
+
+                streamWriter.Write($"<td align=\"right\" bgcolor=\"{background}\">{valueRetriever(version):0.000} {unit}</td>");
+
+                lastVersion = version;
             }
 
             streamWriter.WriteLine("</tr>");
-
-            streamWriter.WriteLine("</table>");
         }
 
         private void WriteMemory(MeasurementGroup measurementGroup, StreamWriter streamWriter)
