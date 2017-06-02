@@ -11,7 +11,7 @@ namespace Catel.Benchmarks.Runtime.Serialization
     using BenchmarkDotNet.Attributes;
     using Catel.Runtime.Serialization;
 
-    public abstract class SerializationBenchmarkBase
+    public abstract class SerializationBenchmarkBase : BenchmarkBase
     {
         private readonly object _level1;
         private readonly object _level2;

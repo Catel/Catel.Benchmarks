@@ -10,7 +10,7 @@ namespace Catel.Benchmarks.Logging
     using BenchmarkDotNet.Attributes;
     using Catel.Logging;
 
-    public class Log_Enabled_Benchmark
+    public class Log_Enabled_Benchmark : BenchmarkBase
     {
         private static readonly ILog Log = LogManager.GetCurrentClassLogger();
 

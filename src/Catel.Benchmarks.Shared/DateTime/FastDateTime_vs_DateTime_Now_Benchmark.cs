@@ -12,7 +12,7 @@ namespace Catel.Benchmarks.DateTime
     using System;
     using BenchmarkDotNet.Attributes;
 
-    public class FastDateTime_vs_DateTime_Benchmark
+    public class FastDateTime_vs_DateTime_Benchmark : BenchmarkBase
     {
         [Benchmark]
         public DateTime DateTime_Now()

@@ -7,6 +7,8 @@
 
 namespace Catel.Benchmarks.Runtime.Serialization
 {
+    using BenchmarkDotNet.Attributes.Jobs;
+    using BenchmarkDotNet.Engines;
     using Catel.Runtime.Serialization;
     using Catel.Runtime.Serialization.Binary;
     using IoC;

@@ -11,7 +11,7 @@ namespace Catel.Benchmarks.Data.PropertyBag
     using BenchmarkDotNet.Attributes;
     using Catel.Data;
 
-    public class PropertyBag_SetPropertyValue_Benchmark
+    public class PropertyBag_SetPropertyValue_Benchmark : BenchmarkBase
     {
         #region Fields
         private readonly PropertyBag _propertyBag = new PropertyBag();

@@ -11,7 +11,7 @@ namespace Catel.Benchmarks.MVVM.ViewModels
     using Catel.MVVM;
     using Fixtures;
 
-    public class ViewModelBase_Benchmark
+    public class ViewModelBase_Benchmark : BenchmarkBase
     {
         [Benchmark]
         public BenchmarkViewModel Construction()

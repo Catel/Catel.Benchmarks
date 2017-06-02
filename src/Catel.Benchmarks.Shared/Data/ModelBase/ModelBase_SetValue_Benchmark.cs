@@ -10,7 +10,7 @@ namespace Catel.Benchmarks.ModelBase.SetValue
     using BenchmarkDotNet.Attributes;
     using Data.ModelBase.Fixtures;
 
-    public class ModelBase_SetValue_Benchmark
+    public class ModelBase_SetValue_Benchmark : BenchmarkBase
     {
         private readonly ModelBasePerformanceTestModel _model = new ModelBasePerformanceTestModel();
 

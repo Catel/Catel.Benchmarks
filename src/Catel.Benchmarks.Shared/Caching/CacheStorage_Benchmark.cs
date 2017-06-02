@@ -12,7 +12,7 @@ namespace Catel.Benchmarks.Caching
     using Catel.Caching;
     using Catel.Caching.Policies;
 
-    public class CacheStorage_Benchmark
+    public class CacheStorage_Benchmark : BenchmarkBase
     {
         #region Constants
         const int MaxValue = 15;

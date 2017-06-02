@@ -10,7 +10,7 @@ namespace Catel.Benchmarks.Data.PropertyBag
     using BenchmarkDotNet.Attributes;
     using Catel.Data;
 
-    public class PropertyBag_GetPropertyValue_Benchmark
+    public class PropertyBag_GetPropertyValue_Benchmark : BenchmarkBase
     {
         #region Fields
         private readonly PropertyBag _propertyBag;
