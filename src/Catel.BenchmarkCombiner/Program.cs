@@ -16,7 +16,6 @@ namespace Catel.BenchmarkCombiner
     using CsvHelper;
     using CsvHelper.Configuration;
     using Exporters;
-    using IoC;
     using Logging;
     using Models.Maps;
 
@@ -164,7 +163,7 @@ namespace Catel.BenchmarkCombiner
                     var factory = new CsvFactory();
                     var configuration = new CsvConfiguration
                     {
-                        Delimiter = ";",
+                        Delimiter = ",",
                         CultureInfo = new CultureInfo("en-US"),
                         IgnoreHeaderWhiteSpace = false
                     };

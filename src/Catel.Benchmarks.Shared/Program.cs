@@ -10,10 +10,10 @@ namespace Catel.Benchmarks
     using System.IO;
     using System.Linq;
     using BenchmarkDotNet.Running;
-    using Reflection;
     using System.Collections.Generic;
     using System;
     using BenchmarkDotNet.Attributes;
+    using Catel.Reflection;
 
     public static class Program
     {
