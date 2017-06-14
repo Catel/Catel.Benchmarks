@@ -7,9 +7,9 @@
 
 namespace Catel.Benchmarks.Runtime.Serialization
 {
+    using Catel.IoC;
     using Catel.Runtime.Serialization;
     using Catel.Runtime.Serialization.Json;
-    using IoC;
 
     public class Serialization_Json_Benchmark : SerializationBenchmarkBase
     {

@@ -1,7 +1,7 @@
-﻿namespace Catel.Benchmarks.Services
+﻿namespace Catel.Benchmarks.IoC
 {
     using BenchmarkDotNet.Attributes;
-    using IoC;
+    using Catel.IoC;
 
     public class ServiceLocator_Benchmark : BenchmarkBase
     {
