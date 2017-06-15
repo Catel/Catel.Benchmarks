@@ -17,11 +17,13 @@ namespace Catel.Benchmarks.Reflection
             _assembly = typeof(Assembly_ReflectionExtensions_Benchmark).Assembly;
         }
 
+#if !CATEL_4_4 && !CATEL_4_3 && !CATEL_4_2
         [Benchmark]
         public void GetExportedTypesEx()
         {
             _assembly.GetExportedTypesEx();
         }
+#endif
 
         [Benchmark]
         public void GetTypesEx()
@@ -40,6 +42,6 @@ namespace Catel.Benchmarks.Reflection
         {
             _assembly.GetCustomAttributesEx(typeof(AssemblyDescriptionAttribute));
         }
-        #endregion
+#endregion
     }
 }

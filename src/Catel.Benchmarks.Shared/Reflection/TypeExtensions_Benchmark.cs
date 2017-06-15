@@ -44,6 +44,7 @@ namespace Catel.Benchmarks.Reflection
             typeof(int).IsBasicType();
         }
 
+#if !CATEL_4_3 && !CATEL_4_2
         [Benchmark]
         public void IsModelBase()
         {
@@ -55,6 +56,7 @@ namespace Catel.Benchmarks.Reflection
         {
             typeof(List<A>).GetCollectionElementType();
         }
+#endif
     }
 
 }

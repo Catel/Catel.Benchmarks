@@ -5,9 +5,7 @@
     using System.Collections.Specialized;
     using System.ComponentModel;
     using System.Runtime.CompilerServices;
-#if !CATEL_5_0
     using Annotations;
-#endif
     using BenchmarkDotNet.Attributes;
 
     public class WeakEventListener_Benchmark : BenchmarkBase
@@ -122,12 +120,10 @@
 
 #region INotifyPropertyChanged Members
             public event PropertyChangedEventHandler PropertyChanged;
-#endregion
+            #endregion
 
-#region Methods
-#if !CATEL_5_0
+            #region Methods
             [NotifyPropertyChangedInvocator]
-#endif
             protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
             {
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

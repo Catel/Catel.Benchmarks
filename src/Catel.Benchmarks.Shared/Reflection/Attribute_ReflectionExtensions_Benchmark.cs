@@ -19,6 +19,7 @@ namespace Catel.Benchmarks.Reflection
             _aMethodInfo = _aType.GetMethodEx("AMethod");
         }
 
+#if !CATEL_4_3 && !CATEL_4_2
         [Benchmark]
         public void GetAttribute_Generic_From_Member()
         {
@@ -92,26 +93,27 @@ namespace Catel.Benchmarks.Reflection
         {
             _aType.IsDecoratedWithAttribute(typeof(ATypeAttribute));
         }
+#endif
 
-        #region Nested type: A
+#region Nested type: A
 
         [ATypeAttribute]
         public class A
         {
-            #region Methods
+#region Methods
             [AMethod]
             public virtual void AMethod()
             {
             }
-            #endregion
+#endregion
         }
-        #endregion
+#endregion
 
-        #region Nested type: AMethodAttribute
+#region Nested type: AMethodAttribute
         public class AMethodAttribute : Attribute
         {
         }
-        #endregion
+#endregion
 
 
         public class ATypeAttribute : Attribute

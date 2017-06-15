@@ -25,11 +25,13 @@
             }
         }
 
+#if !CATEL_4_4 && !CATEL_4_3 && !CATEL_4_2
         [Benchmark]
         public void GetSafeFullName()
         {
             typeof(C).GetSafeFullName(true);
         }
+#endif
 
         [Benchmark]
         public void GetCustomAttributeEx()
@@ -133,11 +135,13 @@
             typeof(List<A>).IsGenericTypeEx();
         }
 
+#if !CATEL_4_3 && !CATEL_4_2
         [Benchmark]
         public void IsGenericTypeDefinitionEx()
         {
             typeof(List<>).IsGenericTypeDefinitionEx();
         }
+#endif
 
         [Benchmark]
         public void ImplementsInterfaceEx()
@@ -223,6 +227,7 @@
             typeof(C).GetConstructorsEx();
         }
 
+#if !CATEL_4_3 && !CATEL_4_2
         [Benchmark]
         public void GetMemberEx_Flatten_Static()
         {
@@ -246,6 +251,7 @@
         {
             typeof(C).GetMemberEx("Clone", BindingFlags.Instance);
         }
+#endif
 
         [Benchmark]
         public void GetMethodEx_Flatten_Static()
@@ -414,21 +420,21 @@
         {
             typeof(C).GetFieldEx("_cfield", BindingFlags.Instance);
         }
-        #endregion
+#endregion
 
-        #region Nested type: A
+#region Nested type: A
         [A]
         public abstract class A : ViewModelBase
         {
-            #region Constants
+#region Constants
             private static int _afield;
-            #endregion
+#endregion
 
-            #region Properties
+#region Properties
             public static int AProperty => _afield++;
-            #endregion
+#endregion
 
-            #region Methods
+#region Methods
             public static void StaticMethod()
             {
             }
@@ -437,76 +443,76 @@
             {
                 AEvent?.Invoke(null, EventArgs.Empty);
             }
-            #endregion
+#endregion
 
             public static event EventHandler AEvent;
         }
-        #endregion
+#endregion
 
-        #region Nested type: AAttribute
+#region Nested type: AAttribute
         public class AAttribute : Attribute
         {
         }
-        #endregion
+#endregion
 
-        #region Nested type: B
+#region Nested type: B
         public class B : A, IDisposable
         {
-            #region IDisposable Members
+#region IDisposable Members
             public void Dispose()
             {
             }
-            #endregion
+#endregion
         }
-        #endregion
+#endregion
 
-        #region Nested type: C
+#region Nested type: C
         [C]
         [Serializable]
         public class C : B, ICloneable
         {
-            #region Fields
+#region Fields
             private int _cfield;
-            #endregion
+#endregion
 
-            #region Constructors
+#region Constructors
             public C(object param)
             {
             }
-            #endregion
+#endregion
 
-            #region Properties
+#region Properties
             public int CProperty => _cfield++;
-            #endregion
+#endregion
 
-            #region ICloneable Members
+#region ICloneable Members
             public object Clone()
             {
                 return new object();
             }
-            #endregion
+#endregion
 
-            #region Methods
+#region Methods
             protected virtual void OnCEvent()
             {
                 CEvent?.Invoke(this, EventArgs.Empty);
             }
-            #endregion
+#endregion
 
             public event EventHandler CEvent;
         }
-        #endregion
+#endregion
 
-        #region Nested type: CAttribute
+#region Nested type: CAttribute
         public class CAttribute : Attribute
         {
         }
-        #endregion
+#endregion
 
-        #region Nested type: EnumA
+#region Nested type: EnumA
         private enum EnumA
         {
         }
-        #endregion
+#endregion
     }
 }
