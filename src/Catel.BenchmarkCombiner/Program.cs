@@ -163,7 +163,7 @@ namespace Catel.BenchmarkCombiner
                     var factory = new CsvFactory();
                     var configuration = new CsvConfiguration
                     {
-                        Delimiter = ",",
+                        Delimiter = ";",
                         CultureInfo = new CultureInfo("en-US"),
                         IgnoreHeaderWhiteSpace = false
                     };
