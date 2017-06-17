@@ -1,10 +1,17 @@
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="AssemblyExtensions_Benchmark.cs" company="Catel development team">
+//   Copyright (c) 2008 - 2017 Catel development team. All rights reserved.
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+
 namespace Catel.Benchmarks.Reflection
 {
     using System.Reflection;
     using BenchmarkDotNet.Attributes;
     using Catel.Reflection;
 
-    public class AssemblyExtensions__Benchmark : BenchmarkBase
+    public class AssemblyExtensions_Benchmark : BenchmarkBase
     {
         #region Fields
         private Assembly _assembly;
@@ -14,7 +21,7 @@ namespace Catel.Benchmarks.Reflection
         [Setup]
         public void Init()
         {
-            _assembly = typeof(AssemblyExtensions__Benchmark).Assembly;
+            _assembly = typeof(AssemblyExtensions_Benchmark).Assembly;
         }
 
         [Benchmark]

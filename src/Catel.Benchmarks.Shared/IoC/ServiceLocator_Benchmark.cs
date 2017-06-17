@@ -1,4 +1,11 @@
-﻿namespace Catel.Benchmarks.IoC
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="ServiceLocator_Benchmark.cs" company="Catel development team">
+//   Copyright (c) 2008 - 2017 Catel development team. All rights reserved.
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+
+namespace Catel.Benchmarks.IoC
 {
     using BenchmarkDotNet.Attributes;
     using Catel.IoC;
@@ -53,47 +60,5 @@
             _serviceLocator2.ResolveType<IServiceD>();
         }
         #endregion
-    }
-
-    public class ServiceD : IServiceD
-    {
-        #region Constructors
-        public ServiceD(IServiceC serviceC)
-        {
-        }
-        #endregion
-    }
-
-    public interface IServiceD
-    {
-    }
-
-    public class ServiceC : IServiceC
-    {
-    }
-
-    public interface IServiceC
-    {
-    }
-
-    public class ServiceB : IServiceB
-    {
-        #region Constructors
-        public ServiceB(IServiceA serviceA)
-        {
-        }
-        #endregion
-    }
-
-    public interface IServiceB
-    {
-    }
-
-    public class ServiceA : IServiceA
-    {
-    }
-
-    public interface IServiceA
-    {
     }
 }

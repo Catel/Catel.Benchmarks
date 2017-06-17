@@ -1,7 +1,12 @@
-﻿namespace Catel.Benchmarks.IoC
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="TypeFactory_Benchmark.cs" company="Catel development team">
+//   Copyright (c) 2008 - 2017 Catel development team. All rights reserved.
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace Catel.Benchmarks.IoC
 {
     using BenchmarkDotNet.Attributes;
-
     using Catel.IoC;
 
     public class TypeFactory_Benchmark : BenchmarkBase
@@ -39,36 +44,6 @@
         public void CreateInstanceWithParametersAndAutoCompletion()
         {
             _typeFactory.CreateInstanceWithParametersAndAutoCompletion(typeof(NoRequirePropertyInjection), "param");
-        }
-
-        #endregion
-
-        #region Nested type: NoRequirePropertyInjection
-        public class NoRequirePropertyInjection
-        {
-            #region Constructors
-            public NoRequirePropertyInjection()
-            {
-            }
-
-            public NoRequirePropertyInjection(string param)
-            {
-            }
-
-            public NoRequirePropertyInjection(string param, IServiceLocator serviceLocator)
-            {
-            }
-
-            #endregion
-        }
-        #endregion
-
-        #region Nested type: RequirePropertyInjection
-        public class RequirePropertyInjection
-        {
-            #region Properties
-            public IServiceLocator serviceLocator { get; set; }
-            #endregion
         }
         #endregion
     }

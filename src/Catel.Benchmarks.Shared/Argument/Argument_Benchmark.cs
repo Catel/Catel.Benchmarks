@@ -1,4 +1,11 @@
-﻿namespace Catel.Benchmarks.Argument
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Argument_Benchmark.cs" company="Catel development team">
+//   Copyright (c) 2008 - 2017 Catel development team. All rights reserved.
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+
+namespace Catel.Benchmarks.Argument
 {
     using System;
     using System.ComponentModel;

@@ -1,19 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="TypeExtensions_Benchmark.cs" company="Catel development team">
+//   Copyright (c) 2008 - 2017 Catel development team. All rights reserved.
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
 
 namespace Catel.Benchmarks.Reflection
 {
+    using System.Collections.Generic;
     using BenchmarkDotNet.Attributes;
     using Catel.Data;
     using Catel.Reflection;
 
     public class TypeExtensions_Benchmark : BenchmarkBase
     {
-        public class A : ModelBase
-        {
-        }
-
+        #region Methods
         [Benchmark]
         public void IsClassType()
         {
@@ -43,6 +44,13 @@ namespace Catel.Benchmarks.Reflection
         {
             typeof(int).IsBasicType();
         }
+        #endregion
+
+        #region Nested type: A
+        public class A : ModelBase
+        {
+        }
+        #endregion
 
 #if !CATEL_4_3 && !CATEL_4_2
         [Benchmark]
@@ -58,5 +66,4 @@ namespace Catel.Benchmarks.Reflection
         }
 #endif
     }
-
 }
