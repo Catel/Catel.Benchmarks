@@ -122,8 +122,10 @@ namespace Catel.BenchmarkCombiner.Exporters
         {
             var fastest = measurementGroup.Fastest();
             var slowest = measurementGroup.Slowest();
+
             streamWriter.WriteLine($"Fastest: **{fastest.Version}**\n");
             streamWriter.WriteLine($"Slowest: {slowest.Version}\n");
+            streamWriter.WriteLine($"Δ: {(slowest.AverageNanoSecondsPerOperation - fastest.AverageNanoSecondsPerOperation):0.000} ns\n");
 
             streamWriter.WriteLine();
         }
@@ -167,6 +169,7 @@ namespace Catel.BenchmarkCombiner.Exporters
                 var background = "#FFFFFF";
 
                 var currentValue = valueRetriever(version);
+                double? delta = null;
 
                 if (lastVersion != null)
                 {
@@ -178,12 +181,22 @@ namespace Catel.BenchmarkCombiner.Exporters
                     }
                     else if (currentValue.IsSmaller(previousValue))
                     {
-
                         background = DecreasedBackgroundColor;
                     }
+
+                    delta = currentValue - previousValue;
                 }
 
-                streamWriter.Write($"<td align=\"right\" bgcolor=\"{background}\">{valueRetriever(version):0.000} {unit}</td>");
+                streamWriter.Write($"<td align=\"right\" bgcolor=\"{background}\">{currentValue:0.000} {unit}");
+
+                if (delta.HasValue)
+                {
+                    var leadingSign = (delta > 0) ? "+" : string.Empty;
+
+                    streamWriter.Write($" (Δ = {leadingSign}{delta:0.000} {unit})");
+                }
+
+                streamWriter.Write("</td>");
 
                 lastVersion = version;
             }
