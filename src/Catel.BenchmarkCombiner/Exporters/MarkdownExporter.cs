@@ -145,6 +145,9 @@ namespace Catel.BenchmarkCombiner.Exporters
 
             streamWriter.WriteLine("</tr>");
 
+            // Table content - percentage
+            WritePerformanceTableRowAsHtml(measurementGroup, streamWriter, "%", x => x.AverageNanoSecondsPerOperation);
+
             // Table content - nanoseconds
             WritePerformanceTableRowAsHtml(measurementGroup, streamWriter, "ns", x => x.AverageNanoSecondsPerOperation);
 
@@ -169,11 +172,12 @@ namespace Catel.BenchmarkCombiner.Exporters
                 var background = "#FFFFFF";
 
                 var currentValue = valueRetriever(version);
-                double? delta = null;
+                var previousValue = 0d;
+                double? deltaAbsolute = null;
 
                 if (lastVersion != null)
                 {
-                    var previousValue = valueRetriever(lastVersion);
+                    previousValue = valueRetriever(lastVersion);
 
                     if (currentValue.IsLarger(previousValue))
                     {
@@ -184,16 +188,31 @@ namespace Catel.BenchmarkCombiner.Exporters
                         background = DecreasedBackgroundColor;
                     }
 
-                    delta = currentValue - previousValue;
+                    deltaAbsolute = currentValue - previousValue;
                 }
 
-                streamWriter.Write($"<td align=\"right\" bgcolor=\"{background}\">{currentValue:0.000} {unit}");
+                streamWriter.Write($"<td align=\"right\" bgcolor=\"{background}\">");
 
-                if (delta.HasValue)
+                if (unit.EqualsIgnoreCase("%"))
                 {
-                    var leadingSign = (delta > 0) ? "+" : string.Empty;
+                    if (deltaAbsolute.HasValue)
+                    {
+                        var deltaPercentage = (100 / previousValue) * deltaAbsolute;
+                        var leadingSign = (deltaAbsolute > 0) ? "+" : string.Empty;
 
-                    streamWriter.Write($" (Δ = {leadingSign}{delta:0.000} {unit})");
+                        streamWriter.Write($"{leadingSign}{deltaPercentage:0.0} {unit}");
+                    }
+                }
+                else
+                {
+                    streamWriter.Write($"{currentValue:0.000} {unit}");
+
+                    if (deltaAbsolute.HasValue)
+                    {
+                        var leadingSign = (deltaAbsolute > 0) ? "+" : string.Empty;
+
+                        streamWriter.Write($" (Δ = {leadingSign}{deltaAbsolute:0.000} {unit})");
+                    }
                 }
 
                 streamWriter.Write("</td>");
