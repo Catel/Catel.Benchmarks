@@ -163,7 +163,19 @@ namespace Catel.BenchmarkCombiner.Exporters
         private void WritePerformanceTableRowAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter, string unit, Func<VersionMeasurements, double> valueRetriever)
         {
             streamWriter.WriteLine("<tr>");
-            streamWriter.Write($"<td>Average {unit} / operation</td>");
+
+            streamWriter.Write("<td>");
+
+            if (unit.EqualsIgnoreCase("%"))
+            {
+                streamWriter.Write("Δ %");
+            }
+            else
+            {
+                streamWriter.Write($"Average {unit} / operation");
+            }
+
+            streamWriter.Write("</td>");
 
             VersionMeasurements lastVersion = null;
 

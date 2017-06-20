@@ -1,6 +1,6 @@
 # Benchmarks
 
-Benchmark report generated on 19-jun-2017 08:56
+Benchmark report generated on 20-jun-2017 10:12
 
 All timings are average time per operation (thus the time represents a single operation)
 
@@ -287,24 +287,24 @@ Frequency=10000000 Hz, Resolution=100.0000 ns, Timer=UNKNOWN
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
-Slowest: 4.3.0
+Slowest: 4.4.0
 
-Δ: 20,217 ns
+Δ: 6,466 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+10,9 %</td><td align="right" bgcolor="#A8D08D">-10,3 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#FFFFFF">+0,0 %</td><td align="right" bgcolor="#A8D08D">-6,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#FF4949">+3,1 %</td><td align="right" bgcolor="#FFFFFF">-1,5 %</td><td align="right" bgcolor="#A8D08D">-4,2 %</td><td align="right" bgcolor="#FFFFFF">+1,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">114,309 ns</td><td align="right" bgcolor="#FF4949">126,740 ns (Δ = +12,431 ns)</td><td align="right" bgcolor="#A8D08D">113,729 ns (Δ = -13,011 ns)</td><td align="right" bgcolor="#FFFFFF">114,145 ns (Δ = +0,416 ns)</td><td align="right" bgcolor="#FFFFFF">114,170 ns (Δ = +0,025 ns)</td><td align="right" bgcolor="#A8D08D">106,523 ns (Δ = -7,647 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">113,778 ns</td><td align="right" bgcolor="#FFFFFF">111,092 ns (Δ = -2,686 ns)</td><td align="right" bgcolor="#FF4949">114,559 ns (Δ = +3,468 ns)</td><td align="right" bgcolor="#FFFFFF">112,800 ns (Δ = -1,759 ns)</td><td align="right" bgcolor="#A8D08D">108,093 ns (Δ = -4,707 ns)</td><td align="right" bgcolor="#FFFFFF">109,518 ns (Δ = +1,424 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,114 μs</td><td align="right" bgcolor="#FF4949">0,127 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#A8D08D">0,114 μs (Δ = -0,013 μs)</td><td align="right" bgcolor="#FFFFFF">0,114 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,114 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,107 μs (Δ = -0,008 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,114 μs</td><td align="right" bgcolor="#FFFFFF">0,111 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FF4949">0,115 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,113 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,108 μs (Δ = -0,005 μs)</td><td align="right" bgcolor="#FFFFFF">0,110 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -332,8 +332,8 @@ Slowest: 4.3.0
 </tr>
 <tr>
 <td>Allocated Bytes</td>
+<td align="right">5.0.0</td>
 <td align="right">4.2.0</td>
-<td align="right">4.3.0</td>
 </tr>
 </table>
 
@@ -346,8 +346,8 @@ Slowest: 4.3.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">155</td><td align="right">156</td><td align="right">156</td><td align="right">156</td><td align="right">156</td><td align="right">156</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,151</td><td align="right">0,152</td><td align="right">0,152</td><td align="right">0,152</td><td align="right">0,152</td><td align="right">0,152</td><tr>
+<td>Allocated Bytes</td><td align="right">156</td><td align="right">156</td><td align="right">156</td><td align="right">156</td><td align="right">156</td><td align="right">156</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,152</td><td align="right">0,152</td><td align="right">0,152</td><td align="right">0,152</td><td align="right">0,152</td><td align="right">0,152</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
@@ -356,24 +356,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
 Slowest: 4.2.0
 
-Δ: 9,837 ns
+Δ: 39,230 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-5,3 %</td><td align="right" bgcolor="#FF4949">+4,8 %</td><td align="right" bgcolor="#FFFFFF">-2,8 %</td><td align="right" bgcolor="#A8D08D">-4,9 %</td><td align="right" bgcolor="#FF4949">+3,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-21,4 %</td><td align="right" bgcolor="#FF4949">+6,3 %</td><td align="right" bgcolor="#A8D08D">-5,8 %</td><td align="right" bgcolor="#FF4949">+17,7 %</td><td align="right" bgcolor="#A8D08D">-21,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">117,957 ns</td><td align="right" bgcolor="#A8D08D">111,689 ns (Δ = -6,268 ns)</td><td align="right" bgcolor="#FF4949">117,013 ns (Δ = +5,324 ns)</td><td align="right" bgcolor="#FFFFFF">113,688 ns (Δ = -3,324 ns)</td><td align="right" bgcolor="#A8D08D">108,120 ns (Δ = -5,568 ns)</td><td align="right" bgcolor="#FF4949">111,993 ns (Δ = +3,873 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">145,653 ns</td><td align="right" bgcolor="#A8D08D">114,549 ns (Δ = -31,104 ns)</td><td align="right" bgcolor="#FF4949">121,768 ns (Δ = +7,220 ns)</td><td align="right" bgcolor="#A8D08D">114,722 ns (Δ = -7,046 ns)</td><td align="right" bgcolor="#FF4949">135,063 ns (Δ = +20,341 ns)</td><td align="right" bgcolor="#A8D08D">106,423 ns (Δ = -28,640 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,118 μs</td><td align="right" bgcolor="#A8D08D">0,112 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FF4949">0,117 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#FFFFFF">0,114 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,108 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FF4949">0,112 μs (Δ = +0,004 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,146 μs</td><td align="right" bgcolor="#A8D08D">0,115 μs (Δ = -0,031 μs)</td><td align="right" bgcolor="#FF4949">0,122 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#A8D08D">0,115 μs (Δ = -0,007 μs)</td><td align="right" bgcolor="#FF4949">0,135 μs (Δ = +0,020 μs)</td><td align="right" bgcolor="#A8D08D">0,106 μs (Δ = -0,029 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -425,24 +425,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **4.3.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
-Δ: 18,719 ns
+Δ: 48,647 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,6 %</td><td align="right" bgcolor="#FFFFFF">-1,9 %</td><td align="right" bgcolor="#FF4949">+6,3 %</td><td align="right" bgcolor="#A8D08D">-15,0 %</td><td align="right" bgcolor="#FF4949">+18,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,8 %</td><td align="right" bgcolor="#FF4949">+5,4 %</td><td align="right" bgcolor="#FF4949">+15,3 %</td><td align="right" bgcolor="#FF4949">+19,7 %</td><td align="right" bgcolor="#A8D08D">-30,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">106,709 ns</td><td align="right" bgcolor="#FF4949">111,582 ns (Δ = +4,873 ns)</td><td align="right" bgcolor="#FFFFFF">109,406 ns (Δ = -2,176 ns)</td><td align="right" bgcolor="#FF4949">116,293 ns (Δ = +6,887 ns)</td><td align="right" bgcolor="#A8D08D">98,818 ns (Δ = -17,476 ns)</td><td align="right" bgcolor="#FF4949">117,537 ns (Δ = +18,719 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">110,182 ns</td><td align="right" bgcolor="#FFFFFF">107,087 ns (Δ = -3,095 ns)</td><td align="right" bgcolor="#FF4949">112,833 ns (Δ = +5,747 ns)</td><td align="right" bgcolor="#FF4949">130,087 ns (Δ = +17,253 ns)</td><td align="right" bgcolor="#FF4949">155,733 ns (Δ = +25,647 ns)</td><td align="right" bgcolor="#A8D08D">108,736 ns (Δ = -46,998 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,107 μs</td><td align="right" bgcolor="#FF4949">0,112 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#FFFFFF">0,109 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,116 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#A8D08D">0,099 μs (Δ = -0,017 μs)</td><td align="right" bgcolor="#FF4949">0,118 μs (Δ = +0,019 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,110 μs</td><td align="right" bgcolor="#FFFFFF">0,107 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FF4949">0,113 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#FF4949">0,130 μs (Δ = +0,017 μs)</td><td align="right" bgcolor="#FF4949">0,156 μs (Δ = +0,026 μs)</td><td align="right" bgcolor="#A8D08D">0,109 μs (Δ = -0,047 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -494,24 +494,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.5.0**
+Fastest: **4.5.4**
 
 Slowest: 5.0.0
 
-Δ: 10,885 ns
+Δ: 34,759 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,4 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#A8D08D">-4,1 %</td><td align="right" bgcolor="#FF4949">+4,2 %</td><td align="right" bgcolor="#FF4949">+5,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,0 %</td><td align="right" bgcolor="#FFFFFF">+1,1 %</td><td align="right" bgcolor="#FF4949">+7,6 %</td><td align="right" bgcolor="#A8D08D">-21,1 %</td><td align="right" bgcolor="#FF4949">+35,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">116,838 ns</td><td align="right" bgcolor="#FFFFFF">115,234 ns (Δ = -1,604 ns)</td><td align="right" bgcolor="#FFFFFF">115,738 ns (Δ = +0,504 ns)</td><td align="right" bgcolor="#A8D08D">110,992 ns (Δ = -4,747 ns)</td><td align="right" bgcolor="#FF4949">115,641 ns (Δ = +4,649 ns)</td><td align="right" bgcolor="#FF4949">121,877 ns (Δ = +6,236 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">113,804 ns</td><td align="right" bgcolor="#FFFFFF">114,886 ns (Δ = +1,082 ns)</td><td align="right" bgcolor="#FFFFFF">116,184 ns (Δ = +1,298 ns)</td><td align="right" bgcolor="#FF4949">125,034 ns (Δ = +8,849 ns)</td><td align="right" bgcolor="#A8D08D">98,664 ns (Δ = -26,369 ns)</td><td align="right" bgcolor="#FF4949">133,423 ns (Δ = +34,759 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,117 μs</td><td align="right" bgcolor="#FFFFFF">0,115 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,116 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,111 μs (Δ = -0,005 μs)</td><td align="right" bgcolor="#FF4949">0,116 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#FF4949">0,122 μs (Δ = +0,006 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,114 μs</td><td align="right" bgcolor="#FFFFFF">0,115 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,116 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,125 μs (Δ = +0,009 μs)</td><td align="right" bgcolor="#A8D08D">0,099 μs (Δ = -0,026 μs)</td><td align="right" bgcolor="#FF4949">0,133 μs (Δ = +0,035 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -539,8 +539,8 @@ Slowest: 5.0.0
 </tr>
 <tr>
 <td>Allocated Bytes</td>
+<td align="right">5.0.0</td>
 <td align="right">4.2.0</td>
-<td align="right">4.3.0</td>
 </tr>
 </table>
 
@@ -553,8 +553,8 @@ Slowest: 5.0.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">154</td><td align="right">156</td><td align="right">156</td><td align="right">156</td><td align="right">156</td><td align="right">156</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,150</td><td align="right">0,152</td><td align="right">0,152</td><td align="right">0,152</td><td align="right">0,152</td><td align="right">0,152</td><tr>
+<td>Allocated Bytes</td><td align="right">156</td><td align="right">156</td><td align="right">156</td><td align="right">156</td><td align="right">156</td><td align="right">156</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,152</td><td align="right">0,152</td><td align="right">0,152</td><td align="right">0,152</td><td align="right">0,152</td><td align="right">0,152</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
@@ -563,24 +563,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
 Slowest: 4.4.0
 
-Δ: 18,098 ns
+Δ: 2,275 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,6 %</td><td align="right" bgcolor="#FF4949">+42,2 %</td><td align="right" bgcolor="#A8D08D">-29,6 %</td><td align="right" bgcolor="#FFFFFF">-2,8 %</td><td align="right" bgcolor="#FFFFFF">-1,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#FF4949">+4,0 %</td><td align="right" bgcolor="#A8D08D">-3,3 %</td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#FFFFFF">+1,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">41,291 ns</td><td align="right" bgcolor="#A8D08D">39,376 ns (Δ = -1,916 ns)</td><td align="right" bgcolor="#FF4949">55,993 ns (Δ = +16,618 ns)</td><td align="right" bgcolor="#A8D08D">39,440 ns (Δ = -16,553 ns)</td><td align="right" bgcolor="#FFFFFF">38,327 ns (Δ = -1,113 ns)</td><td align="right" bgcolor="#FFFFFF">37,895 ns (Δ = -0,432 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">39,982 ns</td><td align="right" bgcolor="#FFFFFF">39,033 ns (Δ = -0,949 ns)</td><td align="right" bgcolor="#FF4949">40,576 ns (Δ = +1,542 ns)</td><td align="right" bgcolor="#A8D08D">39,256 ns (Δ = -1,320 ns)</td><td align="right" bgcolor="#FFFFFF">38,301 ns (Δ = -0,955 ns)</td><td align="right" bgcolor="#FFFFFF">38,931 ns (Δ = +0,630 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,041 μs</td><td align="right" bgcolor="#A8D08D">0,039 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,056 μs (Δ = +0,017 μs)</td><td align="right" bgcolor="#A8D08D">0,039 μs (Δ = -0,017 μs)</td><td align="right" bgcolor="#FFFFFF">0,038 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,038 μs (Δ = 0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,040 μs</td><td align="right" bgcolor="#FFFFFF">0,039 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,041 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,039 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,038 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,039 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -632,24 +632,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **4.2.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
-Δ: 1,512 ns
+Δ: 35,070 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,9 %</td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#FFFFFF">+1,9 %</td><td align="right" bgcolor="#FFFFFF">-2,6 %</td><td align="right" bgcolor="#FF4949">+3,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,8 %</td><td align="right" bgcolor="#FF4949">+5,8 %</td><td align="right" bgcolor="#FF4949">+52,8 %</td><td align="right" bgcolor="#FF4949">+8,4 %</td><td align="right" bgcolor="#A8D08D">-41,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">45,651 ns</td><td align="right" bgcolor="#FFFFFF">46,053 ns (Δ = +0,402 ns)</td><td align="right" bgcolor="#FFFFFF">45,570 ns (Δ = -0,483 ns)</td><td align="right" bgcolor="#FFFFFF">46,438 ns (Δ = +0,868 ns)</td><td align="right" bgcolor="#FFFFFF">45,243 ns (Δ = -1,195 ns)</td><td align="right" bgcolor="#FF4949">46,756 ns (Δ = +1,512 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">43,683 ns</td><td align="right" bgcolor="#FFFFFF">44,920 ns (Δ = +1,237 ns)</td><td align="right" bgcolor="#FF4949">47,542 ns (Δ = +2,622 ns)</td><td align="right" bgcolor="#FF4949">72,660 ns (Δ = +25,118 ns)</td><td align="right" bgcolor="#FF4949">78,753 ns (Δ = +6,093 ns)</td><td align="right" bgcolor="#A8D08D">46,440 ns (Δ = -32,313 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,046 μs</td><td align="right" bgcolor="#FFFFFF">0,046 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,046 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,046 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,045 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,047 μs (Δ = +0,002 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,044 μs</td><td align="right" bgcolor="#FFFFFF">0,045 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,048 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FF4949">0,073 μs (Δ = +0,025 μs)</td><td align="right" bgcolor="#FF4949">0,079 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#A8D08D">0,046 μs (Δ = -0,032 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -703,22 +703,22 @@ Slowest: 5.0.0
 
 Fastest: **4.5.4**
 
-Slowest: 4.3.0
+Slowest: 4.5.0
 
-Δ: 4,028 ns
+Δ: 3,493 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,8 %</td><td align="right" bgcolor="#A8D08D">-4,9 %</td><td align="right" bgcolor="#FFFFFF">+3,0 %</td><td align="right" bgcolor="#A8D08D">-6,7 %</td><td align="right" bgcolor="#FFFFFF">+2,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,1 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td><td align="right" bgcolor="#FFFFFF">+2,7 %</td><td align="right" bgcolor="#A8D08D">-7,6 %</td><td align="right" bgcolor="#FF4949">+4,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">46,038 ns</td><td align="right" bgcolor="#FFFFFF">46,861 ns (Δ = +0,823 ns)</td><td align="right" bgcolor="#A8D08D">44,569 ns (Δ = -2,292 ns)</td><td align="right" bgcolor="#FFFFFF">45,886 ns (Δ = +1,317 ns)</td><td align="right" bgcolor="#A8D08D">42,833 ns (Δ = -3,053 ns)</td><td align="right" bgcolor="#FFFFFF">43,813 ns (Δ = +0,980 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">45,622 ns</td><td align="right" bgcolor="#FFFFFF">45,120 ns (Δ = -0,502 ns)</td><td align="right" bgcolor="#FFFFFF">44,901 ns (Δ = -0,219 ns)</td><td align="right" bgcolor="#FFFFFF">46,099 ns (Δ = +1,199 ns)</td><td align="right" bgcolor="#A8D08D">42,607 ns (Δ = -3,493 ns)</td><td align="right" bgcolor="#FF4949">44,630 ns (Δ = +2,023 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,046 μs</td><td align="right" bgcolor="#FFFFFF">0,047 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,045 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,046 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,043 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,044 μs (Δ = +0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,046 μs</td><td align="right" bgcolor="#FFFFFF">0,045 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,045 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,046 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,043 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FF4949">0,045 μs (Δ = +0,002 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -770,24 +770,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.3.0**
 
-Slowest: 4.2.0
+Slowest: 4.5.0
 
-Δ: 341,384 ns
+Δ: 494,874 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-32,3 %</td><td align="right" bgcolor="#FFFFFF">-0,2 %</td><td align="right" bgcolor="#FFFFFF">+2,6 %</td><td align="right" bgcolor="#FF4949">+3,2 %</td><td align="right" bgcolor="#A8D08D">-3,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-6,4 %</td><td align="right" bgcolor="#FF4949">+3,6 %</td><td align="right" bgcolor="#FF4949">+65,6 %</td><td align="right" bgcolor="#A8D08D">-36,9 %</td><td align="right" bgcolor="#FFFFFF">-1,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1053,875 ns</td><td align="right" bgcolor="#A8D08D">713,778 ns (Δ = -340,097 ns)</td><td align="right" bgcolor="#FFFFFF">712,491 ns (Δ = -1,287 ns)</td><td align="right" bgcolor="#FFFFFF">730,952 ns (Δ = +18,461 ns)</td><td align="right" bgcolor="#FF4949">754,396 ns (Δ = +23,444 ns)</td><td align="right" bgcolor="#A8D08D">730,811 ns (Δ = -23,584 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">737,537 ns</td><td align="right" bgcolor="#A8D08D">690,596 ns (Δ = -46,941 ns)</td><td align="right" bgcolor="#FF4949">715,735 ns (Δ = +25,139 ns)</td><td align="right" bgcolor="#FF4949">1185,470 ns (Δ = +469,735 ns)</td><td align="right" bgcolor="#A8D08D">747,642 ns (Δ = -437,828 ns)</td><td align="right" bgcolor="#FFFFFF">735,250 ns (Δ = -12,392 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,054 μs</td><td align="right" bgcolor="#A8D08D">0,714 μs (Δ = -0,340 μs)</td><td align="right" bgcolor="#FFFFFF">0,712 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,731 μs (Δ = +0,018 μs)</td><td align="right" bgcolor="#FF4949">0,754 μs (Δ = +0,023 μs)</td><td align="right" bgcolor="#A8D08D">0,731 μs (Δ = -0,024 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,738 μs</td><td align="right" bgcolor="#A8D08D">0,691 μs (Δ = -0,047 μs)</td><td align="right" bgcolor="#FF4949">0,716 μs (Δ = +0,025 μs)</td><td align="right" bgcolor="#FF4949">1,185 μs (Δ = +0,470 μs)</td><td align="right" bgcolor="#A8D08D">0,748 μs (Δ = -0,438 μs)</td><td align="right" bgcolor="#FFFFFF">0,735 μs (Δ = -0,012 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -839,24 +839,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.3.0**
 
-Slowest: 4.2.0
+Slowest: 4.5.4
 
-Δ: 4,551 ns
+Δ: 9,078 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-13,0 %</td><td align="right" bgcolor="#FF4949">+8,0 %</td><td align="right" bgcolor="#FFFFFF">+2,4 %</td><td align="right" bgcolor="#A8D08D">-10,5 %</td><td align="right" bgcolor="#A8D08D">-10,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-22,5 %</td><td align="right" bgcolor="#FF4949">+12,3 %</td><td align="right" bgcolor="#FF4949">+3,2 %</td><td align="right" bgcolor="#FF4949">+38,0 %</td><td align="right" bgcolor="#A8D08D">-34,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">20,093 ns</td><td align="right" bgcolor="#A8D08D">17,475 ns (Δ = -2,618 ns)</td><td align="right" bgcolor="#FF4949">18,873 ns (Δ = +1,398 ns)</td><td align="right" bgcolor="#FFFFFF">19,327 ns (Δ = +0,453 ns)</td><td align="right" bgcolor="#A8D08D">17,303 ns (Δ = -2,024 ns)</td><td align="right" bgcolor="#A8D08D">15,542 ns (Δ = -1,761 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">19,553 ns</td><td align="right" bgcolor="#A8D08D">15,162 ns (Δ = -4,391 ns)</td><td align="right" bgcolor="#FF4949">17,023 ns (Δ = +1,861 ns)</td><td align="right" bgcolor="#FF4949">17,560 ns (Δ = +0,537 ns)</td><td align="right" bgcolor="#FF4949">24,240 ns (Δ = +6,680 ns)</td><td align="right" bgcolor="#A8D08D">15,910 ns (Δ = -8,330 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,020 μs</td><td align="right" bgcolor="#A8D08D">0,017 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FF4949">0,019 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,019 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,017 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,016 μs (Δ = -0,002 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,020 μs</td><td align="right" bgcolor="#A8D08D">0,015 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FF4949">0,017 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FF4949">0,018 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,024 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#A8D08D">0,016 μs (Δ = -0,008 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -910,22 +910,22 @@ Slowest: 4.2.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.3.0
+Slowest: 4.5.0
 
-Δ: 2,759 ns
+Δ: 3,684 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,0 %</td><td align="right" bgcolor="#A8D08D">-5,7 %</td><td align="right" bgcolor="#FF4949">+3,9 %</td><td align="right" bgcolor="#A8D08D">-5,7 %</td><td align="right" bgcolor="#A8D08D">-7,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,0 %</td><td align="right" bgcolor="#FFFFFF">-2,8 %</td><td align="right" bgcolor="#FF4949">+9,0 %</td><td align="right" bgcolor="#A8D08D">-5,4 %</td><td align="right" bgcolor="#A8D08D">-14,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">19,237 ns</td><td align="right" bgcolor="#FFFFFF">19,617 ns (Δ = +0,380 ns)</td><td align="right" bgcolor="#A8D08D">18,504 ns (Δ = -1,112 ns)</td><td align="right" bgcolor="#FF4949">19,225 ns (Δ = +0,721 ns)</td><td align="right" bgcolor="#A8D08D">18,124 ns (Δ = -1,101 ns)</td><td align="right" bgcolor="#A8D08D">16,858 ns (Δ = -1,266 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">18,897 ns</td><td align="right" bgcolor="#A8D08D">18,337 ns (Δ = -0,560 ns)</td><td align="right" bgcolor="#FFFFFF">17,831 ns (Δ = -0,506 ns)</td><td align="right" bgcolor="#FF4949">19,433 ns (Δ = +1,602 ns)</td><td align="right" bgcolor="#A8D08D">18,387 ns (Δ = -1,047 ns)</td><td align="right" bgcolor="#A8D08D">15,749 ns (Δ = -2,638 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,019 μs</td><td align="right" bgcolor="#FFFFFF">0,020 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,019 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,019 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,018 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,017 μs (Δ = -0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,019 μs</td><td align="right" bgcolor="#A8D08D">0,018 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,018 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,019 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,018 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,016 μs (Δ = -0,003 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -979,22 +979,22 @@ Slowest: 4.3.0
 
 Fastest: **4.5.0**
 
-Slowest: 4.4.0
+Slowest: 4.3.0
 
-Δ: 0,876 ns
+Δ: 2,561 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,9 %</td><td align="right" bgcolor="#FF4949">+5,3 %</td><td align="right" bgcolor="#A8D08D">-10,8 %</td><td align="right" bgcolor="#FF4949">+9,5 %</td><td align="right" bgcolor="#A8D08D">-3,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+10,9 %</td><td align="right" bgcolor="#A8D08D">-7,1 %</td><td align="right" bgcolor="#A8D08D">-24,1 %</td><td align="right" bgcolor="#FF4949">+25,5 %</td><td align="right" bgcolor="#A8D08D">-5,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7,820 ns</td><td align="right" bgcolor="#FFFFFF">7,673 ns (Δ = -0,147 ns)</td><td align="right" bgcolor="#FF4949">8,082 ns (Δ = +0,409 ns)</td><td align="right" bgcolor="#A8D08D">7,207 ns (Δ = -0,876 ns)</td><td align="right" bgcolor="#FF4949">7,894 ns (Δ = +0,687 ns)</td><td align="right" bgcolor="#A8D08D">7,610 ns (Δ = -0,284 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7,832 ns</td><td align="right" bgcolor="#FF4949">8,684 ns (Δ = +0,853 ns)</td><td align="right" bgcolor="#A8D08D">8,067 ns (Δ = -0,618 ns)</td><td align="right" bgcolor="#A8D08D">6,123 ns (Δ = -1,943 ns)</td><td align="right" bgcolor="#FF4949">7,683 ns (Δ = +1,560 ns)</td><td align="right" bgcolor="#A8D08D">7,263 ns (Δ = -0,420 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,008 μs</td><td align="right" bgcolor="#FFFFFF">0,008 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,008 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,007 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,008 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,008 μs (Δ = 0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,008 μs</td><td align="right" bgcolor="#FF4949">0,009 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,008 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,006 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,008 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,007 μs (Δ = 0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1048,22 +1048,22 @@ Slowest: 4.4.0
 
 Fastest: **4.5.0**
 
-Slowest: 4.4.0
+Slowest: 5.0.0
 
-Δ: 173,993 ns
+Δ: 41,753 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-5,1 %</td><td align="right" bgcolor="#FF4949">+31,0 %</td><td align="right" bgcolor="#A8D08D">-25,0 %</td><td align="right" bgcolor="#FF4949">+10,1 %</td><td align="right" bgcolor="#A8D08D">-3,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,1 %</td><td align="right" bgcolor="#A8D08D">-4,6 %</td><td align="right" bgcolor="#FFFFFF">-1,9 %</td><td align="right" bgcolor="#FF4949">+6,7 %</td><td align="right" bgcolor="#FFFFFF">+1,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">559,064 ns</td><td align="right" bgcolor="#A8D08D">530,690 ns (Δ = -28,374 ns)</td><td align="right" bgcolor="#FF4949">695,180 ns (Δ = +164,490 ns)</td><td align="right" bgcolor="#A8D08D">521,187 ns (Δ = -173,993 ns)</td><td align="right" bgcolor="#FF4949">573,826 ns (Δ = +52,640 ns)</td><td align="right" bgcolor="#A8D08D">554,977 ns (Δ = -18,850 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">543,018 ns</td><td align="right" bgcolor="#FFFFFF">554,204 ns (Δ = +11,187 ns)</td><td align="right" bgcolor="#A8D08D">528,633 ns (Δ = -25,571 ns)</td><td align="right" bgcolor="#FFFFFF">518,780 ns (Δ = -9,853 ns)</td><td align="right" bgcolor="#FF4949">553,300 ns (Δ = +34,520 ns)</td><td align="right" bgcolor="#FFFFFF">560,533 ns (Δ = +7,233 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,559 μs</td><td align="right" bgcolor="#A8D08D">0,531 μs (Δ = -0,028 μs)</td><td align="right" bgcolor="#FF4949">0,695 μs (Δ = +0,164 μs)</td><td align="right" bgcolor="#A8D08D">0,521 μs (Δ = -0,174 μs)</td><td align="right" bgcolor="#FF4949">0,574 μs (Δ = +0,053 μs)</td><td align="right" bgcolor="#A8D08D">0,555 μs (Δ = -0,019 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,543 μs</td><td align="right" bgcolor="#FFFFFF">0,554 μs (Δ = +0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,529 μs (Δ = -0,026 μs)</td><td align="right" bgcolor="#FFFFFF">0,519 μs (Δ = -0,010 μs)</td><td align="right" bgcolor="#FF4949">0,553 μs (Δ = +0,035 μs)</td><td align="right" bgcolor="#FFFFFF">0,561 μs (Δ = +0,007 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1115,24 +1115,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **4.5.0**
+Fastest: **4.3.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
-Δ: 0,938 ns
+Δ: 0,478 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-5,9 %</td><td align="right" bgcolor="#A8D08D">-12,6 %</td><td align="right" bgcolor="#A8D08D">-49,8 %</td><td align="right" bgcolor="#FF4949">+109,3 %</td><td align="right" bgcolor="#FF4949">+29,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-15,7 %</td><td align="right" bgcolor="#FF4949">+5,0 %</td><td align="right" bgcolor="#FFFFFF">+1,1 %</td><td align="right" bgcolor="#FF4949">+33,2 %</td><td align="right" bgcolor="#A8D08D">-24,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1,324 ns</td><td align="right" bgcolor="#A8D08D">1,247 ns (Δ = -0,078 ns)</td><td align="right" bgcolor="#A8D08D">1,090 ns (Δ = -0,157 ns)</td><td align="right" bgcolor="#A8D08D">0,547 ns (Δ = -0,543 ns)</td><td align="right" bgcolor="#FF4949">1,144 ns (Δ = +0,598 ns)</td><td align="right" bgcolor="#FF4949">1,484 ns (Δ = +0,340 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1,370 ns</td><td align="right" bgcolor="#A8D08D">1,156 ns (Δ = -0,214 ns)</td><td align="right" bgcolor="#FF4949">1,213 ns (Δ = +0,058 ns)</td><td align="right" bgcolor="#FFFFFF">1,227 ns (Δ = +0,013 ns)</td><td align="right" bgcolor="#FF4949">1,633 ns (Δ = +0,407 ns)</td><td align="right" bgcolor="#A8D08D">1,237 ns (Δ = -0,397 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,001 μs</td><td align="right" bgcolor="#A8D08D">0,001 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,001 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,001 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,001 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,001 μs (Δ = +0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,001 μs</td><td align="right" bgcolor="#A8D08D">0,001 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,001 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,001 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,002 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,001 μs (Δ = 0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1184,24 +1184,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
-Slowest: 4.4.0
+Slowest: 4.3.0
 
-Δ: 0,601 ns
+Δ: 0,793 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,7 %</td><td align="right" bgcolor="#FF4949">+15,5 %</td><td align="right" bgcolor="#A8D08D">-16,7 %</td><td align="right" bgcolor="#A8D08D">-16,3 %</td><td align="right" bgcolor="#FFFFFF">-0,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+16,1 %</td><td align="right" bgcolor="#A8D08D">-14,0 %</td><td align="right" bgcolor="#FF4949">+10,5 %</td><td align="right" bgcolor="#A8D08D">-43,4 %</td><td align="right" bgcolor="#FFFFFF">+0,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1,647 ns</td><td align="right" bgcolor="#FFFFFF">1,691 ns (Δ = +0,044 ns)</td><td align="right" bgcolor="#FF4949">1,953 ns (Δ = +0,262 ns)</td><td align="right" bgcolor="#A8D08D">1,627 ns (Δ = -0,327 ns)</td><td align="right" bgcolor="#A8D08D">1,362 ns (Δ = -0,264 ns)</td><td align="right" bgcolor="#FFFFFF">1,352 ns (Δ = -0,010 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1,478 ns</td><td align="right" bgcolor="#FF4949">1,717 ns (Δ = +0,238 ns)</td><td align="right" bgcolor="#A8D08D">1,477 ns (Δ = -0,240 ns)</td><td align="right" bgcolor="#FF4949">1,632 ns (Δ = +0,155 ns)</td><td align="right" bgcolor="#A8D08D">0,924 ns (Δ = -0,708 ns)</td><td align="right" bgcolor="#FFFFFF">0,925 ns (Δ = +0,001 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,002 μs</td><td align="right" bgcolor="#FFFFFF">0,002 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,002 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,002 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,001 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,001 μs (Δ = 0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,001 μs</td><td align="right" bgcolor="#FF4949">0,002 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,001 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,002 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,001 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,001 μs (Δ = +0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1255,22 +1255,22 @@ Slowest: 4.4.0
 
 Fastest: **4.2.0**
 
-Slowest: 4.4.0
+Slowest: 5.0.0
 
-Δ: 2,937 ns
+Δ: 4,589 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+30,6 %</td><td align="right" bgcolor="#FF4949">+5,7 %</td><td align="right" bgcolor="#A8D08D">-3,8 %</td><td align="right" bgcolor="#A8D08D">-5,0 %</td><td align="right" bgcolor="#FFFFFF">-2,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+30,9 %</td><td align="right" bgcolor="#A8D08D">-3,9 %</td><td align="right" bgcolor="#A8D08D">-4,4 %</td><td align="right" bgcolor="#A8D08D">-4,9 %</td><td align="right" bgcolor="#FF4949">+39,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7,711 ns</td><td align="right" bgcolor="#FF4949">10,073 ns (Δ = +2,363 ns)</td><td align="right" bgcolor="#FF4949">10,648 ns (Δ = +0,574 ns)</td><td align="right" bgcolor="#A8D08D">10,243 ns (Δ = -0,404 ns)</td><td align="right" bgcolor="#A8D08D">9,733 ns (Δ = -0,510 ns)</td><td align="right" bgcolor="#FFFFFF">9,516 ns (Δ = -0,218 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7,753 ns</td><td align="right" bgcolor="#FF4949">10,149 ns (Δ = +2,396 ns)</td><td align="right" bgcolor="#A8D08D">9,753 ns (Δ = -0,396 ns)</td><td align="right" bgcolor="#A8D08D">9,320 ns (Δ = -0,433 ns)</td><td align="right" bgcolor="#A8D08D">8,863 ns (Δ = -0,457 ns)</td><td align="right" bgcolor="#FF4949">12,341 ns (Δ = +3,478 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,008 μs</td><td align="right" bgcolor="#FF4949">0,010 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FF4949">0,011 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,010 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,010 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,010 μs (Δ = 0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,008 μs</td><td align="right" bgcolor="#FF4949">0,010 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,010 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,009 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,009 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,012 μs (Δ = +0,003 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1326,18 +1326,18 @@ Fastest: **4.5.4**
 
 Slowest: 4.3.0
 
-Δ: 0,760 ns
+Δ: 0,879 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+7,9 %</td><td align="right" bgcolor="#A8D08D">-12,5 %</td><td align="right" bgcolor="#FF4949">+13,4 %</td><td align="right" bgcolor="#A8D08D">-18,3 %</td><td align="right" bgcolor="#FF4949">+7,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,3 %</td><td align="right" bgcolor="#A8D08D">-10,8 %</td><td align="right" bgcolor="#FF4949">+4,4 %</td><td align="right" bgcolor="#A8D08D">-16,0 %</td><td align="right" bgcolor="#FF4949">+12,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3,733 ns</td><td align="right" bgcolor="#FF4949">4,027 ns (Δ = +0,293 ns)</td><td align="right" bgcolor="#A8D08D">3,524 ns (Δ = -0,502 ns)</td><td align="right" bgcolor="#FF4949">3,998 ns (Δ = +0,473 ns)</td><td align="right" bgcolor="#A8D08D">3,267 ns (Δ = -0,731 ns)</td><td align="right" bgcolor="#FF4949">3,525 ns (Δ = +0,258 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3,869 ns</td><td align="right" bgcolor="#FF4949">4,036 ns (Δ = +0,167 ns)</td><td align="right" bgcolor="#A8D08D">3,600 ns (Δ = -0,436 ns)</td><td align="right" bgcolor="#FF4949">3,760 ns (Δ = +0,160 ns)</td><td align="right" bgcolor="#A8D08D">3,157 ns (Δ = -0,603 ns)</td><td align="right" bgcolor="#FF4949">3,543 ns (Δ = +0,387 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,004 μs</td><td align="right" bgcolor="#FF4949">0,004 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,004 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,004 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,003 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,004 μs (Δ = +0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,004 μs</td><td align="right" bgcolor="#FF4949">0,004 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,004 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,004 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,003 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,004 μs (Δ = +0,000 μs)</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
@@ -1391,24 +1391,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
 Slowest: 4.5.0
 
-Δ: 7,260 ns
+Δ: 0,675 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,5 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#FF4949">+46,1 %</td><td align="right" bgcolor="#A8D08D">-33,2 %</td><td align="right" bgcolor="#FFFFFF">+1,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,6 %</td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#FFFFFF">+2,6 %</td><td align="right" bgcolor="#A8D08D">-3,9 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">14,918 ns</td><td align="right" bgcolor="#FFFFFF">14,986 ns (Δ = +0,068 ns)</td><td align="right" bgcolor="#FFFFFF">14,977 ns (Δ = -0,009 ns)</td><td align="right" bgcolor="#FF4949">21,877 ns (Δ = +6,900 ns)</td><td align="right" bgcolor="#A8D08D">14,617 ns (Δ = -7,260 ns)</td><td align="right" bgcolor="#FFFFFF">14,790 ns (Δ = +0,173 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">15,040 ns</td><td align="right" bgcolor="#FFFFFF">14,798 ns (Δ = -0,242 ns)</td><td align="right" bgcolor="#FFFFFF">15,003 ns (Δ = +0,205 ns)</td><td align="right" bgcolor="#FFFFFF">15,391 ns (Δ = +0,388 ns)</td><td align="right" bgcolor="#A8D08D">14,793 ns (Δ = -0,598 ns)</td><td align="right" bgcolor="#FFFFFF">14,716 ns (Δ = -0,078 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,015 μs</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,022 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#A8D08D">0,015 μs (Δ = -0,007 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = +0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,015 μs</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,015 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = 0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1460,24 +1460,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **4.5.4**
 
-Slowest: 4.3.0
+Slowest: 4.2.0
 
-Δ: 3,910 ns
+Δ: 46,624 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,8 %</td><td align="right" bgcolor="#A8D08D">-4,5 %</td><td align="right" bgcolor="#FFFFFF">+2,4 %</td><td align="right" bgcolor="#FFFFFF">-1,1 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-34,0 %</td><td align="right" bgcolor="#A8D08D">-3,9 %</td><td align="right" bgcolor="#FF4949">+45,4 %</td><td align="right" bgcolor="#A8D08D">-31,8 %</td><td align="right" bgcolor="#FF4949">+10,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">81,367 ns</td><td align="right" bgcolor="#FF4949">85,277 ns (Δ = +3,910 ns)</td><td align="right" bgcolor="#A8D08D">81,436 ns (Δ = -3,841 ns)</td><td align="right" bgcolor="#FFFFFF">83,360 ns (Δ = +1,924 ns)</td><td align="right" bgcolor="#FFFFFF">82,410 ns (Δ = -0,950 ns)</td><td align="right" bgcolor="#FFFFFF">82,924 ns (Δ = +0,514 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">125,733 ns</td><td align="right" bgcolor="#A8D08D">83,018 ns (Δ = -42,716 ns)</td><td align="right" bgcolor="#A8D08D">79,780 ns (Δ = -3,238 ns)</td><td align="right" bgcolor="#FF4949">115,973 ns (Δ = +36,193 ns)</td><td align="right" bgcolor="#A8D08D">79,109 ns (Δ = -36,864 ns)</td><td align="right" bgcolor="#FF4949">87,391 ns (Δ = +8,282 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,081 μs</td><td align="right" bgcolor="#FF4949">0,085 μs (Δ = +0,004 μs)</td><td align="right" bgcolor="#A8D08D">0,081 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FFFFFF">0,083 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,082 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,083 μs (Δ = +0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,126 μs</td><td align="right" bgcolor="#A8D08D">0,083 μs (Δ = -0,043 μs)</td><td align="right" bgcolor="#A8D08D">0,080 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FF4949">0,116 μs (Δ = +0,036 μs)</td><td align="right" bgcolor="#A8D08D">0,079 μs (Δ = -0,037 μs)</td><td align="right" bgcolor="#FF4949">0,087 μs (Δ = +0,008 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1529,24 +1529,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.2.0**
 
 Slowest: 4.3.0
 
-Δ: 7,929 ns
+Δ: 49,205 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+8,2 %</td><td align="right" bgcolor="#A8D08D">-8,6 %</td><td align="right" bgcolor="#FFFFFF">+2,6 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#FFFFFF">-0,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+57,8 %</td><td align="right" bgcolor="#A8D08D">-35,6 %</td><td align="right" bgcolor="#FFFFFF">+2,7 %</td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FF4949">+12,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">85,551 ns</td><td align="right" bgcolor="#FF4949">92,547 ns (Δ = +6,996 ns)</td><td align="right" bgcolor="#A8D08D">84,618 ns (Δ = -7,929 ns)</td><td align="right" bgcolor="#FFFFFF">86,828 ns (Δ = +2,210 ns)</td><td align="right" bgcolor="#FFFFFF">86,730 ns (Δ = -0,097 ns)</td><td align="right" bgcolor="#FFFFFF">86,465 ns (Δ = -0,265 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">85,165 ns</td><td align="right" bgcolor="#FF4949">134,370 ns (Δ = +49,205 ns)</td><td align="right" bgcolor="#A8D08D">86,577 ns (Δ = -47,793 ns)</td><td align="right" bgcolor="#FFFFFF">88,943 ns (Δ = +2,367 ns)</td><td align="right" bgcolor="#FFFFFF">89,550 ns (Δ = +0,607 ns)</td><td align="right" bgcolor="#FF4949">100,335 ns (Δ = +10,785 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,086 μs</td><td align="right" bgcolor="#FF4949">0,093 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#A8D08D">0,085 μs (Δ = -0,008 μs)</td><td align="right" bgcolor="#FFFFFF">0,087 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,087 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,086 μs (Δ = 0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,085 μs</td><td align="right" bgcolor="#FF4949">0,134 μs (Δ = +0,049 μs)</td><td align="right" bgcolor="#A8D08D">0,087 μs (Δ = -0,048 μs)</td><td align="right" bgcolor="#FFFFFF">0,089 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,090 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,100 μs (Δ = +0,011 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1600,22 +1600,22 @@ Slowest: 4.3.0
 
 Fastest: **4.2.0**
 
-Slowest: 4.4.0
+Slowest: 4.5.4
 
-Δ: 14,039 ns
+Δ: 8,860 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,7 %</td><td align="right" bgcolor="#FF4949">+23,1 %</td><td align="right" bgcolor="#A8D08D">-19,7 %</td><td align="right" bgcolor="#FF4949">+19,9 %</td><td align="right" bgcolor="#A8D08D">-14,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+6,5 %</td><td align="right" bgcolor="#A8D08D">-4,0 %</td><td align="right" bgcolor="#FF4949">+4,9 %</td><td align="right" bgcolor="#FF4949">+8,1 %</td><td align="right" bgcolor="#A8D08D">-11,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">55,691 ns</td><td align="right" bgcolor="#FFFFFF">56,650 ns (Δ = +0,959 ns)</td><td align="right" bgcolor="#FF4949">69,730 ns (Δ = +13,080 ns)</td><td align="right" bgcolor="#A8D08D">56,027 ns (Δ = -13,703 ns)</td><td align="right" bgcolor="#FF4949">67,167 ns (Δ = +11,140 ns)</td><td align="right" bgcolor="#A8D08D">57,287 ns (Δ = -9,880 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">55,953 ns</td><td align="right" bgcolor="#FF4949">59,570 ns (Δ = +3,617 ns)</td><td align="right" bgcolor="#A8D08D">57,178 ns (Δ = -2,393 ns)</td><td align="right" bgcolor="#FF4949">59,960 ns (Δ = +2,783 ns)</td><td align="right" bgcolor="#FF4949">64,813 ns (Δ = +4,853 ns)</td><td align="right" bgcolor="#A8D08D">57,175 ns (Δ = -7,638 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,056 μs</td><td align="right" bgcolor="#FFFFFF">0,057 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,070 μs (Δ = +0,013 μs)</td><td align="right" bgcolor="#A8D08D">0,056 μs (Δ = -0,014 μs)</td><td align="right" bgcolor="#FF4949">0,067 μs (Δ = +0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,057 μs (Δ = -0,010 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,056 μs</td><td align="right" bgcolor="#FF4949">0,060 μs (Δ = +0,004 μs)</td><td align="right" bgcolor="#A8D08D">0,057 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,060 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FF4949">0,065 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#A8D08D">0,057 μs (Δ = -0,008 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1667,24 +1667,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **4.4.0**
 
-Slowest: 4.5.0
+Slowest: 4.2.0
 
-Δ: 37,338 ns
+Δ: 31,183 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+19,9 %</td><td align="right" bgcolor="#A8D08D">-14,4 %</td><td align="right" bgcolor="#FF4949">+55,1 %</td><td align="right" bgcolor="#A8D08D">-37,0 %</td><td align="right" bgcolor="#FFFFFF">+1,8 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-31,3 %</td><td align="right" bgcolor="#FFFFFF">-2,2 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td><td align="right" bgcolor="#FFFFFF">-0,9 %</td><td align="right" bgcolor="#FFFFFF">+2,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">62,986 ns</td><td align="right" bgcolor="#FF4949">75,518 ns (Δ = +12,532 ns)</td><td align="right" bgcolor="#A8D08D">64,667 ns (Δ = -10,851 ns)</td><td align="right" bgcolor="#FF4949">100,323 ns (Δ = +35,657 ns)</td><td align="right" bgcolor="#A8D08D">63,161 ns (Δ = -37,163 ns)</td><td align="right" bgcolor="#FFFFFF">64,323 ns (Δ = +1,163 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">95,083 ns</td><td align="right" bgcolor="#A8D08D">65,369 ns (Δ = -29,714 ns)</td><td align="right" bgcolor="#FFFFFF">63,901 ns (Δ = -1,468 ns)</td><td align="right" bgcolor="#FFFFFF">64,856 ns (Δ = +0,955 ns)</td><td align="right" bgcolor="#FFFFFF">64,263 ns (Δ = -0,593 ns)</td><td align="right" bgcolor="#FFFFFF">65,554 ns (Δ = +1,290 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,063 μs</td><td align="right" bgcolor="#FF4949">0,076 μs (Δ = +0,013 μs)</td><td align="right" bgcolor="#A8D08D">0,065 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#FF4949">0,100 μs (Δ = +0,036 μs)</td><td align="right" bgcolor="#A8D08D">0,063 μs (Δ = -0,037 μs)</td><td align="right" bgcolor="#FFFFFF">0,064 μs (Δ = +0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,095 μs</td><td align="right" bgcolor="#A8D08D">0,065 μs (Δ = -0,030 μs)</td><td align="right" bgcolor="#FFFFFF">0,064 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,065 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,064 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,066 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1740,20 +1740,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.3.0
 
-Δ: 3,710 ns
+Δ: 15,728 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,7 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#A8D08D">-5,9 %</td><td align="right" bgcolor="#A8D08D">-5,5 %</td><td align="right" bgcolor="#FFFFFF">-2,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+43,3 %</td><td align="right" bgcolor="#A8D08D">-28,7 %</td><td align="right" bgcolor="#A8D08D">-13,7 %</td><td align="right" bgcolor="#FF4949">+14,1 %</td><td align="right" bgcolor="#A8D08D">-14,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">27,336 ns</td><td align="right" bgcolor="#FF4949">28,610 ns (Δ = +1,274 ns)</td><td align="right" bgcolor="#FFFFFF">28,574 ns (Δ = -0,036 ns)</td><td align="right" bgcolor="#A8D08D">26,887 ns (Δ = -1,687 ns)</td><td align="right" bgcolor="#A8D08D">25,413 ns (Δ = -1,473 ns)</td><td align="right" bgcolor="#FFFFFF">24,900 ns (Δ = -0,513 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">27,700 ns</td><td align="right" bgcolor="#FF4949">39,703 ns (Δ = +12,003 ns)</td><td align="right" bgcolor="#A8D08D">28,323 ns (Δ = -11,380 ns)</td><td align="right" bgcolor="#A8D08D">24,450 ns (Δ = -3,873 ns)</td><td align="right" bgcolor="#FF4949">27,896 ns (Δ = +3,446 ns)</td><td align="right" bgcolor="#A8D08D">23,976 ns (Δ = -3,920 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,027 μs</td><td align="right" bgcolor="#FF4949">0,029 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,029 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,027 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,025 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,025 μs (Δ = -0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,028 μs</td><td align="right" bgcolor="#FF4949">0,040 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#A8D08D">0,028 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,024 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FF4949">0,028 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,024 μs (Δ = -0,004 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1805,24 +1805,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.5.4**
 
-Slowest: 4.2.0
+Slowest: 5.0.0
 
-Δ: 33,733 ns
+Δ: 3,881 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-33,3 %</td><td align="right" bgcolor="#A8D08D">-5,2 %</td><td align="right" bgcolor="#FFFFFF">+2,6 %</td><td align="right" bgcolor="#FFFFFF">-1,9 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,5 %</td><td align="right" bgcolor="#A8D08D">-4,6 %</td><td align="right" bgcolor="#FFFFFF">+2,3 %</td><td align="right" bgcolor="#A8D08D">-3,1 %</td><td align="right" bgcolor="#FF4949">+6,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">91,723 ns</td><td align="right" bgcolor="#A8D08D">61,203 ns (Δ = -30,521 ns)</td><td align="right" bgcolor="#A8D08D">57,991 ns (Δ = -3,212 ns)</td><td align="right" bgcolor="#FFFFFF">59,481 ns (Δ = +1,490 ns)</td><td align="right" bgcolor="#FFFFFF">58,344 ns (Δ = -1,137 ns)</td><td align="right" bgcolor="#FFFFFF">59,247 ns (Δ = +0,902 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">58,227 ns</td><td align="right" bgcolor="#FF4949">60,851 ns (Δ = +2,624 ns)</td><td align="right" bgcolor="#A8D08D">58,025 ns (Δ = -2,826 ns)</td><td align="right" bgcolor="#FFFFFF">59,367 ns (Δ = +1,342 ns)</td><td align="right" bgcolor="#A8D08D">57,546 ns (Δ = -1,821 ns)</td><td align="right" bgcolor="#FF4949">61,427 ns (Δ = +3,881 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,092 μs</td><td align="right" bgcolor="#A8D08D">0,061 μs (Δ = -0,031 μs)</td><td align="right" bgcolor="#A8D08D">0,058 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,059 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,058 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,059 μs (Δ = +0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,058 μs</td><td align="right" bgcolor="#FF4949">0,061 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,058 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,059 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,058 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,061 μs (Δ = +0,004 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1876,22 +1876,22 @@ Slowest: 4.2.0
 
 Fastest: **4.2.0**
 
-Slowest: 4.3.0
+Slowest: 4.5.4
 
-Δ: 4,932 ns
+Δ: 35,207 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+7,8 %</td><td align="right" bgcolor="#A8D08D">-5,4 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#FFFFFF">+1,6 %</td><td align="right" bgcolor="#FFFFFF">+1,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+37,2 %</td><td align="right" bgcolor="#A8D08D">-25,2 %</td><td align="right" bgcolor="#FFFFFF">-1,5 %</td><td align="right" bgcolor="#FF4949">+54,6 %</td><td align="right" bgcolor="#A8D08D">-35,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">62,900 ns</td><td align="right" bgcolor="#FF4949">67,832 ns (Δ = +4,932 ns)</td><td align="right" bgcolor="#A8D08D">64,163 ns (Δ = -3,668 ns)</td><td align="right" bgcolor="#FFFFFF">64,393 ns (Δ = +0,229 ns)</td><td align="right" bgcolor="#FFFFFF">65,395 ns (Δ = +1,003 ns)</td><td align="right" bgcolor="#FFFFFF">66,507 ns (Δ = +1,112 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">62,680 ns</td><td align="right" bgcolor="#FF4949">85,990 ns (Δ = +23,310 ns)</td><td align="right" bgcolor="#A8D08D">64,315 ns (Δ = -21,675 ns)</td><td align="right" bgcolor="#FFFFFF">63,327 ns (Δ = -0,988 ns)</td><td align="right" bgcolor="#FF4949">97,887 ns (Δ = +34,560 ns)</td><td align="right" bgcolor="#A8D08D">63,064 ns (Δ = -34,822 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,063 μs</td><td align="right" bgcolor="#FF4949">0,068 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#A8D08D">0,064 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FFFFFF">0,064 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,065 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,067 μs (Δ = +0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,063 μs</td><td align="right" bgcolor="#FF4949">0,086 μs (Δ = +0,023 μs)</td><td align="right" bgcolor="#A8D08D">0,064 μs (Δ = -0,022 μs)</td><td align="right" bgcolor="#FFFFFF">0,063 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,098 μs (Δ = +0,035 μs)</td><td align="right" bgcolor="#A8D08D">0,063 μs (Δ = -0,035 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -1943,24 +1943,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.2.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
-Δ: 6,213 ns
+Δ: 31,543 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,5 %</td><td align="right" bgcolor="#FFFFFF">-1,7 %</td><td align="right" bgcolor="#FF4949">+6,5 %</td><td align="right" bgcolor="#A8D08D">-3,7 %</td><td align="right" bgcolor="#FF4949">+12,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+26,1 %</td><td align="right" bgcolor="#A8D08D">-18,7 %</td><td align="right" bgcolor="#FFFFFF">+1,3 %</td><td align="right" bgcolor="#FF4949">+71,9 %</td><td align="right" bgcolor="#A8D08D">-41,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">41,223 ns</td><td align="right" bgcolor="#FFFFFF">40,606 ns (Δ = -0,617 ns)</td><td align="right" bgcolor="#FFFFFF">39,907 ns (Δ = -0,700 ns)</td><td align="right" bgcolor="#FF4949">42,503 ns (Δ = +2,596 ns)</td><td align="right" bgcolor="#A8D08D">40,933 ns (Δ = -1,569 ns)</td><td align="right" bgcolor="#FF4949">46,120 ns (Δ = +5,187 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">40,198 ns</td><td align="right" bgcolor="#FF4949">50,705 ns (Δ = +10,507 ns)</td><td align="right" bgcolor="#A8D08D">41,207 ns (Δ = -9,498 ns)</td><td align="right" bgcolor="#FFFFFF">41,727 ns (Δ = +0,520 ns)</td><td align="right" bgcolor="#FF4949">71,741 ns (Δ = +30,014 ns)</td><td align="right" bgcolor="#A8D08D">41,842 ns (Δ = -29,899 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,041 μs</td><td align="right" bgcolor="#FFFFFF">0,041 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,040 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,043 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,041 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,046 μs (Δ = +0,005 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,040 μs</td><td align="right" bgcolor="#FF4949">0,051 μs (Δ = +0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,041 μs (Δ = -0,009 μs)</td><td align="right" bgcolor="#FFFFFF">0,042 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,072 μs (Δ = +0,030 μs)</td><td align="right" bgcolor="#A8D08D">0,042 μs (Δ = -0,030 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -2014,22 +2014,22 @@ Slowest: 5.0.0
 
 Fastest: **4.5.4**
 
-Slowest: 4.3.0
+Slowest: 4.2.0
 
-Δ: 3,951 ns
+Δ: 30,883 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+5,2 %</td><td align="right" bgcolor="#A8D08D">-3,9 %</td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#A8D08D">-3,5 %</td><td align="right" bgcolor="#FFFFFF">+2,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-35,7 %</td><td align="right" bgcolor="#FF4949">+18,5 %</td><td align="right" bgcolor="#FF4949">+4,2 %</td><td align="right" bgcolor="#A8D08D">-25,3 %</td><td align="right" bgcolor="#FF4949">+10,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">47,042 ns</td><td align="right" bgcolor="#FF4949">49,484 ns (Δ = +2,443 ns)</td><td align="right" bgcolor="#A8D08D">47,561 ns (Δ = -1,923 ns)</td><td align="right" bgcolor="#FFFFFF">47,192 ns (Δ = -0,369 ns)</td><td align="right" bgcolor="#A8D08D">45,533 ns (Δ = -1,658 ns)</td><td align="right" bgcolor="#FFFFFF">46,440 ns (Δ = +0,907 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">75,920 ns</td><td align="right" bgcolor="#A8D08D">48,787 ns (Δ = -27,133 ns)</td><td align="right" bgcolor="#FF4949">57,827 ns (Δ = +9,040 ns)</td><td align="right" bgcolor="#FF4949">60,283 ns (Δ = +2,457 ns)</td><td align="right" bgcolor="#A8D08D">45,037 ns (Δ = -15,247 ns)</td><td align="right" bgcolor="#FF4949">49,638 ns (Δ = +4,601 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,047 μs</td><td align="right" bgcolor="#FF4949">0,049 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,048 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,047 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,046 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,046 μs (Δ = +0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,076 μs</td><td align="right" bgcolor="#A8D08D">0,049 μs (Δ = -0,027 μs)</td><td align="right" bgcolor="#FF4949">0,058 μs (Δ = +0,009 μs)</td><td align="right" bgcolor="#FF4949">0,060 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,045 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#FF4949">0,050 μs (Δ = +0,005 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -2083,24 +2083,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **5.0.0**
 
-Slowest: 4.3.0
+Slowest: 4.5.0
 
-Δ: 3051,327 ns
+Δ: 379,165 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+39,0 %</td><td align="right" bgcolor="#A8D08D">-28,3 %</td><td align="right" bgcolor="#FFFFFF">+3,0 %</td><td align="right" bgcolor="#FF4949">+30,8 %</td><td align="right" bgcolor="#A8D08D">-23,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,5 %</td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#FF4949">+4,4 %</td><td align="right" bgcolor="#A8D08D">-3,8 %</td><td align="right" bgcolor="#FFFFFF">-0,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7753,233 ns</td><td align="right" bgcolor="#FF4949">10778,330 ns (Δ = +3025,097 ns)</td><td align="right" bgcolor="#A8D08D">7727,003 ns (Δ = -3051,327 ns)</td><td align="right" bgcolor="#FFFFFF">7956,020 ns (Δ = +229,017 ns)</td><td align="right" bgcolor="#FF4949">10406,957 ns (Δ = +2450,937 ns)</td><td align="right" bgcolor="#A8D08D">7982,425 ns (Δ = -2424,532 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7680,250 ns</td><td align="right" bgcolor="#FFFFFF">7794,370 ns (Δ = +114,120 ns)</td><td align="right" bgcolor="#FFFFFF">7714,362 ns (Δ = -80,008 ns)</td><td align="right" bgcolor="#FF4949">8051,482 ns (Δ = +337,120 ns)</td><td align="right" bgcolor="#A8D08D">7744,896 ns (Δ = -306,586 ns)</td><td align="right" bgcolor="#FFFFFF">7672,317 ns (Δ = -72,579 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">7,753 μs</td><td align="right" bgcolor="#FF4949">10,778 μs (Δ = +3,025 μs)</td><td align="right" bgcolor="#A8D08D">7,727 μs (Δ = -3,051 μs)</td><td align="right" bgcolor="#FFFFFF">7,956 μs (Δ = +0,229 μs)</td><td align="right" bgcolor="#FF4949">10,407 μs (Δ = +2,451 μs)</td><td align="right" bgcolor="#A8D08D">7,982 μs (Δ = -2,425 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">7,680 μs</td><td align="right" bgcolor="#FFFFFF">7,794 μs (Δ = +0,114 μs)</td><td align="right" bgcolor="#FFFFFF">7,714 μs (Δ = -0,080 μs)</td><td align="right" bgcolor="#FF4949">8,051 μs (Δ = +0,337 μs)</td><td align="right" bgcolor="#A8D08D">7,745 μs (Δ = -0,307 μs)</td><td align="right" bgcolor="#FFFFFF">7,672 μs (Δ = -0,073 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,008 ms</td><td align="right" bgcolor="#FF4949">0,011 ms (Δ = +0,003 ms)</td><td align="right" bgcolor="#A8D08D">0,008 ms (Δ = -0,003 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,010 ms (Δ = +0,002 ms)</td><td align="right" bgcolor="#A8D08D">0,008 ms (Δ = -0,002 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,008 ms</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -2152,24 +2152,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.4.0**
 
-Slowest: 4.4.0
+Slowest: 4.5.0
 
-Δ: 235,254 ns
+Δ: 209,250 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,3 %</td><td align="right" bgcolor="#FFFFFF">+0,5 %</td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td><td align="right" bgcolor="#FFFFFF">-1,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">0,0 %</td><td align="right" bgcolor="#FFFFFF">-1,6 %</td><td align="right" bgcolor="#FFFFFF">+2,8 %</td><td align="right" bgcolor="#FFFFFF">-1,3 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7719,770 ns</td><td align="right" bgcolor="#FFFFFF">7894,596 ns (Δ = +174,826 ns)</td><td align="right" bgcolor="#FFFFFF">7930,400 ns (Δ = +35,804 ns)</td><td align="right" bgcolor="#FFFFFF">7866,522 ns (Δ = -63,878 ns)</td><td align="right" bgcolor="#FFFFFF">7827,493 ns (Δ = -39,029 ns)</td><td align="right" bgcolor="#FFFFFF">7695,146 ns (Δ = -132,347 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7703,943 ns</td><td align="right" bgcolor="#FFFFFF">7701,787 ns (Δ = -2,156 ns)</td><td align="right" bgcolor="#FFFFFF">7575,103 ns (Δ = -126,683 ns)</td><td align="right" bgcolor="#FFFFFF">7784,353 ns (Δ = +209,250 ns)</td><td align="right" bgcolor="#FFFFFF">7683,802 ns (Δ = -100,552 ns)</td><td align="right" bgcolor="#FFFFFF">7715,063 ns (Δ = +31,262 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">7,720 μs</td><td align="right" bgcolor="#FFFFFF">7,895 μs (Δ = +0,175 μs)</td><td align="right" bgcolor="#FFFFFF">7,930 μs (Δ = +0,036 μs)</td><td align="right" bgcolor="#FFFFFF">7,867 μs (Δ = -0,064 μs)</td><td align="right" bgcolor="#FFFFFF">7,827 μs (Δ = -0,039 μs)</td><td align="right" bgcolor="#FFFFFF">7,695 μs (Δ = -0,132 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">7,704 μs</td><td align="right" bgcolor="#FFFFFF">7,702 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">7,575 μs (Δ = -0,127 μs)</td><td align="right" bgcolor="#FFFFFF">7,784 μs (Δ = +0,209 μs)</td><td align="right" bgcolor="#FFFFFF">7,684 μs (Δ = -0,101 μs)</td><td align="right" bgcolor="#FFFFFF">7,715 μs (Δ = +0,031 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,008 ms</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,008 ms</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -2223,22 +2223,22 @@ Slowest: 4.4.0
 
 Fastest: **4.5.0**
 
-Slowest: 4.5.4
+Slowest: 5.0.0
 
-Δ: 832,477 ns
+Δ: 1985,124 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+6,2 %</td><td align="right" bgcolor="#FFFFFF">-1,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,6 %</td><td align="right" bgcolor="#FF4949">+12,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">13396,270 ns</td><td align="right" bgcolor="#FF4949">14228,747 ns (Δ = +832,477 ns)</td><td align="right" bgcolor="#FFFFFF">14081,624 ns (Δ = -147,123 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">13703,873 ns</td><td align="right" bgcolor="#FFFFFF">13921,111 ns (Δ = +217,238 ns)</td><td align="right" bgcolor="#FF4949">15688,998 ns (Δ = +1767,887 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">13,396 μs</td><td align="right" bgcolor="#FF4949">14,229 μs (Δ = +0,832 μs)</td><td align="right" bgcolor="#FFFFFF">14,082 μs (Δ = -0,147 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">13,704 μs</td><td align="right" bgcolor="#FFFFFF">13,921 μs (Δ = +0,217 μs)</td><td align="right" bgcolor="#FF4949">15,689 μs (Δ = +1,768 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,013 ms</td><td align="right" bgcolor="#FF4949">0,014 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,014 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,014 ms</td><td align="right" bgcolor="#FFFFFF">0,014 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,016 ms (Δ = +0,002 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -2290,24 +2290,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **4.5.0**
 
-Slowest: 5.0.0
+Slowest: 4.4.0
 
-Δ: 6291,455 ns
+Δ: 123,697 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,1 %</td><td align="right" bgcolor="#FF4949">+40,3 %</td><td align="right" bgcolor="#A8D08D">-28,8 %</td><td align="right" bgcolor="#FFFFFF">-1,9 %</td><td align="right" bgcolor="#FF4949">+110,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,2 %</td><td align="right" bgcolor="#FFFFFF">+1,6 %</td><td align="right" bgcolor="#FFFFFF">-2,2 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">5485,149 ns</td><td align="right" bgcolor="#FF4949">5710,520 ns (Δ = +225,371 ns)</td><td align="right" bgcolor="#FF4949">8010,283 ns (Δ = +2299,763 ns)</td><td align="right" bgcolor="#A8D08D">5705,513 ns (Δ = -2304,770 ns)</td><td align="right" bgcolor="#FFFFFF">5597,650 ns (Δ = -107,863 ns)</td><td align="right" bgcolor="#FF4949">11776,604 ns (Δ = +6178,954 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">5572,933 ns</td><td align="right" bgcolor="#FFFFFF">5508,817 ns (Δ = -64,117 ns)</td><td align="right" bgcolor="#FFFFFF">5596,247 ns (Δ = +87,430 ns)</td><td align="right" bgcolor="#FFFFFF">5472,550 ns (Δ = -123,697 ns)</td><td align="right" bgcolor="#FFFFFF">5483,837 ns (Δ = +11,287 ns)</td><td align="right" bgcolor="#FFFFFF">5495,044 ns (Δ = +11,208 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">5,485 μs</td><td align="right" bgcolor="#FF4949">5,711 μs (Δ = +0,225 μs)</td><td align="right" bgcolor="#FF4949">8,010 μs (Δ = +2,300 μs)</td><td align="right" bgcolor="#A8D08D">5,706 μs (Δ = -2,305 μs)</td><td align="right" bgcolor="#FFFFFF">5,598 μs (Δ = -0,108 μs)</td><td align="right" bgcolor="#FF4949">11,777 μs (Δ = +6,179 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">5,573 μs</td><td align="right" bgcolor="#FFFFFF">5,509 μs (Δ = -0,064 μs)</td><td align="right" bgcolor="#FFFFFF">5,596 μs (Δ = +0,087 μs)</td><td align="right" bgcolor="#FFFFFF">5,473 μs (Δ = -0,124 μs)</td><td align="right" bgcolor="#FFFFFF">5,484 μs (Δ = +0,011 μs)</td><td align="right" bgcolor="#FFFFFF">5,495 μs (Δ = +0,011 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,005 ms</td><td align="right" bgcolor="#FF4949">0,006 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,008 ms (Δ = +0,002 ms)</td><td align="right" bgcolor="#A8D08D">0,006 ms (Δ = -0,002 ms)</td><td align="right" bgcolor="#FFFFFF">0,006 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,012 ms (Δ = +0,006 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,006 ms</td><td align="right" bgcolor="#FFFFFF">0,006 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,006 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -2335,7 +2335,7 @@ Slowest: 5.0.0
 </tr>
 <tr>
 <td>Allocated Bytes</td>
-<td align="right">4.2.0</td>
+<td align="right">4.5.0</td>
 <td align="right">4.5.4</td>
 </tr>
 </table>
@@ -2349,8 +2349,8 @@ Slowest: 5.0.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">2660</td><td align="right">2662</td><td align="right">2662</td><td align="right">2662</td><td align="right">2695</td><td align="right">2695</td><tr>
-<td>Allocated Kilobytes</td><td align="right">2,598</td><td align="right">2,600</td><td align="right">2,600</td><td align="right">2,600</td><td align="right">2,632</td><td align="right">2,632</td><tr>
+<td>Allocated Bytes</td><td align="right">2662</td><td align="right">2662</td><td align="right">2662</td><td align="right">2662</td><td align="right">2695</td><td align="right">2695</td><tr>
+<td>Allocated Kilobytes</td><td align="right">2,600</td><td align="right">2,600</td><td align="right">2,600</td><td align="right">2,600</td><td align="right">2,632</td><td align="right">2,632</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,003</td><td align="right">0,003</td><td align="right">0,003</td><td align="right">0,003</td><td align="right">0,003</td><td align="right">0,003</td></tr>
 </table>
 
@@ -2372,7 +2372,7 @@ Slowest: 4.2.0
 <tr>
 <th> </th><th>4.2.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td></tr>
 <tr>
 <td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9558,343 ns</td></tr>
 <tr>
@@ -2441,7 +2441,7 @@ Slowest: 4.2.0
 <tr>
 <th> </th><th>4.2.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td></tr>
 <tr>
 <td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9830,104 ns</td></tr>
 <tr>
@@ -2510,7 +2510,7 @@ Slowest: 4.2.0
 <tr>
 <th> </th><th>4.2.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td></tr>
 <tr>
 <td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9359,122 ns</td></tr>
 <tr>
@@ -2579,7 +2579,7 @@ Slowest: 4.2.0
 <tr>
 <th> </th><th>4.2.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td></tr>
 <tr>
 <td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">881935,341 ns</td></tr>
 <tr>
@@ -2648,7 +2648,7 @@ Slowest: 4.2.0
 <tr>
 <th> </th><th>4.2.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td></tr>
 <tr>
 <td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">2783,894 ns</td></tr>
 <tr>
@@ -2717,7 +2717,7 @@ Slowest: 4.2.0
 <tr>
 <th> </th><th>4.2.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td></tr>
 <tr>
 <td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7630,665 ns</td></tr>
 <tr>
@@ -2786,7 +2786,7 @@ Slowest: 4.2.0
 <tr>
 <th> </th><th>4.2.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td></tr>
 <tr>
 <td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9817,318 ns</td></tr>
 <tr>
@@ -2855,7 +2855,7 @@ Slowest: 4.2.0
 <tr>
 <th> </th><th>4.2.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td></tr>
 <tr>
 <td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">10362,241 ns</td></tr>
 <tr>
@@ -2924,7 +2924,7 @@ Slowest: 4.2.0
 <tr>
 <th> </th><th>4.2.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td></tr>
 <tr>
 <td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">969,730 ns</td></tr>
 <tr>
@@ -2984,24 +2984,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **4.5.0**
+Fastest: **4.5.4**
 
-Slowest: 4.5.4
+Slowest: 4.4.0
 
-Δ: 1846,787 ns
+Δ: 553,691 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td><td align="right" bgcolor="#A8D08D">-3,2 %</td><td align="right" bgcolor="#FF4949">+18,5 %</td><td align="right" bgcolor="#A8D08D">-15,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,6 %</td><td align="right" bgcolor="#FFFFFF">+1,2 %</td><td align="right" bgcolor="#FFFFFF">-2,7 %</td><td align="right" bgcolor="#FFFFFF">-2,7 %</td><td align="right" bgcolor="#FFFFFF">+0,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">10231,857 ns</td><td align="right" bgcolor="#FFFFFF">10147,887 ns (Δ = -83,970 ns)</td><td align="right" bgcolor="#FFFFFF">10299,673 ns (Δ = +151,787 ns)</td><td align="right" bgcolor="#A8D08D">9967,533 ns (Δ = -332,140 ns)</td><td align="right" bgcolor="#FF4949">11814,320 ns (Δ = +1846,787 ns)</td><td align="right" bgcolor="#A8D08D">10000,283 ns (Δ = -1814,037 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9931,073 ns</td><td align="right" bgcolor="#FFFFFF">10192,577 ns (Δ = +261,503 ns)</td><td align="right" bgcolor="#FFFFFF">10310,631 ns (Δ = +118,054 ns)</td><td align="right" bgcolor="#FFFFFF">10027,760 ns (Δ = -282,871 ns)</td><td align="right" bgcolor="#FFFFFF">9756,940 ns (Δ = -270,820 ns)</td><td align="right" bgcolor="#FFFFFF">9788,489 ns (Δ = +31,549 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">10,232 μs</td><td align="right" bgcolor="#FFFFFF">10,148 μs (Δ = -0,084 μs)</td><td align="right" bgcolor="#FFFFFF">10,300 μs (Δ = +0,152 μs)</td><td align="right" bgcolor="#A8D08D">9,968 μs (Δ = -0,332 μs)</td><td align="right" bgcolor="#FF4949">11,814 μs (Δ = +1,847 μs)</td><td align="right" bgcolor="#A8D08D">10,000 μs (Δ = -1,814 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">9,931 μs</td><td align="right" bgcolor="#FFFFFF">10,193 μs (Δ = +0,262 μs)</td><td align="right" bgcolor="#FFFFFF">10,311 μs (Δ = +0,118 μs)</td><td align="right" bgcolor="#FFFFFF">10,028 μs (Δ = -0,283 μs)</td><td align="right" bgcolor="#FFFFFF">9,757 μs (Δ = -0,271 μs)</td><td align="right" bgcolor="#FFFFFF">9,788 μs (Δ = +0,032 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,010 ms</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,012 ms (Δ = +0,002 ms)</td><td align="right" bgcolor="#A8D08D">0,010 ms (Δ = -0,002 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,010 ms</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -3053,24 +3053,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **4.4.0**
 
 Slowest: 4.2.0
 
-Δ: 903,427 ns
+Δ: 1656,099 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-7,6 %</td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#FFFFFF">-1,5 %</td><td align="right" bgcolor="#FFFFFF">+1,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-14,0 %</td><td align="right" bgcolor="#FFFFFF">-0,3 %</td><td align="right" bgcolor="#FFFFFF">+1,1 %</td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">10856,793 ns</td><td align="right" bgcolor="#A8D08D">10034,993 ns (Δ = -821,800 ns)</td><td align="right" bgcolor="#FFFFFF">9963,977 ns (Δ = -71,017 ns)</td><td align="right" bgcolor="#FFFFFF">10104,887 ns (Δ = +140,910 ns)</td><td align="right" bgcolor="#FFFFFF">9953,367 ns (Δ = -151,520 ns)</td><td align="right" bgcolor="#FFFFFF">10081,260 ns (Δ = +127,893 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">11582,869 ns</td><td align="right" bgcolor="#A8D08D">9955,590 ns (Δ = -1627,279 ns)</td><td align="right" bgcolor="#FFFFFF">9926,770 ns (Δ = -28,820 ns)</td><td align="right" bgcolor="#FFFFFF">10040,123 ns (Δ = +113,353 ns)</td><td align="right" bgcolor="#FFFFFF">10112,663 ns (Δ = +72,540 ns)</td><td align="right" bgcolor="#FFFFFF">10174,553 ns (Δ = +61,890 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">10,857 μs</td><td align="right" bgcolor="#A8D08D">10,035 μs (Δ = -0,822 μs)</td><td align="right" bgcolor="#FFFFFF">9,964 μs (Δ = -0,071 μs)</td><td align="right" bgcolor="#FFFFFF">10,105 μs (Δ = +0,141 μs)</td><td align="right" bgcolor="#FFFFFF">9,953 μs (Δ = -0,152 μs)</td><td align="right" bgcolor="#FFFFFF">10,081 μs (Δ = +0,128 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">11,583 μs</td><td align="right" bgcolor="#A8D08D">9,956 μs (Δ = -1,627 μs)</td><td align="right" bgcolor="#FFFFFF">9,927 μs (Δ = -0,029 μs)</td><td align="right" bgcolor="#FFFFFF">10,040 μs (Δ = +0,113 μs)</td><td align="right" bgcolor="#FFFFFF">10,113 μs (Δ = +0,073 μs)</td><td align="right" bgcolor="#FFFFFF">10,175 μs (Δ = +0,062 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,011 ms</td><td align="right" bgcolor="#A8D08D">0,010 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,012 ms</td><td align="right" bgcolor="#A8D08D">0,010 ms (Δ = -0,002 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -3126,20 +3126,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.2.0
 
-Δ: 1281,287 ns
+Δ: 205,267 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-11,2 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#FF4949">+5,0 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#A8D08D">-4,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,6 %</td><td align="right" bgcolor="#FFFFFF">-1,4 %</td><td align="right" bgcolor="#FFFFFF">+1,2 %</td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#FFFFFF">-0,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">10963,758 ns</td><td align="right" bgcolor="#A8D08D">9740,432 ns (Δ = -1223,325 ns)</td><td align="right" bgcolor="#FFFFFF">9705,110 ns (Δ = -35,322 ns)</td><td align="right" bgcolor="#FF4949">10186,607 ns (Δ = +481,497 ns)</td><td align="right" bgcolor="#FFFFFF">10176,970 ns (Δ = -9,637 ns)</td><td align="right" bgcolor="#A8D08D">9682,471 ns (Δ = -494,499 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9842,611 ns</td><td align="right" bgcolor="#FFFFFF">9783,662 ns (Δ = -58,949 ns)</td><td align="right" bgcolor="#FFFFFF">9648,637 ns (Δ = -135,025 ns)</td><td align="right" bgcolor="#FFFFFF">9762,140 ns (Δ = +113,503 ns)</td><td align="right" bgcolor="#FFFFFF">9665,270 ns (Δ = -96,870 ns)</td><td align="right" bgcolor="#FFFFFF">9637,344 ns (Δ = -27,926 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">10,964 μs</td><td align="right" bgcolor="#A8D08D">9,740 μs (Δ = -1,223 μs)</td><td align="right" bgcolor="#FFFFFF">9,705 μs (Δ = -0,035 μs)</td><td align="right" bgcolor="#FF4949">10,187 μs (Δ = +0,481 μs)</td><td align="right" bgcolor="#FFFFFF">10,177 μs (Δ = -0,010 μs)</td><td align="right" bgcolor="#A8D08D">9,682 μs (Δ = -0,494 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">9,843 μs</td><td align="right" bgcolor="#FFFFFF">9,784 μs (Δ = -0,059 μs)</td><td align="right" bgcolor="#FFFFFF">9,649 μs (Δ = -0,135 μs)</td><td align="right" bgcolor="#FFFFFF">9,762 μs (Δ = +0,114 μs)</td><td align="right" bgcolor="#FFFFFF">9,665 μs (Δ = -0,097 μs)</td><td align="right" bgcolor="#FFFFFF">9,637 μs (Δ = -0,028 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,011 ms</td><td align="right" bgcolor="#A8D08D">0,010 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,010 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,010 ms</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -3191,24 +3191,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.0**
 
-Slowest: 4.3.0
+Slowest: 4.4.0
 
-Δ: 501333,259 ns
+Δ: 431665,398 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+9,0 %</td><td align="right" bgcolor="#A8D08D">-7,2 %</td><td align="right" bgcolor="#A8D08D">-43,1 %</td><td align="right" bgcolor="#FFFFFF">-0,9 %</td><td align="right" bgcolor="#A8D08D">-4,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,9 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#A8D08D">-46,1 %</td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">922722,183 ns</td><td align="right" bgcolor="#FF4949">1005737,063 ns (Δ = +83014,880 ns)</td><td align="right" bgcolor="#A8D08D">933075,323 ns (Δ = -72661,740 ns)</td><td align="right" bgcolor="#A8D08D">530786,477 ns (Δ = -402288,847 ns)</td><td align="right" bgcolor="#FFFFFF">525979,124 ns (Δ = -4807,352 ns)</td><td align="right" bgcolor="#A8D08D">504403,804 ns (Δ = -21575,320 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">926508,020 ns</td><td align="right" bgcolor="#FFFFFF">934834,683 ns (Δ = +8326,663 ns)</td><td align="right" bgcolor="#FFFFFF">936679,922 ns (Δ = +1845,239 ns)</td><td align="right" bgcolor="#A8D08D">505014,524 ns (Δ = -431665,398 ns)</td><td align="right" bgcolor="#FFFFFF">509127,080 ns (Δ = +4112,556 ns)</td><td align="right" bgcolor="#FFFFFF">506380,602 ns (Δ = -2746,478 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">922,722 μs</td><td align="right" bgcolor="#FF4949">1005,737 μs (Δ = +83,015 μs)</td><td align="right" bgcolor="#A8D08D">933,075 μs (Δ = -72,662 μs)</td><td align="right" bgcolor="#A8D08D">530,786 μs (Δ = -402,289 μs)</td><td align="right" bgcolor="#FFFFFF">525,979 μs (Δ = -4,807 μs)</td><td align="right" bgcolor="#A8D08D">504,404 μs (Δ = -21,575 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">926,508 μs</td><td align="right" bgcolor="#FFFFFF">934,835 μs (Δ = +8,327 μs)</td><td align="right" bgcolor="#FFFFFF">936,680 μs (Δ = +1,845 μs)</td><td align="right" bgcolor="#A8D08D">505,015 μs (Δ = -431,665 μs)</td><td align="right" bgcolor="#FFFFFF">509,127 μs (Δ = +4,113 μs)</td><td align="right" bgcolor="#FFFFFF">506,381 μs (Δ = -2,746 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,923 ms</td><td align="right" bgcolor="#FF4949">1,006 ms (Δ = +0,083 ms)</td><td align="right" bgcolor="#A8D08D">0,933 ms (Δ = -0,073 ms)</td><td align="right" bgcolor="#A8D08D">0,531 ms (Δ = -0,402 ms)</td><td align="right" bgcolor="#FFFFFF">0,526 ms (Δ = -0,005 ms)</td><td align="right" bgcolor="#A8D08D">0,504 ms (Δ = -0,022 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,927 ms</td><td align="right" bgcolor="#FFFFFF">0,935 ms (Δ = +0,008 ms)</td><td align="right" bgcolor="#FFFFFF">0,937 ms (Δ = +0,002 ms)</td><td align="right" bgcolor="#A8D08D">0,505 ms (Δ = -0,432 ms)</td><td align="right" bgcolor="#FFFFFF">0,509 ms (Δ = +0,004 ms)</td><td align="right" bgcolor="#FFFFFF">0,506 ms (Δ = -0,003 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -3237,7 +3237,7 @@ Slowest: 4.3.0
 <tr>
 <td>Allocated Bytes</td>
 <td align="right">5.0.0</td>
-<td align="right">4.3.0</td>
+<td align="right">4.4.0</td>
 </tr>
 </table>
 
@@ -3250,8 +3250,8 @@ Slowest: 4.3.0
 <td>Gen 1</td><td align="right">20</td><td align="right">20</td><td align="right">20</td><td align="right">10</td><td align="right">10</td><td align="right">10</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">35330</td><td align="right">35332</td><td align="right">35324</td><td align="right">20370</td><td align="right">20370</td><td align="right">20370</td><tr>
-<td>Allocated Kilobytes</td><td align="right">34,502</td><td align="right">34,504</td><td align="right">34,496</td><td align="right">19,893</td><td align="right">19,893</td><td align="right">19,893</td><tr>
+<td>Allocated Bytes</td><td align="right">35330</td><td align="right">35328</td><td align="right">35331</td><td align="right">20370</td><td align="right">20370</td><td align="right">20370</td><tr>
+<td>Allocated Kilobytes</td><td align="right">34,502</td><td align="right">34,500</td><td align="right">34,503</td><td align="right">19,893</td><td align="right">19,893</td><td align="right">19,893</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,034</td><td align="right">0,034</td><td align="right">0,034</td><td align="right">0,019</td><td align="right">0,019</td><td align="right">0,019</td></tr>
 </table>
 
@@ -3260,24 +3260,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.4.0**
 
-Slowest: 4.5.0
+Slowest: 5.0.0
 
-Δ: 1568,058 ns
+Δ: 57,039 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,6 %</td><td align="right" bgcolor="#FFFFFF">-1,8 %</td><td align="right" bgcolor="#FF4949">+53,5 %</td><td align="right" bgcolor="#A8D08D">-32,9 %</td><td align="right" bgcolor="#A8D08D">-3,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,3 %</td><td align="right" bgcolor="#FFFFFF">-1,8 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FFFFFF">0,0 %</td><td align="right" bgcolor="#FFFFFF">+1,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3027,667 ns</td><td align="right" bgcolor="#FFFFFF">2977,720 ns (Δ = -49,947 ns)</td><td align="right" bgcolor="#FFFFFF">2922,902 ns (Δ = -54,818 ns)</td><td align="right" bgcolor="#FF4949">4486,880 ns (Δ = +1563,978 ns)</td><td align="right" bgcolor="#A8D08D">3012,504 ns (Δ = -1474,376 ns)</td><td align="right" bgcolor="#A8D08D">2918,822 ns (Δ = -93,682 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">2917,347 ns</td><td align="right" bgcolor="#FFFFFF">2955,873 ns (Δ = +38,527 ns)</td><td align="right" bgcolor="#FFFFFF">2902,250 ns (Δ = -53,623 ns)</td><td align="right" bgcolor="#FFFFFF">2909,474 ns (Δ = +7,224 ns)</td><td align="right" bgcolor="#FFFFFF">2908,318 ns (Δ = -1,157 ns)</td><td align="right" bgcolor="#FFFFFF">2959,289 ns (Δ = +50,971 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,028 μs</td><td align="right" bgcolor="#FFFFFF">2,978 μs (Δ = -0,050 μs)</td><td align="right" bgcolor="#FFFFFF">2,923 μs (Δ = -0,055 μs)</td><td align="right" bgcolor="#FF4949">4,487 μs (Δ = +1,564 μs)</td><td align="right" bgcolor="#A8D08D">3,013 μs (Δ = -1,474 μs)</td><td align="right" bgcolor="#A8D08D">2,919 μs (Δ = -0,094 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">2,917 μs</td><td align="right" bgcolor="#FFFFFF">2,956 μs (Δ = +0,039 μs)</td><td align="right" bgcolor="#FFFFFF">2,902 μs (Δ = -0,054 μs)</td><td align="right" bgcolor="#FFFFFF">2,909 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#FFFFFF">2,908 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">2,959 μs (Δ = +0,051 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,002 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -3331,22 +3331,22 @@ Slowest: 4.5.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.5.4
+Slowest: 4.5.0
 
-Δ: 258,659 ns
+Δ: 449,197 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,5 %</td><td align="right" bgcolor="#FFFFFF">+1,1 %</td><td align="right" bgcolor="#FFFFFF">-2,8 %</td><td align="right" bgcolor="#FFFFFF">+3,0 %</td><td align="right" bgcolor="#A8D08D">-3,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td><td align="right" bgcolor="#FF4949">+5,3 %</td><td align="right" bgcolor="#A8D08D">-3,4 %</td><td align="right" bgcolor="#FFFFFF">-2,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">8064,973 ns</td><td align="right" bgcolor="#FFFFFF">8021,503 ns (Δ = -43,470 ns)</td><td align="right" bgcolor="#FFFFFF">8113,300 ns (Δ = +91,797 ns)</td><td align="right" bgcolor="#FFFFFF">7883,058 ns (Δ = -230,242 ns)</td><td align="right" bgcolor="#FFFFFF">8121,303 ns (Δ = +238,246 ns)</td><td align="right" bgcolor="#A8D08D">7862,644 ns (Δ = -258,659 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7839,321 ns</td><td align="right" bgcolor="#FFFFFF">7869,973 ns (Δ = +30,652 ns)</td><td align="right" bgcolor="#FFFFFF">7827,753 ns (Δ = -42,219 ns)</td><td align="right" bgcolor="#FF4949">8242,050 ns (Δ = +414,297 ns)</td><td align="right" bgcolor="#A8D08D">7960,137 ns (Δ = -281,913 ns)</td><td align="right" bgcolor="#FFFFFF">7792,853 ns (Δ = -167,283 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">8,065 μs</td><td align="right" bgcolor="#FFFFFF">8,022 μs (Δ = -0,043 μs)</td><td align="right" bgcolor="#FFFFFF">8,113 μs (Δ = +0,092 μs)</td><td align="right" bgcolor="#FFFFFF">7,883 μs (Δ = -0,230 μs)</td><td align="right" bgcolor="#FFFFFF">8,121 μs (Δ = +0,238 μs)</td><td align="right" bgcolor="#A8D08D">7,863 μs (Δ = -0,259 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">7,839 μs</td><td align="right" bgcolor="#FFFFFF">7,870 μs (Δ = +0,031 μs)</td><td align="right" bgcolor="#FFFFFF">7,828 μs (Δ = -0,042 μs)</td><td align="right" bgcolor="#FF4949">8,242 μs (Δ = +0,414 μs)</td><td align="right" bgcolor="#A8D08D">7,960 μs (Δ = -0,282 μs)</td><td align="right" bgcolor="#FFFFFF">7,793 μs (Δ = -0,167 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,008 ms</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,008 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,008 ms</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -3400,22 +3400,22 @@ Slowest: 4.5.4
 
 Fastest: **4.2.0**
 
-Slowest: 4.4.0
+Slowest: 4.5.0
 
-Δ: 559,091 ns
+Δ: 619,342 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,7 %</td><td align="right" bgcolor="#FFFFFF">+2,9 %</td><td align="right" bgcolor="#A8D08D">-4,0 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#FFFFFF">+0,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+3,0 %</td><td align="right" bgcolor="#FFFFFF">+2,1 %</td><td align="right" bgcolor="#FFFFFF">+1,0 %</td><td align="right" bgcolor="#A8D08D">-4,7 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9848,587 ns</td><td align="right" bgcolor="#FFFFFF">10114,040 ns (Δ = +265,453 ns)</td><td align="right" bgcolor="#FFFFFF">10407,678 ns (Δ = +293,638 ns)</td><td align="right" bgcolor="#A8D08D">9989,593 ns (Δ = -418,084 ns)</td><td align="right" bgcolor="#FFFFFF">9979,307 ns (Δ = -10,287 ns)</td><td align="right" bgcolor="#FFFFFF">10028,330 ns (Δ = +49,023 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9830,364 ns</td><td align="right" bgcolor="#FFFFFF">10128,473 ns (Δ = +298,109 ns)</td><td align="right" bgcolor="#FFFFFF">10345,787 ns (Δ = +217,313 ns)</td><td align="right" bgcolor="#FFFFFF">10449,707 ns (Δ = +103,920 ns)</td><td align="right" bgcolor="#A8D08D">9962,787 ns (Δ = -486,920 ns)</td><td align="right" bgcolor="#FFFFFF">9985,469 ns (Δ = +22,682 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">9,849 μs</td><td align="right" bgcolor="#FFFFFF">10,114 μs (Δ = +0,265 μs)</td><td align="right" bgcolor="#FFFFFF">10,408 μs (Δ = +0,294 μs)</td><td align="right" bgcolor="#A8D08D">9,990 μs (Δ = -0,418 μs)</td><td align="right" bgcolor="#FFFFFF">9,979 μs (Δ = -0,010 μs)</td><td align="right" bgcolor="#FFFFFF">10,028 μs (Δ = +0,049 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">9,830 μs</td><td align="right" bgcolor="#FFFFFF">10,128 μs (Δ = +0,298 μs)</td><td align="right" bgcolor="#FFFFFF">10,346 μs (Δ = +0,217 μs)</td><td align="right" bgcolor="#FFFFFF">10,450 μs (Δ = +0,104 μs)</td><td align="right" bgcolor="#A8D08D">9,963 μs (Δ = -0,487 μs)</td><td align="right" bgcolor="#FFFFFF">9,985 μs (Δ = +0,023 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,010 ms</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,010 ms</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -3467,24 +3467,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **5.0.0**
 
-Slowest: 4.4.0
+Slowest: 4.5.4
 
-Δ: 363,333 ns
+Δ: 626,853 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FFFFFF">+3,0 %</td><td align="right" bgcolor="#FFFFFF">-1,8 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#FFFFFF">-1,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FF4949">+4,7 %</td><td align="right" bgcolor="#A8D08D">-6,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9852,423 ns</td><td align="right" bgcolor="#FFFFFF">9921,437 ns (Δ = +69,013 ns)</td><td align="right" bgcolor="#FFFFFF">10215,757 ns (Δ = +294,320 ns)</td><td align="right" bgcolor="#FFFFFF">10030,597 ns (Δ = -185,160 ns)</td><td align="right" bgcolor="#FFFFFF">10069,620 ns (Δ = +39,023 ns)</td><td align="right" bgcolor="#FFFFFF">9943,630 ns (Δ = -125,990 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9937,320 ns</td><td align="right" bgcolor="#FFFFFF">10007,076 ns (Δ = +69,756 ns)</td><td align="right" bgcolor="#FFFFFF">9928,440 ns (Δ = -78,636 ns)</td><td align="right" bgcolor="#FFFFFF">10000,767 ns (Δ = +72,327 ns)</td><td align="right" bgcolor="#FF4949">10466,713 ns (Δ = +465,947 ns)</td><td align="right" bgcolor="#A8D08D">9839,860 ns (Δ = -626,853 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">9,852 μs</td><td align="right" bgcolor="#FFFFFF">9,921 μs (Δ = +0,069 μs)</td><td align="right" bgcolor="#FFFFFF">10,216 μs (Δ = +0,294 μs)</td><td align="right" bgcolor="#FFFFFF">10,031 μs (Δ = -0,185 μs)</td><td align="right" bgcolor="#FFFFFF">10,070 μs (Δ = +0,039 μs)</td><td align="right" bgcolor="#FFFFFF">9,944 μs (Δ = -0,126 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">9,937 μs</td><td align="right" bgcolor="#FFFFFF">10,007 μs (Δ = +0,070 μs)</td><td align="right" bgcolor="#FFFFFF">9,928 μs (Δ = -0,079 μs)</td><td align="right" bgcolor="#FFFFFF">10,001 μs (Δ = +0,072 μs)</td><td align="right" bgcolor="#FF4949">10,467 μs (Δ = +0,466 μs)</td><td align="right" bgcolor="#A8D08D">9,840 μs (Δ = -0,627 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,010 ms</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,010 ms</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,010 ms (Δ = -0,001 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -3540,20 +3540,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.2.0
 
-Δ: 287,899 ns
+Δ: 94,587 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-18,0 %</td><td align="right" bgcolor="#FFFFFF">-1,8 %</td><td align="right" bgcolor="#FFFFFF">+2,4 %</td><td align="right" bgcolor="#FFFFFF">-1,4 %</td><td align="right" bgcolor="#A8D08D">-4,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,1 %</td><td align="right" bgcolor="#FFFFFF">+0,1 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#A8D08D">-3,9 %</td><td align="right" bgcolor="#FFFFFF">-0,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1284,713 ns</td><td align="right" bgcolor="#A8D08D">1053,730 ns (Δ = -230,983 ns)</td><td align="right" bgcolor="#FFFFFF">1034,473 ns (Δ = -19,257 ns)</td><td align="right" bgcolor="#FFFFFF">1058,836 ns (Δ = +24,362 ns)</td><td align="right" bgcolor="#FFFFFF">1044,087 ns (Δ = -14,749 ns)</td><td align="right" bgcolor="#A8D08D">996,814 ns (Δ = -47,272 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1073,527 ns</td><td align="right" bgcolor="#A8D08D">1029,171 ns (Δ = -44,356 ns)</td><td align="right" bgcolor="#FFFFFF">1029,913 ns (Δ = +0,742 ns)</td><td align="right" bgcolor="#FFFFFF">1026,071 ns (Δ = -3,842 ns)</td><td align="right" bgcolor="#A8D08D">985,783 ns (Δ = -40,288 ns)</td><td align="right" bgcolor="#FFFFFF">978,940 ns (Δ = -6,843 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,285 μs</td><td align="right" bgcolor="#A8D08D">1,054 μs (Δ = -0,231 μs)</td><td align="right" bgcolor="#FFFFFF">1,034 μs (Δ = -0,019 μs)</td><td align="right" bgcolor="#FFFFFF">1,059 μs (Δ = +0,024 μs)</td><td align="right" bgcolor="#FFFFFF">1,044 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#A8D08D">0,997 μs (Δ = -0,047 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,074 μs</td><td align="right" bgcolor="#A8D08D">1,029 μs (Δ = -0,044 μs)</td><td align="right" bgcolor="#FFFFFF">1,030 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">1,026 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#A8D08D">0,986 μs (Δ = -0,040 μs)</td><td align="right" bgcolor="#FFFFFF">0,979 μs (Δ = -0,007 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -3611,20 +3611,20 @@ Fastest: **4.5.4**
 
 Slowest: 4.4.0
 
-Δ: 339,180 ns
+Δ: 118,857 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,8 %</td><td align="right" bgcolor="#A8D08D">-7,4 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,9 %</td><td align="right" bgcolor="#FFFFFF">-1,9 %</td><td align="right" bgcolor="#FFFFFF">+1,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3380,300 ns</td><td align="right" bgcolor="#FFFFFF">3285,642 ns (Δ = -94,658 ns)</td><td align="right" bgcolor="#A8D08D">3041,120 ns (Δ = -244,522 ns)</td><td align="right" bgcolor="#FFFFFF">3087,300 ns (Δ = +46,180 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3113,373 ns</td><td align="right" bgcolor="#FFFFFF">3052,920 ns (Δ = -60,453 ns)</td><td align="right" bgcolor="#FFFFFF">2994,517 ns (Δ = -58,403 ns)</td><td align="right" bgcolor="#FFFFFF">3029,867 ns (Δ = +35,350 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,380 μs</td><td align="right" bgcolor="#FFFFFF">3,286 μs (Δ = -0,095 μs)</td><td align="right" bgcolor="#A8D08D">3,041 μs (Δ = -0,245 μs)</td><td align="right" bgcolor="#FFFFFF">3,087 μs (Δ = +0,046 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,113 μs</td><td align="right" bgcolor="#FFFFFF">3,053 μs (Δ = -0,060 μs)</td><td align="right" bgcolor="#FFFFFF">2,995 μs (Δ = -0,058 μs)</td><td align="right" bgcolor="#FFFFFF">3,030 μs (Δ = +0,035 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -3676,24 +3676,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.0**
 
-Slowest: 4.5.0
+Slowest: 5.0.0
 
-Δ: 1075,459 ns
+Δ: 86,988 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+22,1 %</td><td align="right" bgcolor="#A8D08D">-19,4 %</td><td align="right" bgcolor="#A8D08D">-4,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,2 %</td><td align="right" bgcolor="#FFFFFF">+1,1 %</td><td align="right" bgcolor="#FFFFFF">+1,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3876,720 ns</td><td align="right" bgcolor="#FF4949">4732,335 ns (Δ = +855,615 ns)</td><td align="right" bgcolor="#A8D08D">3816,007 ns (Δ = -916,328 ns)</td><td align="right" bgcolor="#A8D08D">3656,876 ns (Δ = -159,131 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3675,460 ns</td><td align="right" bgcolor="#FFFFFF">3669,010 ns (Δ = -6,450 ns)</td><td align="right" bgcolor="#FFFFFF">3708,973 ns (Δ = +39,963 ns)</td><td align="right" bgcolor="#FFFFFF">3755,998 ns (Δ = +47,024 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,877 μs</td><td align="right" bgcolor="#FF4949">4,732 μs (Δ = +0,856 μs)</td><td align="right" bgcolor="#A8D08D">3,816 μs (Δ = -0,916 μs)</td><td align="right" bgcolor="#A8D08D">3,657 μs (Δ = -0,159 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,675 μs</td><td align="right" bgcolor="#FFFFFF">3,669 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FFFFFF">3,709 μs (Δ = +0,040 μs)</td><td align="right" bgcolor="#FFFFFF">3,756 μs (Δ = +0,047 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FF4949">0,005 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -3747,22 +3747,22 @@ Slowest: 4.5.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.5.4
+Slowest: 4.4.0
 
-Δ: 139,696 ns
+Δ: 136,120 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td><td align="right" bgcolor="#A8D08D">-4,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,3 %</td><td align="right" bgcolor="#FFFFFF">+2,4 %</td><td align="right" bgcolor="#A8D08D">-3,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3212,953 ns</td><td align="right" bgcolor="#FFFFFF">3199,843 ns (Δ = -13,110 ns)</td><td align="right" bgcolor="#FFFFFF">3248,763 ns (Δ = +48,920 ns)</td><td align="right" bgcolor="#A8D08D">3109,067 ns (Δ = -139,696 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3238,753 ns</td><td align="right" bgcolor="#A8D08D">3131,872 ns (Δ = -106,882 ns)</td><td align="right" bgcolor="#FFFFFF">3207,053 ns (Δ = +75,182 ns)</td><td align="right" bgcolor="#A8D08D">3102,633 ns (Δ = -104,420 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,213 μs</td><td align="right" bgcolor="#FFFFFF">3,200 μs (Δ = -0,013 μs)</td><td align="right" bgcolor="#FFFFFF">3,249 μs (Δ = +0,049 μs)</td><td align="right" bgcolor="#A8D08D">3,109 μs (Δ = -0,140 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,239 μs</td><td align="right" bgcolor="#A8D08D">3,132 μs (Δ = -0,107 μs)</td><td align="right" bgcolor="#FFFFFF">3,207 μs (Δ = +0,075 μs)</td><td align="right" bgcolor="#A8D08D">3,103 μs (Δ = -0,104 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -3818,20 +3818,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.5.4
 
-Δ: 1686,553 ns
+Δ: 345,141 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+33,3 %</td><td align="right" bgcolor="#FF4949">+6,8 %</td><td align="right" bgcolor="#A8D08D">-30,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,1 %</td><td align="right" bgcolor="#FF4949">+5,1 %</td><td align="right" bgcolor="#A8D08D">-8,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3850,140 ns</td><td align="right" bgcolor="#FF4949">5134,083 ns (Δ = +1283,943 ns)</td><td align="right" bgcolor="#FF4949">5484,817 ns (Δ = +350,733 ns)</td><td align="right" bgcolor="#A8D08D">3798,263 ns (Δ = -1686,553 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3813,860 ns</td><td align="right" bgcolor="#FFFFFF">3893,544 ns (Δ = +79,684 ns)</td><td align="right" bgcolor="#FF4949">4092,733 ns (Δ = +199,189 ns)</td><td align="right" bgcolor="#A8D08D">3747,593 ns (Δ = -345,141 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,850 μs</td><td align="right" bgcolor="#FF4949">5,134 μs (Δ = +1,284 μs)</td><td align="right" bgcolor="#FF4949">5,485 μs (Δ = +0,351 μs)</td><td align="right" bgcolor="#A8D08D">3,798 μs (Δ = -1,687 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,814 μs</td><td align="right" bgcolor="#FFFFFF">3,894 μs (Δ = +0,080 μs)</td><td align="right" bgcolor="#FF4949">4,093 μs (Δ = +0,199 μs)</td><td align="right" bgcolor="#A8D08D">3,748 μs (Δ = -0,345 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FF4949">0,005 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FF4949">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = -0,002 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -3883,24 +3883,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.5.0**
+Fastest: **4.5.4**
 
-Slowest: 4.4.0
+Slowest: 4.5.0
 
-Δ: 80,991 ns
+Δ: 295,280 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,5 %</td><td align="right" bgcolor="#FFFFFF">+1,6 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+9,2 %</td><td align="right" bgcolor="#A8D08D">-8,9 %</td><td align="right" bgcolor="#FF4949">+4,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3207,651 ns</td><td align="right" bgcolor="#FFFFFF">3126,660 ns (Δ = -80,991 ns)</td><td align="right" bgcolor="#FFFFFF">3178,027 ns (Δ = +51,367 ns)</td><td align="right" bgcolor="#FFFFFF">3165,253 ns (Δ = -12,773 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3037,563 ns</td><td align="right" bgcolor="#FF4949">3315,630 ns (Δ = +278,067 ns)</td><td align="right" bgcolor="#A8D08D">3020,350 ns (Δ = -295,280 ns)</td><td align="right" bgcolor="#FF4949">3139,895 ns (Δ = +119,545 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,208 μs</td><td align="right" bgcolor="#FFFFFF">3,127 μs (Δ = -0,081 μs)</td><td align="right" bgcolor="#FFFFFF">3,178 μs (Δ = +0,051 μs)</td><td align="right" bgcolor="#FFFFFF">3,165 μs (Δ = -0,013 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,038 μs</td><td align="right" bgcolor="#FF4949">3,316 μs (Δ = +0,278 μs)</td><td align="right" bgcolor="#A8D08D">3,020 μs (Δ = -0,295 μs)</td><td align="right" bgcolor="#FF4949">3,140 μs (Δ = +0,120 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -3952,24 +3952,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **4.5.0**
+Fastest: **4.5.4**
 
-Slowest: 4.4.0
+Slowest: 4.5.0
 
-Δ: 1833,867 ns
+Δ: 795,401 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-32,7 %</td><td align="right" bgcolor="#FFFFFF">+1,9 %</td><td align="right" bgcolor="#FF4949">+4,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+18,2 %</td><td align="right" bgcolor="#A8D08D">-17,8 %</td><td align="right" bgcolor="#FF4949">+8,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">5611,057 ns</td><td align="right" bgcolor="#A8D08D">3777,190 ns (Δ = -1833,867 ns)</td><td align="right" bgcolor="#FFFFFF">3849,433 ns (Δ = +72,243 ns)</td><td align="right" bgcolor="#FF4949">4030,563 ns (Δ = +181,130 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3779,077 ns</td><td align="right" bgcolor="#FF4949">4465,691 ns (Δ = +686,614 ns)</td><td align="right" bgcolor="#A8D08D">3670,290 ns (Δ = -795,401 ns)</td><td align="right" bgcolor="#FF4949">3977,253 ns (Δ = +306,963 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">5,611 μs</td><td align="right" bgcolor="#A8D08D">3,777 μs (Δ = -1,834 μs)</td><td align="right" bgcolor="#FFFFFF">3,849 μs (Δ = +0,072 μs)</td><td align="right" bgcolor="#FF4949">4,031 μs (Δ = +0,181 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,779 μs</td><td align="right" bgcolor="#FF4949">4,466 μs (Δ = +0,687 μs)</td><td align="right" bgcolor="#A8D08D">3,670 μs (Δ = -0,795 μs)</td><td align="right" bgcolor="#FF4949">3,977 μs (Δ = +0,307 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,006 ms</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = -0,002 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -4021,24 +4021,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **4.5.0**
+Fastest: **5.0.0**
 
 Slowest: 4.5.4
 
-Δ: 588,747 ns
+Δ: 260,473 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,5 %</td><td align="right" bgcolor="#FF4949">+18,2 %</td><td align="right" bgcolor="#A8D08D">-14,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FF4949">+6,7 %</td><td align="right" bgcolor="#A8D08D">-7,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3253,773 ns</td><td align="right" bgcolor="#FFFFFF">3238,507 ns (Δ = -15,267 ns)</td><td align="right" bgcolor="#FF4949">3827,253 ns (Δ = +588,747 ns)</td><td align="right" bgcolor="#A8D08D">3291,109 ns (Δ = -536,144 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3090,507 ns</td><td align="right" bgcolor="#FFFFFF">3110,702 ns (Δ = +20,196 ns)</td><td align="right" bgcolor="#FF4949">3318,627 ns (Δ = +207,924 ns)</td><td align="right" bgcolor="#A8D08D">3058,153 ns (Δ = -260,473 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,254 μs</td><td align="right" bgcolor="#FFFFFF">3,239 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#FF4949">3,827 μs (Δ = +0,589 μs)</td><td align="right" bgcolor="#A8D08D">3,291 μs (Δ = -0,536 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,091 μs</td><td align="right" bgcolor="#FFFFFF">3,111 μs (Δ = +0,020 μs)</td><td align="right" bgcolor="#FF4949">3,319 μs (Δ = +0,208 μs)</td><td align="right" bgcolor="#A8D08D">3,058 μs (Δ = -0,260 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = -0,001 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -4090,24 +4090,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
-Slowest: 4.5.4
+Slowest: 4.4.0
 
-Δ: 589,684 ns
+Δ: 112,593 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,7 %</td><td align="right" bgcolor="#FF4949">+15,2 %</td><td align="right" bgcolor="#A8D08D">-13,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FFFFFF">-2,2 %</td><td align="right" bgcolor="#FFFFFF">+2,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3898,037 ns</td><td align="right" bgcolor="#FFFFFF">3830,035 ns (Δ = -68,002 ns)</td><td align="right" bgcolor="#FF4949">4411,491 ns (Δ = +581,456 ns)</td><td align="right" bgcolor="#A8D08D">3821,807 ns (Δ = -589,684 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3808,443 ns</td><td align="right" bgcolor="#FFFFFF">3780,730 ns (Δ = -27,713 ns)</td><td align="right" bgcolor="#FFFFFF">3695,850 ns (Δ = -84,880 ns)</td><td align="right" bgcolor="#FFFFFF">3782,945 ns (Δ = +87,095 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,898 μs</td><td align="right" bgcolor="#FFFFFF">3,830 μs (Δ = -0,068 μs)</td><td align="right" bgcolor="#FF4949">4,411 μs (Δ = +0,581 μs)</td><td align="right" bgcolor="#A8D08D">3,822 μs (Δ = -0,590 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,808 μs</td><td align="right" bgcolor="#FFFFFF">3,781 μs (Δ = -0,028 μs)</td><td align="right" bgcolor="#FFFFFF">3,696 μs (Δ = -0,085 μs)</td><td align="right" bgcolor="#FFFFFF">3,783 μs (Δ = +0,087 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = -0,001 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -4159,24 +4159,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **4.5.0**
 
-Slowest: 4.5.0
+Slowest: 5.0.0
 
-Δ: 145,412 ns
+Δ: 182,896 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+3,7 %</td><td align="right" bgcolor="#A8D08D">-4,5 %</td><td align="right" bgcolor="#FFFFFF">+2,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">0,0 %</td><td align="right" bgcolor="#FFFFFF">+2,7 %</td><td align="right" bgcolor="#FF4949">+3,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3115,440 ns</td><td align="right" bgcolor="#FF4949">3231,543 ns (Δ = +116,103 ns)</td><td align="right" bgcolor="#A8D08D">3086,131 ns (Δ = -145,412 ns)</td><td align="right" bgcolor="#FFFFFF">3161,060 ns (Δ = +74,929 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3112,203 ns</td><td align="right" bgcolor="#FFFFFF">3111,851 ns (Δ = -0,352 ns)</td><td align="right" bgcolor="#FFFFFF">3194,578 ns (Δ = +82,726 ns)</td><td align="right" bgcolor="#FF4949">3294,747 ns (Δ = +100,169 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,115 μs</td><td align="right" bgcolor="#FF4949">3,232 μs (Δ = +0,116 μs)</td><td align="right" bgcolor="#A8D08D">3,086 μs (Δ = -0,145 μs)</td><td align="right" bgcolor="#FFFFFF">3,161 μs (Δ = +0,075 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,112 μs</td><td align="right" bgcolor="#FFFFFF">3,112 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">3,195 μs (Δ = +0,083 μs)</td><td align="right" bgcolor="#FF4949">3,295 μs (Δ = +0,100 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -4228,24 +4228,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
 Slowest: 4.5.0
 
-Δ: 241,803 ns
+Δ: 265,624 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,9 %</td><td align="right" bgcolor="#A8D08D">-5,4 %</td><td align="right" bgcolor="#FFFFFF">-0,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+6,2 %</td><td align="right" bgcolor="#A8D08D">-6,7 %</td><td align="right" bgcolor="#FFFFFF">+1,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3786,757 ns</td><td align="right" bgcolor="#FF4949">3974,047 ns (Δ = +187,290 ns)</td><td align="right" bgcolor="#A8D08D">3759,457 ns (Δ = -214,590 ns)</td><td align="right" bgcolor="#FFFFFF">3732,243 ns (Δ = -27,213 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3756,134 ns</td><td align="right" bgcolor="#FF4949">3989,749 ns (Δ = +233,615 ns)</td><td align="right" bgcolor="#A8D08D">3724,124 ns (Δ = -265,624 ns)</td><td align="right" bgcolor="#FFFFFF">3761,771 ns (Δ = +37,647 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,787 μs</td><td align="right" bgcolor="#FF4949">3,974 μs (Δ = +0,187 μs)</td><td align="right" bgcolor="#A8D08D">3,759 μs (Δ = -0,215 μs)</td><td align="right" bgcolor="#FFFFFF">3,732 μs (Δ = -0,027 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,756 μs</td><td align="right" bgcolor="#FF4949">3,990 μs (Δ = +0,234 μs)</td><td align="right" bgcolor="#A8D08D">3,724 μs (Δ = -0,266 μs)</td><td align="right" bgcolor="#FFFFFF">3,762 μs (Δ = +0,038 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -4297,24 +4297,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.5.4**
 
-Slowest: 5.0.0
+Slowest: 4.4.0
 
-Δ: 4153,958 ns
+Δ: 150,178 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#FF4949">+126,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,9 %</td><td align="right" bgcolor="#A8D08D">-3,8 %</td><td align="right" bgcolor="#FFFFFF">+2,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3182,143 ns</td><td align="right" bgcolor="#FFFFFF">3206,440 ns (Δ = +24,297 ns)</td><td align="right" bgcolor="#FFFFFF">3232,966 ns (Δ = +26,526 ns)</td><td align="right" bgcolor="#FF4949">7336,101 ns (Δ = +4103,136 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3212,560 ns</td><td align="right" bgcolor="#FFFFFF">3182,097 ns (Δ = -30,463 ns)</td><td align="right" bgcolor="#A8D08D">3062,382 ns (Δ = -119,714 ns)</td><td align="right" bgcolor="#FFFFFF">3150,460 ns (Δ = +88,078 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,182 μs</td><td align="right" bgcolor="#FFFFFF">3,206 μs (Δ = +0,024 μs)</td><td align="right" bgcolor="#FFFFFF">3,233 μs (Δ = +0,027 μs)</td><td align="right" bgcolor="#FF4949">7,336 μs (Δ = +4,103 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,213 μs</td><td align="right" bgcolor="#FFFFFF">3,182 μs (Δ = -0,030 μs)</td><td align="right" bgcolor="#A8D08D">3,062 μs (Δ = -0,120 μs)</td><td align="right" bgcolor="#FFFFFF">3,150 μs (Δ = +0,088 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,007 ms (Δ = +0,004 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -4366,24 +4366,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.5.0**
 
-Slowest: 4.5.4
+Slowest: 5.0.0
 
-Δ: 92,832 ns
+Δ: 1591,207 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#FFFFFF">+2,1 %</td><td align="right" bgcolor="#FFFFFF">-1,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-24,5 %</td><td align="right" bgcolor="#FF4949">+3,1 %</td><td align="right" bgcolor="#FF4949">+38,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3804,917 ns</td><td align="right" bgcolor="#FFFFFF">3819,198 ns (Δ = +14,281 ns)</td><td align="right" bgcolor="#FFFFFF">3897,749 ns (Δ = +78,551 ns)</td><td align="right" bgcolor="#FFFFFF">3839,627 ns (Δ = -58,122 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4904,387 ns</td><td align="right" bgcolor="#A8D08D">3704,517 ns (Δ = -1199,870 ns)</td><td align="right" bgcolor="#FF4949">3819,907 ns (Δ = +115,390 ns)</td><td align="right" bgcolor="#FF4949">5295,723 ns (Δ = +1475,817 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,805 μs</td><td align="right" bgcolor="#FFFFFF">3,819 μs (Δ = +0,014 μs)</td><td align="right" bgcolor="#FFFFFF">3,898 μs (Δ = +0,079 μs)</td><td align="right" bgcolor="#FFFFFF">3,840 μs (Δ = -0,058 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,904 μs</td><td align="right" bgcolor="#A8D08D">3,705 μs (Δ = -1,200 μs)</td><td align="right" bgcolor="#FF4949">3,820 μs (Δ = +0,115 μs)</td><td align="right" bgcolor="#FF4949">5,296 μs (Δ = +1,476 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,005 ms</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,005 ms (Δ = +0,001 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -4437,24 +4437,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.3.0**
 
-Slowest: 4.5.4
+Slowest: 5.0.0
 
-Δ: 175,713 ns
+Δ: 170,646 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+10,2 %</td><td align="right" bgcolor="#A8D08D">-10,0 %</td><td align="right" bgcolor="#FF4949">+177,1 %</td><td align="right" bgcolor="#FF4949">+5,3 %</td><td align="right" bgcolor="#A8D08D">-4,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-10,1 %</td><td align="right" bgcolor="#FFFFFF">+1,0 %</td><td align="right" bgcolor="#FF4949">+185,9 %</td><td align="right" bgcolor="#A8D08D">-11,6 %</td><td align="right" bgcolor="#FF4949">+13,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">92,364 ns</td><td align="right" bgcolor="#FF4949">101,757 ns (Δ = +9,392 ns)</td><td align="right" bgcolor="#A8D08D">91,560 ns (Δ = -10,197 ns)</td><td align="right" bgcolor="#FF4949">253,740 ns (Δ = +162,180 ns)</td><td align="right" bgcolor="#FF4949">267,273 ns (Δ = +13,533 ns)</td><td align="right" bgcolor="#A8D08D">256,387 ns (Δ = -10,887 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">100,487 ns</td><td align="right" bgcolor="#A8D08D">90,324 ns (Δ = -10,162 ns)</td><td align="right" bgcolor="#FFFFFF">91,258 ns (Δ = +0,933 ns)</td><td align="right" bgcolor="#FF4949">260,933 ns (Δ = +169,676 ns)</td><td align="right" bgcolor="#A8D08D">230,538 ns (Δ = -30,396 ns)</td><td align="right" bgcolor="#FF4949">260,970 ns (Δ = +30,433 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,092 μs</td><td align="right" bgcolor="#FF4949">0,102 μs (Δ = +0,009 μs)</td><td align="right" bgcolor="#A8D08D">0,092 μs (Δ = -0,010 μs)</td><td align="right" bgcolor="#FF4949">0,254 μs (Δ = +0,162 μs)</td><td align="right" bgcolor="#FF4949">0,267 μs (Δ = +0,014 μs)</td><td align="right" bgcolor="#A8D08D">0,256 μs (Δ = -0,011 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,100 μs</td><td align="right" bgcolor="#A8D08D">0,090 μs (Δ = -0,010 μs)</td><td align="right" bgcolor="#FFFFFF">0,091 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,261 μs (Δ = +0,170 μs)</td><td align="right" bgcolor="#A8D08D">0,231 μs (Δ = -0,030 μs)</td><td align="right" bgcolor="#FF4949">0,261 μs (Δ = +0,030 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -4506,24 +4506,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **4.4.0**
 
 Slowest: 4.5.0
 
-Δ: 134,007 ns
+Δ: 155,218 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,6 %</td><td align="right" bgcolor="#FFFFFF">+0,1 %</td><td align="right" bgcolor="#FF4949">+103,4 %</td><td align="right" bgcolor="#FFFFFF">-0,9 %</td><td align="right" bgcolor="#A8D08D">-6,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,2 %</td><td align="right" bgcolor="#A8D08D">-3,0 %</td><td align="right" bgcolor="#FF4949">+123,6 %</td><td align="right" bgcolor="#A8D08D">-13,2 %</td><td align="right" bgcolor="#FF4949">+6,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">125,486 ns</td><td align="right" bgcolor="#FFFFFF">127,437 ns (Δ = +1,951 ns)</td><td align="right" bgcolor="#FFFFFF">127,594 ns (Δ = +0,157 ns)</td><td align="right" bgcolor="#FF4949">259,493 ns (Δ = +131,898 ns)</td><td align="right" bgcolor="#FFFFFF">257,129 ns (Δ = -2,364 ns)</td><td align="right" bgcolor="#A8D08D">241,132 ns (Δ = -15,997 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">131,027 ns</td><td align="right" bgcolor="#FFFFFF">129,428 ns (Δ = -1,598 ns)</td><td align="right" bgcolor="#A8D08D">125,593 ns (Δ = -3,836 ns)</td><td align="right" bgcolor="#FF4949">280,810 ns (Δ = +155,218 ns)</td><td align="right" bgcolor="#A8D08D">243,633 ns (Δ = -37,177 ns)</td><td align="right" bgcolor="#FF4949">258,393 ns (Δ = +14,760 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,125 μs</td><td align="right" bgcolor="#FFFFFF">0,127 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,128 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,259 μs (Δ = +0,132 μs)</td><td align="right" bgcolor="#FFFFFF">0,257 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,241 μs (Δ = -0,016 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,131 μs</td><td align="right" bgcolor="#FFFFFF">0,129 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,126 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FF4949">0,281 μs (Δ = +0,155 μs)</td><td align="right" bgcolor="#A8D08D">0,244 μs (Δ = -0,037 μs)</td><td align="right" bgcolor="#FF4949">0,258 μs (Δ = +0,015 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -4577,22 +4577,22 @@ Slowest: 4.5.0
 
 Fastest: **4.4.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.0
 
-Δ: 139,116 ns
+Δ: 145,622 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,9 %</td><td align="right" bgcolor="#A8D08D">-9,7 %</td><td align="right" bgcolor="#FF4949">+106,7 %</td><td align="right" bgcolor="#A8D08D">-5,2 %</td><td align="right" bgcolor="#FF4949">+6,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,6 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#FF4949">+117,1 %</td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#FFFFFF">-1,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">143,290 ns</td><td align="right" bgcolor="#FFFFFF">142,013 ns (Δ = -1,277 ns)</td><td align="right" bgcolor="#A8D08D">128,171 ns (Δ = -13,842 ns)</td><td align="right" bgcolor="#FF4949">264,883 ns (Δ = +136,712 ns)</td><td align="right" bgcolor="#A8D08D">251,218 ns (Δ = -13,666 ns)</td><td align="right" bgcolor="#FF4949">267,287 ns (Δ = +16,069 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">129,095 ns</td><td align="right" bgcolor="#A8D08D">124,484 ns (Δ = -4,611 ns)</td><td align="right" bgcolor="#FFFFFF">124,404 ns (Δ = -0,079 ns)</td><td align="right" bgcolor="#FF4949">270,027 ns (Δ = +145,622 ns)</td><td align="right" bgcolor="#FFFFFF">263,482 ns (Δ = -6,544 ns)</td><td align="right" bgcolor="#FFFFFF">258,563 ns (Δ = -4,919 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,143 μs</td><td align="right" bgcolor="#FFFFFF">0,142 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,128 μs (Δ = -0,014 μs)</td><td align="right" bgcolor="#FF4949">0,265 μs (Δ = +0,137 μs)</td><td align="right" bgcolor="#A8D08D">0,251 μs (Δ = -0,014 μs)</td><td align="right" bgcolor="#FF4949">0,267 μs (Δ = +0,016 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,129 μs</td><td align="right" bgcolor="#A8D08D">0,124 μs (Δ = -0,005 μs)</td><td align="right" bgcolor="#FFFFFF">0,124 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,270 μs (Δ = +0,146 μs)</td><td align="right" bgcolor="#FFFFFF">0,263 μs (Δ = -0,007 μs)</td><td align="right" bgcolor="#FFFFFF">0,259 μs (Δ = -0,005 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -4644,24 +4644,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.3.0**
+Fastest: **4.2.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
-Δ: 148,380 ns
+Δ: 139,280 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,3 %</td><td align="right" bgcolor="#FFFFFF">+1,1 %</td><td align="right" bgcolor="#FF4949">+140,0 %</td><td align="right" bgcolor="#A8D08D">-5,9 %</td><td align="right" bgcolor="#FF4949">+8,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+7,4 %</td><td align="right" bgcolor="#FF4949">+5,7 %</td><td align="right" bgcolor="#FF4949">+108,8 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#A8D08D">-5,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">103,680 ns</td><td align="right" bgcolor="#A8D08D">100,287 ns (Δ = -3,393 ns)</td><td align="right" bgcolor="#FFFFFF">101,368 ns (Δ = +1,081 ns)</td><td align="right" bgcolor="#FF4949">243,303 ns (Δ = +141,936 ns)</td><td align="right" bgcolor="#A8D08D">229,050 ns (Δ = -14,253 ns)</td><td align="right" bgcolor="#FF4949">248,667 ns (Δ = +19,617 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">101,283 ns</td><td align="right" bgcolor="#FF4949">108,730 ns (Δ = +7,447 ns)</td><td align="right" bgcolor="#FF4949">114,910 ns (Δ = +6,180 ns)</td><td align="right" bgcolor="#FF4949">239,987 ns (Δ = +125,077 ns)</td><td align="right" bgcolor="#FFFFFF">240,563 ns (Δ = +0,577 ns)</td><td align="right" bgcolor="#A8D08D">227,654 ns (Δ = -12,909 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,104 μs</td><td align="right" bgcolor="#A8D08D">0,100 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,101 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,243 μs (Δ = +0,142 μs)</td><td align="right" bgcolor="#A8D08D">0,229 μs (Δ = -0,014 μs)</td><td align="right" bgcolor="#FF4949">0,249 μs (Δ = +0,020 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,101 μs</td><td align="right" bgcolor="#FF4949">0,109 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#FF4949">0,115 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#FF4949">0,240 μs (Δ = +0,125 μs)</td><td align="right" bgcolor="#FFFFFF">0,241 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,228 μs (Δ = -0,013 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -4713,24 +4713,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.3.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.0
 
-Δ: 233,113 ns
+Δ: 145,532 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+46,7 %</td><td align="right" bgcolor="#A8D08D">-35,0 %</td><td align="right" bgcolor="#FF4949">+135,3 %</td><td align="right" bgcolor="#FFFFFF">+2,7 %</td><td align="right" bgcolor="#FF4949">+38,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-29,7 %</td><td align="right" bgcolor="#FF4949">+12,8 %</td><td align="right" bgcolor="#FF4949">+119,5 %</td><td align="right" bgcolor="#A8D08D">-5,8 %</td><td align="right" bgcolor="#FF4949">+3,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">103,993 ns</td><td align="right" bgcolor="#FF4949">152,580 ns (Δ = +48,587 ns)</td><td align="right" bgcolor="#A8D08D">99,200 ns (Δ = -53,380 ns)</td><td align="right" bgcolor="#FF4949">233,413 ns (Δ = +134,213 ns)</td><td align="right" bgcolor="#FFFFFF">239,657 ns (Δ = +6,243 ns)</td><td align="right" bgcolor="#FF4949">332,313 ns (Δ = +92,657 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">140,233 ns</td><td align="right" bgcolor="#A8D08D">98,638 ns (Δ = -41,595 ns)</td><td align="right" bgcolor="#FF4949">111,243 ns (Δ = +12,606 ns)</td><td align="right" bgcolor="#FF4949">244,169 ns (Δ = +132,926 ns)</td><td align="right" bgcolor="#A8D08D">230,007 ns (Δ = -14,163 ns)</td><td align="right" bgcolor="#FF4949">237,662 ns (Δ = +7,656 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,104 μs</td><td align="right" bgcolor="#FF4949">0,153 μs (Δ = +0,049 μs)</td><td align="right" bgcolor="#A8D08D">0,099 μs (Δ = -0,053 μs)</td><td align="right" bgcolor="#FF4949">0,233 μs (Δ = +0,134 μs)</td><td align="right" bgcolor="#FFFFFF">0,240 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#FF4949">0,332 μs (Δ = +0,093 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,140 μs</td><td align="right" bgcolor="#A8D08D">0,099 μs (Δ = -0,042 μs)</td><td align="right" bgcolor="#FF4949">0,111 μs (Δ = +0,013 μs)</td><td align="right" bgcolor="#FF4949">0,244 μs (Δ = +0,133 μs)</td><td align="right" bgcolor="#A8D08D">0,230 μs (Δ = -0,014 μs)</td><td align="right" bgcolor="#FF4949">0,238 μs (Δ = +0,008 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -4782,24 +4782,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.2.0**
 
 Slowest: 4.5.4
 
-Δ: 167,420 ns
+Δ: 159,606 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#FF4949">+169,2 %</td><td align="right" bgcolor="#FF4949">+4,7 %</td><td align="right" bgcolor="#A8D08D">-4,8 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,8 %</td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#FF4949">+162,3 %</td><td align="right" bgcolor="#FFFFFF">+2,2 %</td><td align="right" bgcolor="#A8D08D">-4,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">92,215 ns</td><td align="right" bgcolor="#FFFFFF">92,973 ns (Δ = +0,758 ns)</td><td align="right" bgcolor="#FFFFFF">92,033 ns (Δ = -0,940 ns)</td><td align="right" bgcolor="#FF4949">247,757 ns (Δ = +155,723 ns)</td><td align="right" bgcolor="#FF4949">259,453 ns (Δ = +11,697 ns)</td><td align="right" bgcolor="#A8D08D">247,020 ns (Δ = -12,433 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">89,571 ns</td><td align="right" bgcolor="#FF4949">93,877 ns (Δ = +4,306 ns)</td><td align="right" bgcolor="#FFFFFF">92,952 ns (Δ = -0,925 ns)</td><td align="right" bgcolor="#FF4949">243,802 ns (Δ = +150,850 ns)</td><td align="right" bgcolor="#FFFFFF">249,177 ns (Δ = +5,375 ns)</td><td align="right" bgcolor="#A8D08D">239,331 ns (Δ = -9,846 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,092 μs</td><td align="right" bgcolor="#FFFFFF">0,093 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,092 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,248 μs (Δ = +0,156 μs)</td><td align="right" bgcolor="#FF4949">0,259 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#A8D08D">0,247 μs (Δ = -0,012 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,090 μs</td><td align="right" bgcolor="#FF4949">0,094 μs (Δ = +0,004 μs)</td><td align="right" bgcolor="#FFFFFF">0,093 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,244 μs (Δ = +0,151 μs)</td><td align="right" bgcolor="#FFFFFF">0,249 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#A8D08D">0,239 μs (Δ = -0,010 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -4853,24 +4853,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **4.2.0**
 
-Slowest: 4.3.0
+Slowest: 4.5.0
 
-Δ: 133,873 ns
+Δ: 745,270 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,2 %</td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#A8D08D">-3,9 %</td><td align="right" bgcolor="#A8D08D">-6,2 %</td><td align="right" bgcolor="#FF4949">+7,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,8 %</td><td align="right" bgcolor="#FF4949">+6,1 %</td><td align="right" bgcolor="#FF4949">+59,6 %</td><td align="right" bgcolor="#A8D08D">-40,5 %</td><td align="right" bgcolor="#FFFFFF">-2,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1073,600 ns</td><td align="right" bgcolor="#FF4949">1118,502 ns (Δ = +44,902 ns)</td><td align="right" bgcolor="#FFFFFF">1092,160 ns (Δ = -26,342 ns)</td><td align="right" bgcolor="#A8D08D">1049,433 ns (Δ = -42,727 ns)</td><td align="right" bgcolor="#A8D08D">984,629 ns (Δ = -64,804 ns)</td><td align="right" bgcolor="#FF4949">1058,633 ns (Δ = +74,004 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1006,130 ns</td><td align="right" bgcolor="#FFFFFF">1033,967 ns (Δ = +27,837 ns)</td><td align="right" bgcolor="#FF4949">1097,257 ns (Δ = +63,290 ns)</td><td align="right" bgcolor="#FF4949">1751,400 ns (Δ = +654,143 ns)</td><td align="right" bgcolor="#A8D08D">1041,816 ns (Δ = -709,584 ns)</td><td align="right" bgcolor="#FFFFFF">1012,277 ns (Δ = -29,539 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,074 μs</td><td align="right" bgcolor="#FF4949">1,119 μs (Δ = +0,045 μs)</td><td align="right" bgcolor="#FFFFFF">1,092 μs (Δ = -0,026 μs)</td><td align="right" bgcolor="#A8D08D">1,049 μs (Δ = -0,043 μs)</td><td align="right" bgcolor="#A8D08D">0,985 μs (Δ = -0,065 μs)</td><td align="right" bgcolor="#FF4949">1,059 μs (Δ = +0,074 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,006 μs</td><td align="right" bgcolor="#FFFFFF">1,034 μs (Δ = +0,028 μs)</td><td align="right" bgcolor="#FF4949">1,097 μs (Δ = +0,063 μs)</td><td align="right" bgcolor="#FF4949">1,751 μs (Δ = +0,654 μs)</td><td align="right" bgcolor="#A8D08D">1,042 μs (Δ = -0,710 μs)</td><td align="right" bgcolor="#FFFFFF">1,012 μs (Δ = -0,030 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -4922,22 +4922,22 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **5.0.0**
 
-Slowest: 4.5.0
+Slowest: 4.3.0
 
-Δ: 15,128 ns
+Δ: 92,035 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+8,4 %</td><td align="right" bgcolor="#A8D08D">-6,4 %</td><td align="right" bgcolor="#FF4949">+8,9 %</td><td align="right" bgcolor="#A8D08D">-3,4 %</td><td align="right" bgcolor="#A8D08D">-5,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+50,6 %</td><td align="right" bgcolor="#A8D08D">-22,7 %</td><td align="right" bgcolor="#FF4949">+20,8 %</td><td align="right" bgcolor="#A8D08D">-34,4 %</td><td align="right" bgcolor="#A8D08D">-3,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">144,646 ns</td><td align="right" bgcolor="#FF4949">156,757 ns (Δ = +12,111 ns)</td><td align="right" bgcolor="#A8D08D">146,770 ns (Δ = -9,987 ns)</td><td align="right" bgcolor="#FF4949">159,773 ns (Δ = +13,003 ns)</td><td align="right" bgcolor="#A8D08D">154,363 ns (Δ = -5,410 ns)</td><td align="right" bgcolor="#A8D08D">145,247 ns (Δ = -9,117 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">149,038 ns</td><td align="right" bgcolor="#FF4949">224,495 ns (Δ = +75,457 ns)</td><td align="right" bgcolor="#A8D08D">173,487 ns (Δ = -51,008 ns)</td><td align="right" bgcolor="#FF4949">209,533 ns (Δ = +36,047 ns)</td><td align="right" bgcolor="#A8D08D">137,552 ns (Δ = -71,981 ns)</td><td align="right" bgcolor="#A8D08D">132,460 ns (Δ = -5,092 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,145 μs</td><td align="right" bgcolor="#FF4949">0,157 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#A8D08D">0,147 μs (Δ = -0,010 μs)</td><td align="right" bgcolor="#FF4949">0,160 μs (Δ = +0,013 μs)</td><td align="right" bgcolor="#A8D08D">0,154 μs (Δ = -0,005 μs)</td><td align="right" bgcolor="#A8D08D">0,145 μs (Δ = -0,009 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,149 μs</td><td align="right" bgcolor="#FF4949">0,224 μs (Δ = +0,075 μs)</td><td align="right" bgcolor="#A8D08D">0,173 μs (Δ = -0,051 μs)</td><td align="right" bgcolor="#FF4949">0,210 μs (Δ = +0,036 μs)</td><td align="right" bgcolor="#A8D08D">0,138 μs (Δ = -0,072 μs)</td><td align="right" bgcolor="#A8D08D">0,132 μs (Δ = -0,005 μs)</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
@@ -4991,24 +4991,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
 Slowest: 4.5.0
 
-Δ: 20,159 ns
+Δ: 23,491 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,1 %</td><td align="right" bgcolor="#FF4949">+4,4 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td><td align="right" bgcolor="#A8D08D">-9,6 %</td><td align="right" bgcolor="#FFFFFF">-2,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,6 %</td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#FF4949">+6,3 %</td><td align="right" bgcolor="#A8D08D">-13,9 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">165,716 ns</td><td align="right" bgcolor="#FFFFFF">163,858 ns (Δ = -1,858 ns)</td><td align="right" bgcolor="#FF4949">171,093 ns (Δ = +7,236 ns)</td><td align="right" bgcolor="#FFFFFF">173,633 ns (Δ = +2,540 ns)</td><td align="right" bgcolor="#A8D08D">156,947 ns (Δ = -16,687 ns)</td><td align="right" bgcolor="#FFFFFF">153,474 ns (Δ = -3,472 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">163,458 ns</td><td align="right" bgcolor="#FFFFFF">160,874 ns (Δ = -2,584 ns)</td><td align="right" bgcolor="#FFFFFF">159,538 ns (Δ = -1,336 ns)</td><td align="right" bgcolor="#FF4949">169,567 ns (Δ = +10,029 ns)</td><td align="right" bgcolor="#A8D08D">146,076 ns (Δ = -23,491 ns)</td><td align="right" bgcolor="#FFFFFF">146,900 ns (Δ = +0,824 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,166 μs</td><td align="right" bgcolor="#FFFFFF">0,164 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,171 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#FFFFFF">0,174 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,157 μs (Δ = -0,017 μs)</td><td align="right" bgcolor="#FFFFFF">0,153 μs (Δ = -0,003 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,163 μs</td><td align="right" bgcolor="#FFFFFF">0,161 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,160 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,170 μs (Δ = +0,010 μs)</td><td align="right" bgcolor="#A8D08D">0,146 μs (Δ = -0,023 μs)</td><td align="right" bgcolor="#FFFFFF">0,147 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -5036,8 +5036,8 @@ Slowest: 4.5.0
 </tr>
 <tr>
 <td>Allocated Bytes</td>
-<td align="right">5.0.0</td>
 <td align="right">4.2.0</td>
+<td align="right">4.3.0</td>
 </tr>
 </table>
 
@@ -5050,8 +5050,8 @@ Slowest: 4.5.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">33</td><td align="right">33</td><td align="right">33</td><td align="right">33</td><td align="right">33</td><td align="right">33</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,032</td><td align="right">0,032</td><td align="right">0,032</td><td align="right">0,032</td><td align="right">0,032</td><td align="right">0,032</td><tr>
+<td>Allocated Bytes</td><td align="right">30</td><td align="right">33</td><td align="right">33</td><td align="right">33</td><td align="right">33</td><td align="right">33</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,029</td><td align="right">0,032</td><td align="right">0,032</td><td align="right">0,032</td><td align="right">0,032</td><td align="right">0,032</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
@@ -5062,22 +5062,22 @@ Slowest: 4.5.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.3.0
+Slowest: 4.2.0
 
-Δ: 676,931 ns
+Δ: 109,450 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+31,8 %</td><td align="right" bgcolor="#A8D08D">-22,8 %</td><td align="right" bgcolor="#FF4949">+4,5 %</td><td align="right" bgcolor="#FFFFFF">-1,6 %</td><td align="right" bgcolor="#A8D08D">-5,8 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,5 %</td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#FFFFFF">-2,5 %</td><td align="right" bgcolor="#FFFFFF">-0,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">2029,532 ns</td><td align="right" bgcolor="#FF4949">2675,113 ns (Δ = +645,582 ns)</td><td align="right" bgcolor="#A8D08D">2064,186 ns (Δ = -610,928 ns)</td><td align="right" bgcolor="#FF4949">2157,720 ns (Δ = +93,534 ns)</td><td align="right" bgcolor="#FFFFFF">2122,203 ns (Δ = -35,517 ns)</td><td align="right" bgcolor="#A8D08D">1998,182 ns (Δ = -124,021 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">2093,650 ns</td><td align="right" bgcolor="#A8D08D">2020,796 ns (Δ = -72,854 ns)</td><td align="right" bgcolor="#FFFFFF">2048,110 ns (Δ = +27,314 ns)</td><td align="right" bgcolor="#FFFFFF">2039,093 ns (Δ = -9,017 ns)</td><td align="right" bgcolor="#FFFFFF">1987,923 ns (Δ = -51,170 ns)</td><td align="right" bgcolor="#FFFFFF">1984,200 ns (Δ = -3,723 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">2,030 μs</td><td align="right" bgcolor="#FF4949">2,675 μs (Δ = +0,646 μs)</td><td align="right" bgcolor="#A8D08D">2,064 μs (Δ = -0,611 μs)</td><td align="right" bgcolor="#FF4949">2,158 μs (Δ = +0,094 μs)</td><td align="right" bgcolor="#FFFFFF">2,122 μs (Δ = -0,036 μs)</td><td align="right" bgcolor="#A8D08D">1,998 μs (Δ = -0,124 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">2,094 μs</td><td align="right" bgcolor="#A8D08D">2,021 μs (Δ = -0,073 μs)</td><td align="right" bgcolor="#FFFFFF">2,048 μs (Δ = +0,027 μs)</td><td align="right" bgcolor="#FFFFFF">2,039 μs (Δ = -0,009 μs)</td><td align="right" bgcolor="#FFFFFF">1,988 μs (Δ = -0,051 μs)</td><td align="right" bgcolor="#FFFFFF">1,984 μs (Δ = -0,004 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,002 ms</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,002 ms</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -5129,24 +5129,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **5.0.0**
 
-Slowest: 4.3.0
+Slowest: 4.5.0
 
-Δ: 481,897 ns
+Δ: 1112,957 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+12,3 %</td><td align="right" bgcolor="#A8D08D">-8,3 %</td><td align="right" bgcolor="#FF4949">+3,4 %</td><td align="right" bgcolor="#FFFFFF">+0,0 %</td><td align="right" bgcolor="#A8D08D">-4,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#FF4949">+26,3 %</td><td align="right" bgcolor="#A8D08D">-18,3 %</td><td align="right" bgcolor="#A8D08D">-4,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3926,760 ns</td><td align="right" bgcolor="#FF4949">4408,657 ns (Δ = +481,897 ns)</td><td align="right" bgcolor="#A8D08D">4041,293 ns (Δ = -367,363 ns)</td><td align="right" bgcolor="#FF4949">4180,327 ns (Δ = +139,033 ns)</td><td align="right" bgcolor="#FFFFFF">4181,700 ns (Δ = +1,373 ns)</td><td align="right" bgcolor="#A8D08D">3994,507 ns (Δ = -187,193 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3925,178 ns</td><td align="right" bgcolor="#FFFFFF">3956,607 ns (Δ = +31,429 ns)</td><td align="right" bgcolor="#FFFFFF">3942,022 ns (Δ = -14,584 ns)</td><td align="right" bgcolor="#FF4949">4980,330 ns (Δ = +1038,308 ns)</td><td align="right" bgcolor="#A8D08D">4068,769 ns (Δ = -911,561 ns)</td><td align="right" bgcolor="#A8D08D">3867,373 ns (Δ = -201,396 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,927 μs</td><td align="right" bgcolor="#FF4949">4,409 μs (Δ = +0,482 μs)</td><td align="right" bgcolor="#A8D08D">4,041 μs (Δ = -0,367 μs)</td><td align="right" bgcolor="#FF4949">4,180 μs (Δ = +0,139 μs)</td><td align="right" bgcolor="#FFFFFF">4,182 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">3,995 μs (Δ = -0,187 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,925 μs</td><td align="right" bgcolor="#FFFFFF">3,957 μs (Δ = +0,031 μs)</td><td align="right" bgcolor="#FFFFFF">3,942 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#FF4949">4,980 μs (Δ = +1,038 μs)</td><td align="right" bgcolor="#A8D08D">4,069 μs (Δ = -0,912 μs)</td><td align="right" bgcolor="#A8D08D">3,867 μs (Δ = -0,201 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,005 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -5198,24 +5198,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **4.4.0**
 
-Slowest: 4.2.0
+Slowest: 4.3.0
 
-Δ: 32,863 ns
+Δ: 28,948 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-6,6 %</td><td align="right" bgcolor="#FFFFFF">+0,9 %</td><td align="right" bgcolor="#FF4949">+3,7 %</td><td align="right" bgcolor="#A8D08D">-7,3 %</td><td align="right" bgcolor="#FFFFFF">+2,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+5,0 %</td><td align="right" bgcolor="#A8D08D">-8,5 %</td><td align="right" bgcolor="#FFFFFF">+2,4 %</td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">345,730 ns</td><td align="right" bgcolor="#A8D08D">322,777 ns (Δ = -22,953 ns)</td><td align="right" bgcolor="#FFFFFF">325,613 ns (Δ = +2,837 ns)</td><td align="right" bgcolor="#FF4949">337,667 ns (Δ = +12,053 ns)</td><td align="right" bgcolor="#A8D08D">312,867 ns (Δ = -24,800 ns)</td><td align="right" bgcolor="#FFFFFF">320,276 ns (Δ = +7,409 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">322,733 ns</td><td align="right" bgcolor="#FF4949">338,907 ns (Δ = +16,173 ns)</td><td align="right" bgcolor="#A8D08D">309,959 ns (Δ = -28,948 ns)</td><td align="right" bgcolor="#FFFFFF">317,247 ns (Δ = +7,287 ns)</td><td align="right" bgcolor="#FFFFFF">314,827 ns (Δ = -2,420 ns)</td><td align="right" bgcolor="#FFFFFF">315,600 ns (Δ = +0,773 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,346 μs</td><td align="right" bgcolor="#A8D08D">0,323 μs (Δ = -0,023 μs)</td><td align="right" bgcolor="#FFFFFF">0,326 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FF4949">0,338 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#A8D08D">0,313 μs (Δ = -0,025 μs)</td><td align="right" bgcolor="#FFFFFF">0,320 μs (Δ = +0,007 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,323 μs</td><td align="right" bgcolor="#FF4949">0,339 μs (Δ = +0,016 μs)</td><td align="right" bgcolor="#A8D08D">0,310 μs (Δ = -0,029 μs)</td><td align="right" bgcolor="#FFFFFF">0,317 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#FFFFFF">0,315 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,316 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -5267,24 +5267,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
-Slowest: 4.4.0
+Slowest: 4.3.0
 
-Δ: 275,211 ns
+Δ: 339,702 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,2 %</td><td align="right" bgcolor="#FF4949">+6,6 %</td><td align="right" bgcolor="#A8D08D">-5,2 %</td><td align="right" bgcolor="#FF4949">+4,2 %</td><td align="right" bgcolor="#A8D08D">-5,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+6,4 %</td><td align="right" bgcolor="#FFFFFF">-0,2 %</td><td align="right" bgcolor="#FFFFFF">-2,8 %</td><td align="right" bgcolor="#A8D08D">-5,2 %</td><td align="right" bgcolor="#FF4949">+3,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4043,597 ns</td><td align="right" bgcolor="#FFFFFF">4037,147 ns (Δ = -6,450 ns)</td><td align="right" bgcolor="#FF4949">4304,720 ns (Δ = +267,573 ns)</td><td align="right" bgcolor="#A8D08D">4080,117 ns (Δ = -224,603 ns)</td><td align="right" bgcolor="#FF4949">4252,593 ns (Δ = +172,477 ns)</td><td align="right" bgcolor="#A8D08D">4029,509 ns (Δ = -223,084 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4031,560 ns</td><td align="right" bgcolor="#FF4949">4290,420 ns (Δ = +258,860 ns)</td><td align="right" bgcolor="#FFFFFF">4283,777 ns (Δ = -6,643 ns)</td><td align="right" bgcolor="#FFFFFF">4165,470 ns (Δ = -118,307 ns)</td><td align="right" bgcolor="#A8D08D">3950,718 ns (Δ = -214,752 ns)</td><td align="right" bgcolor="#FF4949">4073,216 ns (Δ = +122,498 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,044 μs</td><td align="right" bgcolor="#FFFFFF">4,037 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FF4949">4,305 μs (Δ = +0,268 μs)</td><td align="right" bgcolor="#A8D08D">4,080 μs (Δ = -0,225 μs)</td><td align="right" bgcolor="#FF4949">4,253 μs (Δ = +0,172 μs)</td><td align="right" bgcolor="#A8D08D">4,030 μs (Δ = -0,223 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,032 μs</td><td align="right" bgcolor="#FF4949">4,290 μs (Δ = +0,259 μs)</td><td align="right" bgcolor="#FFFFFF">4,284 μs (Δ = -0,007 μs)</td><td align="right" bgcolor="#FFFFFF">4,165 μs (Δ = -0,118 μs)</td><td align="right" bgcolor="#A8D08D">3,951 μs (Δ = -0,215 μs)</td><td align="right" bgcolor="#FF4949">4,073 μs (Δ = +0,122 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -5340,20 +5340,20 @@ Fastest: **4.5.4**
 
 Slowest: 4.2.0
 
-Δ: 188,915 ns
+Δ: 181,573 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,0 %</td><td align="right" bgcolor="#FFFFFF">-0,6 %</td><td align="right" bgcolor="#A8D08D">-29,8 %</td><td align="right" bgcolor="#A8D08D">-7,9 %</td><td align="right" bgcolor="#FF4949">+5,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,2 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td><td align="right" bgcolor="#A8D08D">-31,2 %</td><td align="right" bgcolor="#A8D08D">-6,7 %</td><td align="right" bgcolor="#FF4949">+6,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">500,363 ns</td><td align="right" bgcolor="#A8D08D">485,134 ns (Δ = -15,229 ns)</td><td align="right" bgcolor="#FFFFFF">482,029 ns (Δ = -3,105 ns)</td><td align="right" bgcolor="#A8D08D">338,155 ns (Δ = -143,874 ns)</td><td align="right" bgcolor="#A8D08D">311,448 ns (Δ = -26,707 ns)</td><td align="right" bgcolor="#FF4949">329,960 ns (Δ = +18,512 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">490,860 ns</td><td align="right" bgcolor="#A8D08D">474,940 ns (Δ = -15,920 ns)</td><td align="right" bgcolor="#FFFFFF">482,020 ns (Δ = +7,080 ns)</td><td align="right" bgcolor="#A8D08D">331,553 ns (Δ = -150,467 ns)</td><td align="right" bgcolor="#A8D08D">309,288 ns (Δ = -22,266 ns)</td><td align="right" bgcolor="#FF4949">328,660 ns (Δ = +19,373 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,500 μs</td><td align="right" bgcolor="#A8D08D">0,485 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#FFFFFF">0,482 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,338 μs (Δ = -0,144 μs)</td><td align="right" bgcolor="#A8D08D">0,311 μs (Δ = -0,027 μs)</td><td align="right" bgcolor="#FF4949">0,330 μs (Δ = +0,019 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,491 μs</td><td align="right" bgcolor="#A8D08D">0,475 μs (Δ = -0,016 μs)</td><td align="right" bgcolor="#FFFFFF">0,482 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#A8D08D">0,332 μs (Δ = -0,150 μs)</td><td align="right" bgcolor="#A8D08D">0,309 μs (Δ = -0,022 μs)</td><td align="right" bgcolor="#FF4949">0,329 μs (Δ = +0,019 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -5407,22 +5407,22 @@ Slowest: 4.2.0
 
 Fastest: **4.5.4**
 
-Slowest: 4.2.0
+Slowest: 4.4.0
 
-Δ: 4516,030 ns
+Δ: 4521,210 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,2 %</td><td align="right" bgcolor="#FFFFFF">-2,9 %</td><td align="right" bgcolor="#A8D08D">-92,9 %</td><td align="right" bgcolor="#FFFFFF">-0,9 %</td><td align="right" bgcolor="#FF4949">+3,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,8 %</td><td align="right" bgcolor="#FF4949">+6,6 %</td><td align="right" bgcolor="#A8D08D">-93,1 %</td><td align="right" bgcolor="#A8D08D">-6,4 %</td><td align="right" bgcolor="#FF4949">+5,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4842,530 ns</td><td align="right" bgcolor="#FFFFFF">4783,663 ns (Δ = -58,867 ns)</td><td align="right" bgcolor="#FFFFFF">4647,037 ns (Δ = -136,627 ns)</td><td align="right" bgcolor="#A8D08D">329,546 ns (Δ = -4317,491 ns)</td><td align="right" bgcolor="#FFFFFF">326,500 ns (Δ = -3,046 ns)</td><td align="right" bgcolor="#FF4949">337,653 ns (Δ = +11,153 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4711,973 ns</td><td align="right" bgcolor="#A8D08D">4533,200 ns (Δ = -178,773 ns)</td><td align="right" bgcolor="#FF4949">4833,397 ns (Δ = +300,197 ns)</td><td align="right" bgcolor="#A8D08D">333,553 ns (Δ = -4499,844 ns)</td><td align="right" bgcolor="#A8D08D">312,187 ns (Δ = -21,366 ns)</td><td align="right" bgcolor="#FF4949">329,056 ns (Δ = +16,869 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,843 μs</td><td align="right" bgcolor="#FFFFFF">4,784 μs (Δ = -0,059 μs)</td><td align="right" bgcolor="#FFFFFF">4,647 μs (Δ = -0,137 μs)</td><td align="right" bgcolor="#A8D08D">0,330 μs (Δ = -4,317 μs)</td><td align="right" bgcolor="#FFFFFF">0,327 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FF4949">0,338 μs (Δ = +0,011 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,712 μs</td><td align="right" bgcolor="#A8D08D">4,533 μs (Δ = -0,179 μs)</td><td align="right" bgcolor="#FF4949">4,833 μs (Δ = +0,300 μs)</td><td align="right" bgcolor="#A8D08D">0,334 μs (Δ = -4,500 μs)</td><td align="right" bgcolor="#A8D08D">0,312 μs (Δ = -0,021 μs)</td><td align="right" bgcolor="#FF4949">0,329 μs (Δ = +0,017 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,005 ms</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = -0,004 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,005 ms</td><td align="right" bgcolor="#A8D08D">0,005 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = -0,004 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -5476,22 +5476,22 @@ Slowest: 4.2.0
 
 Fastest: **4.3.0**
 
-Slowest: 4.5.0
+Slowest: 5.0.0
 
-Δ: 214,521 ns
+Δ: 206,723 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,6 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#FF4949">+155,2 %</td><td align="right" bgcolor="#A8D08D">-3,3 %</td><td align="right" bgcolor="#A8D08D">-4,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,8 %</td><td align="right" bgcolor="#FF4949">+12,2 %</td><td align="right" bgcolor="#FF4949">+115,9 %</td><td align="right" bgcolor="#FFFFFF">+0,1 %</td><td align="right" bgcolor="#FF4949">+6,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">140,844 ns</td><td align="right" bgcolor="#FFFFFF">137,236 ns (Δ = -3,609 ns)</td><td align="right" bgcolor="#FFFFFF">137,836 ns (Δ = +0,601 ns)</td><td align="right" bgcolor="#FF4949">351,757 ns (Δ = +213,921 ns)</td><td align="right" bgcolor="#A8D08D">340,300 ns (Δ = -11,457 ns)</td><td align="right" bgcolor="#A8D08D">326,303 ns (Δ = -13,997 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">136,809 ns</td><td align="right" bgcolor="#A8D08D">131,640 ns (Δ = -5,169 ns)</td><td align="right" bgcolor="#FF4949">147,733 ns (Δ = +16,093 ns)</td><td align="right" bgcolor="#FF4949">318,898 ns (Δ = +171,164 ns)</td><td align="right" bgcolor="#FFFFFF">319,096 ns (Δ = +0,198 ns)</td><td align="right" bgcolor="#FF4949">338,363 ns (Δ = +19,268 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,141 μs</td><td align="right" bgcolor="#FFFFFF">0,137 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FFFFFF">0,138 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,352 μs (Δ = +0,214 μs)</td><td align="right" bgcolor="#A8D08D">0,340 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,326 μs (Δ = -0,014 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,137 μs</td><td align="right" bgcolor="#A8D08D">0,132 μs (Δ = -0,005 μs)</td><td align="right" bgcolor="#FF4949">0,148 μs (Δ = +0,016 μs)</td><td align="right" bgcolor="#FF4949">0,319 μs (Δ = +0,171 μs)</td><td align="right" bgcolor="#FFFFFF">0,319 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,338 μs (Δ = +0,019 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -5543,24 +5543,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
-Slowest: 4.3.0
+Slowest: 4.4.0
 
-Δ: 150,962 ns
+Δ: 176,593 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,6 %</td><td align="right" bgcolor="#FFFFFF">-1,3 %</td><td align="right" bgcolor="#A8D08D">-28,6 %</td><td align="right" bgcolor="#FFFFFF">-1,7 %</td><td align="right" bgcolor="#FFFFFF">-0,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,3 %</td><td align="right" bgcolor="#FF4949">+4,3 %</td><td align="right" bgcolor="#A8D08D">-29,2 %</td><td align="right" bgcolor="#A8D08D">-11,0 %</td><td align="right" bgcolor="#FFFFFF">+2,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">476,160 ns</td><td align="right" bgcolor="#FFFFFF">483,713 ns (Δ = +7,553 ns)</td><td align="right" bgcolor="#FFFFFF">477,223 ns (Δ = -6,490 ns)</td><td align="right" bgcolor="#A8D08D">340,530 ns (Δ = -136,693 ns)</td><td align="right" bgcolor="#FFFFFF">334,660 ns (Δ = -5,870 ns)</td><td align="right" bgcolor="#FFFFFF">332,751 ns (Δ = -1,909 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">474,130 ns</td><td align="right" bgcolor="#A8D08D">458,281 ns (Δ = -15,849 ns)</td><td align="right" bgcolor="#FF4949">477,963 ns (Δ = +19,682 ns)</td><td align="right" bgcolor="#A8D08D">338,630 ns (Δ = -139,333 ns)</td><td align="right" bgcolor="#A8D08D">301,370 ns (Δ = -37,260 ns)</td><td align="right" bgcolor="#FFFFFF">307,863 ns (Δ = +6,493 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,476 μs</td><td align="right" bgcolor="#FFFFFF">0,484 μs (Δ = +0,008 μs)</td><td align="right" bgcolor="#FFFFFF">0,477 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#A8D08D">0,341 μs (Δ = -0,137 μs)</td><td align="right" bgcolor="#FFFFFF">0,335 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FFFFFF">0,333 μs (Δ = -0,002 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,474 μs</td><td align="right" bgcolor="#A8D08D">0,458 μs (Δ = -0,016 μs)</td><td align="right" bgcolor="#FF4949">0,478 μs (Δ = +0,020 μs)</td><td align="right" bgcolor="#A8D08D">0,339 μs (Δ = -0,139 μs)</td><td align="right" bgcolor="#A8D08D">0,301 μs (Δ = -0,037 μs)</td><td align="right" bgcolor="#FFFFFF">0,308 μs (Δ = +0,006 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -5614,24 +5614,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
-Δ: 10,100 ns
+Δ: 16,950 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+3,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-5,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">338,560 ns</td><td align="right" bgcolor="#FFFFFF">348,660 ns (Δ = +10,100 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">338,743 ns</td><td align="right" bgcolor="#A8D08D">321,793 ns (Δ = -16,950 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,339 μs</td><td align="right" bgcolor="#FFFFFF">0,349 μs (Δ = +0,010 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,339 μs</td><td align="right" bgcolor="#A8D08D">0,322 μs (Δ = -0,017 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -5687,18 +5687,18 @@ Fastest: **5.0.0**
 
 Slowest: 4.5.4
 
-Δ: 17,873 ns
+Δ: 4,736 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-13,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">128,900 ns</td><td align="right" bgcolor="#A8D08D">111,027 ns (Δ = -17,873 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">115,357 ns</td><td align="right" bgcolor="#A8D08D">110,621 ns (Δ = -4,736 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,129 μs</td><td align="right" bgcolor="#A8D08D">0,111 μs (Δ = -0,018 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,115 μs</td><td align="right" bgcolor="#A8D08D">0,111 μs (Δ = -0,005 μs)</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
@@ -5754,24 +5754,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
-Slowest: 4.5.4
+Slowest: 5.0.0
 
-Δ: 3,149 ns
+Δ: 0,312 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-17,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">18,545 ns</td><td align="right" bgcolor="#A8D08D">15,396 ns (Δ = -3,149 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">13,937 ns</td><td align="right" bgcolor="#FFFFFF">14,249 ns (Δ = +0,312 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,019 μs</td><td align="right" bgcolor="#A8D08D">0,015 μs (Δ = -0,003 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,014 μs</td><td align="right" bgcolor="#FFFFFF">0,014 μs (Δ = +0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -5827,20 +5827,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.5.4
 
-Δ: 0,430 ns
+Δ: 3,823 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,8 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-24,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">15,162 ns</td><td align="right" bgcolor="#FFFFFF">14,733 ns (Δ = -0,430 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">15,483 ns</td><td align="right" bgcolor="#A8D08D">11,660 ns (Δ = -3,823 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,015 μs</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = 0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,015 μs</td><td align="right" bgcolor="#A8D08D">0,012 μs (Δ = -0,004 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -5898,18 +5898,18 @@ Fastest: **4.5.4**
 
 Slowest: 4.5.0
 
-Δ: 46,092 ns
+Δ: 37,441 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,9 %</td><td align="right" bgcolor="#FFFFFF">+3,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,1 %</td><td align="right" bgcolor="#FFFFFF">+2,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">947,813 ns</td><td align="right" bgcolor="#A8D08D">901,721 ns (Δ = -46,092 ns)</td><td align="right" bgcolor="#FFFFFF">929,527 ns (Δ = +27,806 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">913,849 ns</td><td align="right" bgcolor="#A8D08D">876,408 ns (Δ = -37,441 ns)</td><td align="right" bgcolor="#FFFFFF">899,609 ns (Δ = +23,201 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,948 μs</td><td align="right" bgcolor="#A8D08D">0,902 μs (Δ = -0,046 μs)</td><td align="right" bgcolor="#FFFFFF">0,930 μs (Δ = +0,028 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,914 μs</td><td align="right" bgcolor="#A8D08D">0,876 μs (Δ = -0,037 μs)</td><td align="right" bgcolor="#FFFFFF">0,900 μs (Δ = +0,023 μs)</td></tr>
 <tr>
 <td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
@@ -5965,22 +5965,22 @@ Slowest: 4.5.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.5.4
+Slowest: 4.5.0
 
-Δ: 1,960 ns
+Δ: 12,600 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,3 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FFFFFF">-1,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">499,803 ns</td><td align="right" bgcolor="#FFFFFF">501,270 ns (Δ = +1,467 ns)</td><td align="right" bgcolor="#FFFFFF">499,310 ns (Δ = -1,960 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">496,730 ns</td><td align="right" bgcolor="#FFFFFF">493,033 ns (Δ = -3,697 ns)</td><td align="right" bgcolor="#FFFFFF">484,130 ns (Δ = -8,903 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,500 μs</td><td align="right" bgcolor="#FFFFFF">0,501 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,499 μs (Δ = -0,002 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,497 μs</td><td align="right" bgcolor="#FFFFFF">0,493 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FFFFFF">0,484 μs (Δ = -0,009 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -6034,22 +6034,22 @@ Slowest: 4.5.4
 
 Fastest: **4.2.0**
 
-Slowest: 4.5.4
+Slowest: 4.5.0
 
-Δ: 642,066 ns
+Δ: 622,753 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+6,1 %</td><td align="right" bgcolor="#A8D08D">-3,6 %</td><td align="right" bgcolor="#FF4949">+41,4 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#A8D08D">-4,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,4 %</td><td align="right" bgcolor="#FF4949">+37,3 %</td><td align="right" bgcolor="#FFFFFF">+1,9 %</td><td align="right" bgcolor="#A8D08D">-4,0 %</td><td align="right" bgcolor="#FFFFFF">+1,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1425,468 ns</td><td align="right" bgcolor="#FF4949">1511,863 ns (Δ = +86,395 ns)</td><td align="right" bgcolor="#A8D08D">1457,257 ns (Δ = -54,607 ns)</td><td align="right" bgcolor="#FF4949">2060,042 ns (Δ = +602,786 ns)</td><td align="right" bgcolor="#FFFFFF">2067,534 ns (Δ = +7,492 ns)</td><td align="right" bgcolor="#A8D08D">1966,142 ns (Δ = -101,392 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1438,933 ns</td><td align="right" bgcolor="#FFFFFF">1474,103 ns (Δ = +35,170 ns)</td><td align="right" bgcolor="#FF4949">2023,420 ns (Δ = +549,317 ns)</td><td align="right" bgcolor="#FFFFFF">2061,687 ns (Δ = +38,267 ns)</td><td align="right" bgcolor="#A8D08D">1979,911 ns (Δ = -81,776 ns)</td><td align="right" bgcolor="#FFFFFF">2012,560 ns (Δ = +32,649 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,425 μs</td><td align="right" bgcolor="#FF4949">1,512 μs (Δ = +0,086 μs)</td><td align="right" bgcolor="#A8D08D">1,457 μs (Δ = -0,055 μs)</td><td align="right" bgcolor="#FF4949">2,060 μs (Δ = +0,603 μs)</td><td align="right" bgcolor="#FFFFFF">2,068 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#A8D08D">1,966 μs (Δ = -0,101 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,439 μs</td><td align="right" bgcolor="#FFFFFF">1,474 μs (Δ = +0,035 μs)</td><td align="right" bgcolor="#FF4949">2,023 μs (Δ = +0,549 μs)</td><td align="right" bgcolor="#FFFFFF">2,062 μs (Δ = +0,038 μs)</td><td align="right" bgcolor="#A8D08D">1,980 μs (Δ = -0,082 μs)</td><td align="right" bgcolor="#FFFFFF">2,013 μs (Δ = +0,033 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -6078,7 +6078,7 @@ Slowest: 4.5.4
 <tr>
 <td>Allocated Bytes</td>
 <td align="right">4.4.0</td>
-<td align="right">5.0.0</td>
+<td align="right">4.5.0</td>
 </tr>
 </table>
 
@@ -6091,8 +6091,8 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">3413</td><td align="right">3413</td><td align="right">3413</td><td align="right">4052</td><td align="right">4049</td><td align="right">4054</td><tr>
-<td>Allocated Kilobytes</td><td align="right">3,333</td><td align="right">3,333</td><td align="right">3,333</td><td align="right">3,957</td><td align="right">3,954</td><td align="right">3,959</td><tr>
+<td>Allocated Bytes</td><td align="right">3413</td><td align="right">3413</td><td align="right">3413</td><td align="right">4052</td><td align="right">4050</td><td align="right">4050</td><tr>
+<td>Allocated Kilobytes</td><td align="right">3,333</td><td align="right">3,333</td><td align="right">3,333</td><td align="right">3,957</td><td align="right">3,955</td><td align="right">3,955</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,003</td><td align="right">0,003</td><td align="right">0,003</td><td align="right">0,004</td><td align="right">0,004</td><td align="right">0,004</td></tr>
 </table>
 
@@ -6103,22 +6103,22 @@ Slowest: 4.5.4
 
 Fastest: **4.2.0**
 
-Slowest: 4.4.0
+Slowest: 5.0.0
 
-Δ: 707,136 ns
+Δ: 217,833 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FF4949">+77,0 %</td><td align="right" bgcolor="#A8D08D">-40,8 %</td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+5,0 %</td><td align="right" bgcolor="#FFFFFF">+2,5 %</td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#A8D08D">-4,9 %</td><td align="right" bgcolor="#FF4949">+20,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">904,014 ns</td><td align="right" bgcolor="#FFFFFF">910,282 ns (Δ = +6,268 ns)</td><td align="right" bgcolor="#FF4949">1611,150 ns (Δ = +700,868 ns)</td><td align="right" bgcolor="#A8D08D">954,460 ns (Δ = -656,690 ns)</td><td align="right" bgcolor="#FFFFFF">947,903 ns (Δ = -6,557 ns)</td><td align="right" bgcolor="#FFFFFF">943,384 ns (Δ = -4,519 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">878,980 ns</td><td align="right" bgcolor="#FF4949">923,253 ns (Δ = +44,273 ns)</td><td align="right" bgcolor="#FFFFFF">946,160 ns (Δ = +22,907 ns)</td><td align="right" bgcolor="#FFFFFF">959,424 ns (Δ = +13,264 ns)</td><td align="right" bgcolor="#A8D08D">912,378 ns (Δ = -47,046 ns)</td><td align="right" bgcolor="#FF4949">1096,813 ns (Δ = +184,436 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,904 μs</td><td align="right" bgcolor="#FFFFFF">0,910 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#FF4949">1,611 μs (Δ = +0,701 μs)</td><td align="right" bgcolor="#A8D08D">0,954 μs (Δ = -0,657 μs)</td><td align="right" bgcolor="#FFFFFF">0,948 μs (Δ = -0,007 μs)</td><td align="right" bgcolor="#FFFFFF">0,943 μs (Δ = -0,005 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,879 μs</td><td align="right" bgcolor="#FF4949">0,923 μs (Δ = +0,044 μs)</td><td align="right" bgcolor="#FFFFFF">0,946 μs (Δ = +0,023 μs)</td><td align="right" bgcolor="#FFFFFF">0,959 μs (Δ = +0,013 μs)</td><td align="right" bgcolor="#A8D08D">0,912 μs (Δ = -0,047 μs)</td><td align="right" bgcolor="#FF4949">1,097 μs (Δ = +0,184 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -6174,22 +6174,22 @@ Slowest: 4.4.0
 
 Fastest: **4.3.0**
 
-Slowest: 5.0.0
+Slowest: 4.2.0
 
-Δ: 1,093 ns
+Δ: 1,559 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-7,0 %</td><td align="right" bgcolor="#FFFFFF">+2,1 %</td><td align="right" bgcolor="#FF4949">+9,8 %</td><td align="right" bgcolor="#FF4949">+3,9 %</td><td align="right" bgcolor="#FF4949">+4,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-23,7 %</td><td align="right" bgcolor="#FF4949">+4,3 %</td><td align="right" bgcolor="#FF4949">+4,2 %</td><td align="right" bgcolor="#FF4949">+4,5 %</td><td align="right" bgcolor="#FF4949">+7,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">5,333 ns</td><td align="right" bgcolor="#A8D08D">4,961 ns (Δ = -0,373 ns)</td><td align="right" bgcolor="#FFFFFF">5,065 ns (Δ = +0,104 ns)</td><td align="right" bgcolor="#FF4949">5,563 ns (Δ = +0,498 ns)</td><td align="right" bgcolor="#FF4949">5,780 ns (Δ = +0,217 ns)</td><td align="right" bgcolor="#FF4949">6,053 ns (Δ = +0,273 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">6,580 ns</td><td align="right" bgcolor="#A8D08D">5,021 ns (Δ = -1,559 ns)</td><td align="right" bgcolor="#FF4949">5,238 ns (Δ = +0,217 ns)</td><td align="right" bgcolor="#FF4949">5,457 ns (Δ = +0,219 ns)</td><td align="right" bgcolor="#FF4949">5,700 ns (Δ = +0,243 ns)</td><td align="right" bgcolor="#FF4949">6,107 ns (Δ = +0,407 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,005 μs</td><td align="right" bgcolor="#A8D08D">0,005 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,005 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,006 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,006 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,006 μs (Δ = +0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,007 μs</td><td align="right" bgcolor="#A8D08D">0,005 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,005 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,005 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,006 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,006 μs (Δ = +0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -6241,24 +6241,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
-Slowest: 4.4.0
+Slowest: 4.5.0
 
-Δ: 10,242 ns
+Δ: 2,090 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-19,6 %</td><td align="right" bgcolor="#FF4949">+39,6 %</td><td align="right" bgcolor="#A8D08D">-27,4 %</td><td align="right" bgcolor="#A8D08D">-5,4 %</td><td align="right" bgcolor="#FF4949">+5,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,7 %</td><td align="right" bgcolor="#FFFFFF">-1,4 %</td><td align="right" bgcolor="#FF4949">+7,8 %</td><td align="right" bgcolor="#A8D08D">-7,9 %</td><td align="right" bgcolor="#FFFFFF">-1,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">29,127 ns</td><td align="right" bgcolor="#A8D08D">23,424 ns (Δ = -5,702 ns)</td><td align="right" bgcolor="#FF4949">32,700 ns (Δ = +9,276 ns)</td><td align="right" bgcolor="#A8D08D">23,742 ns (Δ = -8,958 ns)</td><td align="right" bgcolor="#A8D08D">22,458 ns (Δ = -1,284 ns)</td><td align="right" bgcolor="#FF4949">23,727 ns (Δ = +1,269 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">22,803 ns</td><td align="right" bgcolor="#FFFFFF">22,190 ns (Δ = -0,613 ns)</td><td align="right" bgcolor="#FFFFFF">21,890 ns (Δ = -0,300 ns)</td><td align="right" bgcolor="#FF4949">23,600 ns (Δ = +1,710 ns)</td><td align="right" bgcolor="#A8D08D">21,736 ns (Δ = -1,864 ns)</td><td align="right" bgcolor="#FFFFFF">21,510 ns (Δ = -0,226 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,029 μs</td><td align="right" bgcolor="#A8D08D">0,023 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FF4949">0,033 μs (Δ = +0,009 μs)</td><td align="right" bgcolor="#A8D08D">0,024 μs (Δ = -0,009 μs)</td><td align="right" bgcolor="#A8D08D">0,022 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,024 μs (Δ = +0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,023 μs</td><td align="right" bgcolor="#FFFFFF">0,022 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,022 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,024 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,022 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,022 μs (Δ = 0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -6310,24 +6310,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.0**
 
-Slowest: 4.5.0
+Slowest: 4.3.0
 
-Δ: 4,147 ns
+Δ: 1,491 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#FFFFFF">-2,3 %</td><td align="right" bgcolor="#FF4949">+5,1 %</td><td align="right" bgcolor="#A8D08D">-12,7 %</td><td align="right" bgcolor="#A8D08D">-10,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,2 %</td><td align="right" bgcolor="#FFFFFF">-1,6 %</td><td align="right" bgcolor="#A8D08D">-6,4 %</td><td align="right" bgcolor="#FF4949">+3,9 %</td><td align="right" bgcolor="#FFFFFF">-2,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">18,548 ns</td><td align="right" bgcolor="#FFFFFF">18,367 ns (Δ = -0,182 ns)</td><td align="right" bgcolor="#FFFFFF">17,947 ns (Δ = -0,420 ns)</td><td align="right" bgcolor="#FF4949">18,860 ns (Δ = +0,913 ns)</td><td align="right" bgcolor="#A8D08D">16,473 ns (Δ = -2,387 ns)</td><td align="right" bgcolor="#A8D08D">14,713 ns (Δ = -1,760 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">18,467 ns</td><td align="right" bgcolor="#FFFFFF">18,867 ns (Δ = +0,400 ns)</td><td align="right" bgcolor="#FFFFFF">18,558 ns (Δ = -0,309 ns)</td><td align="right" bgcolor="#A8D08D">17,376 ns (Δ = -1,182 ns)</td><td align="right" bgcolor="#FF4949">18,046 ns (Δ = +0,670 ns)</td><td align="right" bgcolor="#FFFFFF">17,551 ns (Δ = -0,494 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,019 μs</td><td align="right" bgcolor="#FFFFFF">0,018 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,018 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,019 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,016 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,015 μs (Δ = -0,002 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,018 μs</td><td align="right" bgcolor="#FFFFFF">0,019 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,019 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,017 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,018 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,018 μs (Δ = 0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -6381,24 +6381,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
-Slowest: 4.4.0
+Slowest: 4.2.0
 
-Δ: 239,464 ns
+Δ: 247,192 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,5 %</td><td align="right" bgcolor="#FFFFFF">+2,8 %</td><td align="right" bgcolor="#FFFFFF">-1,7 %</td><td align="right" bgcolor="#A8D08D">-35,3 %</td><td align="right" bgcolor="#A8D08D">-5,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,0 %</td><td align="right" bgcolor="#FFFFFF">+3,1 %</td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#A8D08D">-40,7 %</td><td align="right" bgcolor="#FFFFFF">+2,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">583,553 ns</td><td align="right" bgcolor="#FFFFFF">586,467 ns (Δ = +2,913 ns)</td><td align="right" bgcolor="#FFFFFF">603,038 ns (Δ = +16,571 ns)</td><td align="right" bgcolor="#FFFFFF">592,887 ns (Δ = -10,151 ns)</td><td align="right" bgcolor="#A8D08D">383,320 ns (Δ = -209,567 ns)</td><td align="right" bgcolor="#A8D08D">363,573 ns (Δ = -19,747 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">605,390 ns</td><td align="right" bgcolor="#A8D08D">581,153 ns (Δ = -24,237 ns)</td><td align="right" bgcolor="#FFFFFF">598,947 ns (Δ = +17,793 ns)</td><td align="right" bgcolor="#FFFFFF">603,607 ns (Δ = +4,660 ns)</td><td align="right" bgcolor="#A8D08D">358,198 ns (Δ = -245,409 ns)</td><td align="right" bgcolor="#FFFFFF">368,727 ns (Δ = +10,529 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,584 μs</td><td align="right" bgcolor="#FFFFFF">0,586 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,603 μs (Δ = +0,017 μs)</td><td align="right" bgcolor="#FFFFFF">0,593 μs (Δ = -0,010 μs)</td><td align="right" bgcolor="#A8D08D">0,383 μs (Δ = -0,210 μs)</td><td align="right" bgcolor="#A8D08D">0,364 μs (Δ = -0,020 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,605 μs</td><td align="right" bgcolor="#A8D08D">0,581 μs (Δ = -0,024 μs)</td><td align="right" bgcolor="#FFFFFF">0,599 μs (Δ = +0,018 μs)</td><td align="right" bgcolor="#FFFFFF">0,604 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#A8D08D">0,358 μs (Δ = -0,245 μs)</td><td align="right" bgcolor="#FFFFFF">0,369 μs (Δ = +0,011 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -6452,22 +6452,22 @@ Slowest: 4.4.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.2.0
+Slowest: 4.5.0
 
-Δ: 472,575 ns
+Δ: 201,967 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-20,1 %</td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#FF4949">+4,1 %</td><td align="right" bgcolor="#FF4949">+16,6 %</td><td align="right" bgcolor="#A8D08D">-36,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,3 %</td><td align="right" bgcolor="#FFFFFF">-1,4 %</td><td align="right" bgcolor="#FFFFFF">+2,0 %</td><td align="right" bgcolor="#A8D08D">-21,5 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1179,491 ns</td><td align="right" bgcolor="#A8D08D">942,667 ns (Δ = -236,825 ns)</td><td align="right" bgcolor="#FFFFFF">920,367 ns (Δ = -22,300 ns)</td><td align="right" bgcolor="#FF4949">958,005 ns (Δ = +37,638 ns)</td><td align="right" bgcolor="#FF4949">1116,700 ns (Δ = +158,695 ns)</td><td align="right" bgcolor="#A8D08D">706,916 ns (Δ = -409,784 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">915,533 ns</td><td align="right" bgcolor="#FFFFFF">917,864 ns (Δ = +2,331 ns)</td><td align="right" bgcolor="#FFFFFF">905,338 ns (Δ = -12,527 ns)</td><td align="right" bgcolor="#FFFFFF">923,570 ns (Δ = +18,233 ns)</td><td align="right" bgcolor="#A8D08D">724,771 ns (Δ = -198,799 ns)</td><td align="right" bgcolor="#FFFFFF">721,603 ns (Δ = -3,168 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,179 μs</td><td align="right" bgcolor="#A8D08D">0,943 μs (Δ = -0,237 μs)</td><td align="right" bgcolor="#FFFFFF">0,920 μs (Δ = -0,022 μs)</td><td align="right" bgcolor="#FF4949">0,958 μs (Δ = +0,038 μs)</td><td align="right" bgcolor="#FF4949">1,117 μs (Δ = +0,159 μs)</td><td align="right" bgcolor="#A8D08D">0,707 μs (Δ = -0,410 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,916 μs</td><td align="right" bgcolor="#FFFFFF">0,918 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,905 μs (Δ = -0,013 μs)</td><td align="right" bgcolor="#FFFFFF">0,924 μs (Δ = +0,018 μs)</td><td align="right" bgcolor="#A8D08D">0,725 μs (Δ = -0,199 μs)</td><td align="right" bgcolor="#FFFFFF">0,722 μs (Δ = -0,003 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -6519,24 +6519,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
 Slowest: 4.3.0
 
-Δ: 371,650 ns
+Δ: 237,000 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+13,4 %</td><td align="right" bgcolor="#A8D08D">-15,3 %</td><td align="right" bgcolor="#FFFFFF">+1,2 %</td><td align="right" bgcolor="#A8D08D">-24,8 %</td><td align="right" bgcolor="#A8D08D">-3,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,0 %</td><td align="right" bgcolor="#FFFFFF">-1,6 %</td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#A8D08D">-27,7 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">875,738 ns</td><td align="right" bgcolor="#FF4949">993,307 ns (Δ = +117,569 ns)</td><td align="right" bgcolor="#A8D08D">841,353 ns (Δ = -151,953 ns)</td><td align="right" bgcolor="#FFFFFF">851,807 ns (Δ = +10,453 ns)</td><td align="right" bgcolor="#A8D08D">640,637 ns (Δ = -211,170 ns)</td><td align="right" bgcolor="#A8D08D">621,657 ns (Δ = -18,980 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">842,216 ns</td><td align="right" bgcolor="#FFFFFF">850,916 ns (Δ = +8,701 ns)</td><td align="right" bgcolor="#FFFFFF">836,955 ns (Δ = -13,961 ns)</td><td align="right" bgcolor="#FFFFFF">849,038 ns (Δ = +12,083 ns)</td><td align="right" bgcolor="#A8D08D">613,917 ns (Δ = -235,121 ns)</td><td align="right" bgcolor="#FFFFFF">623,350 ns (Δ = +9,433 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,876 μs</td><td align="right" bgcolor="#FF4949">0,993 μs (Δ = +0,118 μs)</td><td align="right" bgcolor="#A8D08D">0,841 μs (Δ = -0,152 μs)</td><td align="right" bgcolor="#FFFFFF">0,852 μs (Δ = +0,010 μs)</td><td align="right" bgcolor="#A8D08D">0,641 μs (Δ = -0,211 μs)</td><td align="right" bgcolor="#A8D08D">0,622 μs (Δ = -0,019 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,842 μs</td><td align="right" bgcolor="#FFFFFF">0,851 μs (Δ = +0,009 μs)</td><td align="right" bgcolor="#FFFFFF">0,837 μs (Δ = -0,014 μs)</td><td align="right" bgcolor="#FFFFFF">0,849 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#A8D08D">0,614 μs (Δ = -0,235 μs)</td><td align="right" bgcolor="#FFFFFF">0,623 μs (Δ = +0,009 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -6590,24 +6590,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.3.0**
+Fastest: **4.2.0**
 
-Slowest: 4.5.0
+Slowest: 4.5.4
 
-Δ: 153,188 ns
+Δ: 139,378 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,6 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td><td align="right" bgcolor="#FF4949">+79,6 %</td><td align="right" bgcolor="#A8D08D">-4,3 %</td><td align="right" bgcolor="#A8D08D">-14,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#FF4949">+6,5 %</td><td align="right" bgcolor="#FF4949">+60,9 %</td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#A8D08D">-7,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">190,898 ns</td><td align="right" bgcolor="#FFFFFF">189,829 ns (Δ = -1,069 ns)</td><td align="right" bgcolor="#FFFFFF">191,002 ns (Δ = +1,172 ns)</td><td align="right" bgcolor="#FF4949">343,017 ns (Δ = +152,015 ns)</td><td align="right" bgcolor="#A8D08D">328,120 ns (Δ = -14,897 ns)</td><td align="right" bgcolor="#A8D08D">282,138 ns (Δ = -45,982 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">188,123 ns</td><td align="right" bgcolor="#FFFFFF">189,622 ns (Δ = +1,498 ns)</td><td align="right" bgcolor="#FF4949">201,904 ns (Δ = +12,283 ns)</td><td align="right" bgcolor="#FF4949">324,880 ns (Δ = +122,976 ns)</td><td align="right" bgcolor="#FFFFFF">327,501 ns (Δ = +2,621 ns)</td><td align="right" bgcolor="#A8D08D">301,630 ns (Δ = -25,871 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,191 μs</td><td align="right" bgcolor="#FFFFFF">0,190 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,191 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,343 μs (Δ = +0,152 μs)</td><td align="right" bgcolor="#A8D08D">0,328 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#A8D08D">0,282 μs (Δ = -0,046 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,188 μs</td><td align="right" bgcolor="#FFFFFF">0,190 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,202 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#FF4949">0,325 μs (Δ = +0,123 μs)</td><td align="right" bgcolor="#FFFFFF">0,328 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,302 μs (Δ = -0,026 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -6659,24 +6659,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.3.0**
+Fastest: **4.2.0**
 
 Slowest: 4.5.0
 
-Δ: 132,810 ns
+Δ: 164,310 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,2 %</td><td align="right" bgcolor="#FFFFFF">+1,3 %</td><td align="right" bgcolor="#FF4949">+46,8 %</td><td align="right" bgcolor="#FFFFFF">-2,7 %</td><td align="right" bgcolor="#A8D08D">-20,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+5,0 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FF4949">+57,6 %</td><td align="right" bgcolor="#A8D08D">-5,0 %</td><td align="right" bgcolor="#A8D08D">-18,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">281,953 ns</td><td align="right" bgcolor="#A8D08D">272,800 ns (Δ = -9,153 ns)</td><td align="right" bgcolor="#FFFFFF">276,227 ns (Δ = +3,427 ns)</td><td align="right" bgcolor="#FF4949">405,610 ns (Δ = +129,383 ns)</td><td align="right" bgcolor="#FFFFFF">394,683 ns (Δ = -10,927 ns)</td><td align="right" bgcolor="#A8D08D">312,952 ns (Δ = -81,732 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">249,539 ns</td><td align="right" bgcolor="#FF4949">262,070 ns (Δ = +12,531 ns)</td><td align="right" bgcolor="#FFFFFF">262,517 ns (Δ = +0,447 ns)</td><td align="right" bgcolor="#FF4949">413,849 ns (Δ = +151,332 ns)</td><td align="right" bgcolor="#A8D08D">393,267 ns (Δ = -20,582 ns)</td><td align="right" bgcolor="#A8D08D">319,257 ns (Δ = -74,010 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,282 μs</td><td align="right" bgcolor="#A8D08D">0,273 μs (Δ = -0,009 μs)</td><td align="right" bgcolor="#FFFFFF">0,276 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FF4949">0,406 μs (Δ = +0,129 μs)</td><td align="right" bgcolor="#FFFFFF">0,395 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,313 μs (Δ = -0,082 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,250 μs</td><td align="right" bgcolor="#FF4949">0,262 μs (Δ = +0,013 μs)</td><td align="right" bgcolor="#FFFFFF">0,263 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,414 μs (Δ = +0,151 μs)</td><td align="right" bgcolor="#A8D08D">0,393 μs (Δ = -0,021 μs)</td><td align="right" bgcolor="#A8D08D">0,319 μs (Δ = -0,074 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -6732,22 +6732,22 @@ Slowest: 4.5.0
 
 Fastest: **4.5.4**
 
-Slowest: 4.5.0
+Slowest: 4.3.0
 
-Δ: 164,211 ns
+Δ: 316,100 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,6 %</td><td align="right" bgcolor="#FFFFFF">+0,3 %</td><td align="right" bgcolor="#FFFFFF">+0,3 %</td><td align="right" bgcolor="#A8D08D">-3,5 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,2 %</td><td align="right" bgcolor="#FFFFFF">-2,3 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#A8D08D">-4,4 %</td><td align="right" bgcolor="#FFFFFF">+2,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4508,130 ns</td><td align="right" bgcolor="#FFFFFF">4625,816 ns (Δ = +117,686 ns)</td><td align="right" bgcolor="#FFFFFF">4637,812 ns (Δ = +11,996 ns)</td><td align="right" bgcolor="#FFFFFF">4649,627 ns (Δ = +11,815 ns)</td><td align="right" bgcolor="#A8D08D">4485,416 ns (Δ = -164,211 ns)</td><td align="right" bgcolor="#FFFFFF">4494,420 ns (Δ = +9,004 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4447,587 ns</td><td align="right" bgcolor="#FFFFFF">4546,653 ns (Δ = +99,067 ns)</td><td align="right" bgcolor="#FFFFFF">4443,300 ns (Δ = -103,353 ns)</td><td align="right" bgcolor="#FFFFFF">4423,600 ns (Δ = -19,700 ns)</td><td align="right" bgcolor="#A8D08D">4230,553 ns (Δ = -193,047 ns)</td><td align="right" bgcolor="#FFFFFF">4325,253 ns (Δ = +94,700 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,508 μs</td><td align="right" bgcolor="#FFFFFF">4,626 μs (Δ = +0,118 μs)</td><td align="right" bgcolor="#FFFFFF">4,638 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#FFFFFF">4,650 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#A8D08D">4,485 μs (Δ = -0,164 μs)</td><td align="right" bgcolor="#FFFFFF">4,494 μs (Δ = +0,009 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,448 μs</td><td align="right" bgcolor="#FFFFFF">4,547 μs (Δ = +0,099 μs)</td><td align="right" bgcolor="#FFFFFF">4,443 μs (Δ = -0,103 μs)</td><td align="right" bgcolor="#FFFFFF">4,424 μs (Δ = -0,020 μs)</td><td align="right" bgcolor="#A8D08D">4,231 μs (Δ = -0,193 μs)</td><td align="right" bgcolor="#FFFFFF">4,325 μs (Δ = +0,095 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,005 ms</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -6799,24 +6799,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.5.0**
+Fastest: **4.3.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
-Δ: 267,510 ns
+Δ: 530,351 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,1 %</td><td align="right" bgcolor="#FFFFFF">-0,2 %</td><td align="right" bgcolor="#FFFFFF">-1,8 %</td><td align="right" bgcolor="#FFFFFF">+2,2 %</td><td align="right" bgcolor="#FFFFFF">+1,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-6,0 %</td><td align="right" bgcolor="#FFFFFF">+1,3 %</td><td align="right" bgcolor="#FF4949">+4,9 %</td><td align="right" bgcolor="#FFFFFF">+0,9 %</td><td align="right" bgcolor="#FFFFFF">-0,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7529,240 ns</td><td align="right" bgcolor="#FFFFFF">7614,030 ns (Δ = +84,790 ns)</td><td align="right" bgcolor="#FFFFFF">7599,402 ns (Δ = -14,628 ns)</td><td align="right" bgcolor="#FFFFFF">7461,900 ns (Δ = -137,502 ns)</td><td align="right" bgcolor="#FFFFFF">7622,688 ns (Δ = +160,788 ns)</td><td align="right" bgcolor="#FFFFFF">7729,410 ns (Δ = +106,723 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7795,680 ns</td><td align="right" bgcolor="#A8D08D">7330,297 ns (Δ = -465,383 ns)</td><td align="right" bgcolor="#FFFFFF">7424,350 ns (Δ = +94,053 ns)</td><td align="right" bgcolor="#FF4949">7789,177 ns (Δ = +364,827 ns)</td><td align="right" bgcolor="#FFFFFF">7860,648 ns (Δ = +71,471 ns)</td><td align="right" bgcolor="#FFFFFF">7790,480 ns (Δ = -70,168 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">7,529 μs</td><td align="right" bgcolor="#FFFFFF">7,614 μs (Δ = +0,085 μs)</td><td align="right" bgcolor="#FFFFFF">7,599 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#FFFFFF">7,462 μs (Δ = -0,138 μs)</td><td align="right" bgcolor="#FFFFFF">7,623 μs (Δ = +0,161 μs)</td><td align="right" bgcolor="#FFFFFF">7,729 μs (Δ = +0,107 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">7,796 μs</td><td align="right" bgcolor="#A8D08D">7,330 μs (Δ = -0,465 μs)</td><td align="right" bgcolor="#FFFFFF">7,424 μs (Δ = +0,094 μs)</td><td align="right" bgcolor="#FF4949">7,789 μs (Δ = +0,365 μs)</td><td align="right" bgcolor="#FFFFFF">7,861 μs (Δ = +0,071 μs)</td><td align="right" bgcolor="#FFFFFF">7,790 μs (Δ = -0,070 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,008 ms</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,007 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,008 ms</td><td align="right" bgcolor="#A8D08D">0,007 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,007 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -6868,24 +6868,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.5.0**
+Fastest: **4.5.4**
 
-Slowest: 4.5.4
+Slowest: 4.2.0
 
-Δ: 254,810 ns
+Δ: 204,157 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,1 %</td><td align="right" bgcolor="#FFFFFF">+0,5 %</td><td align="right" bgcolor="#FFFFFF">-1,1 %</td><td align="right" bgcolor="#FF4949">+4,3 %</td><td align="right" bgcolor="#FFFFFF">-1,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#FFFFFF">-2,1 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#FFFFFF">-0,9 %</td><td align="right" bgcolor="#FFFFFF">+0,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">5896,660 ns</td><td align="right" bgcolor="#FFFFFF">5902,843 ns (Δ = +6,183 ns)</td><td align="right" bgcolor="#FFFFFF">5931,876 ns (Δ = +29,032 ns)</td><td align="right" bgcolor="#FFFFFF">5867,297 ns (Δ = -64,579 ns)</td><td align="right" bgcolor="#FF4949">6122,107 ns (Δ = +254,810 ns)</td><td align="right" bgcolor="#FFFFFF">6024,431 ns (Δ = -97,676 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">6014,902 ns</td><td align="right" bgcolor="#FFFFFF">5969,343 ns (Δ = -45,559 ns)</td><td align="right" bgcolor="#FFFFFF">5842,270 ns (Δ = -127,073 ns)</td><td align="right" bgcolor="#FFFFFF">5864,298 ns (Δ = +22,028 ns)</td><td align="right" bgcolor="#FFFFFF">5810,746 ns (Δ = -53,552 ns)</td><td align="right" bgcolor="#FFFFFF">5863,443 ns (Δ = +52,698 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">5,897 μs</td><td align="right" bgcolor="#FFFFFF">5,903 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#FFFFFF">5,932 μs (Δ = +0,029 μs)</td><td align="right" bgcolor="#FFFFFF">5,867 μs (Δ = -0,065 μs)</td><td align="right" bgcolor="#FF4949">6,122 μs (Δ = +0,255 μs)</td><td align="right" bgcolor="#FFFFFF">6,024 μs (Δ = -0,098 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">6,015 μs</td><td align="right" bgcolor="#FFFFFF">5,969 μs (Δ = -0,046 μs)</td><td align="right" bgcolor="#FFFFFF">5,842 μs (Δ = -0,127 μs)</td><td align="right" bgcolor="#FFFFFF">5,864 μs (Δ = +0,022 μs)</td><td align="right" bgcolor="#FFFFFF">5,811 μs (Δ = -0,054 μs)</td><td align="right" bgcolor="#FFFFFF">5,863 μs (Δ = +0,053 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,006 ms</td><td align="right" bgcolor="#FFFFFF">0,006 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,006 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,006 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,006 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,006 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,006 ms</td><td align="right" bgcolor="#FFFFFF">0,006 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,006 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,006 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,006 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,006 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -6937,24 +6937,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
-Slowest: 4.5.0
+Slowest: 4.4.0
 
-Δ: 455,570 ns
+Δ: 1605,427 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">0,0 %</td><td align="right" bgcolor="#FFFFFF">+1,8 %</td><td align="right" bgcolor="#FF4949">+3,2 %</td><td align="right" bgcolor="#A8D08D">-9,6 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,8 %</td><td align="right" bgcolor="#FF4949">+33,6 %</td><td align="right" bgcolor="#A8D08D">-25,7 %</td><td align="right" bgcolor="#FFFFFF">+2,4 %</td><td align="right" bgcolor="#A8D08D">-3,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4513,485 ns</td><td align="right" bgcolor="#FFFFFF">4512,263 ns (Δ = -1,222 ns)</td><td align="right" bgcolor="#FFFFFF">4595,587 ns (Δ = +83,324 ns)</td><td align="right" bgcolor="#FF4949">4740,947 ns (Δ = +145,360 ns)</td><td align="right" bgcolor="#A8D08D">4285,377 ns (Δ = -455,570 ns)</td><td align="right" bgcolor="#FFFFFF">4303,490 ns (Δ = +18,113 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4418,280 ns</td><td align="right" bgcolor="#FFFFFF">4496,062 ns (Δ = +77,782 ns)</td><td align="right" bgcolor="#FF4949">6008,623 ns (Δ = +1512,562 ns)</td><td align="right" bgcolor="#A8D08D">4465,722 ns (Δ = -1542,901 ns)</td><td align="right" bgcolor="#FFFFFF">4573,007 ns (Δ = +107,284 ns)</td><td align="right" bgcolor="#A8D08D">4403,197 ns (Δ = -169,810 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,513 μs</td><td align="right" bgcolor="#FFFFFF">4,512 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">4,596 μs (Δ = +0,083 μs)</td><td align="right" bgcolor="#FF4949">4,741 μs (Δ = +0,145 μs)</td><td align="right" bgcolor="#A8D08D">4,285 μs (Δ = -0,456 μs)</td><td align="right" bgcolor="#FFFFFF">4,303 μs (Δ = +0,018 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,418 μs</td><td align="right" bgcolor="#FFFFFF">4,496 μs (Δ = +0,078 μs)</td><td align="right" bgcolor="#FF4949">6,009 μs (Δ = +1,513 μs)</td><td align="right" bgcolor="#A8D08D">4,466 μs (Δ = -1,543 μs)</td><td align="right" bgcolor="#FFFFFF">4,573 μs (Δ = +0,107 μs)</td><td align="right" bgcolor="#A8D08D">4,403 μs (Δ = -0,170 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,005 ms</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,006 ms (Δ = +0,002 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = -0,002 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7006,24 +7006,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.3.0**
+Fastest: **4.5.0**
 
-Slowest: 4.5.4
+Slowest: 4.2.0
 
-Δ: 183,733 ns
+Δ: 4840,039 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,7 %</td><td align="right" bgcolor="#FFFFFF">+1,3 %</td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#FFFFFF">+2,2 %</td><td align="right" bgcolor="#FFFFFF">-1,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-37,7 %</td><td align="right" bgcolor="#FFFFFF">-2,2 %</td><td align="right" bgcolor="#FFFFFF">-1,3 %</td><td align="right" bgcolor="#FF4949">+3,6 %</td><td align="right" bgcolor="#FFFFFF">-0,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7551,705 ns</td><td align="right" bgcolor="#FFFFFF">7425,200 ns (Δ = -126,505 ns)</td><td align="right" bgcolor="#FFFFFF">7519,393 ns (Δ = +94,193 ns)</td><td align="right" bgcolor="#FFFFFF">7441,791 ns (Δ = -77,602 ns)</td><td align="right" bgcolor="#FFFFFF">7608,933 ns (Δ = +167,142 ns)</td><td align="right" bgcolor="#FFFFFF">7483,510 ns (Δ = -125,423 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">12136,139 ns</td><td align="right" bgcolor="#A8D08D">7565,082 ns (Δ = -4571,057 ns)</td><td align="right" bgcolor="#FFFFFF">7395,906 ns (Δ = -169,177 ns)</td><td align="right" bgcolor="#FFFFFF">7296,100 ns (Δ = -99,806 ns)</td><td align="right" bgcolor="#FF4949">7556,100 ns (Δ = +260,000 ns)</td><td align="right" bgcolor="#FFFFFF">7538,452 ns (Δ = -17,648 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">7,552 μs</td><td align="right" bgcolor="#FFFFFF">7,425 μs (Δ = -0,127 μs)</td><td align="right" bgcolor="#FFFFFF">7,519 μs (Δ = +0,094 μs)</td><td align="right" bgcolor="#FFFFFF">7,442 μs (Δ = -0,078 μs)</td><td align="right" bgcolor="#FFFFFF">7,609 μs (Δ = +0,167 μs)</td><td align="right" bgcolor="#FFFFFF">7,484 μs (Δ = -0,125 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">12,136 μs</td><td align="right" bgcolor="#A8D08D">7,565 μs (Δ = -4,571 μs)</td><td align="right" bgcolor="#FFFFFF">7,396 μs (Δ = -0,169 μs)</td><td align="right" bgcolor="#FFFFFF">7,296 μs (Δ = -0,100 μs)</td><td align="right" bgcolor="#FF4949">7,556 μs (Δ = +0,260 μs)</td><td align="right" bgcolor="#FFFFFF">7,538 μs (Δ = -0,018 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,008 ms</td><td align="right" bgcolor="#FFFFFF">0,007 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,007 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,007 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,012 ms</td><td align="right" bgcolor="#A8D08D">0,008 ms (Δ = -0,005 ms)</td><td align="right" bgcolor="#FFFFFF">0,007 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,007 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7075,24 +7075,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.0**
 
-Slowest: 4.3.0
+Slowest: 4.4.0
 
-Δ: 302,363 ns
+Δ: 410,322 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,2 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#FFFFFF">-2,3 %</td><td align="right" bgcolor="#FFFFFF">+0,3 %</td><td align="right" bgcolor="#FFFFFF">-0,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FF4949">+3,3 %</td><td align="right" bgcolor="#A8D08D">-4,4 %</td><td align="right" bgcolor="#FFFFFF">+0,9 %</td><td align="right" bgcolor="#FF4949">+3,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9396,657 ns</td><td align="right" bgcolor="#FFFFFF">9602,960 ns (Δ = +206,303 ns)</td><td align="right" bgcolor="#FFFFFF">9562,600 ns (Δ = -40,360 ns)</td><td align="right" bgcolor="#FFFFFF">9338,733 ns (Δ = -223,867 ns)</td><td align="right" bgcolor="#FFFFFF">9364,053 ns (Δ = +25,320 ns)</td><td align="right" bgcolor="#FFFFFF">9300,597 ns (Δ = -63,457 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9116,476 ns</td><td align="right" bgcolor="#FFFFFF">9048,609 ns (Δ = -67,867 ns)</td><td align="right" bgcolor="#FF4949">9348,857 ns (Δ = +300,248 ns)</td><td align="right" bgcolor="#A8D08D">8938,535 ns (Δ = -410,322 ns)</td><td align="right" bgcolor="#FFFFFF">9019,423 ns (Δ = +80,888 ns)</td><td align="right" bgcolor="#FF4949">9319,897 ns (Δ = +300,474 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">9,397 μs</td><td align="right" bgcolor="#FFFFFF">9,603 μs (Δ = +0,206 μs)</td><td align="right" bgcolor="#FFFFFF">9,563 μs (Δ = -0,040 μs)</td><td align="right" bgcolor="#FFFFFF">9,339 μs (Δ = -0,224 μs)</td><td align="right" bgcolor="#FFFFFF">9,364 μs (Δ = +0,025 μs)</td><td align="right" bgcolor="#FFFFFF">9,301 μs (Δ = -0,063 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">9,116 μs</td><td align="right" bgcolor="#FFFFFF">9,049 μs (Δ = -0,068 μs)</td><td align="right" bgcolor="#FF4949">9,349 μs (Δ = +0,300 μs)</td><td align="right" bgcolor="#A8D08D">8,939 μs (Δ = -0,410 μs)</td><td align="right" bgcolor="#FFFFFF">9,019 μs (Δ = +0,081 μs)</td><td align="right" bgcolor="#FF4949">9,320 μs (Δ = +0,300 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,009 ms</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,010 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,009 ms</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,009 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,009 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,009 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7148,22 +7148,22 @@ Slowest: 4.3.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.3.0
+Slowest: 4.5.0
 
-Δ: 2554,630 ns
+Δ: 1880,914 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+22,1 %</td><td align="right" bgcolor="#A8D08D">-14,8 %</td><td align="right" bgcolor="#A8D08D">-9,5 %</td><td align="right" bgcolor="#A8D08D">-3,8 %</td><td align="right" bgcolor="#A8D08D">-27,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,9 %</td><td align="right" bgcolor="#FF4949">+3,9 %</td><td align="right" bgcolor="#FFFFFF">+2,9 %</td><td align="right" bgcolor="#A8D08D">-18,4 %</td><td align="right" bgcolor="#A8D08D">-25,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4534,793 ns</td><td align="right" bgcolor="#FF4949">5538,630 ns (Δ = +1003,837 ns)</td><td align="right" bgcolor="#A8D08D">4718,437 ns (Δ = -820,193 ns)</td><td align="right" bgcolor="#A8D08D">4268,683 ns (Δ = -449,753 ns)</td><td align="right" bgcolor="#A8D08D">4106,187 ns (Δ = -162,497 ns)</td><td align="right" bgcolor="#A8D08D">2984,000 ns (Δ = -1122,187 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4464,500 ns</td><td align="right" bgcolor="#FFFFFF">4506,860 ns (Δ = +42,360 ns)</td><td align="right" bgcolor="#FF4949">4681,007 ns (Δ = +174,147 ns)</td><td align="right" bgcolor="#FFFFFF">4815,951 ns (Δ = +134,944 ns)</td><td align="right" bgcolor="#A8D08D">3927,633 ns (Δ = -888,318 ns)</td><td align="right" bgcolor="#A8D08D">2935,037 ns (Δ = -992,597 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,535 μs</td><td align="right" bgcolor="#FF4949">5,539 μs (Δ = +1,004 μs)</td><td align="right" bgcolor="#A8D08D">4,718 μs (Δ = -0,820 μs)</td><td align="right" bgcolor="#A8D08D">4,269 μs (Δ = -0,450 μs)</td><td align="right" bgcolor="#A8D08D">4,106 μs (Δ = -0,162 μs)</td><td align="right" bgcolor="#A8D08D">2,984 μs (Δ = -1,122 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,465 μs</td><td align="right" bgcolor="#FFFFFF">4,507 μs (Δ = +0,042 μs)</td><td align="right" bgcolor="#FF4949">4,681 μs (Δ = +0,174 μs)</td><td align="right" bgcolor="#FFFFFF">4,816 μs (Δ = +0,135 μs)</td><td align="right" bgcolor="#A8D08D">3,928 μs (Δ = -0,888 μs)</td><td align="right" bgcolor="#A8D08D">2,935 μs (Δ = -0,993 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,005 ms</td><td align="right" bgcolor="#FF4949">0,006 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,005 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = -0,001 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = -0,001 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7219,22 +7219,22 @@ Slowest: 4.3.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.4.0
+Slowest: 4.2.0
 
-Δ: 1673,240 ns
+Δ: 2578,493 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,3 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#A8D08D">-9,4 %</td><td align="right" bgcolor="#A8D08D">-4,8 %</td><td align="right" bgcolor="#A8D08D">-25,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-16,7 %</td><td align="right" bgcolor="#FFFFFF">+2,6 %</td><td align="right" bgcolor="#A8D08D">-8,6 %</td><td align="right" bgcolor="#A8D08D">-4,7 %</td><td align="right" bgcolor="#A8D08D">-29,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4661,333 ns</td><td align="right" bgcolor="#FFFFFF">4674,317 ns (Δ = +12,983 ns)</td><td align="right" bgcolor="#FFFFFF">4681,857 ns (Δ = +7,540 ns)</td><td align="right" bgcolor="#A8D08D">4243,143 ns (Δ = -438,713 ns)</td><td align="right" bgcolor="#A8D08D">4038,287 ns (Δ = -204,857 ns)</td><td align="right" bgcolor="#A8D08D">3008,617 ns (Δ = -1029,670 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">5444,727 ns</td><td align="right" bgcolor="#A8D08D">4535,477 ns (Δ = -909,250 ns)</td><td align="right" bgcolor="#FFFFFF">4651,643 ns (Δ = +116,167 ns)</td><td align="right" bgcolor="#A8D08D">4251,380 ns (Δ = -400,263 ns)</td><td align="right" bgcolor="#A8D08D">4050,407 ns (Δ = -200,973 ns)</td><td align="right" bgcolor="#A8D08D">2866,233 ns (Δ = -1184,173 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,661 μs</td><td align="right" bgcolor="#FFFFFF">4,674 μs (Δ = +0,013 μs)</td><td align="right" bgcolor="#FFFFFF">4,682 μs (Δ = +0,008 μs)</td><td align="right" bgcolor="#A8D08D">4,243 μs (Δ = -0,439 μs)</td><td align="right" bgcolor="#A8D08D">4,038 μs (Δ = -0,205 μs)</td><td align="right" bgcolor="#A8D08D">3,009 μs (Δ = -1,030 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">5,445 μs</td><td align="right" bgcolor="#A8D08D">4,535 μs (Δ = -0,909 μs)</td><td align="right" bgcolor="#FFFFFF">4,652 μs (Δ = +0,116 μs)</td><td align="right" bgcolor="#A8D08D">4,251 μs (Δ = -0,400 μs)</td><td align="right" bgcolor="#A8D08D">4,050 μs (Δ = -0,201 μs)</td><td align="right" bgcolor="#A8D08D">2,866 μs (Δ = -1,184 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,005 ms</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = -0,001 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,005 ms</td><td align="right" bgcolor="#A8D08D">0,005 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = -0,001 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7290,20 +7290,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.3.0
 
-Δ: 3055,504 ns
+Δ: 3448,883 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+8,7 %</td><td align="right" bgcolor="#A8D08D">-5,3 %</td><td align="right" bgcolor="#A8D08D">-3,5 %</td><td align="right" bgcolor="#A8D08D">-6,1 %</td><td align="right" bgcolor="#A8D08D">-42,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+15,7 %</td><td align="right" bgcolor="#A8D08D">-10,6 %</td><td align="right" bgcolor="#A8D08D">-6,0 %</td><td align="right" bgcolor="#A8D08D">-4,3 %</td><td align="right" bgcolor="#A8D08D">-43,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">5547,817 ns</td><td align="right" bgcolor="#FF4949">6030,724 ns (Δ = +482,908 ns)</td><td align="right" bgcolor="#A8D08D">5711,770 ns (Δ = -318,954 ns)</td><td align="right" bgcolor="#A8D08D">5513,843 ns (Δ = -197,927 ns)</td><td align="right" bgcolor="#A8D08D">5178,723 ns (Δ = -335,120 ns)</td><td align="right" bgcolor="#A8D08D">2975,220 ns (Δ = -2203,503 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">5495,273 ns</td><td align="right" bgcolor="#FF4949">6357,737 ns (Δ = +862,463 ns)</td><td align="right" bgcolor="#A8D08D">5681,360 ns (Δ = -676,377 ns)</td><td align="right" bgcolor="#A8D08D">5337,705 ns (Δ = -343,655 ns)</td><td align="right" bgcolor="#A8D08D">5109,638 ns (Δ = -228,067 ns)</td><td align="right" bgcolor="#A8D08D">2908,853 ns (Δ = -2200,784 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">5,548 μs</td><td align="right" bgcolor="#FF4949">6,031 μs (Δ = +0,483 μs)</td><td align="right" bgcolor="#A8D08D">5,712 μs (Δ = -0,319 μs)</td><td align="right" bgcolor="#A8D08D">5,514 μs (Δ = -0,198 μs)</td><td align="right" bgcolor="#A8D08D">5,179 μs (Δ = -0,335 μs)</td><td align="right" bgcolor="#A8D08D">2,975 μs (Δ = -2,204 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">5,495 μs</td><td align="right" bgcolor="#FF4949">6,358 μs (Δ = +0,862 μs)</td><td align="right" bgcolor="#A8D08D">5,681 μs (Δ = -0,676 μs)</td><td align="right" bgcolor="#A8D08D">5,338 μs (Δ = -0,344 μs)</td><td align="right" bgcolor="#A8D08D">5,110 μs (Δ = -0,228 μs)</td><td align="right" bgcolor="#A8D08D">2,909 μs (Δ = -2,201 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,006 ms</td><td align="right" bgcolor="#FF4949">0,006 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,006 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,006 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,005 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = -0,002 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,005 ms</td><td align="right" bgcolor="#FF4949">0,006 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,006 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,005 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,005 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = -0,002 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7357,24 +7357,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **4.2.0**
 
 Slowest: 4.4.0
 
-Δ: 35,076 ns
+Δ: 20,096 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+7,1 %</td><td align="right" bgcolor="#FF4949">+14,9 %</td><td align="right" bgcolor="#A8D08D">-13,6 %</td><td align="right" bgcolor="#A8D08D">-9,9 %</td><td align="right" bgcolor="#FF4949">+11,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,3 %</td><td align="right" bgcolor="#FF4949">+15,5 %</td><td align="right" bgcolor="#A8D08D">-13,7 %</td><td align="right" bgcolor="#FF4949">+5,9 %</td><td align="right" bgcolor="#FF4949">+3,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">129,064 ns</td><td align="right" bgcolor="#FF4949">138,234 ns (Δ = +9,170 ns)</td><td align="right" bgcolor="#FF4949">158,790 ns (Δ = +20,556 ns)</td><td align="right" bgcolor="#A8D08D">137,250 ns (Δ = -21,540 ns)</td><td align="right" bgcolor="#A8D08D">123,714 ns (Δ = -13,536 ns)</td><td align="right" bgcolor="#FF4949">137,592 ns (Δ = +13,878 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">126,982 ns</td><td align="right" bgcolor="#FFFFFF">127,337 ns (Δ = +0,355 ns)</td><td align="right" bgcolor="#FF4949">147,078 ns (Δ = +19,741 ns)</td><td align="right" bgcolor="#A8D08D">127,001 ns (Δ = -20,077 ns)</td><td align="right" bgcolor="#FF4949">134,467 ns (Δ = +7,466 ns)</td><td align="right" bgcolor="#FF4949">139,180 ns (Δ = +4,713 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,129 μs</td><td align="right" bgcolor="#FF4949">0,138 μs (Δ = +0,009 μs)</td><td align="right" bgcolor="#FF4949">0,159 μs (Δ = +0,021 μs)</td><td align="right" bgcolor="#A8D08D">0,137 μs (Δ = -0,022 μs)</td><td align="right" bgcolor="#A8D08D">0,124 μs (Δ = -0,014 μs)</td><td align="right" bgcolor="#FF4949">0,138 μs (Δ = +0,014 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,127 μs</td><td align="right" bgcolor="#FFFFFF">0,127 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,147 μs (Δ = +0,020 μs)</td><td align="right" bgcolor="#A8D08D">0,127 μs (Δ = -0,020 μs)</td><td align="right" bgcolor="#FF4949">0,134 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#FF4949">0,139 μs (Δ = +0,005 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7428,22 +7428,22 @@ Slowest: 4.4.0
 
 Fastest: **4.5.4**
 
-Slowest: 4.3.0
+Slowest: 4.4.0
 
-Δ: 69,192 ns
+Δ: 25,670 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+52,5 %</td><td align="right" bgcolor="#A8D08D">-23,1 %</td><td align="right" bgcolor="#A8D08D">-13,2 %</td><td align="right" bgcolor="#A8D08D">-3,0 %</td><td align="right" bgcolor="#FF4949">+10,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#FF4949">+16,2 %</td><td align="right" bgcolor="#A8D08D">-12,5 %</td><td align="right" bgcolor="#A8D08D">-5,6 %</td><td align="right" bgcolor="#FF4949">+15,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">128,675 ns</td><td align="right" bgcolor="#FF4949">196,253 ns (Δ = +67,578 ns)</td><td align="right" bgcolor="#A8D08D">150,936 ns (Δ = -45,318 ns)</td><td align="right" bgcolor="#A8D08D">131,053 ns (Δ = -19,882 ns)</td><td align="right" bgcolor="#A8D08D">127,062 ns (Δ = -3,992 ns)</td><td align="right" bgcolor="#FF4949">139,751 ns (Δ = +12,689 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">126,808 ns</td><td align="right" bgcolor="#FFFFFF">127,264 ns (Δ = +0,457 ns)</td><td align="right" bgcolor="#FF4949">147,828 ns (Δ = +20,564 ns)</td><td align="right" bgcolor="#A8D08D">129,411 ns (Δ = -18,417 ns)</td><td align="right" bgcolor="#A8D08D">122,158 ns (Δ = -7,253 ns)</td><td align="right" bgcolor="#FF4949">141,493 ns (Δ = +19,334 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,129 μs</td><td align="right" bgcolor="#FF4949">0,196 μs (Δ = +0,068 μs)</td><td align="right" bgcolor="#A8D08D">0,151 μs (Δ = -0,045 μs)</td><td align="right" bgcolor="#A8D08D">0,131 μs (Δ = -0,020 μs)</td><td align="right" bgcolor="#A8D08D">0,127 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FF4949">0,140 μs (Δ = +0,013 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,127 μs</td><td align="right" bgcolor="#FFFFFF">0,127 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,148 μs (Δ = +0,021 μs)</td><td align="right" bgcolor="#A8D08D">0,129 μs (Δ = -0,018 μs)</td><td align="right" bgcolor="#A8D08D">0,122 μs (Δ = -0,007 μs)</td><td align="right" bgcolor="#FF4949">0,141 μs (Δ = +0,019 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7495,24 +7495,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.3.0**
+Fastest: **4.5.4**
 
-Slowest: 5.0.0
+Slowest: 4.4.0
 
-Δ: 25,408 ns
+Δ: 27,078 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,8 %</td><td align="right" bgcolor="#FF4949">+19,5 %</td><td align="right" bgcolor="#A8D08D">-8,6 %</td><td align="right" bgcolor="#A8D08D">-4,2 %</td><td align="right" bgcolor="#FF4949">+15,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FF4949">+15,8 %</td><td align="right" bgcolor="#A8D08D">-18,3 %</td><td align="right" bgcolor="#FFFFFF">-0,6 %</td><td align="right" bgcolor="#FF4949">+18,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">125,169 ns</td><td align="right" bgcolor="#FFFFFF">122,949 ns (Δ = -2,220 ns)</td><td align="right" bgcolor="#FF4949">146,960 ns (Δ = +24,011 ns)</td><td align="right" bgcolor="#A8D08D">134,300 ns (Δ = -12,660 ns)</td><td align="right" bgcolor="#A8D08D">128,688 ns (Δ = -5,612 ns)</td><td align="right" bgcolor="#FF4949">148,357 ns (Δ = +19,668 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">123,768 ns</td><td align="right" bgcolor="#FFFFFF">124,582 ns (Δ = +0,814 ns)</td><td align="right" bgcolor="#FF4949">144,227 ns (Δ = +19,645 ns)</td><td align="right" bgcolor="#A8D08D">117,881 ns (Δ = -26,346 ns)</td><td align="right" bgcolor="#FFFFFF">117,149 ns (Δ = -0,732 ns)</td><td align="right" bgcolor="#FF4949">138,771 ns (Δ = +21,622 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,125 μs</td><td align="right" bgcolor="#FFFFFF">0,123 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,147 μs (Δ = +0,024 μs)</td><td align="right" bgcolor="#A8D08D">0,134 μs (Δ = -0,013 μs)</td><td align="right" bgcolor="#A8D08D">0,129 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FF4949">0,148 μs (Δ = +0,020 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,124 μs</td><td align="right" bgcolor="#FFFFFF">0,125 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,144 μs (Δ = +0,020 μs)</td><td align="right" bgcolor="#A8D08D">0,118 μs (Δ = -0,026 μs)</td><td align="right" bgcolor="#FFFFFF">0,117 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,139 μs (Δ = +0,022 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7568,22 +7568,22 @@ Slowest: 5.0.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.3.0
+Slowest: 4.5.0
 
-Δ: 1340,854 ns
+Δ: 1327,696 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+29,8 %</td><td align="right" bgcolor="#A8D08D">-10,6 %</td><td align="right" bgcolor="#FF4949">+3,4 %</td><td align="right" bgcolor="#FF4949">+7,2 %</td><td align="right" bgcolor="#A8D08D">-72,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+12,7 %</td><td align="right" bgcolor="#FF4949">+8,2 %</td><td align="right" bgcolor="#FF4949">+7,6 %</td><td align="right" bgcolor="#FFFFFF">-2,2 %</td><td align="right" bgcolor="#A8D08D">-74,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1420,860 ns</td><td align="right" bgcolor="#FF4949">1844,518 ns (Δ = +423,658 ns)</td><td align="right" bgcolor="#A8D08D">1649,035 ns (Δ = -195,483 ns)</td><td align="right" bgcolor="#FF4949">1704,457 ns (Δ = +55,422 ns)</td><td align="right" bgcolor="#FF4949">1827,584 ns (Δ = +123,128 ns)</td><td align="right" bgcolor="#A8D08D">503,663 ns (Δ = -1323,921 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1355,070 ns</td><td align="right" bgcolor="#FF4949">1527,103 ns (Δ = +172,033 ns)</td><td align="right" bgcolor="#FF4949">1652,013 ns (Δ = +124,910 ns)</td><td align="right" bgcolor="#FF4949">1776,920 ns (Δ = +124,907 ns)</td><td align="right" bgcolor="#FFFFFF">1737,957 ns (Δ = -38,963 ns)</td><td align="right" bgcolor="#A8D08D">449,224 ns (Δ = -1288,733 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,421 μs</td><td align="right" bgcolor="#FF4949">1,845 μs (Δ = +0,424 μs)</td><td align="right" bgcolor="#A8D08D">1,649 μs (Δ = -0,195 μs)</td><td align="right" bgcolor="#FF4949">1,704 μs (Δ = +0,055 μs)</td><td align="right" bgcolor="#FF4949">1,828 μs (Δ = +0,123 μs)</td><td align="right" bgcolor="#A8D08D">0,504 μs (Δ = -1,324 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,355 μs</td><td align="right" bgcolor="#FF4949">1,527 μs (Δ = +0,172 μs)</td><td align="right" bgcolor="#FF4949">1,652 μs (Δ = +0,125 μs)</td><td align="right" bgcolor="#FF4949">1,777 μs (Δ = +0,125 μs)</td><td align="right" bgcolor="#FFFFFF">1,738 μs (Δ = -0,039 μs)</td><td align="right" bgcolor="#A8D08D">0,449 μs (Δ = -1,289 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = -0,001 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = -0,001 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7637,22 +7637,22 @@ Slowest: 4.3.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.4.0
+Slowest: 4.5.0
 
-Δ: 1368,613 ns
+Δ: 1350,473 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FF4949">+6,7 %</td><td align="right" bgcolor="#A8D08D">-3,3 %</td><td align="right" bgcolor="#FFFFFF">-2,6 %</td><td align="right" bgcolor="#A8D08D">-69,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,1 %</td><td align="right" bgcolor="#FF4949">+4,1 %</td><td align="right" bgcolor="#FF4949">+9,7 %</td><td align="right" bgcolor="#A8D08D">-3,2 %</td><td align="right" bgcolor="#A8D08D">-72,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1795,617 ns</td><td align="right" bgcolor="#FFFFFF">1800,037 ns (Δ = +4,420 ns)</td><td align="right" bgcolor="#FF4949">1920,244 ns (Δ = +120,208 ns)</td><td align="right" bgcolor="#A8D08D">1857,265 ns (Δ = -62,979 ns)</td><td align="right" bgcolor="#FFFFFF">1809,270 ns (Δ = -47,995 ns)</td><td align="right" bgcolor="#A8D08D">551,631 ns (Δ = -1257,639 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1620,938 ns</td><td align="right" bgcolor="#FFFFFF">1603,678 ns (Δ = -17,259 ns)</td><td align="right" bgcolor="#FF4949">1670,102 ns (Δ = +66,424 ns)</td><td align="right" bgcolor="#FF4949">1831,478 ns (Δ = +161,376 ns)</td><td align="right" bgcolor="#A8D08D">1772,558 ns (Δ = -58,920 ns)</td><td align="right" bgcolor="#A8D08D">481,004 ns (Δ = -1291,553 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,796 μs</td><td align="right" bgcolor="#FFFFFF">1,800 μs (Δ = +0,004 μs)</td><td align="right" bgcolor="#FF4949">1,920 μs (Δ = +0,120 μs)</td><td align="right" bgcolor="#A8D08D">1,857 μs (Δ = -0,063 μs)</td><td align="right" bgcolor="#FFFFFF">1,809 μs (Δ = -0,048 μs)</td><td align="right" bgcolor="#A8D08D">0,552 μs (Δ = -1,258 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,621 μs</td><td align="right" bgcolor="#FFFFFF">1,604 μs (Δ = -0,017 μs)</td><td align="right" bgcolor="#FF4949">1,670 μs (Δ = +0,066 μs)</td><td align="right" bgcolor="#FF4949">1,831 μs (Δ = +0,161 μs)</td><td align="right" bgcolor="#A8D08D">1,773 μs (Δ = -0,059 μs)</td><td align="right" bgcolor="#A8D08D">0,481 μs (Δ = -1,292 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,002 ms</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = -0,001 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,002 ms</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = -0,001 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7706,22 +7706,22 @@ Slowest: 4.4.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.3.0
+Slowest: 4.5.0
 
-Δ: 2057,452 ns
+Δ: 1241,337 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+62,8 %</td><td align="right" bgcolor="#A8D08D">-33,1 %</td><td align="right" bgcolor="#A8D08D">-4,4 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#A8D08D">-75,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+6,7 %</td><td align="right" bgcolor="#FF4949">+12,0 %</td><td align="right" bgcolor="#FFFFFF">+2,9 %</td><td align="right" bgcolor="#A8D08D">-5,4 %</td><td align="right" bgcolor="#A8D08D">-77,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1494,570 ns</td><td align="right" bgcolor="#FF4949">2433,117 ns (Δ = +938,547 ns)</td><td align="right" bgcolor="#A8D08D">1628,720 ns (Δ = -804,397 ns)</td><td align="right" bgcolor="#A8D08D">1557,810 ns (Δ = -70,910 ns)</td><td align="right" bgcolor="#FFFFFF">1561,457 ns (Δ = +3,647 ns)</td><td align="right" bgcolor="#A8D08D">375,665 ns (Δ = -1185,792 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1282,527 ns</td><td align="right" bgcolor="#FF4949">1368,739 ns (Δ = +86,213 ns)</td><td align="right" bgcolor="#FF4949">1532,978 ns (Δ = +164,239 ns)</td><td align="right" bgcolor="#FFFFFF">1577,633 ns (Δ = +44,655 ns)</td><td align="right" bgcolor="#A8D08D">1491,692 ns (Δ = -85,942 ns)</td><td align="right" bgcolor="#A8D08D">336,297 ns (Δ = -1155,395 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,495 μs</td><td align="right" bgcolor="#FF4949">2,433 μs (Δ = +0,939 μs)</td><td align="right" bgcolor="#A8D08D">1,629 μs (Δ = -0,804 μs)</td><td align="right" bgcolor="#A8D08D">1,558 μs (Δ = -0,071 μs)</td><td align="right" bgcolor="#FFFFFF">1,561 μs (Δ = +0,004 μs)</td><td align="right" bgcolor="#A8D08D">0,376 μs (Δ = -1,186 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,283 μs</td><td align="right" bgcolor="#FF4949">1,369 μs (Δ = +0,086 μs)</td><td align="right" bgcolor="#FF4949">1,533 μs (Δ = +0,164 μs)</td><td align="right" bgcolor="#FFFFFF">1,578 μs (Δ = +0,045 μs)</td><td align="right" bgcolor="#A8D08D">1,492 μs (Δ = -0,086 μs)</td><td align="right" bgcolor="#A8D08D">0,336 μs (Δ = -1,155 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = -0,001 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = -0,001 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7777,22 +7777,22 @@ Slowest: 4.3.0
 
 Fastest: **4.5.4**
 
-Slowest: 4.2.0
+Slowest: 4.4.0
 
-Δ: 22,500 ns
+Δ: 23,056 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#A8D08D">-3,2 %</td><td align="right" bgcolor="#A8D08D">-16,6 %</td><td align="right" bgcolor="#A8D08D">-4,0 %</td><td align="right" bgcolor="#FF4949">+13,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,8 %</td><td align="right" bgcolor="#FF4949">+6,6 %</td><td align="right" bgcolor="#A8D08D">-21,5 %</td><td align="right" bgcolor="#FFFFFF">-2,7 %</td><td align="right" bgcolor="#FFFFFF">+1,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">96,727 ns</td><td align="right" bgcolor="#FFFFFF">95,764 ns (Δ = -0,962 ns)</td><td align="right" bgcolor="#A8D08D">92,669 ns (Δ = -3,096 ns)</td><td align="right" bgcolor="#A8D08D">77,287 ns (Δ = -15,382 ns)</td><td align="right" bgcolor="#A8D08D">74,227 ns (Δ = -3,060 ns)</td><td align="right" bgcolor="#FF4949">84,363 ns (Δ = +10,137 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">93,444 ns</td><td align="right" bgcolor="#FFFFFF">91,749 ns (Δ = -1,695 ns)</td><td align="right" bgcolor="#FF4949">97,800 ns (Δ = +6,051 ns)</td><td align="right" bgcolor="#A8D08D">76,780 ns (Δ = -21,020 ns)</td><td align="right" bgcolor="#FFFFFF">74,744 ns (Δ = -2,036 ns)</td><td align="right" bgcolor="#FFFFFF">76,183 ns (Δ = +1,439 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,097 μs</td><td align="right" bgcolor="#FFFFFF">0,096 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,093 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,077 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#A8D08D">0,074 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FF4949">0,084 μs (Δ = +0,010 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,093 μs</td><td align="right" bgcolor="#FFFFFF">0,092 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,098 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#A8D08D">0,077 μs (Δ = -0,021 μs)</td><td align="right" bgcolor="#FFFFFF">0,075 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,076 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7844,24 +7844,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
-Slowest: 4.2.0
+Slowest: 4.4.0
 
-Δ: 19,885 ns
+Δ: 26,756 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,6 %</td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#A8D08D">-16,5 %</td><td align="right" bgcolor="#FFFFFF">+2,3 %</td><td align="right" bgcolor="#A8D08D">-4,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,3 %</td><td align="right" bgcolor="#FF4949">+7,8 %</td><td align="right" bgcolor="#A8D08D">-23,8 %</td><td align="right" bgcolor="#A8D08D">-3,8 %</td><td align="right" bgcolor="#FF4949">+3,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">94,552 ns</td><td align="right" bgcolor="#FFFFFF">92,070 ns (Δ = -2,482 ns)</td><td align="right" bgcolor="#FFFFFF">91,356 ns (Δ = -0,714 ns)</td><td align="right" bgcolor="#A8D08D">76,289 ns (Δ = -15,067 ns)</td><td align="right" bgcolor="#FFFFFF">78,047 ns (Δ = +1,758 ns)</td><td align="right" bgcolor="#A8D08D">74,667 ns (Δ = -3,380 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">92,553 ns</td><td align="right" bgcolor="#FFFFFF">92,853 ns (Δ = +0,299 ns)</td><td align="right" bgcolor="#FF4949">100,130 ns (Δ = +7,277 ns)</td><td align="right" bgcolor="#A8D08D">76,291 ns (Δ = -23,839 ns)</td><td align="right" bgcolor="#A8D08D">73,374 ns (Δ = -2,917 ns)</td><td align="right" bgcolor="#FF4949">75,949 ns (Δ = +2,575 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,095 μs</td><td align="right" bgcolor="#FFFFFF">0,092 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,091 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,076 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#FFFFFF">0,078 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,075 μs (Δ = -0,003 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,093 μs</td><td align="right" bgcolor="#FFFFFF">0,093 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,100 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#A8D08D">0,076 μs (Δ = -0,024 μs)</td><td align="right" bgcolor="#A8D08D">0,073 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FF4949">0,076 μs (Δ = +0,003 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7915,22 +7915,22 @@ Slowest: 4.2.0
 
 Fastest: **4.5.4**
 
-Slowest: 4.3.0
+Slowest: 5.0.0
 
-Δ: 32,571 ns
+Δ: 32,647 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+10,7 %</td><td align="right" bgcolor="#A8D08D">-10,3 %</td><td align="right" bgcolor="#A8D08D">-17,4 %</td><td align="right" bgcolor="#A8D08D">-3,5 %</td><td align="right" bgcolor="#FF4949">+8,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,1 %</td><td align="right" bgcolor="#FFFFFF">+3,1 %</td><td align="right" bgcolor="#A8D08D">-15,7 %</td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#FF4949">+39,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">102,980 ns</td><td align="right" bgcolor="#FF4949">113,967 ns (Δ = +10,987 ns)</td><td align="right" bgcolor="#A8D08D">102,178 ns (Δ = -11,789 ns)</td><td align="right" bgcolor="#A8D08D">84,358 ns (Δ = -17,820 ns)</td><td align="right" bgcolor="#A8D08D">81,396 ns (Δ = -2,963 ns)</td><td align="right" bgcolor="#FF4949">88,103 ns (Δ = +6,708 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">99,584 ns</td><td align="right" bgcolor="#A8D08D">96,497 ns (Δ = -3,088 ns)</td><td align="right" bgcolor="#FFFFFF">99,473 ns (Δ = +2,977 ns)</td><td align="right" bgcolor="#A8D08D">83,902 ns (Δ = -15,571 ns)</td><td align="right" bgcolor="#FFFFFF">81,913 ns (Δ = -1,989 ns)</td><td align="right" bgcolor="#FF4949">114,560 ns (Δ = +32,647 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,103 μs</td><td align="right" bgcolor="#FF4949">0,114 μs (Δ = +0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,102 μs (Δ = -0,012 μs)</td><td align="right" bgcolor="#A8D08D">0,084 μs (Δ = -0,018 μs)</td><td align="right" bgcolor="#A8D08D">0,081 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FF4949">0,088 μs (Δ = +0,007 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,100 μs</td><td align="right" bgcolor="#A8D08D">0,096 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,099 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,084 μs (Δ = -0,016 μs)</td><td align="right" bgcolor="#FFFFFF">0,082 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,115 μs (Δ = +0,033 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -7986,22 +7986,22 @@ Slowest: 4.3.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.2.0
+Slowest: 4.3.0
 
-Δ: 90,473 ns
+Δ: 88,267 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-5,9 %</td><td align="right" bgcolor="#FFFFFF">-0,2 %</td><td align="right" bgcolor="#A8D08D">-7,2 %</td><td align="right" bgcolor="#A8D08D">-6,4 %</td><td align="right" bgcolor="#A8D08D">-27,8 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+6,6 %</td><td align="right" bgcolor="#A8D08D">-4,1 %</td><td align="right" bgcolor="#A8D08D">-12,5 %</td><td align="right" bgcolor="#FFFFFF">0,0 %</td><td align="right" bgcolor="#A8D08D">-29,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">220,147 ns</td><td align="right" bgcolor="#A8D08D">207,067 ns (Δ = -13,080 ns)</td><td align="right" bgcolor="#FFFFFF">206,594 ns (Δ = -0,472 ns)</td><td align="right" bgcolor="#A8D08D">191,764 ns (Δ = -14,830 ns)</td><td align="right" bgcolor="#A8D08D">179,527 ns (Δ = -12,238 ns)</td><td align="right" bgcolor="#A8D08D">129,673 ns (Δ = -49,853 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">201,167 ns</td><td align="right" bgcolor="#FF4949">214,437 ns (Δ = +13,270 ns)</td><td align="right" bgcolor="#A8D08D">205,614 ns (Δ = -8,822 ns)</td><td align="right" bgcolor="#A8D08D">179,849 ns (Δ = -25,765 ns)</td><td align="right" bgcolor="#FFFFFF">179,840 ns (Δ = -0,009 ns)</td><td align="right" bgcolor="#A8D08D">126,170 ns (Δ = -53,670 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,220 μs</td><td align="right" bgcolor="#A8D08D">0,207 μs (Δ = -0,013 μs)</td><td align="right" bgcolor="#FFFFFF">0,207 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,192 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#A8D08D">0,180 μs (Δ = -0,012 μs)</td><td align="right" bgcolor="#A8D08D">0,130 μs (Δ = -0,050 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,201 μs</td><td align="right" bgcolor="#FF4949">0,214 μs (Δ = +0,013 μs)</td><td align="right" bgcolor="#A8D08D">0,206 μs (Δ = -0,009 μs)</td><td align="right" bgcolor="#A8D08D">0,180 μs (Δ = -0,026 μs)</td><td align="right" bgcolor="#FFFFFF">0,180 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,126 μs (Δ = -0,054 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -8055,22 +8055,22 @@ Slowest: 4.2.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.3.0
+Slowest: 4.2.0
 
-Δ: 104,029 ns
+Δ: 88,139 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+9,8 %</td><td align="right" bgcolor="#A8D08D">-10,5 %</td><td align="right" bgcolor="#A8D08D">-4,4 %</td><td align="right" bgcolor="#A8D08D">-7,8 %</td><td align="right" bgcolor="#A8D08D">-33,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#FFFFFF">+1,8 %</td><td align="right" bgcolor="#A8D08D">-12,4 %</td><td align="right" bgcolor="#FFFFFF">-1,2 %</td><td align="right" bgcolor="#A8D08D">-34,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">200,278 ns</td><td align="right" bgcolor="#FF4949">219,907 ns (Δ = +19,629 ns)</td><td align="right" bgcolor="#A8D08D">196,751 ns (Δ = -23,156 ns)</td><td align="right" bgcolor="#A8D08D">188,157 ns (Δ = -8,594 ns)</td><td align="right" bgcolor="#A8D08D">173,518 ns (Δ = -14,639 ns)</td><td align="right" bgcolor="#A8D08D">115,878 ns (Δ = -57,640 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">200,511 ns</td><td align="right" bgcolor="#FFFFFF">195,718 ns (Δ = -4,793 ns)</td><td align="right" bgcolor="#FFFFFF">199,309 ns (Δ = +3,592 ns)</td><td align="right" bgcolor="#A8D08D">174,600 ns (Δ = -24,709 ns)</td><td align="right" bgcolor="#FFFFFF">172,512 ns (Δ = -2,088 ns)</td><td align="right" bgcolor="#A8D08D">112,372 ns (Δ = -60,140 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,200 μs</td><td align="right" bgcolor="#FF4949">0,220 μs (Δ = +0,020 μs)</td><td align="right" bgcolor="#A8D08D">0,197 μs (Δ = -0,023 μs)</td><td align="right" bgcolor="#A8D08D">0,188 μs (Δ = -0,009 μs)</td><td align="right" bgcolor="#A8D08D">0,174 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#A8D08D">0,116 μs (Δ = -0,058 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,201 μs</td><td align="right" bgcolor="#FFFFFF">0,196 μs (Δ = -0,005 μs)</td><td align="right" bgcolor="#FFFFFF">0,199 μs (Δ = +0,004 μs)</td><td align="right" bgcolor="#A8D08D">0,175 μs (Δ = -0,025 μs)</td><td align="right" bgcolor="#FFFFFF">0,173 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,112 μs (Δ = -0,060 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -8122,24 +8122,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.5.0**
+Fastest: **5.0.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.0
 
-Δ: 33,720 ns
+Δ: 66,427 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+3,2 %</td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#A8D08D">-28,3 %</td><td align="right" bgcolor="#FFFFFF">+2,2 %</td><td align="right" bgcolor="#FF4949">+44,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+10,1 %</td><td align="right" bgcolor="#A8D08D">-7,4 %</td><td align="right" bgcolor="#FF4949">+39,8 %</td><td align="right" bgcolor="#A8D08D">-46,7 %</td><td align="right" bgcolor="#A8D08D">-3,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">98,661 ns</td><td align="right" bgcolor="#FF4949">101,844 ns (Δ = +3,184 ns)</td><td align="right" bgcolor="#FFFFFF">99,368 ns (Δ = -2,477 ns)</td><td align="right" bgcolor="#A8D08D">71,203 ns (Δ = -28,164 ns)</td><td align="right" bgcolor="#FFFFFF">72,783 ns (Δ = +1,580 ns)</td><td align="right" bgcolor="#FF4949">104,923 ns (Δ = +32,140 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">95,694 ns</td><td align="right" bgcolor="#FF4949">105,333 ns (Δ = +9,640 ns)</td><td align="right" bgcolor="#A8D08D">97,582 ns (Δ = -7,751 ns)</td><td align="right" bgcolor="#FF4949">136,372 ns (Δ = +38,789 ns)</td><td align="right" bgcolor="#A8D08D">72,731 ns (Δ = -63,641 ns)</td><td align="right" bgcolor="#A8D08D">69,944 ns (Δ = -2,787 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,099 μs</td><td align="right" bgcolor="#FF4949">0,102 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,099 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,071 μs (Δ = -0,028 μs)</td><td align="right" bgcolor="#FFFFFF">0,073 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FF4949">0,105 μs (Δ = +0,032 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,096 μs</td><td align="right" bgcolor="#FF4949">0,105 μs (Δ = +0,010 μs)</td><td align="right" bgcolor="#A8D08D">0,098 μs (Δ = -0,008 μs)</td><td align="right" bgcolor="#FF4949">0,136 μs (Δ = +0,039 μs)</td><td align="right" bgcolor="#A8D08D">0,073 μs (Δ = -0,064 μs)</td><td align="right" bgcolor="#A8D08D">0,070 μs (Δ = -0,003 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -8193,24 +8193,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **4.3.0**
 
-Slowest: 4.4.0
+Slowest: 4.5.4
 
-Δ: 209,740 ns
+Δ: 237,607 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,5 %</td><td align="right" bgcolor="#FFFFFF">+2,4 %</td><td align="right" bgcolor="#A8D08D">-4,6 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#FF4949">+4,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,8 %</td><td align="right" bgcolor="#FF4949">+4,8 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#FFFFFF">+0,5 %</td><td align="right" bgcolor="#A8D08D">-4,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4415,817 ns</td><td align="right" bgcolor="#FFFFFF">4393,963 ns (Δ = -21,853 ns)</td><td align="right" bgcolor="#FFFFFF">4500,227 ns (Δ = +106,263 ns)</td><td align="right" bgcolor="#A8D08D">4293,517 ns (Δ = -206,710 ns)</td><td align="right" bgcolor="#FFFFFF">4290,487 ns (Δ = -3,030 ns)</td><td align="right" bgcolor="#FF4949">4476,200 ns (Δ = +185,713 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4311,583 ns</td><td align="right" bgcolor="#A8D08D">4148,930 ns (Δ = -162,653 ns)</td><td align="right" bgcolor="#FF4949">4346,040 ns (Δ = +197,110 ns)</td><td align="right" bgcolor="#FFFFFF">4363,176 ns (Δ = +17,136 ns)</td><td align="right" bgcolor="#FFFFFF">4386,537 ns (Δ = +23,361 ns)</td><td align="right" bgcolor="#A8D08D">4189,076 ns (Δ = -197,461 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,416 μs</td><td align="right" bgcolor="#FFFFFF">4,394 μs (Δ = -0,022 μs)</td><td align="right" bgcolor="#FFFFFF">4,500 μs (Δ = +0,106 μs)</td><td align="right" bgcolor="#A8D08D">4,294 μs (Δ = -0,207 μs)</td><td align="right" bgcolor="#FFFFFF">4,290 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FF4949">4,476 μs (Δ = +0,186 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,312 μs</td><td align="right" bgcolor="#A8D08D">4,149 μs (Δ = -0,163 μs)</td><td align="right" bgcolor="#FF4949">4,346 μs (Δ = +0,197 μs)</td><td align="right" bgcolor="#FFFFFF">4,363 μs (Δ = +0,017 μs)</td><td align="right" bgcolor="#FFFFFF">4,387 μs (Δ = +0,023 μs)</td><td align="right" bgcolor="#A8D08D">4,189 μs (Δ = -0,197 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -8262,24 +8262,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.5.4**
 
-Slowest: 4.5.4
+Slowest: 4.5.0
 
-Δ: 55,160 ns
+Δ: 878,303 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,6 %</td><td align="right" bgcolor="#FFFFFF">-0,3 %</td><td align="right" bgcolor="#FF4949">+5,8 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td><td align="right" bgcolor="#A8D08D">-4,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,4 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td><td align="right" bgcolor="#FF4949">+101,2 %</td><td align="right" bgcolor="#A8D08D">-51,2 %</td><td align="right" bgcolor="#FF4949">+4,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">888,538 ns</td><td align="right" bgcolor="#A8D08D">856,833 ns (Δ = -31,704 ns)</td><td align="right" bgcolor="#FFFFFF">854,271 ns (Δ = -2,562 ns)</td><td align="right" bgcolor="#FF4949">903,613 ns (Δ = +49,342 ns)</td><td align="right" bgcolor="#FFFFFF">909,431 ns (Δ = +5,818 ns)</td><td align="right" bgcolor="#A8D08D">868,313 ns (Δ = -41,118 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">851,848 ns</td><td align="right" bgcolor="#FFFFFF">840,129 ns (Δ = -11,720 ns)</td><td align="right" bgcolor="#FFFFFF">852,727 ns (Δ = +12,598 ns)</td><td align="right" bgcolor="#FF4949">1715,900 ns (Δ = +863,173 ns)</td><td align="right" bgcolor="#A8D08D">837,597 ns (Δ = -878,303 ns)</td><td align="right" bgcolor="#FF4949">874,273 ns (Δ = +36,676 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,889 μs</td><td align="right" bgcolor="#A8D08D">0,857 μs (Δ = -0,032 μs)</td><td align="right" bgcolor="#FFFFFF">0,854 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FF4949">0,904 μs (Δ = +0,049 μs)</td><td align="right" bgcolor="#FFFFFF">0,909 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#A8D08D">0,868 μs (Δ = -0,041 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,852 μs</td><td align="right" bgcolor="#FFFFFF">0,840 μs (Δ = -0,012 μs)</td><td align="right" bgcolor="#FFFFFF">0,853 μs (Δ = +0,013 μs)</td><td align="right" bgcolor="#FF4949">1,716 μs (Δ = +0,863 μs)</td><td align="right" bgcolor="#A8D08D">0,838 μs (Δ = -0,878 μs)</td><td align="right" bgcolor="#FF4949">0,874 μs (Δ = +0,037 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -8331,24 +8331,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **4.5.0**
 
 Slowest: 4.2.0
 
-Δ: 370,827 ns
+Δ: 192,442 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,2 %</td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FFFFFF">-1,8 %</td><td align="right" bgcolor="#FF4949">+6,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,9 %</td><td align="right" bgcolor="#FFFFFF">+1,9 %</td><td align="right" bgcolor="#FFFFFF">-2,5 %</td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">5599,633 ns</td><td align="right" bgcolor="#A8D08D">5367,203 ns (Δ = -232,430 ns)</td><td align="right" bgcolor="#FFFFFF">5315,133 ns (Δ = -52,070 ns)</td><td align="right" bgcolor="#FFFFFF">5323,603 ns (Δ = +8,470 ns)</td><td align="right" bgcolor="#FFFFFF">5228,807 ns (Δ = -94,797 ns)</td><td align="right" bgcolor="#FF4949">5563,900 ns (Δ = +335,093 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">5422,052 ns</td><td align="right" bgcolor="#FFFFFF">5267,003 ns (Δ = -155,049 ns)</td><td align="right" bgcolor="#FFFFFF">5364,837 ns (Δ = +97,833 ns)</td><td align="right" bgcolor="#FFFFFF">5229,610 ns (Δ = -135,227 ns)</td><td align="right" bgcolor="#FFFFFF">5273,164 ns (Δ = +43,554 ns)</td><td align="right" bgcolor="#FFFFFF">5265,343 ns (Δ = -7,821 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">5,600 μs</td><td align="right" bgcolor="#A8D08D">5,367 μs (Δ = -0,232 μs)</td><td align="right" bgcolor="#FFFFFF">5,315 μs (Δ = -0,052 μs)</td><td align="right" bgcolor="#FFFFFF">5,324 μs (Δ = +0,008 μs)</td><td align="right" bgcolor="#FFFFFF">5,229 μs (Δ = -0,095 μs)</td><td align="right" bgcolor="#FF4949">5,564 μs (Δ = +0,335 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">5,422 μs</td><td align="right" bgcolor="#FFFFFF">5,267 μs (Δ = -0,155 μs)</td><td align="right" bgcolor="#FFFFFF">5,365 μs (Δ = +0,098 μs)</td><td align="right" bgcolor="#FFFFFF">5,230 μs (Δ = -0,135 μs)</td><td align="right" bgcolor="#FFFFFF">5,273 μs (Δ = +0,044 μs)</td><td align="right" bgcolor="#FFFFFF">5,265 μs (Δ = -0,008 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,006 ms</td><td align="right" bgcolor="#A8D08D">0,005 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,006 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,005 ms</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,005 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -8402,22 +8402,22 @@ Slowest: 4.2.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.5.0
+Slowest: 4.5.4
 
-Δ: 260,647 ns
+Δ: 1825,093 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,2 %</td><td align="right" bgcolor="#FF4949">+3,1 %</td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#A8D08D">-5,0 %</td><td align="right" bgcolor="#FFFFFF">-0,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,9 %</td><td align="right" bgcolor="#FF4949">+38,5 %</td><td align="right" bgcolor="#A8D08D">-24,1 %</td><td align="right" bgcolor="#FF4949">+34,6 %</td><td align="right" bgcolor="#A8D08D">-30,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4340,813 ns</td><td align="right" bgcolor="#FFFFFF">4330,627 ns (Δ = -10,187 ns)</td><td align="right" bgcolor="#FF4949">4465,833 ns (Δ = +135,207 ns)</td><td align="right" bgcolor="#FFFFFF">4498,587 ns (Δ = +32,753 ns)</td><td align="right" bgcolor="#A8D08D">4275,533 ns (Δ = -223,053 ns)</td><td align="right" bgcolor="#FFFFFF">4237,940 ns (Δ = -37,593 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">4431,627 ns</td><td align="right" bgcolor="#A8D08D">4212,368 ns (Δ = -219,258 ns)</td><td align="right" bgcolor="#FF4949">5834,063 ns (Δ = +1621,695 ns)</td><td align="right" bgcolor="#A8D08D">4430,948 ns (Δ = -1403,116 ns)</td><td align="right" bgcolor="#FF4949">5964,870 ns (Δ = +1533,923 ns)</td><td align="right" bgcolor="#A8D08D">4139,777 ns (Δ = -1825,093 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,341 μs</td><td align="right" bgcolor="#FFFFFF">4,331 μs (Δ = -0,010 μs)</td><td align="right" bgcolor="#FF4949">4,466 μs (Δ = +0,135 μs)</td><td align="right" bgcolor="#FFFFFF">4,499 μs (Δ = +0,033 μs)</td><td align="right" bgcolor="#A8D08D">4,276 μs (Δ = -0,223 μs)</td><td align="right" bgcolor="#FFFFFF">4,238 μs (Δ = -0,038 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">4,432 μs</td><td align="right" bgcolor="#A8D08D">4,212 μs (Δ = -0,219 μs)</td><td align="right" bgcolor="#FF4949">5,834 μs (Δ = +1,622 μs)</td><td align="right" bgcolor="#A8D08D">4,431 μs (Δ = -1,403 μs)</td><td align="right" bgcolor="#FF4949">5,965 μs (Δ = +1,534 μs)</td><td align="right" bgcolor="#A8D08D">4,140 μs (Δ = -1,825 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,006 ms (Δ = +0,002 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FF4949">0,006 ms (Δ = +0,002 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = -0,002 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -8469,24 +8469,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.3.0**
+Fastest: **4.2.0**
 
-Slowest: 4.2.0
+Slowest: 4.5.0
 
-Δ: 582,520 ns
+Δ: 168,061 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-40,4 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td><td align="right" bgcolor="#FF4949">+15,3 %</td><td align="right" bgcolor="#A8D08D">-4,2 %</td><td align="right" bgcolor="#A8D08D">-3,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td><td align="right" bgcolor="#FF4949">+16,9 %</td><td align="right" bgcolor="#A8D08D">-16,4 %</td><td align="right" bgcolor="#FFFFFF">+1,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1441,947 ns</td><td align="right" bgcolor="#A8D08D">859,427 ns (Δ = -582,520 ns)</td><td align="right" bgcolor="#FFFFFF">864,993 ns (Δ = +5,567 ns)</td><td align="right" bgcolor="#FF4949">996,920 ns (Δ = +131,927 ns)</td><td align="right" bgcolor="#A8D08D">954,993 ns (Δ = -41,927 ns)</td><td align="right" bgcolor="#A8D08D">921,711 ns (Δ = -33,282 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">830,040 ns</td><td align="right" bgcolor="#FFFFFF">841,267 ns (Δ = +11,227 ns)</td><td align="right" bgcolor="#FFFFFF">853,775 ns (Δ = +12,508 ns)</td><td align="right" bgcolor="#FF4949">998,101 ns (Δ = +144,326 ns)</td><td align="right" bgcolor="#A8D08D">834,547 ns (Δ = -163,554 ns)</td><td align="right" bgcolor="#FFFFFF">850,177 ns (Δ = +15,630 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,442 μs</td><td align="right" bgcolor="#A8D08D">0,859 μs (Δ = -0,583 μs)</td><td align="right" bgcolor="#FFFFFF">0,865 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#FF4949">0,997 μs (Δ = +0,132 μs)</td><td align="right" bgcolor="#A8D08D">0,955 μs (Δ = -0,042 μs)</td><td align="right" bgcolor="#A8D08D">0,922 μs (Δ = -0,033 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,830 μs</td><td align="right" bgcolor="#FFFFFF">0,841 μs (Δ = +0,011 μs)</td><td align="right" bgcolor="#FFFFFF">0,854 μs (Δ = +0,013 μs)</td><td align="right" bgcolor="#FF4949">0,998 μs (Δ = +0,144 μs)</td><td align="right" bgcolor="#A8D08D">0,835 μs (Δ = -0,164 μs)</td><td align="right" bgcolor="#FFFFFF">0,850 μs (Δ = +0,016 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -8538,24 +8538,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
-Slowest: 4.4.0
+Slowest: 4.5.0
 
-Δ: 32,934 ns
+Δ: 114,764 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,2 %</td><td align="right" bgcolor="#FFFFFF">+2,6 %</td><td align="right" bgcolor="#FFFFFF">-2,1 %</td><td align="right" bgcolor="#FFFFFF">-0,3 %</td><td align="right" bgcolor="#FFFFFF">-1,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,1 %</td><td align="right" bgcolor="#A8D08D">-3,2 %</td><td align="right" bgcolor="#FF4949">+14,5 %</td><td align="right" bgcolor="#A8D08D">-13,3 %</td><td align="right" bgcolor="#FF4949">+3,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">788,860 ns</td><td align="right" bgcolor="#FFFFFF">787,260 ns (Δ = -1,600 ns)</td><td align="right" bgcolor="#FFFFFF">807,598 ns (Δ = +20,338 ns)</td><td align="right" bgcolor="#FFFFFF">790,380 ns (Δ = -17,218 ns)</td><td align="right" bgcolor="#FFFFFF">788,360 ns (Δ = -2,020 ns)</td><td align="right" bgcolor="#FFFFFF">774,663 ns (Δ = -13,697 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">802,689 ns</td><td align="right" bgcolor="#A8D08D">777,617 ns (Δ = -25,072 ns)</td><td align="right" bgcolor="#A8D08D">752,503 ns (Δ = -25,113 ns)</td><td align="right" bgcolor="#FF4949">861,664 ns (Δ = +109,161 ns)</td><td align="right" bgcolor="#A8D08D">746,900 ns (Δ = -114,764 ns)</td><td align="right" bgcolor="#FF4949">776,184 ns (Δ = +29,284 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,789 μs</td><td align="right" bgcolor="#FFFFFF">0,787 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,808 μs (Δ = +0,020 μs)</td><td align="right" bgcolor="#FFFFFF">0,790 μs (Δ = -0,017 μs)</td><td align="right" bgcolor="#FFFFFF">0,788 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,775 μs (Δ = -0,014 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,803 μs</td><td align="right" bgcolor="#A8D08D">0,778 μs (Δ = -0,025 μs)</td><td align="right" bgcolor="#A8D08D">0,753 μs (Δ = -0,025 μs)</td><td align="right" bgcolor="#FF4949">0,862 μs (Δ = +0,109 μs)</td><td align="right" bgcolor="#A8D08D">0,747 μs (Δ = -0,115 μs)</td><td align="right" bgcolor="#FF4949">0,776 μs (Δ = +0,029 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -8613,20 +8613,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.2.0
 
-Δ: 281,114 ns
+Δ: 196,432 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-24,0 %</td><td align="right" bgcolor="#A8D08D">-41,6 %</td><td align="right" bgcolor="#A8D08D">-6,5 %</td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#A8D08D">-4,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,9 %</td><td align="right" bgcolor="#A8D08D">-46,2 %</td><td align="right" bgcolor="#FF4949">+6,2 %</td><td align="right" bgcolor="#FFFFFF">+2,9 %</td><td align="right" bgcolor="#A8D08D">-16,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">469,350 ns</td><td align="right" bgcolor="#A8D08D">356,512 ns (Δ = -112,838 ns)</td><td align="right" bgcolor="#A8D08D">208,083 ns (Δ = -148,428 ns)</td><td align="right" bgcolor="#A8D08D">194,456 ns (Δ = -13,628 ns)</td><td align="right" bgcolor="#FFFFFF">197,263 ns (Δ = +2,807 ns)</td><td align="right" bgcolor="#A8D08D">188,236 ns (Δ = -9,028 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">374,462 ns</td><td align="right" bgcolor="#FFFFFF">363,767 ns (Δ = -10,695 ns)</td><td align="right" bgcolor="#A8D08D">195,888 ns (Δ = -167,879 ns)</td><td align="right" bgcolor="#FF4949">208,007 ns (Δ = +12,119 ns)</td><td align="right" bgcolor="#FFFFFF">214,007 ns (Δ = +6,000 ns)</td><td align="right" bgcolor="#A8D08D">178,030 ns (Δ = -35,977 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,469 μs</td><td align="right" bgcolor="#A8D08D">0,357 μs (Δ = -0,113 μs)</td><td align="right" bgcolor="#A8D08D">0,208 μs (Δ = -0,148 μs)</td><td align="right" bgcolor="#A8D08D">0,194 μs (Δ = -0,014 μs)</td><td align="right" bgcolor="#FFFFFF">0,197 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,188 μs (Δ = -0,009 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,374 μs</td><td align="right" bgcolor="#FFFFFF">0,364 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,196 μs (Δ = -0,168 μs)</td><td align="right" bgcolor="#FF4949">0,208 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#FFFFFF">0,214 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#A8D08D">0,178 μs (Δ = -0,036 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -8678,24 +8678,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **5.0.0**
 
-Slowest: 4.2.0
+Slowest: 4.3.0
 
-Δ: 319,862 ns
+Δ: 203,903 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-26,4 %</td><td align="right" bgcolor="#A8D08D">-48,8 %</td><td align="right" bgcolor="#FF4949">+3,1 %</td><td align="right" bgcolor="#FF4949">+8,0 %</td><td align="right" bgcolor="#FF4949">+9,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#A8D08D">-46,5 %</td><td align="right" bgcolor="#FF4949">+6,2 %</td><td align="right" bgcolor="#A8D08D">-8,7 %</td><td align="right" bgcolor="#A8D08D">-13,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">513,313 ns</td><td align="right" bgcolor="#A8D08D">377,743 ns (Δ = -135,570 ns)</td><td align="right" bgcolor="#A8D08D">193,451 ns (Δ = -184,292 ns)</td><td align="right" bgcolor="#FF4949">199,472 ns (Δ = +6,021 ns)</td><td align="right" bgcolor="#FF4949">215,447 ns (Δ = +15,975 ns)</td><td align="right" bgcolor="#FF4949">234,860 ns (Δ = +19,413 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">365,870 ns</td><td align="right" bgcolor="#FFFFFF">371,147 ns (Δ = +5,277 ns)</td><td align="right" bgcolor="#A8D08D">198,404 ns (Δ = -172,743 ns)</td><td align="right" bgcolor="#FF4949">210,737 ns (Δ = +12,333 ns)</td><td align="right" bgcolor="#A8D08D">192,389 ns (Δ = -18,348 ns)</td><td align="right" bgcolor="#A8D08D">167,243 ns (Δ = -25,146 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,513 μs</td><td align="right" bgcolor="#A8D08D">0,378 μs (Δ = -0,136 μs)</td><td align="right" bgcolor="#A8D08D">0,193 μs (Δ = -0,184 μs)</td><td align="right" bgcolor="#FF4949">0,199 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#FF4949">0,215 μs (Δ = +0,016 μs)</td><td align="right" bgcolor="#FF4949">0,235 μs (Δ = +0,019 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,366 μs</td><td align="right" bgcolor="#FFFFFF">0,371 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#A8D08D">0,198 μs (Δ = -0,173 μs)</td><td align="right" bgcolor="#FF4949">0,211 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#A8D08D">0,192 μs (Δ = -0,018 μs)</td><td align="right" bgcolor="#A8D08D">0,167 μs (Δ = -0,025 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -8753,20 +8753,20 @@ Fastest: **4.3.0**
 
 Slowest: 4.5.4
 
-Δ: 508834,846 ns
+Δ: 513534,034 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-17,5 %</td><td align="right" bgcolor="#FF4949">+5,1 %</td><td align="right" bgcolor="#FF4949">+3,7 %</td><td align="right" bgcolor="#FF4949">+149,3 %</td><td align="right" bgcolor="#A8D08D">-40,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,7 %</td><td align="right" bgcolor="#FFFFFF">+2,5 %</td><td align="right" bgcolor="#FF4949">+12,6 %</td><td align="right" bgcolor="#FF4949">+136,3 %</td><td align="right" bgcolor="#A8D08D">-40,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">359339,996 ns</td><td align="right" bgcolor="#A8D08D">296338,471 ns (Δ = -63001,524 ns)</td><td align="right" bgcolor="#FF4949">311558,923 ns (Δ = +15220,452 ns)</td><td align="right" bgcolor="#FF4949">322995,847 ns (Δ = +11436,923 ns)</td><td align="right" bgcolor="#FF4949">805173,317 ns (Δ = +482177,470 ns)</td><td align="right" bgcolor="#A8D08D">477507,953 ns (Δ = -327665,363 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">311989,007 ns</td><td align="right" bgcolor="#A8D08D">297477,373 ns (Δ = -14511,633 ns)</td><td align="right" bgcolor="#FFFFFF">304974,770 ns (Δ = +7497,397 ns)</td><td align="right" bgcolor="#FF4949">343271,276 ns (Δ = +38296,506 ns)</td><td align="right" bgcolor="#FF4949">811011,408 ns (Δ = +467740,132 ns)</td><td align="right" bgcolor="#A8D08D">479198,204 ns (Δ = -331813,203 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">359,340 μs</td><td align="right" bgcolor="#A8D08D">296,338 μs (Δ = -63,002 μs)</td><td align="right" bgcolor="#FF4949">311,559 μs (Δ = +15,220 μs)</td><td align="right" bgcolor="#FF4949">322,996 μs (Δ = +11,437 μs)</td><td align="right" bgcolor="#FF4949">805,173 μs (Δ = +482,177 μs)</td><td align="right" bgcolor="#A8D08D">477,508 μs (Δ = -327,665 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">311,989 μs</td><td align="right" bgcolor="#A8D08D">297,477 μs (Δ = -14,512 μs)</td><td align="right" bgcolor="#FFFFFF">304,975 μs (Δ = +7,497 μs)</td><td align="right" bgcolor="#FF4949">343,271 μs (Δ = +38,297 μs)</td><td align="right" bgcolor="#FF4949">811,011 μs (Δ = +467,740 μs)</td><td align="right" bgcolor="#A8D08D">479,198 μs (Δ = -331,813 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,359 ms</td><td align="right" bgcolor="#A8D08D">0,296 ms (Δ = -0,063 ms)</td><td align="right" bgcolor="#FF4949">0,312 ms (Δ = +0,015 ms)</td><td align="right" bgcolor="#FF4949">0,323 ms (Δ = +0,011 ms)</td><td align="right" bgcolor="#FF4949">0,805 ms (Δ = +0,482 ms)</td><td align="right" bgcolor="#A8D08D">0,478 ms (Δ = -0,328 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,312 ms</td><td align="right" bgcolor="#A8D08D">0,297 ms (Δ = -0,015 ms)</td><td align="right" bgcolor="#FFFFFF">0,305 ms (Δ = +0,007 ms)</td><td align="right" bgcolor="#FF4949">0,343 ms (Δ = +0,038 ms)</td><td align="right" bgcolor="#FF4949">0,811 ms (Δ = +0,468 ms)</td><td align="right" bgcolor="#A8D08D">0,479 ms (Δ = -0,332 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -8808,8 +8808,8 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">5</td><td align="right">5</td><td align="right">10</td><td align="right">10</td><td align="right">30</td><td align="right">10</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">80227</td><td align="right">80086</td><td align="right">81402</td><td align="right">85729</td><td align="right">110575</td><td align="right">27091</td><tr>
-<td>Allocated Kilobytes</td><td align="right">78,347</td><td align="right">78,209</td><td align="right">79,494</td><td align="right">83,720</td><td align="right">107,983</td><td align="right">26,456</td><tr>
+<td>Allocated Bytes</td><td align="right">80227</td><td align="right">80086</td><td align="right">81402</td><td align="right">85729</td><td align="right">110578</td><td align="right">27091</td><tr>
+<td>Allocated Kilobytes</td><td align="right">78,347</td><td align="right">78,209</td><td align="right">79,494</td><td align="right">83,720</td><td align="right">107,986</td><td align="right">26,456</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,077</td><td align="right">0,076</td><td align="right">0,078</td><td align="right">0,082</td><td align="right">0,105</td><td align="right">0,026</td></tr>
 </table>
 
@@ -8818,24 +8818,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **4.3.0**
 
 Slowest: 4.5.4
 
-Δ: 465251,723 ns
+Δ: 464441,126 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,5 %</td><td align="right" bgcolor="#FF4949">+6,7 %</td><td align="right" bgcolor="#FF4949">+6,6 %</td><td align="right" bgcolor="#FF4949">+630,0 %</td><td align="right" bgcolor="#A8D08D">-7,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,3 %</td><td align="right" bgcolor="#FF4949">+5,8 %</td><td align="right" bgcolor="#FF4949">+5,9 %</td><td align="right" bgcolor="#FF4949">+653,0 %</td><td align="right" bgcolor="#A8D08D">-9,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">63320,721 ns</td><td align="right" bgcolor="#FFFFFF">63632,916 ns (Δ = +312,195 ns)</td><td align="right" bgcolor="#FF4949">67903,236 ns (Δ = +4270,320 ns)</td><td align="right" bgcolor="#FF4949">72408,187 ns (Δ = +4504,951 ns)</td><td align="right" bgcolor="#FF4949">528572,443 ns (Δ = +456164,257 ns)</td><td align="right" bgcolor="#A8D08D">488817,390 ns (Δ = -39755,053 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">63225,317 ns</td><td align="right" bgcolor="#FFFFFF">62434,445 ns (Δ = -790,872 ns)</td><td align="right" bgcolor="#FF4949">66086,173 ns (Δ = +3651,728 ns)</td><td align="right" bgcolor="#FF4949">69974,143 ns (Δ = +3887,970 ns)</td><td align="right" bgcolor="#FF4949">526875,571 ns (Δ = +456901,428 ns)</td><td align="right" bgcolor="#A8D08D">477052,596 ns (Δ = -49822,976 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">63,321 μs</td><td align="right" bgcolor="#FFFFFF">63,633 μs (Δ = +0,312 μs)</td><td align="right" bgcolor="#FF4949">67,903 μs (Δ = +4,270 μs)</td><td align="right" bgcolor="#FF4949">72,408 μs (Δ = +4,505 μs)</td><td align="right" bgcolor="#FF4949">528,572 μs (Δ = +456,164 μs)</td><td align="right" bgcolor="#A8D08D">488,817 μs (Δ = -39,755 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">63,225 μs</td><td align="right" bgcolor="#FFFFFF">62,434 μs (Δ = -0,791 μs)</td><td align="right" bgcolor="#FF4949">66,086 μs (Δ = +3,652 μs)</td><td align="right" bgcolor="#FF4949">69,974 μs (Δ = +3,888 μs)</td><td align="right" bgcolor="#FF4949">526,876 μs (Δ = +456,901 μs)</td><td align="right" bgcolor="#A8D08D">477,053 μs (Δ = -49,823 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,063 ms</td><td align="right" bgcolor="#FFFFFF">0,064 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,068 ms (Δ = +0,004 ms)</td><td align="right" bgcolor="#FF4949">0,072 ms (Δ = +0,005 ms)</td><td align="right" bgcolor="#FF4949">0,529 ms (Δ = +0,456 ms)</td><td align="right" bgcolor="#A8D08D">0,489 ms (Δ = -0,040 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,063 ms</td><td align="right" bgcolor="#FFFFFF">0,062 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FF4949">0,066 ms (Δ = +0,004 ms)</td><td align="right" bgcolor="#FF4949">0,070 ms (Δ = +0,004 ms)</td><td align="right" bgcolor="#FF4949">0,527 ms (Δ = +0,457 ms)</td><td align="right" bgcolor="#A8D08D">0,477 ms (Δ = -0,050 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -8891,20 +8891,20 @@ Fastest: **4.3.0**
 
 Slowest: 4.5.4
 
-Δ: 502769,890 ns
+Δ: 497235,661 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-7,0 %</td><td align="right" bgcolor="#FF4949">+3,6 %</td><td align="right" bgcolor="#FF4949">+12,1 %</td><td align="right" bgcolor="#FF4949">+200,7 %</td><td align="right" bgcolor="#A8D08D">-31,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#FFFFFF">+0,9 %</td><td align="right" bgcolor="#FF4949">+11,6 %</td><td align="right" bgcolor="#FF4949">+199,6 %</td><td align="right" bgcolor="#A8D08D">-31,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">216980,557 ns</td><td align="right" bgcolor="#A8D08D">201720,077 ns (Δ = -15260,480 ns)</td><td align="right" bgcolor="#FF4949">209029,626 ns (Δ = +7309,549 ns)</td><td align="right" bgcolor="#FF4949">234277,350 ns (Δ = +25247,724 ns)</td><td align="right" bgcolor="#FF4949">704489,967 ns (Δ = +470212,617 ns)</td><td align="right" bgcolor="#A8D08D">484730,250 ns (Δ = -219759,717 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">210211,657 ns</td><td align="right" bgcolor="#FFFFFF">209415,502 ns (Δ = -796,154 ns)</td><td align="right" bgcolor="#FFFFFF">211330,180 ns (Δ = +1914,678 ns)</td><td align="right" bgcolor="#FF4949">235879,040 ns (Δ = +24548,860 ns)</td><td align="right" bgcolor="#FF4949">706651,163 ns (Δ = +470772,123 ns)</td><td align="right" bgcolor="#A8D08D">484887,403 ns (Δ = -221763,760 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">216,981 μs</td><td align="right" bgcolor="#A8D08D">201,720 μs (Δ = -15,260 μs)</td><td align="right" bgcolor="#FF4949">209,030 μs (Δ = +7,310 μs)</td><td align="right" bgcolor="#FF4949">234,277 μs (Δ = +25,248 μs)</td><td align="right" bgcolor="#FF4949">704,490 μs (Δ = +470,213 μs)</td><td align="right" bgcolor="#A8D08D">484,730 μs (Δ = -219,760 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">210,212 μs</td><td align="right" bgcolor="#FFFFFF">209,416 μs (Δ = -0,796 μs)</td><td align="right" bgcolor="#FFFFFF">211,330 μs (Δ = +1,915 μs)</td><td align="right" bgcolor="#FF4949">235,879 μs (Δ = +24,549 μs)</td><td align="right" bgcolor="#FF4949">706,651 μs (Δ = +470,772 μs)</td><td align="right" bgcolor="#A8D08D">484,887 μs (Δ = -221,764 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,217 ms</td><td align="right" bgcolor="#A8D08D">0,202 ms (Δ = -0,015 ms)</td><td align="right" bgcolor="#FF4949">0,209 ms (Δ = +0,007 ms)</td><td align="right" bgcolor="#FF4949">0,234 ms (Δ = +0,025 ms)</td><td align="right" bgcolor="#FF4949">0,704 ms (Δ = +0,470 ms)</td><td align="right" bgcolor="#A8D08D">0,485 ms (Δ = -0,220 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,210 ms</td><td align="right" bgcolor="#FFFFFF">0,209 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,211 ms (Δ = +0,002 ms)</td><td align="right" bgcolor="#FF4949">0,236 ms (Δ = +0,025 ms)</td><td align="right" bgcolor="#FF4949">0,707 ms (Δ = +0,471 ms)</td><td align="right" bgcolor="#A8D08D">0,485 ms (Δ = -0,222 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -8960,20 +8960,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.5.4
 
-Δ: 1193743,086 ns
+Δ: 1151264,743 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,3 %</td><td align="right" bgcolor="#FFFFFF">-1,6 %</td><td align="right" bgcolor="#FF4949">+8,6 %</td><td align="right" bgcolor="#FF4949">+52,7 %</td><td align="right" bgcolor="#A8D08D">-71,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-5,2 %</td><td align="right" bgcolor="#FF4949">+4,2 %</td><td align="right" bgcolor="#FF4949">+3,1 %</td><td align="right" bgcolor="#FF4949">+51,3 %</td><td align="right" bgcolor="#A8D08D">-70,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1049730,320 ns</td><td align="right" bgcolor="#FFFFFF">1025761,967 ns (Δ = -23968,353 ns)</td><td align="right" bgcolor="#FFFFFF">1009206,333 ns (Δ = -16555,633 ns)</td><td align="right" bgcolor="#FF4949">1096195,397 ns (Δ = +86989,063 ns)</td><td align="right" bgcolor="#FF4949">1674188,169 ns (Δ = +577992,772 ns)</td><td align="right" bgcolor="#A8D08D">480445,083 ns (Δ = -1193743,086 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1055871,596 ns</td><td align="right" bgcolor="#A8D08D">1001070,764 ns (Δ = -54800,831 ns)</td><td align="right" bgcolor="#FF4949">1042661,340 ns (Δ = +41590,576 ns)</td><td align="right" bgcolor="#FF4949">1075284,753 ns (Δ = +32623,413 ns)</td><td align="right" bgcolor="#FF4949">1627317,490 ns (Δ = +552032,737 ns)</td><td align="right" bgcolor="#A8D08D">476052,747 ns (Δ = -1151264,743 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1049,730 μs</td><td align="right" bgcolor="#FFFFFF">1025,762 μs (Δ = -23,968 μs)</td><td align="right" bgcolor="#FFFFFF">1009,206 μs (Δ = -16,556 μs)</td><td align="right" bgcolor="#FF4949">1096,195 μs (Δ = +86,989 μs)</td><td align="right" bgcolor="#FF4949">1674,188 μs (Δ = +577,993 μs)</td><td align="right" bgcolor="#A8D08D">480,445 μs (Δ = -1193,743 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1055,872 μs</td><td align="right" bgcolor="#A8D08D">1001,071 μs (Δ = -54,801 μs)</td><td align="right" bgcolor="#FF4949">1042,661 μs (Δ = +41,591 μs)</td><td align="right" bgcolor="#FF4949">1075,285 μs (Δ = +32,623 μs)</td><td align="right" bgcolor="#FF4949">1627,317 μs (Δ = +552,033 μs)</td><td align="right" bgcolor="#A8D08D">476,053 μs (Δ = -1151,265 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">1,050 ms</td><td align="right" bgcolor="#FFFFFF">1,026 ms (Δ = -0,024 ms)</td><td align="right" bgcolor="#FFFFFF">1,009 ms (Δ = -0,017 ms)</td><td align="right" bgcolor="#FF4949">1,096 ms (Δ = +0,087 ms)</td><td align="right" bgcolor="#FF4949">1,674 ms (Δ = +0,578 ms)</td><td align="right" bgcolor="#A8D08D">0,480 ms (Δ = -1,194 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">1,056 ms</td><td align="right" bgcolor="#A8D08D">1,001 ms (Δ = -0,055 ms)</td><td align="right" bgcolor="#FF4949">1,043 ms (Δ = +0,042 ms)</td><td align="right" bgcolor="#FF4949">1,075 ms (Δ = +0,033 ms)</td><td align="right" bgcolor="#FF4949">1,627 ms (Δ = +0,552 ms)</td><td align="right" bgcolor="#A8D08D">0,476 ms (Δ = -1,151 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -9012,11 +9012,11 @@ Slowest: 4.5.4
 <tr>
 <td>Gen 0</td><td align="right">410</td><td align="right">410</td><td align="right">420</td><td align="right">450</td><td align="right">530</td><td align="right">40</td></tr>
 <tr>
-<td>Gen 1</td><td align="right">50</td><td align="right">50</td><td align="right">60</td><td align="right">60</td><td align="right">90</td><td align="right">10</td></tr>
+<td>Gen 1</td><td align="right">50</td><td align="right">50</td><td align="right">59</td><td align="right">60</td><td align="right">90</td><td align="right">10</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">263117</td><td align="right">262615</td><td align="right">268908</td><td align="right">288618</td><td align="right">337027</td><td align="right">27091</td><tr>
-<td>Allocated Kilobytes</td><td align="right">256,950</td><td align="right">256,460</td><td align="right">262,605</td><td align="right">281,854</td><td align="right">329,128</td><td align="right">26,456</td><tr>
+<td>Allocated Bytes</td><td align="right">263118</td><td align="right">262614</td><td align="right">268908</td><td align="right">288618</td><td align="right">337030</td><td align="right">27091</td><tr>
+<td>Allocated Kilobytes</td><td align="right">256,951</td><td align="right">256,459</td><td align="right">262,605</td><td align="right">281,854</td><td align="right">329,131</td><td align="right">26,456</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,251</td><td align="right">0,250</td><td align="right">0,256</td><td align="right">0,275</td><td align="right">0,321</td><td align="right">0,026</td></tr>
 </table>
 
@@ -9031,20 +9031,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.5.4
 
-Δ: 19844188,974 ns
+Δ: 19397816,517 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,7 %</td><td align="right" bgcolor="#FFFFFF">-2,3 %</td><td align="right" bgcolor="#FFFFFF">+1,3 %</td><td align="right" bgcolor="#FF4949">+5,9 %</td><td align="right" bgcolor="#A8D08D">-97,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,2 %</td><td align="right" bgcolor="#FFFFFF">-1,4 %</td><td align="right" bgcolor="#FFFFFF">+1,2 %</td><td align="right" bgcolor="#FFFFFF">+2,2 %</td><td align="right" bgcolor="#A8D08D">-97,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">18883375,062 ns</td><td align="right" bgcolor="#FFFFFF">19393473,522 ns (Δ = +510098,460 ns)</td><td align="right" bgcolor="#FFFFFF">18948721,398 ns (Δ = -444752,124 ns)</td><td align="right" bgcolor="#FFFFFF">19187349,287 ns (Δ = +238627,888 ns)</td><td align="right" bgcolor="#FF4949">20312625,478 ns (Δ = +1125276,191 ns)</td><td align="right" bgcolor="#A8D08D">468436,503 ns (Δ = -19844188,974 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">19050279,753 ns</td><td align="right" bgcolor="#FFFFFF">19473778,727 ns (Δ = +423498,973 ns)</td><td align="right" bgcolor="#FFFFFF">19206270,860 ns (Δ = -267507,867 ns)</td><td align="right" bgcolor="#FFFFFF">19445131,177 ns (Δ = +238860,317 ns)</td><td align="right" bgcolor="#FFFFFF">19864660,053 ns (Δ = +419528,876 ns)</td><td align="right" bgcolor="#A8D08D">466843,536 ns (Δ = -19397816,517 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">18883,375 μs</td><td align="right" bgcolor="#FFFFFF">19393,474 μs (Δ = +510,098 μs)</td><td align="right" bgcolor="#FFFFFF">18948,721 μs (Δ = -444,752 μs)</td><td align="right" bgcolor="#FFFFFF">19187,349 μs (Δ = +238,628 μs)</td><td align="right" bgcolor="#FF4949">20312,625 μs (Δ = +1125,276 μs)</td><td align="right" bgcolor="#A8D08D">468,437 μs (Δ = -19844,189 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">19050,280 μs</td><td align="right" bgcolor="#FFFFFF">19473,779 μs (Δ = +423,499 μs)</td><td align="right" bgcolor="#FFFFFF">19206,271 μs (Δ = -267,508 μs)</td><td align="right" bgcolor="#FFFFFF">19445,131 μs (Δ = +238,860 μs)</td><td align="right" bgcolor="#FFFFFF">19864,660 μs (Δ = +419,529 μs)</td><td align="right" bgcolor="#A8D08D">466,844 μs (Δ = -19397,817 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">18,883 ms</td><td align="right" bgcolor="#FFFFFF">19,393 ms (Δ = +0,510 ms)</td><td align="right" bgcolor="#FFFFFF">18,949 ms (Δ = -0,445 ms)</td><td align="right" bgcolor="#FFFFFF">19,187 ms (Δ = +0,239 ms)</td><td align="right" bgcolor="#FF4949">20,313 ms (Δ = +1,125 ms)</td><td align="right" bgcolor="#A8D08D">0,468 ms (Δ = -19,844 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">19,050 ms</td><td align="right" bgcolor="#FFFFFF">19,474 ms (Δ = +0,423 ms)</td><td align="right" bgcolor="#FFFFFF">19,206 ms (Δ = -0,268 ms)</td><td align="right" bgcolor="#FFFFFF">19,445 ms (Δ = +0,239 ms)</td><td align="right" bgcolor="#FFFFFF">19,865 ms (Δ = +0,420 ms)</td><td align="right" bgcolor="#A8D08D">0,467 ms (Δ = -19,398 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -9081,14 +9081,14 @@ Slowest: 4.5.4
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Gen 0</td><td align="right">2260</td><td align="right">2260</td><td align="right">2295</td><td align="right">2355</td><td align="right">2480</td><td align="right">40</td></tr>
+<td>Gen 0</td><td align="right">2260</td><td align="right">2260</td><td align="right">2293</td><td align="right">2351</td><td align="right">2478</td><td align="right">40</td></tr>
 <tr>
 <td>Gen 1</td><td align="right">750</td><td align="right">750</td><td align="right">760</td><td align="right">780</td><td align="right">820</td><td align="right">10</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">1427935</td><td align="right">1427449</td><td align="right">1449353</td><td align="right">1486579</td><td align="right">1563700</td><td align="right">27578</td><tr>
-<td>Allocated Kilobytes</td><td align="right">1394,468</td><td align="right">1393,993</td><td align="right">1415,384</td><td align="right">1451,737</td><td align="right">1527,051</td><td align="right">26,932</td><tr>
-<td>Allocated Megabytes</td><td align="right">1,362</td><td align="right">1,361</td><td align="right">1,382</td><td align="right">1,418</td><td align="right">1,491</td><td align="right">0,026</td></tr>
+<td>Allocated Bytes</td><td align="right">1427697</td><td align="right">1427268</td><td align="right">1448486</td><td align="right">1486336</td><td align="right">1563452</td><td align="right">27578</td><tr>
+<td>Allocated Kilobytes</td><td align="right">1394,235</td><td align="right">1393,816</td><td align="right">1414,537</td><td align="right">1451,500</td><td align="right">1526,809</td><td align="right">26,932</td><tr>
+<td>Allocated Megabytes</td><td align="right">1,362</td><td align="right">1,361</td><td align="right">1,381</td><td align="right">1,417</td><td align="right">1,491</td><td align="right">0,026</td></tr>
 </table>
 
 
@@ -9100,20 +9100,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.5.4
 
-Δ: 817574,624 ns
+Δ: 822906,007 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+9,8 %</td><td align="right" bgcolor="#A8D08D">-12,4 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FF4949">+60,5 %</td><td align="right" bgcolor="#A8D08D">-63,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,4 %</td><td align="right" bgcolor="#FFFFFF">-1,4 %</td><td align="right" bgcolor="#FFFFFF">+1,0 %</td><td align="right" bgcolor="#FF4949">+60,0 %</td><td align="right" bgcolor="#A8D08D">-63,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">827215,690 ns</td><td align="right" bgcolor="#FF4949">908209,687 ns (Δ = +80993,997 ns)</td><td align="right" bgcolor="#A8D08D">795350,410 ns (Δ = -112859,277 ns)</td><td align="right" bgcolor="#FFFFFF">796823,787 ns (Δ = +1473,377 ns)</td><td align="right" bgcolor="#FF4949">1279015,444 ns (Δ = +482191,658 ns)</td><td align="right" bgcolor="#A8D08D">461440,820 ns (Δ = -817574,624 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">791962,400 ns</td><td align="right" bgcolor="#FFFFFF">810577,053 ns (Δ = +18614,653 ns)</td><td align="right" bgcolor="#FFFFFF">799011,993 ns (Δ = -11565,060 ns)</td><td align="right" bgcolor="#FFFFFF">806727,715 ns (Δ = +7715,722 ns)</td><td align="right" bgcolor="#FF4949">1290986,816 ns (Δ = +484259,101 ns)</td><td align="right" bgcolor="#A8D08D">468080,809 ns (Δ = -822906,007 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">827,216 μs</td><td align="right" bgcolor="#FF4949">908,210 μs (Δ = +80,994 μs)</td><td align="right" bgcolor="#A8D08D">795,350 μs (Δ = -112,859 μs)</td><td align="right" bgcolor="#FFFFFF">796,824 μs (Δ = +1,473 μs)</td><td align="right" bgcolor="#FF4949">1279,015 μs (Δ = +482,192 μs)</td><td align="right" bgcolor="#A8D08D">461,441 μs (Δ = -817,575 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">791,962 μs</td><td align="right" bgcolor="#FFFFFF">810,577 μs (Δ = +18,615 μs)</td><td align="right" bgcolor="#FFFFFF">799,012 μs (Δ = -11,565 μs)</td><td align="right" bgcolor="#FFFFFF">806,728 μs (Δ = +7,716 μs)</td><td align="right" bgcolor="#FF4949">1290,987 μs (Δ = +484,259 μs)</td><td align="right" bgcolor="#A8D08D">468,081 μs (Δ = -822,906 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,827 ms</td><td align="right" bgcolor="#FF4949">0,908 ms (Δ = +0,081 ms)</td><td align="right" bgcolor="#A8D08D">0,795 ms (Δ = -0,113 ms)</td><td align="right" bgcolor="#FFFFFF">0,797 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FF4949">1,279 ms (Δ = +0,482 ms)</td><td align="right" bgcolor="#A8D08D">0,461 ms (Δ = -0,818 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,792 ms</td><td align="right" bgcolor="#FFFFFF">0,811 ms (Δ = +0,019 ms)</td><td align="right" bgcolor="#FFFFFF">0,799 ms (Δ = -0,012 ms)</td><td align="right" bgcolor="#FFFFFF">0,807 ms (Δ = +0,008 ms)</td><td align="right" bgcolor="#FF4949">1,291 ms (Δ = +0,484 ms)</td><td align="right" bgcolor="#A8D08D">0,468 ms (Δ = -0,823 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -9155,8 +9155,8 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">30</td><td align="right">20</td><td align="right">30</td><td align="right">20</td><td align="right">40</td><td align="right">10</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">66626</td><td align="right">66455</td><td align="right">67298</td><td align="right">69735</td><td align="right">87270</td><td align="right">27578</td><tr>
-<td>Allocated Kilobytes</td><td align="right">65,064</td><td align="right">64,897</td><td align="right">65,721</td><td align="right">68,101</td><td align="right">85,225</td><td align="right">26,932</td><tr>
+<td>Allocated Bytes</td><td align="right">66625</td><td align="right">66456</td><td align="right">67298</td><td align="right">69734</td><td align="right">87270</td><td align="right">27578</td><tr>
+<td>Allocated Kilobytes</td><td align="right">65,063</td><td align="right">64,898</td><td align="right">65,721</td><td align="right">68,100</td><td align="right">85,225</td><td align="right">26,932</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,064</td><td align="right">0,063</td><td align="right">0,064</td><td align="right">0,067</td><td align="right">0,083</td><td align="right">0,026</td></tr>
 </table>
 
@@ -9169,20 +9169,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.5.4
 
-Δ: 3212248,513 ns
+Δ: 3203626,319 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,1 %</td><td align="right" bgcolor="#FFFFFF">+2,5 %</td><td align="right" bgcolor="#FFFFFF">-2,5 %</td><td align="right" bgcolor="#FF4949">+16,2 %</td><td align="right" bgcolor="#A8D08D">-87,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+3,5 %</td><td align="right" bgcolor="#A8D08D">-3,4 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#FF4949">+16,1 %</td><td align="right" bgcolor="#A8D08D">-87,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3271161,230 ns</td><td align="right" bgcolor="#A8D08D">3170293,156 ns (Δ = -100868,074 ns)</td><td align="right" bgcolor="#FFFFFF">3250106,743 ns (Δ = +79813,587 ns)</td><td align="right" bgcolor="#FFFFFF">3169207,958 ns (Δ = -80898,786 ns)</td><td align="right" bgcolor="#FF4949">3681180,167 ns (Δ = +511972,209 ns)</td><td align="right" bgcolor="#A8D08D">468931,653 ns (Δ = -3212248,513 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3167029,556 ns</td><td align="right" bgcolor="#FF4949">3278471,113 ns (Δ = +111441,558 ns)</td><td align="right" bgcolor="#A8D08D">3166845,062 ns (Δ = -111626,051 ns)</td><td align="right" bgcolor="#FFFFFF">3162647,678 ns (Δ = -4197,384 ns)</td><td align="right" bgcolor="#FF4949">3670358,110 ns (Δ = +507710,432 ns)</td><td align="right" bgcolor="#A8D08D">466731,791 ns (Δ = -3203626,319 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3271,161 μs</td><td align="right" bgcolor="#A8D08D">3170,293 μs (Δ = -100,868 μs)</td><td align="right" bgcolor="#FFFFFF">3250,107 μs (Δ = +79,814 μs)</td><td align="right" bgcolor="#FFFFFF">3169,208 μs (Δ = -80,899 μs)</td><td align="right" bgcolor="#FF4949">3681,180 μs (Δ = +511,972 μs)</td><td align="right" bgcolor="#A8D08D">468,932 μs (Δ = -3212,249 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3167,030 μs</td><td align="right" bgcolor="#FF4949">3278,471 μs (Δ = +111,442 μs)</td><td align="right" bgcolor="#A8D08D">3166,845 μs (Δ = -111,626 μs)</td><td align="right" bgcolor="#FFFFFF">3162,648 μs (Δ = -4,197 μs)</td><td align="right" bgcolor="#FF4949">3670,358 μs (Δ = +507,710 μs)</td><td align="right" bgcolor="#A8D08D">466,732 μs (Δ = -3203,626 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">3,271 ms</td><td align="right" bgcolor="#A8D08D">3,170 ms (Δ = -0,101 ms)</td><td align="right" bgcolor="#FFFFFF">3,250 ms (Δ = +0,080 ms)</td><td align="right" bgcolor="#FFFFFF">3,169 ms (Δ = -0,081 ms)</td><td align="right" bgcolor="#FF4949">3,681 ms (Δ = +0,512 ms)</td><td align="right" bgcolor="#A8D08D">0,469 ms (Δ = -3,212 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">3,167 ms</td><td align="right" bgcolor="#FF4949">3,278 ms (Δ = +0,111 ms)</td><td align="right" bgcolor="#A8D08D">3,167 ms (Δ = -0,112 ms)</td><td align="right" bgcolor="#FFFFFF">3,163 ms (Δ = -0,004 ms)</td><td align="right" bgcolor="#FF4949">3,670 ms (Δ = +0,508 ms)</td><td align="right" bgcolor="#A8D08D">0,467 ms (Δ = -3,204 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -9221,11 +9221,11 @@ Slowest: 4.5.4
 <tr>
 <td>Gen 0</td><td align="right">380</td><td align="right">380</td><td align="right">390</td><td align="right">400</td><td align="right">440</td><td align="right">40</td></tr>
 <tr>
-<td>Gen 1</td><td align="right">100</td><td align="right">100</td><td align="right">109</td><td align="right">110</td><td align="right">110</td><td align="right">10</td></tr>
+<td>Gen 1</td><td align="right">100</td><td align="right">101</td><td align="right">109</td><td align="right">110</td><td align="right">110</td><td align="right">10</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">245395</td><td align="right">245447</td><td align="right">249495</td><td align="right">257284</td><td align="right">282849</td><td align="right">27578</td><tr>
-<td>Allocated Kilobytes</td><td align="right">239,644</td><td align="right">239,694</td><td align="right">243,647</td><td align="right">251,254</td><td align="right">276,220</td><td align="right">26,932</td><tr>
+<td>Allocated Bytes</td><td align="right">245395</td><td align="right">245471</td><td align="right">249437</td><td align="right">257284</td><td align="right">282849</td><td align="right">27578</td><tr>
+<td>Allocated Kilobytes</td><td align="right">239,644</td><td align="right">239,718</td><td align="right">243,591</td><td align="right">251,254</td><td align="right">276,220</td><td align="right">26,932</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,234</td><td align="right">0,234</td><td align="right">0,238</td><td align="right">0,245</td><td align="right">0,270</td><td align="right">0,026</td></tr>
 </table>
 
@@ -9238,20 +9238,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.5.4
 
-Δ: 15269715,775 ns
+Δ: 15443934,487 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,9 %</td><td align="right" bgcolor="#FFFFFF">+2,2 %</td><td align="right" bgcolor="#FFFFFF">-1,1 %</td><td align="right" bgcolor="#FF4949">+3,7 %</td><td align="right" bgcolor="#A8D08D">-97,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td><td align="right" bgcolor="#FFFFFF">+1,1 %</td><td align="right" bgcolor="#FF4949">+5,4 %</td><td align="right" bgcolor="#A8D08D">-97,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">15163612,285 ns</td><td align="right" bgcolor="#FFFFFF">15021211,589 ns (Δ = -142400,696 ns)</td><td align="right" bgcolor="#FFFFFF">15352788,643 ns (Δ = +331577,054 ns)</td><td align="right" bgcolor="#FFFFFF">15178449,300 ns (Δ = -174339,343 ns)</td><td align="right" bgcolor="#FF4949">15737256,802 ns (Δ = +558807,502 ns)</td><td align="right" bgcolor="#A8D08D">467541,027 ns (Δ = -15269715,775 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">14913415,969 ns</td><td align="right" bgcolor="#FFFFFF">15010918,407 ns (Δ = +97502,438 ns)</td><td align="right" bgcolor="#FFFFFF">14937707,751 ns (Δ = -73210,656 ns)</td><td align="right" bgcolor="#FFFFFF">15096950,122 ns (Δ = +159242,371 ns)</td><td align="right" bgcolor="#FF4949">15907710,720 ns (Δ = +810760,598 ns)</td><td align="right" bgcolor="#A8D08D">463776,233 ns (Δ = -15443934,487 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">15163,612 μs</td><td align="right" bgcolor="#FFFFFF">15021,212 μs (Δ = -142,401 μs)</td><td align="right" bgcolor="#FFFFFF">15352,789 μs (Δ = +331,577 μs)</td><td align="right" bgcolor="#FFFFFF">15178,449 μs (Δ = -174,339 μs)</td><td align="right" bgcolor="#FF4949">15737,257 μs (Δ = +558,808 μs)</td><td align="right" bgcolor="#A8D08D">467,541 μs (Δ = -15269,716 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">14913,416 μs</td><td align="right" bgcolor="#FFFFFF">15010,918 μs (Δ = +97,502 μs)</td><td align="right" bgcolor="#FFFFFF">14937,708 μs (Δ = -73,211 μs)</td><td align="right" bgcolor="#FFFFFF">15096,950 μs (Δ = +159,242 μs)</td><td align="right" bgcolor="#FF4949">15907,711 μs (Δ = +810,761 μs)</td><td align="right" bgcolor="#A8D08D">463,776 μs (Δ = -15443,934 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">15,164 ms</td><td align="right" bgcolor="#FFFFFF">15,021 ms (Δ = -0,142 ms)</td><td align="right" bgcolor="#FFFFFF">15,353 ms (Δ = +0,332 ms)</td><td align="right" bgcolor="#FFFFFF">15,178 ms (Δ = -0,174 ms)</td><td align="right" bgcolor="#FF4949">15,737 ms (Δ = +0,559 ms)</td><td align="right" bgcolor="#A8D08D">0,468 ms (Δ = -15,270 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">14,913 ms</td><td align="right" bgcolor="#FFFFFF">15,011 ms (Δ = +0,098 ms)</td><td align="right" bgcolor="#FFFFFF">14,938 ms (Δ = -0,073 ms)</td><td align="right" bgcolor="#FFFFFF">15,097 ms (Δ = +0,159 ms)</td><td align="right" bgcolor="#FF4949">15,908 ms (Δ = +0,811 ms)</td><td align="right" bgcolor="#A8D08D">0,464 ms (Δ = -15,444 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -9270,7 +9270,7 @@ Slowest: 4.5.4
 <tr>
 <td>Gen 1</td>
 <td align="right">5.0.0</td>
-<td align="right">4.5.4</td>
+<td align="right">4.2.0</td>
 </tr>
 <tr>
 <td>Gen 2</td>
@@ -9290,12 +9290,12 @@ Slowest: 4.5.4
 <tr>
 <td>Gen 0</td><td align="right">1810</td><td align="right">1810</td><td align="right">1840</td><td align="right">1900</td><td align="right">2000</td><td align="right">40</td></tr>
 <tr>
-<td>Gen 1</td><td align="right">568</td><td align="right">556</td><td align="right">521</td><td align="right">510</td><td align="right">570</td><td align="right">10</td></tr>
+<td>Gen 1</td><td align="right">575</td><td align="right">549</td><td align="right">521</td><td align="right">510</td><td align="right">570</td><td align="right">10</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">1144436</td><td align="right">1143247</td><td align="right">1161588</td><td align="right">1200270</td><td align="right">1265003</td><td align="right">27578</td><tr>
-<td>Allocated Kilobytes</td><td align="right">1117,613</td><td align="right">1116,452</td><td align="right">1134,363</td><td align="right">1172,139</td><td align="right">1235,354</td><td align="right">26,932</td><tr>
-<td>Allocated Megabytes</td><td align="right">1,091</td><td align="right">1,090</td><td align="right">1,108</td><td align="right">1,145</td><td align="right">1,206</td><td align="right">0,026</td></tr>
+<td>Allocated Bytes</td><td align="right">1144688</td><td align="right">1143423</td><td align="right">1161604</td><td align="right">1200482</td><td align="right">1265187</td><td align="right">27578</td><tr>
+<td>Allocated Kilobytes</td><td align="right">1117,859</td><td align="right">1116,624</td><td align="right">1134,379</td><td align="right">1172,346</td><td align="right">1235,534</td><td align="right">26,932</td><tr>
+<td>Allocated Megabytes</td><td align="right">1,092</td><td align="right">1,090</td><td align="right">1,108</td><td align="right">1,145</td><td align="right">1,207</td><td align="right">0,026</td></tr>
 </table>
 
 
@@ -9309,20 +9309,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.5.4
 
-Δ: 1092173,353 ns
+Δ: 1096267,358 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#FF4949">+27,6 %</td><td align="right" bgcolor="#FFFFFF">+0,9 %</td><td align="right" bgcolor="#FF4949">+55,7 %</td><td align="right" bgcolor="#A8D08D">-69,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,9 %</td><td align="right" bgcolor="#FF4949">+23,8 %</td><td align="right" bgcolor="#FF4949">+7,6 %</td><td align="right" bgcolor="#FF4949">+50,4 %</td><td align="right" bgcolor="#A8D08D">-69,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">788521,930 ns</td><td align="right" bgcolor="#FFFFFF">787360,490 ns (Δ = -1161,440 ns)</td><td align="right" bgcolor="#FF4949">1004686,673 ns (Δ = +217326,183 ns)</td><td align="right" bgcolor="#FFFFFF">1014130,173 ns (Δ = +9443,500 ns)</td><td align="right" bgcolor="#FF4949">1579217,989 ns (Δ = +565087,816 ns)</td><td align="right" bgcolor="#A8D08D">487044,636 ns (Δ = -1092173,353 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">790460,507 ns</td><td align="right" bgcolor="#FFFFFF">783711,093 ns (Δ = -6749,413 ns)</td><td align="right" bgcolor="#FF4949">970136,943 ns (Δ = +186425,850 ns)</td><td align="right" bgcolor="#FF4949">1043436,403 ns (Δ = +73299,460 ns)</td><td align="right" bgcolor="#FF4949">1568873,883 ns (Δ = +525437,480 ns)</td><td align="right" bgcolor="#A8D08D">472606,525 ns (Δ = -1096267,358 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">788,522 μs</td><td align="right" bgcolor="#FFFFFF">787,360 μs (Δ = -1,161 μs)</td><td align="right" bgcolor="#FF4949">1004,687 μs (Δ = +217,326 μs)</td><td align="right" bgcolor="#FFFFFF">1014,130 μs (Δ = +9,444 μs)</td><td align="right" bgcolor="#FF4949">1579,218 μs (Δ = +565,088 μs)</td><td align="right" bgcolor="#A8D08D">487,045 μs (Δ = -1092,173 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">790,461 μs</td><td align="right" bgcolor="#FFFFFF">783,711 μs (Δ = -6,749 μs)</td><td align="right" bgcolor="#FF4949">970,137 μs (Δ = +186,426 μs)</td><td align="right" bgcolor="#FF4949">1043,436 μs (Δ = +73,299 μs)</td><td align="right" bgcolor="#FF4949">1568,874 μs (Δ = +525,437 μs)</td><td align="right" bgcolor="#A8D08D">472,607 μs (Δ = -1096,267 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,789 ms</td><td align="right" bgcolor="#FFFFFF">0,787 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FF4949">1,005 ms (Δ = +0,217 ms)</td><td align="right" bgcolor="#FFFFFF">1,014 ms (Δ = +0,009 ms)</td><td align="right" bgcolor="#FF4949">1,579 ms (Δ = +0,565 ms)</td><td align="right" bgcolor="#A8D08D">0,487 ms (Δ = -1,092 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,790 ms</td><td align="right" bgcolor="#FFFFFF">0,784 ms (Δ = -0,007 ms)</td><td align="right" bgcolor="#FF4949">0,970 ms (Δ = +0,186 ms)</td><td align="right" bgcolor="#FF4949">1,043 ms (Δ = +0,073 ms)</td><td align="right" bgcolor="#FF4949">1,569 ms (Δ = +0,525 ms)</td><td align="right" bgcolor="#A8D08D">0,473 ms (Δ = -1,096 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -9361,11 +9361,11 @@ Slowest: 4.5.4
 <tr>
 <td>Gen 0</td><td align="right">860</td><td align="right">860</td><td align="right">870</td><td align="right">880</td><td align="right">920</td><td align="right">40</td></tr>
 <tr>
-<td>Gen 1</td><td align="right">120</td><td align="right">120</td><td align="right">120</td><td align="right">121</td><td align="right">152</td><td align="right">10</td></tr>
+<td>Gen 1</td><td align="right">120</td><td align="right">120</td><td align="right">120</td><td align="right">120</td><td align="right">151</td><td align="right">10</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">544326</td><td align="right">544230</td><td align="right">550095</td><td align="right">559319</td><td align="right">586975</td><td align="right">29254</td><tr>
-<td>Allocated Kilobytes</td><td align="right">531,568</td><td align="right">531,475</td><td align="right">537,202</td><td align="right">546,210</td><td align="right">573,218</td><td align="right">28,568</td><tr>
+<td>Allocated Bytes</td><td align="right">544310</td><td align="right">544218</td><td align="right">550091</td><td align="right">559326</td><td align="right">586975</td><td align="right">29255</td><tr>
+<td>Allocated Kilobytes</td><td align="right">531,553</td><td align="right">531,463</td><td align="right">537,198</td><td align="right">546,217</td><td align="right">573,218</td><td align="right">28,569</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,519</td><td align="right">0,519</td><td align="right">0,525</td><td align="right">0,533</td><td align="right">0,560</td><td align="right">0,028</td></tr>
 </table>
 
@@ -9374,24 +9374,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **4.3.0**
 
 Slowest: 4.5.4
 
-Δ: 525384,420 ns
+Δ: 535945,731 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#FF4949">+49,3 %</td><td align="right" bgcolor="#FF4949">+11,4 %</td><td align="right" bgcolor="#FF4949">+269,6 %</td><td align="right" bgcolor="#A8D08D">-24,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,7 %</td><td align="right" bgcolor="#FF4949">+59,6 %</td><td align="right" bgcolor="#FF4949">+6,1 %</td><td align="right" bgcolor="#FF4949">+287,1 %</td><td align="right" bgcolor="#A8D08D">-25,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">101107,500 ns</td><td align="right" bgcolor="#FFFFFF">101941,483 ns (Δ = +833,983 ns)</td><td align="right" bgcolor="#FF4949">152197,123 ns (Δ = +50255,640 ns)</td><td align="right" bgcolor="#FF4949">169490,613 ns (Δ = +17293,490 ns)</td><td align="right" bgcolor="#FF4949">626491,920 ns (Δ = +457001,307 ns)</td><td align="right" bgcolor="#A8D08D">470258,460 ns (Δ = -156233,460 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">99137,657 ns</td><td align="right" bgcolor="#FFFFFF">96462,427 ns (Δ = -2675,230 ns)</td><td align="right" bgcolor="#FF4949">153966,843 ns (Δ = +57504,417 ns)</td><td align="right" bgcolor="#FF4949">163374,987 ns (Δ = +9408,143 ns)</td><td align="right" bgcolor="#FF4949">632408,158 ns (Δ = +469033,171 ns)</td><td align="right" bgcolor="#A8D08D">469947,190 ns (Δ = -162460,968 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">101,108 μs</td><td align="right" bgcolor="#FFFFFF">101,941 μs (Δ = +0,834 μs)</td><td align="right" bgcolor="#FF4949">152,197 μs (Δ = +50,256 μs)</td><td align="right" bgcolor="#FF4949">169,491 μs (Δ = +17,293 μs)</td><td align="right" bgcolor="#FF4949">626,492 μs (Δ = +457,001 μs)</td><td align="right" bgcolor="#A8D08D">470,258 μs (Δ = -156,233 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">99,138 μs</td><td align="right" bgcolor="#FFFFFF">96,462 μs (Δ = -2,675 μs)</td><td align="right" bgcolor="#FF4949">153,967 μs (Δ = +57,504 μs)</td><td align="right" bgcolor="#FF4949">163,375 μs (Δ = +9,408 μs)</td><td align="right" bgcolor="#FF4949">632,408 μs (Δ = +469,033 μs)</td><td align="right" bgcolor="#A8D08D">469,947 μs (Δ = -162,461 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,101 ms</td><td align="right" bgcolor="#FFFFFF">0,102 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FF4949">0,152 ms (Δ = +0,050 ms)</td><td align="right" bgcolor="#FF4949">0,169 ms (Δ = +0,017 ms)</td><td align="right" bgcolor="#FF4949">0,626 ms (Δ = +0,457 ms)</td><td align="right" bgcolor="#A8D08D">0,470 ms (Δ = -0,156 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,099 ms</td><td align="right" bgcolor="#FFFFFF">0,096 ms (Δ = -0,003 ms)</td><td align="right" bgcolor="#FF4949">0,154 ms (Δ = +0,058 ms)</td><td align="right" bgcolor="#FF4949">0,163 ms (Δ = +0,009 ms)</td><td align="right" bgcolor="#FF4949">0,632 ms (Δ = +0,469 ms)</td><td align="right" bgcolor="#A8D08D">0,470 ms (Δ = -0,162 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -9433,8 +9433,8 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">30</td><td align="right">10</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">115963</td><td align="right">115911</td><td align="right">117563</td><td align="right">120565</td><td align="right">138414</td><td align="right">29254</td><tr>
-<td>Allocated Kilobytes</td><td align="right">113,245</td><td align="right">113,194</td><td align="right">114,808</td><td align="right">117,739</td><td align="right">135,170</td><td align="right">28,568</td><tr>
+<td>Allocated Bytes</td><td align="right">115962</td><td align="right">115911</td><td align="right">117563</td><td align="right">120565</td><td align="right">138410</td><td align="right">29254</td><tr>
+<td>Allocated Kilobytes</td><td align="right">113,244</td><td align="right">113,194</td><td align="right">114,808</td><td align="right">117,739</td><td align="right">135,166</td><td align="right">28,568</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,111</td><td align="right">0,111</td><td align="right">0,112</td><td align="right">0,115</td><td align="right">0,132</td><td align="right">0,028</td></tr>
 </table>
 
@@ -9447,20 +9447,20 @@ Fastest: **4.2.0**
 
 Slowest: 4.5.4
 
-Δ: 730851,947 ns
+Δ: 739220,323 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,3 %</td><td align="right" bgcolor="#FF4949">+52,6 %</td><td align="right" bgcolor="#FF4949">+3,8 %</td><td align="right" bgcolor="#FF4949">+93,1 %</td><td align="right" bgcolor="#A8D08D">-56,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+3,2 %</td><td align="right" bgcolor="#FF4949">+43,9 %</td><td align="right" bgcolor="#FF4949">+7,8 %</td><td align="right" bgcolor="#FF4949">+94,5 %</td><td align="right" bgcolor="#A8D08D">-55,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">353491,333 ns</td><td align="right" bgcolor="#FFFFFF">354585,993 ns (Δ = +1094,660 ns)</td><td align="right" bgcolor="#FF4949">541016,393 ns (Δ = +186430,400 ns)</td><td align="right" bgcolor="#FF4949">561643,007 ns (Δ = +20626,613 ns)</td><td align="right" bgcolor="#FF4949">1084343,280 ns (Δ = +522700,273 ns)</td><td align="right" bgcolor="#A8D08D">474189,864 ns (Δ = -610153,416 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">349694,600 ns</td><td align="right" bgcolor="#FF4949">360873,504 ns (Δ = +11178,904 ns)</td><td align="right" bgcolor="#FF4949">519222,076 ns (Δ = +158348,571 ns)</td><td align="right" bgcolor="#FF4949">559935,703 ns (Δ = +40713,627 ns)</td><td align="right" bgcolor="#FF4949">1088914,923 ns (Δ = +528979,220 ns)</td><td align="right" bgcolor="#A8D08D">488111,715 ns (Δ = -600803,208 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">353,491 μs</td><td align="right" bgcolor="#FFFFFF">354,586 μs (Δ = +1,095 μs)</td><td align="right" bgcolor="#FF4949">541,016 μs (Δ = +186,430 μs)</td><td align="right" bgcolor="#FF4949">561,643 μs (Δ = +20,627 μs)</td><td align="right" bgcolor="#FF4949">1084,343 μs (Δ = +522,700 μs)</td><td align="right" bgcolor="#A8D08D">474,190 μs (Δ = -610,153 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">349,695 μs</td><td align="right" bgcolor="#FF4949">360,874 μs (Δ = +11,179 μs)</td><td align="right" bgcolor="#FF4949">519,222 μs (Δ = +158,349 μs)</td><td align="right" bgcolor="#FF4949">559,936 μs (Δ = +40,714 μs)</td><td align="right" bgcolor="#FF4949">1088,915 μs (Δ = +528,979 μs)</td><td align="right" bgcolor="#A8D08D">488,112 μs (Δ = -600,803 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,353 ms</td><td align="right" bgcolor="#FFFFFF">0,355 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FF4949">0,541 ms (Δ = +0,186 ms)</td><td align="right" bgcolor="#FF4949">0,562 ms (Δ = +0,021 ms)</td><td align="right" bgcolor="#FF4949">1,084 ms (Δ = +0,523 ms)</td><td align="right" bgcolor="#A8D08D">0,474 ms (Δ = -0,610 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,350 ms</td><td align="right" bgcolor="#FF4949">0,361 ms (Δ = +0,011 ms)</td><td align="right" bgcolor="#FF4949">0,519 ms (Δ = +0,158 ms)</td><td align="right" bgcolor="#FF4949">0,560 ms (Δ = +0,041 ms)</td><td align="right" bgcolor="#FF4949">1,089 ms (Δ = +0,529 ms)</td><td align="right" bgcolor="#A8D08D">0,488 ms (Δ = -0,601 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -9499,11 +9499,11 @@ Slowest: 4.5.4
 <tr>
 <td>Gen 0</td><td align="right">620</td><td align="right">620</td><td align="right">630</td><td align="right">650</td><td align="right">690</td><td align="right">40</td></tr>
 <tr>
-<td>Gen 1</td><td align="right">50</td><td align="right">50</td><td align="right">50</td><td align="right">54</td><td align="right">80</td><td align="right">10</td></tr>
+<td>Gen 1</td><td align="right">50</td><td align="right">50</td><td align="right">51</td><td align="right">58</td><td align="right">80</td><td align="right">10</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">396416</td><td align="right">396237</td><td align="right">402200</td><td align="right">411950</td><td align="right">437244</td><td align="right">29258</td><tr>
-<td>Allocated Kilobytes</td><td align="right">387,125</td><td align="right">386,950</td><td align="right">392,773</td><td align="right">402,295</td><td align="right">426,996</td><td align="right">28,572</td><tr>
+<td>Allocated Bytes</td><td align="right">396416</td><td align="right">396236</td><td align="right">402205</td><td align="right">411961</td><td align="right">437228</td><td align="right">29256</td><tr>
+<td>Allocated Kilobytes</td><td align="right">387,125</td><td align="right">386,949</td><td align="right">392,778</td><td align="right">402,306</td><td align="right">426,980</td><td align="right">28,570</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,378</td><td align="right">0,378</td><td align="right">0,384</td><td align="right">0,393</td><td align="right">0,417</td><td align="right">0,028</td></tr>
 </table>
 
@@ -9516,20 +9516,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.5.4
 
-Δ: 2830389,167 ns
+Δ: 2797748,030 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,2 %</td><td align="right" bgcolor="#FF4949">+40,7 %</td><td align="right" bgcolor="#FF4949">+5,3 %</td><td align="right" bgcolor="#FF4949">+27,6 %</td><td align="right" bgcolor="#A8D08D">-85,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,6 %</td><td align="right" bgcolor="#FF4949">+48,6 %</td><td align="right" bgcolor="#FF4949">+4,3 %</td><td align="right" bgcolor="#FF4949">+23,6 %</td><td align="right" bgcolor="#A8D08D">-85,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1750030,553 ns</td><td align="right" bgcolor="#FFFFFF">1746174,877 ns (Δ = -3855,677 ns)</td><td align="right" bgcolor="#FF4949">2457672,322 ns (Δ = +711497,445 ns)</td><td align="right" bgcolor="#FF4949">2588305,413 ns (Δ = +130633,091 ns)</td><td align="right" bgcolor="#FF4949">3303770,433 ns (Δ = +715465,020 ns)</td><td align="right" bgcolor="#A8D08D">473381,267 ns (Δ = -2830389,167 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1769762,053 ns</td><td align="right" bgcolor="#A8D08D">1705806,389 ns (Δ = -63955,664 ns)</td><td align="right" bgcolor="#FF4949">2535287,523 ns (Δ = +829481,134 ns)</td><td align="right" bgcolor="#FF4949">2643359,840 ns (Δ = +108072,317 ns)</td><td align="right" bgcolor="#FF4949">3266367,590 ns (Δ = +623007,750 ns)</td><td align="right" bgcolor="#A8D08D">468619,560 ns (Δ = -2797748,030 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1750,031 μs</td><td align="right" bgcolor="#FFFFFF">1746,175 μs (Δ = -3,856 μs)</td><td align="right" bgcolor="#FF4949">2457,672 μs (Δ = +711,497 μs)</td><td align="right" bgcolor="#FF4949">2588,305 μs (Δ = +130,633 μs)</td><td align="right" bgcolor="#FF4949">3303,770 μs (Δ = +715,465 μs)</td><td align="right" bgcolor="#A8D08D">473,381 μs (Δ = -2830,389 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1769,762 μs</td><td align="right" bgcolor="#A8D08D">1705,806 μs (Δ = -63,956 μs)</td><td align="right" bgcolor="#FF4949">2535,288 μs (Δ = +829,481 μs)</td><td align="right" bgcolor="#FF4949">2643,360 μs (Δ = +108,072 μs)</td><td align="right" bgcolor="#FF4949">3266,368 μs (Δ = +623,008 μs)</td><td align="right" bgcolor="#A8D08D">468,620 μs (Δ = -2797,748 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">1,750 ms</td><td align="right" bgcolor="#FFFFFF">1,746 ms (Δ = -0,004 ms)</td><td align="right" bgcolor="#FF4949">2,458 ms (Δ = +0,711 ms)</td><td align="right" bgcolor="#FF4949">2,588 ms (Δ = +0,131 ms)</td><td align="right" bgcolor="#FF4949">3,304 ms (Δ = +0,715 ms)</td><td align="right" bgcolor="#A8D08D">0,473 ms (Δ = -2,830 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">1,770 ms</td><td align="right" bgcolor="#A8D08D">1,706 ms (Δ = -0,064 ms)</td><td align="right" bgcolor="#FF4949">2,535 ms (Δ = +0,829 ms)</td><td align="right" bgcolor="#FF4949">2,643 ms (Δ = +0,108 ms)</td><td align="right" bgcolor="#FF4949">3,266 ms (Δ = +0,623 ms)</td><td align="right" bgcolor="#A8D08D">0,469 ms (Δ = -2,798 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -9568,11 +9568,11 @@ Slowest: 4.5.4
 <tr>
 <td>Gen 0</td><td align="right">2850</td><td align="right">2850</td><td align="right">2890</td><td align="right">2960</td><td align="right">3060</td><td align="right">40</td></tr>
 <tr>
-<td>Gen 1</td><td align="right">470</td><td align="right">470</td><td align="right">469</td><td align="right">487</td><td align="right">503</td><td align="right">10</td></tr>
+<td>Gen 1</td><td align="right">470</td><td align="right">470</td><td align="right">468</td><td align="right">488</td><td align="right">502</td><td align="right">10</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">1799924</td><td align="right">1799766</td><td align="right">1825935</td><td align="right">1868288</td><td align="right">1930214</td><td align="right">29260</td><tr>
-<td>Allocated Kilobytes</td><td align="right">1757,738</td><td align="right">1757,584</td><td align="right">1783,140</td><td align="right">1824,500</td><td align="right">1884,975</td><td align="right">28,574</td><tr>
+<td>Allocated Bytes</td><td align="right">1799924</td><td align="right">1799766</td><td align="right">1825939</td><td align="right">1868250</td><td align="right">1930197</td><td align="right">29256</td><tr>
+<td>Allocated Kilobytes</td><td align="right">1757,738</td><td align="right">1757,584</td><td align="right">1783,144</td><td align="right">1824,463</td><td align="right">1884,958</td><td align="right">28,570</td><tr>
 <td>Allocated Megabytes</td><td align="right">1,717</td><td align="right">1,716</td><td align="right">1,741</td><td align="right">1,782</td><td align="right">1,841</td><td align="right">0,028</td></tr>
 </table>
 
@@ -9583,24 +9583,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
-Slowest: 4.2.0
+Slowest: 4.3.0
 
-Δ: 1905,565 ns
+Δ: 1849,040 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,2 %</td><td align="right" bgcolor="#FF4949">+4,0 %</td><td align="right" bgcolor="#A8D08D">-65,7 %</td><td align="right" bgcolor="#FF4949">+4,0 %</td><td align="right" bgcolor="#A8D08D">-4,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,3 %</td><td align="right" bgcolor="#A8D08D">-3,4 %</td><td align="right" bgcolor="#A8D08D">-63,5 %</td><td align="right" bgcolor="#A8D08D">-6,0 %</td><td align="right" bgcolor="#FF4949">+6,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">2880,142 ns</td><td align="right" bgcolor="#A8D08D">2758,947 ns (Δ = -121,195 ns)</td><td align="right" bgcolor="#FF4949">2868,860 ns (Δ = +109,913 ns)</td><td align="right" bgcolor="#A8D08D">983,480 ns (Δ = -1885,380 ns)</td><td align="right" bgcolor="#FF4949">1022,823 ns (Δ = +39,343 ns)</td><td align="right" bgcolor="#A8D08D">974,577 ns (Δ = -48,247 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">2702,735 ns</td><td align="right" bgcolor="#FFFFFF">2765,287 ns (Δ = +62,552 ns)</td><td align="right" bgcolor="#A8D08D">2670,450 ns (Δ = -94,837 ns)</td><td align="right" bgcolor="#A8D08D">974,850 ns (Δ = -1695,600 ns)</td><td align="right" bgcolor="#A8D08D">916,247 ns (Δ = -58,603 ns)</td><td align="right" bgcolor="#FF4949">977,153 ns (Δ = +60,907 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">2,880 μs</td><td align="right" bgcolor="#A8D08D">2,759 μs (Δ = -0,121 μs)</td><td align="right" bgcolor="#FF4949">2,869 μs (Δ = +0,110 μs)</td><td align="right" bgcolor="#A8D08D">0,983 μs (Δ = -1,885 μs)</td><td align="right" bgcolor="#FF4949">1,023 μs (Δ = +0,039 μs)</td><td align="right" bgcolor="#A8D08D">0,975 μs (Δ = -0,048 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">2,703 μs</td><td align="right" bgcolor="#FFFFFF">2,765 μs (Δ = +0,063 μs)</td><td align="right" bgcolor="#A8D08D">2,670 μs (Δ = -0,095 μs)</td><td align="right" bgcolor="#A8D08D">0,975 μs (Δ = -1,696 μs)</td><td align="right" bgcolor="#A8D08D">0,916 μs (Δ = -0,059 μs)</td><td align="right" bgcolor="#FF4949">0,977 μs (Δ = +0,061 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = -0,002 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = -0,002 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -9654,22 +9654,22 @@ Slowest: 4.2.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.5.0
+Slowest: 4.4.0
 
-Δ: 32,616 ns
+Δ: 24,904 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+6,0 %</td><td align="right" bgcolor="#A8D08D">-8,5 %</td><td align="right" bgcolor="#FF4949">+11,1 %</td><td align="right" bgcolor="#A8D08D">-6,4 %</td><td align="right" bgcolor="#A8D08D">-9,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,3 %</td><td align="right" bgcolor="#FF4949">+7,2 %</td><td align="right" bgcolor="#A8D08D">-6,2 %</td><td align="right" bgcolor="#A8D08D">-4,6 %</td><td align="right" bgcolor="#FFFFFF">-1,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">201,893 ns</td><td align="right" bgcolor="#FF4949">214,033 ns (Δ = +12,140 ns)</td><td align="right" bgcolor="#A8D08D">195,867 ns (Δ = -18,167 ns)</td><td align="right" bgcolor="#FF4949">217,617 ns (Δ = +21,750 ns)</td><td align="right" bgcolor="#A8D08D">203,797 ns (Δ = -13,820 ns)</td><td align="right" bgcolor="#A8D08D">185,001 ns (Δ = -18,796 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">194,595 ns</td><td align="right" bgcolor="#FFFFFF">195,231 ns (Δ = +0,636 ns)</td><td align="right" bgcolor="#FF4949">209,353 ns (Δ = +14,122 ns)</td><td align="right" bgcolor="#A8D08D">196,387 ns (Δ = -12,967 ns)</td><td align="right" bgcolor="#A8D08D">187,349 ns (Δ = -9,038 ns)</td><td align="right" bgcolor="#FFFFFF">184,449 ns (Δ = -2,900 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,202 μs</td><td align="right" bgcolor="#FF4949">0,214 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#A8D08D">0,196 μs (Δ = -0,018 μs)</td><td align="right" bgcolor="#FF4949">0,218 μs (Δ = +0,022 μs)</td><td align="right" bgcolor="#A8D08D">0,204 μs (Δ = -0,014 μs)</td><td align="right" bgcolor="#A8D08D">0,185 μs (Δ = -0,019 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,195 μs</td><td align="right" bgcolor="#FFFFFF">0,195 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,209 μs (Δ = +0,014 μs)</td><td align="right" bgcolor="#A8D08D">0,196 μs (Δ = -0,013 μs)</td><td align="right" bgcolor="#A8D08D">0,187 μs (Δ = -0,009 μs)</td><td align="right" bgcolor="#FFFFFF">0,184 μs (Δ = -0,003 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -9721,24 +9721,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.3.0**
+Fastest: **4.4.0**
 
 Slowest: 4.5.4
 
-Δ: 609,670 ns
+Δ: 850,078 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,5 %</td><td align="right" bgcolor="#FF4949">+4,1 %</td><td align="right" bgcolor="#FF4949">+8,9 %</td><td align="right" bgcolor="#FF4949">+4,7 %</td><td align="right" bgcolor="#A8D08D">-4,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-8,3 %</td><td align="right" bgcolor="#A8D08D">-4,0 %</td><td align="right" bgcolor="#FF4949">+19,7 %</td><td align="right" bgcolor="#FF4949">+6,2 %</td><td align="right" bgcolor="#A8D08D">-7,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3422,362 ns</td><td align="right" bgcolor="#A8D08D">3268,417 ns (Δ = -153,946 ns)</td><td align="right" bgcolor="#FF4949">3401,393 ns (Δ = +132,977 ns)</td><td align="right" bgcolor="#FF4949">3702,777 ns (Δ = +301,383 ns)</td><td align="right" bgcolor="#FF4949">3878,087 ns (Δ = +175,310 ns)</td><td align="right" bgcolor="#A8D08D">3689,183 ns (Δ = -188,903 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3560,847 ns</td><td align="right" bgcolor="#A8D08D">3263,913 ns (Δ = -296,933 ns)</td><td align="right" bgcolor="#A8D08D">3134,288 ns (Δ = -129,625 ns)</td><td align="right" bgcolor="#FF4949">3752,790 ns (Δ = +618,502 ns)</td><td align="right" bgcolor="#FF4949">3984,367 ns (Δ = +231,577 ns)</td><td align="right" bgcolor="#A8D08D">3696,325 ns (Δ = -288,042 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,422 μs</td><td align="right" bgcolor="#A8D08D">3,268 μs (Δ = -0,154 μs)</td><td align="right" bgcolor="#FF4949">3,401 μs (Δ = +0,133 μs)</td><td align="right" bgcolor="#FF4949">3,703 μs (Δ = +0,301 μs)</td><td align="right" bgcolor="#FF4949">3,878 μs (Δ = +0,175 μs)</td><td align="right" bgcolor="#A8D08D">3,689 μs (Δ = -0,189 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,561 μs</td><td align="right" bgcolor="#A8D08D">3,264 μs (Δ = -0,297 μs)</td><td align="right" bgcolor="#A8D08D">3,134 μs (Δ = -0,130 μs)</td><td align="right" bgcolor="#FF4949">3,753 μs (Δ = +0,619 μs)</td><td align="right" bgcolor="#FF4949">3,984 μs (Δ = +0,232 μs)</td><td align="right" bgcolor="#A8D08D">3,696 μs (Δ = -0,288 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -9792,22 +9792,22 @@ Slowest: 4.5.4
 
 Fastest: **5.0.0**
 
-Slowest: 4.5.4
+Slowest: 4.2.0
 
-Δ: 35,898 ns
+Δ: 27,303 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,6 %</td><td align="right" bgcolor="#FF4949">+3,6 %</td><td align="right" bgcolor="#FFFFFF">-2,0 %</td><td align="right" bgcolor="#FF4949">+12,9 %</td><td align="right" bgcolor="#A8D08D">-16,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-10,1 %</td><td align="right" bgcolor="#FF4949">+7,8 %</td><td align="right" bgcolor="#A8D08D">-5,2 %</td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#A8D08D">-6,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">191,350 ns</td><td align="right" bgcolor="#FFFFFF">194,378 ns (Δ = +3,028 ns)</td><td align="right" bgcolor="#FF4949">201,296 ns (Δ = +6,917 ns)</td><td align="right" bgcolor="#FFFFFF">197,304 ns (Δ = -3,991 ns)</td><td align="right" bgcolor="#FF4949">222,730 ns (Δ = +25,426 ns)</td><td align="right" bgcolor="#A8D08D">186,832 ns (Δ = -35,898 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">214,990 ns</td><td align="right" bgcolor="#A8D08D">193,206 ns (Δ = -21,784 ns)</td><td align="right" bgcolor="#FF4949">208,180 ns (Δ = +14,974 ns)</td><td align="right" bgcolor="#A8D08D">197,386 ns (Δ = -10,794 ns)</td><td align="right" bgcolor="#FFFFFF">200,105 ns (Δ = +2,719 ns)</td><td align="right" bgcolor="#A8D08D">187,687 ns (Δ = -12,418 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,191 μs</td><td align="right" bgcolor="#FFFFFF">0,194 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FF4949">0,201 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#FFFFFF">0,197 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FF4949">0,223 μs (Δ = +0,025 μs)</td><td align="right" bgcolor="#A8D08D">0,187 μs (Δ = -0,036 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,215 μs</td><td align="right" bgcolor="#A8D08D">0,193 μs (Δ = -0,022 μs)</td><td align="right" bgcolor="#FF4949">0,208 μs (Δ = +0,015 μs)</td><td align="right" bgcolor="#A8D08D">0,197 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#FFFFFF">0,200 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,188 μs (Δ = -0,012 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -9861,22 +9861,22 @@ Slowest: 4.5.4
 
 Fastest: **4.3.0**
 
-Slowest: 4.5.0
+Slowest: 4.5.4
 
-Δ: 940,927 ns
+Δ: 1662,658 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-5,6 %</td><td align="right" bgcolor="#FF4949">+10,0 %</td><td align="right" bgcolor="#FFFFFF">+3,0 %</td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#A8D08D">-6,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-15,6 %</td><td align="right" bgcolor="#FFFFFF">+3,0 %</td><td align="right" bgcolor="#FF4949">+10,1 %</td><td align="right" bgcolor="#FF4949">+9,4 %</td><td align="right" bgcolor="#FFFFFF">-2,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7485,247 ns</td><td align="right" bgcolor="#A8D08D">7062,670 ns (Δ = -422,577 ns)</td><td align="right" bgcolor="#FF4949">7769,270 ns (Δ = +706,600 ns)</td><td align="right" bgcolor="#FFFFFF">8003,597 ns (Δ = +234,327 ns)</td><td align="right" bgcolor="#FFFFFF">7923,780 ns (Δ = -79,817 ns)</td><td align="right" bgcolor="#A8D08D">7426,247 ns (Δ = -497,533 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">8177,163 ns</td><td align="right" bgcolor="#A8D08D">6904,093 ns (Δ = -1273,070 ns)</td><td align="right" bgcolor="#FFFFFF">7111,807 ns (Δ = +207,713 ns)</td><td align="right" bgcolor="#FF4949">7831,034 ns (Δ = +719,228 ns)</td><td align="right" bgcolor="#FF4949">8566,751 ns (Δ = +735,717 ns)</td><td align="right" bgcolor="#FFFFFF">8367,237 ns (Δ = -199,514 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">7,485 μs</td><td align="right" bgcolor="#A8D08D">7,063 μs (Δ = -0,423 μs)</td><td align="right" bgcolor="#FF4949">7,769 μs (Δ = +0,707 μs)</td><td align="right" bgcolor="#FFFFFF">8,004 μs (Δ = +0,234 μs)</td><td align="right" bgcolor="#FFFFFF">7,924 μs (Δ = -0,080 μs)</td><td align="right" bgcolor="#A8D08D">7,426 μs (Δ = -0,498 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">8,177 μs</td><td align="right" bgcolor="#A8D08D">6,904 μs (Δ = -1,273 μs)</td><td align="right" bgcolor="#FFFFFF">7,112 μs (Δ = +0,208 μs)</td><td align="right" bgcolor="#FF4949">7,831 μs (Δ = +0,719 μs)</td><td align="right" bgcolor="#FF4949">8,567 μs (Δ = +0,736 μs)</td><td align="right" bgcolor="#FFFFFF">8,367 μs (Δ = -0,200 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,007 ms</td><td align="right" bgcolor="#A8D08D">0,007 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,008 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,007 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,008 ms</td><td align="right" bgcolor="#A8D08D">0,007 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,007 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,008 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FF4949">0,009 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -9918,8 +9918,8 @@ Slowest: 4.5.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">2736</td><td align="right">2687</td><td align="right">2687</td><td align="right">3149</td><td align="right">3145</td><td align="right">3006</td><tr>
-<td>Allocated Kilobytes</td><td align="right">2,672</td><td align="right">2,624</td><td align="right">2,624</td><td align="right">3,075</td><td align="right">3,071</td><td align="right">2,936</td><tr>
+<td>Allocated Bytes</td><td align="right">2736</td><td align="right">2687</td><td align="right">2687</td><td align="right">3145</td><td align="right">3145</td><td align="right">3006</td><tr>
+<td>Allocated Kilobytes</td><td align="right">2,672</td><td align="right">2,624</td><td align="right">2,624</td><td align="right">3,071</td><td align="right">3,071</td><td align="right">2,936</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,003</td><td align="right">0,003</td><td align="right">0,003</td><td align="right">0,003</td><td align="right">0,003</td><td align="right">0,003</td></tr>
 </table>
 
@@ -9930,24 +9930,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
-Slowest: 4.3.0
+Slowest: 4.4.0
 
-Δ: 11,311 ns
+Δ: 1,616 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+37,5 %</td><td align="right" bgcolor="#A8D08D">-27,3 %</td><td align="right" bgcolor="#FFFFFF">-0,9 %</td><td align="right" bgcolor="#FFFFFF">-2,1 %</td><td align="right" bgcolor="#FFFFFF">-1,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FFFFFF">+2,5 %</td><td align="right" bgcolor="#FFFFFF">-1,8 %</td><td align="right" bgcolor="#A8D08D">-4,2 %</td><td align="right" bgcolor="#FFFFFF">+3,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">27,011 ns</td><td align="right" bgcolor="#FF4949">37,133 ns (Δ = +10,123 ns)</td><td align="right" bgcolor="#A8D08D">26,982 ns (Δ = -10,152 ns)</td><td align="right" bgcolor="#FFFFFF">26,731 ns (Δ = -0,251 ns)</td><td align="right" bgcolor="#FFFFFF">26,174 ns (Δ = -0,557 ns)</td><td align="right" bgcolor="#FFFFFF">25,822 ns (Δ = -0,352 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">26,940 ns</td><td align="right" bgcolor="#FFFFFF">26,753 ns (Δ = -0,187 ns)</td><td align="right" bgcolor="#FFFFFF">27,418 ns (Δ = +0,664 ns)</td><td align="right" bgcolor="#FFFFFF">26,920 ns (Δ = -0,498 ns)</td><td align="right" bgcolor="#A8D08D">25,802 ns (Δ = -1,118 ns)</td><td align="right" bgcolor="#FFFFFF">26,600 ns (Δ = +0,798 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,027 μs</td><td align="right" bgcolor="#FF4949">0,037 μs (Δ = +0,010 μs)</td><td align="right" bgcolor="#A8D08D">0,027 μs (Δ = -0,010 μs)</td><td align="right" bgcolor="#FFFFFF">0,027 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,026 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,026 μs (Δ = 0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,027 μs</td><td align="right" bgcolor="#FFFFFF">0,027 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,027 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,027 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,026 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,027 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10003,20 +10003,20 @@ Fastest: **4.5.4**
 
 Slowest: 4.3.0
 
-Δ: 2,276 ns
+Δ: 1,133 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,1 %</td><td align="right" bgcolor="#A8D08D">-7,0 %</td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#A8D08D">-4,9 %</td><td align="right" bgcolor="#FFFFFF">+0,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,0 %</td><td align="right" bgcolor="#FFFFFF">-1,3 %</td><td align="right" bgcolor="#FFFFFF">-1,9 %</td><td align="right" bgcolor="#FFFFFF">-2,6 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">20,924 ns</td><td align="right" bgcolor="#FFFFFF">20,944 ns (Δ = +0,020 ns)</td><td align="right" bgcolor="#A8D08D">19,477 ns (Δ = -1,468 ns)</td><td align="right" bgcolor="#FFFFFF">19,626 ns (Δ = +0,149 ns)</td><td align="right" bgcolor="#A8D08D">18,669 ns (Δ = -0,957 ns)</td><td align="right" bgcolor="#FFFFFF">18,833 ns (Δ = +0,164 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">18,993 ns</td><td align="right" bgcolor="#FF4949">19,763 ns (Δ = +0,769 ns)</td><td align="right" bgcolor="#FFFFFF">19,503 ns (Δ = -0,259 ns)</td><td align="right" bgcolor="#FFFFFF">19,132 ns (Δ = -0,372 ns)</td><td align="right" bgcolor="#FFFFFF">18,630 ns (Δ = -0,502 ns)</td><td align="right" bgcolor="#FFFFFF">18,910 ns (Δ = +0,280 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,021 μs</td><td align="right" bgcolor="#FFFFFF">0,021 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,019 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,020 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,019 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,019 μs (Δ = +0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,019 μs</td><td align="right" bgcolor="#FF4949">0,020 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,020 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,019 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,019 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,019 μs (Δ = +0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10068,24 +10068,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **4.5.0**
 
-Slowest: 4.5.4
+Slowest: 4.4.0
 
-Δ: 17,767 ns
+Δ: 3,450 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+14,9 %</td><td align="right" bgcolor="#FFFFFF">+0,3 %</td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#FF4949">+65,7 %</td><td align="right" bgcolor="#A8D08D">-38,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,5 %</td><td align="right" bgcolor="#FF4949">+7,6 %</td><td align="right" bgcolor="#A8D08D">-14,1 %</td><td align="right" bgcolor="#FFFFFF">+2,8 %</td><td align="right" bgcolor="#FFFFFF">-0,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">19,213 ns</td><td align="right" bgcolor="#FF4949">22,077 ns (Δ = +2,863 ns)</td><td align="right" bgcolor="#FFFFFF">22,136 ns (Δ = +0,059 ns)</td><td align="right" bgcolor="#FFFFFF">22,311 ns (Δ = +0,176 ns)</td><td align="right" bgcolor="#FF4949">36,980 ns (Δ = +14,669 ns)</td><td align="right" bgcolor="#A8D08D">22,667 ns (Δ = -14,313 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">23,816 ns</td><td align="right" bgcolor="#A8D08D">22,750 ns (Δ = -1,066 ns)</td><td align="right" bgcolor="#FF4949">24,490 ns (Δ = +1,740 ns)</td><td align="right" bgcolor="#A8D08D">21,040 ns (Δ = -3,450 ns)</td><td align="right" bgcolor="#FFFFFF">21,629 ns (Δ = +0,589 ns)</td><td align="right" bgcolor="#FFFFFF">21,563 ns (Δ = -0,066 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,019 μs</td><td align="right" bgcolor="#FF4949">0,022 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,022 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,022 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,037 μs (Δ = +0,015 μs)</td><td align="right" bgcolor="#A8D08D">0,023 μs (Δ = -0,014 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,024 μs</td><td align="right" bgcolor="#A8D08D">0,023 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,024 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,021 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,022 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,022 μs (Δ = 0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10137,24 +10137,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.0**
 
-Slowest: 4.3.0
+Slowest: 4.5.4
 
-Δ: 1,718 ns
+Δ: 0,602 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+5,6 %</td><td align="right" bgcolor="#A8D08D">-5,2 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#FFFFFF">+1,3 %</td><td align="right" bgcolor="#FFFFFF">-1,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#FFFFFF">+1,3 %</td><td align="right" bgcolor="#FFFFFF">-1,3 %</td><td align="right" bgcolor="#FFFFFF">+2,0 %</td><td align="right" bgcolor="#FFFFFF">-1,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">30,097 ns</td><td align="right" bgcolor="#FF4949">31,791 ns (Δ = +1,694 ns)</td><td align="right" bgcolor="#A8D08D">30,136 ns (Δ = -1,656 ns)</td><td align="right" bgcolor="#FFFFFF">30,102 ns (Δ = -0,033 ns)</td><td align="right" bgcolor="#FFFFFF">30,497 ns (Δ = +0,394 ns)</td><td align="right" bgcolor="#FFFFFF">30,073 ns (Δ = -0,423 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">30,693 ns</td><td align="right" bgcolor="#FFFFFF">30,651 ns (Δ = -0,043 ns)</td><td align="right" bgcolor="#FFFFFF">31,043 ns (Δ = +0,392 ns)</td><td align="right" bgcolor="#FFFFFF">30,641 ns (Δ = -0,403 ns)</td><td align="right" bgcolor="#FFFFFF">31,243 ns (Δ = +0,602 ns)</td><td align="right" bgcolor="#FFFFFF">30,844 ns (Δ = -0,399 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,030 μs</td><td align="right" bgcolor="#FF4949">0,032 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,030 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,030 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,030 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,030 μs (Δ = 0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,031 μs</td><td align="right" bgcolor="#FFFFFF">0,031 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,031 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,031 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,031 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,031 μs (Δ = 0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10206,24 +10206,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
-Slowest: 4.3.0
+Slowest: 4.5.0
 
-Δ: 135,757 ns
+Δ: 22,869 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+40,6 %</td><td align="right" bgcolor="#A8D08D">-28,6 %</td><td align="right" bgcolor="#FF4949">+5,8 %</td><td align="right" bgcolor="#A8D08D">-7,9 %</td><td align="right" bgcolor="#FF4949">+6,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,8 %</td><td align="right" bgcolor="#FF4949">+4,7 %</td><td align="right" bgcolor="#FFFFFF">+2,4 %</td><td align="right" bgcolor="#A8D08D">-6,6 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">317,350 ns</td><td align="right" bgcolor="#FF4949">446,103 ns (Δ = +128,753 ns)</td><td align="right" bgcolor="#A8D08D">318,440 ns (Δ = -127,663 ns)</td><td align="right" bgcolor="#FF4949">336,873 ns (Δ = +18,433 ns)</td><td align="right" bgcolor="#A8D08D">310,347 ns (Δ = -26,527 ns)</td><td align="right" bgcolor="#FF4949">329,277 ns (Δ = +18,930 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">311,913 ns</td><td align="right" bgcolor="#A8D08D">300,190 ns (Δ = -11,723 ns)</td><td align="right" bgcolor="#FF4949">314,303 ns (Δ = +14,113 ns)</td><td align="right" bgcolor="#FFFFFF">321,923 ns (Δ = +7,620 ns)</td><td align="right" bgcolor="#A8D08D">300,580 ns (Δ = -21,343 ns)</td><td align="right" bgcolor="#FFFFFF">299,054 ns (Δ = -1,526 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,317 μs</td><td align="right" bgcolor="#FF4949">0,446 μs (Δ = +0,129 μs)</td><td align="right" bgcolor="#A8D08D">0,318 μs (Δ = -0,128 μs)</td><td align="right" bgcolor="#FF4949">0,337 μs (Δ = +0,018 μs)</td><td align="right" bgcolor="#A8D08D">0,310 μs (Δ = -0,027 μs)</td><td align="right" bgcolor="#FF4949">0,329 μs (Δ = +0,019 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,312 μs</td><td align="right" bgcolor="#A8D08D">0,300 μs (Δ = -0,012 μs)</td><td align="right" bgcolor="#FF4949">0,314 μs (Δ = +0,014 μs)</td><td align="right" bgcolor="#FFFFFF">0,322 μs (Δ = +0,008 μs)</td><td align="right" bgcolor="#A8D08D">0,301 μs (Δ = -0,021 μs)</td><td align="right" bgcolor="#FFFFFF">0,299 μs (Δ = -0,002 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10275,24 +10275,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **4.5.4**
 
-Slowest: 4.4.0
+Slowest: 4.2.0
 
-Δ: 19,258 ns
+Δ: 2,027 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+17,6 %</td><td align="right" bgcolor="#FFFFFF">+2,8 %</td><td align="right" bgcolor="#A8D08D">-15,6 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#FF4949">+17,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#FFFFFF">+0,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">92,235 ns</td><td align="right" bgcolor="#FF4949">108,467 ns (Δ = +16,232 ns)</td><td align="right" bgcolor="#FFFFFF">111,493 ns (Δ = +3,027 ns)</td><td align="right" bgcolor="#A8D08D">94,110 ns (Δ = -17,383 ns)</td><td align="right" bgcolor="#FFFFFF">94,507 ns (Δ = +0,397 ns)</td><td align="right" bgcolor="#FF4949">111,010 ns (Δ = +16,503 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">95,302 ns</td><td align="right" bgcolor="#FFFFFF">94,513 ns (Δ = -0,789 ns)</td><td align="right" bgcolor="#FFFFFF">94,658 ns (Δ = +0,144 ns)</td><td align="right" bgcolor="#FFFFFF">94,013 ns (Δ = -0,644 ns)</td><td align="right" bgcolor="#FFFFFF">93,276 ns (Δ = -0,738 ns)</td><td align="right" bgcolor="#FFFFFF">93,398 ns (Δ = +0,122 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,092 μs</td><td align="right" bgcolor="#FF4949">0,108 μs (Δ = +0,016 μs)</td><td align="right" bgcolor="#FFFFFF">0,111 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,094 μs (Δ = -0,017 μs)</td><td align="right" bgcolor="#FFFFFF">0,095 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,111 μs (Δ = +0,017 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,095 μs</td><td align="right" bgcolor="#FFFFFF">0,095 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,095 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,094 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,093 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,093 μs (Δ = +0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10344,24 +10344,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **5.0.0**
 
-Slowest: 4.4.0
+Slowest: 4.3.0
 
-Δ: 185,249 ns
+Δ: 313,730 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,9 %</td><td align="right" bgcolor="#FFFFFF">+1,9 %</td><td align="right" bgcolor="#FFFFFF">-1,1 %</td><td align="right" bgcolor="#FFFFFF">-2,3 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,3 %</td><td align="right" bgcolor="#A8D08D">-5,9 %</td><td align="right" bgcolor="#FFFFFF">+2,5 %</td><td align="right" bgcolor="#FFFFFF">-2,1 %</td><td align="right" bgcolor="#FFFFFF">-2,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3765,034 ns</td><td align="right" bgcolor="#FFFFFF">3876,098 ns (Δ = +111,064 ns)</td><td align="right" bgcolor="#FFFFFF">3950,283 ns (Δ = +74,185 ns)</td><td align="right" bgcolor="#FFFFFF">3905,673 ns (Δ = -44,610 ns)</td><td align="right" bgcolor="#FFFFFF">3816,900 ns (Δ = -88,773 ns)</td><td align="right" bgcolor="#FFFFFF">3840,347 ns (Δ = +23,447 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3838,307 ns</td><td align="right" bgcolor="#FFFFFF">3928,270 ns (Δ = +89,963 ns)</td><td align="right" bgcolor="#A8D08D">3695,603 ns (Δ = -232,667 ns)</td><td align="right" bgcolor="#FFFFFF">3788,326 ns (Δ = +92,722 ns)</td><td align="right" bgcolor="#FFFFFF">3708,783 ns (Δ = -79,543 ns)</td><td align="right" bgcolor="#FFFFFF">3614,540 ns (Δ = -94,243 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,765 μs</td><td align="right" bgcolor="#FFFFFF">3,876 μs (Δ = +0,111 μs)</td><td align="right" bgcolor="#FFFFFF">3,950 μs (Δ = +0,074 μs)</td><td align="right" bgcolor="#FFFFFF">3,906 μs (Δ = -0,045 μs)</td><td align="right" bgcolor="#FFFFFF">3,817 μs (Δ = -0,089 μs)</td><td align="right" bgcolor="#FFFFFF">3,840 μs (Δ = +0,023 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,838 μs</td><td align="right" bgcolor="#FFFFFF">3,928 μs (Δ = +0,090 μs)</td><td align="right" bgcolor="#A8D08D">3,696 μs (Δ = -0,233 μs)</td><td align="right" bgcolor="#FFFFFF">3,788 μs (Δ = +0,093 μs)</td><td align="right" bgcolor="#FFFFFF">3,709 μs (Δ = -0,080 μs)</td><td align="right" bgcolor="#FFFFFF">3,615 μs (Δ = -0,094 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10417,20 +10417,20 @@ Fastest: **4.4.0**
 
 Slowest: 5.0.0
 
-Δ: 633,569 ns
+Δ: 606,237 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FFFFFF">-0,3 %</td><td align="right" bgcolor="#FFFFFF">+0,5 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#FF4949">+6,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,3 %</td><td align="right" bgcolor="#FFFFFF">-0,6 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FFFFFF">+2,2 %</td><td align="right" bgcolor="#FF4949">+4,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9070,773 ns</td><td align="right" bgcolor="#FFFFFF">9010,031 ns (Δ = -60,742 ns)</td><td align="right" bgcolor="#FFFFFF">8981,653 ns (Δ = -28,378 ns)</td><td align="right" bgcolor="#FFFFFF">9024,409 ns (Δ = +42,756 ns)</td><td align="right" bgcolor="#FFFFFF">9064,731 ns (Δ = +40,322 ns)</td><td align="right" bgcolor="#FF4949">9615,222 ns (Δ = +550,491 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9031,789 ns</td><td align="right" bgcolor="#FFFFFF">9004,917 ns (Δ = -26,872 ns)</td><td align="right" bgcolor="#FFFFFF">8949,180 ns (Δ = -55,737 ns)</td><td align="right" bgcolor="#FFFFFF">8970,596 ns (Δ = +21,416 ns)</td><td align="right" bgcolor="#FFFFFF">9172,027 ns (Δ = +201,431 ns)</td><td align="right" bgcolor="#FF4949">9555,417 ns (Δ = +383,390 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">9,071 μs</td><td align="right" bgcolor="#FFFFFF">9,010 μs (Δ = -0,061 μs)</td><td align="right" bgcolor="#FFFFFF">8,982 μs (Δ = -0,028 μs)</td><td align="right" bgcolor="#FFFFFF">9,024 μs (Δ = +0,043 μs)</td><td align="right" bgcolor="#FFFFFF">9,065 μs (Δ = +0,040 μs)</td><td align="right" bgcolor="#FF4949">9,615 μs (Δ = +0,550 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">9,032 μs</td><td align="right" bgcolor="#FFFFFF">9,005 μs (Δ = -0,027 μs)</td><td align="right" bgcolor="#FFFFFF">8,949 μs (Δ = -0,056 μs)</td><td align="right" bgcolor="#FFFFFF">8,971 μs (Δ = +0,021 μs)</td><td align="right" bgcolor="#FFFFFF">9,172 μs (Δ = +0,201 μs)</td><td align="right" bgcolor="#FF4949">9,555 μs (Δ = +0,383 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,009 ms</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,010 ms (Δ = +0,001 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,009 ms</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,010 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10484,22 +10484,22 @@ Slowest: 5.0.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.4.0
+Slowest: 4.3.0
 
-Δ: 289,620 ns
+Δ: 190,927 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FF4949">+5,7 %</td><td align="right" bgcolor="#A8D08D">-3,4 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#A8D08D">-4,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,1 %</td><td align="right" bgcolor="#FFFFFF">0,0 %</td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#A8D08D">-3,1 %</td><td align="right" bgcolor="#FFFFFF">-1,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3763,549 ns</td><td align="right" bgcolor="#FFFFFF">3771,330 ns (Δ = +7,781 ns)</td><td align="right" bgcolor="#FF4949">3986,370 ns (Δ = +215,040 ns)</td><td align="right" bgcolor="#A8D08D">3849,780 ns (Δ = -136,590 ns)</td><td align="right" bgcolor="#FFFFFF">3857,961 ns (Δ = +8,181 ns)</td><td align="right" bgcolor="#A8D08D">3696,750 ns (Δ = -161,211 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3756,433 ns</td><td align="right" bgcolor="#FFFFFF">3836,720 ns (Δ = +80,287 ns)</td><td align="right" bgcolor="#FFFFFF">3834,898 ns (Δ = -1,822 ns)</td><td align="right" bgcolor="#FFFFFF">3809,940 ns (Δ = -24,958 ns)</td><td align="right" bgcolor="#A8D08D">3690,537 ns (Δ = -119,403 ns)</td><td align="right" bgcolor="#FFFFFF">3645,793 ns (Δ = -44,743 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,764 μs</td><td align="right" bgcolor="#FFFFFF">3,771 μs (Δ = +0,008 μs)</td><td align="right" bgcolor="#FF4949">3,986 μs (Δ = +0,215 μs)</td><td align="right" bgcolor="#A8D08D">3,850 μs (Δ = -0,137 μs)</td><td align="right" bgcolor="#FFFFFF">3,858 μs (Δ = +0,008 μs)</td><td align="right" bgcolor="#A8D08D">3,697 μs (Δ = -0,161 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,756 μs</td><td align="right" bgcolor="#FFFFFF">3,837 μs (Δ = +0,080 μs)</td><td align="right" bgcolor="#FFFFFF">3,835 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">3,810 μs (Δ = -0,025 μs)</td><td align="right" bgcolor="#A8D08D">3,691 μs (Δ = -0,119 μs)</td><td align="right" bgcolor="#FFFFFF">3,646 μs (Δ = -0,045 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10555,20 +10555,20 @@ Fastest: **4.4.0**
 
 Slowest: 5.0.0
 
-Δ: 650,153 ns
+Δ: 1114,673 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,4 %</td><td align="right" bgcolor="#FFFFFF">-1,6 %</td><td align="right" bgcolor="#FF4949">+3,1 %</td><td align="right" bgcolor="#FFFFFF">-2,1 %</td><td align="right" bgcolor="#FF4949">+6,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,3 %</td><td align="right" bgcolor="#FFFFFF">-2,9 %</td><td align="right" bgcolor="#FFFFFF">+1,0 %</td><td align="right" bgcolor="#FFFFFF">+1,7 %</td><td align="right" bgcolor="#FF4949">+9,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9452,849 ns</td><td align="right" bgcolor="#A8D08D">9038,328 ns (Δ = -414,521 ns)</td><td align="right" bgcolor="#FFFFFF">8895,303 ns (Δ = -143,024 ns)</td><td align="right" bgcolor="#FF4949">9172,907 ns (Δ = +277,603 ns)</td><td align="right" bgcolor="#FFFFFF">8981,517 ns (Δ = -191,390 ns)</td><td align="right" bgcolor="#FF4949">9545,457 ns (Δ = +563,940 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9038,320 ns</td><td align="right" bgcolor="#FFFFFF">9156,402 ns (Δ = +118,082 ns)</td><td align="right" bgcolor="#FFFFFF">8891,727 ns (Δ = -264,676 ns)</td><td align="right" bgcolor="#FFFFFF">8978,807 ns (Δ = +87,080 ns)</td><td align="right" bgcolor="#FFFFFF">9132,673 ns (Δ = +153,867 ns)</td><td align="right" bgcolor="#FF4949">10006,400 ns (Δ = +873,727 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">9,453 μs</td><td align="right" bgcolor="#A8D08D">9,038 μs (Δ = -0,415 μs)</td><td align="right" bgcolor="#FFFFFF">8,895 μs (Δ = -0,143 μs)</td><td align="right" bgcolor="#FF4949">9,173 μs (Δ = +0,278 μs)</td><td align="right" bgcolor="#FFFFFF">8,982 μs (Δ = -0,191 μs)</td><td align="right" bgcolor="#FF4949">9,545 μs (Δ = +0,564 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">9,038 μs</td><td align="right" bgcolor="#FFFFFF">9,156 μs (Δ = +0,118 μs)</td><td align="right" bgcolor="#FFFFFF">8,892 μs (Δ = -0,265 μs)</td><td align="right" bgcolor="#FFFFFF">8,979 μs (Δ = +0,087 μs)</td><td align="right" bgcolor="#FFFFFF">9,133 μs (Δ = +0,154 μs)</td><td align="right" bgcolor="#FF4949">10,006 μs (Δ = +0,874 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,009 ms</td><td align="right" bgcolor="#A8D08D">0,009 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,009 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,010 ms (Δ = +0,001 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,009 ms</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,009 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,010 ms (Δ = +0,001 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10622,22 +10622,22 @@ Slowest: 5.0.0
 
 Fastest: **4.5.4**
 
-Slowest: 4.3.0
+Slowest: 4.4.0
 
-Δ: 1,069 ns
+Δ: 1,163 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+5,9 %</td><td align="right" bgcolor="#A8D08D">-5,3 %</td><td align="right" bgcolor="#A8D08D">-5,9 %</td><td align="right" bgcolor="#FFFFFF">-2,2 %</td><td align="right" bgcolor="#FF4949">+13,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+3,8 %</td><td align="right" bgcolor="#FF4949">+5,5 %</td><td align="right" bgcolor="#A8D08D">-11,9 %</td><td align="right" bgcolor="#FFFFFF">-1,5 %</td><td align="right" bgcolor="#FF4949">+9,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7,878 ns</td><td align="right" bgcolor="#FF4949">8,342 ns (Δ = +0,464 ns)</td><td align="right" bgcolor="#A8D08D">7,903 ns (Δ = -0,439 ns)</td><td align="right" bgcolor="#A8D08D">7,433 ns (Δ = -0,470 ns)</td><td align="right" bgcolor="#FFFFFF">7,273 ns (Δ = -0,160 ns)</td><td align="right" bgcolor="#FF4949">8,248 ns (Δ = +0,975 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7,991 ns</td><td align="right" bgcolor="#FF4949">8,297 ns (Δ = +0,306 ns)</td><td align="right" bgcolor="#FF4949">8,753 ns (Δ = +0,457 ns)</td><td align="right" bgcolor="#A8D08D">7,709 ns (Δ = -1,044 ns)</td><td align="right" bgcolor="#FFFFFF">7,590 ns (Δ = -0,119 ns)</td><td align="right" bgcolor="#FF4949">8,286 ns (Δ = +0,696 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,008 μs</td><td align="right" bgcolor="#FF4949">0,008 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,008 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,007 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,007 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,008 μs (Δ = +0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,008 μs</td><td align="right" bgcolor="#FF4949">0,008 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,009 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,008 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,008 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,008 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10689,24 +10689,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **4.5.0**
 
-Slowest: 4.5.4
+Slowest: 4.2.0
 
-Δ: 208,640 ns
+Δ: 169,923 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+11,7 %</td><td align="right" bgcolor="#A8D08D">-7,7 %</td><td align="right" bgcolor="#FFFFFF">0,0 %</td><td align="right" bgcolor="#FF4949">+26,2 %</td><td align="right" bgcolor="#A8D08D">-18,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-14,3 %</td><td align="right" bgcolor="#A8D08D">-4,1 %</td><td align="right" bgcolor="#FFFFFF">-1,9 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">694,030 ns</td><td align="right" bgcolor="#FF4949">774,957 ns (Δ = +80,927 ns)</td><td align="right" bgcolor="#A8D08D">715,127 ns (Δ = -59,830 ns)</td><td align="right" bgcolor="#FFFFFF">714,995 ns (Δ = -0,132 ns)</td><td align="right" bgcolor="#FF4949">902,670 ns (Δ = +187,675 ns)</td><td align="right" bgcolor="#A8D08D">739,903 ns (Δ = -162,767 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">873,520 ns</td><td align="right" bgcolor="#A8D08D">748,287 ns (Δ = -125,233 ns)</td><td align="right" bgcolor="#A8D08D">717,579 ns (Δ = -30,707 ns)</td><td align="right" bgcolor="#FFFFFF">703,597 ns (Δ = -13,983 ns)</td><td align="right" bgcolor="#FFFFFF">707,903 ns (Δ = +4,307 ns)</td><td align="right" bgcolor="#FFFFFF">705,217 ns (Δ = -2,687 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,694 μs</td><td align="right" bgcolor="#FF4949">0,775 μs (Δ = +0,081 μs)</td><td align="right" bgcolor="#A8D08D">0,715 μs (Δ = -0,060 μs)</td><td align="right" bgcolor="#FFFFFF">0,715 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,903 μs (Δ = +0,188 μs)</td><td align="right" bgcolor="#A8D08D">0,740 μs (Δ = -0,163 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,874 μs</td><td align="right" bgcolor="#A8D08D">0,748 μs (Δ = -0,125 μs)</td><td align="right" bgcolor="#A8D08D">0,718 μs (Δ = -0,031 μs)</td><td align="right" bgcolor="#FFFFFF">0,704 μs (Δ = -0,014 μs)</td><td align="right" bgcolor="#FFFFFF">0,708 μs (Δ = +0,004 μs)</td><td align="right" bgcolor="#FFFFFF">0,705 μs (Δ = -0,003 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10758,24 +10758,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
-Slowest: 4.5.0
+Slowest: 4.2.0
 
-Δ: 17,190 ns
+Δ: 37,800 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+3,5 %</td><td align="right" bgcolor="#A8D08D">-3,8 %</td><td align="right" bgcolor="#FF4949">+10,2 %</td><td align="right" bgcolor="#A8D08D">-8,5 %</td><td align="right" bgcolor="#A8D08D">-3,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-15,3 %</td><td align="right" bgcolor="#FFFFFF">+0,1 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#A8D08D">-9,5 %</td><td align="right" bgcolor="#FFFFFF">+2,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">139,889 ns</td><td align="right" bgcolor="#FF4949">144,833 ns (Δ = +4,944 ns)</td><td align="right" bgcolor="#A8D08D">139,292 ns (Δ = -5,541 ns)</td><td align="right" bgcolor="#FF4949">153,537 ns (Δ = +14,244 ns)</td><td align="right" bgcolor="#A8D08D">140,503 ns (Δ = -13,033 ns)</td><td align="right" bgcolor="#A8D08D">136,347 ns (Δ = -4,157 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">161,905 ns</td><td align="right" bgcolor="#A8D08D">137,143 ns (Δ = -24,763 ns)</td><td align="right" bgcolor="#FFFFFF">137,344 ns (Δ = +0,202 ns)</td><td align="right" bgcolor="#FFFFFF">137,150 ns (Δ = -0,194 ns)</td><td align="right" bgcolor="#A8D08D">124,105 ns (Δ = -13,045 ns)</td><td align="right" bgcolor="#FFFFFF">127,407 ns (Δ = +3,302 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,140 μs</td><td align="right" bgcolor="#FF4949">0,145 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#A8D08D">0,139 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FF4949">0,154 μs (Δ = +0,014 μs)</td><td align="right" bgcolor="#A8D08D">0,141 μs (Δ = -0,013 μs)</td><td align="right" bgcolor="#A8D08D">0,136 μs (Δ = -0,004 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,162 μs</td><td align="right" bgcolor="#A8D08D">0,137 μs (Δ = -0,025 μs)</td><td align="right" bgcolor="#FFFFFF">0,137 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,137 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,124 μs (Δ = -0,013 μs)</td><td align="right" bgcolor="#FFFFFF">0,127 μs (Δ = +0,003 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10829,22 +10829,22 @@ Slowest: 4.5.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.3.0
+Slowest: 4.2.0
 
-Δ: 1594,953 ns
+Δ: 470,290 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+44,4 %</td><td align="right" bgcolor="#A8D08D">-30,2 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#A8D08D">-12,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,4 %</td><td align="right" bgcolor="#FFFFFF">+1,8 %</td><td align="right" bgcolor="#FFFFFF">-1,1 %</td><td align="right" bgcolor="#FFFFFF">+2,4 %</td><td align="right" bgcolor="#A8D08D">-15,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">2909,542 ns</td><td align="right" bgcolor="#FF4949">4200,883 ns (Δ = +1291,341 ns)</td><td align="right" bgcolor="#A8D08D">2931,133 ns (Δ = -1269,750 ns)</td><td align="right" bgcolor="#FFFFFF">2974,176 ns (Δ = +43,042 ns)</td><td align="right" bgcolor="#FFFFFF">2985,509 ns (Δ = +11,333 ns)</td><td align="right" bgcolor="#A8D08D">2605,930 ns (Δ = -379,579 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3008,697 ns</td><td align="right" bgcolor="#A8D08D">2906,390 ns (Δ = -102,307 ns)</td><td align="right" bgcolor="#FFFFFF">2958,397 ns (Δ = +52,007 ns)</td><td align="right" bgcolor="#FFFFFF">2927,256 ns (Δ = -31,141 ns)</td><td align="right" bgcolor="#FFFFFF">2998,737 ns (Δ = +71,481 ns)</td><td align="right" bgcolor="#A8D08D">2538,407 ns (Δ = -460,330 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">2,910 μs</td><td align="right" bgcolor="#FF4949">4,201 μs (Δ = +1,291 μs)</td><td align="right" bgcolor="#A8D08D">2,931 μs (Δ = -1,270 μs)</td><td align="right" bgcolor="#FFFFFF">2,974 μs (Δ = +0,043 μs)</td><td align="right" bgcolor="#FFFFFF">2,986 μs (Δ = +0,011 μs)</td><td align="right" bgcolor="#A8D08D">2,606 μs (Δ = -0,380 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,009 μs</td><td align="right" bgcolor="#A8D08D">2,906 μs (Δ = -0,102 μs)</td><td align="right" bgcolor="#FFFFFF">2,958 μs (Δ = +0,052 μs)</td><td align="right" bgcolor="#FFFFFF">2,927 μs (Δ = -0,031 μs)</td><td align="right" bgcolor="#FFFFFF">2,999 μs (Δ = +0,071 μs)</td><td align="right" bgcolor="#A8D08D">2,538 μs (Δ = -0,460 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10900,20 +10900,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.3.0
 
-Δ: 241,090 ns
+Δ: 202,377 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,4 %</td><td align="right" bgcolor="#A8D08D">-3,6 %</td><td align="right" bgcolor="#FFFFFF">+1,3 %</td><td align="right" bgcolor="#FFFFFF">-0,3 %</td><td align="right" bgcolor="#A8D08D">-15,8 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,7 %</td><td align="right" bgcolor="#FFFFFF">-2,8 %</td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#A8D08D">-13,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1280,509 ns</td><td align="right" bgcolor="#FF4949">1337,157 ns (Δ = +56,647 ns)</td><td align="right" bgcolor="#A8D08D">1288,467 ns (Δ = -48,690 ns)</td><td align="right" bgcolor="#FFFFFF">1305,650 ns (Δ = +17,183 ns)</td><td align="right" bgcolor="#FFFFFF">1301,497 ns (Δ = -4,153 ns)</td><td align="right" bgcolor="#A8D08D">1096,067 ns (Δ = -205,430 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1263,051 ns</td><td align="right" bgcolor="#FFFFFF">1297,743 ns (Δ = +34,692 ns)</td><td align="right" bgcolor="#FFFFFF">1260,983 ns (Δ = -36,760 ns)</td><td align="right" bgcolor="#FFFFFF">1278,942 ns (Δ = +17,959 ns)</td><td align="right" bgcolor="#FFFFFF">1268,123 ns (Δ = -10,819 ns)</td><td align="right" bgcolor="#A8D08D">1095,367 ns (Δ = -172,757 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,281 μs</td><td align="right" bgcolor="#FF4949">1,337 μs (Δ = +0,057 μs)</td><td align="right" bgcolor="#A8D08D">1,288 μs (Δ = -0,049 μs)</td><td align="right" bgcolor="#FFFFFF">1,306 μs (Δ = +0,017 μs)</td><td align="right" bgcolor="#FFFFFF">1,301 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#A8D08D">1,096 μs (Δ = -0,205 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,263 μs</td><td align="right" bgcolor="#FFFFFF">1,298 μs (Δ = +0,035 μs)</td><td align="right" bgcolor="#FFFFFF">1,261 μs (Δ = -0,037 μs)</td><td align="right" bgcolor="#FFFFFF">1,279 μs (Δ = +0,018 μs)</td><td align="right" bgcolor="#FFFFFF">1,268 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#A8D08D">1,095 μs (Δ = -0,173 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -10969,20 +10969,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.2.0
 
-Δ: 243,808 ns
+Δ: 252,742 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#FFFFFF">+2,3 %</td><td align="right" bgcolor="#FFFFFF">-0,6 %</td><td align="right" bgcolor="#A8D08D">-4,7 %</td><td align="right" bgcolor="#A8D08D">-27,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#FFFFFF">-1,4 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td><td align="right" bgcolor="#A8D08D">-3,8 %</td><td align="right" bgcolor="#A8D08D">-28,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">784,313 ns</td><td align="right" bgcolor="#FFFFFF">765,673 ns (Δ = -18,640 ns)</td><td align="right" bgcolor="#FFFFFF">783,644 ns (Δ = +17,971 ns)</td><td align="right" bgcolor="#FFFFFF">779,309 ns (Δ = -4,336 ns)</td><td align="right" bgcolor="#A8D08D">742,583 ns (Δ = -36,726 ns)</td><td align="right" bgcolor="#A8D08D">540,505 ns (Δ = -202,078 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">771,235 ns</td><td align="right" bgcolor="#FFFFFF">763,360 ns (Δ = -7,875 ns)</td><td align="right" bgcolor="#FFFFFF">752,902 ns (Δ = -10,458 ns)</td><td align="right" bgcolor="#FFFFFF">757,713 ns (Δ = +4,811 ns)</td><td align="right" bgcolor="#A8D08D">728,877 ns (Δ = -28,837 ns)</td><td align="right" bgcolor="#A8D08D">518,493 ns (Δ = -210,383 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,784 μs</td><td align="right" bgcolor="#FFFFFF">0,766 μs (Δ = -0,019 μs)</td><td align="right" bgcolor="#FFFFFF">0,784 μs (Δ = +0,018 μs)</td><td align="right" bgcolor="#FFFFFF">0,779 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#A8D08D">0,743 μs (Δ = -0,037 μs)</td><td align="right" bgcolor="#A8D08D">0,541 μs (Δ = -0,202 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,771 μs</td><td align="right" bgcolor="#FFFFFF">0,763 μs (Δ = -0,008 μs)</td><td align="right" bgcolor="#FFFFFF">0,753 μs (Δ = -0,010 μs)</td><td align="right" bgcolor="#FFFFFF">0,758 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#A8D08D">0,729 μs (Δ = -0,029 μs)</td><td align="right" bgcolor="#A8D08D">0,518 μs (Δ = -0,210 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -11034,24 +11034,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **4.4.0**
 
 Slowest: 4.3.0
 
-Δ: 63,243 ns
+Δ: 190,014 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,2 %</td><td align="right" bgcolor="#A8D08D">-6,6 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#FFFFFF">-1,1 %</td><td align="right" bgcolor="#FFFFFF">+1,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+26,3 %</td><td align="right" bgcolor="#A8D08D">-21,0 %</td><td align="right" bgcolor="#FFFFFF">+1,1 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#FFFFFF">-0,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">758,809 ns</td><td align="right" bgcolor="#FF4949">790,647 ns (Δ = +31,838 ns)</td><td align="right" bgcolor="#A8D08D">738,138 ns (Δ = -52,509 ns)</td><td align="right" bgcolor="#FFFFFF">735,473 ns (Δ = -2,665 ns)</td><td align="right" bgcolor="#FFFFFF">727,403 ns (Δ = -8,070 ns)</td><td align="right" bgcolor="#FFFFFF">735,725 ns (Δ = +8,322 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">717,627 ns</td><td align="right" bgcolor="#FF4949">906,327 ns (Δ = +188,700 ns)</td><td align="right" bgcolor="#A8D08D">716,313 ns (Δ = -190,014 ns)</td><td align="right" bgcolor="#FFFFFF">724,018 ns (Δ = +7,705 ns)</td><td align="right" bgcolor="#FFFFFF">723,190 ns (Δ = -0,828 ns)</td><td align="right" bgcolor="#FFFFFF">721,420 ns (Δ = -1,770 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,759 μs</td><td align="right" bgcolor="#FF4949">0,791 μs (Δ = +0,032 μs)</td><td align="right" bgcolor="#A8D08D">0,738 μs (Δ = -0,053 μs)</td><td align="right" bgcolor="#FFFFFF">0,735 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,727 μs (Δ = -0,008 μs)</td><td align="right" bgcolor="#FFFFFF">0,736 μs (Δ = +0,008 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,718 μs</td><td align="right" bgcolor="#FF4949">0,906 μs (Δ = +0,189 μs)</td><td align="right" bgcolor="#A8D08D">0,716 μs (Δ = -0,190 μs)</td><td align="right" bgcolor="#FFFFFF">0,724 μs (Δ = +0,008 μs)</td><td align="right" bgcolor="#FFFFFF">0,723 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,721 μs (Δ = -0,002 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -11103,24 +11103,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.3.0**
+Fastest: **4.4.0**
 
-Slowest: 4.4.0
+Slowest: 4.3.0
 
-Δ: 23,874 ns
+Δ: 62,759 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-8,5 %</td><td align="right" bgcolor="#FF4949">+16,6 %</td><td align="right" bgcolor="#A8D08D">-11,0 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td><td align="right" bgcolor="#FF4949">+10,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+30,7 %</td><td align="right" bgcolor="#A8D08D">-30,4 %</td><td align="right" bgcolor="#FFFFFF">+2,2 %</td><td align="right" bgcolor="#FF4949">+9,6 %</td><td align="right" bgcolor="#FFFFFF">-0,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">156,835 ns</td><td align="right" bgcolor="#A8D08D">143,426 ns (Δ = -13,409 ns)</td><td align="right" bgcolor="#FF4949">167,300 ns (Δ = +23,874 ns)</td><td align="right" bgcolor="#A8D08D">148,900 ns (Δ = -18,400 ns)</td><td align="right" bgcolor="#FFFFFF">149,771 ns (Δ = +0,871 ns)</td><td align="right" bgcolor="#FF4949">165,653 ns (Δ = +15,882 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">157,787 ns</td><td align="right" bgcolor="#FF4949">206,250 ns (Δ = +48,463 ns)</td><td align="right" bgcolor="#A8D08D">143,491 ns (Δ = -62,759 ns)</td><td align="right" bgcolor="#FFFFFF">146,678 ns (Δ = +3,187 ns)</td><td align="right" bgcolor="#FF4949">160,693 ns (Δ = +14,015 ns)</td><td align="right" bgcolor="#FFFFFF">159,573 ns (Δ = -1,120 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,157 μs</td><td align="right" bgcolor="#A8D08D">0,143 μs (Δ = -0,013 μs)</td><td align="right" bgcolor="#FF4949">0,167 μs (Δ = +0,024 μs)</td><td align="right" bgcolor="#A8D08D">0,149 μs (Δ = -0,018 μs)</td><td align="right" bgcolor="#FFFFFF">0,150 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,166 μs (Δ = +0,016 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,158 μs</td><td align="right" bgcolor="#FF4949">0,206 μs (Δ = +0,048 μs)</td><td align="right" bgcolor="#A8D08D">0,143 μs (Δ = -0,063 μs)</td><td align="right" bgcolor="#FFFFFF">0,147 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FF4949">0,161 μs (Δ = +0,014 μs)</td><td align="right" bgcolor="#FFFFFF">0,160 μs (Δ = -0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -11174,22 +11174,22 @@ Slowest: 4.4.0
 
 Fastest: **4.5.4**
 
-Slowest: 4.3.0
+Slowest: 5.0.0
 
-Δ: 29,642 ns
+Δ: 19,305 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+3,1 %</td><td align="right" bgcolor="#A8D08D">-11,8 %</td><td align="right" bgcolor="#FF4949">+9,6 %</td><td align="right" bgcolor="#A8D08D">-14,1 %</td><td align="right" bgcolor="#FF4949">+7,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+8,6 %</td><td align="right" bgcolor="#A8D08D">-9,5 %</td><td align="right" bgcolor="#FFFFFF">+2,2 %</td><td align="right" bgcolor="#A8D08D">-3,1 %</td><td align="right" bgcolor="#FF4949">+12,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">169,133 ns</td><td align="right" bgcolor="#FF4949">174,387 ns (Δ = +5,253 ns)</td><td align="right" bgcolor="#A8D08D">153,759 ns (Δ = -20,628 ns)</td><td align="right" bgcolor="#FF4949">168,551 ns (Δ = +14,792 ns)</td><td align="right" bgcolor="#A8D08D">144,744 ns (Δ = -23,807 ns)</td><td align="right" bgcolor="#FF4949">155,089 ns (Δ = +10,345 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">160,058 ns</td><td align="right" bgcolor="#FF4949">173,870 ns (Δ = +13,812 ns)</td><td align="right" bgcolor="#A8D08D">157,415 ns (Δ = -16,455 ns)</td><td align="right" bgcolor="#FFFFFF">160,837 ns (Δ = +3,422 ns)</td><td align="right" bgcolor="#A8D08D">155,865 ns (Δ = -4,972 ns)</td><td align="right" bgcolor="#FF4949">175,170 ns (Δ = +19,305 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,169 μs</td><td align="right" bgcolor="#FF4949">0,174 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#A8D08D">0,154 μs (Δ = -0,021 μs)</td><td align="right" bgcolor="#FF4949">0,169 μs (Δ = +0,015 μs)</td><td align="right" bgcolor="#A8D08D">0,145 μs (Δ = -0,024 μs)</td><td align="right" bgcolor="#FF4949">0,155 μs (Δ = +0,010 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,160 μs</td><td align="right" bgcolor="#FF4949">0,174 μs (Δ = +0,014 μs)</td><td align="right" bgcolor="#A8D08D">0,157 μs (Δ = -0,016 μs)</td><td align="right" bgcolor="#FFFFFF">0,161 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,156 μs (Δ = -0,005 μs)</td><td align="right" bgcolor="#FF4949">0,175 μs (Δ = +0,019 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -11241,24 +11241,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **4.4.0**
 
 Slowest: 4.5.0
 
-Δ: 36,358 ns
+Δ: 36,286 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+6,3 %</td><td align="right" bgcolor="#A8D08D">-6,7 %</td><td align="right" bgcolor="#FF4949">+17,9 %</td><td align="right" bgcolor="#A8D08D">-19,9 %</td><td align="right" bgcolor="#FF4949">+6,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-14,8 %</td><td align="right" bgcolor="#A8D08D">-5,0 %</td><td align="right" bgcolor="#FF4949">+25,4 %</td><td align="right" bgcolor="#A8D08D">-17,6 %</td><td align="right" bgcolor="#FFFFFF">+0,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">156,493 ns</td><td align="right" bgcolor="#FF4949">166,277 ns (Δ = +9,783 ns)</td><td align="right" bgcolor="#A8D08D">155,190 ns (Δ = -11,087 ns)</td><td align="right" bgcolor="#FF4949">182,920 ns (Δ = +27,730 ns)</td><td align="right" bgcolor="#A8D08D">146,562 ns (Δ = -36,358 ns)</td><td align="right" bgcolor="#FF4949">155,902 ns (Δ = +9,341 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">176,623 ns</td><td align="right" bgcolor="#A8D08D">150,454 ns (Δ = -26,169 ns)</td><td align="right" bgcolor="#A8D08D">142,958 ns (Δ = -7,496 ns)</td><td align="right" bgcolor="#FF4949">179,243 ns (Δ = +36,286 ns)</td><td align="right" bgcolor="#A8D08D">147,698 ns (Δ = -31,546 ns)</td><td align="right" bgcolor="#FFFFFF">148,133 ns (Δ = +0,436 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,156 μs</td><td align="right" bgcolor="#FF4949">0,166 μs (Δ = +0,010 μs)</td><td align="right" bgcolor="#A8D08D">0,155 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#FF4949">0,183 μs (Δ = +0,028 μs)</td><td align="right" bgcolor="#A8D08D">0,147 μs (Δ = -0,036 μs)</td><td align="right" bgcolor="#FF4949">0,156 μs (Δ = +0,009 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,177 μs</td><td align="right" bgcolor="#A8D08D">0,150 μs (Δ = -0,026 μs)</td><td align="right" bgcolor="#A8D08D">0,143 μs (Δ = -0,007 μs)</td><td align="right" bgcolor="#FF4949">0,179 μs (Δ = +0,036 μs)</td><td align="right" bgcolor="#A8D08D">0,148 μs (Δ = -0,032 μs)</td><td align="right" bgcolor="#FFFFFF">0,148 μs (Δ = +0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -11310,24 +11310,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.3.0**
+Fastest: **4.4.0**
 
 Slowest: 5.0.0
 
-Δ: 43,290 ns
+Δ: 39,543 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-6,9 %</td><td align="right" bgcolor="#FFFFFF">+1,0 %</td><td align="right" bgcolor="#FF4949">+3,3 %</td><td align="right" bgcolor="#FFFFFF">+1,0 %</td><td align="right" bgcolor="#FFFFFF">+2,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,4 %</td><td align="right" bgcolor="#FFFFFF">-2,6 %</td><td align="right" bgcolor="#FFFFFF">+3,0 %</td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#FFFFFF">+3,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">603,988 ns</td><td align="right" bgcolor="#A8D08D">562,147 ns (Δ = -41,842 ns)</td><td align="right" bgcolor="#FFFFFF">567,693 ns (Δ = +5,546 ns)</td><td align="right" bgcolor="#FF4949">586,673 ns (Δ = +18,981 ns)</td><td align="right" bgcolor="#FFFFFF">592,430 ns (Δ = +5,757 ns)</td><td align="right" bgcolor="#FFFFFF">605,437 ns (Δ = +13,007 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">590,609 ns</td><td align="right" bgcolor="#FFFFFF">582,580 ns (Δ = -8,029 ns)</td><td align="right" bgcolor="#FFFFFF">567,350 ns (Δ = -15,230 ns)</td><td align="right" bgcolor="#FFFFFF">584,180 ns (Δ = +16,830 ns)</td><td align="right" bgcolor="#FFFFFF">588,777 ns (Δ = +4,597 ns)</td><td align="right" bgcolor="#FFFFFF">606,893 ns (Δ = +18,117 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,604 μs</td><td align="right" bgcolor="#A8D08D">0,562 μs (Δ = -0,042 μs)</td><td align="right" bgcolor="#FFFFFF">0,568 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#FF4949">0,587 μs (Δ = +0,019 μs)</td><td align="right" bgcolor="#FFFFFF">0,592 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#FFFFFF">0,605 μs (Δ = +0,013 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,591 μs</td><td align="right" bgcolor="#FFFFFF">0,583 μs (Δ = -0,008 μs)</td><td align="right" bgcolor="#FFFFFF">0,567 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#FFFFFF">0,584 μs (Δ = +0,017 μs)</td><td align="right" bgcolor="#FFFFFF">0,589 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#FFFFFF">0,607 μs (Δ = +0,018 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -11379,24 +11379,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
-Slowest: 4.2.0
+Slowest: 4.4.0
 
-Δ: 36,462 ns
+Δ: 13,517 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-7,0 %</td><td align="right" bgcolor="#A8D08D">-4,1 %</td><td align="right" bgcolor="#FFFFFF">-2,7 %</td><td align="right" bgcolor="#A8D08D">-11,1 %</td><td align="right" bgcolor="#FF4949">+9,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#FFFFFF">-1,9 %</td><td align="right" bgcolor="#A8D08D">-7,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">159,420 ns</td><td align="right" bgcolor="#A8D08D">148,253 ns (Δ = -11,167 ns)</td><td align="right" bgcolor="#A8D08D">142,138 ns (Δ = -6,116 ns)</td><td align="right" bgcolor="#FFFFFF">138,236 ns (Δ = -3,902 ns)</td><td align="right" bgcolor="#A8D08D">122,958 ns (Δ = -15,278 ns)</td><td align="right" bgcolor="#FF4949">134,663 ns (Δ = +11,706 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">133,691 ns</td><td align="right" bgcolor="#FFFFFF">134,272 ns (Δ = +0,581 ns)</td><td align="right" bgcolor="#FFFFFF">135,187 ns (Δ = +0,915 ns)</td><td align="right" bgcolor="#FFFFFF">133,852 ns (Δ = -1,335 ns)</td><td align="right" bgcolor="#FFFFFF">131,312 ns (Δ = -2,540 ns)</td><td align="right" bgcolor="#A8D08D">121,669 ns (Δ = -9,643 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,159 μs</td><td align="right" bgcolor="#A8D08D">0,148 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,142 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FFFFFF">0,138 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#A8D08D">0,123 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#FF4949">0,135 μs (Δ = +0,012 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,134 μs</td><td align="right" bgcolor="#FFFFFF">0,134 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,135 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,134 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,131 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,122 μs (Δ = -0,010 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -11450,22 +11450,22 @@ Slowest: 4.2.0
 
 Fastest: **4.5.4**
 
-Slowest: 4.5.0
+Slowest: 5.0.0
 
-Δ: 54,690 ns
+Δ: 80,382 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,6 %</td><td align="right" bgcolor="#FFFFFF">+2,0 %</td><td align="right" bgcolor="#FFFFFF">+2,5 %</td><td align="right" bgcolor="#A8D08D">-5,9 %</td><td align="right" bgcolor="#FF4949">+5,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,0 %</td><td align="right" bgcolor="#FF4949">+3,6 %</td><td align="right" bgcolor="#FFFFFF">-0,9 %</td><td align="right" bgcolor="#A8D08D">-3,1 %</td><td align="right" bgcolor="#FF4949">+9,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">895,760 ns</td><td align="right" bgcolor="#FFFFFF">890,462 ns (Δ = -5,298 ns)</td><td align="right" bgcolor="#FFFFFF">908,109 ns (Δ = +17,647 ns)</td><td align="right" bgcolor="#FFFFFF">930,516 ns (Δ = +22,407 ns)</td><td align="right" bgcolor="#A8D08D">875,826 ns (Δ = -54,690 ns)</td><td align="right" bgcolor="#FF4949">925,995 ns (Δ = +50,169 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">883,833 ns</td><td align="right" bgcolor="#FFFFFF">866,473 ns (Δ = -17,360 ns)</td><td align="right" bgcolor="#FF4949">897,402 ns (Δ = +30,929 ns)</td><td align="right" bgcolor="#FFFFFF">889,773 ns (Δ = -7,629 ns)</td><td align="right" bgcolor="#A8D08D">862,223 ns (Δ = -27,551 ns)</td><td align="right" bgcolor="#FF4949">942,604 ns (Δ = +80,382 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,896 μs</td><td align="right" bgcolor="#FFFFFF">0,890 μs (Δ = -0,005 μs)</td><td align="right" bgcolor="#FFFFFF">0,908 μs (Δ = +0,018 μs)</td><td align="right" bgcolor="#FFFFFF">0,931 μs (Δ = +0,022 μs)</td><td align="right" bgcolor="#A8D08D">0,876 μs (Δ = -0,055 μs)</td><td align="right" bgcolor="#FF4949">0,926 μs (Δ = +0,050 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,884 μs</td><td align="right" bgcolor="#FFFFFF">0,866 μs (Δ = -0,017 μs)</td><td align="right" bgcolor="#FF4949">0,897 μs (Δ = +0,031 μs)</td><td align="right" bgcolor="#FFFFFF">0,890 μs (Δ = -0,008 μs)</td><td align="right" bgcolor="#A8D08D">0,862 μs (Δ = -0,028 μs)</td><td align="right" bgcolor="#FF4949">0,943 μs (Δ = +0,080 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -11517,24 +11517,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.3.0**
+Fastest: **4.2.0**
 
-Slowest: 4.4.0
+Slowest: 5.0.0
 
-Δ: 52,561 ns
+Δ: 23,215 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,6 %</td><td align="right" bgcolor="#FF4949">+40,0 %</td><td align="right" bgcolor="#A8D08D">-20,1 %</td><td align="right" bgcolor="#A8D08D">-9,1 %</td><td align="right" bgcolor="#FF4949">+10,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,1 %</td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FF4949">+6,6 %</td><td align="right" bgcolor="#A8D08D">-3,4 %</td><td align="right" bgcolor="#FF4949">+13,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">136,338 ns</td><td align="right" bgcolor="#A8D08D">131,389 ns (Δ = -4,949 ns)</td><td align="right" bgcolor="#FF4949">183,950 ns (Δ = +52,561 ns)</td><td align="right" bgcolor="#A8D08D">146,993 ns (Δ = -36,957 ns)</td><td align="right" bgcolor="#A8D08D">133,582 ns (Δ = -13,411 ns)</td><td align="right" bgcolor="#FF4949">146,910 ns (Δ = +13,328 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">128,905 ns</td><td align="right" bgcolor="#FFFFFF">131,663 ns (Δ = +2,758 ns)</td><td align="right" bgcolor="#FFFFFF">130,764 ns (Δ = -0,899 ns)</td><td align="right" bgcolor="#FF4949">139,398 ns (Δ = +8,633 ns)</td><td align="right" bgcolor="#A8D08D">134,607 ns (Δ = -4,791 ns)</td><td align="right" bgcolor="#FF4949">152,120 ns (Δ = +17,513 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,136 μs</td><td align="right" bgcolor="#A8D08D">0,131 μs (Δ = -0,005 μs)</td><td align="right" bgcolor="#FF4949">0,184 μs (Δ = +0,053 μs)</td><td align="right" bgcolor="#A8D08D">0,147 μs (Δ = -0,037 μs)</td><td align="right" bgcolor="#A8D08D">0,134 μs (Δ = -0,013 μs)</td><td align="right" bgcolor="#FF4949">0,147 μs (Δ = +0,013 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,129 μs</td><td align="right" bgcolor="#FFFFFF">0,132 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,131 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,139 μs (Δ = +0,009 μs)</td><td align="right" bgcolor="#A8D08D">0,135 μs (Δ = -0,005 μs)</td><td align="right" bgcolor="#FF4949">0,152 μs (Δ = +0,018 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -11590,20 +11590,20 @@ Fastest: **4.5.4**
 
 Slowest: 4.5.0
 
-Δ: 48,518 ns
+Δ: 47,248 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-15,1 %</td><td align="right" bgcolor="#FF4949">+10,5 %</td><td align="right" bgcolor="#FF4949">+17,9 %</td><td align="right" bgcolor="#A8D08D">-23,7 %</td><td align="right" bgcolor="#FF4949">+23,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+7,0 %</td><td align="right" bgcolor="#A8D08D">-6,6 %</td><td align="right" bgcolor="#FF4949">+27,8 %</td><td align="right" bgcolor="#A8D08D">-23,1 %</td><td align="right" bgcolor="#FFFFFF">+0,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">184,717 ns</td><td align="right" bgcolor="#A8D08D">156,884 ns (Δ = -27,832 ns)</td><td align="right" bgcolor="#FF4949">173,373 ns (Δ = +16,489 ns)</td><td align="right" bgcolor="#FF4949">204,437 ns (Δ = +31,063 ns)</td><td align="right" bgcolor="#A8D08D">155,919 ns (Δ = -48,518 ns)</td><td align="right" bgcolor="#FF4949">192,460 ns (Δ = +36,541 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">160,418 ns</td><td align="right" bgcolor="#FF4949">171,653 ns (Δ = +11,236 ns)</td><td align="right" bgcolor="#A8D08D">160,347 ns (Δ = -11,307 ns)</td><td align="right" bgcolor="#FF4949">204,863 ns (Δ = +44,517 ns)</td><td align="right" bgcolor="#A8D08D">157,616 ns (Δ = -47,248 ns)</td><td align="right" bgcolor="#FFFFFF">158,384 ns (Δ = +0,769 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,185 μs</td><td align="right" bgcolor="#A8D08D">0,157 μs (Δ = -0,028 μs)</td><td align="right" bgcolor="#FF4949">0,173 μs (Δ = +0,016 μs)</td><td align="right" bgcolor="#FF4949">0,204 μs (Δ = +0,031 μs)</td><td align="right" bgcolor="#A8D08D">0,156 μs (Δ = -0,049 μs)</td><td align="right" bgcolor="#FF4949">0,192 μs (Δ = +0,037 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,160 μs</td><td align="right" bgcolor="#FF4949">0,172 μs (Δ = +0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,160 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#FF4949">0,205 μs (Δ = +0,045 μs)</td><td align="right" bgcolor="#A8D08D">0,158 μs (Δ = -0,047 μs)</td><td align="right" bgcolor="#FFFFFF">0,158 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -11657,22 +11657,22 @@ Slowest: 4.5.0
 
 Fastest: **4.4.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.0
 
-Δ: 23,438 ns
+Δ: 6,512 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#FF4949">+6,0 %</td><td align="right" bgcolor="#FFFFFF">+1,7 %</td><td align="right" bgcolor="#FF4949">+13,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,6 %</td><td align="right" bgcolor="#FFFFFF">-1,5 %</td><td align="right" bgcolor="#FF4949">+6,3 %</td><td align="right" bgcolor="#A8D08D">-4,3 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">105,058 ns</td><td align="right" bgcolor="#FFFFFF">104,019 ns (Δ = -1,039 ns)</td><td align="right" bgcolor="#FFFFFF">103,649 ns (Δ = -0,370 ns)</td><td align="right" bgcolor="#FF4949">109,898 ns (Δ = +6,249 ns)</td><td align="right" bgcolor="#FFFFFF">111,733 ns (Δ = +1,836 ns)</td><td align="right" bgcolor="#FF4949">127,087 ns (Δ = +15,353 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">104,499 ns</td><td align="right" bgcolor="#FFFFFF">105,163 ns (Δ = +0,664 ns)</td><td align="right" bgcolor="#FFFFFF">103,543 ns (Δ = -1,621 ns)</td><td align="right" bgcolor="#FF4949">110,054 ns (Δ = +6,512 ns)</td><td align="right" bgcolor="#A8D08D">105,347 ns (Δ = -4,708 ns)</td><td align="right" bgcolor="#FFFFFF">104,867 ns (Δ = -0,480 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,105 μs</td><td align="right" bgcolor="#FFFFFF">0,104 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,104 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,110 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#FFFFFF">0,112 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FF4949">0,127 μs (Δ = +0,015 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,104 μs</td><td align="right" bgcolor="#FFFFFF">0,105 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,104 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,110 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#A8D08D">0,105 μs (Δ = -0,005 μs)</td><td align="right" bgcolor="#FFFFFF">0,105 μs (Δ = 0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -11726,22 +11726,22 @@ Slowest: 5.0.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.2.0
+Slowest: 4.4.0
 
-Δ: 40,350 ns
+Δ: 33,283 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,5 %</td><td align="right" bgcolor="#FFFFFF">-2,9 %</td><td align="right" bgcolor="#FFFFFF">-2,1 %</td><td align="right" bgcolor="#FF4949">+5,4 %</td><td align="right" bgcolor="#A8D08D">-16,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-6,5 %</td><td align="right" bgcolor="#FF4949">+7,7 %</td><td align="right" bgcolor="#A8D08D">-4,1 %</td><td align="right" bgcolor="#FFFFFF">+3,1 %</td><td align="right" bgcolor="#A8D08D">-15,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">211,353 ns</td><td align="right" bgcolor="#A8D08D">204,033 ns (Δ = -7,320 ns)</td><td align="right" bgcolor="#FFFFFF">198,167 ns (Δ = -5,867 ns)</td><td align="right" bgcolor="#FFFFFF">194,013 ns (Δ = -4,154 ns)</td><td align="right" bgcolor="#FF4949">204,560 ns (Δ = +10,548 ns)</td><td align="right" bgcolor="#A8D08D">171,003 ns (Δ = -33,557 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">200,187 ns</td><td align="right" bgcolor="#A8D08D">187,158 ns (Δ = -13,029 ns)</td><td align="right" bgcolor="#FF4949">201,503 ns (Δ = +14,345 ns)</td><td align="right" bgcolor="#A8D08D">193,311 ns (Δ = -8,192 ns)</td><td align="right" bgcolor="#FFFFFF">199,250 ns (Δ = +5,939 ns)</td><td align="right" bgcolor="#A8D08D">168,220 ns (Δ = -31,030 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,211 μs</td><td align="right" bgcolor="#A8D08D">0,204 μs (Δ = -0,007 μs)</td><td align="right" bgcolor="#FFFFFF">0,198 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FFFFFF">0,194 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FF4949">0,205 μs (Δ = +0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,171 μs (Δ = -0,034 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,200 μs</td><td align="right" bgcolor="#A8D08D">0,187 μs (Δ = -0,013 μs)</td><td align="right" bgcolor="#FF4949">0,202 μs (Δ = +0,014 μs)</td><td align="right" bgcolor="#A8D08D">0,193 μs (Δ = -0,008 μs)</td><td align="right" bgcolor="#FFFFFF">0,199 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#A8D08D">0,168 μs (Δ = -0,031 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -11793,24 +11793,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **4.5.0**
 
-Slowest: 4.5.0
+Slowest: 4.5.4
 
-Δ: 153,680 ns
+Δ: 38,810 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,6 %</td><td align="right" bgcolor="#A8D08D">-10,4 %</td><td align="right" bgcolor="#FF4949">+6,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,3 %</td><td align="right" bgcolor="#FFFFFF">+2,8 %</td><td align="right" bgcolor="#FFFFFF">-2,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1413,410 ns</td><td align="right" bgcolor="#FF4949">1477,880 ns (Δ = +64,470 ns)</td><td align="right" bgcolor="#A8D08D">1324,200 ns (Δ = -153,680 ns)</td><td align="right" bgcolor="#FF4949">1408,573 ns (Δ = +84,373 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1374,667 ns</td><td align="right" bgcolor="#FFFFFF">1370,210 ns (Δ = -4,457 ns)</td><td align="right" bgcolor="#FFFFFF">1409,020 ns (Δ = +38,810 ns)</td><td align="right" bgcolor="#FFFFFF">1376,356 ns (Δ = -32,664 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,413 μs</td><td align="right" bgcolor="#FF4949">1,478 μs (Δ = +0,064 μs)</td><td align="right" bgcolor="#A8D08D">1,324 μs (Δ = -0,154 μs)</td><td align="right" bgcolor="#FF4949">1,409 μs (Δ = +0,084 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,375 μs</td><td align="right" bgcolor="#FFFFFF">1,370 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FFFFFF">1,409 μs (Δ = +0,039 μs)</td><td align="right" bgcolor="#FFFFFF">1,376 μs (Δ = -0,033 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -11864,22 +11864,22 @@ Slowest: 4.5.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.4.0
+Slowest: 4.5.0
 
-Δ: 45,523 ns
+Δ: 39,302 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,4 %</td><td align="right" bgcolor="#FFFFFF">-0,3 %</td><td align="right" bgcolor="#FFFFFF">-2,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FFFFFF">-2,6 %</td><td align="right" bgcolor="#FFFFFF">-2,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">804,177 ns</td><td align="right" bgcolor="#A8D08D">776,927 ns (Δ = -27,250 ns)</td><td align="right" bgcolor="#FFFFFF">774,543 ns (Δ = -2,383 ns)</td><td align="right" bgcolor="#FFFFFF">758,653 ns (Δ = -15,890 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">772,268 ns</td><td align="right" bgcolor="#FFFFFF">777,732 ns (Δ = +5,463 ns)</td><td align="right" bgcolor="#FFFFFF">757,400 ns (Δ = -20,332 ns)</td><td align="right" bgcolor="#FFFFFF">738,430 ns (Δ = -18,970 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,804 μs</td><td align="right" bgcolor="#A8D08D">0,777 μs (Δ = -0,027 μs)</td><td align="right" bgcolor="#FFFFFF">0,775 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,759 μs (Δ = -0,016 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,772 μs</td><td align="right" bgcolor="#FFFFFF">0,778 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#FFFFFF">0,757 μs (Δ = -0,020 μs)</td><td align="right" bgcolor="#FFFFFF">0,738 μs (Δ = -0,019 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -11931,24 +11931,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.4.0**
 
-Slowest: 4.4.0
+Slowest: 5.0.0
 
-Δ: 330,937 ns
+Δ: 51,784 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-28,3 %</td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#FFFFFF">-1,8 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,5 %</td><td align="right" bgcolor="#FFFFFF">-0,3 %</td><td align="right" bgcolor="#FF4949">+6,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1097,890 ns</td><td align="right" bgcolor="#A8D08D">787,649 ns (Δ = -310,241 ns)</td><td align="right" bgcolor="#FFFFFF">781,362 ns (Δ = -6,286 ns)</td><td align="right" bgcolor="#FFFFFF">766,953 ns (Δ = -14,409 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">774,357 ns</td><td align="right" bgcolor="#FFFFFF">778,171 ns (Δ = +3,814 ns)</td><td align="right" bgcolor="#FFFFFF">775,675 ns (Δ = -2,496 ns)</td><td align="right" bgcolor="#FF4949">826,141 ns (Δ = +50,466 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,098 μs</td><td align="right" bgcolor="#A8D08D">0,788 μs (Δ = -0,310 μs)</td><td align="right" bgcolor="#FFFFFF">0,781 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FFFFFF">0,767 μs (Δ = -0,014 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,774 μs</td><td align="right" bgcolor="#FFFFFF">0,778 μs (Δ = +0,004 μs)</td><td align="right" bgcolor="#FFFFFF">0,776 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,826 μs (Δ = +0,050 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12002,22 +12002,22 @@ Slowest: 4.4.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.5.0
+Slowest: 4.4.0
 
-Δ: 48,993 ns
+Δ: 28,366 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,7 %</td><td align="right" bgcolor="#A8D08D">-5,9 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,7 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#FFFFFF">-1,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">753,629 ns</td><td align="right" bgcolor="#FFFFFF">773,880 ns (Δ = +20,251 ns)</td><td align="right" bgcolor="#A8D08D">728,160 ns (Δ = -45,720 ns)</td><td align="right" bgcolor="#FFFFFF">724,887 ns (Δ = -3,273 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">761,402 ns</td><td align="right" bgcolor="#FFFFFF">748,232 ns (Δ = -13,170 ns)</td><td align="right" bgcolor="#FFFFFF">747,522 ns (Δ = -0,710 ns)</td><td align="right" bgcolor="#FFFFFF">733,037 ns (Δ = -14,485 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,754 μs</td><td align="right" bgcolor="#FFFFFF">0,774 μs (Δ = +0,020 μs)</td><td align="right" bgcolor="#A8D08D">0,728 μs (Δ = -0,046 μs)</td><td align="right" bgcolor="#FFFFFF">0,725 μs (Δ = -0,003 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,761 μs</td><td align="right" bgcolor="#FFFFFF">0,748 μs (Δ = -0,013 μs)</td><td align="right" bgcolor="#FFFFFF">0,748 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,733 μs (Δ = -0,014 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12073,20 +12073,20 @@ Fastest: **4.4.0**
 
 Slowest: 4.3.0
 
-Δ: 199,760 ns
+Δ: 66,741 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+25,8 %</td><td align="right" bgcolor="#A8D08D">-21,1 %</td><td align="right" bgcolor="#FFFFFF">+0,5 %</td><td align="right" bgcolor="#FFFFFF">0,0 %</td><td align="right" bgcolor="#FF4949">+4,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+6,5 %</td><td align="right" bgcolor="#A8D08D">-8,4 %</td><td align="right" bgcolor="#FF4949">+3,1 %</td><td align="right" bgcolor="#FFFFFF">-0,9 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">751,119 ns</td><td align="right" bgcolor="#FF4949">945,167 ns (Δ = +194,048 ns)</td><td align="right" bgcolor="#A8D08D">745,407 ns (Δ = -199,760 ns)</td><td align="right" bgcolor="#FFFFFF">748,811 ns (Δ = +3,404 ns)</td><td align="right" bgcolor="#FFFFFF">748,478 ns (Δ = -0,333 ns)</td><td align="right" bgcolor="#FF4949">778,480 ns (Δ = +30,002 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">742,035 ns</td><td align="right" bgcolor="#FF4949">790,571 ns (Δ = +48,536 ns)</td><td align="right" bgcolor="#A8D08D">723,830 ns (Δ = -66,741 ns)</td><td align="right" bgcolor="#FF4949">746,530 ns (Δ = +22,700 ns)</td><td align="right" bgcolor="#FFFFFF">739,960 ns (Δ = -6,570 ns)</td><td align="right" bgcolor="#FFFFFF">744,303 ns (Δ = +4,343 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,751 μs</td><td align="right" bgcolor="#FF4949">0,945 μs (Δ = +0,194 μs)</td><td align="right" bgcolor="#A8D08D">0,745 μs (Δ = -0,200 μs)</td><td align="right" bgcolor="#FFFFFF">0,749 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,748 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,778 μs (Δ = +0,030 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,742 μs</td><td align="right" bgcolor="#FF4949">0,791 μs (Δ = +0,049 μs)</td><td align="right" bgcolor="#A8D08D">0,724 μs (Δ = -0,067 μs)</td><td align="right" bgcolor="#FF4949">0,747 μs (Δ = +0,023 μs)</td><td align="right" bgcolor="#FFFFFF">0,740 μs (Δ = -0,007 μs)</td><td align="right" bgcolor="#FFFFFF">0,744 μs (Δ = +0,004 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12138,24 +12138,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.3.0**
+Fastest: **5.0.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
-Δ: 26,136 ns
+Δ: 30,088 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FF4949">+15,0 %</td><td align="right" bgcolor="#A8D08D">-8,6 %</td><td align="right" bgcolor="#FFFFFF">-1,5 %</td><td align="right" bgcolor="#FF4949">+11,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,6 %</td><td align="right" bgcolor="#FFFFFF">-2,8 %</td><td align="right" bgcolor="#FF4949">+9,2 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#A8D08D">-16,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">166,053 ns</td><td align="right" bgcolor="#FFFFFF">164,881 ns (Δ = -1,172 ns)</td><td align="right" bgcolor="#FF4949">189,687 ns (Δ = +24,806 ns)</td><td align="right" bgcolor="#A8D08D">173,301 ns (Δ = -16,386 ns)</td><td align="right" bgcolor="#FFFFFF">170,713 ns (Δ = -2,588 ns)</td><td align="right" bgcolor="#FF4949">191,017 ns (Δ = +20,303 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">171,142 ns</td><td align="right" bgcolor="#FFFFFF">170,032 ns (Δ = -1,111 ns)</td><td align="right" bgcolor="#FFFFFF">165,337 ns (Δ = -4,695 ns)</td><td align="right" bgcolor="#FF4949">180,597 ns (Δ = +15,260 ns)</td><td align="right" bgcolor="#FFFFFF">181,333 ns (Δ = +0,737 ns)</td><td align="right" bgcolor="#A8D08D">151,246 ns (Δ = -30,088 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,166 μs</td><td align="right" bgcolor="#FFFFFF">0,165 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,190 μs (Δ = +0,025 μs)</td><td align="right" bgcolor="#A8D08D">0,173 μs (Δ = -0,016 μs)</td><td align="right" bgcolor="#FFFFFF">0,171 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FF4949">0,191 μs (Δ = +0,020 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,171 μs</td><td align="right" bgcolor="#FFFFFF">0,170 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,165 μs (Δ = -0,005 μs)</td><td align="right" bgcolor="#FF4949">0,181 μs (Δ = +0,015 μs)</td><td align="right" bgcolor="#FFFFFF">0,181 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,151 μs (Δ = -0,030 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12207,24 +12207,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **5.0.0**
 
 Slowest: 4.3.0
 
-Δ: 19,267 ns
+Δ: 18,303 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,0 %</td><td align="right" bgcolor="#A8D08D">-9,5 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#FF4949">+6,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+5,9 %</td><td align="right" bgcolor="#A8D08D">-7,8 %</td><td align="right" bgcolor="#FFFFFF">+2,1 %</td><td align="right" bgcolor="#FFFFFF">-0,2 %</td><td align="right" bgcolor="#A8D08D">-3,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">200,417 ns</td><td align="right" bgcolor="#FFFFFF">202,484 ns (Δ = +2,068 ns)</td><td align="right" bgcolor="#A8D08D">183,218 ns (Δ = -19,267 ns)</td><td align="right" bgcolor="#FFFFFF">186,008 ns (Δ = +2,790 ns)</td><td align="right" bgcolor="#FFFFFF">188,564 ns (Δ = +2,557 ns)</td><td align="right" bgcolor="#FF4949">199,793 ns (Δ = +11,229 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">187,630 ns</td><td align="right" bgcolor="#FF4949">198,757 ns (Δ = +11,127 ns)</td><td align="right" bgcolor="#A8D08D">183,333 ns (Δ = -15,423 ns)</td><td align="right" bgcolor="#FFFFFF">187,178 ns (Δ = +3,845 ns)</td><td align="right" bgcolor="#FFFFFF">186,794 ns (Δ = -0,384 ns)</td><td align="right" bgcolor="#A8D08D">180,453 ns (Δ = -6,341 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,200 μs</td><td align="right" bgcolor="#FFFFFF">0,202 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,183 μs (Δ = -0,019 μs)</td><td align="right" bgcolor="#FFFFFF">0,186 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,189 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FF4949">0,200 μs (Δ = +0,011 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,188 μs</td><td align="right" bgcolor="#FF4949">0,199 μs (Δ = +0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,183 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#FFFFFF">0,187 μs (Δ = +0,004 μs)</td><td align="right" bgcolor="#FFFFFF">0,187 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,180 μs (Δ = -0,006 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12276,24 +12276,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.3.0**
 
-Slowest: 4.5.0
+Slowest: 4.5.4
 
-Δ: 22,320 ns
+Δ: 17,409 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#A8D08D">-3,5 %</td><td align="right" bgcolor="#FF4949">+13,2 %</td><td align="right" bgcolor="#A8D08D">-10,7 %</td><td align="right" bgcolor="#FFFFFF">+1,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-5,3 %</td><td align="right" bgcolor="#FF4949">+5,5 %</td><td align="right" bgcolor="#A8D08D">-4,1 %</td><td align="right" bgcolor="#FF4949">+9,0 %</td><td align="right" bgcolor="#A8D08D">-8,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">180,073 ns</td><td align="right" bgcolor="#FFFFFF">175,697 ns (Δ = -4,377 ns)</td><td align="right" bgcolor="#A8D08D">169,600 ns (Δ = -6,097 ns)</td><td align="right" bgcolor="#FF4949">191,920 ns (Δ = +22,320 ns)</td><td align="right" bgcolor="#A8D08D">171,386 ns (Δ = -20,534 ns)</td><td align="right" bgcolor="#FFFFFF">173,510 ns (Δ = +2,124 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">177,067 ns</td><td align="right" bgcolor="#A8D08D">167,734 ns (Δ = -9,332 ns)</td><td align="right" bgcolor="#FF4949">177,027 ns (Δ = +9,292 ns)</td><td align="right" bgcolor="#A8D08D">169,833 ns (Δ = -7,194 ns)</td><td align="right" bgcolor="#FF4949">185,143 ns (Δ = +15,311 ns)</td><td align="right" bgcolor="#A8D08D">168,796 ns (Δ = -16,348 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,180 μs</td><td align="right" bgcolor="#FFFFFF">0,176 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#A8D08D">0,170 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FF4949">0,192 μs (Δ = +0,022 μs)</td><td align="right" bgcolor="#A8D08D">0,171 μs (Δ = -0,021 μs)</td><td align="right" bgcolor="#FFFFFF">0,174 μs (Δ = +0,002 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,177 μs</td><td align="right" bgcolor="#A8D08D">0,168 μs (Δ = -0,009 μs)</td><td align="right" bgcolor="#FF4949">0,177 μs (Δ = +0,009 μs)</td><td align="right" bgcolor="#A8D08D">0,170 μs (Δ = -0,007 μs)</td><td align="right" bgcolor="#FF4949">0,185 μs (Δ = +0,015 μs)</td><td align="right" bgcolor="#A8D08D">0,169 μs (Δ = -0,016 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12347,22 +12347,22 @@ Slowest: 4.5.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.5.0
+Slowest: 4.5.4
 
-Δ: 3755,007 ns
+Δ: 2051,920 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,8 %</td><td align="right" bgcolor="#FFFFFF">-2,7 %</td><td align="right" bgcolor="#FF4949">+25,6 %</td><td align="right" bgcolor="#A8D08D">-17,4 %</td><td align="right" bgcolor="#A8D08D">-23,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,9 %</td><td align="right" bgcolor="#FFFFFF">-1,5 %</td><td align="right" bgcolor="#FFFFFF">+0,5 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td><td align="right" bgcolor="#A8D08D">-24,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">8689,450 ns</td><td align="right" bgcolor="#A8D08D">8356,745 ns (Δ = -332,705 ns)</td><td align="right" bgcolor="#FFFFFF">8127,917 ns (Δ = -228,828 ns)</td><td align="right" bgcolor="#FF4949">10212,287 ns (Δ = +2084,370 ns)</td><td align="right" bgcolor="#A8D08D">8432,083 ns (Δ = -1780,203 ns)</td><td align="right" bgcolor="#A8D08D">6457,280 ns (Δ = -1974,803 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">8049,023 ns</td><td align="right" bgcolor="#FFFFFF">8200,140 ns (Δ = +151,117 ns)</td><td align="right" bgcolor="#FFFFFF">8078,458 ns (Δ = -121,682 ns)</td><td align="right" bgcolor="#FFFFFF">8120,363 ns (Δ = +41,906 ns)</td><td align="right" bgcolor="#FFFFFF">8245,118 ns (Δ = +124,754 ns)</td><td align="right" bgcolor="#A8D08D">6193,198 ns (Δ = -2051,920 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">8,689 μs</td><td align="right" bgcolor="#A8D08D">8,357 μs (Δ = -0,333 μs)</td><td align="right" bgcolor="#FFFFFF">8,128 μs (Δ = -0,229 μs)</td><td align="right" bgcolor="#FF4949">10,212 μs (Δ = +2,084 μs)</td><td align="right" bgcolor="#A8D08D">8,432 μs (Δ = -1,780 μs)</td><td align="right" bgcolor="#A8D08D">6,457 μs (Δ = -1,975 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">8,049 μs</td><td align="right" bgcolor="#FFFFFF">8,200 μs (Δ = +0,151 μs)</td><td align="right" bgcolor="#FFFFFF">8,078 μs (Δ = -0,122 μs)</td><td align="right" bgcolor="#FFFFFF">8,120 μs (Δ = +0,042 μs)</td><td align="right" bgcolor="#FFFFFF">8,245 μs (Δ = +0,125 μs)</td><td align="right" bgcolor="#A8D08D">6,193 μs (Δ = -2,052 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,009 ms</td><td align="right" bgcolor="#A8D08D">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,010 ms (Δ = +0,002 ms)</td><td align="right" bgcolor="#A8D08D">0,008 ms (Δ = -0,002 ms)</td><td align="right" bgcolor="#A8D08D">0,006 ms (Δ = -0,002 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,008 ms</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,006 ms (Δ = -0,002 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12404,8 +12404,8 @@ Slowest: 4.5.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">2900</td><td align="right">2900</td><td align="right">2900</td><td align="right">2900</td><td align="right">2975</td><td align="right">2286</td><tr>
-<td>Allocated Kilobytes</td><td align="right">2,832</td><td align="right">2,832</td><td align="right">2,832</td><td align="right">2,832</td><td align="right">2,905</td><td align="right">2,232</td><tr>
+<td>Allocated Bytes</td><td align="right">2900</td><td align="right">2900</td><td align="right">2899</td><td align="right">2900</td><td align="right">2978</td><td align="right">2228</td><tr>
+<td>Allocated Kilobytes</td><td align="right">2,832</td><td align="right">2,832</td><td align="right">2,831</td><td align="right">2,832</td><td align="right">2,908</td><td align="right">2,176</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,003</td><td align="right">0,003</td><td align="right">0,003</td><td align="right">0,003</td><td align="right">0,003</td><td align="right">0,002</td></tr>
 </table>
 
@@ -12416,22 +12416,22 @@ Slowest: 4.5.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.4.0
+Slowest: 4.5.4
 
-Δ: 982,787 ns
+Δ: 391,204 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+5,0 %</td><td align="right" bgcolor="#FF4949">+35,5 %</td><td align="right" bgcolor="#A8D08D">-30,0 %</td><td align="right" bgcolor="#FFFFFF">+2,4 %</td><td align="right" bgcolor="#A8D08D">-23,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,1 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td><td align="right" bgcolor="#FFFFFF">+2,1 %</td><td align="right" bgcolor="#FFFFFF">+1,2 %</td><td align="right" bgcolor="#A8D08D">-25,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1527,477 ns</td><td align="right" bgcolor="#FF4949">1603,919 ns (Δ = +76,443 ns)</td><td align="right" bgcolor="#FF4949">2173,327 ns (Δ = +569,408 ns)</td><td align="right" bgcolor="#A8D08D">1521,820 ns (Δ = -651,507 ns)</td><td align="right" bgcolor="#FFFFFF">1558,257 ns (Δ = +36,437 ns)</td><td align="right" bgcolor="#A8D08D">1190,540 ns (Δ = -367,717 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1498,304 ns</td><td align="right" bgcolor="#FFFFFF">1499,296 ns (Δ = +0,991 ns)</td><td align="right" bgcolor="#FFFFFF">1491,297 ns (Δ = -7,999 ns)</td><td align="right" bgcolor="#FFFFFF">1522,143 ns (Δ = +30,847 ns)</td><td align="right" bgcolor="#FFFFFF">1539,793 ns (Δ = +17,650 ns)</td><td align="right" bgcolor="#A8D08D">1148,589 ns (Δ = -391,204 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,527 μs</td><td align="right" bgcolor="#FF4949">1,604 μs (Δ = +0,076 μs)</td><td align="right" bgcolor="#FF4949">2,173 μs (Δ = +0,569 μs)</td><td align="right" bgcolor="#A8D08D">1,522 μs (Δ = -0,652 μs)</td><td align="right" bgcolor="#FFFFFF">1,558 μs (Δ = +0,036 μs)</td><td align="right" bgcolor="#A8D08D">1,191 μs (Δ = -0,368 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,498 μs</td><td align="right" bgcolor="#FFFFFF">1,499 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">1,491 μs (Δ = -0,008 μs)</td><td align="right" bgcolor="#FFFFFF">1,522 μs (Δ = +0,031 μs)</td><td align="right" bgcolor="#FFFFFF">1,540 μs (Δ = +0,018 μs)</td><td align="right" bgcolor="#A8D08D">1,149 μs (Δ = -0,391 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,002 ms</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12485,22 +12485,22 @@ Slowest: 4.4.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.5.0
+Slowest: 4.5.4
 
-Δ: 2090,799 ns
+Δ: 2026,857 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#FFFFFF">+0,0 %</td><td align="right" bgcolor="#FF4949">+3,2 %</td><td align="right" bgcolor="#FFFFFF">-2,1 %</td><td align="right" bgcolor="#A8D08D">-24,8 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#FFFFFF">-0,6 %</td><td align="right" bgcolor="#FFFFFF">+1,2 %</td><td align="right" bgcolor="#A8D08D">-26,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7635,473 ns</td><td align="right" bgcolor="#FFFFFF">7694,453 ns (Δ = +58,980 ns)</td><td align="right" bgcolor="#FFFFFF">7697,030 ns (Δ = +2,577 ns)</td><td align="right" bgcolor="#FF4949">7944,516 ns (Δ = +247,486 ns)</td><td align="right" bgcolor="#FFFFFF">7779,473 ns (Δ = -165,042 ns)</td><td align="right" bgcolor="#A8D08D">5853,717 ns (Δ = -1925,757 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">7636,927 ns</td><td align="right" bgcolor="#FFFFFF">7649,253 ns (Δ = +12,327 ns)</td><td align="right" bgcolor="#FFFFFF">7616,140 ns (Δ = -33,113 ns)</td><td align="right" bgcolor="#FFFFFF">7573,789 ns (Δ = -42,351 ns)</td><td align="right" bgcolor="#FFFFFF">7662,987 ns (Δ = +89,198 ns)</td><td align="right" bgcolor="#A8D08D">5636,130 ns (Δ = -2026,857 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">7,635 μs</td><td align="right" bgcolor="#FFFFFF">7,694 μs (Δ = +0,059 μs)</td><td align="right" bgcolor="#FFFFFF">7,697 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FF4949">7,945 μs (Δ = +0,247 μs)</td><td align="right" bgcolor="#FFFFFF">7,779 μs (Δ = -0,165 μs)</td><td align="right" bgcolor="#A8D08D">5,854 μs (Δ = -1,926 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">7,637 μs</td><td align="right" bgcolor="#FFFFFF">7,649 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#FFFFFF">7,616 μs (Δ = -0,033 μs)</td><td align="right" bgcolor="#FFFFFF">7,574 μs (Δ = -0,042 μs)</td><td align="right" bgcolor="#FFFFFF">7,663 μs (Δ = +0,089 μs)</td><td align="right" bgcolor="#A8D08D">5,636 μs (Δ = -2,027 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,008 ms</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,006 ms (Δ = -0,002 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,008 ms</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,008 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,006 ms (Δ = -0,002 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12542,8 +12542,8 @@ Slowest: 4.5.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">5005</td><td align="right">5005</td><td align="right">5005</td><td align="right">5005</td><td align="right">5119</td><td align="right">3834</td><tr>
-<td>Allocated Kilobytes</td><td align="right">4,888</td><td align="right">4,888</td><td align="right">4,888</td><td align="right">4,888</td><td align="right">4,999</td><td align="right">3,744</td><tr>
+<td>Allocated Bytes</td><td align="right">5005</td><td align="right">5005</td><td align="right">5005</td><td align="right">5005</td><td align="right">5117</td><td align="right">3724</td><tr>
+<td>Allocated Kilobytes</td><td align="right">4,888</td><td align="right">4,888</td><td align="right">4,888</td><td align="right">4,888</td><td align="right">4,997</td><td align="right">3,637</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,005</td><td align="right">0,005</td><td align="right">0,005</td><td align="right">0,005</td><td align="right">0,005</td><td align="right">0,004</td></tr>
 </table>
 
@@ -12552,24 +12552,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.3.0**
 
-Slowest: 4.2.0
+Slowest: 5.0.0
 
-Δ: 375,633 ns
+Δ: 632,153 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-5,3 %</td><td align="right" bgcolor="#FF4949">+4,2 %</td><td align="right" bgcolor="#FFFFFF">-1,7 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#A8D08D">-21,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,6 %</td><td align="right" bgcolor="#FFFFFF">+0,8 %</td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FFFFFF">+1,8 %</td><td align="right" bgcolor="#FF4949">+38,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1581,937 ns</td><td align="right" bgcolor="#A8D08D">1497,473 ns (Δ = -84,463 ns)</td><td align="right" bgcolor="#FF4949">1560,831 ns (Δ = +63,358 ns)</td><td align="right" bgcolor="#FFFFFF">1533,637 ns (Δ = -27,194 ns)</td><td align="right" bgcolor="#FFFFFF">1539,810 ns (Δ = +6,173 ns)</td><td align="right" bgcolor="#A8D08D">1206,303 ns (Δ = -333,507 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1540,856 ns</td><td align="right" bgcolor="#FFFFFF">1531,865 ns (Δ = -8,991 ns)</td><td align="right" bgcolor="#FFFFFF">1543,940 ns (Δ = +12,075 ns)</td><td align="right" bgcolor="#FFFFFF">1532,607 ns (Δ = -11,333 ns)</td><td align="right" bgcolor="#FFFFFF">1560,417 ns (Δ = +27,810 ns)</td><td align="right" bgcolor="#FF4949">2164,018 ns (Δ = +603,601 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,582 μs</td><td align="right" bgcolor="#A8D08D">1,497 μs (Δ = -0,084 μs)</td><td align="right" bgcolor="#FF4949">1,561 μs (Δ = +0,063 μs)</td><td align="right" bgcolor="#FFFFFF">1,534 μs (Δ = -0,027 μs)</td><td align="right" bgcolor="#FFFFFF">1,540 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#A8D08D">1,206 μs (Δ = -0,334 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,541 μs</td><td align="right" bgcolor="#FFFFFF">1,532 μs (Δ = -0,009 μs)</td><td align="right" bgcolor="#FFFFFF">1,544 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#FFFFFF">1,533 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#FFFFFF">1,560 μs (Δ = +0,028 μs)</td><td align="right" bgcolor="#FF4949">2,164 μs (Δ = +0,604 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,002 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,002 ms</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,002 ms (Δ = +0,001 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12621,24 +12621,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
 Slowest: 4.2.0
 
-Δ: 103,359 ns
+Δ: 15,342 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-7,2 %</td><td align="right" bgcolor="#A8D08D">-3,4 %</td><td align="right" bgcolor="#FF4949">+7,8 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#A8D08D">-8,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,6 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FFFFFF">+1,3 %</td><td align="right" bgcolor="#FFFFFF">-1,7 %</td><td align="right" bgcolor="#FFFFFF">+0,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">920,517 ns</td><td align="right" bgcolor="#A8D08D">854,032 ns (Δ = -66,484 ns)</td><td align="right" bgcolor="#A8D08D">825,159 ns (Δ = -28,873 ns)</td><td align="right" bgcolor="#FF4949">889,767 ns (Δ = +64,608 ns)</td><td align="right" bgcolor="#FFFFFF">891,736 ns (Δ = +1,969 ns)</td><td align="right" bgcolor="#A8D08D">817,158 ns (Δ = -74,578 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">837,080 ns</td><td align="right" bgcolor="#FFFFFF">823,342 ns (Δ = -13,738 ns)</td><td align="right" bgcolor="#FFFFFF">825,331 ns (Δ = +1,989 ns)</td><td align="right" bgcolor="#FFFFFF">835,718 ns (Δ = +10,387 ns)</td><td align="right" bgcolor="#FFFFFF">821,738 ns (Δ = -13,980 ns)</td><td align="right" bgcolor="#FFFFFF">822,446 ns (Δ = +0,708 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,921 μs</td><td align="right" bgcolor="#A8D08D">0,854 μs (Δ = -0,066 μs)</td><td align="right" bgcolor="#A8D08D">0,825 μs (Δ = -0,029 μs)</td><td align="right" bgcolor="#FF4949">0,890 μs (Δ = +0,065 μs)</td><td align="right" bgcolor="#FFFFFF">0,892 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,817 μs (Δ = -0,075 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,837 μs</td><td align="right" bgcolor="#FFFFFF">0,823 μs (Δ = -0,014 μs)</td><td align="right" bgcolor="#FFFFFF">0,825 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,836 μs (Δ = +0,010 μs)</td><td align="right" bgcolor="#FFFFFF">0,822 μs (Δ = -0,014 μs)</td><td align="right" bgcolor="#FFFFFF">0,822 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12692,22 +12692,22 @@ Slowest: 4.2.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.4.0
+Slowest: 4.5.4
 
-Δ: 149,700 ns
+Δ: 112,969 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#FFFFFF">+1,2 %</td><td align="right" bgcolor="#A8D08D">-3,3 %</td><td align="right" bgcolor="#FFFFFF">+1,2 %</td><td align="right" bgcolor="#A8D08D">-6,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,7 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td><td align="right" bgcolor="#FFFFFF">+2,7 %</td><td align="right" bgcolor="#A8D08D">-6,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1725,233 ns</td><td align="right" bgcolor="#FFFFFF">1719,177 ns (Δ = -6,057 ns)</td><td align="right" bgcolor="#FFFFFF">1739,863 ns (Δ = +20,687 ns)</td><td align="right" bgcolor="#A8D08D">1682,330 ns (Δ = -57,533 ns)</td><td align="right" bgcolor="#FFFFFF">1702,330 ns (Δ = +20,000 ns)</td><td align="right" bgcolor="#A8D08D">1590,163 ns (Δ = -112,167 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1636,877 ns</td><td align="right" bgcolor="#FFFFFF">1665,120 ns (Δ = +28,243 ns)</td><td align="right" bgcolor="#FFFFFF">1663,884 ns (Δ = -1,236 ns)</td><td align="right" bgcolor="#FFFFFF">1655,320 ns (Δ = -8,564 ns)</td><td align="right" bgcolor="#FFFFFF">1699,751 ns (Δ = +44,431 ns)</td><td align="right" bgcolor="#A8D08D">1586,782 ns (Δ = -112,969 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,725 μs</td><td align="right" bgcolor="#FFFFFF">1,719 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FFFFFF">1,740 μs (Δ = +0,021 μs)</td><td align="right" bgcolor="#A8D08D">1,682 μs (Δ = -0,058 μs)</td><td align="right" bgcolor="#FFFFFF">1,702 μs (Δ = +0,020 μs)</td><td align="right" bgcolor="#A8D08D">1,590 μs (Δ = -0,112 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,637 μs</td><td align="right" bgcolor="#FFFFFF">1,665 μs (Δ = +0,028 μs)</td><td align="right" bgcolor="#FFFFFF">1,664 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">1,655 μs (Δ = -0,009 μs)</td><td align="right" bgcolor="#FFFFFF">1,700 μs (Δ = +0,044 μs)</td><td align="right" bgcolor="#A8D08D">1,587 μs (Δ = -0,113 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,002 ms</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,002 ms</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12749,8 +12749,8 @@ Slowest: 4.4.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">655</td><td align="right">655</td><td align="right">655</td><td align="right">655</td><td align="right">672</td><td align="right">631</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,640</td><td align="right">0,640</td><td align="right">0,640</td><td align="right">0,640</td><td align="right">0,656</td><td align="right">0,616</td><tr>
+<td>Allocated Bytes</td><td align="right">655</td><td align="right">655</td><td align="right">655</td><td align="right">655</td><td align="right">672</td><td align="right">623</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,640</td><td align="right">0,640</td><td align="right">0,640</td><td align="right">0,640</td><td align="right">0,656</td><td align="right">0,608</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,001</td><td align="right">0,001</td><td align="right">0,001</td><td align="right">0,001</td><td align="right">0,001</td><td align="right">0,001</td></tr>
 </table>
 
@@ -12763,20 +12763,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.5.4
 
-Δ: 411,426 ns
+Δ: 93,390 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,3 %</td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#FF4949">+21,8 %</td><td align="right" bgcolor="#FF4949">+14,6 %</td><td align="right" bgcolor="#A8D08D">-28,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,8 %</td><td align="right" bgcolor="#FFFFFF">+0,1 %</td><td align="right" bgcolor="#FFFFFF">+0,5 %</td><td align="right" bgcolor="#FF4949">+4,1 %</td><td align="right" bgcolor="#A8D08D">-8,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1033,877 ns</td><td align="right" bgcolor="#FFFFFF">1030,697 ns (Δ = -3,180 ns)</td><td align="right" bgcolor="#FFFFFF">1020,398 ns (Δ = -10,299 ns)</td><td align="right" bgcolor="#FF4949">1242,800 ns (Δ = +222,403 ns)</td><td align="right" bgcolor="#FF4949">1423,657 ns (Δ = +180,857 ns)</td><td align="right" bgcolor="#A8D08D">1012,231 ns (Δ = -411,426 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1047,628 ns</td><td align="right" bgcolor="#FFFFFF">1017,803 ns (Δ = -29,824 ns)</td><td align="right" bgcolor="#FFFFFF">1019,094 ns (Δ = +1,291 ns)</td><td align="right" bgcolor="#FFFFFF">1024,302 ns (Δ = +5,207 ns)</td><td align="right" bgcolor="#FF4949">1066,403 ns (Δ = +42,102 ns)</td><td align="right" bgcolor="#A8D08D">973,013 ns (Δ = -93,390 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,034 μs</td><td align="right" bgcolor="#FFFFFF">1,031 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FFFFFF">1,020 μs (Δ = -0,010 μs)</td><td align="right" bgcolor="#FF4949">1,243 μs (Δ = +0,222 μs)</td><td align="right" bgcolor="#FF4949">1,424 μs (Δ = +0,181 μs)</td><td align="right" bgcolor="#A8D08D">1,012 μs (Δ = -0,411 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,048 μs</td><td align="right" bgcolor="#FFFFFF">1,018 μs (Δ = -0,030 μs)</td><td align="right" bgcolor="#FFFFFF">1,019 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">1,024 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#FF4949">1,066 μs (Δ = +0,042 μs)</td><td align="right" bgcolor="#A8D08D">0,973 μs (Δ = -0,093 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12818,8 +12818,8 @@ Slowest: 4.5.4
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">713</td><td align="right">713</td><td align="right">713</td><td align="right">713</td><td align="right">737</td><td align="right">680</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,696</td><td align="right">0,696</td><td align="right">0,696</td><td align="right">0,696</td><td align="right">0,720</td><td align="right">0,664</td><tr>
+<td>Allocated Bytes</td><td align="right">713</td><td align="right">713</td><td align="right">713</td><td align="right">713</td><td align="right">737</td><td align="right">664</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,696</td><td align="right">0,696</td><td align="right">0,696</td><td align="right">0,696</td><td align="right">0,720</td><td align="right">0,648</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,001</td><td align="right">0,001</td><td align="right">0,001</td><td align="right">0,001</td><td align="right">0,001</td><td align="right">0,001</td></tr>
 </table>
 
@@ -12830,22 +12830,22 @@ Slowest: 4.5.4
 
 Fastest: **5.0.0**
 
-Slowest: 4.5.4
+Slowest: 4.5.0
 
-Δ: 41,519 ns
+Δ: 12,973 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,5 %</td><td align="right" bgcolor="#A8D08D">-3,4 %</td><td align="right" bgcolor="#FF4949">+3,4 %</td><td align="right" bgcolor="#FF4949">+3,6 %</td><td align="right" bgcolor="#A8D08D">-12,9 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,9 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#FFFFFF">+2,3 %</td><td align="right" bgcolor="#A8D08D">-3,4 %</td><td align="right" bgcolor="#FFFFFF">-0,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">312,677 ns</td><td align="right" bgcolor="#FFFFFF">311,173 ns (Δ = -1,503 ns)</td><td align="right" bgcolor="#A8D08D">300,551 ns (Δ = -10,622 ns)</td><td align="right" bgcolor="#FF4949">310,730 ns (Δ = +10,179 ns)</td><td align="right" bgcolor="#FF4949">321,970 ns (Δ = +11,240 ns)</td><td align="right" bgcolor="#A8D08D">280,451 ns (Δ = -41,519 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">305,960 ns</td><td align="right" bgcolor="#FFFFFF">311,837 ns (Δ = +5,877 ns)</td><td align="right" bgcolor="#FFFFFF">310,607 ns (Δ = -1,230 ns)</td><td align="right" bgcolor="#FFFFFF">317,707 ns (Δ = +7,100 ns)</td><td align="right" bgcolor="#A8D08D">306,773 ns (Δ = -10,933 ns)</td><td align="right" bgcolor="#FFFFFF">304,733 ns (Δ = -2,040 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,313 μs</td><td align="right" bgcolor="#FFFFFF">0,311 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,301 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#FF4949">0,311 μs (Δ = +0,010 μs)</td><td align="right" bgcolor="#FF4949">0,322 μs (Δ = +0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,280 μs (Δ = -0,042 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,306 μs</td><td align="right" bgcolor="#FFFFFF">0,312 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#FFFFFF">0,311 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,318 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#A8D08D">0,307 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#FFFFFF">0,305 μs (Δ = -0,002 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12897,24 +12897,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **4.4.0**
 
 Slowest: 4.3.0
 
-Δ: 23,028 ns
+Δ: 28,083 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+3,1 %</td><td align="right" bgcolor="#FFFFFF">-0,6 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#FFFFFF">-1,3 %</td><td align="right" bgcolor="#FFFFFF">+0,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+3,7 %</td><td align="right" bgcolor="#A8D08D">-3,7 %</td><td align="right" bgcolor="#FF4949">+3,8 %</td><td align="right" bgcolor="#FFFFFF">-2,7 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">739,563 ns</td><td align="right" bgcolor="#FF4949">762,591 ns (Δ = +23,028 ns)</td><td align="right" bgcolor="#FFFFFF">757,729 ns (Δ = -4,862 ns)</td><td align="right" bgcolor="#FFFFFF">756,750 ns (Δ = -0,979 ns)</td><td align="right" bgcolor="#FFFFFF">746,644 ns (Δ = -10,106 ns)</td><td align="right" bgcolor="#FFFFFF">749,111 ns (Δ = +2,467 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">725,624 ns</td><td align="right" bgcolor="#FF4949">752,813 ns (Δ = +27,189 ns)</td><td align="right" bgcolor="#A8D08D">724,730 ns (Δ = -28,083 ns)</td><td align="right" bgcolor="#FF4949">752,511 ns (Δ = +27,781 ns)</td><td align="right" bgcolor="#FFFFFF">732,098 ns (Δ = -20,413 ns)</td><td align="right" bgcolor="#FFFFFF">733,241 ns (Δ = +1,143 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,740 μs</td><td align="right" bgcolor="#FF4949">0,763 μs (Δ = +0,023 μs)</td><td align="right" bgcolor="#FFFFFF">0,758 μs (Δ = -0,005 μs)</td><td align="right" bgcolor="#FFFFFF">0,757 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,747 μs (Δ = -0,010 μs)</td><td align="right" bgcolor="#FFFFFF">0,749 μs (Δ = +0,002 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,726 μs</td><td align="right" bgcolor="#FF4949">0,753 μs (Δ = +0,027 μs)</td><td align="right" bgcolor="#A8D08D">0,725 μs (Δ = -0,028 μs)</td><td align="right" bgcolor="#FF4949">0,753 μs (Δ = +0,028 μs)</td><td align="right" bgcolor="#FFFFFF">0,732 μs (Δ = -0,020 μs)</td><td align="right" bgcolor="#FFFFFF">0,733 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -12966,24 +12966,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.3.0**
 
-Slowest: 4.5.4
+Slowest: 5.0.0
 
-Δ: 18,747 ns
+Δ: 24,542 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,0 %</td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#FF4949">+4,5 %</td><td align="right" bgcolor="#FF4949">+6,1 %</td><td align="right" bgcolor="#FFFFFF">-0,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-5,9 %</td><td align="right" bgcolor="#FF4949">+10,7 %</td><td align="right" bgcolor="#A8D08D">-7,8 %</td><td align="right" bgcolor="#FF4949">+6,6 %</td><td align="right" bgcolor="#FF4949">+4,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">178,519 ns</td><td align="right" bgcolor="#FFFFFF">174,942 ns (Δ = -3,578 ns)</td><td align="right" bgcolor="#FFFFFF">173,198 ns (Δ = -1,744 ns)</td><td align="right" bgcolor="#FF4949">180,938 ns (Δ = +7,740 ns)</td><td align="right" bgcolor="#FF4949">191,944 ns (Δ = +11,007 ns)</td><td align="right" bgcolor="#FFFFFF">191,398 ns (Δ = -0,547 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">183,938 ns</td><td align="right" bgcolor="#A8D08D">173,145 ns (Δ = -10,793 ns)</td><td align="right" bgcolor="#FF4949">191,680 ns (Δ = +18,535 ns)</td><td align="right" bgcolor="#A8D08D">176,685 ns (Δ = -14,995 ns)</td><td align="right" bgcolor="#FF4949">188,409 ns (Δ = +11,724 ns)</td><td align="right" bgcolor="#FF4949">197,687 ns (Δ = +9,278 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,179 μs</td><td align="right" bgcolor="#FFFFFF">0,175 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FFFFFF">0,173 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,181 μs (Δ = +0,008 μs)</td><td align="right" bgcolor="#FF4949">0,192 μs (Δ = +0,011 μs)</td><td align="right" bgcolor="#FFFFFF">0,191 μs (Δ = -0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,184 μs</td><td align="right" bgcolor="#A8D08D">0,173 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#FF4949">0,192 μs (Δ = +0,019 μs)</td><td align="right" bgcolor="#A8D08D">0,177 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#FF4949">0,188 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#FF4949">0,198 μs (Δ = +0,009 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -13039,20 +13039,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.5.4
 
-Δ: 463,290 ns
+Δ: 448,842 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FF4949">+3,3 %</td><td align="right" bgcolor="#FFFFFF">-1,0 %</td><td align="right" bgcolor="#FFFFFF">+3,0 %</td><td align="right" bgcolor="#A8D08D">-14,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,1 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td><td align="right" bgcolor="#FFFFFF">+1,9 %</td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#A8D08D">-14,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">2977,587 ns</td><td align="right" bgcolor="#FFFFFF">2983,997 ns (Δ = +6,410 ns)</td><td align="right" bgcolor="#FF4949">3083,702 ns (Δ = +99,706 ns)</td><td align="right" bgcolor="#FFFFFF">3054,204 ns (Δ = -29,498 ns)</td><td align="right" bgcolor="#FFFFFF">3146,967 ns (Δ = +92,762 ns)</td><td align="right" bgcolor="#A8D08D">2683,677 ns (Δ = -463,290 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">2965,593 ns</td><td align="right" bgcolor="#FFFFFF">2967,410 ns (Δ = +1,818 ns)</td><td align="right" bgcolor="#FFFFFF">2952,439 ns (Δ = -14,971 ns)</td><td align="right" bgcolor="#FFFFFF">3008,913 ns (Δ = +56,474 ns)</td><td align="right" bgcolor="#FFFFFF">3020,576 ns (Δ = +11,662 ns)</td><td align="right" bgcolor="#A8D08D">2571,733 ns (Δ = -448,842 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">2,978 μs</td><td align="right" bgcolor="#FFFFFF">2,984 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#FF4949">3,084 μs (Δ = +0,100 μs)</td><td align="right" bgcolor="#FFFFFF">3,054 μs (Δ = -0,029 μs)</td><td align="right" bgcolor="#FFFFFF">3,147 μs (Δ = +0,093 μs)</td><td align="right" bgcolor="#A8D08D">2,684 μs (Δ = -0,463 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">2,966 μs</td><td align="right" bgcolor="#FFFFFF">2,967 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FFFFFF">2,952 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#FFFFFF">3,009 μs (Δ = +0,056 μs)</td><td align="right" bgcolor="#FFFFFF">3,021 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#A8D08D">2,572 μs (Δ = -0,449 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -13106,22 +13106,22 @@ Slowest: 4.5.4
 
 Fastest: **5.0.0**
 
-Slowest: 4.5.0
+Slowest: 4.5.4
 
-Δ: 55,552 ns
+Δ: 11,120 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-20,2 %</td><td align="right" bgcolor="#FFFFFF">-1,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,0 %</td><td align="right" bgcolor="#A8D08D">-5,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">260,960 ns</td><td align="right" bgcolor="#A8D08D">208,244 ns (Δ = -52,716 ns)</td><td align="right" bgcolor="#FFFFFF">205,408 ns (Δ = -2,837 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">207,737 ns</td><td align="right" bgcolor="#FF4949">216,137 ns (Δ = +8,400 ns)</td><td align="right" bgcolor="#A8D08D">205,017 ns (Δ = -11,120 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,261 μs</td><td align="right" bgcolor="#A8D08D">0,208 μs (Δ = -0,053 μs)</td><td align="right" bgcolor="#FFFFFF">0,205 μs (Δ = -0,003 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,208 μs</td><td align="right" bgcolor="#FF4949">0,216 μs (Δ = +0,008 μs)</td><td align="right" bgcolor="#A8D08D">0,205 μs (Δ = -0,011 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -13173,24 +13173,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **4.3.0**
 
 Slowest: 4.5.0
 
-Δ: 1,150 ns
+Δ: 0,602 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,4 %</td><td align="right" bgcolor="#FF4949">+5,9 %</td><td align="right" bgcolor="#FFFFFF">+1,7 %</td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#FFFFFF">+2,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FFFFFF">+2,9 %</td><td align="right" bgcolor="#FFFFFF">+1,1 %</td><td align="right" bgcolor="#A8D08D">-3,9 %</td><td align="right" bgcolor="#FF4949">+3,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">14,113 ns</td><td align="right" bgcolor="#FFFFFF">14,175 ns (Δ = +0,062 ns)</td><td align="right" bgcolor="#FF4949">15,007 ns (Δ = +0,832 ns)</td><td align="right" bgcolor="#FFFFFF">15,263 ns (Δ = +0,257 ns)</td><td align="right" bgcolor="#FFFFFF">14,898 ns (Δ = -0,366 ns)</td><td align="right" bgcolor="#FFFFFF">15,227 ns (Δ = +0,329 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">14,683 ns</td><td align="right" bgcolor="#FFFFFF">14,580 ns (Δ = -0,103 ns)</td><td align="right" bgcolor="#FFFFFF">15,010 ns (Δ = +0,430 ns)</td><td align="right" bgcolor="#FFFFFF">15,182 ns (Δ = +0,172 ns)</td><td align="right" bgcolor="#A8D08D">14,589 ns (Δ = -0,593 ns)</td><td align="right" bgcolor="#FF4949">15,159 ns (Δ = +0,570 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,014 μs</td><td align="right" bgcolor="#FFFFFF">0,014 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,015 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = +0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,015 μs</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,015 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,015 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -13242,24 +13242,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.5.0**
+Fastest: **4.4.0**
 
 Slowest: 4.2.0
 
-Δ: 13,918 ns
+Δ: 1,140 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-7,7 %</td><td align="right" bgcolor="#A8D08D">-17,6 %</td><td align="right" bgcolor="#A8D08D">-4,3 %</td><td align="right" bgcolor="#FF4949">+21,4 %</td><td align="right" bgcolor="#A8D08D">-12,8 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#FFFFFF">-2,3 %</td><td align="right" bgcolor="#FFFFFF">+2,3 %</td><td align="right" bgcolor="#FFFFFF">-1,7 %</td><td align="right" bgcolor="#FFFFFF">+0,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">51,030 ns</td><td align="right" bgcolor="#A8D08D">47,087 ns (Δ = -3,943 ns)</td><td align="right" bgcolor="#A8D08D">38,796 ns (Δ = -8,291 ns)</td><td align="right" bgcolor="#A8D08D">37,112 ns (Δ = -1,684 ns)</td><td align="right" bgcolor="#FF4949">45,067 ns (Δ = +7,955 ns)</td><td align="right" bgcolor="#A8D08D">39,282 ns (Δ = -5,784 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">37,040 ns</td><td align="right" bgcolor="#FFFFFF">36,727 ns (Δ = -0,313 ns)</td><td align="right" bgcolor="#FFFFFF">35,900 ns (Δ = -0,827 ns)</td><td align="right" bgcolor="#FFFFFF">36,743 ns (Δ = +0,843 ns)</td><td align="right" bgcolor="#FFFFFF">36,121 ns (Δ = -0,622 ns)</td><td align="right" bgcolor="#FFFFFF">36,430 ns (Δ = +0,309 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,051 μs</td><td align="right" bgcolor="#A8D08D">0,047 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#A8D08D">0,039 μs (Δ = -0,008 μs)</td><td align="right" bgcolor="#A8D08D">0,037 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,045 μs (Δ = +0,008 μs)</td><td align="right" bgcolor="#A8D08D">0,039 μs (Δ = -0,006 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,037 μs</td><td align="right" bgcolor="#FFFFFF">0,037 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,036 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,037 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,036 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,036 μs (Δ = +0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -13311,24 +13311,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
-Slowest: 4.4.0
+Slowest: 4.5.4
 
-Δ: 13,051 ns
+Δ: 10,105 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#FF4949">+28,9 %</td><td align="right" bgcolor="#A8D08D">-21,6 %</td><td align="right" bgcolor="#A8D08D">-4,5 %</td><td align="right" bgcolor="#FF4949">+3,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,5 %</td><td align="right" bgcolor="#A8D08D">-3,2 %</td><td align="right" bgcolor="#FFFFFF">+1,5 %</td><td align="right" bgcolor="#FF4949">+17,9 %</td><td align="right" bgcolor="#A8D08D">-20,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">40,707 ns</td><td align="right" bgcolor="#FFFFFF">40,396 ns (Δ = -0,311 ns)</td><td align="right" bgcolor="#FF4949">52,057 ns (Δ = +11,661 ns)</td><td align="right" bgcolor="#A8D08D">40,837 ns (Δ = -11,220 ns)</td><td align="right" bgcolor="#A8D08D">39,006 ns (Δ = -1,831 ns)</td><td align="right" bgcolor="#FF4949">40,244 ns (Δ = +1,238 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">40,070 ns</td><td align="right" bgcolor="#FF4949">41,880 ns (Δ = +1,810 ns)</td><td align="right" bgcolor="#A8D08D">40,526 ns (Δ = -1,354 ns)</td><td align="right" bgcolor="#FFFFFF">41,133 ns (Δ = +0,608 ns)</td><td align="right" bgcolor="#FF4949">48,500 ns (Δ = +7,367 ns)</td><td align="right" bgcolor="#A8D08D">38,395 ns (Δ = -10,105 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,041 μs</td><td align="right" bgcolor="#FFFFFF">0,040 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,052 μs (Δ = +0,012 μs)</td><td align="right" bgcolor="#A8D08D">0,041 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,039 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,040 μs (Δ = +0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,040 μs</td><td align="right" bgcolor="#FF4949">0,042 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,041 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,041 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,049 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#A8D08D">0,038 μs (Δ = -0,010 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -13380,24 +13380,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **4.3.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
-Δ: 5,842 ns
+Δ: 1,526 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+3,3 %</td><td align="right" bgcolor="#FFFFFF">+0,5 %</td><td align="right" bgcolor="#FFFFFF">-1,1 %</td><td align="right" bgcolor="#FFFFFF">-1,3 %</td><td align="right" bgcolor="#FF4949">+15,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,3 %</td><td align="right" bgcolor="#FFFFFF">+2,9 %</td><td align="right" bgcolor="#FFFFFF">+0,3 %</td><td align="right" bgcolor="#FFFFFF">+1,0 %</td><td align="right" bgcolor="#A8D08D">-4,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">35,572 ns</td><td align="right" bgcolor="#FF4949">36,738 ns (Δ = +1,167 ns)</td><td align="right" bgcolor="#FFFFFF">36,923 ns (Δ = +0,184 ns)</td><td align="right" bgcolor="#FFFFFF">36,499 ns (Δ = -0,423 ns)</td><td align="right" bgcolor="#FFFFFF">36,020 ns (Δ = -0,479 ns)</td><td align="right" bgcolor="#FF4949">41,413 ns (Δ = +5,393 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">36,411 ns</td><td align="right" bgcolor="#FFFFFF">35,588 ns (Δ = -0,824 ns)</td><td align="right" bgcolor="#FFFFFF">36,627 ns (Δ = +1,039 ns)</td><td align="right" bgcolor="#FFFFFF">36,731 ns (Δ = +0,104 ns)</td><td align="right" bgcolor="#FFFFFF">37,113 ns (Δ = +0,382 ns)</td><td align="right" bgcolor="#A8D08D">35,618 ns (Δ = -1,496 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,036 μs</td><td align="right" bgcolor="#FF4949">0,037 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,037 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,036 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,036 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,041 μs (Δ = +0,005 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,036 μs</td><td align="right" bgcolor="#FFFFFF">0,036 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,037 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,037 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,037 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,036 μs (Δ = -0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -13451,22 +13451,22 @@ Slowest: 5.0.0
 
 Fastest: **4.5.4**
 
-Slowest: 4.2.0
+Slowest: 4.5.0
 
-Δ: 1,022 ns
+Δ: 0,819 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,8 %</td><td align="right" bgcolor="#FFFFFF">+1,7 %</td><td align="right" bgcolor="#FFFFFF">-0,9 %</td><td align="right" bgcolor="#FFFFFF">-2,2 %</td><td align="right" bgcolor="#FFFFFF">+2,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,6 %</td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#FFFFFF">+1,6 %</td><td align="right" bgcolor="#A8D08D">-5,1 %</td><td align="right" bgcolor="#FFFFFF">+0,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">16,473 ns</td><td align="right" bgcolor="#A8D08D">15,682 ns (Δ = -0,791 ns)</td><td align="right" bgcolor="#FFFFFF">15,956 ns (Δ = +0,274 ns)</td><td align="right" bgcolor="#FFFFFF">15,807 ns (Δ = -0,149 ns)</td><td align="right" bgcolor="#FFFFFF">15,451 ns (Δ = -0,356 ns)</td><td align="right" bgcolor="#FFFFFF">15,757 ns (Δ = +0,306 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">15,723 ns</td><td align="right" bgcolor="#FFFFFF">15,810 ns (Δ = +0,087 ns)</td><td align="right" bgcolor="#FFFFFF">15,680 ns (Δ = -0,130 ns)</td><td align="right" bgcolor="#FFFFFF">15,924 ns (Δ = +0,244 ns)</td><td align="right" bgcolor="#A8D08D">15,106 ns (Δ = -0,819 ns)</td><td align="right" bgcolor="#FFFFFF">15,156 ns (Δ = +0,050 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,016 μs</td><td align="right" bgcolor="#A8D08D">0,016 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,016 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,016 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,016 μs (Δ = +0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,016 μs</td><td align="right" bgcolor="#FFFFFF">0,016 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,016 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,016 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,015 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = +0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -13518,24 +13518,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.2.0**
 
-Slowest: 4.5.4
+Slowest: 4.5.0
 
-Δ: 2,210 ns
+Δ: 1,609 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,9 %</td><td align="right" bgcolor="#A8D08D">-3,0 %</td><td align="right" bgcolor="#FFFFFF">+2,6 %</td><td align="right" bgcolor="#FF4949">+6,0 %</td><td align="right" bgcolor="#A8D08D">-9,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+7,2 %</td><td align="right" bgcolor="#FFFFFF">-1,9 %</td><td align="right" bgcolor="#FFFFFF">+2,7 %</td><td align="right" bgcolor="#A8D08D">-3,7 %</td><td align="right" bgcolor="#FFFFFF">-1,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">21,637 ns</td><td align="right" bgcolor="#FFFFFF">22,049 ns (Δ = +0,412 ns)</td><td align="right" bgcolor="#A8D08D">21,383 ns (Δ = -0,667 ns)</td><td align="right" bgcolor="#FFFFFF">21,949 ns (Δ = +0,566 ns)</td><td align="right" bgcolor="#FF4949">23,263 ns (Δ = +1,314 ns)</td><td align="right" bgcolor="#A8D08D">21,054 ns (Δ = -2,210 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">20,180 ns</td><td align="right" bgcolor="#FF4949">21,623 ns (Δ = +1,443 ns)</td><td align="right" bgcolor="#FFFFFF">21,216 ns (Δ = -0,408 ns)</td><td align="right" bgcolor="#FFFFFF">21,789 ns (Δ = +0,573 ns)</td><td align="right" bgcolor="#A8D08D">20,983 ns (Δ = -0,806 ns)</td><td align="right" bgcolor="#FFFFFF">20,669 ns (Δ = -0,314 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,022 μs</td><td align="right" bgcolor="#FFFFFF">0,022 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,021 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,022 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,023 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,021 μs (Δ = -0,002 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,020 μs</td><td align="right" bgcolor="#FF4949">0,022 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,021 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,022 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,021 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,021 μs (Δ = 0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -13587,24 +13587,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.3.0**
 
-Slowest: 4.2.0
+Slowest: 4.5.0
 
-Δ: 1,446 ns
+Δ: 10,803 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,6 %</td><td align="right" bgcolor="#FF4949">+3,7 %</td><td align="right" bgcolor="#A8D08D">-3,1 %</td><td align="right" bgcolor="#FFFFFF">-1,1 %</td><td align="right" bgcolor="#FFFFFF">-1,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-4,5 %</td><td align="right" bgcolor="#FFFFFF">+2,9 %</td><td align="right" bgcolor="#FF4949">+38,8 %</td><td align="right" bgcolor="#A8D08D">-29,1 %</td><td align="right" bgcolor="#FFFFFF">+1,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">26,503 ns</td><td align="right" bgcolor="#A8D08D">25,562 ns (Δ = -0,941 ns)</td><td align="right" bgcolor="#FF4949">26,496 ns (Δ = +0,933 ns)</td><td align="right" bgcolor="#A8D08D">25,687 ns (Δ = -0,809 ns)</td><td align="right" bgcolor="#FFFFFF">25,407 ns (Δ = -0,280 ns)</td><td align="right" bgcolor="#FFFFFF">25,058 ns (Δ = -0,349 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">26,400 ns</td><td align="right" bgcolor="#A8D08D">25,220 ns (Δ = -1,180 ns)</td><td align="right" bgcolor="#FFFFFF">25,960 ns (Δ = +0,740 ns)</td><td align="right" bgcolor="#FF4949">36,023 ns (Δ = +10,063 ns)</td><td align="right" bgcolor="#A8D08D">25,547 ns (Δ = -10,476 ns)</td><td align="right" bgcolor="#FFFFFF">25,809 ns (Δ = +0,262 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,027 μs</td><td align="right" bgcolor="#A8D08D">0,026 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,026 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,026 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,025 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,025 μs (Δ = 0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,026 μs</td><td align="right" bgcolor="#A8D08D">0,025 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,026 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,036 μs (Δ = +0,010 μs)</td><td align="right" bgcolor="#A8D08D">0,026 μs (Δ = -0,010 μs)</td><td align="right" bgcolor="#FFFFFF">0,026 μs (Δ = +0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -13658,22 +13658,22 @@ Slowest: 4.2.0
 
 Fastest: **4.3.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
-Δ: 15,072 ns
+Δ: 14,965 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FFFFFF">+1,6 %</td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#FFFFFF">-2,3 %</td><td align="right" bgcolor="#FFFFFF">+2,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,5 %</td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td><td align="right" bgcolor="#FFFFFF">+1,2 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">476,720 ns</td><td align="right" bgcolor="#FFFFFF">473,433 ns (Δ = -3,287 ns)</td><td align="right" bgcolor="#FFFFFF">481,047 ns (Δ = +7,613 ns)</td><td align="right" bgcolor="#FFFFFF">488,020 ns (Δ = +6,973 ns)</td><td align="right" bgcolor="#FFFFFF">477,023 ns (Δ = -10,997 ns)</td><td align="right" bgcolor="#FFFFFF">488,506 ns (Δ = +11,482 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">467,813 ns</td><td align="right" bgcolor="#FFFFFF">461,018 ns (Δ = -6,795 ns)</td><td align="right" bgcolor="#FFFFFF">467,657 ns (Δ = +6,638 ns)</td><td align="right" bgcolor="#FFFFFF">470,327 ns (Δ = +2,670 ns)</td><td align="right" bgcolor="#FFFFFF">475,983 ns (Δ = +5,657 ns)</td><td align="right" bgcolor="#FFFFFF">473,443 ns (Δ = -2,540 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,477 μs</td><td align="right" bgcolor="#FFFFFF">0,473 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,481 μs (Δ = +0,008 μs)</td><td align="right" bgcolor="#FFFFFF">0,488 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#FFFFFF">0,477 μs (Δ = -0,011 μs)</td><td align="right" bgcolor="#FFFFFF">0,489 μs (Δ = +0,011 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,468 μs</td><td align="right" bgcolor="#FFFFFF">0,461 μs (Δ = -0,007 μs)</td><td align="right" bgcolor="#FFFFFF">0,468 μs (Δ = +0,007 μs)</td><td align="right" bgcolor="#FFFFFF">0,470 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,476 μs (Δ = +0,006 μs)</td><td align="right" bgcolor="#FFFFFF">0,473 μs (Δ = -0,003 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -13725,24 +13725,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **4.4.0**
 
 Slowest: 5.0.0
 
-Δ: 41,922 ns
+Δ: 46,938 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-9,2 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td><td align="right" bgcolor="#FF4949">+3,6 %</td><td align="right" bgcolor="#A8D08D">-4,0 %</td><td align="right" bgcolor="#FF4949">+28,2 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,7 %</td><td align="right" bgcolor="#FFFFFF">-2,5 %</td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FF4949">+29,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">165,627 ns</td><td align="right" bgcolor="#A8D08D">150,380 ns (Δ = -15,247 ns)</td><td align="right" bgcolor="#FFFFFF">149,567 ns (Δ = -0,813 ns)</td><td align="right" bgcolor="#FF4949">155,009 ns (Δ = +5,442 ns)</td><td align="right" bgcolor="#A8D08D">148,756 ns (Δ = -6,253 ns)</td><td align="right" bgcolor="#FF4949">190,678 ns (Δ = +41,922 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">156,884 ns</td><td align="right" bgcolor="#FFFFFF">152,722 ns (Δ = -4,162 ns)</td><td align="right" bgcolor="#FFFFFF">148,898 ns (Δ = -3,824 ns)</td><td align="right" bgcolor="#FFFFFF">149,942 ns (Δ = +1,043 ns)</td><td align="right" bgcolor="#FFFFFF">151,024 ns (Δ = +1,083 ns)</td><td align="right" bgcolor="#FF4949">195,837 ns (Δ = +44,812 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,166 μs</td><td align="right" bgcolor="#A8D08D">0,150 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#FFFFFF">0,150 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,155 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#A8D08D">0,149 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FF4949">0,191 μs (Δ = +0,042 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,157 μs</td><td align="right" bgcolor="#FFFFFF">0,153 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FFFFFF">0,149 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FFFFFF">0,150 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,151 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,196 μs (Δ = +0,045 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -13794,24 +13794,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.2.0**
+Fastest: **4.5.0**
 
-Slowest: 4.4.0
+Slowest: 4.2.0
 
-Δ: 4,411 ns
+Δ: 6,359 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+8,1 %</td><td align="right" bgcolor="#FF4949">+9,4 %</td><td align="right" bgcolor="#A8D08D">-9,3 %</td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#FFFFFF">-2,8 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-18,2 %</td><td align="right" bgcolor="#FF4949">+3,6 %</td><td align="right" bgcolor="#A8D08D">-5,3 %</td><td align="right" bgcolor="#FFFFFF">+1,2 %</td><td align="right" bgcolor="#FF4949">+4,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">24,238 ns</td><td align="right" bgcolor="#FF4949">26,193 ns (Δ = +1,955 ns)</td><td align="right" bgcolor="#FF4949">28,649 ns (Δ = +2,456 ns)</td><td align="right" bgcolor="#A8D08D">25,987 ns (Δ = -2,662 ns)</td><td align="right" bgcolor="#FFFFFF">26,342 ns (Δ = +0,356 ns)</td><td align="right" bgcolor="#FFFFFF">25,617 ns (Δ = -0,726 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">32,233 ns</td><td align="right" bgcolor="#A8D08D">26,373 ns (Δ = -5,860 ns)</td><td align="right" bgcolor="#FF4949">27,324 ns (Δ = +0,951 ns)</td><td align="right" bgcolor="#A8D08D">25,874 ns (Δ = -1,450 ns)</td><td align="right" bgcolor="#FFFFFF">26,180 ns (Δ = +0,306 ns)</td><td align="right" bgcolor="#FF4949">27,220 ns (Δ = +1,040 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,024 μs</td><td align="right" bgcolor="#FF4949">0,026 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FF4949">0,029 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,026 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,026 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,026 μs (Δ = -0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,032 μs</td><td align="right" bgcolor="#A8D08D">0,026 μs (Δ = -0,006 μs)</td><td align="right" bgcolor="#FF4949">0,027 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,026 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,026 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,027 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -13863,24 +13863,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.2.0**
 
-Slowest: 4.5.0
+Slowest: 5.0.0
 
-Δ: 3,449 ns
+Δ: 11,367 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,2 %</td><td align="right" bgcolor="#FF4949">+3,6 %</td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#A8D08D">-9,6 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+11,6 %</td><td align="right" bgcolor="#FFFFFF">+2,1 %</td><td align="right" bgcolor="#FFFFFF">-1,5 %</td><td align="right" bgcolor="#A8D08D">-4,7 %</td><td align="right" bgcolor="#FF4949">+28,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">33,652 ns</td><td align="right" bgcolor="#FFFFFF">34,058 ns (Δ = +0,406 ns)</td><td align="right" bgcolor="#FF4949">35,284 ns (Δ = +1,227 ns)</td><td align="right" bgcolor="#FFFFFF">35,516 ns (Δ = +0,231 ns)</td><td align="right" bgcolor="#A8D08D">32,107 ns (Δ = -3,409 ns)</td><td align="right" bgcolor="#FFFFFF">32,067 ns (Δ = -0,040 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">30,597 ns</td><td align="right" bgcolor="#FF4949">34,157 ns (Δ = +3,560 ns)</td><td align="right" bgcolor="#FFFFFF">34,876 ns (Δ = +0,719 ns)</td><td align="right" bgcolor="#FFFFFF">34,351 ns (Δ = -0,525 ns)</td><td align="right" bgcolor="#A8D08D">32,740 ns (Δ = -1,611 ns)</td><td align="right" bgcolor="#FF4949">41,963 ns (Δ = +9,223 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,034 μs</td><td align="right" bgcolor="#FFFFFF">0,034 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,035 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,036 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,032 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,032 μs (Δ = 0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,031 μs</td><td align="right" bgcolor="#FF4949">0,034 μs (Δ = +0,004 μs)</td><td align="right" bgcolor="#FFFFFF">0,035 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,034 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,033 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,042 μs (Δ = +0,009 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -13932,24 +13932,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.5.4**
 
 Slowest: 4.5.0
 
-Δ: 4,658 ns
+Δ: 1,866 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+56,6 %</td><td align="right" bgcolor="#A8D08D">-26,2 %</td><td align="right" bgcolor="#A8D08D">-8,8 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,7 %</td><td align="right" bgcolor="#A8D08D">-18,2 %</td><td align="right" bgcolor="#FF4949">+3,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">8,224 ns</td><td align="right" bgcolor="#FF4949">12,883 ns (Δ = +4,658 ns)</td><td align="right" bgcolor="#A8D08D">9,504 ns (Δ = -3,378 ns)</td><td align="right" bgcolor="#A8D08D">8,663 ns (Δ = -0,841 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9,975 ns</td><td align="right" bgcolor="#FFFFFF">10,240 ns (Δ = +0,265 ns)</td><td align="right" bgcolor="#A8D08D">8,374 ns (Δ = -1,866 ns)</td><td align="right" bgcolor="#FF4949">8,690 ns (Δ = +0,316 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,008 μs</td><td align="right" bgcolor="#FF4949">0,013 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#A8D08D">0,010 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,009 μs (Δ = -0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,010 μs</td><td align="right" bgcolor="#FFFFFF">0,010 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,008 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,009 μs (Δ = +0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14001,24 +14001,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.5.0**
+Fastest: **5.0.0**
 
-Slowest: 4.2.0
+Slowest: 4.5.0
 
-Δ: 2,027 ns
+Δ: 2,853 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,2 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td><td align="right" bgcolor="#A8D08D">-17,2 %</td><td align="right" bgcolor="#FF4949">+21,9 %</td><td align="right" bgcolor="#A8D08D">-9,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+5,3 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td><td align="right" bgcolor="#A8D08D">-8,3 %</td><td align="right" bgcolor="#A8D08D">-20,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">10,467 ns</td><td align="right" bgcolor="#A8D08D">10,137 ns (Δ = -0,330 ns)</td><td align="right" bgcolor="#FFFFFF">10,193 ns (Δ = +0,057 ns)</td><td align="right" bgcolor="#A8D08D">8,440 ns (Δ = -1,753 ns)</td><td align="right" bgcolor="#FF4949">10,287 ns (Δ = +1,847 ns)</td><td align="right" bgcolor="#A8D08D">9,335 ns (Δ = -0,952 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">9,860 ns</td><td align="right" bgcolor="#FF4949">10,383 ns (Δ = +0,523 ns)</td><td align="right" bgcolor="#FFFFFF">10,373 ns (Δ = -0,010 ns)</td><td align="right" bgcolor="#FFFFFF">10,430 ns (Δ = +0,058 ns)</td><td align="right" bgcolor="#A8D08D">9,567 ns (Δ = -0,863 ns)</td><td align="right" bgcolor="#A8D08D">7,578 ns (Δ = -1,989 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,010 μs</td><td align="right" bgcolor="#A8D08D">0,010 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,010 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,008 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,010 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,009 μs (Δ = -0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,010 μs</td><td align="right" bgcolor="#FF4949">0,010 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,010 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,010 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,010 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,008 μs (Δ = -0,002 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14072,22 +14072,22 @@ Slowest: 4.2.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.4.0
+Slowest: 4.5.0
 
-Δ: 16709,709 ns
+Δ: 17417,008 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">0,0 %</td><td align="right" bgcolor="#FF4949">+4,5 %</td><td align="right" bgcolor="#FFFFFF">-2,9 %</td><td align="right" bgcolor="#FFFFFF">-1,1 %</td><td align="right" bgcolor="#A8D08D">-49,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+6,5 %</td><td align="right" bgcolor="#A8D08D">-4,2 %</td><td align="right" bgcolor="#FF4949">+5,1 %</td><td align="right" bgcolor="#FFFFFF">-2,8 %</td><td align="right" bgcolor="#A8D08D">-52,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">31381,887 ns</td><td align="right" bgcolor="#FFFFFF">31368,248 ns (Δ = -13,639 ns)</td><td align="right" bgcolor="#FF4949">32795,360 ns (Δ = +1427,113 ns)</td><td align="right" bgcolor="#FFFFFF">31860,396 ns (Δ = -934,964 ns)</td><td align="right" bgcolor="#FFFFFF">31524,687 ns (Δ = -335,709 ns)</td><td align="right" bgcolor="#A8D08D">16085,651 ns (Δ = -15439,036 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">30412,069 ns</td><td align="right" bgcolor="#FF4949">32396,106 ns (Δ = +1984,037 ns)</td><td align="right" bgcolor="#A8D08D">31038,272 ns (Δ = -1357,833 ns)</td><td align="right" bgcolor="#FF4949">32635,579 ns (Δ = +1597,307 ns)</td><td align="right" bgcolor="#FFFFFF">31708,788 ns (Δ = -926,792 ns)</td><td align="right" bgcolor="#A8D08D">15218,572 ns (Δ = -16490,216 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">31,382 μs</td><td align="right" bgcolor="#FFFFFF">31,368 μs (Δ = -0,014 μs)</td><td align="right" bgcolor="#FF4949">32,795 μs (Δ = +1,427 μs)</td><td align="right" bgcolor="#FFFFFF">31,860 μs (Δ = -0,935 μs)</td><td align="right" bgcolor="#FFFFFF">31,525 μs (Δ = -0,336 μs)</td><td align="right" bgcolor="#A8D08D">16,086 μs (Δ = -15,439 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">30,412 μs</td><td align="right" bgcolor="#FF4949">32,396 μs (Δ = +1,984 μs)</td><td align="right" bgcolor="#A8D08D">31,038 μs (Δ = -1,358 μs)</td><td align="right" bgcolor="#FF4949">32,636 μs (Δ = +1,597 μs)</td><td align="right" bgcolor="#FFFFFF">31,709 μs (Δ = -0,927 μs)</td><td align="right" bgcolor="#A8D08D">15,219 μs (Δ = -16,490 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,031 ms</td><td align="right" bgcolor="#FFFFFF">0,031 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,033 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,032 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,032 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,016 ms (Δ = -0,015 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,030 ms</td><td align="right" bgcolor="#FF4949">0,032 ms (Δ = +0,002 ms)</td><td align="right" bgcolor="#A8D08D">0,031 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FF4949">0,033 ms (Δ = +0,002 ms)</td><td align="right" bgcolor="#FFFFFF">0,032 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,015 ms (Δ = -0,016 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14129,8 +14129,8 @@ Slowest: 4.4.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">7870</td><td align="right">7966</td><td align="right">7965</td><td align="right">7861</td><td align="right">7853</td><td align="right">6021</td><tr>
-<td>Allocated Kilobytes</td><td align="right">7,686</td><td align="right">7,779</td><td align="right">7,778</td><td align="right">7,677</td><td align="right">7,669</td><td align="right">5,880</td><tr>
+<td>Allocated Bytes</td><td align="right">7870</td><td align="right">7966</td><td align="right">7965</td><td align="right">7861</td><td align="right">7853</td><td align="right">5813</td><tr>
+<td>Allocated Kilobytes</td><td align="right">7,686</td><td align="right">7,779</td><td align="right">7,778</td><td align="right">7,677</td><td align="right">7,669</td><td align="right">5,677</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,008</td><td align="right">0,008</td><td align="right">0,008</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,006</td></tr>
 </table>
 
@@ -14139,24 +14139,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
 Slowest: 4.3.0
 
-Δ: 2,841 ns
+Δ: 1,700 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,0 %</td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#FFFFFF">-1,2 %</td><td align="right" bgcolor="#FFFFFF">-2,7 %</td><td align="right" bgcolor="#A8D08D">-18,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+6,4 %</td><td align="right" bgcolor="#A8D08D">-5,6 %</td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#A8D08D">-7,8 %</td><td align="right" bgcolor="#FFFFFF">+2,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">11,658 ns</td><td align="right" bgcolor="#FF4949">12,120 ns (Δ = +0,462 ns)</td><td align="right" bgcolor="#FFFFFF">11,827 ns (Δ = -0,293 ns)</td><td align="right" bgcolor="#FFFFFF">11,684 ns (Δ = -0,142 ns)</td><td align="right" bgcolor="#FFFFFF">11,373 ns (Δ = -0,311 ns)</td><td align="right" bgcolor="#A8D08D">9,279 ns (Δ = -2,094 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">11,653 ns</td><td align="right" bgcolor="#FF4949">12,393 ns (Δ = +0,740 ns)</td><td align="right" bgcolor="#A8D08D">11,703 ns (Δ = -0,690 ns)</td><td align="right" bgcolor="#FFFFFF">11,604 ns (Δ = -0,099 ns)</td><td align="right" bgcolor="#A8D08D">10,693 ns (Δ = -0,911 ns)</td><td align="right" bgcolor="#FFFFFF">10,990 ns (Δ = +0,297 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,012 μs</td><td align="right" bgcolor="#FF4949">0,012 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,012 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,012 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,011 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,009 μs (Δ = -0,002 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,012 μs</td><td align="right" bgcolor="#FF4949">0,012 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,012 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,012 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,011 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,011 μs (Δ = +0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14210,22 +14210,22 @@ Slowest: 4.3.0
 
 Fastest: **4.4.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
-Δ: 0,882 ns
+Δ: 2,913 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,6 %</td><td align="right" bgcolor="#A8D08D">-4,2 %</td><td align="right" bgcolor="#FFFFFF">+1,8 %</td><td align="right" bgcolor="#FFFFFF">+0,1 %</td><td align="right" bgcolor="#FF4949">+3,8 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+16,7 %</td><td align="right" bgcolor="#A8D08D">-14,8 %</td><td align="right" bgcolor="#FF4949">+16,0 %</td><td align="right" bgcolor="#FF4949">+4,7 %</td><td align="right" bgcolor="#A8D08D">-6,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">15,657 ns</td><td align="right" bgcolor="#FFFFFF">15,903 ns (Δ = +0,246 ns)</td><td align="right" bgcolor="#A8D08D">15,227 ns (Δ = -0,676 ns)</td><td align="right" bgcolor="#FFFFFF">15,500 ns (Δ = +0,273 ns)</td><td align="right" bgcolor="#FFFFFF">15,520 ns (Δ = +0,020 ns)</td><td align="right" bgcolor="#FF4949">16,108 ns (Δ = +0,588 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">13,607 ns</td><td align="right" bgcolor="#FF4949">15,883 ns (Δ = +2,277 ns)</td><td align="right" bgcolor="#A8D08D">13,537 ns (Δ = -2,347 ns)</td><td align="right" bgcolor="#FF4949">15,707 ns (Δ = +2,170 ns)</td><td align="right" bgcolor="#FF4949">16,450 ns (Δ = +0,743 ns)</td><td align="right" bgcolor="#A8D08D">15,359 ns (Δ = -1,091 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,016 μs</td><td align="right" bgcolor="#FFFFFF">0,016 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,015 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,016 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,016 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,016 μs (Δ = +0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,014 μs</td><td align="right" bgcolor="#FF4949">0,016 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,014 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,016 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FF4949">0,016 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,015 μs (Δ = -0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14277,24 +14277,24 @@ Slowest: 5.0.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **4.3.0**
 
 Slowest: 4.2.0
 
-Δ: 1,910 ns
+Δ: 0,963 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-8,9 %</td><td align="right" bgcolor="#FF4949">+3,6 %</td><td align="right" bgcolor="#FF4949">+4,0 %</td><td align="right" bgcolor="#A8D08D">-10,5 %</td><td align="right" bgcolor="#FFFFFF">+0,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-6,3 %</td><td align="right" bgcolor="#FF4949">+5,7 %</td><td align="right" bgcolor="#FFFFFF">-1,6 %</td><td align="right" bgcolor="#FFFFFF">-1,5 %</td><td align="right" bgcolor="#FFFFFF">-2,3 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">15,783 ns</td><td align="right" bgcolor="#A8D08D">14,380 ns (Δ = -1,403 ns)</td><td align="right" bgcolor="#FF4949">14,900 ns (Δ = +0,520 ns)</td><td align="right" bgcolor="#FF4949">15,493 ns (Δ = +0,593 ns)</td><td align="right" bgcolor="#A8D08D">13,873 ns (Δ = -1,619 ns)</td><td align="right" bgcolor="#FFFFFF">13,949 ns (Δ = +0,076 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">15,247 ns</td><td align="right" bgcolor="#A8D08D">14,283 ns (Δ = -0,963 ns)</td><td align="right" bgcolor="#FF4949">15,093 ns (Δ = +0,810 ns)</td><td align="right" bgcolor="#FFFFFF">14,851 ns (Δ = -0,242 ns)</td><td align="right" bgcolor="#FFFFFF">14,627 ns (Δ = -0,224 ns)</td><td align="right" bgcolor="#FFFFFF">14,290 ns (Δ = -0,337 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,016 μs</td><td align="right" bgcolor="#A8D08D">0,014 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,015 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,015 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,014 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,014 μs (Δ = +0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,015 μs</td><td align="right" bgcolor="#A8D08D">0,014 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,015 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,014 μs (Δ = 0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14346,24 +14346,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **4.5.4**
+Fastest: **5.0.0**
 
-Slowest: 4.5.0
+Slowest: 4.2.0
 
-Δ: 1,838 ns
+Δ: 0,634 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,1 %</td><td align="right" bgcolor="#A8D08D">-8,2 %</td><td align="right" bgcolor="#FF4949">+9,0 %</td><td align="right" bgcolor="#A8D08D">-11,6 %</td><td align="right" bgcolor="#FF4949">+11,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,6 %</td><td align="right" bgcolor="#FFFFFF">-2,0 %</td><td align="right" bgcolor="#FFFFFF">-0,5 %</td><td align="right" bgcolor="#FFFFFF">+0,1 %</td><td align="right" bgcolor="#FFFFFF">-1,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">15,556 ns</td><td align="right" bgcolor="#FFFFFF">15,883 ns (Δ = +0,327 ns)</td><td align="right" bgcolor="#A8D08D">14,580 ns (Δ = -1,303 ns)</td><td align="right" bgcolor="#FF4949">15,887 ns (Δ = +1,307 ns)</td><td align="right" bgcolor="#A8D08D">14,049 ns (Δ = -1,838 ns)</td><td align="right" bgcolor="#FF4949">15,607 ns (Δ = +1,558 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">15,891 ns</td><td align="right" bgcolor="#FFFFFF">15,802 ns (Δ = -0,089 ns)</td><td align="right" bgcolor="#FFFFFF">15,493 ns (Δ = -0,309 ns)</td><td align="right" bgcolor="#FFFFFF">15,420 ns (Δ = -0,073 ns)</td><td align="right" bgcolor="#FFFFFF">15,440 ns (Δ = +0,020 ns)</td><td align="right" bgcolor="#FFFFFF">15,257 ns (Δ = -0,183 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,016 μs</td><td align="right" bgcolor="#FFFFFF">0,016 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,015 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,016 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,014 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,016 μs (Δ = +0,002 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,016 μs</td><td align="right" bgcolor="#FFFFFF">0,016 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,015 μs (Δ = 0,000 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14415,24 +14415,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.2.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.4
 
-Δ: 1,056 ns
+Δ: 0,963 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+1,9 %</td><td align="right" bgcolor="#A8D08D">-3,3 %</td><td align="right" bgcolor="#FFFFFF">+1,7 %</td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#FF4949">+5,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,3 %</td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FFFFFF">-1,3 %</td><td align="right" bgcolor="#FF4949">+3,6 %</td><td align="right" bgcolor="#A8D08D">-4,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">16,893 ns</td><td align="right" bgcolor="#FFFFFF">17,213 ns (Δ = +0,320 ns)</td><td align="right" bgcolor="#A8D08D">16,638 ns (Δ = -0,576 ns)</td><td align="right" bgcolor="#FFFFFF">16,923 ns (Δ = +0,286 ns)</td><td align="right" bgcolor="#FFFFFF">16,784 ns (Δ = -0,139 ns)</td><td align="right" bgcolor="#FF4949">17,693 ns (Δ = +0,909 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">16,337 ns</td><td align="right" bgcolor="#FF4949">17,047 ns (Δ = +0,710 ns)</td><td align="right" bgcolor="#FFFFFF">16,919 ns (Δ = -0,128 ns)</td><td align="right" bgcolor="#FFFFFF">16,694 ns (Δ = -0,225 ns)</td><td align="right" bgcolor="#FF4949">17,300 ns (Δ = +0,606 ns)</td><td align="right" bgcolor="#A8D08D">16,580 ns (Δ = -0,720 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,017 μs</td><td align="right" bgcolor="#FFFFFF">0,017 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,017 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,017 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,017 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,018 μs (Δ = +0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,016 μs</td><td align="right" bgcolor="#FF4949">0,017 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,017 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,017 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,017 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,017 μs (Δ = -0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14488,20 +14488,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.2.0
 
-Δ: 2,852 ns
+Δ: 5,199 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,2 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#A8D08D">-3,2 %</td><td align="right" bgcolor="#FF4949">+3,1 %</td><td align="right" bgcolor="#A8D08D">-5,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,0 %</td><td align="right" bgcolor="#FFFFFF">+1,1 %</td><td align="right" bgcolor="#FFFFFF">-1,8 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td><td align="right" bgcolor="#A8D08D">-9,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">42,721 ns</td><td align="right" bgcolor="#FFFFFF">42,219 ns (Δ = -0,502 ns)</td><td align="right" bgcolor="#FFFFFF">42,056 ns (Δ = -0,164 ns)</td><td align="right" bgcolor="#A8D08D">40,713 ns (Δ = -1,343 ns)</td><td align="right" bgcolor="#FF4949">41,977 ns (Δ = +1,264 ns)</td><td align="right" bgcolor="#A8D08D">39,869 ns (Δ = -2,108 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">42,717 ns</td><td align="right" bgcolor="#A8D08D">41,447 ns (Δ = -1,270 ns)</td><td align="right" bgcolor="#FFFFFF">41,916 ns (Δ = +0,469 ns)</td><td align="right" bgcolor="#FFFFFF">41,165 ns (Δ = -0,751 ns)</td><td align="right" bgcolor="#FFFFFF">41,407 ns (Δ = +0,242 ns)</td><td align="right" bgcolor="#A8D08D">37,518 ns (Δ = -3,889 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,043 μs</td><td align="right" bgcolor="#FFFFFF">0,042 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,042 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,041 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,042 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,040 μs (Δ = -0,002 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,043 μs</td><td align="right" bgcolor="#A8D08D">0,041 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,042 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,041 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,041 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,038 μs (Δ = -0,004 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14555,24 +14555,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
-Slowest: 4.5.4
+Slowest: 4.4.0
 
-Δ: 52,824 ns
+Δ: 176,620 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,5 %</td><td align="right" bgcolor="#FF4949">+3,8 %</td><td align="right" bgcolor="#A8D08D">-5,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-11,1 %</td><td align="right" bgcolor="#A8D08D">-5,6 %</td><td align="right" bgcolor="#FF4949">+3,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">983,153 ns</td><td align="right" bgcolor="#FFFFFF">968,477 ns (Δ = -14,677 ns)</td><td align="right" bgcolor="#FF4949">1005,151 ns (Δ = +36,674 ns)</td><td align="right" bgcolor="#A8D08D">952,327 ns (Δ = -52,824 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">1096,120 ns</td><td align="right" bgcolor="#A8D08D">973,987 ns (Δ = -122,133 ns)</td><td align="right" bgcolor="#A8D08D">919,500 ns (Δ = -54,487 ns)</td><td align="right" bgcolor="#FF4949">954,093 ns (Δ = +34,593 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,983 μs</td><td align="right" bgcolor="#FFFFFF">0,968 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#FF4949">1,005 μs (Δ = +0,037 μs)</td><td align="right" bgcolor="#A8D08D">0,952 μs (Δ = -0,053 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">1,096 μs</td><td align="right" bgcolor="#A8D08D">0,974 μs (Δ = -0,122 μs)</td><td align="right" bgcolor="#A8D08D">0,920 μs (Δ = -0,054 μs)</td><td align="right" bgcolor="#FF4949">0,954 μs (Δ = +0,035 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#FFFFFF">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,001 ms</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,001 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,001 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14624,24 +14624,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.5.4**
 
-Slowest: 4.2.0
+Slowest: 4.5.0
 
-Δ: 4,667 ns
+Δ: 15,491 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-15,7 %</td><td align="right" bgcolor="#A8D08D">-7,5 %</td><td align="right" bgcolor="#FF4949">+13,0 %</td><td align="right" bgcolor="#FFFFFF">-2,1 %</td><td align="right" bgcolor="#FFFFFF">-2,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FF4949">+5,1 %</td><td align="right" bgcolor="#FF4949">+75,2 %</td><td align="right" bgcolor="#A8D08D">-47,2 %</td><td align="right" bgcolor="#FF4949">+6,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">21,170 ns</td><td align="right" bgcolor="#A8D08D">17,839 ns (Δ = -3,331 ns)</td><td align="right" bgcolor="#A8D08D">16,503 ns (Δ = -1,336 ns)</td><td align="right" bgcolor="#FF4949">18,657 ns (Δ = +2,153 ns)</td><td align="right" bgcolor="#FFFFFF">18,273 ns (Δ = -0,383 ns)</td><td align="right" bgcolor="#FFFFFF">17,860 ns (Δ = -0,413 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">17,703 ns</td><td align="right" bgcolor="#FFFFFF">17,833 ns (Δ = +0,129 ns)</td><td align="right" bgcolor="#FF4949">18,734 ns (Δ = +0,902 ns)</td><td align="right" bgcolor="#FF4949">32,818 ns (Δ = +14,084 ns)</td><td align="right" bgcolor="#A8D08D">17,327 ns (Δ = -15,491 ns)</td><td align="right" bgcolor="#FF4949">18,473 ns (Δ = +1,147 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,021 μs</td><td align="right" bgcolor="#A8D08D">0,018 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,017 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,019 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FFFFFF">0,018 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,018 μs (Δ = 0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,018 μs</td><td align="right" bgcolor="#FFFFFF">0,018 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,019 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,033 μs (Δ = +0,014 μs)</td><td align="right" bgcolor="#A8D08D">0,017 μs (Δ = -0,015 μs)</td><td align="right" bgcolor="#FF4949">0,018 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14693,24 +14693,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **4.4.0**
+Fastest: **4.5.4**
 
-Slowest: 4.3.0
+Slowest: 4.5.0
 
-Δ: 16,519 ns
+Δ: 20,269 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,1 %</td><td align="right" bgcolor="#A8D08D">-6,2 %</td><td align="right" bgcolor="#FF4949">+5,9 %</td><td align="right" bgcolor="#FFFFFF">-2,9 %</td><td align="right" bgcolor="#FFFFFF">-0,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,3 %</td><td align="right" bgcolor="#FFFFFF">+0,3 %</td><td align="right" bgcolor="#FF4949">+6,5 %</td><td align="right" bgcolor="#A8D08D">-7,8 %</td><td align="right" bgcolor="#FF4949">+4,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">259,177 ns</td><td align="right" bgcolor="#FFFFFF">264,503 ns (Δ = +5,327 ns)</td><td align="right" bgcolor="#A8D08D">247,984 ns (Δ = -16,519 ns)</td><td align="right" bgcolor="#FF4949">262,503 ns (Δ = +14,519 ns)</td><td align="right" bgcolor="#FFFFFF">255,017 ns (Δ = -7,487 ns)</td><td align="right" bgcolor="#FFFFFF">254,310 ns (Δ = -0,707 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">251,737 ns</td><td align="right" bgcolor="#A8D08D">243,508 ns (Δ = -8,228 ns)</td><td align="right" bgcolor="#FFFFFF">244,136 ns (Δ = +0,628 ns)</td><td align="right" bgcolor="#FF4949">259,950 ns (Δ = +15,814 ns)</td><td align="right" bgcolor="#A8D08D">239,681 ns (Δ = -20,269 ns)</td><td align="right" bgcolor="#FF4949">249,753 ns (Δ = +10,073 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,259 μs</td><td align="right" bgcolor="#FFFFFF">0,265 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#A8D08D">0,248 μs (Δ = -0,017 μs)</td><td align="right" bgcolor="#FF4949">0,263 μs (Δ = +0,015 μs)</td><td align="right" bgcolor="#FFFFFF">0,255 μs (Δ = -0,007 μs)</td><td align="right" bgcolor="#FFFFFF">0,254 μs (Δ = -0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,252 μs</td><td align="right" bgcolor="#A8D08D">0,244 μs (Δ = -0,008 μs)</td><td align="right" bgcolor="#FFFFFF">0,244 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FF4949">0,260 μs (Δ = +0,016 μs)</td><td align="right" bgcolor="#A8D08D">0,240 μs (Δ = -0,020 μs)</td><td align="right" bgcolor="#FF4949">0,250 μs (Δ = +0,010 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14764,22 +14764,22 @@ Slowest: 4.3.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.4.0
+Slowest: 4.2.0
 
-Δ: 5,701 ns
+Δ: 11,192 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,1 %</td><td align="right" bgcolor="#FF4949">+6,6 %</td><td align="right" bgcolor="#A8D08D">-4,9 %</td><td align="right" bgcolor="#A8D08D">-5,8 %</td><td align="right" bgcolor="#A8D08D">-3,8 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-17,8 %</td><td align="right" bgcolor="#FF4949">+9,5 %</td><td align="right" bgcolor="#A8D08D">-7,2 %</td><td align="right" bgcolor="#A8D08D">-7,2 %</td><td align="right" bgcolor="#FFFFFF">-1,6 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">39,780 ns</td><td align="right" bgcolor="#A8D08D">38,563 ns (Δ = -1,217 ns)</td><td align="right" bgcolor="#FF4949">41,117 ns (Δ = +2,554 ns)</td><td align="right" bgcolor="#A8D08D">39,093 ns (Δ = -2,024 ns)</td><td align="right" bgcolor="#A8D08D">36,830 ns (Δ = -2,263 ns)</td><td align="right" bgcolor="#A8D08D">35,416 ns (Δ = -1,414 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">47,150 ns</td><td align="right" bgcolor="#A8D08D">38,753 ns (Δ = -8,397 ns)</td><td align="right" bgcolor="#FF4949">42,440 ns (Δ = +3,687 ns)</td><td align="right" bgcolor="#A8D08D">39,377 ns (Δ = -3,063 ns)</td><td align="right" bgcolor="#A8D08D">36,530 ns (Δ = -2,847 ns)</td><td align="right" bgcolor="#FFFFFF">35,958 ns (Δ = -0,572 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,040 μs</td><td align="right" bgcolor="#A8D08D">0,039 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,041 μs (Δ = +0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,039 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,037 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,035 μs (Δ = -0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,047 μs</td><td align="right" bgcolor="#A8D08D">0,039 μs (Δ = -0,008 μs)</td><td align="right" bgcolor="#FF4949">0,042 μs (Δ = +0,004 μs)</td><td align="right" bgcolor="#A8D08D">0,039 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#A8D08D">0,037 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,036 μs (Δ = -0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14831,24 +14831,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
 Slowest: 4.4.0
 
-Δ: 13,290 ns
+Δ: 105,459 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,7 %</td><td align="right" bgcolor="#FF4949">+8,5 %</td><td align="right" bgcolor="#A8D08D">-5,5 %</td><td align="right" bgcolor="#A8D08D">-3,1 %</td><td align="right" bgcolor="#FFFFFF">-1,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#FF4949">+85,8 %</td><td align="right" bgcolor="#A8D08D">-45,1 %</td><td align="right" bgcolor="#FFFFFF">-2,4 %</td><td align="right" bgcolor="#FFFFFF">+0,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">124,807 ns</td><td align="right" bgcolor="#FFFFFF">123,882 ns (Δ = -0,925 ns)</td><td align="right" bgcolor="#FF4949">134,397 ns (Δ = +10,515 ns)</td><td align="right" bgcolor="#A8D08D">127,027 ns (Δ = -7,370 ns)</td><td align="right" bgcolor="#A8D08D">123,042 ns (Δ = -3,985 ns)</td><td align="right" bgcolor="#FFFFFF">121,107 ns (Δ = -1,935 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">125,130 ns</td><td align="right" bgcolor="#FFFFFF">122,122 ns (Δ = -3,008 ns)</td><td align="right" bgcolor="#FF4949">226,957 ns (Δ = +104,835 ns)</td><td align="right" bgcolor="#A8D08D">124,543 ns (Δ = -102,414 ns)</td><td align="right" bgcolor="#FFFFFF">121,498 ns (Δ = -3,045 ns)</td><td align="right" bgcolor="#FFFFFF">122,487 ns (Δ = +0,989 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,125 μs</td><td align="right" bgcolor="#FFFFFF">0,124 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,134 μs (Δ = +0,011 μs)</td><td align="right" bgcolor="#A8D08D">0,127 μs (Δ = -0,007 μs)</td><td align="right" bgcolor="#A8D08D">0,123 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FFFFFF">0,121 μs (Δ = -0,002 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,125 μs</td><td align="right" bgcolor="#FFFFFF">0,122 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FF4949">0,227 μs (Δ = +0,105 μs)</td><td align="right" bgcolor="#A8D08D">0,125 μs (Δ = -0,102 μs)</td><td align="right" bgcolor="#FFFFFF">0,121 μs (Δ = -0,003 μs)</td><td align="right" bgcolor="#FFFFFF">0,122 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14900,24 +14900,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
 Slowest: 4.4.0
 
-Δ: 1,486 ns
+Δ: 1,793 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-0,5 %</td><td align="right" bgcolor="#FFFFFF">-2,5 %</td><td align="right" bgcolor="#FFFFFF">-1,8 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">0,0 %</td><td align="right" bgcolor="#A8D08D">-5,7 %</td><td align="right" bgcolor="#FF4949">+4,4 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">31,535 ns</td><td align="right" bgcolor="#FFFFFF">31,377 ns (Δ = -0,158 ns)</td><td align="right" bgcolor="#FFFFFF">30,607 ns (Δ = -0,770 ns)</td><td align="right" bgcolor="#FFFFFF">30,049 ns (Δ = -0,558 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">31,566 ns</td><td align="right" bgcolor="#FFFFFF">31,560 ns (Δ = -0,006 ns)</td><td align="right" bgcolor="#A8D08D">29,773 ns (Δ = -1,787 ns)</td><td align="right" bgcolor="#FF4949">31,080 ns (Δ = +1,307 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,032 μs</td><td align="right" bgcolor="#FFFFFF">0,031 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,031 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,030 μs (Δ = -0,001 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,032 μs</td><td align="right" bgcolor="#FFFFFF">0,032 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,030 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,031 μs (Δ = +0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -14969,24 +14969,24 @@ Slowest: 4.4.0
 
 #### Performance
 
-Fastest: **5.0.0**
+Fastest: **4.5.4**
 
 Slowest: 4.5.0
 
-Δ: 57,004 ns
+Δ: 95,007 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,0 %</td><td align="right" bgcolor="#FFFFFF">+0,1 %</td><td align="right" bgcolor="#FF4949">+10,1 %</td><td align="right" bgcolor="#A8D08D">-11,2 %</td><td align="right" bgcolor="#FFFFFF">-2,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,1 %</td><td align="right" bgcolor="#FFFFFF">+0,6 %</td><td align="right" bgcolor="#FF4949">+23,8 %</td><td align="right" bgcolor="#A8D08D">-21,4 %</td><td align="right" bgcolor="#FFFFFF">+1,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">371,993 ns</td><td align="right" bgcolor="#FFFFFF">379,573 ns (Δ = +7,580 ns)</td><td align="right" bgcolor="#FFFFFF">379,933 ns (Δ = +0,359 ns)</td><td align="right" bgcolor="#FF4949">418,157 ns (Δ = +38,224 ns)</td><td align="right" bgcolor="#A8D08D">371,320 ns (Δ = -46,837 ns)</td><td align="right" bgcolor="#FFFFFF">361,153 ns (Δ = -10,167 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">361,053 ns</td><td align="right" bgcolor="#FFFFFF">356,944 ns (Δ = -4,109 ns)</td><td align="right" bgcolor="#FFFFFF">359,200 ns (Δ = +2,256 ns)</td><td align="right" bgcolor="#FF4949">444,700 ns (Δ = +85,500 ns)</td><td align="right" bgcolor="#A8D08D">349,693 ns (Δ = -95,007 ns)</td><td align="right" bgcolor="#FFFFFF">353,163 ns (Δ = +3,470 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,372 μs</td><td align="right" bgcolor="#FFFFFF">0,380 μs (Δ = +0,008 μs)</td><td align="right" bgcolor="#FFFFFF">0,380 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#FF4949">0,418 μs (Δ = +0,038 μs)</td><td align="right" bgcolor="#A8D08D">0,371 μs (Δ = -0,047 μs)</td><td align="right" bgcolor="#FFFFFF">0,361 μs (Δ = -0,010 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,361 μs</td><td align="right" bgcolor="#FFFFFF">0,357 μs (Δ = -0,004 μs)</td><td align="right" bgcolor="#FFFFFF">0,359 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#FF4949">0,445 μs (Δ = +0,086 μs)</td><td align="right" bgcolor="#A8D08D">0,350 μs (Δ = -0,095 μs)</td><td align="right" bgcolor="#FFFFFF">0,353 μs (Δ = +0,003 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -15040,24 +15040,24 @@ Slowest: 4.5.0
 
 #### Performance
 
-Fastest: **4.5.0**
+Fastest: **4.4.0**
 
-Slowest: 4.2.0
+Slowest: 5.0.0
 
-Δ: 1100,457 ns
+Δ: 1002,117 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-21,2 %</td><td align="right" bgcolor="#A8D08D">-8,5 %</td><td align="right" bgcolor="#FFFFFF">-1,5 %</td><td align="right" bgcolor="#FF4949">+6,0 %</td><td align="right" bgcolor="#FF4949">+11,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,3 %</td><td align="right" bgcolor="#A8D08D">-11,0 %</td><td align="right" bgcolor="#FF4949">+26,6 %</td><td align="right" bgcolor="#A8D08D">-4,7 %</td><td align="right" bgcolor="#FF4949">+20,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3794,877 ns</td><td align="right" bgcolor="#A8D08D">2989,590 ns (Δ = -805,287 ns)</td><td align="right" bgcolor="#A8D08D">2735,820 ns (Δ = -253,770 ns)</td><td align="right" bgcolor="#FFFFFF">2694,420 ns (Δ = -41,400 ns)</td><td align="right" bgcolor="#FF4949">2855,304 ns (Δ = +160,884 ns)</td><td align="right" bgcolor="#FF4949">3185,597 ns (Δ = +330,292 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">2553,464 ns</td><td align="right" bgcolor="#FFFFFF">2520,427 ns (Δ = -33,037 ns)</td><td align="right" bgcolor="#A8D08D">2244,133 ns (Δ = -276,293 ns)</td><td align="right" bgcolor="#FF4949">2840,243 ns (Δ = +596,110 ns)</td><td align="right" bgcolor="#A8D08D">2705,490 ns (Δ = -134,753 ns)</td><td align="right" bgcolor="#FF4949">3246,250 ns (Δ = +540,760 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,795 μs</td><td align="right" bgcolor="#A8D08D">2,990 μs (Δ = -0,805 μs)</td><td align="right" bgcolor="#A8D08D">2,736 μs (Δ = -0,254 μs)</td><td align="right" bgcolor="#FFFFFF">2,694 μs (Δ = -0,041 μs)</td><td align="right" bgcolor="#FF4949">2,855 μs (Δ = +0,161 μs)</td><td align="right" bgcolor="#FF4949">3,186 μs (Δ = +0,330 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">2,553 μs</td><td align="right" bgcolor="#FFFFFF">2,520 μs (Δ = -0,033 μs)</td><td align="right" bgcolor="#A8D08D">2,244 μs (Δ = -0,276 μs)</td><td align="right" bgcolor="#FF4949">2,840 μs (Δ = +0,596 μs)</td><td align="right" bgcolor="#A8D08D">2,705 μs (Δ = -0,135 μs)</td><td align="right" bgcolor="#FF4949">3,246 μs (Δ = +0,541 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,001 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -15109,24 +15109,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **4.3.0**
+Fastest: **4.4.0**
 
-Slowest: 5.0.0
+Slowest: 4.5.0
 
-Δ: 1814,303 ns
+Δ: 905,757 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-8,8 %</td><td align="right" bgcolor="#FFFFFF">+2,2 %</td><td align="right" bgcolor="#FF4949">+19,9 %</td><td align="right" bgcolor="#FF4949">+30,7 %</td><td align="right" bgcolor="#FF4949">+7,4 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-7,7 %</td><td align="right" bgcolor="#FFFFFF">-2,7 %</td><td align="right" bgcolor="#FF4949">+38,0 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#A8D08D">-6,2 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">2761,590 ns</td><td align="right" bgcolor="#A8D08D">2519,247 ns (Δ = -242,344 ns)</td><td align="right" bgcolor="#FFFFFF">2574,772 ns (Δ = +55,525 ns)</td><td align="right" bgcolor="#FF4949">3086,678 ns (Δ = +511,906 ns)</td><td align="right" bgcolor="#FF4949">4035,597 ns (Δ = +948,919 ns)</td><td align="right" bgcolor="#FF4949">4333,550 ns (Δ = +297,953 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">2659,067 ns</td><td align="right" bgcolor="#A8D08D">2453,300 ns (Δ = -205,767 ns)</td><td align="right" bgcolor="#FFFFFF">2386,187 ns (Δ = -67,113 ns)</td><td align="right" bgcolor="#FF4949">3291,943 ns (Δ = +905,757 ns)</td><td align="right" bgcolor="#FFFFFF">3278,417 ns (Δ = -13,527 ns)</td><td align="right" bgcolor="#A8D08D">3074,160 ns (Δ = -204,257 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">2,762 μs</td><td align="right" bgcolor="#A8D08D">2,519 μs (Δ = -0,242 μs)</td><td align="right" bgcolor="#FFFFFF">2,575 μs (Δ = +0,056 μs)</td><td align="right" bgcolor="#FF4949">3,087 μs (Δ = +0,512 μs)</td><td align="right" bgcolor="#FF4949">4,036 μs (Δ = +0,949 μs)</td><td align="right" bgcolor="#FF4949">4,334 μs (Δ = +0,298 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">2,659 μs</td><td align="right" bgcolor="#A8D08D">2,453 μs (Δ = -0,206 μs)</td><td align="right" bgcolor="#FFFFFF">2,386 μs (Δ = -0,067 μs)</td><td align="right" bgcolor="#FF4949">3,292 μs (Δ = +0,906 μs)</td><td align="right" bgcolor="#FFFFFF">3,278 μs (Δ = -0,014 μs)</td><td align="right" bgcolor="#A8D08D">3,074 μs (Δ = -0,204 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#A8D08D">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,002 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -15180,22 +15180,22 @@ Slowest: 5.0.0
 
 Fastest: **4.4.0**
 
-Slowest: 4.5.4
+Slowest: 4.5.0
 
-Δ: 628,823 ns
+Δ: 811,077 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-13,0 %</td><td align="right" bgcolor="#FFFFFF">-2,0 %</td><td align="right" bgcolor="#FF4949">+12,8 %</td><td align="right" bgcolor="#FF4949">+6,8 %</td><td align="right" bgcolor="#A8D08D">-3,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-3,0 %</td><td align="right" bgcolor="#A8D08D">-4,4 %</td><td align="right" bgcolor="#FF4949">+26,6 %</td><td align="right" bgcolor="#A8D08D">-10,3 %</td><td align="right" bgcolor="#FF4949">+9,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3613,998 ns</td><td align="right" bgcolor="#A8D08D">3144,443 ns (Δ = -469,554 ns)</td><td align="right" bgcolor="#FFFFFF">3082,423 ns (Δ = -62,020 ns)</td><td align="right" bgcolor="#FF4949">3476,397 ns (Δ = +393,973 ns)</td><td align="right" bgcolor="#FF4949">3711,247 ns (Δ = +234,850 ns)</td><td align="right" bgcolor="#A8D08D">3596,440 ns (Δ = -114,807 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3286,837 ns</td><td align="right" bgcolor="#A8D08D">3187,010 ns (Δ = -99,827 ns)</td><td align="right" bgcolor="#A8D08D">3045,473 ns (Δ = -141,537 ns)</td><td align="right" bgcolor="#FF4949">3856,550 ns (Δ = +811,077 ns)</td><td align="right" bgcolor="#A8D08D">3459,440 ns (Δ = -397,110 ns)</td><td align="right" bgcolor="#FF4949">3786,757 ns (Δ = +327,317 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,614 μs</td><td align="right" bgcolor="#A8D08D">3,144 μs (Δ = -0,470 μs)</td><td align="right" bgcolor="#FFFFFF">3,082 μs (Δ = -0,062 μs)</td><td align="right" bgcolor="#FF4949">3,476 μs (Δ = +0,394 μs)</td><td align="right" bgcolor="#FF4949">3,711 μs (Δ = +0,235 μs)</td><td align="right" bgcolor="#A8D08D">3,596 μs (Δ = -0,115 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,287 μs</td><td align="right" bgcolor="#A8D08D">3,187 μs (Δ = -0,100 μs)</td><td align="right" bgcolor="#A8D08D">3,045 μs (Δ = -0,142 μs)</td><td align="right" bgcolor="#FF4949">3,857 μs (Δ = +0,811 μs)</td><td align="right" bgcolor="#A8D08D">3,459 μs (Δ = -0,397 μs)</td><td align="right" bgcolor="#FF4949">3,787 μs (Δ = +0,327 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,003 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,003 ms</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -15249,22 +15249,22 @@ Slowest: 4.5.4
 
 Fastest: **4.4.0**
 
-Slowest: 4.5.0
+Slowest: 5.0.0
 
-Δ: 812,152 ns
+Δ: 4757,013 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,1 %</td><td align="right" bgcolor="#A8D08D">-4,4 %</td><td align="right" bgcolor="#FF4949">+22,9 %</td><td align="right" bgcolor="#A8D08D">-13,2 %</td><td align="right" bgcolor="#FF4949">+8,3 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+2,3 %</td><td align="right" bgcolor="#A8D08D">-6,8 %</td><td align="right" bgcolor="#FF4949">+14,5 %</td><td align="right" bgcolor="#FFFFFF">-0,3 %</td><td align="right" bgcolor="#FF4949">+107,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3557,737 ns</td><td align="right" bgcolor="#FF4949">3704,953 ns (Δ = +147,217 ns)</td><td align="right" bgcolor="#A8D08D">3542,663 ns (Δ = -162,290 ns)</td><td align="right" bgcolor="#FF4949">4354,815 ns (Δ = +812,152 ns)</td><td align="right" bgcolor="#A8D08D">3779,707 ns (Δ = -575,108 ns)</td><td align="right" bgcolor="#FF4949">4094,565 ns (Δ = +314,858 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">3634,451 ns</td><td align="right" bgcolor="#FFFFFF">3719,287 ns (Δ = +84,836 ns)</td><td align="right" bgcolor="#A8D08D">3465,837 ns (Δ = -253,450 ns)</td><td align="right" bgcolor="#FF4949">3969,967 ns (Δ = +504,130 ns)</td><td align="right" bgcolor="#FFFFFF">3957,043 ns (Δ = -12,923 ns)</td><td align="right" bgcolor="#FF4949">8222,850 ns (Δ = +4265,807 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,558 μs</td><td align="right" bgcolor="#FF4949">3,705 μs (Δ = +0,147 μs)</td><td align="right" bgcolor="#A8D08D">3,543 μs (Δ = -0,162 μs)</td><td align="right" bgcolor="#FF4949">4,355 μs (Δ = +0,812 μs)</td><td align="right" bgcolor="#A8D08D">3,780 μs (Δ = -0,575 μs)</td><td align="right" bgcolor="#FF4949">4,095 μs (Δ = +0,315 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">3,634 μs</td><td align="right" bgcolor="#FFFFFF">3,719 μs (Δ = +0,085 μs)</td><td align="right" bgcolor="#A8D08D">3,466 μs (Δ = -0,253 μs)</td><td align="right" bgcolor="#FF4949">3,970 μs (Δ = +0,504 μs)</td><td align="right" bgcolor="#FFFFFF">3,957 μs (Δ = -0,013 μs)</td><td align="right" bgcolor="#FF4949">8,223 μs (Δ = +4,266 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#A8D08D">0,004 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,004 ms</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,003 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,004 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,004 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,008 ms (Δ = +0,004 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -15322,20 +15322,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.5.0
 
-Δ: 10981,198 ns
+Δ: 20955,204 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FFFFFF">+1,0 %</td><td align="right" bgcolor="#FFFFFF">+1,0 %</td><td align="right" bgcolor="#FFFFFF">-1,5 %</td><td align="right" bgcolor="#A8D08D">-40,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FF4949">+5,1 %</td><td align="right" bgcolor="#FF4949">+29,8 %</td><td align="right" bgcolor="#A8D08D">-27,3 %</td><td align="right" bgcolor="#A8D08D">-42,8 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">25895,386 ns</td><td align="right" bgcolor="#FFFFFF">25959,558 ns (Δ = +64,172 ns)</td><td align="right" bgcolor="#FFFFFF">26231,166 ns (Δ = +271,608 ns)</td><td align="right" bgcolor="#FFFFFF">26505,456 ns (Δ = +274,290 ns)</td><td align="right" bgcolor="#FFFFFF">26118,273 ns (Δ = -387,182 ns)</td><td align="right" bgcolor="#A8D08D">15524,258 ns (Δ = -10594,016 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">26253,909 ns</td><td align="right" bgcolor="#FFFFFF">26301,828 ns (Δ = +47,919 ns)</td><td align="right" bgcolor="#FF4949">27630,092 ns (Δ = +1328,264 ns)</td><td align="right" bgcolor="#FF4949">35867,880 ns (Δ = +8237,788 ns)</td><td align="right" bgcolor="#A8D08D">26060,098 ns (Δ = -9807,782 ns)</td><td align="right" bgcolor="#A8D08D">14912,676 ns (Δ = -11147,422 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">25,895 μs</td><td align="right" bgcolor="#FFFFFF">25,960 μs (Δ = +0,064 μs)</td><td align="right" bgcolor="#FFFFFF">26,231 μs (Δ = +0,272 μs)</td><td align="right" bgcolor="#FFFFFF">26,505 μs (Δ = +0,274 μs)</td><td align="right" bgcolor="#FFFFFF">26,118 μs (Δ = -0,387 μs)</td><td align="right" bgcolor="#A8D08D">15,524 μs (Δ = -10,594 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">26,254 μs</td><td align="right" bgcolor="#FFFFFF">26,302 μs (Δ = +0,048 μs)</td><td align="right" bgcolor="#FF4949">27,630 μs (Δ = +1,328 μs)</td><td align="right" bgcolor="#FF4949">35,868 μs (Δ = +8,238 μs)</td><td align="right" bgcolor="#A8D08D">26,060 μs (Δ = -9,808 μs)</td><td align="right" bgcolor="#A8D08D">14,913 μs (Δ = -11,147 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,026 ms</td><td align="right" bgcolor="#FFFFFF">0,026 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,026 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,027 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,026 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,016 ms (Δ = -0,011 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,026 ms</td><td align="right" bgcolor="#FFFFFF">0,026 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,028 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FF4949">0,036 ms (Δ = +0,008 ms)</td><td align="right" bgcolor="#A8D08D">0,026 ms (Δ = -0,010 ms)</td><td align="right" bgcolor="#A8D08D">0,015 ms (Δ = -0,011 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -15364,7 +15364,7 @@ Slowest: 4.5.0
 <tr>
 <td>Allocated Bytes</td>
 <td align="right">5.0.0</td>
-<td align="right">4.3.0</td>
+<td align="right">4.4.0</td>
 </tr>
 </table>
 
@@ -15377,9 +15377,9 @@ Slowest: 4.5.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">7582</td><td align="right">7677</td><td align="right">7676</td><td align="right">7574</td><td align="right">7565</td><td align="right">5941</td><tr>
-<td>Allocated Kilobytes</td><td align="right">7,404</td><td align="right">7,497</td><td align="right">7,496</td><td align="right">7,396</td><td align="right">7,388</td><td align="right">5,802</td><tr>
-<td>Allocated Megabytes</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,006</td></tr>
+<td>Allocated Bytes</td><td align="right">7581</td><td align="right">7675</td><td align="right">7677</td><td align="right">7574</td><td align="right">7566</td><td align="right">5732</td><tr>
+<td>Allocated Kilobytes</td><td align="right">7,403</td><td align="right">7,495</td><td align="right">7,497</td><td align="right">7,396</td><td align="right">7,389</td><td align="right">5,598</td><tr>
+<td>Allocated Megabytes</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,007</td><td align="right">0,005</td></tr>
 </table>
 
 
@@ -15391,22 +15391,22 @@ Slowest: 4.5.0
 
 Fastest: **5.0.0**
 
-Slowest: 4.2.0
+Slowest: 4.5.0
 
-Δ: 32,395 ns
+Δ: 33,150 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-19,7 %</td><td align="right" bgcolor="#FF4949">+22,9 %</td><td align="right" bgcolor="#A8D08D">-17,2 %</td><td align="right" bgcolor="#FF4949">+4,0 %</td><td align="right" bgcolor="#A8D08D">-5,7 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-13,8 %</td><td align="right" bgcolor="#FF4949">+27,7 %</td><td align="right" bgcolor="#FFFFFF">+0,1 %</td><td align="right" bgcolor="#A8D08D">-19,6 %</td><td align="right" bgcolor="#FFFFFF">-2,7 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">163,205 ns</td><td align="right" bgcolor="#A8D08D">130,982 ns (Δ = -32,223 ns)</td><td align="right" bgcolor="#FF4949">160,977 ns (Δ = +29,994 ns)</td><td align="right" bgcolor="#A8D08D">133,350 ns (Δ = -27,627 ns)</td><td align="right" bgcolor="#FF4949">138,667 ns (Δ = +5,317 ns)</td><td align="right" bgcolor="#A8D08D">130,810 ns (Δ = -7,857 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">137,693 ns</td><td align="right" bgcolor="#A8D08D">118,722 ns (Δ = -18,972 ns)</td><td align="right" bgcolor="#FF4949">151,640 ns (Δ = +32,918 ns)</td><td align="right" bgcolor="#FFFFFF">151,733 ns (Δ = +0,093 ns)</td><td align="right" bgcolor="#A8D08D">121,933 ns (Δ = -29,800 ns)</td><td align="right" bgcolor="#FFFFFF">118,583 ns (Δ = -3,350 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,163 μs</td><td align="right" bgcolor="#A8D08D">0,131 μs (Δ = -0,032 μs)</td><td align="right" bgcolor="#FF4949">0,161 μs (Δ = +0,030 μs)</td><td align="right" bgcolor="#A8D08D">0,133 μs (Δ = -0,028 μs)</td><td align="right" bgcolor="#FF4949">0,139 μs (Δ = +0,005 μs)</td><td align="right" bgcolor="#A8D08D">0,131 μs (Δ = -0,008 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,138 μs</td><td align="right" bgcolor="#A8D08D">0,119 μs (Δ = -0,019 μs)</td><td align="right" bgcolor="#FF4949">0,152 μs (Δ = +0,033 μs)</td><td align="right" bgcolor="#FFFFFF">0,152 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,122 μs (Δ = -0,030 μs)</td><td align="right" bgcolor="#FFFFFF">0,119 μs (Δ = -0,003 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -15448,8 +15448,8 @@ Slowest: 4.2.0
 <td>Gen 1</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td></tr>
 <tr>
 <td>Gen 2</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><td align="right">0</td><tr>
-<td>Allocated Bytes</td><td align="right">176</td><td align="right">175</td><td align="right">175</td><td align="right">175</td><td align="right">175</td><td align="right">175</td><tr>
-<td>Allocated Kilobytes</td><td align="right">0,172</td><td align="right">0,171</td><td align="right">0,171</td><td align="right">0,171</td><td align="right">0,171</td><td align="right">0,171</td><tr>
+<td>Allocated Bytes</td><td align="right">175</td><td align="right">175</td><td align="right">175</td><td align="right">175</td><td align="right">175</td><td align="right">175</td><tr>
+<td>Allocated Kilobytes</td><td align="right">0,171</td><td align="right">0,171</td><td align="right">0,171</td><td align="right">0,171</td><td align="right">0,171</td><td align="right">0,171</td><tr>
 <td>Allocated Megabytes</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td><td align="right">0,000</td></tr>
 </table>
 
@@ -15458,24 +15458,24 @@ Slowest: 4.2.0
 
 #### Performance
 
-Fastest: **4.5.0**
+Fastest: **5.0.0**
 
-Slowest: 4.3.0
+Slowest: 4.2.0
 
-Δ: 5,952 ns
+Δ: 2,500 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FF4949">+4,9 %</td><td align="right" bgcolor="#A8D08D">-16,5 %</td><td align="right" bgcolor="#FFFFFF">-1,6 %</td><td align="right" bgcolor="#FFFFFF">+2,1 %</td><td align="right" bgcolor="#FFFFFF">-0,6 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-6,8 %</td><td align="right" bgcolor="#FF4949">+3,7 %</td><td align="right" bgcolor="#FFFFFF">-1,3 %</td><td align="right" bgcolor="#FFFFFF">+2,5 %</td><td align="right" bgcolor="#A8D08D">-6,5 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">31,783 ns</td><td align="right" bgcolor="#FF4949">33,337 ns (Δ = +1,554 ns)</td><td align="right" bgcolor="#A8D08D">27,841 ns (Δ = -5,496 ns)</td><td align="right" bgcolor="#FFFFFF">27,385 ns (Δ = -0,456 ns)</td><td align="right" bgcolor="#FFFFFF">27,962 ns (Δ = +0,577 ns)</td><td align="right" bgcolor="#FFFFFF">27,788 ns (Δ = -0,174 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">28,943 ns</td><td align="right" bgcolor="#A8D08D">26,975 ns (Δ = -1,968 ns)</td><td align="right" bgcolor="#FF4949">27,970 ns (Δ = +0,995 ns)</td><td align="right" bgcolor="#FFFFFF">27,607 ns (Δ = -0,363 ns)</td><td align="right" bgcolor="#FFFFFF">28,293 ns (Δ = +0,687 ns)</td><td align="right" bgcolor="#A8D08D">26,443 ns (Δ = -1,850 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,032 μs</td><td align="right" bgcolor="#FF4949">0,033 μs (Δ = +0,002 μs)</td><td align="right" bgcolor="#A8D08D">0,028 μs (Δ = -0,005 μs)</td><td align="right" bgcolor="#FFFFFF">0,027 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,028 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,028 μs (Δ = 0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,029 μs</td><td align="right" bgcolor="#A8D08D">0,027 μs (Δ = -0,002 μs)</td><td align="right" bgcolor="#FF4949">0,028 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,028 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FFFFFF">0,028 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,026 μs (Δ = -0,002 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -15527,24 +15527,24 @@ Slowest: 4.3.0
 
 #### Performance
 
-Fastest: **4.3.0**
+Fastest: **5.0.0**
 
 Slowest: 4.5.4
 
-Δ: 0,823 ns
+Δ: 0,753 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-12,2 %</td><td align="right" bgcolor="#FF4949">+9,3 %</td><td align="right" bgcolor="#A8D08D">-5,3 %</td><td align="right" bgcolor="#FF4949">+14,0 %</td><td align="right" bgcolor="#A8D08D">-5,0 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-9,7 %</td><td align="right" bgcolor="#FF4949">+10,6 %</td><td align="right" bgcolor="#FFFFFF">-1,1 %</td><td align="right" bgcolor="#FF4949">+3,1 %</td><td align="right" bgcolor="#A8D08D">-14,0 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">5,202 ns</td><td align="right" bgcolor="#A8D08D">4,568 ns (Δ = -0,633 ns)</td><td align="right" bgcolor="#FF4949">4,993 ns (Δ = +0,425 ns)</td><td align="right" bgcolor="#A8D08D">4,729 ns (Δ = -0,264 ns)</td><td align="right" bgcolor="#FF4949">5,391 ns (Δ = +0,662 ns)</td><td align="right" bgcolor="#A8D08D">5,120 ns (Δ = -0,271 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">5,277 ns</td><td align="right" bgcolor="#A8D08D">4,762 ns (Δ = -0,514 ns)</td><td align="right" bgcolor="#FF4949">5,269 ns (Δ = +0,507 ns)</td><td align="right" bgcolor="#FFFFFF">5,210 ns (Δ = -0,059 ns)</td><td align="right" bgcolor="#FF4949">5,373 ns (Δ = +0,163 ns)</td><td align="right" bgcolor="#A8D08D">4,620 ns (Δ = -0,753 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,005 μs</td><td align="right" bgcolor="#A8D08D">0,005 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,005 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,005 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,005 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#A8D08D">0,005 μs (Δ = 0,000 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">0,005 μs</td><td align="right" bgcolor="#A8D08D">0,005 μs (Δ = -0,001 μs)</td><td align="right" bgcolor="#FF4949">0,005 μs (Δ = +0,001 μs)</td><td align="right" bgcolor="#FFFFFF">0,005 μs (Δ = 0,000 μs)</td><td align="right" bgcolor="#FF4949">0,005 μs (Δ = +0,000 μs)</td><td align="right" bgcolor="#A8D08D">0,005 μs (Δ = -0,001 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,000 ms</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,000 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,000 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#A8D08D">0,000 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -15596,24 +15596,24 @@ Slowest: 4.5.4
 
 #### Performance
 
-Fastest: **4.5.0**
+Fastest: **4.4.0**
 
-Slowest: 4.2.0
+Slowest: 4.5.4
 
-Δ: 3874,471 ns
+Δ: 685,531 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-13,3 %</td><td align="right" bgcolor="#FFFFFF">-2,7 %</td><td align="right" bgcolor="#FFFFFF">-2,5 %</td><td align="right" bgcolor="#FF4949">+4,8 %</td><td align="right" bgcolor="#FFFFFF">-2,5 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,2 %</td><td align="right" bgcolor="#FFFFFF">-0,8 %</td><td align="right" bgcolor="#FFFFFF">+1,4 %</td><td align="right" bgcolor="#FFFFFF">+2,5 %</td><td align="right" bgcolor="#FFFFFF">-0,1 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">21917,667 ns</td><td align="right" bgcolor="#A8D08D">19010,477 ns (Δ = -2907,191 ns)</td><td align="right" bgcolor="#FFFFFF">18504,076 ns (Δ = -506,401 ns)</td><td align="right" bgcolor="#FFFFFF">18043,197 ns (Δ = -460,879 ns)</td><td align="right" bgcolor="#FF4949">18904,747 ns (Δ = +861,550 ns)</td><td align="right" bgcolor="#FFFFFF">18424,913 ns (Δ = -479,833 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">17697,917 ns</td><td align="right" bgcolor="#FFFFFF">17489,957 ns (Δ = -207,960 ns)</td><td align="right" bgcolor="#FFFFFF">17347,422 ns (Δ = -142,534 ns)</td><td align="right" bgcolor="#FFFFFF">17585,180 ns (Δ = +237,758 ns)</td><td align="right" bgcolor="#FFFFFF">18032,953 ns (Δ = +447,773 ns)</td><td align="right" bgcolor="#FFFFFF">18015,580 ns (Δ = -17,373 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">21,918 μs</td><td align="right" bgcolor="#A8D08D">19,010 μs (Δ = -2,907 μs)</td><td align="right" bgcolor="#FFFFFF">18,504 μs (Δ = -0,506 μs)</td><td align="right" bgcolor="#FFFFFF">18,043 μs (Δ = -0,461 μs)</td><td align="right" bgcolor="#FF4949">18,905 μs (Δ = +0,862 μs)</td><td align="right" bgcolor="#FFFFFF">18,425 μs (Δ = -0,480 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">17,698 μs</td><td align="right" bgcolor="#FFFFFF">17,490 μs (Δ = -0,208 μs)</td><td align="right" bgcolor="#FFFFFF">17,347 μs (Δ = -0,143 μs)</td><td align="right" bgcolor="#FFFFFF">17,585 μs (Δ = +0,238 μs)</td><td align="right" bgcolor="#FFFFFF">18,033 μs (Δ = +0,448 μs)</td><td align="right" bgcolor="#FFFFFF">18,016 μs (Δ = -0,017 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,022 ms</td><td align="right" bgcolor="#A8D08D">0,019 ms (Δ = -0,003 ms)</td><td align="right" bgcolor="#FFFFFF">0,019 ms (Δ = -0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,018 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FF4949">0,019 ms (Δ = +0,001 ms)</td><td align="right" bgcolor="#FFFFFF">0,018 ms (Δ = 0,000 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,018 ms</td><td align="right" bgcolor="#FFFFFF">0,017 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,017 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,018 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,018 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,018 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
@@ -15669,20 +15669,20 @@ Fastest: **5.0.0**
 
 Slowest: 4.2.0
 
-Δ: 9664,720 ns
+Δ: 459,380 ns
 
 
 <table>
 <tr>
 <th> </th><th>4.2.0</th><th>4.3.0</th><th>4.4.0</th><th>4.5.0</th><th>4.5.4</th><th>5.0.0</th></tr>
 <tr>
-<td>Average % / operation</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#A8D08D">-31,8 %</td><td align="right" bgcolor="#FFFFFF">+0,7 %</td><td align="right" bgcolor="#FF4949">+10,3 %</td><td align="right" bgcolor="#A8D08D">-9,5 %</td><td align="right" bgcolor="#A8D08D">-3,1 %</td></tr>
+<td>Δ %</td><td align="right" bgcolor="#FFFFFF"></td><td align="right" bgcolor="#FFFFFF">-1,4 %</td><td align="right" bgcolor="#FFFFFF">+1,2 %</td><td align="right" bgcolor="#FFFFFF">+0,2 %</td><td align="right" bgcolor="#FFFFFF">-0,4 %</td><td align="right" bgcolor="#FFFFFF">-1,9 %</td></tr>
 <tr>
-<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">28775,407 ns</td><td align="right" bgcolor="#A8D08D">19612,447 ns (Δ = -9162,960 ns)</td><td align="right" bgcolor="#FFFFFF">19753,782 ns (Δ = +141,335 ns)</td><td align="right" bgcolor="#FF4949">21794,943 ns (Δ = +2041,162 ns)</td><td align="right" bgcolor="#A8D08D">19729,237 ns (Δ = -2065,707 ns)</td><td align="right" bgcolor="#A8D08D">19110,687 ns (Δ = -618,550 ns)</td></tr>
+<td>Average ns / operation</td><td align="right" bgcolor="#FFFFFF">19237,630 ns</td><td align="right" bgcolor="#FFFFFF">18960,732 ns (Δ = -276,898 ns)</td><td align="right" bgcolor="#FFFFFF">19187,524 ns (Δ = +226,793 ns)</td><td align="right" bgcolor="#FFFFFF">19225,769 ns (Δ = +38,245 ns)</td><td align="right" bgcolor="#FFFFFF">19146,753 ns (Δ = -79,016 ns)</td><td align="right" bgcolor="#FFFFFF">18778,250 ns (Δ = -368,503 ns)</td></tr>
 <tr>
-<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">28,775 μs</td><td align="right" bgcolor="#A8D08D">19,612 μs (Δ = -9,163 μs)</td><td align="right" bgcolor="#FFFFFF">19,754 μs (Δ = +0,141 μs)</td><td align="right" bgcolor="#FF4949">21,795 μs (Δ = +2,041 μs)</td><td align="right" bgcolor="#A8D08D">19,729 μs (Δ = -2,066 μs)</td><td align="right" bgcolor="#A8D08D">19,111 μs (Δ = -0,619 μs)</td></tr>
+<td>Average μs / operation</td><td align="right" bgcolor="#FFFFFF">19,238 μs</td><td align="right" bgcolor="#FFFFFF">18,961 μs (Δ = -0,277 μs)</td><td align="right" bgcolor="#FFFFFF">19,188 μs (Δ = +0,227 μs)</td><td align="right" bgcolor="#FFFFFF">19,226 μs (Δ = +0,038 μs)</td><td align="right" bgcolor="#FFFFFF">19,147 μs (Δ = -0,079 μs)</td><td align="right" bgcolor="#FFFFFF">18,778 μs (Δ = -0,369 μs)</td></tr>
 <tr>
-<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,029 ms</td><td align="right" bgcolor="#A8D08D">0,020 ms (Δ = -0,009 ms)</td><td align="right" bgcolor="#FFFFFF">0,020 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FF4949">0,022 ms (Δ = +0,002 ms)</td><td align="right" bgcolor="#A8D08D">0,020 ms (Δ = -0,002 ms)</td><td align="right" bgcolor="#A8D08D">0,019 ms (Δ = -0,001 ms)</td></tr>
+<td>Average ms / operation</td><td align="right" bgcolor="#FFFFFF">0,019 ms</td><td align="right" bgcolor="#FFFFFF">0,019 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,019 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,019 ms (Δ = +0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,019 ms (Δ = 0,000 ms)</td><td align="right" bgcolor="#FFFFFF">0,019 ms (Δ = 0,000 ms)</td></tr>
 </table>
 
 #### Memory (per 1k operations)
