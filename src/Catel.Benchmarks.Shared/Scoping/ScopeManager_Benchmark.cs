@@ -1,17 +1,24 @@
-﻿namespace Catel.Benchmarks.Scoping
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="ScopeManager_Benchmark.cs" company="Catel development team">
+//   Copyright (c) 2008 - 2017 Catel development team. All rights reserved.
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+
+namespace Catel.Benchmarks.Scoping
 {
     using BenchmarkDotNet.Attributes;
     using Catel.Scoping;
 
     public class ScopeManager_Benchmark : BenchmarkBase
     {
+        #region Methods
         [Setup]
         public void Init()
         {
             ScopeManager<object>.GetScopeManager("stored");
         }
 
-        #region Methods
         [Benchmark]
         public void Get_New_ScopeManager()
         {

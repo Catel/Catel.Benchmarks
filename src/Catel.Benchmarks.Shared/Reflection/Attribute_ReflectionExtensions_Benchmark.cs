@@ -1,3 +1,10 @@
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Attribute_ReflectionExtensions_Benchmark.cs" company="Catel development team">
+//   Copyright (c) 2008 - 2017 Catel development team. All rights reserved.
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+
 namespace Catel.Benchmarks.Reflection
 {
     using System;
@@ -12,12 +19,39 @@ namespace Catel.Benchmarks.Reflection
         private Type _aType;
         #endregion
 
+        #region Methods
         [Setup]
         public void Init()
         {
             _aType = typeof(A);
             _aMethodInfo = _aType.GetMethodEx("AMethod");
         }
+        #endregion
+
+        #region Nested type: A
+        [AType]
+        public class A
+        {
+            #region Methods
+            [AMethod]
+            public virtual void AMethod()
+            {
+            }
+            #endregion
+        }
+        #endregion
+
+        #region Nested type: AMethodAttribute
+        public class AMethodAttribute : Attribute
+        {
+        }
+        #endregion
+
+        #region Nested type: ATypeAttribute
+        public class ATypeAttribute : Attribute
+        {
+        }
+        #endregion
 
 #if !CATEL_4_3 && !CATEL_4_2
         [Benchmark]
@@ -31,12 +65,14 @@ namespace Catel.Benchmarks.Reflection
         {
             _aMethodInfo.GetAttribute(typeof(AMethodAttribute));
         }
+
         [Benchmark]
         public void TryGetAttribute_From_Member()
         {
             Attribute attribute;
             _aMethodInfo.TryGetAttribute(typeof(AMethodAttribute), out attribute);
         }
+
         [Benchmark]
         public void TryGetAttribute_Generic_From_Member()
         {
@@ -94,30 +130,5 @@ namespace Catel.Benchmarks.Reflection
             _aType.IsDecoratedWithAttribute(typeof(ATypeAttribute));
         }
 #endif
-
-#region Nested type: A
-
-        [ATypeAttribute]
-        public class A
-        {
-#region Methods
-            [AMethod]
-            public virtual void AMethod()
-            {
-            }
-#endregion
-        }
-#endregion
-
-#region Nested type: AMethodAttribute
-        public class AMethodAttribute : Attribute
-        {
-        }
-#endregion
-
-
-        public class ATypeAttribute : Attribute
-        {
-        }
     }
 }

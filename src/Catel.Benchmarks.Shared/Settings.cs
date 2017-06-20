@@ -9,7 +9,5 @@ namespace Catel.Benchmarks
 {
     public static class Settings
     {
-        // Note: the higher the number, the longer it takes but the more accurate the numbers will be
-        public const int NumberOfRuns = 50;
     }
 }

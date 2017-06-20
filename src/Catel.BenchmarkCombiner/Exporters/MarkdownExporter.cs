@@ -122,8 +122,10 @@ namespace Catel.BenchmarkCombiner.Exporters
         {
             var fastest = measurementGroup.Fastest();
             var slowest = measurementGroup.Slowest();
+
             streamWriter.WriteLine($"Fastest: **{fastest.Version}**\n");
             streamWriter.WriteLine($"Slowest: {slowest.Version}\n");
+            streamWriter.WriteLine($"Δ: {(slowest.AverageNanoSecondsPerOperation - fastest.AverageNanoSecondsPerOperation):0.000} ns\n");
 
             streamWriter.WriteLine();
         }
@@ -143,6 +145,9 @@ namespace Catel.BenchmarkCombiner.Exporters
 
             streamWriter.WriteLine("</tr>");
 
+            // Table content - percentage
+            WritePerformanceTableRowAsHtml(measurementGroup, streamWriter, "%", x => x.AverageNanoSecondsPerOperation);
+
             // Table content - nanoseconds
             WritePerformanceTableRowAsHtml(measurementGroup, streamWriter, "ns", x => x.AverageNanoSecondsPerOperation);
 
@@ -158,7 +163,19 @@ namespace Catel.BenchmarkCombiner.Exporters
         private void WritePerformanceTableRowAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter, string unit, Func<VersionMeasurements, double> valueRetriever)
         {
             streamWriter.WriteLine("<tr>");
-            streamWriter.Write($"<td>Average {unit} / operation</td>");
+
+            streamWriter.Write("<td>");
+
+            if (unit.EqualsIgnoreCase("%"))
+            {
+                streamWriter.Write("Δ %");
+            }
+            else
+            {
+                streamWriter.Write($"Average {unit} / operation");
+            }
+
+            streamWriter.Write("</td>");
 
             VersionMeasurements lastVersion = null;
 
@@ -167,10 +184,12 @@ namespace Catel.BenchmarkCombiner.Exporters
                 var background = "#FFFFFF";
 
                 var currentValue = valueRetriever(version);
+                var previousValue = 0d;
+                double? deltaAbsolute = null;
 
                 if (lastVersion != null)
                 {
-                    var previousValue = valueRetriever(lastVersion);
+                    previousValue = valueRetriever(lastVersion);
 
                     if (currentValue.IsLarger(previousValue))
                     {
@@ -178,12 +197,37 @@ namespace Catel.BenchmarkCombiner.Exporters
                     }
                     else if (currentValue.IsSmaller(previousValue))
                     {
-
                         background = DecreasedBackgroundColor;
+                    }
+
+                    deltaAbsolute = currentValue - previousValue;
+                }
+
+                streamWriter.Write($"<td align=\"right\" bgcolor=\"{background}\">");
+
+                if (unit.EqualsIgnoreCase("%"))
+                {
+                    if (deltaAbsolute.HasValue)
+                    {
+                        var deltaPercentage = (100 / previousValue) * deltaAbsolute;
+                        var leadingSign = (deltaAbsolute > 0) ? "+" : string.Empty;
+
+                        streamWriter.Write($"{leadingSign}{deltaPercentage:0.0} {unit}");
+                    }
+                }
+                else
+                {
+                    streamWriter.Write($"{currentValue:0.000} {unit}");
+
+                    if (deltaAbsolute.HasValue)
+                    {
+                        var leadingSign = (deltaAbsolute > 0) ? "+" : string.Empty;
+
+                        streamWriter.Write($" (Δ = {leadingSign}{deltaAbsolute:0.000} {unit})");
                     }
                 }
 
-                streamWriter.Write($"<td align=\"right\" bgcolor=\"{background}\">{valueRetriever(version):0.000} {unit}</td>");
+                streamWriter.Write("</td>");
 
                 lastVersion = version;
             }

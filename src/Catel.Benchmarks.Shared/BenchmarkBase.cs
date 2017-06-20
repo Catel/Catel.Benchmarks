@@ -11,7 +11,7 @@ namespace Catel.Benchmarks
     using BenchmarkDotNet.Engines;
 
     // Uncomment to make all benchmarks slower (but probably more accurate)
-    [SimpleJob(RunStrategy.Throughput, launchCount: 1, warmupCount: 5, targetCount: 10)]
+    [SimpleJob(RunStrategy.Throughput, launchCount: 1, warmupCount: 3, targetCount: 10, invocationCount: 1000)]
     public abstract class BenchmarkBase
     {
     }

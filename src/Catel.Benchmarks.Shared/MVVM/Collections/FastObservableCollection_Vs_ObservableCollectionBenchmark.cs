@@ -1,4 +1,11 @@
-﻿namespace Catel.Benchmarks.MVVM.Collections
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="FastObservableCollection_Vs_ObservableCollectionBenchmark.cs" company="Catel development team">
+//   Copyright (c) 2008 - 2017 Catel development team. All rights reserved.
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+
+namespace Catel.Benchmarks.MVVM.Collections
 {
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
@@ -21,19 +28,18 @@
         public void Init()
         {
 #if !CATEL_4_4 && !CATEL_4_3 && !CATEL_4_2
-            _fastBindingList = new FastBindingList<int> { -1, -2, -3, -4, -5, -6, -7, -8, -9, -10 };
+            _fastBindingList = new FastBindingList<int> {-1, -2, -3, -4, -5, -6, -7, -8, -9, -10};
 #endif
 
-            _observableCollection = new ObservableCollection<int> { -1, -2, -3, -4, -5, -6, -7, -8, -9, -10 };
-            _fastObservableCollection = new FastObservableCollection<int> { -1, -2, -3, -4, -5, -6, -7, -8, -9, -10 };
-
+            _observableCollection = new ObservableCollection<int> {-1, -2, -3, -4, -5, -6, -7, -8, -9, -10};
+            _fastObservableCollection = new FastObservableCollection<int> {-1, -2, -3, -4, -5, -6, -7, -8, -9, -10};
         }
 
         [Benchmark]
         public void ObservableCollection_BashInsert()
         {
 #if !CATEL_4_4 && !CATEL_4_3 && !CATEL_4_2
-            (_observableCollection as ICollection<int>).AddRange(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
+            (_observableCollection as ICollection<int>).AddRange(new[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
 #else
             _observableCollection.AddRange(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
 #endif
@@ -43,7 +49,7 @@
         public void FastObservableCollection_BashInsert()
         {
 #if !CATEL_4_4 && !CATEL_4_3 && !CATEL_4_2
-            _fastObservableCollection.AddItems(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, SuspensionMode.Adding);
+            _fastObservableCollection.AddItems(new[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, SuspensionMode.Adding);
 #else
             _fastObservableCollection.AddItems(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
 #endif
@@ -53,7 +59,7 @@
         [Benchmark]
         public void FastBindingList_BashInsert()
         {
-            _fastBindingList.AddItems(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
+            _fastBindingList.AddItems(new[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
         }
 #endif
 
@@ -86,7 +92,7 @@
         [Benchmark]
         public void FastBindingList_BashRemove()
         {
-            _fastBindingList.RemoveItems(new[] { -1, -2, -3, -4, -5, -6, -7, -8, -9, -10 });
+            _fastBindingList.RemoveItems(new[] {-1, -2, -3, -4, -5, -6, -7, -8, -9, -10});
         }
 #endif
         #endregion

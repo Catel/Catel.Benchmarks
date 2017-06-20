@@ -1,4 +1,11 @@
-﻿namespace Catel.Benchmarks.WeakReferences
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="WeakEventListener_Benchmark.cs" company="Catel development team">
+//   Copyright (c) 2008 - 2017 Catel development team. All rights reserved.
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+
+namespace Catel.Benchmarks.WeakReferences
 {
     using System;
     using System.Collections.ObjectModel;
@@ -10,7 +17,7 @@
 
     public class WeakEventListener_Benchmark : BenchmarkBase
     {
-#region Fields
+        #region Fields
         private bool _collectionChangedEventHandler;
         private bool _computedEventHandlerExecuted;
         private Person _person4NotificationBenchmarks;
@@ -19,9 +26,9 @@
         private ObservableCollection<Person> _persons4SubscriptionBenchmarks;
 
         private bool _propertyChangedEventHandlerExecuted;
-#endregion
+        #endregion
 
-#region Methods
+        #region Methods
         [Setup]
         public void Init()
         {
@@ -94,16 +101,16 @@
             {
             }
         }
-#endregion
+        #endregion
 
-#region Nested type: Person
+        #region Nested type: Person
         public class Person : INotifyPropertyChanged
         {
-#region Fields
+            #region Fields
             private string _name;
-#endregion
+            #endregion
 
-#region Properties
+            #region Properties
             public string Name
             {
                 get => _name;
@@ -116,9 +123,9 @@
                     OnPropertyChanged();
                 }
             }
-#endregion
+            #endregion
 
-#region INotifyPropertyChanged Members
+            #region INotifyPropertyChanged Members
             public event PropertyChangedEventHandler PropertyChanged;
             #endregion
 
@@ -138,10 +145,10 @@
             {
                 OnComputed();
             }
-#endregion
+            #endregion
 
             public event EventHandler Computed;
         }
-#endregion
+        #endregion
     }
 }

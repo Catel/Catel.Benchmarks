@@ -1,465 +1,417 @@
 // ***** BenchmarkRunner: Start   *****
 // Found benchmarks:
-//   Serialization_Binary_Benchmark.SerializeLevel1Models: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
-//   Serialization_Binary_Benchmark.SerializeLevel2Models: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
-//   Serialization_Binary_Benchmark.SerializeLevel3Models: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
-//   Serialization_Binary_Benchmark.SerializeComplexObjectGraph: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+//   Serialization_Binary_Benchmark.SerializeLevel1Models: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+//   Serialization_Binary_Benchmark.SerializeLevel2Models: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+//   Serialization_Binary_Benchmark.SerializeLevel3Models: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+//   Serialization_Binary_Benchmark.SerializeComplexObjectGraph: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 
 // Validating benchmarks:
 // **************************
-// Benchmark: Serialization_Binary_Benchmark.SerializeLevel1Models: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+// Benchmark: Serialization_Binary_Benchmark.SerializeLevel1Models: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 // *** Generate *** 
 // Result = Success
 // BinariesDirectoryPath = C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0
 
 // *** Build ***
-BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel1Models_Job-KNBQGD.bat
+BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel1Models_Job-FWQWII.bat
 // Result = Success
 
 // *** Execute ***
 // Launch: 1 / 1
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel1Models_Job-KNBQGD.exe 
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel1Models_Job-FWQWII.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 
-Pilot  1: 16 op, 1557000.00 ns, 97.3125 us/op
-Pilot  2: 32 op, 2127300.00 ns, 66.4781 us/op
-Pilot  3: 64 op, 4008000.00 ns, 62.6250 us/op
-Pilot  4: 128 op, 7848300.00 ns, 61.3148 us/op
-Pilot  5: 256 op, 16432800.00 ns, 64.1906 us/op
-Pilot  6: 512 op, 33084900.00 ns, 64.6189 us/op
-Pilot  7: 1024 op, 70834600.00 ns, 69.1744 us/op
-Pilot  8: 2048 op, 124614700.00 ns, 60.8470 us/op
-Pilot  9: 4096 op, 251140800.00 ns, 61.3137 us/op
-Pilot 10: 8192 op, 505014900.00 ns, 61.6473 us/op
+IdleWarmup  1: 1000 op, 291900.00 ns, 291.9000 ns/op
+IdleWarmup  2: 1000 op, 8200.00 ns, 8.2000 ns/op
+IdleWarmup  3: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleWarmup  4: 1000 op, 3200.00 ns, 3.2000 ns/op
+IdleWarmup  5: 1000 op, 3200.00 ns, 3.2000 ns/op
+IdleWarmup  6: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleWarmup  7: 1000 op, 3100.00 ns, 3.1000 ns/op
 
-IdleWarmup  1: 8192 op, 21300.00 ns, 2.6001 ns/op
-IdleWarmup  2: 8192 op, 17100.00 ns, 2.0874 ns/op
-IdleWarmup  3: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleWarmup  4: 8192 op, 16900.00 ns, 2.0630 ns/op
-IdleWarmup  5: 8192 op, 16900.00 ns, 2.0630 ns/op
-IdleWarmup  6: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleWarmup  7: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleWarmup  8: 8192 op, 16900.00 ns, 2.0630 ns/op
+IdleTarget  1: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleTarget  2: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleTarget  3: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleTarget  4: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleTarget  5: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleTarget  6: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleTarget  7: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleTarget  8: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleTarget  9: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleTarget 10: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleTarget 11: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleTarget 12: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleTarget 13: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleTarget 14: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleTarget 15: 1000 op, 3100.00 ns, 3.1000 ns/op
 
-IdleTarget  1: 8192 op, 16900.00 ns, 2.0630 ns/op
-IdleTarget  2: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleTarget  3: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleTarget  4: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleTarget  5: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleTarget  6: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleTarget  7: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleTarget  8: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleTarget  9: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleTarget 10: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleTarget 11: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleTarget 12: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleTarget 13: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleTarget 14: 8192 op, 17000.00 ns, 2.0752 ns/op
-IdleTarget 15: 8192 op, 17000.00 ns, 2.0752 ns/op
+MainWarmup  1: 1000 op, 68395900.00 ns, 68.3959 us/op
+MainWarmup  2: 1000 op, 66978700.00 ns, 66.9787 us/op
+MainWarmup  3: 1000 op, 68158300.00 ns, 68.1583 us/op
 
-MainWarmup  1: 8192 op, 504267100.00 ns, 61.5560 us/op
-MainWarmup  2: 8192 op, 556510900.00 ns, 67.9335 us/op
-MainWarmup  3: 8192 op, 501655200.00 ns, 61.2372 us/op
-MainWarmup  4: 8192 op, 504664200.00 ns, 61.6045 us/op
-MainWarmup  5: 8192 op, 501304600.00 ns, 61.1944 us/op
+MainTarget  1: 1000 op, 66666500.00 ns, 66.6665 us/op
+MainTarget  2: 1000 op, 65169000.00 ns, 65.1690 us/op
+MainTarget  3: 1000 op, 64719100.00 ns, 64.7191 us/op
+MainTarget  4: 1000 op, 66207700.00 ns, 66.2077 us/op
+MainTarget  5: 1000 op, 64778400.00 ns, 64.7784 us/op
+MainTarget  6: 1000 op, 65661500.00 ns, 65.6615 us/op
+MainTarget  7: 1000 op, 67135500.00 ns, 67.1355 us/op
+MainTarget  8: 1000 op, 66891700.00 ns, 66.8917 us/op
+MainTarget  9: 1000 op, 67340100.00 ns, 67.3401 us/op
+MainTarget 10: 1000 op, 66322900.00 ns, 66.3229 us/op
 
-MainTarget  1: 8192 op, 507078400.00 ns, 61.8992 us/op
-MainTarget  2: 8192 op, 502187600.00 ns, 61.3022 us/op
-MainTarget  3: 8192 op, 505409300.00 ns, 61.6955 us/op
-MainTarget  4: 8192 op, 505665300.00 ns, 61.7267 us/op
-MainTarget  5: 8192 op, 511891600.00 ns, 62.4868 us/op
-MainTarget  6: 8192 op, 499870300.00 ns, 61.0193 us/op
-MainTarget  7: 8192 op, 492521200.00 ns, 60.1222 us/op
-MainTarget  8: 8192 op, 569498000.00 ns, 69.5188 us/op
-MainTarget  9: 8192 op, 512779600.00 ns, 62.5952 us/op
-MainTarget 10: 8192 op, 509470100.00 ns, 62.1912 us/op
-
-Result  1: 8192 op, 507061406.67 ns, 61.8971 us/op
-Result  2: 8192 op, 502170606.67 ns, 61.3001 us/op
-Result  3: 8192 op, 505392306.67 ns, 61.6934 us/op
-Result  4: 8192 op, 505648306.67 ns, 61.7246 us/op
-Result  5: 8192 op, 511874606.67 ns, 62.4847 us/op
-Result  6: 8192 op, 499853306.67 ns, 61.0172 us/op
-Result  7: 8192 op, 492504206.67 ns, 60.1201 us/op
-Result  8: 8192 op, 512762606.67 ns, 62.5931 us/op
-Result  9: 8192 op, 509453106.67 ns, 62.1891 us/op
-GC:  260 10 0 0 81920
+Result  1: 1000 op, 66663433.33 ns, 66.6634 us/op
+Result  2: 1000 op, 65165933.33 ns, 65.1659 us/op
+Result  3: 1000 op, 64716033.33 ns, 64.7160 us/op
+Result  4: 1000 op, 66204633.33 ns, 66.2046 us/op
+Result  5: 1000 op, 64775333.33 ns, 64.7753 us/op
+Result  6: 1000 op, 65658433.33 ns, 65.6584 us/op
+Result  7: 1000 op, 67132433.33 ns, 67.1324 us/op
+Result  8: 1000 op, 66888633.33 ns, 66.8886 us/op
+Result  9: 1000 op, 67337033.33 ns, 67.3370 us/op
+Result 10: 1000 op, 66319833.33 ns, 66.3198 us/op
+GC:  20 0 0 0 10000
 
 
 // Run, Diagnostic
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel1Models_Job-KNBQGD.exe diagnoserAttached
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel1Models_Job-FWQWII.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 
 // AfterSetup
 // BeforeMainRun
 // BeforeCleanup
-Result  1: 8192 op, 518081306.67 ns, 63.2423 us/op
-Result  2: 8192 op, 510569506.67 ns, 62.3254 us/op
-Result  3: 8192 op, 526319906.67 ns, 64.2480 us/op
-Result  4: 8192 op, 513297406.67 ns, 62.6584 us/op
-Result  5: 8192 op, 514726306.67 ns, 62.8328 us/op
-Result  6: 8192 op, 565267706.67 ns, 69.0024 us/op
-Result  7: 8192 op, 605196406.67 ns, 73.8765 us/op
-Result  8: 8192 op, 532533206.67 ns, 65.0065 us/op
-Result  9: 8192 op, 560890406.67 ns, 68.4681 us/op
-Result 10: 8192 op, 518264106.67 ns, 63.2647 us/op
-GC:  260 10 0 1660511136 81920
+Result  1: 1000 op, 65547406.67 ns, 65.5474 us/op
+Result  2: 1000 op, 64037406.67 ns, 64.0374 us/op
+Result  3: 1000 op, 64235506.67 ns, 64.2355 us/op
+Result  4: 1000 op, 65511606.67 ns, 65.5116 us/op
+Result  5: 1000 op, 64240706.67 ns, 64.2407 us/op
+Result  6: 1000 op, 64524906.67 ns, 64.5249 us/op
+Result  7: 1000 op, 65679406.67 ns, 65.6794 us/op
+Result  8: 1000 op, 64217606.67 ns, 64.2176 us/op
+Result  9: 1000 op, 64856306.67 ns, 64.8563 us/op
+Result 10: 1000 op, 65629106.67 ns, 65.6291 us/op
+GC:  20 0 0 202756080 10000
 
 
-Mean = 61.6688 us, StdErr = 0.2583 us (0.42%); N = 9, StdDev = 0.7750 us
-Min = 60.1201 us, Q1 = 61.1587 us, Median = 61.7246 us, Q3 = 62.3369 us, Max = 62.5931 us
-IQR = 1.1782 us, LowerFence = 59.3914 us, UpperFence = 64.1042 us
-ConfidenceInterval = [60.3665 us; 62.9712 us] (CI 99.9%), Margin = 1.3024 us (2.11% of Mean)
-Skewness = -0.61, Kurtosis = 2.22
+Mean = 66.0862 us, StdErr = 0.3042 us (0.46%); N = 10, StdDev = 0.9621 us
+Min = 64.7160 us, Q1 = 65.1659 us, Median = 66.2622 us, Q3 = 66.8886 us, Max = 67.3370 us
+IQR = 1.7227 us, LowerFence = 62.5819 us, UpperFence = 69.4727 us
+ConfidenceInterval = [64.6316 us; 67.5407 us] (CI 99.9%), Margin = 1.4545 us (2.20% of Mean)
+Skewness = -0.21, Kurtosis = 1.33
 
 
 // **************************
-// Benchmark: Serialization_Binary_Benchmark.SerializeLevel2Models: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+// Benchmark: Serialization_Binary_Benchmark.SerializeLevel2Models: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 // *** Generate *** 
 // Result = Success
 // BinariesDirectoryPath = C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0
 
 // *** Build ***
-BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel2Models_Job-KNBQGD.bat
+BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel2Models_Job-FWQWII.bat
 // Result = Success
 
 // *** Execute ***
 // Launch: 1 / 1
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel2Models_Job-KNBQGD.exe 
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel2Models_Job-FWQWII.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 
-Pilot  1: 16 op, 3643400.00 ns, 227.7125 us/op
-Pilot  2: 32 op, 6816900.00 ns, 213.0281 us/op
-Pilot  3: 64 op, 12594800.00 ns, 196.7938 us/op
-Pilot  4: 128 op, 26668000.00 ns, 208.3438 us/op
-Pilot  5: 256 op, 51771400.00 ns, 202.2320 us/op
-Pilot  6: 512 op, 100811400.00 ns, 196.8973 us/op
-Pilot  7: 1024 op, 236219900.00 ns, 230.6835 us/op
-Pilot  8: 2048 op, 426357700.00 ns, 208.1825 us/op
-Pilot  9: 4096 op, 978912800.00 ns, 238.9924 us/op
+IdleWarmup  1: 1000 op, 333400.00 ns, 333.4000 ns/op
+IdleWarmup  2: 1000 op, 7800.00 ns, 7.8000 ns/op
+IdleWarmup  3: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleWarmup  4: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleWarmup  5: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleWarmup  6: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleWarmup  7: 1000 op, 3400.00 ns, 3.4000 ns/op
 
-IdleWarmup  1: 4096 op, 14500.00 ns, 3.5400 ns/op
-IdleWarmup  2: 4096 op, 9000.00 ns, 2.1973 ns/op
-IdleWarmup  3: 4096 op, 8900.00 ns, 2.1729 ns/op
-IdleWarmup  4: 4096 op, 9000.00 ns, 2.1973 ns/op
-IdleWarmup  5: 4096 op, 8900.00 ns, 2.1729 ns/op
-IdleWarmup  6: 4096 op, 9000.00 ns, 2.1973 ns/op
-IdleWarmup  7: 4096 op, 8900.00 ns, 2.1729 ns/op
+IdleTarget  1: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget  2: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget  3: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget  4: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget  5: 1000 op, 45700.00 ns, 45.7000 ns/op
+IdleTarget  6: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget  7: 1000 op, 3600.00 ns, 3.6000 ns/op
+IdleTarget  8: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget  9: 1000 op, 3300.00 ns, 3.3000 ns/op
+IdleTarget 10: 1000 op, 3500.00 ns, 3.5000 ns/op
+IdleTarget 11: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget 12: 1000 op, 3600.00 ns, 3.6000 ns/op
+IdleTarget 13: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget 14: 1000 op, 3300.00 ns, 3.3000 ns/op
+IdleTarget 15: 1000 op, 3400.00 ns, 3.4000 ns/op
 
-IdleTarget  1: 4096 op, 9000.00 ns, 2.1973 ns/op
-IdleTarget  2: 4096 op, 8900.00 ns, 2.1729 ns/op
-IdleTarget  3: 4096 op, 8900.00 ns, 2.1729 ns/op
-IdleTarget  4: 4096 op, 10500.00 ns, 2.5635 ns/op
-IdleTarget  5: 4096 op, 9000.00 ns, 2.1973 ns/op
-IdleTarget  6: 4096 op, 9000.00 ns, 2.1973 ns/op
-IdleTarget  7: 4096 op, 8900.00 ns, 2.1729 ns/op
-IdleTarget  8: 4096 op, 8900.00 ns, 2.1729 ns/op
-IdleTarget  9: 4096 op, 8900.00 ns, 2.1729 ns/op
-IdleTarget 10: 4096 op, 9000.00 ns, 2.1973 ns/op
-IdleTarget 11: 4096 op, 9000.00 ns, 2.1973 ns/op
-IdleTarget 12: 4096 op, 8900.00 ns, 2.1729 ns/op
-IdleTarget 13: 4096 op, 8900.00 ns, 2.1729 ns/op
-IdleTarget 14: 4096 op, 9200.00 ns, 2.2461 ns/op
-IdleTarget 15: 4096 op, 9000.00 ns, 2.1973 ns/op
+MainWarmup  1: 1000 op, 205115600.00 ns, 205.1156 us/op
+MainWarmup  2: 1000 op, 214474900.00 ns, 214.4749 us/op
+MainWarmup  3: 1000 op, 218575400.00 ns, 218.5754 us/op
 
-MainWarmup  1: 4096 op, 806952200.00 ns, 197.0098 us/op
-MainWarmup  2: 4096 op, 854668200.00 ns, 208.6592 us/op
-MainWarmup  3: 4096 op, 831958200.00 ns, 203.1148 us/op
-MainWarmup  4: 4096 op, 811190400.00 ns, 198.0445 us/op
-MainWarmup  5: 4096 op, 798819900.00 ns, 195.0244 us/op
+MainTarget  1: 1000 op, 217703400.00 ns, 217.7034 us/op
+MainTarget  2: 1000 op, 214661800.00 ns, 214.6618 us/op
+MainTarget  3: 1000 op, 210188400.00 ns, 210.1884 us/op
+MainTarget  4: 1000 op, 210548100.00 ns, 210.5481 us/op
+MainTarget  5: 1000 op, 207336800.00 ns, 207.3368 us/op
+MainTarget  6: 1000 op, 213672900.00 ns, 213.6729 us/op
+MainTarget  7: 1000 op, 210611900.00 ns, 210.6119 us/op
+MainTarget  8: 1000 op, 210582700.00 ns, 210.5827 us/op
+MainTarget  9: 1000 op, 210533000.00 ns, 210.5330 us/op
+MainTarget 10: 1000 op, 207525200.00 ns, 207.5252 us/op
 
-MainTarget  1: 4096 op, 895320300.00 ns, 218.5841 us/op
-MainTarget  2: 4096 op, 855804900.00 ns, 208.9367 us/op
-MainTarget  3: 4096 op, 820394700.00 ns, 200.2917 us/op
-MainTarget  4: 4096 op, 819198700.00 ns, 199.9997 us/op
-MainTarget  5: 4096 op, 941051400.00 ns, 229.7489 us/op
-MainTarget  6: 4096 op, 910440600.00 ns, 222.2755 us/op
-MainTarget  7: 4096 op, 814114800.00 ns, 198.7585 us/op
-MainTarget  8: 4096 op, 812377500.00 ns, 198.3344 us/op
-MainTarget  9: 4096 op, 817356500.00 ns, 199.5499 us/op
-MainTarget 10: 4096 op, 819572900.00 ns, 200.0910 us/op
-
-Result  1: 4096 op, 895311233.33 ns, 218.5818 us/op
-Result  2: 4096 op, 855795833.33 ns, 208.9345 us/op
-Result  3: 4096 op, 820385633.33 ns, 200.2895 us/op
-Result  4: 4096 op, 819189633.33 ns, 199.9975 us/op
-Result  5: 4096 op, 941042333.33 ns, 229.7467 us/op
-Result  6: 4096 op, 910431533.33 ns, 222.2733 us/op
-Result  7: 4096 op, 814105733.33 ns, 198.7563 us/op
-Result  8: 4096 op, 812368433.33 ns, 198.3321 us/op
-Result  9: 4096 op, 817347433.33 ns, 199.5477 us/op
-Result 10: 4096 op, 819563833.33 ns, 200.0888 us/op
-GC:  390 20 0 0 40960
+Result  1: 1000 op, 217697160.00 ns, 217.6972 us/op
+Result  2: 1000 op, 214655560.00 ns, 214.6556 us/op
+Result  3: 1000 op, 210182160.00 ns, 210.1822 us/op
+Result  4: 1000 op, 210541860.00 ns, 210.5419 us/op
+Result  5: 1000 op, 207330560.00 ns, 207.3306 us/op
+Result  6: 1000 op, 213666660.00 ns, 213.6667 us/op
+Result  7: 1000 op, 210605660.00 ns, 210.6057 us/op
+Result  8: 1000 op, 210576460.00 ns, 210.5765 us/op
+Result  9: 1000 op, 210526760.00 ns, 210.5268 us/op
+Result 10: 1000 op, 207518960.00 ns, 207.5190 us/op
+GC:  90 0 0 0 10000
 
 
 // Run, Diagnostic
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel2Models_Job-KNBQGD.exe diagnoserAttached
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel2Models_Job-FWQWII.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 
 // AfterSetup
 // BeforeMainRun
 // BeforeCleanup
-Result  1: 4096 op, 862992811.76 ns, 210.6916 us/op
-Result  2: 4096 op, 895813711.76 ns, 218.7045 us/op
-Result  3: 4096 op, 910414511.76 ns, 222.2692 us/op
-Result  4: 4096 op, 875589711.76 ns, 213.7670 us/op
-Result  5: 4096 op, 911998211.76 ns, 222.6558 us/op
-Result  6: 4096 op, 835117311.76 ns, 203.8861 us/op
-Result  7: 4096 op, 827122511.76 ns, 201.9342 us/op
-Result  8: 4096 op, 946205511.76 ns, 231.0072 us/op
-Result  9: 4096 op, 959812711.76 ns, 234.3293 us/op
-GC:  390 20 0 2481455424 40960
+Result  1: 1000 op, 210239126.67 ns, 210.2391 us/op
+Result  2: 1000 op, 206281826.67 ns, 206.2818 us/op
+Result  3: 1000 op, 209202026.67 ns, 209.2020 us/op
+Result  4: 1000 op, 208841126.67 ns, 208.8411 us/op
+Result  5: 1000 op, 215391226.67 ns, 215.3912 us/op
+Result  6: 1000 op, 213331826.67 ns, 213.3318 us/op
+Result  7: 1000 op, 212858826.67 ns, 212.8588 us/op
+Result  8: 1000 op, 218707626.67 ns, 218.7076 us/op
+Result  9: 1000 op, 208416826.67 ns, 208.4168 us/op
+GC:  90 0 0 605820320 10000
 
 
-Mean = 207.6548 us, StdErr = 3.6889 us (1.78%); N = 10, StdDev = 11.6654 us
-Min = 198.3321 us, Q1 = 199.5477 us, Median = 200.1891 us, Q3 = 218.5818 us, Max = 229.7467 us
-IQR = 19.0341 us, LowerFence = 170.9965 us, UpperFence = 247.1330 us
-ConfidenceInterval = [190.0184 us; 225.2913 us] (CI 99.9%), Margin = 17.6364 us (8.49% of Mean)
-Skewness = 0.75, Kurtosis = 1.76
+Mean = 211.3302 us, StdErr = 1.0070 us (0.48%); N = 10, StdDev = 3.1843 us
+Min = 207.3306 us, Q1 = 210.1822 us, Median = 210.5592 us, Q3 = 213.6667 us, Max = 217.6972 us
+IQR = 3.4845 us, LowerFence = 204.9554 us, UpperFence = 218.8934 us
+ConfidenceInterval = [206.5160 us; 216.1443 us] (CI 99.9%), Margin = 4.8142 us (2.28% of Mean)
+Skewness = 0.57, Kurtosis = 2.2
 
 
 // **************************
-// Benchmark: Serialization_Binary_Benchmark.SerializeLevel3Models: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+// Benchmark: Serialization_Binary_Benchmark.SerializeLevel3Models: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 // *** Generate *** 
 // Result = Success
 // BinariesDirectoryPath = C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0
 
 // *** Build ***
-BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel3Models_Job-KNBQGD.bat
+BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel3Models_Job-FWQWII.bat
 // Result = Success
 
 // *** Execute ***
 // Launch: 1 / 1
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel3Models_Job-KNBQGD.exe 
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel3Models_Job-FWQWII.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 
-Pilot  1: 16 op, 17223400.00 ns, 1.0765 ms/op
-Pilot  2: 32 op, 44444800.00 ns, 1.3889 ms/op
-Pilot  3: 64 op, 81228000.00 ns, 1.2692 ms/op
-Pilot  4: 128 op, 130913000.00 ns, 1.0228 ms/op
-Pilot  5: 256 op, 297378800.00 ns, 1.1616 ms/op
-Pilot  6: 512 op, 610027000.00 ns, 1.1915 ms/op
+IdleWarmup  1: 1000 op, 293800.00 ns, 293.8000 ns/op
+IdleWarmup  2: 1000 op, 7900.00 ns, 7.9000 ns/op
+IdleWarmup  3: 1000 op, 3500.00 ns, 3.5000 ns/op
+IdleWarmup  4: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleWarmup  5: 1000 op, 3500.00 ns, 3.5000 ns/op
+IdleWarmup  6: 1000 op, 3500.00 ns, 3.5000 ns/op
+IdleWarmup  7: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleWarmup  8: 1000 op, 3900.00 ns, 3.9000 ns/op
 
-IdleWarmup  1: 512 op, 8000.00 ns, 15.6250 ns/op
-IdleWarmup  2: 512 op, 2100.00 ns, 4.1016 ns/op
-IdleWarmup  3: 512 op, 2800.00 ns, 5.4688 ns/op
-IdleWarmup  4: 512 op, 2000.00 ns, 3.9063 ns/op
-IdleWarmup  5: 512 op, 2600.00 ns, 5.0781 ns/op
-IdleWarmup  6: 512 op, 2800.00 ns, 5.4688 ns/op
-IdleWarmup  7: 512 op, 2300.00 ns, 4.4922 ns/op
+IdleTarget  1: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget  2: 1000 op, 3600.00 ns, 3.6000 ns/op
+IdleTarget  3: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget  4: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget  5: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget  6: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget  7: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget  8: 1000 op, 3500.00 ns, 3.5000 ns/op
+IdleTarget  9: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget 10: 1000 op, 3400.00 ns, 3.4000 ns/op
+IdleTarget 11: 1000 op, 3300.00 ns, 3.3000 ns/op
+IdleTarget 12: 1000 op, 34100.00 ns, 34.1000 ns/op
+IdleTarget 13: 1000 op, 4300.00 ns, 4.3000 ns/op
+IdleTarget 14: 1000 op, 4500.00 ns, 4.5000 ns/op
+IdleTarget 15: 1000 op, 3400.00 ns, 3.4000 ns/op
 
-IdleTarget  1: 512 op, 2000.00 ns, 3.9063 ns/op
-IdleTarget  2: 512 op, 2100.00 ns, 4.1016 ns/op
-IdleTarget  3: 512 op, 2100.00 ns, 4.1016 ns/op
-IdleTarget  4: 512 op, 3200.00 ns, 6.2500 ns/op
-IdleTarget  5: 512 op, 2400.00 ns, 4.6875 ns/op
-IdleTarget  6: 512 op, 2400.00 ns, 4.6875 ns/op
-IdleTarget  7: 512 op, 2000.00 ns, 3.9063 ns/op
-IdleTarget  8: 512 op, 2100.00 ns, 4.1016 ns/op
-IdleTarget  9: 512 op, 2500.00 ns, 4.8828 ns/op
-IdleTarget 10: 512 op, 2100.00 ns, 4.1016 ns/op
-IdleTarget 11: 512 op, 2200.00 ns, 4.2969 ns/op
-IdleTarget 12: 512 op, 2100.00 ns, 4.1016 ns/op
-IdleTarget 13: 512 op, 2300.00 ns, 4.4922 ns/op
-IdleTarget 14: 512 op, 2400.00 ns, 4.6875 ns/op
-IdleTarget 15: 512 op, 2400.00 ns, 4.6875 ns/op
-IdleTarget 16: 512 op, 2100.00 ns, 4.1016 ns/op
-IdleTarget 17: 512 op, 2000.00 ns, 3.9063 ns/op
-IdleTarget 18: 512 op, 2200.00 ns, 4.2969 ns/op
-IdleTarget 19: 512 op, 2100.00 ns, 4.1016 ns/op
-IdleTarget 20: 512 op, 2200.00 ns, 4.2969 ns/op
+MainWarmup  1: 1000 op, 1065523400.00 ns, 1.0655 ms/op
+MainWarmup  2: 1000 op, 1021439800.00 ns, 1.0214 ms/op
+MainWarmup  3: 1000 op, 1015823500.00 ns, 1.0158 ms/op
 
-MainWarmup  1: 512 op, 551768100.00 ns, 1.0777 ms/op
-MainWarmup  2: 512 op, 515489900.00 ns, 1.0068 ms/op
-MainWarmup  3: 512 op, 582417700.00 ns, 1.1375 ms/op
-MainWarmup  4: 512 op, 556422100.00 ns, 1.0868 ms/op
-MainWarmup  5: 512 op, 581648800.00 ns, 1.1360 ms/op
+MainTarget  1: 1000 op, 1023476500.00 ns, 1.0235 ms/op
+MainTarget  2: 1000 op, 1029480700.00 ns, 1.0295 ms/op
+MainTarget  3: 1000 op, 1022201100.00 ns, 1.0222 ms/op
+MainTarget  4: 1000 op, 1008763300.00 ns, 1.0088 ms/op
+MainTarget  5: 1000 op, 1119981300.00 ns, 1.1200 ms/op
+MainTarget  6: 1000 op, 1041979900.00 ns, 1.0420 ms/op
+MainTarget  7: 1000 op, 1034593700.00 ns, 1.0346 ms/op
+MainTarget  8: 1000 op, 1068732000.00 ns, 1.0687 ms/op
+MainTarget  9: 1000 op, 1240741400.00 ns, 1.2407 ms/op
+MainTarget 10: 1000 op, 1034793900.00 ns, 1.0348 ms/op
 
-MainTarget  1: 512 op, 574048300.00 ns, 1.1212 ms/op
-MainTarget  2: 512 op, 557339300.00 ns, 1.0886 ms/op
-MainTarget  3: 512 op, 517890700.00 ns, 1.0115 ms/op
-MainTarget  4: 512 op, 494976700.00 ns, 966.7514 us/op
-MainTarget  5: 512 op, 489594200.00 ns, 956.2387 us/op
-MainTarget  6: 512 op, 550280900.00 ns, 1.0748 ms/op
-MainTarget  7: 512 op, 500532300.00 ns, 977.6021 us/op
-MainTarget  8: 512 op, 514314400.00 ns, 1.0045 ms/op
-MainTarget  9: 512 op, 490344700.00 ns, 957.7045 us/op
-MainTarget 10: 512 op, 519673400.00 ns, 1.0150 ms/op
-
-Result  1: 512 op, 574046055.00 ns, 1.1212 ms/op
-Result  2: 512 op, 557337055.00 ns, 1.0885 ms/op
-Result  3: 512 op, 517888455.00 ns, 1.0115 ms/op
-Result  4: 512 op, 494974455.00 ns, 966.7470 us/op
-Result  5: 512 op, 489591955.00 ns, 956.2343 us/op
-Result  6: 512 op, 550278655.00 ns, 1.0748 ms/op
-Result  7: 512 op, 500530055.00 ns, 977.5978 us/op
-Result  8: 512 op, 514312155.00 ns, 1.0045 ms/op
-Result  9: 512 op, 490342455.00 ns, 957.7001 us/op
-Result 10: 512 op, 519671155.00 ns, 1.0150 ms/op
-GC:  210 30 0 0 5120
+Result  1: 1000 op, 1023470906.67 ns, 1.0235 ms/op
+Result  2: 1000 op, 1029475106.67 ns, 1.0295 ms/op
+Result  3: 1000 op, 1022195506.67 ns, 1.0222 ms/op
+Result  4: 1000 op, 1008757706.67 ns, 1.0088 ms/op
+Result  5: 1000 op, 1119975706.67 ns, 1.1200 ms/op
+Result  6: 1000 op, 1041974306.67 ns, 1.0420 ms/op
+Result  7: 1000 op, 1034588106.67 ns, 1.0346 ms/op
+Result  8: 1000 op, 1068726406.67 ns, 1.0687 ms/op
+Result  9: 1000 op, 1034788306.67 ns, 1.0348 ms/op
+GC:  420 60 0 0 10000
 
 
 // Run, Diagnostic
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel3Models_Job-KNBQGD.exe diagnoserAttached
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeLevel3Models_Job-FWQWII.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 
 // AfterSetup
 // BeforeMainRun
 // BeforeCleanup
-Result  1: 1024 op, 943727773.33 ns, 921.6092 us/op
-Result  2: 1024 op, 950095173.33 ns, 927.8273 us/op
-Result  3: 1024 op, 965997673.33 ns, 943.3571 us/op
-Result  4: 1024 op, 973632373.33 ns, 950.8129 us/op
-Result  5: 1024 op, 988794173.33 ns, 965.6193 us/op
-Result  6: 1024 op, 961359473.33 ns, 938.8276 us/op
-Result  7: 1024 op, 972125673.33 ns, 949.3415 us/op
-Result  8: 1024 op, 975848573.33 ns, 952.9771 us/op
-GC:  430 60 0 2753611200 10240
+Result  1: 1000 op, 1037288213.33 ns, 1.0373 ms/op
+Result  2: 1000 op, 1036447613.33 ns, 1.0364 ms/op
+Result  3: 1000 op, 1039294513.33 ns, 1.0393 ms/op
+Result  4: 1000 op, 1040444713.33 ns, 1.0404 ms/op
+Result  5: 1000 op, 1029605713.33 ns, 1.0296 ms/op
+Result  6: 1000 op, 1035721013.33 ns, 1.0357 ms/op
+Result  7: 1000 op, 1031454513.33 ns, 1.0315 ms/op
+Result  8: 1000 op, 1030990313.33 ns, 1.0310 ms/op
+Result  9: 1000 op, 1034424513.33 ns, 1.0344 ms/op
+Result 10: 1000 op, 1038226913.33 ns, 1.0382 ms/op
+GC:  420 59 0 2689080768 10000
 
 
-Mean = 1.0174 ms, StdErr = 0.0185 ms (1.82%); N = 10, StdDev = 0.0585 ms
-Min = 0.9562 ms, Q1 = 0.9667 ms, Median = 1.0080 ms, Q3 = 1.0748 ms, Max = 1.1212 ms
-IQR = 0.1080 ms, LowerFence = 0.8047 ms, UpperFence = 1.2368 ms
-ConfidenceInterval = [0.9290 ms; 1.1058 ms] (CI 99.9%), Margin = 0.0884 ms (8.69% of Mean)
-Skewness = 0.52, Kurtosis = 1.61
+Mean = 1.0427 ms, StdErr = 0.0111 ms (1.07%); N = 9, StdDev = 0.0333 ms
+Min = 1.0088 ms, Q1 = 1.0228 ms, Median = 1.0346 ms, Q3 = 1.0554 ms, Max = 1.1200 ms
+IQR = 0.0325 ms, LowerFence = 0.9741 ms, UpperFence = 1.1041 ms
+ConfidenceInterval = [0.9866 ms; 1.0987 ms] (CI 99.9%), Margin = 0.0560 ms (5.37% of Mean)
+Skewness = 1.26, Kurtosis = 3.4
 
 
 // **************************
-// Benchmark: Serialization_Binary_Benchmark.SerializeComplexObjectGraph: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+// Benchmark: Serialization_Binary_Benchmark.SerializeComplexObjectGraph: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 // *** Generate *** 
 // Result = Success
 // BinariesDirectoryPath = C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0
 
 // *** Build ***
-BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeComplexObjectGraph_Job-KNBQGD.bat
+BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeComplexObjectGraph_Job-FWQWII.bat
 // Result = Success
 
 // *** Execute ***
 // Launch: 1 / 1
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeComplexObjectGraph_Job-KNBQGD.exe 
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeComplexObjectGraph_Job-FWQWII.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 
-Pilot  1: 16 op, 5037500.00 ns, 314.8438 us/op
-Pilot  2: 32 op, 9216800.00 ns, 288.0250 us/op
-Pilot  3: 64 op, 18966500.00 ns, 296.3516 us/op
-Pilot  4: 128 op, 38374900.00 ns, 299.8039 us/op
-Pilot  5: 256 op, 73022000.00 ns, 285.2422 us/op
-Pilot  6: 512 op, 158121700.00 ns, 308.8314 us/op
-Pilot  7: 1024 op, 333272500.00 ns, 325.4614 us/op
-Pilot  8: 2048 op, 603450000.00 ns, 294.6533 us/op
+IdleWarmup  1: 1000 op, 348400.00 ns, 348.4000 ns/op
+IdleWarmup  2: 1000 op, 8000.00 ns, 8.0000 ns/op
+IdleWarmup  3: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleWarmup  4: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleWarmup  5: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleWarmup  6: 1000 op, 3300.00 ns, 3.3000 ns/op
+IdleWarmup  7: 1000 op, 3000.00 ns, 3.0000 ns/op
 
-IdleWarmup  1: 2048 op, 12200.00 ns, 5.9570 ns/op
-IdleWarmup  2: 2048 op, 5000.00 ns, 2.4414 ns/op
-IdleWarmup  3: 2048 op, 5300.00 ns, 2.5879 ns/op
-IdleWarmup  4: 2048 op, 5100.00 ns, 2.4902 ns/op
-IdleWarmup  5: 2048 op, 5600.00 ns, 2.7344 ns/op
-IdleWarmup  6: 2048 op, 5000.00 ns, 2.4414 ns/op
+IdleTarget  1: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleTarget  2: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleTarget  3: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleTarget  4: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleTarget  5: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleTarget  6: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleTarget  7: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleTarget  8: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleTarget  9: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleTarget 10: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleTarget 11: 1000 op, 3300.00 ns, 3.3000 ns/op
+IdleTarget 12: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleTarget 13: 1000 op, 3000.00 ns, 3.0000 ns/op
+IdleTarget 14: 1000 op, 3800.00 ns, 3.8000 ns/op
+IdleTarget 15: 1000 op, 3000.00 ns, 3.0000 ns/op
 
-IdleTarget  1: 2048 op, 5400.00 ns, 2.6367 ns/op
-IdleTarget  2: 2048 op, 5000.00 ns, 2.4414 ns/op
-IdleTarget  3: 2048 op, 5100.00 ns, 2.4902 ns/op
-IdleTarget  4: 2048 op, 6600.00 ns, 3.2227 ns/op
-IdleTarget  5: 2048 op, 5000.00 ns, 2.4414 ns/op
-IdleTarget  6: 2048 op, 5000.00 ns, 2.4414 ns/op
-IdleTarget  7: 2048 op, 5000.00 ns, 2.4414 ns/op
-IdleTarget  8: 2048 op, 5100.00 ns, 2.4902 ns/op
-IdleTarget  9: 2048 op, 5100.00 ns, 2.4902 ns/op
-IdleTarget 10: 2048 op, 5700.00 ns, 2.7832 ns/op
-IdleTarget 11: 2048 op, 5000.00 ns, 2.4414 ns/op
-IdleTarget 12: 2048 op, 4900.00 ns, 2.3926 ns/op
-IdleTarget 13: 2048 op, 5000.00 ns, 2.4414 ns/op
-IdleTarget 14: 2048 op, 5000.00 ns, 2.4414 ns/op
-IdleTarget 15: 2048 op, 5000.00 ns, 2.4414 ns/op
+MainWarmup  1: 1000 op, 303883900.00 ns, 303.8839 us/op
+MainWarmup  2: 1000 op, 310962300.00 ns, 310.9623 us/op
+MainWarmup  3: 1000 op, 314902600.00 ns, 314.9026 us/op
 
-MainWarmup  1: 2048 op, 582969200.00 ns, 284.6529 us/op
-MainWarmup  2: 2048 op, 616387900.00 ns, 300.9707 us/op
-MainWarmup  3: 2048 op, 584223800.00 ns, 285.2655 us/op
-MainWarmup  4: 2048 op, 590786100.00 ns, 288.4698 us/op
-MainWarmup  5: 2048 op, 610961300.00 ns, 298.3209 us/op
+MainTarget  1: 1000 op, 306988500.00 ns, 306.9885 us/op
+MainTarget  2: 1000 op, 309636600.00 ns, 309.6366 us/op
+MainTarget  3: 1000 op, 306882200.00 ns, 306.8822 us/op
+MainTarget  4: 1000 op, 305164000.00 ns, 305.1640 us/op
+MainTarget  5: 1000 op, 304495100.00 ns, 304.4951 us/op
+MainTarget  6: 1000 op, 301058300.00 ns, 301.0583 us/op
+MainTarget  7: 1000 op, 304650900.00 ns, 304.6509 us/op
+MainTarget  8: 1000 op, 305909800.00 ns, 305.9098 us/op
+MainTarget  9: 1000 op, 302149500.00 ns, 302.1495 us/op
+MainTarget 10: 1000 op, 302843800.00 ns, 302.8438 us/op
 
-MainTarget  1: 2048 op, 583444100.00 ns, 284.8848 us/op
-MainTarget  2: 2048 op, 587236000.00 ns, 286.7363 us/op
-MainTarget  3: 2048 op, 604540900.00 ns, 295.1860 us/op
-MainTarget  4: 2048 op, 590286900.00 ns, 288.2260 us/op
-MainTarget  5: 2048 op, 592430700.00 ns, 289.2728 us/op
-MainTarget  6: 2048 op, 638118400.00 ns, 311.5813 us/op
-MainTarget  7: 2048 op, 617206000.00 ns, 301.3701 us/op
-MainTarget  8: 2048 op, 605192800.00 ns, 295.5043 us/op
-MainTarget  9: 2048 op, 589884400.00 ns, 288.0295 us/op
-MainTarget 10: 2048 op, 607466200.00 ns, 296.6144 us/op
-
-Result  1: 2048 op, 583438906.67 ns, 284.8823 us/op
-Result  2: 2048 op, 587230806.67 ns, 286.7338 us/op
-Result  3: 2048 op, 604535706.67 ns, 295.1835 us/op
-Result  4: 2048 op, 590281706.67 ns, 288.2235 us/op
-Result  5: 2048 op, 592425506.67 ns, 289.2703 us/op
-Result  6: 2048 op, 617200806.67 ns, 301.3676 us/op
-Result  7: 2048 op, 605187606.67 ns, 295.5018 us/op
-Result  8: 2048 op, 589879206.67 ns, 288.0270 us/op
-Result  9: 2048 op, 607461006.67 ns, 296.6118 us/op
-GC:  260 20 0 0 20480
+Result  1: 1000 op, 306985400.00 ns, 306.9854 us/op
+Result  2: 1000 op, 309633500.00 ns, 309.6335 us/op
+Result  3: 1000 op, 306879100.00 ns, 306.8791 us/op
+Result  4: 1000 op, 305160900.00 ns, 305.1609 us/op
+Result  5: 1000 op, 304492000.00 ns, 304.4920 us/op
+Result  6: 1000 op, 301055200.00 ns, 301.0552 us/op
+Result  7: 1000 op, 304647800.00 ns, 304.6478 us/op
+Result  8: 1000 op, 305906700.00 ns, 305.9067 us/op
+Result  9: 1000 op, 302146400.00 ns, 302.1464 us/op
+Result 10: 1000 op, 302840700.00 ns, 302.8407 us/op
+GC:  120 10 0 0 10000
 
 
 // Run, Diagnostic
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeComplexObjectGraph_Job-KNBQGD.exe diagnoserAttached
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.4.0\Serialization_Binary_Benchmark_SerializeComplexObjectGraph_Job-FWQWII.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 
 // AfterSetup
 // BeforeMainRun
 // BeforeCleanup
-Result  1: 2048 op, 617248906.67 ns, 301.3911 us/op
-Result  2: 2048 op, 588004806.67 ns, 287.1117 us/op
-Result  3: 2048 op, 600932506.67 ns, 293.4241 us/op
-Result  4: 2048 op, 579691906.67 ns, 283.0527 us/op
-Result  5: 2048 op, 576995206.67 ns, 281.7359 us/op
-Result  6: 2048 op, 583274706.67 ns, 284.8021 us/op
-Result  7: 2048 op, 587400806.67 ns, 286.8168 us/op
-Result  8: 2048 op, 586868106.67 ns, 286.5567 us/op
-Result  9: 2048 op, 587007306.67 ns, 286.6247 us/op
-GC:  260 20 0 1667148456 20480
+Result  1: 1000 op, 307715380.00 ns, 307.7154 us/op
+Result  2: 1000 op, 306738080.00 ns, 306.7381 us/op
+Result  3: 1000 op, 306461380.00 ns, 306.4614 us/op
+Result  4: 1000 op, 306416380.00 ns, 306.4164 us/op
+Result  5: 1000 op, 308110080.00 ns, 308.1101 us/op
+Result  6: 1000 op, 304211780.00 ns, 304.2118 us/op
+Result  7: 1000 op, 307022180.00 ns, 307.0222 us/op
+GC:  120 10 0 814023576 10000
 
 
-Mean = 291.7557 us, StdErr = 1.8513 us (0.63%); N = 9, StdDev = 5.5540 us
-Min = 284.8823 us, Q1 = 287.3804 us, Median = 289.2703 us, Q3 = 296.0568 us, Max = 301.3676 us
-IQR = 8.6764 us, LowerFence = 274.3658 us, UpperFence = 309.0714 us
-ConfidenceInterval = [282.4226 us; 301.0888 us] (CI 99.9%), Margin = 9.3331 us (3.20% of Mean)
-Skewness = 0.35, Kurtosis = 1.48
+Mean = 304.9748 us, StdErr = 0.8065 us (0.26%); N = 10, StdDev = 2.5502 us
+Min = 301.0552 us, Q1 = 302.8407 us, Median = 304.9044 us, Q3 = 306.8791 us, Max = 309.6335 us
+IQR = 4.0384 us, LowerFence = 296.7831 us, UpperFence = 312.9367 us
+ConfidenceInterval = [301.1192 us; 308.8304 us] (CI 99.9%), Margin = 3.8556 us (1.26% of Mean)
+Skewness = 0.15, Kurtosis = 1.94
 
 
 // ***** BenchmarkRunner: Finish  *****
@@ -468,43 +420,43 @@ Skewness = 0.35, Kurtosis = 1.48
   BenchmarkDotNet.Artifacts\results\Serialization_Binary_Benchmark-measurements.csv
 
 // * Detailed results *
-Serialization_Binary_Benchmark.SerializeLevel1Models: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+Serialization_Binary_Benchmark.SerializeLevel1Models: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 Runtime = Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0; GC = Concurrent Workstation
-Mean = 61.6688 us, StdErr = 0.2583 us (0.42%); N = 9, StdDev = 0.7750 us
-Min = 60.1201 us, Q1 = 61.1587 us, Median = 61.7246 us, Q3 = 62.3369 us, Max = 62.5931 us
-IQR = 1.1782 us, LowerFence = 59.3914 us, UpperFence = 64.1042 us
-ConfidenceInterval = [60.3665 us; 62.9712 us] (CI 99.9%), Margin = 1.3024 us (2.11% of Mean)
-Skewness = -0.61, Kurtosis = 2.22
+Mean = 66.0862 us, StdErr = 0.3042 us (0.46%); N = 10, StdDev = 0.9621 us
+Min = 64.7160 us, Q1 = 65.1659 us, Median = 66.2622 us, Q3 = 66.8886 us, Max = 67.3370 us
+IQR = 1.7227 us, LowerFence = 62.5819 us, UpperFence = 69.4727 us
+ConfidenceInterval = [64.6316 us; 67.5407 us] (CI 99.9%), Margin = 1.4545 us (2.20% of Mean)
+Skewness = -0.21, Kurtosis = 1.33
 
 
-Serialization_Binary_Benchmark.SerializeLevel2Models: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+Serialization_Binary_Benchmark.SerializeLevel2Models: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 Runtime = Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0; GC = Concurrent Workstation
-Mean = 207.6548 us, StdErr = 3.6889 us (1.78%); N = 10, StdDev = 11.6654 us
-Min = 198.3321 us, Q1 = 199.5477 us, Median = 200.1891 us, Q3 = 218.5818 us, Max = 229.7467 us
-IQR = 19.0341 us, LowerFence = 170.9965 us, UpperFence = 247.1330 us
-ConfidenceInterval = [190.0184 us; 225.2913 us] (CI 99.9%), Margin = 17.6364 us (8.49% of Mean)
-Skewness = 0.75, Kurtosis = 1.76
+Mean = 211.3302 us, StdErr = 1.0070 us (0.48%); N = 10, StdDev = 3.1843 us
+Min = 207.3306 us, Q1 = 210.1822 us, Median = 210.5592 us, Q3 = 213.6667 us, Max = 217.6972 us
+IQR = 3.4845 us, LowerFence = 204.9554 us, UpperFence = 218.8934 us
+ConfidenceInterval = [206.5160 us; 216.1443 us] (CI 99.9%), Margin = 4.8142 us (2.28% of Mean)
+Skewness = 0.57, Kurtosis = 2.2
 
 
-Serialization_Binary_Benchmark.SerializeLevel3Models: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+Serialization_Binary_Benchmark.SerializeLevel3Models: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 Runtime = Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0; GC = Concurrent Workstation
-Mean = 1.0174 ms, StdErr = 0.0185 ms (1.82%); N = 10, StdDev = 0.0585 ms
-Min = 0.9562 ms, Q1 = 0.9667 ms, Median = 1.0080 ms, Q3 = 1.0748 ms, Max = 1.1212 ms
-IQR = 0.1080 ms, LowerFence = 0.8047 ms, UpperFence = 1.2368 ms
-ConfidenceInterval = [0.9290 ms; 1.1058 ms] (CI 99.9%), Margin = 0.0884 ms (8.69% of Mean)
-Skewness = 0.52, Kurtosis = 1.61
+Mean = 1.0427 ms, StdErr = 0.0111 ms (1.07%); N = 9, StdDev = 0.0333 ms
+Min = 1.0088 ms, Q1 = 1.0228 ms, Median = 1.0346 ms, Q3 = 1.0554 ms, Max = 1.1200 ms
+IQR = 0.0325 ms, LowerFence = 0.9741 ms, UpperFence = 1.1041 ms
+ConfidenceInterval = [0.9866 ms; 1.0987 ms] (CI 99.9%), Margin = 0.0560 ms (5.37% of Mean)
+Skewness = 1.26, Kurtosis = 3.4
 
 
-Serialization_Binary_Benchmark.SerializeComplexObjectGraph: Job-KNBQGD(LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5)
+Serialization_Binary_Benchmark.SerializeComplexObjectGraph: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
 Runtime = Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0; GC = Concurrent Workstation
-Mean = 291.7557 us, StdErr = 1.8513 us (0.63%); N = 9, StdDev = 5.5540 us
-Min = 284.8823 us, Q1 = 287.3804 us, Median = 289.2703 us, Q3 = 296.0568 us, Max = 301.3676 us
-IQR = 8.6764 us, LowerFence = 274.3658 us, UpperFence = 309.0714 us
-ConfidenceInterval = [282.4226 us; 301.0888 us] (CI 99.9%), Margin = 9.3331 us (3.20% of Mean)
-Skewness = 0.35, Kurtosis = 1.48
+Mean = 304.9748 us, StdErr = 0.8065 us (0.26%); N = 10, StdDev = 2.5502 us
+Min = 301.0552 us, Q1 = 302.8407 us, Median = 304.9044 us, Q3 = 306.8791 us, Max = 309.6335 us
+IQR = 4.0384 us, LowerFence = 296.7831 us, UpperFence = 312.9367 us
+ConfidenceInterval = [301.1192 us; 308.8304 us] (CI 99.9%), Margin = 3.8556 us (1.26% of Mean)
+Skewness = 0.15, Kurtosis = 1.94
 
 
-Total time: 00:01:56 (116.96 sec)
+Total time: 00:00:58 (58.32 sec)
 
 // * Summary *
 
@@ -512,7 +464,7 @@ BenchmarkDotNet=v0.10.6, OS=Windows 10 Redstone 2 (10.0.15063)
 Processor=Intel Core i7-3960X CPU 3.30GHz (Ivy Bridge), ProcessorCount=8
 Frequency=10000000 Hz, Resolution=100.0000 ns, Timer=UNKNOWN
   [Host]     : Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
-  Job-KNBQGD : Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
+  Job-FWQWII : Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 
 
 
@@ -524,8 +476,7 @@ Frequency=10000000 Hz, Resolution=100.0000 ns, Timer=UNKNOWN
 
 // * Hints *
 Outliers
-  Serialization_Binary_Benchmark.SerializeLevel1Models: LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5       -> 1 outlier  was  removed
-  Serialization_Binary_Benchmark.SerializeComplexObjectGraph: LaunchCount=1, RunStrategy=Throughput, TargetCount=10, WarmupCount=5 -> 1 outlier  was  removed
+  Serialization_Binary_Benchmark.SerializeLevel3Models: InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3 -> 1 outlier  was  removed
 
 // * Diagnostic Output - MemoryDiagnoser *
 
