@@ -13,7 +13,7 @@ namespace Catel.Benchmarks.Scoping
     public class ScopeManager_Benchmark : BenchmarkBase
     {
         #region Methods
-        [Setup]
+        [GlobalSetup]
         public void Init()
         {
             ScopeManager<object>.GetScopeManager("stored");

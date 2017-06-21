@@ -26,7 +26,7 @@ namespace Catel.Benchmarks.Argument
         #endregion
 
         #region Methods
-        [Setup]
+        [GlobalSetup]
         public void Init()
         {
             _param = new object();

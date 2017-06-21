@@ -29,7 +29,7 @@ namespace Catel.Benchmarks.WeakReferences
         #endregion
 
         #region Methods
-        [Setup]
+        [GlobalSetup]
         public void Init()
         {
             _person4NotificationBenchmarks = new Person();

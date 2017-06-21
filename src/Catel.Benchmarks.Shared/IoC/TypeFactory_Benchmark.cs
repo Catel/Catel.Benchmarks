@@ -16,7 +16,7 @@ namespace Catel.Benchmarks.IoC
         #endregion
 
         #region Methods
-        [Setup]
+        [GlobalSetup]
         public void Init()
         {
             _typeFactory = ServiceLocator.Default.ResolveType<ITypeFactory>();

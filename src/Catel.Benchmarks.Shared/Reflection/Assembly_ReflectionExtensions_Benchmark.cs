@@ -18,7 +18,7 @@ namespace Catel.Benchmarks.Reflection
         #endregion
 
         #region Methods
-        [Setup]
+        [GlobalSetup]
         public void Init()
         {
             _assembly = typeof(Assembly_ReflectionExtensions_Benchmark).Assembly;

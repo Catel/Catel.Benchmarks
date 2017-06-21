@@ -20,7 +20,7 @@ namespace Catel.Benchmarks.Reflection
         #endregion
 
         #region Methods
-        [Setup]
+        [GlobalSetup]
         public void Init()
         {
             _aMethodInfo = typeof(A).GetMethodEx("AMethod");

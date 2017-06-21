@@ -17,7 +17,7 @@ namespace Catel.Benchmarks
         #endregion
 
         #region Methods
-        [Setup]
+        [GlobalSetup]
         public void Init()
         {
             _instanceA = new object();

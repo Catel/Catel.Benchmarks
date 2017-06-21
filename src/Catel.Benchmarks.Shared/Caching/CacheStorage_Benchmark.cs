@@ -31,7 +31,7 @@ namespace Catel.Benchmarks.Caching
         #endregion
 
         #region Methods
-        [Setup]
+        [GlobalSetup]
         public void Init()
         {
             _random = new Random();

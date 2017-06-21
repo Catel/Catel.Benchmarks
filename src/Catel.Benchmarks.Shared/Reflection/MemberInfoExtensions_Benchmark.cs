@@ -20,7 +20,7 @@ namespace Catel.Benchmarks.Reflection
         #endregion
 
         #region Methods
-        [Setup]
+        [GlobalSetup]
         public void Init()
         {
             _constructorInfo = typeof(A).GetConstructorEx(new[] {typeof(string), typeof(int)});

@@ -20,7 +20,7 @@ namespace Catel.Benchmarks.Reflection
         #endregion
 
         #region Methods
-        [Setup]
+        [GlobalSetup]
         public void Init()
         {
             _aPropertyInfo = typeof(A).GetPropertyEx("AProperty");

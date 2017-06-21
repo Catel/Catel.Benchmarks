@@ -19,7 +19,7 @@ namespace Catel.Benchmarks.Data
         #endregion
 
         #region Methods
-        [Setup]
+        [GlobalSetup]
         public void Init()
         {
             var fieldValidationResults = new List<IFieldValidationResult> {FieldValidationResult.CreateError("FieldA", "Field Error"), FieldValidationResult.CreateError("FieldB", "FieldB Error"), FieldValidationResult.CreateWarning("FieldC", "FieldC Warning")};

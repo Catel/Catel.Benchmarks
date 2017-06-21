@@ -14,7 +14,7 @@ namespace Catel.Benchmarks.Logging
     {
         private static readonly ILog Log = LogManager.GetCurrentClassLogger();
 
-        [Setup]
+        [GlobalSetup]
         public void Setup()
         {
             LogManager.IsInfoEnabled = false;

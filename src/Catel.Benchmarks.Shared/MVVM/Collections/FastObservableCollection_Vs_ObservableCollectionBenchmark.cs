@@ -24,7 +24,7 @@ namespace Catel.Benchmarks.MVVM.Collections
         #endregion
 
         #region Methods
-        [Setup]
+        [GlobalSetup]
         public void Init()
         {
 #if !CATEL_4_4 && !CATEL_4_3 && !CATEL_4_2
