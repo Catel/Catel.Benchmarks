@@ -65,10 +65,21 @@ namespace Catel.BenchmarkCombiner.Exporters
 
                     streamWriter.WriteLine();
 
-                    var measurementGroups = exportContext.ExportSummaries.ConvertToMeasurementGroups();
+                    // Important benchmarks
+                    streamWriter.WriteLine();
+                    streamWriter.WriteLine("## Important benchmarks");
+
+                    WriteSummaries("High priority (current version slower than previous one)", exportContext.HighPriority.OrderByDescending(x => x.Percentage), 
+                        x => $"v{x.CurrentVersion} is **{x.Percentage:0.00}%** (Δ: {x.DeltaInNanoSeconds:0.000} ns) slower than v{x.PreviousVersion}", streamWriter);
+                    WriteSummaries("Improved (current version faster than previous one)", exportContext.Improved.OrderBy(x => x.Percentage),
+                        x => $"v{x.CurrentVersion} is **{(x.Percentage * -1):0.00}%** (Δ: {x.DeltaInNanoSeconds:0.000} ns) faster than v{x.PreviousVersion}", streamWriter);
+
+                    streamWriter.WriteLine();
 
                     // Table of contents
                     streamWriter.WriteLine("## Table of contents");
+
+                    var measurementGroups = exportContext.ExportSummaries.ConvertToMeasurementGroups();
 
                     foreach (var measurementGroup in measurementGroups.GroupBy(x => x.Container))
                     {
@@ -106,6 +117,31 @@ namespace Catel.BenchmarkCombiner.Exporters
                     }
                 }
             }
+        }
+
+        private void WriteSummaries<TBenchmarkSummary>(string title, IEnumerable<TBenchmarkSummary> summaries, 
+            Func<TBenchmarkSummary, string> formatter, StreamWriter streamWriter)
+            where TBenchmarkSummary : BenchmarkSummaryBase
+        {
+            var collection = summaries.ToList();
+
+            streamWriter.WriteLine();
+            streamWriter.WriteLine($"### {title}");
+            streamWriter.WriteLine();
+            streamWriter.WriteLine($"{collection.Count} item(s)");
+            streamWriter.WriteLine();
+
+            if (collection.Count > 0)
+            {
+                for (var i = 0; i < collection.Count; i++)
+                {
+                    var benchmarkSummary = collection[i];
+
+                    streamWriter.WriteLine($"{i + 1}. [{benchmarkSummary.Key}](#{benchmarkSummary.Key}) {formatter(benchmarkSummary)}\n");
+                }
+            }
+
+            streamWriter.WriteLine();
         }
 
         private void WritePerformance(MeasurementGroup measurementGroup, StreamWriter streamWriter)

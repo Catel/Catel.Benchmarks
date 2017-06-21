@@ -12,11 +12,13 @@ namespace Catel.BenchmarkCombiner
     using System.Diagnostics;
     using System.Globalization;
     using System.IO;
+    using System.Linq;
     using BenchmarkDotNet.Environments;
     using CsvHelper;
     using CsvHelper.Configuration;
     using Exporters;
     using Logging;
+    using Models;
     using Models.Maps;
 
     class Program
@@ -126,6 +128,15 @@ namespace Catel.BenchmarkCombiner
                     BenchmarkDuration = benchmarkDuration
                 };
 
+                Log.Info("Calculating important benchmark summaries");
+
+                var measurementGroups = exportContext.ExportSummaries.ConvertToMeasurementGroups();
+
+                var benchmarkSummaries = CalculateBenchmarkSummaries(measurementGroups);
+
+                exportContext.HighPriority.AddRange(benchmarkSummaries.Where(x => x is SlowerBenchmarkSummary).Cast<SlowerBenchmarkSummary>());
+                exportContext.Improved.AddRange(benchmarkSummaries.Where(x => x is FasterBenchmarkSummary).Cast<FasterBenchmarkSummary>());
+
                 var hostEnvironmentInfo = HostEnvironmentInfo.GetCurrent();
                 exportContext.HostEnvironmentInfo.AddRange(hostEnvironmentInfo.ToFormattedString());
 
@@ -199,6 +210,53 @@ namespace Catel.BenchmarkCombiner
 
             return summaries;
         }
-#endregion
+
+        static List<BenchmarkSummaryBase> CalculateBenchmarkSummaries(List<MeasurementGroup> measurementGroups)
+        {
+            var benchmarkSummaries = new List<BenchmarkSummaryBase>();
+
+            foreach (var measurementGroup in measurementGroups.GroupBy(x => x.Container))
+            {
+                foreach (var measurementGroupGroup in measurementGroup)
+                {
+                    var count = measurementGroupGroup.Measurements.Count;
+                    if (count <= 1)
+                    {
+                        // Cannot compare
+                        continue;
+                    }
+
+                    var previousVersion = measurementGroupGroup.Measurements[count - 2];
+                    var currentVersion = measurementGroupGroup.Measurements[count - 1];
+
+                    var previousValue = previousVersion.AverageNanoSecondsPerOperation;
+                    var currentValue = currentVersion.AverageNanoSecondsPerOperation;
+
+                    BenchmarkSummaryBase benchmarkSummary = null;
+
+                    if (currentValue.IsLarger(previousValue))
+                    {
+                        benchmarkSummary = new SlowerBenchmarkSummary(previousVersion.Version, currentVersion.Version, 
+                            previousValue, currentValue);
+                    }
+                    else if (currentValue.IsSmaller(previousValue))
+                    {
+                        benchmarkSummary = new FasterBenchmarkSummary(previousVersion.Version, currentVersion.Version,
+                            previousValue, currentValue);
+                    }
+
+                    if (benchmarkSummary != null)
+                    {
+                        benchmarkSummary.Key = measurementGroup.Key;
+                        benchmarkSummary.Name = measurementGroup.Key;
+
+                        benchmarkSummaries.Add(benchmarkSummary);
+                    }
+                }
+            }
+
+            return benchmarkSummaries;
+        }
+        #endregion
     }
 }

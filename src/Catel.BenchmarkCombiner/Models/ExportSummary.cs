@@ -8,6 +8,7 @@
 namespace Catel.BenchmarkCombiner
 {
     using System.Collections.Generic;
+    using Models;
 
     public class ExportSummary
     {
