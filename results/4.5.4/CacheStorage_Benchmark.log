@@ -1,625 +1,832 @@
 // ***** BenchmarkRunner: Start   *****
 // Found benchmarks:
-//   CacheStorage_Benchmark.GetValue_From_An_Already_Initialized_Cache: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
-//   CacheStorage_Benchmark.Overwrite_An_Existing_Cached_Value: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
-//   CacheStorage_Benchmark.GetFromCacheOrFetch: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
-//   CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
-//   CacheStorage_Benchmark.RemoveItem_From_Cache: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
-//   CacheStorage_Benchmark.Clear_Cache: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+//   CacheStorage_Benchmark.GetValue_From_An_Already_Initialized_Cache: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+//   CacheStorage_Benchmark.Overwrite_An_Existing_Cached_Value: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+//   CacheStorage_Benchmark.GetFromCacheOrFetch: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+//   CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+//   CacheStorage_Benchmark.RemoveItem_From_Cache: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+//   CacheStorage_Benchmark.Clear_Cache: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 
 // Validating benchmarks:
 // **************************
-// Benchmark: CacheStorage_Benchmark.GetValue_From_An_Already_Initialized_Cache: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Benchmark: CacheStorage_Benchmark.GetValue_From_An_Already_Initialized_Cache: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 // *** Generate *** 
 // Result = Success
 // BinariesDirectoryPath = C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4
 
 // *** Build ***
-BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache_Job-FWQWII.bat
+BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache_Job-ENVOHN.bat
 // Result = Success
 
 // *** Execute ***
-// Launch: 1 / 1
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache_Job-FWQWII.exe 
+// Launch: 1 / 2
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache_Job-ENVOHN.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 1000 op, 304300.00 ns, 304.3000 ns/op
-IdleWarmup  2: 1000 op, 8000.00 ns, 8.0000 ns/op
-IdleWarmup  3: 1000 op, 3600.00 ns, 3.6000 ns/op
-IdleWarmup  4: 1000 op, 3400.00 ns, 3.4000 ns/op
-IdleWarmup  5: 1000 op, 3300.00 ns, 3.3000 ns/op
-IdleWarmup  6: 1000 op, 3500.00 ns, 3.5000 ns/op
-IdleWarmup  7: 1000 op, 3400.00 ns, 3.4000 ns/op
-IdleWarmup  8: 1000 op, 3300.00 ns, 3.3000 ns/op
-IdleWarmup  9: 1000 op, 3300.00 ns, 3.3000 ns/op
-IdleWarmup 10: 1000 op, 3300.00 ns, 3.3000 ns/op
+IdleWarmup  1: 750 op, 221200.00 ns, 294.9333 ns/op
+IdleWarmup  2: 750 op, 4300.00 ns, 5.7333 ns/op
+IdleWarmup  3: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleWarmup  4: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleWarmup  5: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleWarmup  6: 750 op, 2100.00 ns, 2.8000 ns/op
+IdleWarmup  7: 750 op, 2200.00 ns, 2.9333 ns/op
 
-IdleTarget  1: 1000 op, 3400.00 ns, 3.4000 ns/op
-IdleTarget  2: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleTarget  3: 1000 op, 3300.00 ns, 3.3000 ns/op
-IdleTarget  4: 1000 op, 3400.00 ns, 3.4000 ns/op
-IdleTarget  5: 1000 op, 3300.00 ns, 3.3000 ns/op
-IdleTarget  6: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleTarget  7: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleTarget  8: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleTarget  9: 1000 op, 3400.00 ns, 3.4000 ns/op
-IdleTarget 10: 1000 op, 3400.00 ns, 3.4000 ns/op
-IdleTarget 11: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleTarget 12: 1000 op, 3400.00 ns, 3.4000 ns/op
-IdleTarget 13: 1000 op, 3600.00 ns, 3.6000 ns/op
-IdleTarget 14: 1000 op, 4100.00 ns, 4.1000 ns/op
-IdleTarget 15: 1000 op, 3500.00 ns, 3.5000 ns/op
+IdleTarget  1: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget  2: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  3: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  4: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  5: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  6: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  7: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  8: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  9: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget 10: 750 op, 2100.00 ns, 2.8000 ns/op
+IdleTarget 11: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 12: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 13: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 14: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget 15: 750 op, 2200.00 ns, 2.9333 ns/op
 
-MainWarmup  1: 1000 op, 248900.00 ns, 248.9000 ns/op
-MainWarmup  2: 1000 op, 236600.00 ns, 236.6000 ns/op
-MainWarmup  3: 1000 op, 219800.00 ns, 219.8000 ns/op
+MainWarmup  1: 750 op, 181600.00 ns, 242.1333 ns/op
+MainWarmup  2: 750 op, 181200.00 ns, 241.6000 ns/op
 
-MainTarget  1: 1000 op, 226700.00 ns, 226.7000 ns/op
-MainTarget  2: 1000 op, 220300.00 ns, 220.3000 ns/op
-MainTarget  3: 1000 op, 239300.00 ns, 239.3000 ns/op
-MainTarget  4: 1000 op, 254300.00 ns, 254.3000 ns/op
-MainTarget  5: 1000 op, 256800.00 ns, 256.8000 ns/op
-MainTarget  6: 1000 op, 268400.00 ns, 268.4000 ns/op
-MainTarget  7: 1000 op, 223500.00 ns, 223.5000 ns/op
-MainTarget  8: 1000 op, 226000.00 ns, 226.0000 ns/op
-MainTarget  9: 1000 op, 253700.00 ns, 253.7000 ns/op
-MainTarget 10: 1000 op, 270500.00 ns, 270.5000 ns/op
+MainTarget  1: 750 op, 173300.00 ns, 231.0667 ns/op
+MainTarget  2: 750 op, 170600.00 ns, 227.4667 ns/op
+MainTarget  3: 750 op, 169300.00 ns, 225.7333 ns/op
+MainTarget  4: 750 op, 172400.00 ns, 229.8667 ns/op
+MainTarget  5: 750 op, 167200.00 ns, 222.9333 ns/op
 
-Result  1: 1000 op, 223313.33 ns, 223.3133 ns/op
-Result  2: 1000 op, 216913.33 ns, 216.9133 ns/op
-Result  3: 1000 op, 235913.33 ns, 235.9133 ns/op
-Result  4: 1000 op, 250913.33 ns, 250.9133 ns/op
-Result  5: 1000 op, 253413.33 ns, 253.4133 ns/op
-Result  6: 1000 op, 265013.33 ns, 265.0133 ns/op
-Result  7: 1000 op, 220113.33 ns, 220.1133 ns/op
-Result  8: 1000 op, 222613.33 ns, 222.6133 ns/op
-Result  9: 1000 op, 250313.33 ns, 250.3133 ns/op
-Result 10: 1000 op, 267113.33 ns, 267.1133 ns/op
-GC:  0 0 0 0 10000
+Result  1: 750 op, 170966.67 ns, 227.9556 ns/op
+Result  2: 750 op, 168266.67 ns, 224.3556 ns/op
+Result  3: 750 op, 166966.67 ns, 222.6222 ns/op
+Result  4: 750 op, 170066.67 ns, 226.7556 ns/op
+Result  5: 750 op, 164866.67 ns, 219.8222 ns/op
+GC:  0 0 0 0 3750
+
+// Launch: 2 / 2
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache_Job-ENVOHN.exe 
+
+// Benchmark Process Environment Information:
+// Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
+// GC=Concurrent Workstation
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+
+IdleWarmup  1: 750 op, 239500.00 ns, 319.3333 ns/op
+IdleWarmup  2: 750 op, 4600.00 ns, 6.1333 ns/op
+IdleWarmup  3: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  4: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleWarmup  5: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  6: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleWarmup  7: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  8: 750 op, 2300.00 ns, 3.0667 ns/op
+
+IdleTarget  1: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  2: 750 op, 2700.00 ns, 3.6000 ns/op
+IdleTarget  3: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget  4: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  5: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget  6: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  7: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  8: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  9: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget 10: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 11: 750 op, 2700.00 ns, 3.6000 ns/op
+IdleTarget 12: 750 op, 3100.00 ns, 4.1333 ns/op
+IdleTarget 13: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget 14: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 15: 750 op, 2500.00 ns, 3.3333 ns/op
+
+MainWarmup  1: 750 op, 184900.00 ns, 246.5333 ns/op
+MainWarmup  2: 750 op, 168900.00 ns, 225.2000 ns/op
+
+MainTarget  1: 750 op, 172200.00 ns, 229.6000 ns/op
+MainTarget  2: 750 op, 177400.00 ns, 236.5333 ns/op
+MainTarget  3: 750 op, 175200.00 ns, 233.6000 ns/op
+MainTarget  4: 750 op, 218700.00 ns, 291.6000 ns/op
+MainTarget  5: 750 op, 167100.00 ns, 222.8000 ns/op
+
+Result  1: 750 op, 169640.00 ns, 226.1867 ns/op
+Result  2: 750 op, 174840.00 ns, 233.1200 ns/op
+Result  3: 750 op, 172640.00 ns, 230.1867 ns/op
+Result  4: 750 op, 216140.00 ns, 288.1867 ns/op
+Result  5: 750 op, 164540.00 ns, 219.3867 ns/op
+GC:  0 0 0 0 3750
 
 
 // Run, Diagnostic
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache_Job-FWQWII.exe diagnoserAttached
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache_Job-ENVOHN.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 
-// AfterSetup
+// AfterGlobalSetup
 // BeforeMainRun
-// BeforeCleanup
-Result  1: 1000 op, 222606.67 ns, 222.6067 ns/op
-Result  2: 1000 op, 224006.67 ns, 224.0067 ns/op
-Result  3: 1000 op, 222206.67 ns, 222.2067 ns/op
-Result  4: 1000 op, 224706.67 ns, 224.7067 ns/op
-Result  5: 1000 op, 223106.67 ns, 223.1067 ns/op
-Result  6: 1000 op, 222306.67 ns, 222.3067 ns/op
-Result  7: 1000 op, 222306.67 ns, 222.3067 ns/op
-Result  8: 1000 op, 222306.67 ns, 222.3067 ns/op
-Result  9: 1000 op, 225906.67 ns, 225.9067 ns/op
-GC:  0 0 0 1228800 10000
+// BeforeGlobalCleanup
+Result  1: 750 op, 170240.00 ns, 226.9867 ns/op
+Result  2: 750 op, 165240.00 ns, 220.3200 ns/op
+Result  3: 750 op, 164140.00 ns, 218.8533 ns/op
+Result  4: 750 op, 164340.00 ns, 219.1200 ns/op
+Result  5: 750 op, 164040.00 ns, 218.7200 ns/op
+GC:  0 0 0 450560 3750
 
 
-Mean = 240.5633 ns, StdErr = 6.0451 ns (2.51%); N = 10, StdDev = 19.1164 ns
-Min = 216.9133 ns, Q1 = 222.6133 ns, Median = 243.1133 ns, Q3 = 253.4133 ns, Max = 267.1133 ns
-IQR = 30.8000 ns, LowerFence = 176.4133 ns, UpperFence = 299.6133 ns
-ConfidenceInterval = [211.6621 ns; 269.4646 ns] (CI 99.9%), Margin = 28.9012 ns (12.01% of Mean)
-Skewness = 0.07, Kurtosis = 1.19
+Mean = 231.8578 ns, StdErr = 6.4055 ns (2.76%); N = 10, StdDev = 20.2559 ns
+Min = 219.3867 ns, Q1 = 222.6222 ns, Median = 226.4711 ns, Q3 = 230.1867 ns, Max = 288.1867 ns
+IQR = 7.5644 ns, LowerFence = 211.2756 ns, UpperFence = 241.5333 ns
+ConfidenceInterval = [201.2338 ns; 262.4818 ns] (CI 99.9%), Margin = 30.6240 ns (13.21% of Mean)
+Skewness = 2.09, Kurtosis = 6.01
 
 
 // **************************
-// Benchmark: CacheStorage_Benchmark.Overwrite_An_Existing_Cached_Value: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Benchmark: CacheStorage_Benchmark.Overwrite_An_Existing_Cached_Value: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 // *** Generate *** 
 // Result = Success
 // BinariesDirectoryPath = C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4
 
 // *** Build ***
-BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_Overwrite_An_Existing_Cached_Value_Job-FWQWII.bat
+BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_Overwrite_An_Existing_Cached_Value_Job-ENVOHN.bat
 // Result = Success
 
 // *** Execute ***
-// Launch: 1 / 1
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_Overwrite_An_Existing_Cached_Value_Job-FWQWII.exe 
+// Launch: 1 / 2
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_Overwrite_An_Existing_Cached_Value_Job-ENVOHN.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 1000 op, 278600.00 ns, 278.6000 ns/op
-IdleWarmup  2: 1000 op, 5500.00 ns, 5.5000 ns/op
-IdleWarmup  3: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleWarmup  4: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleWarmup  5: 1000 op, 3100.00 ns, 3.1000 ns/op
-IdleWarmup  6: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleWarmup  7: 1000 op, 3200.00 ns, 3.2000 ns/op
+IdleWarmup  1: 750 op, 240500.00 ns, 320.6667 ns/op
+IdleWarmup  2: 750 op, 6800.00 ns, 9.0667 ns/op
+IdleWarmup  3: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleWarmup  4: 750 op, 4400.00 ns, 5.8667 ns/op
+IdleWarmup  5: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleWarmup  6: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  7: 750 op, 2300.00 ns, 3.0667 ns/op
 
-IdleTarget  1: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleTarget  2: 1000 op, 3100.00 ns, 3.1000 ns/op
-IdleTarget  3: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleTarget  4: 1000 op, 3100.00 ns, 3.1000 ns/op
-IdleTarget  5: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleTarget  6: 1000 op, 3100.00 ns, 3.1000 ns/op
-IdleTarget  7: 1000 op, 3100.00 ns, 3.1000 ns/op
-IdleTarget  8: 1000 op, 3100.00 ns, 3.1000 ns/op
-IdleTarget  9: 1000 op, 3400.00 ns, 3.4000 ns/op
-IdleTarget 10: 1000 op, 3100.00 ns, 3.1000 ns/op
-IdleTarget 11: 1000 op, 3100.00 ns, 3.1000 ns/op
-IdleTarget 12: 1000 op, 3100.00 ns, 3.1000 ns/op
-IdleTarget 13: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleTarget 14: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleTarget 15: 1000 op, 3100.00 ns, 3.1000 ns/op
+IdleTarget  1: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  2: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  3: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  4: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  5: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  6: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  7: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget  8: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  9: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget 10: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget 11: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget 12: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget 13: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget 14: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget 15: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget 16: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget 17: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget 18: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget 19: 750 op, 2400.00 ns, 3.2000 ns/op
 
-MainWarmup  1: 1000 op, 234900.00 ns, 234.9000 ns/op
-MainWarmup  2: 1000 op, 223700.00 ns, 223.7000 ns/op
-MainWarmup  3: 1000 op, 229100.00 ns, 229.1000 ns/op
+MainWarmup  1: 750 op, 182400.00 ns, 243.2000 ns/op
+MainWarmup  2: 750 op, 174900.00 ns, 233.2000 ns/op
 
-MainTarget  1: 1000 op, 224000.00 ns, 224.0000 ns/op
-MainTarget  2: 1000 op, 224500.00 ns, 224.5000 ns/op
-MainTarget  3: 1000 op, 219500.00 ns, 219.5000 ns/op
-MainTarget  4: 1000 op, 221500.00 ns, 221.5000 ns/op
-MainTarget  5: 1000 op, 233900.00 ns, 233.9000 ns/op
-MainTarget  6: 1000 op, 219900.00 ns, 219.9000 ns/op
-MainTarget  7: 1000 op, 256400.00 ns, 256.4000 ns/op
-MainTarget  8: 1000 op, 253700.00 ns, 253.7000 ns/op
-MainTarget  9: 1000 op, 254100.00 ns, 254.1000 ns/op
-MainTarget 10: 1000 op, 224100.00 ns, 224.1000 ns/op
+MainTarget  1: 750 op, 170100.00 ns, 226.8000 ns/op
+MainTarget  2: 750 op, 172800.00 ns, 230.4000 ns/op
+MainTarget  3: 750 op, 169000.00 ns, 225.3333 ns/op
+MainTarget  4: 750 op, 171900.00 ns, 229.2000 ns/op
+MainTarget  5: 750 op, 180400.00 ns, 240.5333 ns/op
 
-Result  1: 1000 op, 220846.67 ns, 220.8467 ns/op
-Result  2: 1000 op, 221346.67 ns, 221.3467 ns/op
-Result  3: 1000 op, 216346.67 ns, 216.3467 ns/op
-Result  4: 1000 op, 218346.67 ns, 218.3467 ns/op
-Result  5: 1000 op, 230746.67 ns, 230.7467 ns/op
-Result  6: 1000 op, 216746.67 ns, 216.7467 ns/op
-Result  7: 1000 op, 253246.67 ns, 253.2467 ns/op
-Result  8: 1000 op, 250546.67 ns, 250.5467 ns/op
-Result  9: 1000 op, 250946.67 ns, 250.9467 ns/op
-Result 10: 1000 op, 220946.67 ns, 220.9467 ns/op
-GC:  0 0 0 0 10000
+Result  1: 750 op, 167805.26 ns, 223.7404 ns/op
+Result  2: 750 op, 170505.26 ns, 227.3404 ns/op
+Result  3: 750 op, 166705.26 ns, 222.2737 ns/op
+Result  4: 750 op, 169605.26 ns, 226.1404 ns/op
+Result  5: 750 op, 178105.26 ns, 237.4737 ns/op
+GC:  0 0 0 0 3750
+
+// Launch: 2 / 2
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_Overwrite_An_Existing_Cached_Value_Job-ENVOHN.exe 
+
+// Benchmark Process Environment Information:
+// Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
+// GC=Concurrent Workstation
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+
+IdleWarmup  1: 750 op, 249900.00 ns, 333.2000 ns/op
+IdleWarmup  2: 750 op, 4900.00 ns, 6.5333 ns/op
+IdleWarmup  3: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleWarmup  4: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleWarmup  5: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleWarmup  6: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleWarmup  7: 750 op, 2300.00 ns, 3.0667 ns/op
+
+IdleTarget  1: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  2: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  3: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget  4: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  5: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget  6: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  7: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget  8: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  9: 750 op, 2700.00 ns, 3.6000 ns/op
+IdleTarget 10: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget 11: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 12: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget 13: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 14: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 15: 750 op, 2200.00 ns, 2.9333 ns/op
+
+MainWarmup  1: 750 op, 185600.00 ns, 247.4667 ns/op
+MainWarmup  2: 750 op, 172100.00 ns, 229.4667 ns/op
+
+MainTarget  1: 750 op, 176400.00 ns, 235.2000 ns/op
+MainTarget  2: 750 op, 171400.00 ns, 228.5333 ns/op
+MainTarget  3: 750 op, 174400.00 ns, 232.5333 ns/op
+MainTarget  4: 750 op, 168800.00 ns, 225.0667 ns/op
+MainTarget  5: 750 op, 172200.00 ns, 229.6000 ns/op
+
+Result  1: 750 op, 174113.33 ns, 232.1511 ns/op
+Result  2: 750 op, 169113.33 ns, 225.4844 ns/op
+Result  3: 750 op, 172113.33 ns, 229.4844 ns/op
+Result  4: 750 op, 166513.33 ns, 222.0178 ns/op
+Result  5: 750 op, 169913.33 ns, 226.5511 ns/op
+GC:  0 0 0 0 3750
 
 
 // Run, Diagnostic
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_Overwrite_An_Existing_Cached_Value_Job-FWQWII.exe diagnoserAttached
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_Overwrite_An_Existing_Cached_Value_Job-ENVOHN.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 
-// AfterSetup
+// AfterGlobalSetup
 // BeforeMainRun
-// BeforeCleanup
-Result  1: 1000 op, 267740.00 ns, 267.7400 ns/op
-Result  2: 1000 op, 232540.00 ns, 232.5400 ns/op
-Result  3: 1000 op, 234240.00 ns, 234.2400 ns/op
-Result  4: 1000 op, 268040.00 ns, 268.0400 ns/op
-Result  5: 1000 op, 232440.00 ns, 232.4400 ns/op
-Result  6: 1000 op, 274540.00 ns, 274.5400 ns/op
-Result  7: 1000 op, 235040.00 ns, 235.0400 ns/op
-Result  8: 1000 op, 232340.00 ns, 232.3400 ns/op
-Result  9: 1000 op, 267540.00 ns, 267.5400 ns/op
-Result 10: 1000 op, 234740.00 ns, 234.7400 ns/op
-GC:  0 0 0 1228800 10000
+// BeforeGlobalCleanup
+Result  1: 750 op, 169720.00 ns, 226.2933 ns/op
+Result  2: 750 op, 163920.00 ns, 218.5600 ns/op
+Result  3: 750 op, 164820.00 ns, 219.7600 ns/op
+Result  4: 750 op, 163120.00 ns, 217.4933 ns/op
+Result  5: 750 op, 166520.00 ns, 222.0267 ns/op
+GC:  0 0 0 450560 3750
 
 
-Mean = 230.0067 ns, StdErr = 4.8767 ns (2.12%); N = 10, StdDev = 15.4214 ns
-Min = 216.3467 ns, Q1 = 218.3467 ns, Median = 221.1467 ns, Q3 = 250.5467 ns, Max = 253.2467 ns
-IQR = 32.2000 ns, LowerFence = 170.0467 ns, UpperFence = 298.8467 ns
-ConfidenceInterval = [206.6917 ns; 253.3217 ns] (CI 99.9%), Margin = 23.3150 ns (10.14% of Mean)
-Skewness = 0.59, Kurtosis = 1.35
+Mean = 227.2657 ns, StdErr = 1.5012 ns (0.66%); N = 10, StdDev = 4.7474 ns
+Min = 222.0178 ns, Q1 = 223.7403 ns, Median = 226.3457 ns, Q3 = 229.4844 ns, Max = 237.4737 ns
+IQR = 5.7441 ns, LowerFence = 215.1242 ns, UpperFence = 238.1006 ns
+ConfidenceInterval = [220.0884 ns; 234.4431 ns] (CI 99.9%), Margin = 7.1773 ns (3.16% of Mean)
+Skewness = 0.81, Kurtosis = 2.56
 
 
 // **************************
-// Benchmark: CacheStorage_Benchmark.GetFromCacheOrFetch: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Benchmark: CacheStorage_Benchmark.GetFromCacheOrFetch: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 // *** Generate *** 
 // Result = Success
 // BinariesDirectoryPath = C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4
 
 // *** Build ***
-BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetFromCacheOrFetch_Job-FWQWII.bat
+BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetFromCacheOrFetch_Job-ENVOHN.bat
 // Result = Success
 
 // *** Execute ***
-// Launch: 1 / 1
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetFromCacheOrFetch_Job-FWQWII.exe 
+// Launch: 1 / 2
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetFromCacheOrFetch_Job-ENVOHN.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 1000 op, 259300.00 ns, 259.3000 ns/op
-IdleWarmup  2: 1000 op, 5300.00 ns, 5.3000 ns/op
-IdleWarmup  3: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleWarmup  4: 1000 op, 2700.00 ns, 2.7000 ns/op
-IdleWarmup  5: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleWarmup  6: 1000 op, 2700.00 ns, 2.7000 ns/op
-IdleWarmup  7: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleWarmup  8: 1000 op, 2800.00 ns, 2.8000 ns/op
+IdleWarmup  1: 750 op, 227300.00 ns, 303.0667 ns/op
+IdleWarmup  2: 750 op, 4500.00 ns, 6.0000 ns/op
+IdleWarmup  3: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  4: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  5: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  6: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  7: 750 op, 2400.00 ns, 3.2000 ns/op
 
-IdleTarget  1: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget  2: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget  3: 1000 op, 2700.00 ns, 2.7000 ns/op
-IdleTarget  4: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleTarget  5: 1000 op, 2700.00 ns, 2.7000 ns/op
-IdleTarget  6: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleTarget  7: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget  8: 1000 op, 2700.00 ns, 2.7000 ns/op
-IdleTarget  9: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget 10: 1000 op, 2700.00 ns, 2.7000 ns/op
-IdleTarget 11: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget 12: 1000 op, 2700.00 ns, 2.7000 ns/op
-IdleTarget 13: 1000 op, 2700.00 ns, 2.7000 ns/op
-IdleTarget 14: 1000 op, 2700.00 ns, 2.7000 ns/op
-IdleTarget 15: 1000 op, 2800.00 ns, 2.8000 ns/op
+IdleTarget  1: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  2: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  3: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  4: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  5: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  6: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  7: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  8: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  9: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget 10: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 11: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 12: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 13: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 14: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 15: 750 op, 2400.00 ns, 3.2000 ns/op
 
-MainWarmup  1: 1000 op, 643700.00 ns, 643.7000 ns/op
-MainWarmup  2: 1000 op, 246800.00 ns, 246.8000 ns/op
-MainWarmup  3: 1000 op, 246000.00 ns, 246.0000 ns/op
+MainWarmup  1: 750 op, 409600.00 ns, 546.1333 ns/op
+MainWarmup  2: 750 op, 184000.00 ns, 245.3333 ns/op
 
-MainTarget  1: 1000 op, 288000.00 ns, 288.0000 ns/op
-MainTarget  2: 1000 op, 246100.00 ns, 246.1000 ns/op
-MainTarget  3: 1000 op, 279600.00 ns, 279.6000 ns/op
-MainTarget  4: 1000 op, 247000.00 ns, 247.0000 ns/op
-MainTarget  5: 1000 op, 254200.00 ns, 254.2000 ns/op
-MainTarget  6: 1000 op, 245300.00 ns, 245.3000 ns/op
-MainTarget  7: 1000 op, 241900.00 ns, 241.9000 ns/op
-MainTarget  8: 1000 op, 243300.00 ns, 243.3000 ns/op
-MainTarget  9: 1000 op, 247200.00 ns, 247.2000 ns/op
-MainTarget 10: 1000 op, 246200.00 ns, 246.2000 ns/op
+MainTarget  1: 750 op, 214300.00 ns, 285.7333 ns/op
+MainTarget  2: 750 op, 190100.00 ns, 253.4667 ns/op
+MainTarget  3: 750 op, 186000.00 ns, 248.0000 ns/op
+MainTarget  4: 750 op, 191800.00 ns, 255.7333 ns/op
+MainTarget  5: 750 op, 184800.00 ns, 246.4000 ns/op
 
-Result  1: 1000 op, 243333.33 ns, 243.3333 ns/op
-Result  2: 1000 op, 244233.33 ns, 244.2333 ns/op
-Result  3: 1000 op, 251433.33 ns, 251.4333 ns/op
-Result  4: 1000 op, 242533.33 ns, 242.5333 ns/op
-Result  5: 1000 op, 239133.33 ns, 239.1333 ns/op
-Result  6: 1000 op, 240533.33 ns, 240.5333 ns/op
-Result  7: 1000 op, 244433.33 ns, 244.4333 ns/op
-Result  8: 1000 op, 243433.33 ns, 243.4333 ns/op
-GC:  0 0 0 0 10000
+Result  1: 750 op, 211840.00 ns, 282.4533 ns/op
+Result  2: 750 op, 187640.00 ns, 250.1867 ns/op
+Result  3: 750 op, 183540.00 ns, 244.7200 ns/op
+Result  4: 750 op, 189340.00 ns, 252.4533 ns/op
+Result  5: 750 op, 182340.00 ns, 243.1200 ns/op
+GC:  0 0 0 0 3750
+
+// Launch: 2 / 2
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetFromCacheOrFetch_Job-ENVOHN.exe 
+
+// Benchmark Process Environment Information:
+// Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
+// GC=Concurrent Workstation
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+
+IdleWarmup  1: 750 op, 254500.00 ns, 339.3333 ns/op
+IdleWarmup  2: 750 op, 4500.00 ns, 6.0000 ns/op
+IdleWarmup  3: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleWarmup  4: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  5: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  6: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  7: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  8: 750 op, 2500.00 ns, 3.3333 ns/op
+
+IdleTarget  1: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  2: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget  3: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget  4: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget  5: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  6: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  7: 750 op, 2900.00 ns, 3.8667 ns/op
+IdleTarget  8: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  9: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget 10: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget 11: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 12: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 13: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 14: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget 15: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 16: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget 17: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget 18: 750 op, 2600.00 ns, 3.4667 ns/op
+
+MainWarmup  1: 750 op, 429700.00 ns, 572.9333 ns/op
+MainWarmup  2: 750 op, 195000.00 ns, 260.0000 ns/op
+
+MainTarget  1: 750 op, 195900.00 ns, 261.2000 ns/op
+MainTarget  2: 750 op, 193300.00 ns, 257.7333 ns/op
+MainTarget  3: 750 op, 195200.00 ns, 260.2667 ns/op
+MainTarget  4: 750 op, 191000.00 ns, 254.6667 ns/op
+MainTarget  5: 750 op, 195100.00 ns, 260.1333 ns/op
+
+Result  1: 750 op, 193383.33 ns, 257.8444 ns/op
+Result  2: 750 op, 190783.33 ns, 254.3778 ns/op
+Result  3: 750 op, 192683.33 ns, 256.9111 ns/op
+Result  4: 750 op, 188483.33 ns, 251.3111 ns/op
+Result  5: 750 op, 192583.33 ns, 256.7778 ns/op
+GC:  0 0 0 0 3750
 
 
 // Run, Diagnostic
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetFromCacheOrFetch_Job-FWQWII.exe diagnoserAttached
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetFromCacheOrFetch_Job-ENVOHN.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 
-// AfterSetup
+// AfterGlobalSetup
 // BeforeMainRun
-// BeforeCleanup
-Result  1: 1000 op, 255453.33 ns, 255.4533 ns/op
-Result  2: 1000 op, 246353.33 ns, 246.3533 ns/op
-Result  3: 1000 op, 246353.33 ns, 246.3533 ns/op
-Result  4: 1000 op, 249053.33 ns, 249.0533 ns/op
-Result  5: 1000 op, 251253.33 ns, 251.2533 ns/op
-Result  6: 1000 op, 250253.33 ns, 250.2533 ns/op
-Result  7: 1000 op, 250753.33 ns, 250.7533 ns/op
-Result  8: 1000 op, 252553.33 ns, 252.5533 ns/op
-GC:  0 0 0 1392640 10000
+// BeforeGlobalCleanup
+Result  1: 750 op, 187226.67 ns, 249.6356 ns/op
+Result  2: 750 op, 180126.67 ns, 240.1689 ns/op
+Result  3: 750 op, 180926.67 ns, 241.2356 ns/op
+Result  4: 750 op, 179726.67 ns, 239.6356 ns/op
+Result  5: 750 op, 203326.67 ns, 271.1022 ns/op
+GC:  0 0 0 532480 3750
 
 
-Mean = 243.6333 ns, StdErr = 1.2890 ns (0.53%); N = 8, StdDev = 3.6457 ns
-Min = 239.1333 ns, Q1 = 241.5333 ns, Median = 243.3833 ns, Q3 = 244.3333 ns, Max = 251.4333 ns
-IQR = 2.8000 ns, LowerFence = 237.3333 ns, UpperFence = 248.5333 ns
-ConfidenceInterval = [236.6628 ns; 250.6039 ns] (CI 99.9%), Margin = 6.9706 ns (2.86% of Mean)
-Skewness = 0.91, Kurtosis = 2.98
+Mean = 255.0156 ns, StdErr = 3.4303 ns (1.35%); N = 10, StdDev = 10.8477 ns
+Min = 243.1200 ns, Q1 = 250.1867 ns, Median = 253.4156 ns, Q3 = 256.9111 ns, Max = 282.4533 ns
+IQR = 6.7244 ns, LowerFence = 240.1000 ns, UpperFence = 266.9978 ns
+ConfidenceInterval = [238.6154 ns; 271.4157 ns] (CI 99.9%), Margin = 16.4001 ns (6.43% of Mean)
+Skewness = 1.39, Kurtosis = 4.33
 
 
 // **************************
-// Benchmark: CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Benchmark: CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 // *** Generate *** 
 // Result = Success
 // BinariesDirectoryPath = C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4
 
 // *** Build ***
-BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy_Job-FWQWII.bat
+BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy_Job-ENVOHN.bat
 // Result = Success
 
 // *** Execute ***
-// Launch: 1 / 1
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy_Job-FWQWII.exe 
+// Launch: 1 / 2
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy_Job-ENVOHN.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 1000 op, 315200.00 ns, 315.2000 ns/op
-IdleWarmup  2: 1000 op, 5600.00 ns, 5.6000 ns/op
-IdleWarmup  3: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleWarmup  4: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleWarmup  5: 1000 op, 3300.00 ns, 3.3000 ns/op
-IdleWarmup  6: 1000 op, 3300.00 ns, 3.3000 ns/op
-IdleWarmup  7: 1000 op, 3200.00 ns, 3.2000 ns/op
+IdleWarmup  1: 750 op, 225200.00 ns, 300.2667 ns/op
+IdleWarmup  2: 750 op, 4200.00 ns, 5.6000 ns/op
+IdleWarmup  3: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleWarmup  4: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleWarmup  5: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  6: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleWarmup  7: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  8: 750 op, 2300.00 ns, 3.0667 ns/op
 
-IdleTarget  1: 1000 op, 3300.00 ns, 3.3000 ns/op
-IdleTarget  2: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleTarget  3: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleTarget  4: 1000 op, 3300.00 ns, 3.3000 ns/op
-IdleTarget  5: 1000 op, 3100.00 ns, 3.1000 ns/op
-IdleTarget  6: 1000 op, 3300.00 ns, 3.3000 ns/op
-IdleTarget  7: 1000 op, 3100.00 ns, 3.1000 ns/op
-IdleTarget  8: 1000 op, 35700.00 ns, 35.7000 ns/op
-IdleTarget  9: 1000 op, 3100.00 ns, 3.1000 ns/op
-IdleTarget 10: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleTarget 11: 1000 op, 3300.00 ns, 3.3000 ns/op
-IdleTarget 12: 1000 op, 3300.00 ns, 3.3000 ns/op
-IdleTarget 13: 1000 op, 3400.00 ns, 3.4000 ns/op
-IdleTarget 14: 1000 op, 3300.00 ns, 3.3000 ns/op
-IdleTarget 15: 1000 op, 3300.00 ns, 3.3000 ns/op
+IdleTarget  1: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  2: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  3: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  4: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  5: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget  6: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  7: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  8: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  9: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget 10: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 11: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 12: 750 op, 2100.00 ns, 2.8000 ns/op
+IdleTarget 13: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget 14: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 15: 750 op, 2300.00 ns, 3.0667 ns/op
 
-MainWarmup  1: 1000 op, 680800.00 ns, 680.8000 ns/op
-MainWarmup  2: 1000 op, 257800.00 ns, 257.8000 ns/op
-MainWarmup  3: 1000 op, 254500.00 ns, 254.5000 ns/op
+MainWarmup  1: 750 op, 457300.00 ns, 609.7333 ns/op
+MainWarmup  2: 750 op, 187000.00 ns, 249.3333 ns/op
 
-MainTarget  1: 1000 op, 255900.00 ns, 255.9000 ns/op
-MainTarget  2: 1000 op, 257000.00 ns, 257.0000 ns/op
-MainTarget  3: 1000 op, 292700.00 ns, 292.7000 ns/op
-MainTarget  4: 1000 op, 284300.00 ns, 284.3000 ns/op
-MainTarget  5: 1000 op, 255400.00 ns, 255.4000 ns/op
-MainTarget  6: 1000 op, 300700.00 ns, 300.7000 ns/op
-MainTarget  7: 1000 op, 254700.00 ns, 254.7000 ns/op
-MainTarget  8: 1000 op, 260000.00 ns, 260.0000 ns/op
-MainTarget  9: 1000 op, 375800.00 ns, 375.8000 ns/op
-MainTarget 10: 1000 op, 259300.00 ns, 259.3000 ns/op
+MainTarget  1: 750 op, 189200.00 ns, 252.2667 ns/op
+MainTarget  2: 750 op, 186200.00 ns, 248.2667 ns/op
+MainTarget  3: 750 op, 190500.00 ns, 254.0000 ns/op
+MainTarget  4: 750 op, 185600.00 ns, 247.4667 ns/op
+MainTarget  5: 750 op, 188300.00 ns, 251.0667 ns/op
 
-Result  1: 1000 op, 250493.33 ns, 250.4933 ns/op
-Result  2: 1000 op, 251593.33 ns, 251.5933 ns/op
-Result  3: 1000 op, 287293.33 ns, 287.2933 ns/op
-Result  4: 1000 op, 278893.33 ns, 278.8933 ns/op
-Result  5: 1000 op, 249993.33 ns, 249.9933 ns/op
-Result  6: 1000 op, 295293.33 ns, 295.2933 ns/op
-Result  7: 1000 op, 249293.33 ns, 249.2933 ns/op
-Result  8: 1000 op, 254593.33 ns, 254.5933 ns/op
-Result  9: 1000 op, 253893.33 ns, 253.8933 ns/op
-GC:  0 0 0 0 10000
+Result  1: 750 op, 186886.67 ns, 249.1822 ns/op
+Result  2: 750 op, 183886.67 ns, 245.1822 ns/op
+Result  3: 750 op, 188186.67 ns, 250.9156 ns/op
+Result  4: 750 op, 183286.67 ns, 244.3822 ns/op
+Result  5: 750 op, 185986.67 ns, 247.9822 ns/op
+GC:  0 0 0 0 3750
+
+// Launch: 2 / 2
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy_Job-ENVOHN.exe 
+
+// Benchmark Process Environment Information:
+// Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
+// GC=Concurrent Workstation
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+
+IdleWarmup  1: 750 op, 261800.00 ns, 349.0667 ns/op
+IdleWarmup  2: 750 op, 6300.00 ns, 8.4000 ns/op
+IdleWarmup  3: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  4: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  5: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  6: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  7: 750 op, 2400.00 ns, 3.2000 ns/op
+
+IdleTarget  1: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  2: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  3: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  4: 750 op, 2700.00 ns, 3.6000 ns/op
+IdleTarget  5: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  6: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget  7: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget  8: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget  9: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 10: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 11: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget 12: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 13: 750 op, 2200.00 ns, 2.9333 ns/op
+IdleTarget 14: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 15: 750 op, 2200.00 ns, 2.9333 ns/op
+
+MainWarmup  1: 750 op, 511900.00 ns, 682.5333 ns/op
+MainWarmup  2: 750 op, 195600.00 ns, 260.8000 ns/op
+
+MainTarget  1: 750 op, 192000.00 ns, 256.0000 ns/op
+MainTarget  2: 750 op, 189400.00 ns, 252.5333 ns/op
+MainTarget  3: 750 op, 188600.00 ns, 251.4667 ns/op
+MainTarget  4: 750 op, 193100.00 ns, 257.4667 ns/op
+MainTarget  5: 750 op, 189400.00 ns, 252.5333 ns/op
+
+Result  1: 750 op, 189660.00 ns, 252.8800 ns/op
+Result  2: 750 op, 187060.00 ns, 249.4133 ns/op
+Result  3: 750 op, 186260.00 ns, 248.3467 ns/op
+Result  4: 750 op, 190760.00 ns, 254.3467 ns/op
+Result  5: 750 op, 187060.00 ns, 249.4133 ns/op
+GC:  0 0 0 0 3750
 
 
 // Run, Diagnostic
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy_Job-FWQWII.exe diagnoserAttached
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy_Job-ENVOHN.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 
-// AfterSetup
+// AfterGlobalSetup
 // BeforeMainRun
-// BeforeCleanup
-Result  1: 1000 op, 264846.67 ns, 264.8467 ns/op
-Result  2: 1000 op, 254246.67 ns, 254.2467 ns/op
-Result  3: 1000 op, 255546.67 ns, 255.5467 ns/op
-Result  4: 1000 op, 246846.67 ns, 246.8467 ns/op
-Result  5: 1000 op, 248146.67 ns, 248.1467 ns/op
-Result  6: 1000 op, 248346.67 ns, 248.3467 ns/op
-Result  7: 1000 op, 246946.67 ns, 246.9467 ns/op
-Result  8: 1000 op, 258846.67 ns, 258.8467 ns/op
-Result  9: 1000 op, 246446.67 ns, 246.4467 ns/op
-Result 10: 1000 op, 248846.67 ns, 248.8467 ns/op
-GC:  0 0 0 1392640 10000
+// BeforeGlobalCleanup
+Result  1: 750 op, 189033.33 ns, 252.0444 ns/op
+Result  2: 750 op, 183633.33 ns, 244.8444 ns/op
+Result  3: 750 op, 181633.33 ns, 242.1778 ns/op
+Result  4: 750 op, 182933.33 ns, 243.9111 ns/op
+Result  5: 750 op, 182433.33 ns, 243.2444 ns/op
+GC:  0 0 0 532480 3750
 
 
-Mean = 263.4822 ns, StdErr = 6.1018 ns (2.32%); N = 9, StdDev = 18.3054 ns
-Min = 249.2933 ns, Q1 = 250.2433 ns, Median = 253.8933 ns, Q3 = 283.0933 ns, Max = 295.2933 ns
-IQR = 32.8500 ns, LowerFence = 200.9683 ns, UpperFence = 332.3683 ns
-ConfidenceInterval = [232.7211 ns; 294.2433 ns] (CI 99.9%), Margin = 30.7611 ns (11.67% of Mean)
-Skewness = 0.7, Kurtosis = 1.52
+Mean = 249.2044 ns, StdErr = 0.9697 ns (0.39%); N = 10, StdDev = 3.0665 ns
+Min = 244.3822 ns, Q1 = 247.9822 ns, Median = 249.2978 ns, Q3 = 250.9156 ns, Max = 254.3467 ns
+IQR = 2.9333 ns, LowerFence = 243.5822 ns, UpperFence = 255.3156 ns
+ConfidenceInterval = [244.5684 ns; 253.8405 ns] (CI 99.9%), Margin = 4.6361 ns (1.86% of Mean)
+Skewness = 0.04, Kurtosis = 1.92
 
 
 // **************************
-// Benchmark: CacheStorage_Benchmark.RemoveItem_From_Cache: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Benchmark: CacheStorage_Benchmark.RemoveItem_From_Cache: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 // *** Generate *** 
 // Result = Success
 // BinariesDirectoryPath = C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4
 
 // *** Build ***
-BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_RemoveItem_From_Cache_Job-FWQWII.bat
+BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_RemoveItem_From_Cache_Job-ENVOHN.bat
 // Result = Success
 
 // *** Execute ***
-// Launch: 1 / 1
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_RemoveItem_From_Cache_Job-FWQWII.exe 
+// Launch: 1 / 2
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_RemoveItem_From_Cache_Job-ENVOHN.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 1000 op, 312800.00 ns, 312.8000 ns/op
-IdleWarmup  2: 1000 op, 6100.00 ns, 6.1000 ns/op
-IdleWarmup  3: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleWarmup  4: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleWarmup  5: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleWarmup  6: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleWarmup  7: 1000 op, 2900.00 ns, 2.9000 ns/op
+IdleWarmup  1: 750 op, 220200.00 ns, 293.6000 ns/op
+IdleWarmup  2: 750 op, 5000.00 ns, 6.6667 ns/op
+IdleWarmup  3: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  4: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  5: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  6: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  7: 750 op, 2400.00 ns, 3.2000 ns/op
 
-IdleTarget  1: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleTarget  2: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget  3: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget  4: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleTarget  5: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleTarget  6: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleTarget  7: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget  8: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleTarget  9: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleTarget 10: 1000 op, 2700.00 ns, 2.7000 ns/op
-IdleTarget 11: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget 12: 1000 op, 3200.00 ns, 3.2000 ns/op
-IdleTarget 13: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget 14: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleTarget 15: 1000 op, 2900.00 ns, 2.9000 ns/op
+IdleTarget  1: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  2: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  3: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  4: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  5: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  6: 750 op, 2700.00 ns, 3.6000 ns/op
+IdleTarget  7: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  8: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  9: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 10: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 11: 750 op, 2300.00 ns, 3.0667 ns/op
+IdleTarget 12: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 13: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 14: 750 op, 2700.00 ns, 3.6000 ns/op
+IdleTarget 15: 750 op, 2600.00 ns, 3.4667 ns/op
 
-MainWarmup  1: 1000 op, 256500.00 ns, 256.5000 ns/op
-MainWarmup  2: 1000 op, 232700.00 ns, 232.7000 ns/op
-MainWarmup  3: 1000 op, 270400.00 ns, 270.4000 ns/op
+MainWarmup  1: 750 op, 198900.00 ns, 265.2000 ns/op
+MainWarmup  2: 750 op, 180600.00 ns, 240.8000 ns/op
 
-MainTarget  1: 1000 op, 281900.00 ns, 281.9000 ns/op
-MainTarget  2: 1000 op, 269300.00 ns, 269.3000 ns/op
-MainTarget  3: 1000 op, 240700.00 ns, 240.7000 ns/op
-MainTarget  4: 1000 op, 232200.00 ns, 232.2000 ns/op
-MainTarget  5: 1000 op, 234400.00 ns, 234.4000 ns/op
-MainTarget  6: 1000 op, 237900.00 ns, 237.9000 ns/op
-MainTarget  7: 1000 op, 233500.00 ns, 233.5000 ns/op
-MainTarget  8: 1000 op, 268400.00 ns, 268.4000 ns/op
-MainTarget  9: 1000 op, 270100.00 ns, 270.1000 ns/op
-MainTarget 10: 1000 op, 252100.00 ns, 252.1000 ns/op
+MainTarget  1: 750 op, 183300.00 ns, 244.4000 ns/op
+MainTarget  2: 750 op, 183300.00 ns, 244.4000 ns/op
+MainTarget  3: 750 op, 181300.00 ns, 241.7333 ns/op
+MainTarget  4: 750 op, 182200.00 ns, 242.9333 ns/op
+MainTarget  5: 750 op, 175600.00 ns, 234.1333 ns/op
 
-Result  1: 1000 op, 279026.67 ns, 279.0267 ns/op
-Result  2: 1000 op, 266426.67 ns, 266.4267 ns/op
-Result  3: 1000 op, 237826.67 ns, 237.8267 ns/op
-Result  4: 1000 op, 229326.67 ns, 229.3267 ns/op
-Result  5: 1000 op, 231526.67 ns, 231.5267 ns/op
-Result  6: 1000 op, 235026.67 ns, 235.0267 ns/op
-Result  7: 1000 op, 230626.67 ns, 230.6267 ns/op
-Result  8: 1000 op, 265526.67 ns, 265.5267 ns/op
-Result  9: 1000 op, 267226.67 ns, 267.2267 ns/op
-Result 10: 1000 op, 249226.67 ns, 249.2267 ns/op
-GC:  0 0 0 0 10000
+Result  1: 750 op, 180806.67 ns, 241.0756 ns/op
+Result  2: 750 op, 180806.67 ns, 241.0756 ns/op
+Result  3: 750 op, 178806.67 ns, 238.4089 ns/op
+Result  4: 750 op, 179706.67 ns, 239.6089 ns/op
+Result  5: 750 op, 173106.67 ns, 230.8089 ns/op
+GC:  0 0 0 0 3750
+
+// Launch: 2 / 2
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_RemoveItem_From_Cache_Job-ENVOHN.exe 
+
+// Benchmark Process Environment Information:
+// Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
+// GC=Concurrent Workstation
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+
+IdleWarmup  1: 750 op, 223000.00 ns, 297.3333 ns/op
+IdleWarmup  2: 750 op, 4500.00 ns, 6.0000 ns/op
+IdleWarmup  3: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  4: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  5: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  6: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  7: 750 op, 2500.00 ns, 3.3333 ns/op
+
+IdleTarget  1: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  2: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget  3: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  4: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  5: 750 op, 2800.00 ns, 3.7333 ns/op
+IdleTarget  6: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  7: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  8: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  9: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget 10: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 11: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 12: 750 op, 2800.00 ns, 3.7333 ns/op
+IdleTarget 13: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 14: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 15: 750 op, 2500.00 ns, 3.3333 ns/op
+
+MainWarmup  1: 750 op, 201600.00 ns, 268.8000 ns/op
+MainWarmup  2: 750 op, 180900.00 ns, 241.2000 ns/op
+
+MainTarget  1: 750 op, 182900.00 ns, 243.8667 ns/op
+MainTarget  2: 750 op, 183700.00 ns, 244.9333 ns/op
+MainTarget  3: 750 op, 179000.00 ns, 238.6667 ns/op
+MainTarget  4: 750 op, 187700.00 ns, 250.2667 ns/op
+MainTarget  5: 750 op, 179000.00 ns, 238.6667 ns/op
+
+Result  1: 750 op, 180360.00 ns, 240.4800 ns/op
+Result  2: 750 op, 181160.00 ns, 241.5467 ns/op
+Result  3: 750 op, 176460.00 ns, 235.2800 ns/op
+Result  4: 750 op, 185160.00 ns, 246.8800 ns/op
+Result  5: 750 op, 176460.00 ns, 235.2800 ns/op
+GC:  0 0 0 0 3750
 
 
 // Run, Diagnostic
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_RemoveItem_From_Cache_Job-FWQWII.exe diagnoserAttached
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_RemoveItem_From_Cache_Job-ENVOHN.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 
-// AfterSetup
+// AfterGlobalSetup
 // BeforeMainRun
-// BeforeCleanup
-Result  1: 1000 op, 247026.67 ns, 247.0267 ns/op
-Result  2: 1000 op, 282126.67 ns, 282.1267 ns/op
-Result  3: 1000 op, 244326.67 ns, 244.3267 ns/op
-Result  4: 1000 op, 246226.67 ns, 246.2267 ns/op
-Result  5: 1000 op, 280926.67 ns, 280.9267 ns/op
-Result  6: 1000 op, 241426.67 ns, 241.4267 ns/op
-Result  7: 1000 op, 281726.67 ns, 281.7267 ns/op
-Result  8: 1000 op, 244526.67 ns, 244.5267 ns/op
-Result  9: 1000 op, 251426.67 ns, 251.4267 ns/op
-Result 10: 1000 op, 256726.67 ns, 256.7267 ns/op
-GC:  0 0 0 2211840 10000
+// BeforeGlobalCleanup
+Result  1: 750 op, 178900.00 ns, 238.5333 ns/op
+Result  2: 750 op, 183500.00 ns, 244.6667 ns/op
+Result  3: 750 op, 176900.00 ns, 235.8667 ns/op
+Result  4: 750 op, 171800.00 ns, 229.0667 ns/op
+Result  5: 750 op, 172000.00 ns, 229.3333 ns/op
+GC:  0 0 0 819200 3750
 
 
-Mean = 249.1767 ns, StdErr = 5.9258 ns (2.38%); N = 10, StdDev = 18.7392 ns
-Min = 229.3267 ns, Q1 = 231.5267 ns, Median = 243.5267 ns, Q3 = 266.4267 ns, Max = 279.0267 ns
-IQR = 34.9000 ns, LowerFence = 179.1767 ns, UpperFence = 318.7767 ns
-ConfidenceInterval = [220.8457 ns; 277.5076 ns] (CI 99.9%), Margin = 28.3309 ns (11.37% of Mean)
-Skewness = 0.27, Kurtosis = 1.21
+Mean = 239.0444 ns, StdErr = 1.3939 ns (0.58%); N = 10, StdDev = 4.4078 ns
+Min = 230.8089 ns, Q1 = 235.2800 ns, Median = 240.0444 ns, Q3 = 241.0756 ns, Max = 246.8800 ns
+IQR = 5.7956 ns, LowerFence = 226.5867 ns, UpperFence = 249.7689 ns
+ConfidenceInterval = [232.3805 ns; 245.7084 ns] (CI 99.9%), Margin = 6.6640 ns (2.79% of Mean)
+Skewness = -0.17, Kurtosis = 2.34
 
 
 // **************************
-// Benchmark: CacheStorage_Benchmark.Clear_Cache: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Benchmark: CacheStorage_Benchmark.Clear_Cache: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 // *** Generate *** 
 // Result = Success
 // BinariesDirectoryPath = C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4
 
 // *** Build ***
-BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_Clear_Cache_Job-FWQWII.bat
+BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_Clear_Cache_Job-ENVOHN.bat
 // Result = Success
 
 // *** Execute ***
-// Launch: 1 / 1
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_Clear_Cache_Job-FWQWII.exe 
+// Launch: 1 / 2
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_Clear_Cache_Job-ENVOHN.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 1000 op, 261400.00 ns, 261.4000 ns/op
-IdleWarmup  2: 1000 op, 6300.00 ns, 6.3000 ns/op
-IdleWarmup  3: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleWarmup  4: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleWarmup  5: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleWarmup  6: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleWarmup  7: 1000 op, 2800.00 ns, 2.8000 ns/op
+IdleWarmup  1: 750 op, 222600.00 ns, 296.8000 ns/op
+IdleWarmup  2: 750 op, 4800.00 ns, 6.4000 ns/op
+IdleWarmup  3: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  4: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  5: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  6: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleWarmup  7: 750 op, 2500.00 ns, 3.3333 ns/op
 
-IdleTarget  1: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleTarget  2: 1000 op, 3000.00 ns, 3.0000 ns/op
-IdleTarget  3: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget  4: 1000 op, 3000.00 ns, 3.0000 ns/op
-IdleTarget  5: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget  6: 1000 op, 3100.00 ns, 3.1000 ns/op
-IdleTarget  7: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleTarget  8: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleTarget  9: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget 10: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget 11: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget 12: 1000 op, 2900.00 ns, 2.9000 ns/op
-IdleTarget 13: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget 14: 1000 op, 2800.00 ns, 2.8000 ns/op
-IdleTarget 15: 1000 op, 3200.00 ns, 3.2000 ns/op
+IdleTarget  1: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget  2: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  3: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget  4: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  5: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  6: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  7: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  8: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget  9: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 10: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 11: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 12: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 13: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget 14: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 15: 750 op, 2400.00 ns, 3.2000 ns/op
 
-MainWarmup  1: 1000 op, 288800.00 ns, 288.8000 ns/op
-MainWarmup  2: 1000 op, 241800.00 ns, 241.8000 ns/op
-MainWarmup  3: 1000 op, 234600.00 ns, 234.6000 ns/op
+MainWarmup  1: 750 op, 196100.00 ns, 261.4667 ns/op
+MainWarmup  2: 750 op, 173800.00 ns, 231.7333 ns/op
 
-MainTarget  1: 1000 op, 273400.00 ns, 273.4000 ns/op
-MainTarget  2: 1000 op, 230400.00 ns, 230.4000 ns/op
-MainTarget  3: 1000 op, 236900.00 ns, 236.9000 ns/op
-MainTarget  4: 1000 op, 232000.00 ns, 232.0000 ns/op
-MainTarget  5: 1000 op, 233100.00 ns, 233.1000 ns/op
-MainTarget  6: 1000 op, 235900.00 ns, 235.9000 ns/op
-MainTarget  7: 1000 op, 232000.00 ns, 232.0000 ns/op
-MainTarget  8: 1000 op, 236100.00 ns, 236.1000 ns/op
-MainTarget  9: 1000 op, 264700.00 ns, 264.7000 ns/op
-MainTarget 10: 1000 op, 231100.00 ns, 231.1000 ns/op
+MainTarget  1: 750 op, 214800.00 ns, 286.4000 ns/op
+MainTarget  2: 750 op, 181400.00 ns, 241.8667 ns/op
+MainTarget  3: 750 op, 173700.00 ns, 231.6000 ns/op
+MainTarget  4: 750 op, 180500.00 ns, 240.6667 ns/op
+MainTarget  5: 750 op, 181500.00 ns, 242.0000 ns/op
 
-Result  1: 1000 op, 227500.00 ns, 227.5000 ns/op
-Result  2: 1000 op, 234000.00 ns, 234.0000 ns/op
-Result  3: 1000 op, 229100.00 ns, 229.1000 ns/op
-Result  4: 1000 op, 230200.00 ns, 230.2000 ns/op
-Result  5: 1000 op, 233000.00 ns, 233.0000 ns/op
-Result  6: 1000 op, 229100.00 ns, 229.1000 ns/op
-Result  7: 1000 op, 233200.00 ns, 233.2000 ns/op
-Result  8: 1000 op, 228200.00 ns, 228.2000 ns/op
-GC:  0 0 0 0 10000
+Result  1: 750 op, 212306.67 ns, 283.0756 ns/op
+Result  2: 750 op, 178906.67 ns, 238.5422 ns/op
+Result  3: 750 op, 171206.67 ns, 228.2756 ns/op
+Result  4: 750 op, 178006.67 ns, 237.3422 ns/op
+Result  5: 750 op, 179006.67 ns, 238.6756 ns/op
+GC:  0 0 0 0 3750
+
+// Launch: 2 / 2
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_Clear_Cache_Job-ENVOHN.exe 
+
+// Benchmark Process Environment Information:
+// Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
+// GC=Concurrent Workstation
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+
+IdleWarmup  1: 750 op, 224500.00 ns, 299.3333 ns/op
+IdleWarmup  2: 750 op, 4900.00 ns, 6.5333 ns/op
+IdleWarmup  3: 750 op, 2700.00 ns, 3.6000 ns/op
+IdleWarmup  4: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleWarmup  5: 750 op, 2700.00 ns, 3.6000 ns/op
+IdleWarmup  6: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  7: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleWarmup  8: 750 op, 2500.00 ns, 3.3333 ns/op
+
+IdleTarget  1: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  2: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  3: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget  4: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget  5: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget  6: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget  7: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget  8: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget  9: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget 10: 750 op, 3900.00 ns, 5.2000 ns/op
+IdleTarget 11: 750 op, 2600.00 ns, 3.4667 ns/op
+IdleTarget 12: 750 op, 2400.00 ns, 3.2000 ns/op
+IdleTarget 13: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 14: 750 op, 2500.00 ns, 3.3333 ns/op
+IdleTarget 15: 750 op, 4000.00 ns, 5.3333 ns/op
+
+MainWarmup  1: 750 op, 200600.00 ns, 267.4667 ns/op
+MainWarmup  2: 750 op, 184800.00 ns, 246.4000 ns/op
+
+MainTarget  1: 750 op, 183700.00 ns, 244.9333 ns/op
+MainTarget  2: 750 op, 183400.00 ns, 244.5333 ns/op
+MainTarget  3: 750 op, 180000.00 ns, 240.0000 ns/op
+MainTarget  4: 750 op, 197200.00 ns, 262.9333 ns/op
+MainTarget  5: 750 op, 183000.00 ns, 244.0000 ns/op
+
+Result  1: 750 op, 180980.00 ns, 241.3067 ns/op
+Result  2: 750 op, 180680.00 ns, 240.9067 ns/op
+Result  3: 750 op, 177280.00 ns, 236.3733 ns/op
+Result  4: 750 op, 194480.00 ns, 259.3067 ns/op
+Result  5: 750 op, 180280.00 ns, 240.3733 ns/op
+GC:  0 0 0 0 3750
 
 
 // Run, Diagnostic
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_Clear_Cache_Job-FWQWII.exe diagnoserAttached
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.5.4\CacheStorage_Benchmark_Clear_Cache_Job-ENVOHN.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+// Job: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 
-// AfterSetup
+// AfterGlobalSetup
 // BeforeMainRun
-// BeforeCleanup
-Result  1: 1000 op, 240373.33 ns, 240.3733 ns/op
-Result  2: 1000 op, 235373.33 ns, 235.3733 ns/op
-Result  3: 1000 op, 298073.33 ns, 298.0733 ns/op
-Result  4: 1000 op, 240373.33 ns, 240.3733 ns/op
-Result  5: 1000 op, 242173.33 ns, 242.1733 ns/op
-Result  6: 1000 op, 234073.33 ns, 234.0733 ns/op
-Result  7: 1000 op, 236273.33 ns, 236.2733 ns/op
-Result  8: 1000 op, 266873.33 ns, 266.8733 ns/op
-Result  9: 1000 op, 232973.33 ns, 232.9733 ns/op
-Result 10: 1000 op, 275873.33 ns, 275.8733 ns/op
-GC:  0 0 0 2211840 10000
+// BeforeGlobalCleanup
+Result  1: 750 op, 179482.35 ns, 239.3098 ns/op
+Result  2: 750 op, 171782.35 ns, 229.0431 ns/op
+Result  3: 750 op, 181782.35 ns, 242.3765 ns/op
+Result  4: 750 op, 178482.35 ns, 237.9765 ns/op
+Result  5: 750 op, 178682.35 ns, 238.2431 ns/op
+GC:  0 0 0 819200 3750
 
 
-Mean = 230.5375 ns, StdErr = 0.8872 ns (0.38%); N = 8, StdDev = 2.5094 ns
-Min = 227.5000 ns, Q1 = 228.6500 ns, Median = 229.6500 ns, Q3 = 233.1000 ns, Max = 234.0000 ns
-IQR = 4.4500 ns, LowerFence = 221.9750 ns, UpperFence = 239.7750 ns
-ConfidenceInterval = [225.7396 ns; 235.3354 ns] (CI 99.9%), Margin = 4.7979 ns (2.08% of Mean)
-Skewness = 0.23, Kurtosis = 1.12
+Mean = 244.4178 ns, StdErr = 4.9411 ns (2.02%); N = 10, StdDev = 15.6252 ns
+Min = 228.2756 ns, Q1 = 237.3422 ns, Median = 239.5244 ns, Q3 = 241.3067 ns, Max = 283.0756 ns
+IQR = 3.9644 ns, LowerFence = 231.3956 ns, UpperFence = 247.2533 ns
+ConfidenceInterval = [220.7948 ns; 268.0408 ns] (CI 99.9%), Margin = 23.6230 ns (9.67% of Mean)
+Skewness = 1.45, Kurtosis = 3.96
 
 
 // ***** BenchmarkRunner: Finish  *****
@@ -628,69 +835,69 @@ Skewness = 0.23, Kurtosis = 1.12
   BenchmarkDotNet.Artifacts\results\CacheStorage_Benchmark-measurements.csv
 
 // * Detailed results *
-CacheStorage_Benchmark.GetValue_From_An_Already_Initialized_Cache: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+CacheStorage_Benchmark.GetValue_From_An_Already_Initialized_Cache: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 Runtime = Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0; GC = Concurrent Workstation
-Mean = 240.5633 ns, StdErr = 6.0451 ns (2.51%); N = 10, StdDev = 19.1164 ns
-Min = 216.9133 ns, Q1 = 222.6133 ns, Median = 243.1133 ns, Q3 = 253.4133 ns, Max = 267.1133 ns
-IQR = 30.8000 ns, LowerFence = 176.4133 ns, UpperFence = 299.6133 ns
-ConfidenceInterval = [211.6621 ns; 269.4646 ns] (CI 99.9%), Margin = 28.9012 ns (12.01% of Mean)
-Skewness = 0.07, Kurtosis = 1.19
+Mean = 231.8578 ns, StdErr = 6.4055 ns (2.76%); N = 10, StdDev = 20.2559 ns
+Min = 219.3867 ns, Q1 = 222.6222 ns, Median = 226.4711 ns, Q3 = 230.1867 ns, Max = 288.1867 ns
+IQR = 7.5644 ns, LowerFence = 211.2756 ns, UpperFence = 241.5333 ns
+ConfidenceInterval = [201.2338 ns; 262.4818 ns] (CI 99.9%), Margin = 30.6240 ns (13.21% of Mean)
+Skewness = 2.09, Kurtosis = 6.01
 
 
-CacheStorage_Benchmark.Overwrite_An_Existing_Cached_Value: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+CacheStorage_Benchmark.Overwrite_An_Existing_Cached_Value: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 Runtime = Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0; GC = Concurrent Workstation
-Mean = 230.0067 ns, StdErr = 4.8767 ns (2.12%); N = 10, StdDev = 15.4214 ns
-Min = 216.3467 ns, Q1 = 218.3467 ns, Median = 221.1467 ns, Q3 = 250.5467 ns, Max = 253.2467 ns
-IQR = 32.2000 ns, LowerFence = 170.0467 ns, UpperFence = 298.8467 ns
-ConfidenceInterval = [206.6917 ns; 253.3217 ns] (CI 99.9%), Margin = 23.3150 ns (10.14% of Mean)
-Skewness = 0.59, Kurtosis = 1.35
+Mean = 227.2657 ns, StdErr = 1.5012 ns (0.66%); N = 10, StdDev = 4.7474 ns
+Min = 222.0178 ns, Q1 = 223.7403 ns, Median = 226.3457 ns, Q3 = 229.4844 ns, Max = 237.4737 ns
+IQR = 5.7441 ns, LowerFence = 215.1242 ns, UpperFence = 238.1006 ns
+ConfidenceInterval = [220.0884 ns; 234.4431 ns] (CI 99.9%), Margin = 7.1773 ns (3.16% of Mean)
+Skewness = 0.81, Kurtosis = 2.56
 
 
-CacheStorage_Benchmark.GetFromCacheOrFetch: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+CacheStorage_Benchmark.GetFromCacheOrFetch: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 Runtime = Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0; GC = Concurrent Workstation
-Mean = 243.6333 ns, StdErr = 1.2890 ns (0.53%); N = 8, StdDev = 3.6457 ns
-Min = 239.1333 ns, Q1 = 241.5333 ns, Median = 243.3833 ns, Q3 = 244.3333 ns, Max = 251.4333 ns
-IQR = 2.8000 ns, LowerFence = 237.3333 ns, UpperFence = 248.5333 ns
-ConfidenceInterval = [236.6628 ns; 250.6039 ns] (CI 99.9%), Margin = 6.9706 ns (2.86% of Mean)
-Skewness = 0.91, Kurtosis = 2.98
+Mean = 255.0156 ns, StdErr = 3.4303 ns (1.35%); N = 10, StdDev = 10.8477 ns
+Min = 243.1200 ns, Q1 = 250.1867 ns, Median = 253.4156 ns, Q3 = 256.9111 ns, Max = 282.4533 ns
+IQR = 6.7244 ns, LowerFence = 240.1000 ns, UpperFence = 266.9978 ns
+ConfidenceInterval = [238.6154 ns; 271.4157 ns] (CI 99.9%), Margin = 16.4001 ns (6.43% of Mean)
+Skewness = 1.39, Kurtosis = 4.33
 
 
-CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 Runtime = Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0; GC = Concurrent Workstation
-Mean = 263.4822 ns, StdErr = 6.1018 ns (2.32%); N = 9, StdDev = 18.3054 ns
-Min = 249.2933 ns, Q1 = 250.2433 ns, Median = 253.8933 ns, Q3 = 283.0933 ns, Max = 295.2933 ns
-IQR = 32.8500 ns, LowerFence = 200.9683 ns, UpperFence = 332.3683 ns
-ConfidenceInterval = [232.7211 ns; 294.2433 ns] (CI 99.9%), Margin = 30.7611 ns (11.67% of Mean)
-Skewness = 0.7, Kurtosis = 1.52
+Mean = 249.2044 ns, StdErr = 0.9697 ns (0.39%); N = 10, StdDev = 3.0665 ns
+Min = 244.3822 ns, Q1 = 247.9822 ns, Median = 249.2978 ns, Q3 = 250.9156 ns, Max = 254.3467 ns
+IQR = 2.9333 ns, LowerFence = 243.5822 ns, UpperFence = 255.3156 ns
+ConfidenceInterval = [244.5684 ns; 253.8405 ns] (CI 99.9%), Margin = 4.6361 ns (1.86% of Mean)
+Skewness = 0.04, Kurtosis = 1.92
 
 
-CacheStorage_Benchmark.RemoveItem_From_Cache: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+CacheStorage_Benchmark.RemoveItem_From_Cache: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 Runtime = Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0; GC = Concurrent Workstation
-Mean = 249.1767 ns, StdErr = 5.9258 ns (2.38%); N = 10, StdDev = 18.7392 ns
-Min = 229.3267 ns, Q1 = 231.5267 ns, Median = 243.5267 ns, Q3 = 266.4267 ns, Max = 279.0267 ns
-IQR = 34.9000 ns, LowerFence = 179.1767 ns, UpperFence = 318.7767 ns
-ConfidenceInterval = [220.8457 ns; 277.5076 ns] (CI 99.9%), Margin = 28.3309 ns (11.37% of Mean)
-Skewness = 0.27, Kurtosis = 1.21
+Mean = 239.0444 ns, StdErr = 1.3939 ns (0.58%); N = 10, StdDev = 4.4078 ns
+Min = 230.8089 ns, Q1 = 235.2800 ns, Median = 240.0444 ns, Q3 = 241.0756 ns, Max = 246.8800 ns
+IQR = 5.7956 ns, LowerFence = 226.5867 ns, UpperFence = 249.7689 ns
+ConfidenceInterval = [232.3805 ns; 245.7084 ns] (CI 99.9%), Margin = 6.6640 ns (2.79% of Mean)
+Skewness = -0.17, Kurtosis = 2.34
 
 
-CacheStorage_Benchmark.Clear_Cache: Job-FWQWII(InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3)
+CacheStorage_Benchmark.Clear_Cache: Job-ENVOHN(InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
 Runtime = Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0; GC = Concurrent Workstation
-Mean = 230.5375 ns, StdErr = 0.8872 ns (0.38%); N = 8, StdDev = 2.5094 ns
-Min = 227.5000 ns, Q1 = 228.6500 ns, Median = 229.6500 ns, Q3 = 233.1000 ns, Max = 234.0000 ns
-IQR = 4.4500 ns, LowerFence = 221.9750 ns, UpperFence = 239.7750 ns
-ConfidenceInterval = [225.7396 ns; 235.3354 ns] (CI 99.9%), Margin = 4.7979 ns (2.08% of Mean)
-Skewness = 0.23, Kurtosis = 1.12
+Mean = 244.4178 ns, StdErr = 4.9411 ns (2.02%); N = 10, StdDev = 15.6252 ns
+Min = 228.2756 ns, Q1 = 237.3422 ns, Median = 239.5244 ns, Q3 = 241.3067 ns, Max = 283.0756 ns
+IQR = 3.9644 ns, LowerFence = 231.3956 ns, UpperFence = 247.2533 ns
+ConfidenceInterval = [220.7948 ns; 268.0408 ns] (CI 99.9%), Margin = 23.6230 ns (9.67% of Mean)
+Skewness = 1.45, Kurtosis = 3.96
 
 
-Total time: 00:00:12 (12.42 sec)
+Total time: 00:00:14 (14.64 sec)
 
 // * Summary *
 
-BenchmarkDotNet=v0.10.6, OS=Windows 10 Redstone 2 (10.0.15063)
+BenchmarkDotNet=v0.10.8, OS=Windows 10 Redstone 2 (10.0.15063)
 Processor=Intel Core i7-3960X CPU 3.30GHz (Ivy Bridge), ProcessorCount=8
 Frequency=10000000 Hz, Resolution=100.0000 ns, Timer=UNKNOWN
   [Host]     : Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
-  Job-FWQWII : Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
+  Job-ENVOHN : Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 
 
 
@@ -704,9 +911,12 @@ Frequency=10000000 Hz, Resolution=100.0000 ns, Timer=UNKNOWN
 
 // * Hints *
 Outliers
-  CacheStorage_Benchmark.GetFromCacheOrFetch: InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3                                     -> 2 outliers were removed
-  CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3 -> 1 outlier  was  removed
-  CacheStorage_Benchmark.Clear_Cache: InvocationCount=1000, LaunchCount=1, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=3                                             -> 2 outliers were removed
+  CacheStorage_Benchmark.GetValue_From_An_Already_Initialized_Cache: InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2 -> Something went wrong with outliers: Size(MainTarget) = 10, Size(MainTarget/Outliers) = 1, Size(Result) = 10), RemoveOutliers = True
+  CacheStorage_Benchmark.GetFromCacheOrFetch: InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2                        -> Something went wrong with outliers: Size(MainTarget) = 10, Size(MainTarget/Outliers) = 1, Size(Result) = 10), RemoveOutliers = True
+  CacheStorage_Benchmark.Clear_Cache: InvocationCount=750, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2                                -> Something went wrong with outliers: Size(MainTarget) = 10, Size(MainTarget/Outliers) = 3, Size(Result) = 10), RemoveOutliers = True
+
+// * Legends *
+  1 ns : 1 Nanosecond (0.000000001 sec)
 
 // * Diagnostic Output - MemoryDiagnoser *
 
