@@ -1,8 +1,6 @@
 # Benchmarks
 
-Benchmark report generated on 22-jun-2017 03:21
-
-Running the benchmarks took 02:59:57.8873955
+Benchmark report generated on 22-jun-2017 07:48
 
 All timings are average time per operation (thus the time represents a single operation)
 
@@ -34,161 +32,161 @@ Frequency=10000000 Hz, Resolution=100.0000 ns, Timer=UNKNOWN
 
 78 item(s)
 
-1. [EnvironmentHelper_Benchmark](#EnvironmentHelper_Benchmark) v5.0.0 is **9219683124,76%** (Δ: 288172,262 ns) slower than v4.5.4
+1. [EnvironmentHelper_Benchmark :: IsProcessCurrentlyHostedBySharpDevelop](#EnvironmentHelper_Benchmark_IsProcessCurrentlyHostedBySharpDevelop) v5.0.0 is **9219683124,76%** (Δ: 288172,262 ns) slower than v4.5.4
 
-2. [EnvironmentHelper_Benchmark](#EnvironmentHelper_Benchmark) v5.0.0 is **6973481936,88%** (Δ: 217775,004 ns) slower than v4.5.4
+2. [EnvironmentHelper_Benchmark :: IsProcessCurrentlyHostedByExpressionBlend](#EnvironmentHelper_Benchmark_IsProcessCurrentlyHostedByExpressionBlend) v5.0.0 is **6973481936,88%** (Δ: 217775,004 ns) slower than v4.5.4
 
-3. [EnvironmentHelper_Benchmark](#EnvironmentHelper_Benchmark) v5.0.0 is **6286281684,88%** (Δ: 196565,169 ns) slower than v4.5.4
+3. [EnvironmentHelper_Benchmark :: IsProcessCurrentlyHostedByVisualStudio](#EnvironmentHelper_Benchmark_IsProcessCurrentlyHostedByVisualStudio) v5.0.0 is **6286281684,88%** (Δ: 196565,169 ns) slower than v4.5.4
 
-4. [ParallelHelper_Benchmark](#ParallelHelper_Benchmark) v5.0.0 is **1103889287,02%** (Δ: 163791,533 ns) slower than v4.5.4
+4. [ParallelHelper\_Benchmark :: ExecuteInParallel\_ItemsPerBash\_1000](#ParallelHelper_Benchmark_ExecuteInParallel_ItemsPerBash_1000) v5.0.0 is **1103889287,02%** (Δ: 163791,533 ns) slower than v4.5.4
 
-5. [ParallelHelper_Benchmark](#ParallelHelper_Benchmark) v5.0.0 is **245372742,54%** (Δ: 27675,568 ns) slower than v4.5.4
+5. [ParallelHelper_Benchmark :: ExecuteInParallel_ItemsPerBash_500](#ParallelHelper_Benchmark_ExecuteInParallel_ItemsPerBash_500) v5.0.0 is **245372742,54%** (Δ: 27675,568 ns) slower than v4.5.4
 
-6. [MethodInfo_ReflectionExtensions_Benchmark](#MethodInfo_ReflectionExtensions_Benchmark) v5.0.0 is **205723,95%** (Δ: 2593,605 ns) slower than v4.5.4
+6. [MethodInfo_ReflectionExtensions_Benchmark :: GetCustomAttributeEx_Inherit](#MethodInfo_ReflectionExtensions_Benchmark_GetCustomAttributeEx_Inherit) v5.0.0 is **205723,95%** (Δ: 2593,605 ns) slower than v4.5.4
 
-7. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **163831,30%** (Δ: 1820,000 ns) slower than v4.5.4
+7. [Type_ReflectionExtensions_Benchmark :: GetCustomAttributesEx_Inherit](#Type_ReflectionExtensions_Benchmark_GetCustomAttributesEx_Inherit) v5.0.0 is **163831,30%** (Δ: 1820,000 ns) slower than v4.5.4
 
-8. [PropertyInfo_ReflectionExtensions_Benchmark](#PropertyInfo_ReflectionExtensions_Benchmark) v5.0.0 is **107094,03%** (Δ: 2461,889 ns) slower than v4.5.4
+8. [PropertyInfo_ReflectionExtensions_Benchmark :: GetCustomAttributeEx](#PropertyInfo_ReflectionExtensions_Benchmark_GetCustomAttributeEx) v5.0.0 is **107094,03%** (Δ: 2461,889 ns) slower than v4.5.4
 
-9. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **65026,02%** (Δ: 725,422 ns) slower than v4.5.4
+9. [Type_ReflectionExtensions_Benchmark :: GetCustomAttributeEx_Inherit](#Type_ReflectionExtensions_Benchmark_GetCustomAttributeEx_Inherit) v5.0.0 is **65026,02%** (Δ: 725,422 ns) slower than v4.5.4
 
-10. [TypeFactory_Benchmark](#TypeFactory_Benchmark) v5.0.0 is **30168,56%** (Δ: 1211,262 ns) slower than v4.5.4
+10. [TypeFactory_Benchmark :: CreateInstance_PropertyInjection](#TypeFactory_Benchmark_CreateInstance_PropertyInjection) v5.0.0 is **30168,56%** (Δ: 1211,262 ns) slower than v4.5.4
 
-11. [MethodInfo_ReflectionExtensions_Benchmark](#MethodInfo_ReflectionExtensions_Benchmark) v5.0.0 is **23522,05%** (Δ: 316,842 ns) slower than v4.5.4
+11. [MethodInfo_ReflectionExtensions_Benchmark :: GetCustomAttributesEx_AttributeType__Inheritd](#MethodInfo_ReflectionExtensions_Benchmark_GetCustomAttributesEx_AttributeType__Inheritd) v5.0.0 is **23522,05%** (Δ: 316,842 ns) slower than v4.5.4
 
-12. [Attribute_ReflectionExtensions_Benchmark](#Attribute_ReflectionExtensions_Benchmark) v5.0.0 is **22429,49%** (Δ: 586,148 ns) slower than v4.5.4
+12. [Attribute_ReflectionExtensions_Benchmark :: TryGetAttribute_Generic_From_Type](#Attribute_ReflectionExtensions_Benchmark_TryGetAttribute_Generic_From_Type) v5.0.0 is **22429,49%** (Δ: 586,148 ns) slower than v4.5.4
 
-13. [Attribute_ReflectionExtensions_Benchmark](#Attribute_ReflectionExtensions_Benchmark) v5.0.0 is **20533,36%** (Δ: 650,831 ns) slower than v4.5.4
+13. [Attribute_ReflectionExtensions_Benchmark :: IsDecoratedWithAttribute_Generic_From_Member](#Attribute_ReflectionExtensions_Benchmark_IsDecoratedWithAttribute_Generic_From_Member) v5.0.0 is **20533,36%** (Δ: 650,831 ns) slower than v4.5.4
 
-14. [TypeFactory_Benchmark](#TypeFactory_Benchmark) v5.0.0 is **14432,15%** (Δ: 414,195 ns) slower than v4.5.4
+14. [TypeFactory_Benchmark :: CreateInstanceWithParametersAndAutoCompletion](#TypeFactory_Benchmark_CreateInstanceWithParametersAndAutoCompletion) v5.0.0 is **14432,15%** (Δ: 414,195 ns) slower than v4.5.4
 
-15. [Attribute_ReflectionExtensions_Benchmark](#Attribute_ReflectionExtensions_Benchmark) v5.0.0 is **9416,30%** (Δ: 300,512 ns) slower than v4.5.4
+15. [Attribute_ReflectionExtensions_Benchmark :: TryGetAttribute_Generic_From_Member](#Attribute_ReflectionExtensions_Benchmark_TryGetAttribute_Generic_From_Member) v5.0.0 is **9416,30%** (Δ: 300,512 ns) slower than v4.5.4
 
-16. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **6676,60%** (Δ: 471,320 ns) slower than v4.5.4
+16. [Type_ReflectionExtensions_Benchmark :: GetMemberEx_Flatten_Static](#Type_ReflectionExtensions_Benchmark_GetMemberEx_Flatten_Static) v5.0.0 is **6676,60%** (Δ: 471,320 ns) slower than v4.5.4
 
-17. [MethodInfo_ReflectionExtensions_Benchmark](#MethodInfo_ReflectionExtensions_Benchmark) v5.0.0 is **6564,88%** (Δ: 149,328 ns) slower than v4.5.4
+17. [MethodInfo_ReflectionExtensions_Benchmark :: GetCustomAttributesEx_AttributeType](#MethodInfo_ReflectionExtensions_Benchmark_GetCustomAttributesEx_AttributeType) v5.0.0 is **6564,88%** (Δ: 149,328 ns) slower than v4.5.4
 
-18. [Attribute_ReflectionExtensions_Benchmark](#Attribute_ReflectionExtensions_Benchmark) v5.0.0 is **6350,60%** (Δ: 166,224 ns) slower than v4.5.4
+18. [Attribute_ReflectionExtensions_Benchmark :: IsDecoratedWithAttribute_From_Type](#Attribute_ReflectionExtensions_Benchmark_IsDecoratedWithAttribute_From_Type) v5.0.0 is **6350,60%** (Δ: 166,224 ns) slower than v4.5.4
 
-19. [TypeFactory_Benchmark](#TypeFactory_Benchmark) v5.0.0 is **4988,17%** (Δ: 196,181 ns) slower than v4.5.4
+19. [TypeFactory_Benchmark :: CreateInstance](#TypeFactory_Benchmark_CreateInstance) v5.0.0 is **4988,17%** (Δ: 196,181 ns) slower than v4.5.4
 
-20. [ValidationContext_Benchmark](#ValidationContext_Benchmark) v5.0.0 is **2263,20%** (Δ: 214,912 ns) slower than v4.5.4
+20. [ValidationContext_Benchmark :: GetErrorCount](#ValidationContext_Benchmark_GetErrorCount) v5.0.0 is **2263,20%** (Δ: 214,912 ns) slower than v4.5.4
 
-21. [PropertyInfo_ReflectionExtensions_Benchmark](#PropertyInfo_ReflectionExtensions_Benchmark) v5.0.0 is **2070,59%** (Δ: 240,591 ns) slower than v4.5.4
+21. [PropertyInfo_ReflectionExtensions_Benchmark :: GetCustomAttributeEx_Inherit](#PropertyInfo_ReflectionExtensions_Benchmark_GetCustomAttributeEx_Inherit) v5.0.0 is **2070,59%** (Δ: 240,591 ns) slower than v4.5.4
 
-22. [ValidationSummary_Benchmark](#ValidationSummary_Benchmark) v5.0.0 is **1493,92%** (Δ: 162,080 ns) slower than v4.5.4
+22. [ValidationSummary_Benchmark :: Initialization](#ValidationSummary_Benchmark_Initialization) v5.0.0 is **1493,92%** (Δ: 162,080 ns) slower than v4.5.4
 
-23. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **881,95%** (Δ: 121,084 ns) slower than v4.5.4
+23. [Type_ReflectionExtensions_Benchmark :: GetMethodEx_Flatten_Static](#Type_ReflectionExtensions_Benchmark_GetMethodEx_Flatten_Static) v5.0.0 is **881,95%** (Δ: 121,084 ns) slower than v4.5.4
 
-24. [ServiceLocator_Benchmark](#ServiceLocator_Benchmark) v5.0.0 is **674,02%** (Δ: 71,951 ns) slower than v4.5.4
+24. [ServiceLocator_Benchmark :: RegisterType](#ServiceLocator_Benchmark_RegisterType) v5.0.0 is **674,02%** (Δ: 71,951 ns) slower than v4.5.4
 
-25. [ValidationContext_Benchmark](#ValidationContext_Benchmark) v5.0.0 is **568,43%** (Δ: 54,453 ns) slower than v4.5.4
+25. [ValidationContext_Benchmark :: GetErrors](#ValidationContext_Benchmark_GetErrors) v5.0.0 is **568,43%** (Δ: 54,453 ns) slower than v4.5.4
 
-26. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **495,85%** (Δ: 58,867 ns) slower than v4.5.4
+26. [Type_ReflectionExtensions_Benchmark :: GetFieldsEx_Static](#Type_ReflectionExtensions_Benchmark_GetFieldsEx_Static) v5.0.0 is **495,85%** (Δ: 58,867 ns) slower than v4.5.4
 
-27. [TypeExtensions_Benchmark](#TypeExtensions_Benchmark) v5.0.0 is **371,79%** (Δ: 39,114 ns) slower than v4.5.4
+27. [TypeExtensions_Benchmark :: GetCollectionElementType](#TypeExtensions_Benchmark_GetCollectionElementType) v5.0.0 is **371,79%** (Δ: 39,114 ns) slower than v4.5.4
 
-28. [Enum_Benchmark](#Enum_Benchmark) v5.0.0 is **352,84%** (Δ: 35,797 ns) slower than v4.5.4
+28. [Enum_Benchmark :: ConvertFromOtherEnumValue](#Enum_Benchmark_ConvertFromOtherEnumValue) v5.0.0 is **352,84%** (Δ: 35,797 ns) slower than v4.5.4
 
-29. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **350,74%** (Δ: 63,636 ns) slower than v4.5.4
+29. [Type_ReflectionExtensions_Benchmark :: GetFieldsEx](#Type_ReflectionExtensions_Benchmark_GetFieldsEx) v5.0.0 is **350,74%** (Δ: 63,636 ns) slower than v4.5.4
 
-30. [Log_Enabled_Benchmark](#Log_Enabled_Benchmark) v5.0.0 is **322,40%** (Δ: 53,866 ns) slower than v4.5.4
+30. [Log_Enabled_Benchmark :: Log_Info_Format_WithoutBoxing](#Log_Enabled_Benchmark_Log_Info_Format_WithoutBoxing) v5.0.0 is **322,40%** (Δ: 53,866 ns) slower than v4.5.4
 
-31. [AssemblyExtensions_Benchmark](#AssemblyExtensions_Benchmark) v5.0.0 is **305,49%** (Δ: 31,921 ns) slower than v4.5.4
+31. [AssemblyExtensions_Benchmark :: Version](#AssemblyExtensions_Benchmark_Version) v5.0.0 is **305,49%** (Δ: 31,921 ns) slower than v4.5.4
 
-32. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **171,65%** (Δ: 24,172 ns) slower than v4.5.4
+32. [Type_ReflectionExtensions_Benchmark :: GetPropertyEx_Flatten_Static](#Type_ReflectionExtensions_Benchmark_GetPropertyEx_Flatten_Static) v5.0.0 is **171,65%** (Δ: 24,172 ns) slower than v4.5.4
 
-33. [TypeExtensions_Benchmark](#TypeExtensions_Benchmark) v5.0.0 is **144,29%** (Δ: 44,706 ns) slower than v4.5.4
+33. [TypeExtensions_Benchmark :: IsNullableType](#TypeExtensions_Benchmark_IsNullableType) v5.0.0 is **144,29%** (Δ: 44,706 ns) slower than v4.5.4
 
-34. [ValidationContext_Benchmark](#ValidationContext_Benchmark) v5.0.0 is **94,76%** (Δ: 39,930 ns) slower than v4.5.4
+34. [ValidationContext_Benchmark :: GetFieldErrorCount](#ValidationContext_Benchmark_GetFieldErrorCount) v5.0.0 is **94,76%** (Δ: 39,930 ns) slower than v4.5.4
 
-35. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **50,09%** (Δ: 33,102 ns) slower than v4.5.4
+35. [Type_ReflectionExtensions_Benchmark :: IsClassEx](#Type_ReflectionExtensions_Benchmark_IsClassEx) v5.0.0 is **50,09%** (Δ: 33,102 ns) slower than v4.5.4
 
-36. [UniqueIdentifierHelper_Benchmark](#UniqueIdentifierHelper_Benchmark) v5.0.0 is **30,37%** (Δ: 26,374 ns) slower than v4.5.4
+36. [UniqueIdentifierHelper_Benchmark :: GetUniqueIdentifier](#UniqueIdentifierHelper_Benchmark_GetUniqueIdentifier) v5.0.0 is **30,37%** (Δ: 26,374 ns) slower than v4.5.4
 
-37. [ValidationContext_Benchmark](#ValidationContext_Benchmark) v5.0.0 is **28,08%** (Δ: 13,418 ns) slower than v4.5.4
+37. [ValidationContext_Benchmark :: GetFieldWarnings](#ValidationContext_Benchmark_GetFieldWarnings) v5.0.0 is **28,08%** (Δ: 13,418 ns) slower than v4.5.4
 
-38. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **26,25%** (Δ: 24,033 ns) slower than v4.5.4
+38. [Argument_Benchmark :: ImplementsOneOfTheInterfaces_Object](#Argument_Benchmark_ImplementsOneOfTheInterfaces_Object) v5.0.0 is **26,25%** (Δ: 24,033 ns) slower than v4.5.4
 
-39. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **17,56%** (Δ: 12,049 ns) slower than v4.5.4
+39. [Type_ReflectionExtensions_Benchmark :: GetFieldsEx_Static_BindingFlags](#Type_ReflectionExtensions_Benchmark_GetFieldsEx_Static_BindingFlags) v5.0.0 is **17,56%** (Δ: 12,049 ns) slower than v4.5.4
 
-40. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **17,04%** (Δ: 10,241 ns) slower than v4.5.4
+40. [Type_ReflectionExtensions_Benchmark :: GetFieldEx_Instance](#Type_ReflectionExtensions_Benchmark_GetFieldEx_Instance) v5.0.0 is **17,04%** (Δ: 10,241 ns) slower than v4.5.4
 
-41. [ValidationContext_Benchmark](#ValidationContext_Benchmark) v5.0.0 is **16,69%** (Δ: 8,385 ns) slower than v4.5.4
+41. [ValidationContext_Benchmark :: GetBusinessRuleErrorCount](#ValidationContext_Benchmark_GetBusinessRuleErrorCount) v5.0.0 is **16,69%** (Δ: 8,385 ns) slower than v4.5.4
 
-42. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **15,89%** (Δ: 10,947 ns) slower than v4.5.4
+42. [Type_ReflectionExtensions_Benchmark :: GetFieldsEx_BindingFlags](#Type_ReflectionExtensions_Benchmark_GetFieldsEx_BindingFlags) v5.0.0 is **15,89%** (Δ: 10,947 ns) slower than v4.5.4
 
-43. [ModelBase_GetValue_Benchmark](#ModelBase_GetValue_Benchmark) v5.0.0 is **15,58%** (Δ: 12,519 ns) slower than v4.5.4
+43. [ModelBase_GetValue_Benchmark :: GetIntValue](#ModelBase_GetValue_Benchmark_GetIntValue) v5.0.0 is **15,58%** (Δ: 12,519 ns) slower than v4.5.4
 
-44. [ModelBase_GetValue_Benchmark](#ModelBase_GetValue_Benchmark) v5.0.0 is **14,65%** (Δ: 11,695 ns) slower than v4.5.4
+44. [ModelBase_GetValue_Benchmark :: GetBoolValue](#ModelBase_GetValue_Benchmark_GetBoolValue) v5.0.0 is **14,65%** (Δ: 11,695 ns) slower than v4.5.4
 
-45. [ObjectToStringHelper_Benchmark](#ObjectToStringHelper_Benchmark) v5.0.0 is **11,40%** (Δ: 10,430 ns) slower than v4.5.4
+45. [ObjectToStringHelper_Benchmark :: ToFullTypeString](#ObjectToStringHelper_Benchmark_ToFullTypeString) v5.0.0 is **11,40%** (Δ: 10,430 ns) slower than v4.5.4
 
-46. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **11,31%** (Δ: 7,341 ns) slower than v4.5.4
+46. [Type_ReflectionExtensions_Benchmark :: GetGenericArgumentsEx](#Type_ReflectionExtensions_Benchmark_GetGenericArgumentsEx) v5.0.0 is **11,31%** (Δ: 7,341 ns) slower than v4.5.4
 
-47. [ModelBase_GetValue_Benchmark](#ModelBase_GetValue_Benchmark) v5.0.0 is **11,30%** (Δ: 9,356 ns) slower than v4.5.4
+47. [ModelBase_GetValue_Benchmark :: GetStringValue](#ModelBase_GetValue_Benchmark_GetStringValue) v5.0.0 is **11,30%** (Δ: 9,356 ns) slower than v4.5.4
 
-48. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **10,15%** (Δ: 10,103 ns) slower than v4.5.4
+48. [Argument_Benchmark :: ImplementsOneOfTheInterfaces](#Argument_Benchmark_ImplementsOneOfTheInterfaces) v5.0.0 is **10,15%** (Δ: 10,103 ns) slower than v4.5.4
 
-49. [PropertyBag_SetPropertyValue_Benchmark](#PropertyBag_SetPropertyValue_Benchmark) v5.0.0 is **9,42%** (Δ: 12,196 ns) slower than v4.5.4
+49. [PropertyBag_SetPropertyValue_Benchmark :: SetStringValue](#PropertyBag_SetPropertyValue_Benchmark_SetStringValue) v5.0.0 is **9,42%** (Δ: 12,196 ns) slower than v4.5.4
 
-50. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **7,85%** (Δ: 13,599 ns) slower than v4.5.4
+50. [Argument_Benchmark :: IsOfOneOfTheTypes](#Argument_Benchmark_IsOfOneOfTheTypes) v5.0.0 is **7,85%** (Δ: 13,599 ns) slower than v4.5.4
 
-51. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **4,53%** (Δ: 7,009 ns) slower than v4.5.4
+51. [Argument_Benchmark :: IsOfOneOfTheTypes_Object](#Argument_Benchmark_IsOfOneOfTheTypes_Object) v5.0.0 is **4,53%** (Δ: 7,009 ns) slower than v4.5.4
 
-52. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **3,74%** (Δ: 4,343 ns) slower than v4.5.4
+52. [Argument_Benchmark :: IsNotOfOneOfTheTypes_Object](#Argument_Benchmark_IsNotOfOneOfTheTypes_Object) v5.0.0 is **3,74%** (Δ: 4,343 ns) slower than v4.5.4
 
-53. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **2,57%** (Δ: 4,143 ns) slower than v4.5.4
+53. [Argument_Benchmark :: IsNotOfType_Object](#Argument_Benchmark_IsNotOfType_Object) v5.0.0 is **2,57%** (Δ: 4,143 ns) slower than v4.5.4
 
-54. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **2,19%** (Δ: 3,973 ns) slower than v4.5.4
+54. [Argument_Benchmark :: IsNotOfType](#Argument_Benchmark_IsNotOfType) v5.0.0 is **2,19%** (Δ: 3,973 ns) slower than v4.5.4
 
-55. [ObjectToStringHelper_Benchmark](#ObjectToStringHelper_Benchmark) v5.0.0 is **1,49%** (Δ: 4,366 ns) slower than v4.5.4
+55. [ObjectToStringHelper_Benchmark :: ToTypeString](#ObjectToStringHelper_Benchmark_ToTypeString) v5.0.0 is **1,49%** (Δ: 4,366 ns) slower than v4.5.4
 
-56. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **1,32%** (Δ: 2,876 ns) slower than v4.5.4
+56. [Argument_Benchmark :: InheritsFrom_Generic](#Argument_Benchmark_InheritsFrom_Generic) v5.0.0 is **1,32%** (Δ: 2,876 ns) slower than v4.5.4
 
-57. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **1,14%** (Δ: 2,426 ns) slower than v4.5.4
+57. [Argument_Benchmark :: IsOfType_Object](#Argument_Benchmark_IsOfType_Object) v5.0.0 is **1,14%** (Δ: 2,426 ns) slower than v4.5.4
 
-58. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **1,01%** (Δ: 5,927 ns) slower than v4.5.4
+58. [Argument_Benchmark :: IsMinimal](#Argument_Benchmark_IsMinimal) v5.0.0 is **1,01%** (Δ: 5,927 ns) slower than v4.5.4
 
-59. [WeakEventListener_Benchmark](#WeakEventListener_Benchmark) v5.0.0 is **1,00%** (Δ: 3,561 ns) slower than v4.5.4
+59. [WeakEventListener_Benchmark :: GenericEvent_Notification](#WeakEventListener_Benchmark_GenericEvent_Notification) v5.0.0 is **1,00%** (Δ: 3,561 ns) slower than v4.5.4
 
-60. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **0,51%** (Δ: 3,473 ns) slower than v4.5.4
+60. [Argument_Benchmark :: IsNotNullOrWhitespace](#Argument_Benchmark_IsNotNullOrWhitespace) v5.0.0 is **0,51%** (Δ: 3,473 ns) slower than v4.5.4
 
-61. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **0,25%** (Δ: 1,467 ns) slower than v4.5.4
+61. [Argument_Benchmark :: IsMaximum](#Argument_Benchmark_IsMaximum) v5.0.0 is **0,25%** (Δ: 1,467 ns) slower than v4.5.4
 
-62. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **0,17%** (Δ: 1,120 ns) slower than v4.5.4
+62. [Type_ReflectionExtensions_Benchmark :: GetTypeInfo](#Type_ReflectionExtensions_Benchmark_GetTypeInfo) v5.0.0 is **0,17%** (Δ: 1,120 ns) slower than v4.5.4
 
-63. [HashHelper_Benchmark](#HashHelper_Benchmark) v5.0.0 is **0,16%** (Δ: 0,756 ns) slower than v4.5.4
+63. [HashHelper_Benchmark :: HashHelper](#HashHelper_Benchmark_HashHelper) v5.0.0 is **0,16%** (Δ: 0,756 ns) slower than v4.5.4
 
-64. [ValidationSummary_Benchmark](#ValidationSummary_Benchmark) v5.0.0 is **0,12%** (Δ: 1,498 ns) slower than v4.5.4
+64. [ValidationSummary_Benchmark :: FieldErrors](#ValidationSummary_Benchmark_FieldErrors) v5.0.0 is **0,12%** (Δ: 1,498 ns) slower than v4.5.4
 
-65. [ObjectHelper_Benchmark](#ObjectHelper_Benchmark) v5.0.0 is **0,10%** (Δ: 1,166 ns) slower than v4.5.4
+65. [ObjectHelper_Benchmark :: AreEqual_Not_Same_Reference](#ObjectHelper_Benchmark_AreEqual_Not_Same_Reference) v5.0.0 is **0,10%** (Δ: 1,166 ns) slower than v4.5.4
 
-66. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **0,09%** (Δ: 0,640 ns) slower than v4.5.4
+66. [Type_ReflectionExtensions_Benchmark :: IsPrimitiveEx](#Type_ReflectionExtensions_Benchmark_IsPrimitiveEx) v5.0.0 is **0,09%** (Δ: 0,640 ns) slower than v4.5.4
 
-67. [ValidationSummary_Benchmark](#ValidationSummary_Benchmark) v5.0.0 is **0,05%** (Δ: 0,666 ns) slower than v4.5.4
+67. [ValidationSummary_Benchmark :: BusinessRuleErrors](#ValidationSummary_Benchmark_BusinessRuleErrors) v5.0.0 is **0,05%** (Δ: 0,666 ns) slower than v4.5.4
 
-68. [ValidationSummary_Benchmark](#ValidationSummary_Benchmark) v5.0.0 is **0,05%** (Δ: 0,591 ns) slower than v4.5.4
+68. [ValidationSummary_Benchmark :: FieldWarnings](#ValidationSummary_Benchmark_FieldWarnings) v5.0.0 is **0,05%** (Δ: 0,591 ns) slower than v4.5.4
 
-69. [EnvironmentHelper_Benchmark](#EnvironmentHelper_Benchmark) v5.0.0 is **0,04%** (Δ: 0,702 ns) slower than v4.5.4
+69. [EnvironmentHelper_Benchmark :: IsProcessHostedByVisualStudio](#EnvironmentHelper_Benchmark_IsProcessHostedByVisualStudio) v5.0.0 is **0,04%** (Δ: 0,702 ns) slower than v4.5.4
 
-70. [ValidationSummary_Benchmark](#ValidationSummary_Benchmark) v5.0.0 is **0,04%** (Δ: 0,408 ns) slower than v4.5.4
+70. [ValidationSummary_Benchmark :: BusinessRuleWarnings](#ValidationSummary_Benchmark_BusinessRuleWarnings) v5.0.0 is **0,04%** (Δ: 0,408 ns) slower than v4.5.4
 
-71. [Log_Disabled_Benchmark](#Log_Disabled_Benchmark) v5.0.0 is **0,03%** (Δ: 0,602 ns) slower than v4.5.4
+71. [Log_Disabled_Benchmark :: Log_Info](#Log_Disabled_Benchmark_Log_Info) v5.0.0 is **0,03%** (Δ: 0,602 ns) slower than v4.5.4
 
-72. [ObjectHelper_Benchmark](#ObjectHelper_Benchmark) v5.0.0 is **0,02%** (Δ: 0,729 ns) slower than v4.5.4
+72. [ObjectHelper_Benchmark :: AreEqualReferences_One_Null](#ObjectHelper_Benchmark_AreEqualReferences_One_Null) v5.0.0 is **0,02%** (Δ: 0,729 ns) slower than v4.5.4
 
-73. [ObjectHelper_Benchmark](#ObjectHelper_Benchmark) v5.0.0 is **0,01%** (Δ: 0,342 ns) slower than v4.5.4
+73. [ObjectHelper_Benchmark :: AreEqual__Same_Reference](#ObjectHelper_Benchmark_AreEqual__Same_Reference) v5.0.0 is **0,01%** (Δ: 0,342 ns) slower than v4.5.4
 
-74. [ObjectHelper_Benchmark](#ObjectHelper_Benchmark) v5.0.0 is **0,01%** (Δ: 0,431 ns) slower than v4.5.4
+74. [ObjectHelper_Benchmark :: AreEqualReferences_Both_Null](#ObjectHelper_Benchmark_AreEqualReferences_Both_Null) v5.0.0 is **0,01%** (Δ: 0,431 ns) slower than v4.5.4
 
-75. [ObjectHelper_Benchmark](#ObjectHelper_Benchmark) v5.0.0 is **0,01%** (Δ: 0,360 ns) slower than v4.5.4
+75. [ObjectHelper_Benchmark :: AreEqual_Both_Null](#ObjectHelper_Benchmark_AreEqual_Both_Null) v5.0.0 is **0,01%** (Δ: 0,360 ns) slower than v4.5.4
 
-76. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **0,01%** (Δ: 0,160 ns) slower than v4.5.4
+76. [Argument_Benchmark :: IsNotNullOrEmptyArray](#Argument_Benchmark_IsNotNullOrEmptyArray) v5.0.0 is **0,01%** (Δ: 0,160 ns) slower than v4.5.4
 
-77. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **0,00%** (Δ: 0,379 ns) slower than v4.5.4
+77. [Argument_Benchmark :: IsNotNull](#Argument_Benchmark_IsNotNull) v5.0.0 is **0,00%** (Δ: 0,379 ns) slower than v4.5.4
 
-78. [ObjectHelper_Benchmark](#ObjectHelper_Benchmark) v5.0.0 is **0,00%** (Δ: 0,032 ns) slower than v4.5.4
+78. [ObjectHelper_Benchmark :: IsNull](#ObjectHelper_Benchmark_IsNull) v5.0.0 is **0,00%** (Δ: 0,032 ns) slower than v4.5.4
 
 
 
@@ -196,191 +194,191 @@ Frequency=10000000 Hz, Resolution=100.0000 ns, Timer=UNKNOWN
 
 93 item(s)
 
-1. [Serialization_Json_Benchmark](#Serialization_Json_Benchmark) v5.0.0 is **3512687241698,80%** (Δ: -18552293,222 ns) faster than v4.5.4
+1. [Serialization_Json_Benchmark :: SerializeComplexObjectGraph](#Serialization_Json_Benchmark_SerializeComplexObjectGraph) v5.0.0 is **3512687241698,80%** (Δ: -18552293,222 ns) faster than v4.5.4
 
-2. [Serialization_Json_Benchmark](#Serialization_Json_Benchmark) v5.0.0 is **2198890836808,77%** (Δ: -14643692,232 ns) faster than v4.5.4
+2. [Serialization_Json_Benchmark :: SerializeLevel3Models](#Serialization_Json_Benchmark_SerializeLevel3Models) v5.0.0 is **2198890836808,77%** (Δ: -14643692,232 ns) faster than v4.5.4
 
-3. [Serialization_Json_Benchmark](#Serialization_Json_Benchmark) v5.0.0 is **106153138343,58%** (Δ: -3077176,076 ns) faster than v4.5.4
+3. [Serialization_Json_Benchmark :: SerializeLevel2Models](#Serialization_Json_Benchmark_SerializeLevel2Models) v5.0.0 is **106153138343,58%** (Δ: -3077176,076 ns) faster than v4.5.4
 
-4. [Serialization_Xml_Benchmark](#Serialization_Xml_Benchmark) v5.0.0 is **71288286144,23%** (Δ: -2488267,600 ns) faster than v4.5.4
+4. [Serialization_Xml_Benchmark :: SerializeLevel3Models](#Serialization_Xml_Benchmark_SerializeLevel3Models) v5.0.0 is **71288286144,23%** (Δ: -2488267,600 ns) faster than v4.5.4
 
-5. [Serialization_Binary_Benchmark](#Serialization_Binary_Benchmark) v5.0.0 is **13709656182,19%** (Δ: -991868,484 ns) faster than v4.5.4
+5. [Serialization_Binary_Benchmark :: SerializeLevel3Models](#Serialization_Binary_Benchmark_SerializeLevel3Models) v5.0.0 is **13709656182,19%** (Δ: -991868,484 ns) faster than v4.5.4
 
-6. [Serialization_Xml_Benchmark](#Serialization_Xml_Benchmark) v5.0.0 is **12568668585,79%** (Δ: -946428,093 ns) faster than v4.5.4
+6. [Serialization_Xml_Benchmark :: SerializeComplexObjectGraph](#Serialization_Xml_Benchmark_SerializeComplexObjectGraph) v5.0.0 is **12568668585,79%** (Δ: -946428,093 ns) faster than v4.5.4
 
-7. [Serialization_Json_Benchmark](#Serialization_Json_Benchmark) v5.0.0 is **8802714137,56%** (Δ: -768195,813 ns) faster than v4.5.4
+7. [Serialization_Json_Benchmark :: SerializeLevel1Models](#Serialization_Json_Benchmark_SerializeLevel1Models) v5.0.0 is **8802714137,56%** (Δ: -768195,813 ns) faster than v4.5.4
 
-8. [Serialization_Xml_Benchmark](#Serialization_Xml_Benchmark) v5.0.0 is **4743488745,21%** (Δ: -524624,101 ns) faster than v4.5.4
+8. [Serialization_Xml_Benchmark :: SerializeLevel2Models](#Serialization_Xml_Benchmark_SerializeLevel2Models) v5.0.0 is **4743488745,21%** (Δ: -524624,101 ns) faster than v4.5.4
 
-9. [Serialization_Binary_Benchmark](#Serialization_Binary_Benchmark) v5.0.0 is **1843079570,52%** (Δ: -276230,342 ns) faster than v4.5.4
+9. [Serialization_Binary_Benchmark :: SerializeComplexObjectGraph](#Serialization_Binary_Benchmark_SerializeComplexObjectGraph) v5.0.0 is **1843079570,52%** (Δ: -276230,342 ns) faster than v4.5.4
 
-10. [Serialization_Binary_Benchmark](#Serialization_Binary_Benchmark) v5.0.0 is **1196391813,56%** (Δ: -203018,049 ns) faster than v4.5.4
+10. [Serialization_Binary_Benchmark :: SerializeLevel2Models](#Serialization_Binary_Benchmark_SerializeLevel2Models) v5.0.0 is **1196391813,56%** (Δ: -203018,049 ns) faster than v4.5.4
 
-11. [Serialization_Xml_Benchmark](#Serialization_Xml_Benchmark) v5.0.0 is **958738265,81%** (Δ: -173305,004 ns) faster than v4.5.4
+11. [Serialization_Xml_Benchmark :: SerializeLevel1Models](#Serialization_Xml_Benchmark_SerializeLevel1Models) v5.0.0 is **958738265,81%** (Δ: -173305,004 ns) faster than v4.5.4
 
-12. [Serialization_Binary_Benchmark](#Serialization_Binary_Benchmark) v5.0.0 is **183015132,22%** (Δ: -42484,619 ns) faster than v4.5.4
+12. [Serialization_Binary_Benchmark :: SerializeLevel1Models](#Serialization_Binary_Benchmark_SerializeLevel1Models) v5.0.0 is **183015132,22%** (Δ: -42484,619 ns) faster than v4.5.4
 
-13. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **4319651,47%** (Δ: -14868,982 ns) faster than v4.5.4
+13. [Type_ReflectionExtensions_Benchmark :: IsInstanceOfTypeEx](#Type_ReflectionExtensions_Benchmark_IsInstanceOfTypeEx) v5.0.0 is **4319651,47%** (Δ: -14868,982 ns) faster than v4.5.4
 
-14. [ViewModelBase_Benchmark](#ViewModelBase_Benchmark) v5.0.0 is **2695506,33%** (Δ: -10982,920 ns) faster than v4.5.4
+14. [ViewModelBase_Benchmark :: Construction](#ViewModelBase_Benchmark_Construction) v5.0.0 is **2695506,33%** (Δ: -10982,920 ns) faster than v4.5.4
 
-15. [WeakEventListener_Benchmark](#WeakEventListener_Benchmark) v5.0.0 is **786515,88%** (Δ: -3946,923 ns) faster than v4.5.4
+15. [WeakEventListener_Benchmark :: SubscribeToWeakGenericEvent](#WeakEventListener_Benchmark_SubscribeToWeakGenericEvent) v5.0.0 is **786515,88%** (Δ: -3946,923 ns) faster than v4.5.4
 
-16. [WeakEventListener_Benchmark](#WeakEventListener_Benchmark) v5.0.0 is **191299,50%** (Δ: -1060,272 ns) faster than v4.5.4
+16. [WeakEventListener_Benchmark :: SubscribeToWeakPropertyChangedEvent](#WeakEventListener_Benchmark_SubscribeToWeakPropertyChangedEvent) v5.0.0 is **191299,50%** (Δ: -1060,272 ns) faster than v4.5.4
 
-17. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **177263,96%** (Δ: -2161,921 ns) faster than v4.5.4
+17. [Type_ReflectionExtensions_Benchmark :: GetMethodsEx_Flatten_Static](#Type_ReflectionExtensions_Benchmark_GetMethodsEx_Flatten_Static) v5.0.0 is **177263,96%** (Δ: -2161,921 ns) faster than v4.5.4
 
-18. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **156998,17%** (Δ: -2071,133 ns) faster than v4.5.4
+18. [Type_ReflectionExtensions_Benchmark :: GetMethodsEx_Instance](#Type_ReflectionExtensions_Benchmark_GetMethodsEx_Instance) v5.0.0 is **156998,17%** (Δ: -2071,133 ns) faster than v4.5.4
 
-19. [ModelBase_EqualityComparer_Benchmark](#ModelBase_EqualityComparer_Benchmark) v5.0.0 is **91536,12%** (Δ: -1909,600 ns) faster than v4.5.4
+19. [ModelBase_EqualityComparer_Benchmark :: GetHashCode_](#ModelBase_EqualityComparer_Benchmark_GetHashCode_) v5.0.0 is **91536,12%** (Δ: -1909,600 ns) faster than v4.5.4
 
-20. [AssemblyExtensions_Benchmark](#AssemblyExtensions_Benchmark) v5.0.0 is **82188,76%** (Δ: -693,347 ns) faster than v4.5.4
+20. [AssemblyExtensions_Benchmark :: Copyright](#AssemblyExtensions_Benchmark_Copyright) v5.0.0 is **82188,76%** (Δ: -693,347 ns) faster than v4.5.4
 
-21. [ServiceLocator_Benchmark](#ServiceLocator_Benchmark) v5.0.0 is **58813,90%** (Δ: -750,766 ns) faster than v4.5.4
+21. [ServiceLocator_Benchmark :: ResolveType_With_Transient_Dependency](#ServiceLocator_Benchmark_ResolveType_With_Transient_Dependency) v5.0.0 is **58813,90%** (Δ: -750,766 ns) faster than v4.5.4
 
-22. [ModelBase_EqualityComparer_Benchmark](#ModelBase_EqualityComparer_Benchmark) v5.0.0 is **38355,37%** (Δ: -1001,996 ns) faster than v4.5.4
+22. [ModelBase_EqualityComparer_Benchmark :: EqualityComparer](#ModelBase_EqualityComparer_Benchmark_EqualityComparer) v5.0.0 is **38355,37%** (Δ: -1001,996 ns) faster than v4.5.4
 
-23. [ModelBase_Constructor_Benchmark](#ModelBase_Constructor_Benchmark) v5.0.0 is **35390,15%** (Δ: -938,636 ns) faster than v4.5.4
+23. [ModelBase_Constructor_Benchmark :: Constructor](#ModelBase_Constructor_Benchmark_Constructor) v5.0.0 is **35390,15%** (Δ: -938,636 ns) faster than v4.5.4
 
-24. [Attribute_ReflectionExtensions_Benchmark](#Attribute_ReflectionExtensions_Benchmark) v5.0.0 is **23141,95%** (Δ: -542,997 ns) faster than v4.5.4
+24. [Attribute_ReflectionExtensions_Benchmark :: GetAttribute_Generic_From_Type](#Attribute_ReflectionExtensions_Benchmark_GetAttribute_Generic_From_Type) v5.0.0 is **23141,95%** (Δ: -542,997 ns) faster than v4.5.4
 
-25. [ModelBase_SetValue_Benchmark](#ModelBase_SetValue_Benchmark) v5.0.0 is **22895,66%** (Δ: -1274,861 ns) faster than v4.5.4
+25. [ModelBase_SetValue_Benchmark :: SetIntValue](#ModelBase_SetValue_Benchmark_SetIntValue) v5.0.0 is **22895,66%** (Δ: -1274,861 ns) faster than v4.5.4
 
-26. [ModelBase_SetValue_Benchmark](#ModelBase_SetValue_Benchmark) v5.0.0 is **22386,50%** (Δ: -1339,414 ns) faster than v4.5.4
+26. [ModelBase_SetValue_Benchmark :: SetStringValue](#ModelBase_SetValue_Benchmark_SetStringValue) v5.0.0 is **22386,50%** (Δ: -1339,414 ns) faster than v4.5.4
 
-27. [ModelBase_SetValue_Benchmark](#ModelBase_SetValue_Benchmark) v5.0.0 is **22252,81%** (Δ: -1288,873 ns) faster than v4.5.4
+27. [ModelBase_SetValue_Benchmark :: SetBoolValue](#ModelBase_SetValue_Benchmark_SetBoolValue) v5.0.0 is **22252,81%** (Δ: -1288,873 ns) faster than v4.5.4
 
-28. [ExpressionHelper_Benchmark](#ExpressionHelper_Benchmark) v5.0.0 is **18480,26%** (Δ: -432,479 ns) faster than v4.5.4
+28. [ExpressionHelper_Benchmark :: GetPropertyName](#ExpressionHelper_Benchmark_GetPropertyName) v5.0.0 is **18480,26%** (Δ: -432,479 ns) faster than v4.5.4
 
-29. [ServiceLocator_Benchmark](#ServiceLocator_Benchmark) v5.0.0 is **14811,32%** (Δ: -399,257 ns) faster than v4.5.4
+29. [ServiceLocator_Benchmark :: ResolveType_Transient](#ServiceLocator_Benchmark_ResolveType_Transient) v5.0.0 is **14811,32%** (Δ: -399,257 ns) faster than v4.5.4
 
-30. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **10389,89%** (Δ: -358,987 ns) faster than v4.5.4
+30. [Type_ReflectionExtensions_Benchmark :: GetEventEx_Static_BindingFlags](#Type_ReflectionExtensions_Benchmark_GetEventEx_Static_BindingFlags) v5.0.0 is **10389,89%** (Δ: -358,987 ns) faster than v4.5.4
 
-31. [Enum_Benchmark](#Enum_Benchmark) v5.0.0 is **7881,68%** (Δ: -200,773 ns) faster than v4.5.4
+31. [Enum_Benchmark :: GetValues](#Enum_Benchmark_GetValues) v5.0.0 is **7881,68%** (Δ: -200,773 ns) faster than v4.5.4
 
-32. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **6016,72%** (Δ: -396,498 ns) faster than v4.5.4
+32. [Type_ReflectionExtensions_Benchmark :: GetMethodsEx_Flatten_Static_BindingFlags](#Type_ReflectionExtensions_Benchmark_GetMethodsEx_Flatten_Static_BindingFlags) v5.0.0 is **6016,72%** (Δ: -396,498 ns) faster than v4.5.4
 
-33. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **5865,16%** (Δ: -197,831 ns) faster than v4.5.4
+33. [Type_ReflectionExtensions_Benchmark :: GetPropertyEx_Static_BindingFlags](#Type_ReflectionExtensions_Benchmark_GetPropertyEx_Static_BindingFlags) v5.0.0 is **5865,16%** (Δ: -197,831 ns) faster than v4.5.4
 
-34. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **5826,64%** (Δ: -384,591 ns) faster than v4.5.4
+34. [Type_ReflectionExtensions_Benchmark :: GetMethodsEx_Instance_BindingFlags](#Type_ReflectionExtensions_Benchmark_GetMethodsEx_Instance_BindingFlags) v5.0.0 is **5826,64%** (Δ: -384,591 ns) faster than v4.5.4
 
-35. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **2376,51%** (Δ: -188,816 ns) faster than v4.5.4
+35. [Type_ReflectionExtensions_Benchmark :: GetEventsEx_Flatten_Static](#Type_ReflectionExtensions_Benchmark_GetEventsEx_Flatten_Static) v5.0.0 is **2376,51%** (Δ: -188,816 ns) faster than v4.5.4
 
-36. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **1586,76%** (Δ: -211,071 ns) faster than v4.5.4
+36. [Type_ReflectionExtensions_Benchmark :: GetEventsEx_Instance](#Type_ReflectionExtensions_Benchmark_GetEventsEx_Instance) v5.0.0 is **1586,76%** (Δ: -211,071 ns) faster than v4.5.4
 
-37. [ResourceHelper_Benchmark](#ResourceHelper_Benchmark) v5.0.0 is **856,95%** (Δ: -140,763 ns) faster than v4.5.4
+37. [ResourceHelper_Benchmark :: GetString](#ResourceHelper_Benchmark_GetString) v5.0.0 is **856,95%** (Δ: -140,763 ns) faster than v4.5.4
 
-38. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **795,29%** (Δ: -75,240 ns) faster than v4.5.4
+38. [Type_ReflectionExtensions_Benchmark :: GetPropertiesEx_Instance](#Type_ReflectionExtensions_Benchmark_GetPropertiesEx_Instance) v5.0.0 is **795,29%** (Δ: -75,240 ns) faster than v4.5.4
 
-39. [LanguageHelper_Benchmark](#LanguageHelper_Benchmark) v5.0.0 is **651,47%** (Δ: -121,138 ns) faster than v4.5.4
+39. [LanguageHelper_Benchmark :: GetString](#LanguageHelper_Benchmark_GetString) v5.0.0 is **651,47%** (Δ: -121,138 ns) faster than v4.5.4
 
-40. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **578,99%** (Δ: -103,996 ns) faster than v4.5.4
+40. [Type_ReflectionExtensions_Benchmark :: IsCatelType](#Type_ReflectionExtensions_Benchmark_IsCatelType) v5.0.0 is **578,99%** (Δ: -103,996 ns) faster than v4.5.4
 
-41. [Enum_Benchmark](#Enum_Benchmark) v5.0.0 is **505,47%** (Δ: -115,640 ns) faster than v4.5.4
+41. [Enum_Benchmark :: TryParse_IgnoreCase_Nullable](#Enum_Benchmark_TryParse_IgnoreCase_Nullable) v5.0.0 is **505,47%** (Δ: -115,640 ns) faster than v4.5.4
 
-42. [Enum_Benchmark](#Enum_Benchmark) v5.0.0 is **215,98%** (Δ: -61,539 ns) faster than v4.5.4
+42. [Enum_Benchmark :: Parse](#Enum_Benchmark_Parse) v5.0.0 is **215,98%** (Δ: -61,539 ns) faster than v4.5.4
 
-43. [MemberInfoExtensions_Benchmark](#MemberInfoExtensions_Benchmark) v5.0.0 is **205,84%** (Δ: -54,556 ns) faster than v4.5.4
+43. [MemberInfoExtensions_Benchmark :: GetSignature_Method](#MemberInfoExtensions_Benchmark_GetSignature_Method) v5.0.0 is **205,84%** (Δ: -54,556 ns) faster than v4.5.4
 
-44. [Enum_Benchmark](#Enum_Benchmark) v5.0.0 is **192,84%** (Δ: -52,729 ns) faster than v4.5.4
+44. [Enum_Benchmark :: TryParse_IgnoreCase](#Enum_Benchmark_TryParse_IgnoreCase) v5.0.0 is **192,84%** (Δ: -52,729 ns) faster than v4.5.4
 
-45. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **190,52%** (Δ: -23,622 ns) faster than v4.5.4
+45. [Type_ReflectionExtensions_Benchmark :: GetMemberEx_Instance](#Type_ReflectionExtensions_Benchmark_GetMemberEx_Instance) v5.0.0 is **190,52%** (Δ: -23,622 ns) faster than v4.5.4
 
-46. [ValidationContext_Benchmark](#ValidationContext_Benchmark) v5.0.0 is **133,59%** (Δ: -45,000 ns) faster than v4.5.4
+46. [ValidationContext_Benchmark :: GetFieldValidations](#ValidationContext_Benchmark_GetFieldValidations) v5.0.0 is **133,59%** (Δ: -45,000 ns) faster than v4.5.4
 
-47. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **131,51%** (Δ: -38,569 ns) faster than v4.5.4
+47. [Type_ReflectionExtensions_Benchmark :: GetConstructorEx](#Type_ReflectionExtensions_Benchmark_GetConstructorEx) v5.0.0 is **131,51%** (Δ: -38,569 ns) faster than v4.5.4
 
-48. [FastObservableCollectionVsObservableCollectionVsFastBindingListBenchmark](#FastObservableCollectionVsObservableCollectionVsFastBindingListBenchmark) v5.0.0 is **126,26%** (Δ: -25,373 ns) faster than v4.5.4
+48. [FastObservableCollectionVsObservableCollectionVsFastBindingListBenchmark :: FastBindingList_BashRemove](#FastObservableCollectionVsObservableCollectionVsFastBindingListBenchmark_FastBindingList_BashRemove) v5.0.0 is **126,26%** (Δ: -25,373 ns) faster than v4.5.4
 
-49. [MemberInfoExtensions_Benchmark](#MemberInfoExtensions_Benchmark) v5.0.0 is **103,29%** (Δ: -33,001 ns) faster than v4.5.4
+49. [MemberInfoExtensions_Benchmark :: GetSignature_Constructor](#MemberInfoExtensions_Benchmark_GetSignature_Constructor) v5.0.0 is **103,29%** (Δ: -33,001 ns) faster than v4.5.4
 
-50. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **99,55%** (Δ: -27,973 ns) faster than v4.5.4
+50. [Type_ReflectionExtensions_Benchmark :: GetPropertiesEx_Static_BindingFlags](#Type_ReflectionExtensions_Benchmark_GetPropertiesEx_Static_BindingFlags) v5.0.0 is **99,55%** (Δ: -27,973 ns) faster than v4.5.4
 
-51. [PropertyBag_SetPropertyValue_Benchmark](#PropertyBag_SetPropertyValue_Benchmark) v5.0.0 is **98,20%** (Δ: -56,280 ns) faster than v4.5.4
+51. [PropertyBag_SetPropertyValue_Benchmark :: SetBoolValue](#PropertyBag_SetPropertyValue_Benchmark_SetBoolValue) v5.0.0 is **98,20%** (Δ: -56,280 ns) faster than v4.5.4
 
-52. [Enum_Benchmark](#Enum_Benchmark) v5.0.0 is **71,28%** (Δ: -21,876 ns) faster than v4.5.4
+52. [Enum_Benchmark :: TryParse_Nullable](#Enum_Benchmark_TryParse_Nullable) v5.0.0 is **71,28%** (Δ: -21,876 ns) faster than v4.5.4
 
-53. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **58,03%** (Δ: -28,712 ns) faster than v4.5.4
+53. [Type_ReflectionExtensions_Benchmark :: GetInterfacesEx](#Type_ReflectionExtensions_Benchmark_GetInterfacesEx) v5.0.0 is **58,03%** (Δ: -28,712 ns) faster than v4.5.4
 
-54. [ScopeManager_Benchmark](#ScopeManager_Benchmark) v5.0.0 is **51,79%** (Δ: -25,864 ns) faster than v4.5.4
+54. [ScopeManager_Benchmark :: Get_New_ScopeManager](#ScopeManager_Benchmark_Get_New_ScopeManager) v5.0.0 is **51,79%** (Δ: -25,864 ns) faster than v4.5.4
 
-55. [PropertyBag_SetPropertyValue_Benchmark](#PropertyBag_SetPropertyValue_Benchmark) v5.0.0 is **40,27%** (Δ: -21,649 ns) faster than v4.5.4
+55. [PropertyBag_SetPropertyValue_Benchmark :: SetIntValue](#PropertyBag_SetPropertyValue_Benchmark_SetIntValue) v5.0.0 is **40,27%** (Δ: -21,649 ns) faster than v4.5.4
 
-56. [ScopeManager_Benchmark](#ScopeManager_Benchmark) v5.0.0 is **38,90%** (Δ: -19,569 ns) faster than v4.5.4
+56. [ScopeManager_Benchmark :: Get_Existing_ScopeManager](#ScopeManager_Benchmark_Get_Existing_ScopeManager) v5.0.0 is **38,90%** (Δ: -19,569 ns) faster than v4.5.4
 
-57. [CacheStorage_Benchmark](#CacheStorage_Benchmark) v5.0.0 is **34,56%** (Δ: -13,552 ns) faster than v4.5.4
+57. [CacheStorage_Benchmark :: GetFromCacheOrFetch](#CacheStorage_Benchmark_GetFromCacheOrFetch) v5.0.0 is **34,56%** (Δ: -13,552 ns) faster than v4.5.4
 
-58. [Enum_Benchmark](#Enum_Benchmark) v5.0.0 is **30,39%** (Δ: -19,387 ns) faster than v4.5.4
+58. [Enum_Benchmark :: GetName](#Enum_Benchmark_GetName) v5.0.0 is **30,39%** (Δ: -19,387 ns) faster than v4.5.4
 
-59. [TypeExtensions_Benchmark](#TypeExtensions_Benchmark) v5.0.0 is **29,70%** (Δ: -22,311 ns) faster than v4.5.4
+59. [TypeExtensions_Benchmark :: IsDictionary](#TypeExtensions_Benchmark_IsDictionary) v5.0.0 is **29,70%** (Δ: -22,311 ns) faster than v4.5.4
 
-60. [ValidationContext_Benchmark](#ValidationContext_Benchmark) v5.0.0 is **26,52%** (Δ: -12,827 ns) faster than v4.5.4
+60. [ValidationContext_Benchmark :: GetBusinessRuleErrors](#ValidationContext_Benchmark_GetBusinessRuleErrors) v5.0.0 is **26,52%** (Δ: -12,827 ns) faster than v4.5.4
 
-61. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **24,48%** (Δ: -10,711 ns) faster than v4.5.4
+61. [Type_ReflectionExtensions_Benchmark :: GetSafeFullName](#Type_ReflectionExtensions_Benchmark_GetSafeFullName) v5.0.0 is **24,48%** (Δ: -10,711 ns) faster than v4.5.4
 
-62. [ServiceLocator_Benchmark](#ServiceLocator_Benchmark) v5.0.0 is **22,73%** (Δ: -11,288 ns) faster than v4.5.4
+62. [ServiceLocator_Benchmark :: ResolveType_With_Singleton_Dependency](#ServiceLocator_Benchmark_ResolveType_With_Singleton_Dependency) v5.0.0 is **22,73%** (Δ: -11,288 ns) faster than v4.5.4
 
-63. [ServiceLocator_Benchmark](#ServiceLocator_Benchmark) v5.0.0 is **21,27%** (Δ: -10,843 ns) faster than v4.5.4
+63. [ServiceLocator_Benchmark :: ResolveType_Singleton](#ServiceLocator_Benchmark_ResolveType_Singleton) v5.0.0 is **21,27%** (Δ: -10,843 ns) faster than v4.5.4
 
-64. [CacheStorage_Benchmark](#CacheStorage_Benchmark) v5.0.0 is **20,28%** (Δ: -8,748 ns) faster than v4.5.4
+64. [CacheStorage_Benchmark :: GetValue_From_An_Already_Initialized_Cache](#CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache) v5.0.0 is **20,28%** (Δ: -8,748 ns) faster than v4.5.4
 
-65. [ValidationContext_Benchmark](#ValidationContext_Benchmark) v5.0.0 is **18,82%** (Δ: -7,681 ns) faster than v4.5.4
+65. [ValidationContext_Benchmark :: HasErrors](#ValidationContext_Benchmark_HasErrors) v5.0.0 is **18,82%** (Δ: -7,681 ns) faster than v4.5.4
 
-66. [ValidationContext_Benchmark](#ValidationContext_Benchmark) v5.0.0 is **17,49%** (Δ: -7,753 ns) faster than v4.5.4
+66. [ValidationContext_Benchmark :: GetBusinessRuleValidations](#ValidationContext_Benchmark_GetBusinessRuleValidations) v5.0.0 is **17,49%** (Δ: -7,753 ns) faster than v4.5.4
 
-67. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **16,78%** (Δ: -8,902 ns) faster than v4.5.4
+67. [Type_ReflectionExtensions_Benchmark :: GetMethodEx_Flatten_Static_BindingFlags](#Type_ReflectionExtensions_Benchmark_GetMethodEx_Flatten_Static_BindingFlags) v5.0.0 is **16,78%** (Δ: -8,902 ns) faster than v4.5.4
 
-68. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **15,24%** (Δ: -9,249 ns) faster than v4.5.4
+68. [Type_ReflectionExtensions_Benchmark :: GetFieldEx_Instance_BindingFlags](#Type_ReflectionExtensions_Benchmark_GetFieldEx_Instance_BindingFlags) v5.0.0 is **15,24%** (Δ: -9,249 ns) faster than v4.5.4
 
-69. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **8,23%** (Δ: -6,987 ns) faster than v4.5.4
+69. [Argument_Benchmark :: ImplementsInterface](#Argument_Benchmark_ImplementsInterface) v5.0.0 is **8,23%** (Δ: -6,987 ns) faster than v4.5.4
 
-70. [FastDateTime_vs_DateTime_Benchmark](#FastDateTime_vs_DateTime_Benchmark) v5.0.0 is **6,31%** (Δ: -5,742 ns) faster than v4.5.4
+70. [FastDateTime_vs_DateTime_Benchmark :: FastDateTime_Now](#FastDateTime_vs_DateTime_Benchmark_FastDateTime_Now) v5.0.0 is **6,31%** (Δ: -5,742 ns) faster than v4.5.4
 
-71. [PropertyBag_GetPropertyValue_Benchmark](#PropertyBag_GetPropertyValue_Benchmark) v5.0.0 is **2,55%** (Δ: -3,040 ns) faster than v4.5.4
+71. [PropertyBag_GetPropertyValue_Benchmark :: GetStringValue](#PropertyBag_GetPropertyValue_Benchmark_GetStringValue) v5.0.0 is **2,55%** (Δ: -3,040 ns) faster than v4.5.4
 
-72. [TypeExtensions_Benchmark](#TypeExtensions_Benchmark) v5.0.0 is **1,25%** (Δ: -3,426 ns) faster than v4.5.4
+72. [TypeExtensions_Benchmark :: IsModelBase](#TypeExtensions_Benchmark_IsModelBase) v5.0.0 is **1,25%** (Δ: -3,426 ns) faster than v4.5.4
 
-73. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **0,83%** (Δ: -2,867 ns) faster than v4.5.4
+73. [Argument_Benchmark :: IsNotOutOfRange](#Argument_Benchmark_IsNotOutOfRange) v5.0.0 is **0,83%** (Δ: -2,867 ns) faster than v4.5.4
 
-74. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **0,62%** (Δ: -1,502 ns) faster than v4.5.4
+74. [Type_ReflectionExtensions_Benchmark :: ImplementsInterfaceEx](#Type_ReflectionExtensions_Benchmark_ImplementsInterfaceEx) v5.0.0 is **0,62%** (Δ: -1,502 ns) faster than v4.5.4
 
-75. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **0,54%** (Δ: -1,702 ns) faster than v4.5.4
+75. [Type_ReflectionExtensions_Benchmark :: GetBaseTypeEx](#Type_ReflectionExtensions_Benchmark_GetBaseTypeEx) v5.0.0 is **0,54%** (Δ: -1,702 ns) faster than v4.5.4
 
-76. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **0,50%** (Δ: -1,805 ns) faster than v4.5.4
+76. [Type_ReflectionExtensions_Benchmark :: ContainsGenericParametersEx](#Type_ReflectionExtensions_Benchmark_ContainsGenericParametersEx) v5.0.0 is **0,50%** (Δ: -1,805 ns) faster than v4.5.4
 
-77. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **0,25%** (Δ: -1,298 ns) faster than v4.5.4
+77. [Type_ReflectionExtensions_Benchmark :: IsSerializableEx](#Type_ReflectionExtensions_Benchmark_IsSerializableEx) v5.0.0 is **0,25%** (Δ: -1,298 ns) faster than v4.5.4
 
-78. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **0,17%** (Δ: -0,773 ns) faster than v4.5.4
+78. [Type_ReflectionExtensions_Benchmark :: IsArrayEx](#Type_ReflectionExtensions_Benchmark_IsArrayEx) v5.0.0 is **0,17%** (Δ: -0,773 ns) faster than v4.5.4
 
-79. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **0,14%** (Δ: -0,836 ns) faster than v4.5.4
+79. [Type_ReflectionExtensions_Benchmark :: IsNestedPublicEx](#Type_ReflectionExtensions_Benchmark_IsNestedPublicEx) v5.0.0 is **0,14%** (Δ: -0,836 ns) faster than v4.5.4
 
-80. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **0,14%** (Δ: -1,251 ns) faster than v4.5.4
+80. [Argument_Benchmark :: IsNotNullOrEmpty_Guid](#Argument_Benchmark_IsNotNullOrEmpty_Guid) v5.0.0 is **0,14%** (Δ: -1,251 ns) faster than v4.5.4
 
-81. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **0,11%** (Δ: -0,644 ns) faster than v4.5.4
+81. [Type_ReflectionExtensions_Benchmark :: IsPublicEx](#Type_ReflectionExtensions_Benchmark_IsPublicEx) v5.0.0 is **0,11%** (Δ: -0,644 ns) faster than v4.5.4
 
-82. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **0,06%** (Δ: -0,667 ns) faster than v4.5.4
+82. [Type_ReflectionExtensions_Benchmark :: GetElementTypeEx](#Type_ReflectionExtensions_Benchmark_GetElementTypeEx) v5.0.0 is **0,06%** (Δ: -0,667 ns) faster than v4.5.4
 
-83. [WeakEventListener_Benchmark](#WeakEventListener_Benchmark) v5.0.0 is **0,06%** (Δ: -0,994 ns) faster than v4.5.4
+83. [WeakEventListener_Benchmark :: PropertyChanged_Notification](#WeakEventListener_Benchmark_PropertyChanged_Notification) v5.0.0 is **0,06%** (Δ: -0,994 ns) faster than v4.5.4
 
-84. [Type_ReflectionExtensions_Benchmark](#Type_ReflectionExtensions_Benchmark) v5.0.0 is **0,04%** (Δ: -0,369 ns) faster than v4.5.4
+84. [Type_ReflectionExtensions_Benchmark :: IsGenericTypeDefinitionEx](#Type_ReflectionExtensions_Benchmark_IsGenericTypeDefinitionEx) v5.0.0 is **0,04%** (Δ: -0,369 ns) faster than v4.5.4
 
-85. [FastDateTime_vs_DateTime_UtcNow_Benchmark](#FastDateTime_vs_DateTime_UtcNow_Benchmark) v5.0.0 is **0,03%** (Δ: -0,410 ns) faster than v4.5.4
+85. [FastDateTime_vs_DateTime_UtcNow_Benchmark :: FastDateTime_UtcNow](#FastDateTime_vs_DateTime_UtcNow_Benchmark_FastDateTime_UtcNow) v5.0.0 is **0,03%** (Δ: -0,410 ns) faster than v4.5.4
 
-86. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **0,02%** (Δ: -0,235 ns) faster than v4.5.4
+86. [Argument_Benchmark :: IsNotEmpty](#Argument_Benchmark_IsNotEmpty) v5.0.0 is **0,02%** (Δ: -0,235 ns) faster than v4.5.4
 
-87. [ValidationSummary_Benchmark](#ValidationSummary_Benchmark) v5.0.0 is **0,00%** (Δ: -0,242 ns) faster than v4.5.4
+87. [ValidationSummary_Benchmark :: HasWarnings](#ValidationSummary_Benchmark_HasWarnings) v5.0.0 is **0,00%** (Δ: -0,242 ns) faster than v4.5.4
 
-88. [ValidationSummary_Benchmark](#ValidationSummary_Benchmark) v5.0.0 is **0,00%** (Δ: -0,388 ns) faster than v4.5.4
+88. [ValidationSummary_Benchmark :: HasFieldErrors](#ValidationSummary_Benchmark_HasFieldErrors) v5.0.0 is **0,00%** (Δ: -0,388 ns) faster than v4.5.4
 
-89. [ValidationSummary_Benchmark](#ValidationSummary_Benchmark) v5.0.0 is **0,00%** (Δ: -0,333 ns) faster than v4.5.4
+89. [ValidationSummary_Benchmark :: HasBusinessRuleErrors](#ValidationSummary_Benchmark_HasBusinessRuleErrors) v5.0.0 is **0,00%** (Δ: -0,333 ns) faster than v4.5.4
 
-90. [ValidationSummary_Benchmark](#ValidationSummary_Benchmark) v5.0.0 is **0,00%** (Δ: -0,400 ns) faster than v4.5.4
+90. [ValidationSummary_Benchmark :: HasFieldWarnings](#ValidationSummary_Benchmark_HasFieldWarnings) v5.0.0 is **0,00%** (Δ: -0,400 ns) faster than v4.5.4
 
-91. [ValidationSummary_Benchmark](#ValidationSummary_Benchmark) v5.0.0 is **0,00%** (Δ: -0,178 ns) faster than v4.5.4
+91. [ValidationSummary_Benchmark :: HasErrors](#ValidationSummary_Benchmark_HasErrors) v5.0.0 is **0,00%** (Δ: -0,178 ns) faster than v4.5.4
 
-92. [Argument_Benchmark](#Argument_Benchmark) v5.0.0 is **0,00%** (Δ: -0,055 ns) faster than v4.5.4
+92. [Argument_Benchmark :: IsNotNullOrEmpty](#Argument_Benchmark_IsNotNullOrEmpty) v5.0.0 is **0,00%** (Δ: -0,055 ns) faster than v4.5.4
 
-93. [ValidationSummary_Benchmark](#ValidationSummary_Benchmark) v5.0.0 is **0,00%** (Δ: -0,267 ns) faster than v4.5.4
+93. [ValidationSummary_Benchmark :: HasBusinessRuleWarnings](#ValidationSummary_Benchmark_HasBusinessRuleWarnings) v5.0.0 is **0,00%** (Δ: -0,267 ns) faster than v4.5.4
 
 
 

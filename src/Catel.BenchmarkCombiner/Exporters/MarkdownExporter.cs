@@ -137,7 +137,7 @@ namespace Catel.BenchmarkCombiner.Exporters
                 {
                     var benchmarkSummary = collection[i];
 
-                    streamWriter.WriteLine($"{i + 1}. [{benchmarkSummary.Key}](#{benchmarkSummary.Key}) {formatter(benchmarkSummary)}\n");
+                    streamWriter.WriteLine($"{i + 1}. [{benchmarkSummary.Name}](#{benchmarkSummary.Key}) {formatter(benchmarkSummary)}\n");
                 }
             }
 

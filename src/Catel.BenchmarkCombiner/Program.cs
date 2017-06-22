@@ -247,8 +247,8 @@ namespace Catel.BenchmarkCombiner
 
                     if (benchmarkSummary != null)
                     {
-                        benchmarkSummary.Key = measurementGroup.Key;
-                        benchmarkSummary.Name = measurementGroup.Key;
+                        benchmarkSummary.Key = $"{measurementGroupGroup.Container}_{measurementGroupGroup.Benchmark}";
+                        benchmarkSummary.Name = $"{measurementGroupGroup.Container}::{measurementGroupGroup.Benchmark}";
 
                         benchmarkSummaries.Add(benchmarkSummary);
                     }
