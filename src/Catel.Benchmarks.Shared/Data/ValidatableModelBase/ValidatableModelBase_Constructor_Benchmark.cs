@@ -4,13 +4,14 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+#if !CATEL_4
 
 namespace Catel.Benchmarks.ModelBase
 {
     using BenchmarkDotNet.Attributes;
     using Data.ModelBase.Fixtures;
 
-    public class ModelBase_Constructor_Benchmark : BenchmarkBase
+    public class ValidatableModelBase_Constructor_Benchmark : BenchmarkBase
     {
         [Benchmark]
         public object Constructor()
@@ -20,3 +21,5 @@ namespace Catel.Benchmarks.ModelBase
         }
     }
 }
+
+#endif
