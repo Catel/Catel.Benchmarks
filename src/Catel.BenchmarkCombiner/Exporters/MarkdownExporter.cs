@@ -332,66 +332,102 @@ namespace Catel.BenchmarkCombiner.Exporters
             streamWriter.WriteLine("</tr>");
 
             // Table content - Gen 0
-            streamWriter.WriteLine("<tr>");
-            streamWriter.Write("<td>Gen 0</td>");
-
-            foreach (var version in measurementGroup.Measurements)
-            {
-                streamWriter.Write($"<td align=\"right\">{version.AverageGen0Per1000Operations}</td>");
-            }
-
-            streamWriter.WriteLine("</tr>");
+            WriteMemoryTableRowAsHtml(measurementGroup, streamWriter, "Gen 0", x => x.AverageGen0Per1000Operations);
 
             // Table content - Gen 1
-            streamWriter.WriteLine("<tr>");
-            streamWriter.Write("<td>Gen 1</td>");
-
-            foreach (var version in measurementGroup.Measurements)
-            {
-                streamWriter.Write($"<td align=\"right\">{version.AverageGen1Per1000Operations}</td>");
-            }
-
-            streamWriter.WriteLine("</tr>");
+            WriteMemoryTableRowAsHtml(measurementGroup, streamWriter, "Gen 1", x => x.AverageGen1Per1000Operations);
 
             // Table content - Gen 2
-            streamWriter.WriteLine("<tr>");
-            streamWriter.Write("<td>Gen 2</td>");
+            WriteMemoryTableRowAsHtml(measurementGroup, streamWriter, "Gen 2", x => x.AverageGen2Per1000Operations);
 
-            foreach (var version in measurementGroup.Measurements)
-            {
-                streamWriter.Write($"<td align=\"right\">{version.AverageGen2Per1000Operations}</td>");
-            }
+            // Table content - Allocated bytes %
+            WriteMemoryTableRowAsHtml(measurementGroup, streamWriter, "%", x => x.AverageAllocatedBytesPer1000Operations);
 
             // Table content - Allocated bytes
-            streamWriter.WriteLine("<tr>");
-            streamWriter.Write("<td>Allocated Bytes</td>");
-
-            foreach (var version in measurementGroup.Measurements)
-            {
-                streamWriter.Write($"<td align=\"right\">{version.AverageAllocatedBytesPer1000Operations}</td>");
-            }
+            WriteMemoryTableRowAsHtml(measurementGroup, streamWriter, "Allocated Bytes", x => x.AverageAllocatedBytesPer1000Operations);
 
             // Table content - Allocated kilo bytes
-            streamWriter.WriteLine("<tr>");
-            streamWriter.Write("<td>Allocated Kilobytes</td>");
-
-            foreach (var version in measurementGroup.Measurements)
-            {
-                streamWriter.Write($"<td align=\"right\">{version.AverageAllocatedBytesPer1000Operations.ConvertBytesToKilobytes():0.000}</td>");
-            }
+            WriteMemoryTableRowAsHtml(measurementGroup, streamWriter, "Allocated Kilobytes", x => x.AverageAllocatedBytesPer1000Operations.ConvertBytesToKilobytes());
 
             // Table content - Allocated mega bytes
+            WriteMemoryTableRowAsHtml(measurementGroup, streamWriter, "Allocated Megabytes", x => x.AverageAllocatedBytesPer1000Operations.ConvertBytesToMegabytes());
+
+            streamWriter.WriteLine("</table>");
+        }
+
+        private void WriteMemoryTableRowAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter, string unit, Func<VersionMeasurements, double> valueRetriever)
+        {
             streamWriter.WriteLine("<tr>");
-            streamWriter.Write("<td>Allocated Megabytes</td>");
+
+            streamWriter.Write("<td>");
+
+            if (unit.EqualsIgnoreCase("%"))
+            {
+                streamWriter.Write("Δ %");
+            }
+            else
+            {
+                streamWriter.Write($"{unit}");
+            }
+
+            streamWriter.Write("</td>");
+
+            VersionMeasurements lastVersion = null;
 
             foreach (var version in measurementGroup.Measurements)
             {
-                streamWriter.Write($"<td align=\"right\">{version.AverageAllocatedBytesPer1000Operations.ConvertBytesToMegabytes():0.000}</td>");
+                var background = "#FFFFFF";
+
+                var currentValue = valueRetriever(version);
+                var previousValue = 0d;
+                double? deltaAbsolute = null;
+
+                if (lastVersion != null)
+                {
+                    previousValue = valueRetriever(lastVersion);
+
+                    if (currentValue.IsLarger(previousValue))
+                    {
+                        background = IncreasedBackgroundColor;
+                    }
+                    else if (currentValue.IsSmaller(previousValue))
+                    {
+                        background = DecreasedBackgroundColor;
+                    }
+
+                    deltaAbsolute = currentValue - previousValue;
+                }
+
+                streamWriter.Write($"<td align=\"right\" bgcolor=\"{background}\">");
+
+                if (unit.EqualsIgnoreCase("%"))
+                {
+                    if (deltaAbsolute.HasValue)
+                    {
+                        var deltaPercentage = (100 / previousValue) * deltaAbsolute;
+                        var leadingSign = (deltaAbsolute > 0) ? "+" : string.Empty;
+
+                        streamWriter.Write($"{leadingSign}{deltaPercentage:0.0} {unit}");
+                    }
+                }
+                else
+                {
+                    streamWriter.Write($"{currentValue:0.000}");
+
+                    if (deltaAbsolute.HasValue)
+                    {
+                        var leadingSign = (deltaAbsolute > 0) ? "+" : string.Empty;
+
+                        streamWriter.Write($" (Δ = {leadingSign}{deltaAbsolute:0.000})");
+                    }
+                }
+
+                streamWriter.Write("</td>");
+
+                lastVersion = version;
             }
 
             streamWriter.WriteLine("</tr>");
-
-            streamWriter.WriteLine("</table>");
         }
 
         private void WriteMemorySummaryLine(string title, VersionMeasurements least, VersionMeasurements most, StreamWriter streamWriter)

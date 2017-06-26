@@ -5,7 +5,7 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 
-namespace Catel.Benchmarks.ModelBase.GetValue
+namespace Catel.Benchmarks.ModelBase
 {
     using BenchmarkDotNet.Attributes;
     using Data.ModelBase.Fixtures;
