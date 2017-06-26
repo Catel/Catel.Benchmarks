@@ -4,6 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+#if !CATEL_4_2 && !CATEL_4_3 && !CATEL_4_4
 
 namespace Catel.Benchmarks.Logging
 {
@@ -69,3 +70,5 @@ namespace Catel.Benchmarks.Logging
         #endregion
     }
 }
+
+#endif
