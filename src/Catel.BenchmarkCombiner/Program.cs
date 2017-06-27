@@ -232,6 +232,12 @@ namespace Catel.BenchmarkCombiner
                     var previousValue = previousVersion.AverageNanoSecondsPerOperation;
                     var currentValue = currentVersion.AverageNanoSecondsPerOperation;
 
+	                var percentage = (previousValue / 100) * (currentValue - previousValue);
+	                if (percentage < 1d && percentage > -1d)
+	                {
+		                continue;
+	                }
+
                     BenchmarkSummaryBase benchmarkSummary = null;
 
                     if (currentValue.IsLarger(previousValue))
