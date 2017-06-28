@@ -1,554 +1,560 @@
 // ***** BenchmarkRunner: Start   *****
 // Found benchmarks:
-//   TypeFactory_Benchmark.CreateInstance: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
-//   TypeFactory_Benchmark.CreateInstance_PropertyInjection: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
-//   TypeFactory_Benchmark.CreateInstanceWithParameters: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
-//   TypeFactory_Benchmark.CreateInstanceWithParametersAndAutoCompletion: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+//   TypeFactory_Benchmark.CreateInstance: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+//   TypeFactory_Benchmark.CreateInstance_PropertyInjection: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+//   TypeFactory_Benchmark.CreateInstanceWithParameters: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+//   TypeFactory_Benchmark.CreateInstanceWithParametersAndAutoCompletion: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
 // Validating benchmarks:
 // **************************
-// Benchmark: TypeFactory_Benchmark.CreateInstance: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Benchmark: TypeFactory_Benchmark.CreateInstance: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 // *** Generate *** 
 // Result = Success
 // BinariesDirectoryPath = C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0
 
 // *** Build ***
-BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_Job-OAFXIK.bat
+BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_Job-QDCEMC.bat
 // Result = Success
 
 // *** Execute ***
 // Launch: 1 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_Job-OAFXIK.exe 
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_Job-QDCEMC.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
-IdleWarmup  1: 2500 op, 287100.00 ns, 114.8400 ns/op
-IdleWarmup  2: 2500 op, 11600.00 ns, 4.6400 ns/op
-IdleWarmup  3: 2500 op, 7500.00 ns, 3.0000 ns/op
-IdleWarmup  4: 2500 op, 7500.00 ns, 3.0000 ns/op
-IdleWarmup  5: 2500 op, 7700.00 ns, 3.0800 ns/op
-IdleWarmup  6: 2500 op, 7700.00 ns, 3.0800 ns/op
-IdleWarmup  7: 2500 op, 7600.00 ns, 3.0400 ns/op
+IdleWarmup  1: 2000 op, 250700.00 ns, 125.3500 ns/op
+IdleWarmup  2: 2000 op, 8400.00 ns, 4.2000 ns/op
+IdleWarmup  3: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleWarmup  4: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleWarmup  5: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleWarmup  6: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleWarmup  7: 2000 op, 4500.00 ns, 2.2500 ns/op
+IdleWarmup  8: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleWarmup  9: 2000 op, 4600.00 ns, 2.3000 ns/op
 
-IdleTarget  1: 2500 op, 16600.00 ns, 6.6400 ns/op
-IdleTarget  2: 2500 op, 7600.00 ns, 3.0400 ns/op
-IdleTarget  3: 2500 op, 7600.00 ns, 3.0400 ns/op
-IdleTarget  4: 2500 op, 7500.00 ns, 3.0000 ns/op
-IdleTarget  5: 2500 op, 7700.00 ns, 3.0800 ns/op
-IdleTarget  6: 2500 op, 7600.00 ns, 3.0400 ns/op
-IdleTarget  7: 2500 op, 7600.00 ns, 3.0400 ns/op
-IdleTarget  8: 2500 op, 7500.00 ns, 3.0000 ns/op
-IdleTarget  9: 2500 op, 8000.00 ns, 3.2000 ns/op
-IdleTarget 10: 2500 op, 7700.00 ns, 3.0800 ns/op
-IdleTarget 11: 2500 op, 7700.00 ns, 3.0800 ns/op
-IdleTarget 12: 2500 op, 9700.00 ns, 3.8800 ns/op
-IdleTarget 13: 2500 op, 8800.00 ns, 3.5200 ns/op
-IdleTarget 14: 2500 op, 7800.00 ns, 3.1200 ns/op
-IdleTarget 15: 2500 op, 7800.00 ns, 3.1200 ns/op
+IdleTarget  1: 2000 op, 4500.00 ns, 2.2500 ns/op
+IdleTarget  2: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  3: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  4: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  5: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  6: 2000 op, 4400.00 ns, 2.2000 ns/op
+IdleTarget  7: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  8: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  9: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget 10: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 11: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget 12: 2000 op, 4500.00 ns, 2.2500 ns/op
+IdleTarget 13: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 14: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 15: 2000 op, 4600.00 ns, 2.3000 ns/op
 
-MainWarmup  1: 2500 op, 5796700.00 ns, 2.3187 us/op
-MainWarmup  2: 2500 op, 5679700.00 ns, 2.2719 us/op
+MainWarmup  1: 2000 op, 4553800.00 ns, 2.2769 us/op
+MainWarmup  2: 2000 op, 4441800.00 ns, 2.2209 us/op
 
-MainTarget  1: 2500 op, 5652300.00 ns, 2.2609 us/op
-MainTarget  2: 2500 op, 5484000.00 ns, 2.1936 us/op
-MainTarget  3: 2500 op, 6016900.00 ns, 2.4068 us/op
-MainTarget  4: 2500 op, 5776700.00 ns, 2.3107 us/op
-MainTarget  5: 2500 op, 5748700.00 ns, 2.2995 us/op
+MainTarget  1: 2000 op, 4894700.00 ns, 2.4474 us/op
+MainTarget  2: 2000 op, 4420400.00 ns, 2.2102 us/op
+MainTarget  3: 2000 op, 4911000.00 ns, 2.4555 us/op
+MainTarget  4: 2000 op, 4408900.00 ns, 2.2045 us/op
+MainTarget  5: 2000 op, 4980700.00 ns, 2.4904 us/op
 
-Result  1: 2500 op, 5643820.00 ns, 2.2575 us/op
-Result  2: 2500 op, 5475520.00 ns, 2.1902 us/op
-Result  3: 2500 op, 6008420.00 ns, 2.4034 us/op
-Result  4: 2500 op, 5768220.00 ns, 2.3073 us/op
-Result  5: 2500 op, 5740220.00 ns, 2.2961 us/op
-GC:  0 0 0 0 12500
+Result  1: 2000 op, 4890100.00 ns, 2.4451 us/op
+Result  2: 2000 op, 4415800.00 ns, 2.2079 us/op
+Result  3: 2000 op, 4906400.00 ns, 2.4532 us/op
+Result  4: 2000 op, 4404300.00 ns, 2.2022 us/op
+Result  5: 2000 op, 4976100.00 ns, 2.4881 us/op
+GC:  0 0 0 0 10000
 
 // Launch: 2 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_Job-OAFXIK.exe 
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_Job-QDCEMC.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
-IdleWarmup  1: 2500 op, 298500.00 ns, 119.4000 ns/op
-IdleWarmup  2: 2500 op, 11100.00 ns, 4.4400 ns/op
-IdleWarmup  3: 2500 op, 7600.00 ns, 3.0400 ns/op
-IdleWarmup  4: 2500 op, 7800.00 ns, 3.1200 ns/op
-IdleWarmup  5: 2500 op, 7600.00 ns, 3.0400 ns/op
-IdleWarmup  6: 2500 op, 7500.00 ns, 3.0000 ns/op
-IdleWarmup  7: 2500 op, 7700.00 ns, 3.0800 ns/op
-IdleWarmup  8: 2500 op, 7400.00 ns, 2.9600 ns/op
+IdleWarmup  1: 2000 op, 297700.00 ns, 148.8500 ns/op
+IdleWarmup  2: 2000 op, 10000.00 ns, 5.0000 ns/op
+IdleWarmup  3: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleWarmup  4: 2000 op, 6200.00 ns, 3.1000 ns/op
+IdleWarmup  5: 2000 op, 5100.00 ns, 2.5500 ns/op
+IdleWarmup  6: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleWarmup  7: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleWarmup  8: 2000 op, 6600.00 ns, 3.3000 ns/op
+IdleWarmup  9: 2000 op, 5000.00 ns, 2.5000 ns/op
 
-IdleTarget  1: 2500 op, 7600.00 ns, 3.0400 ns/op
-IdleTarget  2: 2500 op, 7500.00 ns, 3.0000 ns/op
-IdleTarget  3: 2500 op, 7500.00 ns, 3.0000 ns/op
-IdleTarget  4: 2500 op, 7600.00 ns, 3.0400 ns/op
-IdleTarget  5: 2500 op, 7500.00 ns, 3.0000 ns/op
-IdleTarget  6: 2500 op, 7500.00 ns, 3.0000 ns/op
-IdleTarget  7: 2500 op, 7500.00 ns, 3.0000 ns/op
-IdleTarget  8: 2500 op, 7500.00 ns, 3.0000 ns/op
-IdleTarget  9: 2500 op, 7500.00 ns, 3.0000 ns/op
-IdleTarget 10: 2500 op, 7600.00 ns, 3.0400 ns/op
-IdleTarget 11: 2500 op, 7500.00 ns, 3.0000 ns/op
-IdleTarget 12: 2500 op, 7600.00 ns, 3.0400 ns/op
-IdleTarget 13: 2500 op, 9100.00 ns, 3.6400 ns/op
-IdleTarget 14: 2500 op, 7500.00 ns, 3.0000 ns/op
-IdleTarget 15: 2500 op, 7500.00 ns, 3.0000 ns/op
+IdleTarget  1: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  2: 2000 op, 6500.00 ns, 3.2500 ns/op
+IdleTarget  3: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  4: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleTarget  5: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleTarget  6: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  7: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  8: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleTarget  9: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget 10: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget 11: 2000 op, 5100.00 ns, 2.5500 ns/op
+IdleTarget 12: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleTarget 13: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget 14: 2000 op, 6400.00 ns, 3.2000 ns/op
+IdleTarget 15: 2000 op, 4900.00 ns, 2.4500 ns/op
 
-MainWarmup  1: 2500 op, 5823600.00 ns, 2.3294 us/op
-MainWarmup  2: 2500 op, 5596500.00 ns, 2.2386 us/op
+MainWarmup  1: 2000 op, 3983900.00 ns, 1.9920 us/op
+MainWarmup  2: 2000 op, 3954600.00 ns, 1.9773 us/op
 
-MainTarget  1: 2500 op, 5650300.00 ns, 2.2601 us/op
-MainTarget  2: 2500 op, 5500900.00 ns, 2.2004 us/op
-MainTarget  3: 2500 op, 5908000.00 ns, 2.3632 us/op
-MainTarget  4: 2500 op, 5673200.00 ns, 2.2693 us/op
-MainTarget  5: 2500 op, 5645500.00 ns, 2.2582 us/op
+MainTarget  1: 2000 op, 4312200.00 ns, 2.1561 us/op
+MainTarget  2: 2000 op, 3865100.00 ns, 1.9326 us/op
+MainTarget  3: 2000 op, 4429900.00 ns, 2.2150 us/op
+MainTarget  4: 2000 op, 3803200.00 ns, 1.9016 us/op
+MainTarget  5: 2000 op, 4328200.00 ns, 2.1641 us/op
 
-Result  1: 2500 op, 5642666.67 ns, 2.2571 us/op
-Result  2: 2500 op, 5493266.67 ns, 2.1973 us/op
-Result  3: 2500 op, 5900366.67 ns, 2.3601 us/op
-Result  4: 2500 op, 5665566.67 ns, 2.2662 us/op
-Result  5: 2500 op, 5637866.67 ns, 2.2551 us/op
-GC:  0 0 0 0 12500
+Result  1: 2000 op, 4307126.67 ns, 2.1536 us/op
+Result  2: 2000 op, 3860026.67 ns, 1.9300 us/op
+Result  3: 2000 op, 4424826.67 ns, 2.2124 us/op
+Result  4: 2000 op, 3798126.67 ns, 1.8991 us/op
+Result  5: 2000 op, 4323126.67 ns, 2.1616 us/op
+GC:  0 0 0 0 10000
 
 
 // Run, Diagnostic
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_Job-OAFXIK.exe diagnoserAttached
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_Job-QDCEMC.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
 // AfterGlobalSetup
 // BeforeMainRun
 // BeforeGlobalCleanup
-Result  1: 2500 op, 5259240.00 ns, 2.1037 us/op
-Result  2: 2500 op, 5327340.00 ns, 2.1309 us/op
-Result  3: 2500 op, 5796440.00 ns, 2.3186 us/op
-Result  4: 2500 op, 5545740.00 ns, 2.2183 us/op
-Result  5: 2500 op, 5368640.00 ns, 2.1475 us/op
-GC:  0 0 0 7819160 12500
+Result  1: 2000 op, 4305086.67 ns, 2.1525 us/op
+Result  2: 2000 op, 3859686.67 ns, 1.9298 us/op
+Result  3: 2000 op, 4416186.67 ns, 2.2081 us/op
+Result  4: 2000 op, 3786286.67 ns, 1.8931 us/op
+Result  5: 2000 op, 4384286.67 ns, 2.1921 us/op
+GC:  0 0 0 6182440 10000
 
 
-Mean = 2.2790 us, StdErr = 0.0209 us (0.92%); N = 10, StdDev = 0.0661 us
-Min = 2.1902 us, Q1 = 2.2551 us, Median = 2.2619 us, Q3 = 2.3073 us, Max = 2.4034 us
-IQR = 0.0521 us, LowerFence = 2.1769 us, UpperFence = 2.3855 us
-ConfidenceInterval = [2.1790 us; 2.3790 us] (CI 99.9%), Margin = 0.1000 us (4.39% of Mean)
-Skewness = 0.41, Kurtosis = 2.04
+Mean = 2.2153 us, StdErr = 0.0643 us (2.90%); N = 10, StdDev = 0.2033 us
+Min = 1.8991 us, Q1 = 2.1536 us, Median = 2.2050 us, Q3 = 2.4451 us, Max = 2.4881 us
+IQR = 0.2915 us, LowerFence = 1.7163 us, UpperFence = 2.8823 us
+ConfidenceInterval = [1.9079 us; 2.5227 us] (CI 99.9%), Margin = 0.3074 us (13.88% of Mean)
+Skewness = -0.11, Kurtosis = 1.65
 
 
 // **************************
-// Benchmark: TypeFactory_Benchmark.CreateInstance_PropertyInjection: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Benchmark: TypeFactory_Benchmark.CreateInstance_PropertyInjection: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 // *** Generate *** 
 // Result = Success
 // BinariesDirectoryPath = C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0
 
 // *** Build ***
-BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_PropertyInjection_Job-OAFXIK.bat
+BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_PropertyInjection_Job-QDCEMC.bat
 // Result = Success
 
 // *** Execute ***
 // Launch: 1 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_PropertyInjection_Job-OAFXIK.exe 
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_PropertyInjection_Job-QDCEMC.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
-IdleWarmup  1: 2500 op, 308500.00 ns, 123.4000 ns/op
-IdleWarmup  2: 2500 op, 12100.00 ns, 4.8400 ns/op
-IdleWarmup  3: 2500 op, 7000.00 ns, 2.8000 ns/op
-IdleWarmup  4: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleWarmup  5: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleWarmup  6: 2500 op, 7300.00 ns, 2.9200 ns/op
-IdleWarmup  7: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleWarmup  8: 2500 op, 6800.00 ns, 2.7200 ns/op
+IdleWarmup  1: 2000 op, 281200.00 ns, 140.6000 ns/op
+IdleWarmup  2: 2000 op, 8400.00 ns, 4.2000 ns/op
+IdleWarmup  3: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleWarmup  4: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleWarmup  5: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleWarmup  6: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleWarmup  7: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleWarmup  8: 2000 op, 4700.00 ns, 2.3500 ns/op
 
-IdleTarget  1: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleTarget  2: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  3: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget  4: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget  5: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget  6: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleTarget  7: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleTarget  8: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleTarget  9: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget 10: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget 11: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget 12: 2500 op, 7100.00 ns, 2.8400 ns/op
-IdleTarget 13: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget 14: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleTarget 15: 2500 op, 6900.00 ns, 2.7600 ns/op
+IdleTarget  1: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  2: 2000 op, 5000.00 ns, 2.5000 ns/op
+IdleTarget  3: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  4: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  5: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  6: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  7: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  8: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  9: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 10: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 11: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleTarget 12: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget 13: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 14: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget 15: 2000 op, 4800.00 ns, 2.4000 ns/op
 
-MainWarmup  1: 2500 op, 5555400.00 ns, 2.2222 us/op
-MainWarmup  2: 2500 op, 5395300.00 ns, 2.1581 us/op
+MainWarmup  1: 2000 op, 3936700.00 ns, 1.9684 us/op
+MainWarmup  2: 2000 op, 3859500.00 ns, 1.9298 us/op
 
-MainTarget  1: 2500 op, 5310800.00 ns, 2.1243 us/op
-MainTarget  2: 2500 op, 5245200.00 ns, 2.0981 us/op
-MainTarget  3: 2500 op, 5664700.00 ns, 2.2659 us/op
-MainTarget  4: 2500 op, 5507400.00 ns, 2.2030 us/op
-MainTarget  5: 2500 op, 5412400.00 ns, 2.1650 us/op
+MainTarget  1: 2000 op, 4349700.00 ns, 2.1749 us/op
+MainTarget  2: 2000 op, 3825600.00 ns, 1.9128 us/op
+MainTarget  3: 2000 op, 4390700.00 ns, 2.1954 us/op
+MainTarget  4: 2000 op, 3814600.00 ns, 1.9073 us/op
+MainTarget  5: 2000 op, 4424100.00 ns, 2.2121 us/op
 
-Result  1: 2500 op, 5303953.33 ns, 2.1216 us/op
-Result  2: 2500 op, 5238353.33 ns, 2.0953 us/op
-Result  3: 2500 op, 5657853.33 ns, 2.2631 us/op
-Result  4: 2500 op, 5500553.33 ns, 2.2002 us/op
-Result  5: 2500 op, 5405553.33 ns, 2.1622 us/op
-GC:  0 0 0 0 12500
+Result  1: 2000 op, 4344913.33 ns, 2.1725 us/op
+Result  2: 2000 op, 3820813.33 ns, 1.9104 us/op
+Result  3: 2000 op, 4385913.33 ns, 2.1930 us/op
+Result  4: 2000 op, 3809813.33 ns, 1.9049 us/op
+Result  5: 2000 op, 4419313.33 ns, 2.2097 us/op
+GC:  0 0 0 0 10000
 
 // Launch: 2 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_PropertyInjection_Job-OAFXIK.exe 
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_PropertyInjection_Job-QDCEMC.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
-IdleWarmup  1: 2500 op, 272500.00 ns, 109.0000 ns/op
-IdleWarmup  2: 2500 op, 11800.00 ns, 4.7200 ns/op
-IdleWarmup  3: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleWarmup  4: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleWarmup  5: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleWarmup  6: 2500 op, 6600.00 ns, 2.6400 ns/op
-IdleWarmup  7: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleWarmup  8: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleWarmup  9: 2500 op, 6800.00 ns, 2.7200 ns/op
+IdleWarmup  1: 2000 op, 247600.00 ns, 123.8000 ns/op
+IdleWarmup  2: 2000 op, 9800.00 ns, 4.9000 ns/op
+IdleWarmup  3: 2000 op, 5900.00 ns, 2.9500 ns/op
+IdleWarmup  4: 2000 op, 5600.00 ns, 2.8000 ns/op
+IdleWarmup  5: 2000 op, 5600.00 ns, 2.8000 ns/op
+IdleWarmup  6: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleWarmup  7: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleWarmup  8: 2000 op, 6300.00 ns, 3.1500 ns/op
 
-IdleTarget  1: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  2: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  3: 2500 op, 8200.00 ns, 3.2800 ns/op
-IdleTarget  4: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleTarget  5: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget  6: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  7: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  8: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  9: 2500 op, 6600.00 ns, 2.6400 ns/op
-IdleTarget 10: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleTarget 11: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget 12: 2500 op, 6600.00 ns, 2.6400 ns/op
-IdleTarget 13: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget 14: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget 15: 2500 op, 6700.00 ns, 2.6800 ns/op
+IdleTarget  1: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  2: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  3: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleTarget  4: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  5: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  6: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  7: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  8: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  9: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 10: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget 11: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 12: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget 13: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleTarget 14: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleTarget 15: 2000 op, 4700.00 ns, 2.3500 ns/op
 
-MainWarmup  1: 2500 op, 5724300.00 ns, 2.2897 us/op
-MainWarmup  2: 2500 op, 5477300.00 ns, 2.1909 us/op
+MainWarmup  1: 2000 op, 4713100.00 ns, 2.3566 us/op
+MainWarmup  2: 2000 op, 4611800.00 ns, 2.3059 us/op
 
-MainTarget  1: 2500 op, 5461100.00 ns, 2.1844 us/op
-MainTarget  2: 2500 op, 5502700.00 ns, 2.2011 us/op
-MainTarget  3: 2500 op, 5955200.00 ns, 2.3821 us/op
-MainTarget  4: 2500 op, 5665700.00 ns, 2.2663 us/op
-MainTarget  5: 2500 op, 5439900.00 ns, 2.1760 us/op
+MainTarget  1: 2000 op, 5020500.00 ns, 2.5103 us/op
+MainTarget  2: 2000 op, 6903700.00 ns, 3.4519 us/op
+MainTarget  3: 2000 op, 5222000.00 ns, 2.6110 us/op
+MainTarget  4: 2000 op, 4766000.00 ns, 2.3830 us/op
+MainTarget  5: 2000 op, 5022000.00 ns, 2.5110 us/op
 
-Result  1: 2500 op, 5454266.67 ns, 2.1817 us/op
-Result  2: 2500 op, 5495866.67 ns, 2.1983 us/op
-Result  3: 2500 op, 5948366.67 ns, 2.3793 us/op
-Result  4: 2500 op, 5658866.67 ns, 2.2635 us/op
-Result  5: 2500 op, 5433066.67 ns, 2.1732 us/op
-GC:  0 0 0 0 12500
+Result  1: 2000 op, 5015773.33 ns, 2.5079 us/op
+Result  2: 2000 op, 6898973.33 ns, 3.4495 us/op
+Result  3: 2000 op, 5217273.33 ns, 2.6086 us/op
+Result  4: 2000 op, 4761273.33 ns, 2.3806 us/op
+Result  5: 2000 op, 5017273.33 ns, 2.5086 us/op
+GC:  0 0 0 0 10000
 
 
 // Run, Diagnostic
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_PropertyInjection_Job-OAFXIK.exe diagnoserAttached
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstance_PropertyInjection_Job-QDCEMC.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
 // AfterGlobalSetup
 // BeforeMainRun
 // BeforeGlobalCleanup
-Result  1: 2500 op, 5283526.67 ns, 2.1134 us/op
-Result  2: 2500 op, 5235126.67 ns, 2.0941 us/op
-Result  3: 2500 op, 5811426.67 ns, 2.3246 us/op
-Result  4: 2500 op, 5533826.67 ns, 2.2135 us/op
-Result  5: 2500 op, 5524126.67 ns, 2.2097 us/op
-GC:  0 0 0 7819160 12500
+Result  1: 2000 op, 4327246.67 ns, 2.1636 us/op
+Result  2: 2000 op, 3822046.67 ns, 1.9110 us/op
+Result  3: 2000 op, 4440446.67 ns, 2.2202 us/op
+Result  4: 2000 op, 3842846.67 ns, 1.9214 us/op
+Result  5: 2000 op, 4334546.67 ns, 2.1673 us/op
+GC:  0 0 0 6182440 10000
 
 
-Mean = 2.2039 us, StdErr = 0.0257 us (1.17%); N = 10, StdDev = 0.0814 us
-Min = 2.0953 us, Q1 = 2.1622 us, Median = 2.1900 us, Q3 = 2.2631 us, Max = 2.3793 us
-IQR = 0.1009 us, LowerFence = 2.0108 us, UpperFence = 2.4145 us
-ConfidenceInterval = [2.0808 us; 2.3269 us] (CI 99.9%), Margin = 0.1231 us (5.58% of Mean)
-Skewness = 0.72, Kurtosis = 2.65
+Mean = 2.3846 us, StdErr = 0.1407 us (5.90%); N = 10, StdDev = 0.4450 us
+Min = 1.9049 us, Q1 = 2.1725 us, Median = 2.2951 us, Q3 = 2.5086 us, Max = 3.4495 us
+IQR = 0.3362 us, LowerFence = 1.6682 us, UpperFence = 3.0129 us
+ConfidenceInterval = [1.7118 us; 3.0573 us] (CI 99.9%), Margin = 0.6727 us (28.21% of Mean)
+Skewness = 1.12, Kurtosis = 3.56
 
 
 // **************************
-// Benchmark: TypeFactory_Benchmark.CreateInstanceWithParameters: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Benchmark: TypeFactory_Benchmark.CreateInstanceWithParameters: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 // *** Generate *** 
 // Result = Success
 // BinariesDirectoryPath = C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0
 
 // *** Build ***
-BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParameters_Job-OAFXIK.bat
+BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParameters_Job-QDCEMC.bat
 // Result = Success
 
 // *** Execute ***
 // Launch: 1 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParameters_Job-OAFXIK.exe 
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParameters_Job-QDCEMC.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
-IdleWarmup  1: 2500 op, 283200.00 ns, 113.2800 ns/op
-IdleWarmup  2: 2500 op, 10200.00 ns, 4.0800 ns/op
-IdleWarmup  3: 2500 op, 6500.00 ns, 2.6000 ns/op
-IdleWarmup  4: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleWarmup  5: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleWarmup  6: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleWarmup  7: 2500 op, 6700.00 ns, 2.6800 ns/op
+IdleWarmup  1: 2000 op, 247200.00 ns, 123.6000 ns/op
+IdleWarmup  2: 2000 op, 8400.00 ns, 4.2000 ns/op
+IdleWarmup  3: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleWarmup  4: 2000 op, 4500.00 ns, 2.2500 ns/op
+IdleWarmup  5: 2000 op, 4500.00 ns, 2.2500 ns/op
+IdleWarmup  6: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleWarmup  7: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleWarmup  8: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleWarmup  9: 2000 op, 4600.00 ns, 2.3000 ns/op
 
-IdleTarget  1: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget  2: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  3: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  4: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  5: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  6: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget  7: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget  8: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  9: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget 10: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget 11: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget 12: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget 13: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget 14: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleTarget 15: 2500 op, 6700.00 ns, 2.6800 ns/op
+IdleTarget  1: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  2: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  3: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  4: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  5: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  6: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  7: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  8: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  9: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 10: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget 11: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 12: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 13: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget 14: 2000 op, 4500.00 ns, 2.2500 ns/op
+IdleTarget 15: 2000 op, 4500.00 ns, 2.2500 ns/op
 
-MainWarmup  1: 2500 op, 7400700.00 ns, 2.9603 us/op
-MainWarmup  2: 2500 op, 7122000.00 ns, 2.8488 us/op
+MainWarmup  1: 2000 op, 5144600.00 ns, 2.5723 us/op
+MainWarmup  2: 2000 op, 5041000.00 ns, 2.5205 us/op
 
-MainTarget  1: 2500 op, 7154900.00 ns, 2.8620 us/op
-MainTarget  2: 2500 op, 7904700.00 ns, 3.1619 us/op
-MainTarget  3: 2500 op, 7333500.00 ns, 2.9334 us/op
-MainTarget  4: 2500 op, 7099300.00 ns, 2.8397 us/op
-MainTarget  5: 2500 op, 7954100.00 ns, 3.1816 us/op
+MainTarget  1: 2000 op, 5512400.00 ns, 2.7562 us/op
+MainTarget  2: 2000 op, 4931200.00 ns, 2.4656 us/op
+MainTarget  3: 2000 op, 5459500.00 ns, 2.7298 us/op
+MainTarget  4: 2000 op, 5040500.00 ns, 2.5203 us/op
+MainTarget  5: 2000 op, 5503500.00 ns, 2.7518 us/op
 
-Result  1: 2500 op, 7148153.33 ns, 2.8593 us/op
-Result  2: 2500 op, 7897953.33 ns, 3.1592 us/op
-Result  3: 2500 op, 7326753.33 ns, 2.9307 us/op
-Result  4: 2500 op, 7092553.33 ns, 2.8370 us/op
-Result  5: 2500 op, 7947353.33 ns, 3.1789 us/op
-GC:  0 0 0 0 12500
+Result  1: 2000 op, 5507740.00 ns, 2.7539 us/op
+Result  2: 2000 op, 4926540.00 ns, 2.4633 us/op
+Result  3: 2000 op, 5454840.00 ns, 2.7274 us/op
+Result  4: 2000 op, 5035840.00 ns, 2.5179 us/op
+Result  5: 2000 op, 5498840.00 ns, 2.7494 us/op
+GC:  0 0 0 0 10000
 
 // Launch: 2 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParameters_Job-OAFXIK.exe 
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParameters_Job-QDCEMC.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
-IdleWarmup  1: 2500 op, 272600.00 ns, 109.0400 ns/op
-IdleWarmup  2: 2500 op, 13500.00 ns, 5.4000 ns/op
-IdleWarmup  3: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleWarmup  4: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleWarmup  5: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleWarmup  6: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleWarmup  7: 2500 op, 6700.00 ns, 2.6800 ns/op
+IdleWarmup  1: 2000 op, 244000.00 ns, 122.0000 ns/op
+IdleWarmup  2: 2000 op, 10800.00 ns, 5.4000 ns/op
+IdleWarmup  3: 2000 op, 5300.00 ns, 2.6500 ns/op
+IdleWarmup  4: 2000 op, 5400.00 ns, 2.7000 ns/op
+IdleWarmup  5: 2000 op, 5500.00 ns, 2.7500 ns/op
+IdleWarmup  6: 2000 op, 6100.00 ns, 3.0500 ns/op
+IdleWarmup  7: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleWarmup  8: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleWarmup  9: 2000 op, 4600.00 ns, 2.3000 ns/op
 
-IdleTarget  1: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget  2: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  3: 2500 op, 7900.00 ns, 3.1600 ns/op
-IdleTarget  4: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  5: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget  6: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget  7: 2500 op, 8300.00 ns, 3.3200 ns/op
-IdleTarget  8: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget  9: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget 10: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleTarget 11: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget 12: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget 13: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleTarget 14: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget 15: 2500 op, 6700.00 ns, 2.6800 ns/op
+IdleTarget  1: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  2: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  3: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  4: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  5: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  6: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  7: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  8: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  9: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 10: 2000 op, 4500.00 ns, 2.2500 ns/op
+IdleTarget 11: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget 12: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 13: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget 14: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget 15: 2000 op, 4600.00 ns, 2.3000 ns/op
 
-MainWarmup  1: 2500 op, 7381600.00 ns, 2.9526 us/op
-MainWarmup  2: 2500 op, 7232800.00 ns, 2.8931 us/op
+MainWarmup  1: 2000 op, 5080300.00 ns, 2.5402 us/op
+MainWarmup  2: 2000 op, 4944100.00 ns, 2.4721 us/op
 
-MainTarget  1: 2500 op, 7156500.00 ns, 2.8626 us/op
-MainTarget  2: 2500 op, 7909200.00 ns, 3.1637 us/op
-MainTarget  3: 2500 op, 7466100.00 ns, 2.9864 us/op
-MainTarget  4: 2500 op, 7285500.00 ns, 2.9142 us/op
-MainTarget  5: 2500 op, 7810000.00 ns, 3.1240 us/op
+MainTarget  1: 2000 op, 5432600.00 ns, 2.7163 us/op
+MainTarget  2: 2000 op, 4907900.00 ns, 2.4540 us/op
+MainTarget  3: 2000 op, 5451900.00 ns, 2.7260 us/op
+MainTarget  4: 2000 op, 4990200.00 ns, 2.4951 us/op
+MainTarget  5: 2000 op, 5435600.00 ns, 2.7178 us/op
 
-Result  1: 2500 op, 7149553.33 ns, 2.8598 us/op
-Result  2: 2500 op, 7902253.33 ns, 3.1609 us/op
-Result  3: 2500 op, 7459153.33 ns, 2.9837 us/op
-Result  4: 2500 op, 7278553.33 ns, 2.9114 us/op
-Result  5: 2500 op, 7803053.33 ns, 3.1212 us/op
-GC:  0 0 0 0 12500
+Result  1: 2000 op, 5427980.00 ns, 2.7140 us/op
+Result  2: 2000 op, 4903280.00 ns, 2.4516 us/op
+Result  3: 2000 op, 5447280.00 ns, 2.7236 us/op
+Result  4: 2000 op, 4985580.00 ns, 2.4928 us/op
+Result  5: 2000 op, 5430980.00 ns, 2.7155 us/op
+GC:  0 0 0 0 10000
 
 
 // Run, Diagnostic
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParameters_Job-OAFXIK.exe diagnoserAttached
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParameters_Job-QDCEMC.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
 // AfterGlobalSetup
 // BeforeMainRun
 // BeforeGlobalCleanup
-Result  1: 2500 op, 7190933.33 ns, 2.8764 us/op
-Result  2: 2500 op, 7812533.33 ns, 3.1250 us/op
-Result  3: 2500 op, 7310433.33 ns, 2.9242 us/op
-Result  4: 2500 op, 7095033.33 ns, 2.8380 us/op
-Result  5: 2500 op, 7771733.33 ns, 3.1087 us/op
-GC:  0 0 0 11136920 12500
+Result  1: 2000 op, 6276293.33 ns, 3.1381 us/op
+Result  2: 2000 op, 5818993.33 ns, 2.9095 us/op
+Result  3: 2000 op, 6299793.33 ns, 3.1499 us/op
+Result  4: 2000 op, 5790793.33 ns, 2.8954 us/op
+Result  5: 2000 op, 6383393.33 ns, 3.1917 us/op
+GC:  0 0 0 8844840 10000
 
 
-Mean = 3.0002 us, StdErr = 0.0443 us (1.48%); N = 10, StdDev = 0.1402 us
-Min = 2.8370 us, Q1 = 2.8598 us, Median = 2.9572 us, Q3 = 3.1592 us, Max = 3.1789 us
-IQR = 0.2994 us, LowerFence = 2.4108 us, UpperFence = 3.6082 us
-ConfidenceInterval = [2.7883 us; 3.2122 us] (CI 99.9%), Margin = 0.2119 us (7.06% of Mean)
-Skewness = 0.17, Kurtosis = 1.07
+Mean = 2.6309 us, StdErr = 0.0413 us (1.57%); N = 10, StdDev = 0.1305 us
+Min = 2.4516 us, Q1 = 2.4928 us, Median = 2.7147 us, Q3 = 2.7274 us, Max = 2.7539 us
+IQR = 0.2346 us, LowerFence = 2.1408 us, UpperFence = 3.0794 us
+ConfidenceInterval = [2.4337 us; 2.8282 us] (CI 99.9%), Margin = 0.1973 us (7.50% of Mean)
+Skewness = -0.37, Kurtosis = 1.05
 
 
 // **************************
-// Benchmark: TypeFactory_Benchmark.CreateInstanceWithParametersAndAutoCompletion: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Benchmark: TypeFactory_Benchmark.CreateInstanceWithParametersAndAutoCompletion: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 // *** Generate *** 
 // Result = Success
 // BinariesDirectoryPath = C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0
 
 // *** Build ***
-BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParametersAndAutoCompletion_Job-OAFXIK.bat
+BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParametersAndAutoCompletion_Job-QDCEMC.bat
 // Result = Success
 
 // *** Execute ***
 // Launch: 1 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParametersAndAutoCompletion_Job-OAFXIK.exe 
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParametersAndAutoCompletion_Job-QDCEMC.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
-IdleWarmup  1: 2500 op, 291200.00 ns, 116.4800 ns/op
-IdleWarmup  2: 2500 op, 10400.00 ns, 4.1600 ns/op
-IdleWarmup  3: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleWarmup  4: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleWarmup  5: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleWarmup  6: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleWarmup  7: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleWarmup  8: 2500 op, 6700.00 ns, 2.6800 ns/op
+IdleWarmup  1: 2000 op, 270800.00 ns, 135.4000 ns/op
+IdleWarmup  2: 2000 op, 8700.00 ns, 4.3500 ns/op
+IdleWarmup  3: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleWarmup  4: 2000 op, 5000.00 ns, 2.5000 ns/op
+IdleWarmup  5: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleWarmup  6: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleWarmup  7: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleWarmup  8: 2000 op, 5000.00 ns, 2.5000 ns/op
 
-IdleTarget  1: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  2: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  3: 2500 op, 6600.00 ns, 2.6400 ns/op
-IdleTarget  4: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleTarget  5: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget  6: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  7: 2500 op, 6600.00 ns, 2.6400 ns/op
-IdleTarget  8: 2500 op, 6900.00 ns, 2.7600 ns/op
-IdleTarget  9: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget 10: 2500 op, 7000.00 ns, 2.8000 ns/op
-IdleTarget 11: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget 12: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget 13: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget 14: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget 15: 2500 op, 6700.00 ns, 2.6800 ns/op
+IdleTarget  1: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  2: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  3: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  4: 2000 op, 5000.00 ns, 2.5000 ns/op
+IdleTarget  5: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  6: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleTarget  7: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  8: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  9: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleTarget 10: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 11: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget 12: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleTarget 13: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget 14: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget 15: 2000 op, 4600.00 ns, 2.3000 ns/op
 
-MainWarmup  1: 2500 op, 8085800.00 ns, 3.2343 us/op
-MainWarmup  2: 2500 op, 7880000.00 ns, 3.1520 us/op
+MainWarmup  1: 2000 op, 5684800.00 ns, 2.8424 us/op
+MainWarmup  2: 2000 op, 5662500.00 ns, 2.8313 us/op
 
-MainTarget  1: 2500 op, 8467400.00 ns, 3.3870 us/op
-MainTarget  2: 2500 op, 7799000.00 ns, 3.1196 us/op
-MainTarget  3: 2500 op, 7810600.00 ns, 3.1242 us/op
-MainTarget  4: 2500 op, 8563900.00 ns, 3.4256 us/op
-MainTarget  5: 2500 op, 8021400.00 ns, 3.2086 us/op
+MainTarget  1: 2000 op, 5998600.00 ns, 2.9993 us/op
+MainTarget  2: 2000 op, 5582900.00 ns, 2.7915 us/op
+MainTarget  3: 2000 op, 6159300.00 ns, 3.0797 us/op
+MainTarget  4: 2000 op, 5539400.00 ns, 2.7697 us/op
+MainTarget  5: 2000 op, 6130700.00 ns, 3.0654 us/op
 
-Result  1: 2500 op, 8460640.00 ns, 3.3843 us/op
-Result  2: 2500 op, 7792240.00 ns, 3.1169 us/op
-Result  3: 2500 op, 7803840.00 ns, 3.1215 us/op
-Result  4: 2500 op, 8557140.00 ns, 3.4229 us/op
-Result  5: 2500 op, 8014640.00 ns, 3.2059 us/op
-GC:  0 0 0 0 12500
+Result  1: 2000 op, 5993853.33 ns, 2.9969 us/op
+Result  2: 2000 op, 5578153.33 ns, 2.7891 us/op
+Result  3: 2000 op, 6154553.33 ns, 3.0773 us/op
+Result  4: 2000 op, 5534653.33 ns, 2.7673 us/op
+Result  5: 2000 op, 6125953.33 ns, 3.0630 us/op
+GC:  0 0 0 0 10000
 
 // Launch: 2 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParametersAndAutoCompletion_Job-OAFXIK.exe 
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParametersAndAutoCompletion_Job-QDCEMC.exe 
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
-IdleWarmup  1: 2500 op, 292800.00 ns, 117.1200 ns/op
-IdleWarmup  2: 2500 op, 11800.00 ns, 4.7200 ns/op
-IdleWarmup  3: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleWarmup  4: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleWarmup  5: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleWarmup  6: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleWarmup  7: 2500 op, 6800.00 ns, 2.7200 ns/op
+IdleWarmup  1: 2000 op, 253400.00 ns, 126.7000 ns/op
+IdleWarmup  2: 2000 op, 10200.00 ns, 5.1000 ns/op
+IdleWarmup  3: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleWarmup  4: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleWarmup  5: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleWarmup  6: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleWarmup  7: 2000 op, 4700.00 ns, 2.3500 ns/op
 
-IdleTarget  1: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget  2: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  3: 2500 op, 8200.00 ns, 3.2800 ns/op
-IdleTarget  4: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  5: 2500 op, 6600.00 ns, 2.6400 ns/op
-IdleTarget  6: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget  7: 2500 op, 8200.00 ns, 3.2800 ns/op
-IdleTarget  8: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget  9: 2500 op, 7100.00 ns, 2.8400 ns/op
-IdleTarget 10: 2500 op, 6800.00 ns, 2.7200 ns/op
-IdleTarget 11: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget 12: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget 13: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget 14: 2500 op, 6700.00 ns, 2.6800 ns/op
-IdleTarget 15: 2500 op, 6800.00 ns, 2.7200 ns/op
+IdleTarget  1: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  2: 2000 op, 4800.00 ns, 2.4000 ns/op
+IdleTarget  3: 2000 op, 5000.00 ns, 2.5000 ns/op
+IdleTarget  4: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  5: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  6: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  7: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget  8: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  9: 2000 op, 5800.00 ns, 2.9000 ns/op
+IdleTarget 10: 2000 op, 4900.00 ns, 2.4500 ns/op
+IdleTarget 11: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget 12: 2000 op, 4600.00 ns, 2.3000 ns/op
+IdleTarget 13: 2000 op, 5900.00 ns, 2.9500 ns/op
+IdleTarget 14: 2000 op, 4500.00 ns, 2.2500 ns/op
+IdleTarget 15: 2000 op, 4600.00 ns, 2.3000 ns/op
 
-MainWarmup  1: 2500 op, 8117400.00 ns, 3.2470 us/op
-MainWarmup  2: 2500 op, 7903200.00 ns, 3.1613 us/op
+MainWarmup  1: 2000 op, 5894500.00 ns, 2.9473 us/op
+MainWarmup  2: 2000 op, 5768100.00 ns, 2.8841 us/op
 
-MainTarget  1: 2500 op, 8606400.00 ns, 3.4426 us/op
-MainTarget  2: 2500 op, 7940700.00 ns, 3.1763 us/op
-MainTarget  3: 2500 op, 8014100.00 ns, 3.2056 us/op
-MainTarget  4: 2500 op, 8574200.00 ns, 3.4297 us/op
-MainTarget  5: 2500 op, 7920100.00 ns, 3.1680 us/op
+MainTarget  1: 2000 op, 6197300.00 ns, 3.0987 us/op
+MainTarget  2: 2000 op, 5768000.00 ns, 2.8840 us/op
+MainTarget  3: 2000 op, 6257800.00 ns, 3.1289 us/op
+MainTarget  4: 2000 op, 5731200.00 ns, 2.8656 us/op
+MainTarget  5: 2000 op, 6145500.00 ns, 3.0728 us/op
 
-Result  1: 2500 op, 8599453.33 ns, 3.4398 us/op
-Result  2: 2500 op, 7933753.33 ns, 3.1735 us/op
-Result  3: 2500 op, 8007153.33 ns, 3.2029 us/op
-Result  4: 2500 op, 8567253.33 ns, 3.4269 us/op
-Result  5: 2500 op, 7913153.33 ns, 3.1653 us/op
-GC:  0 0 0 0 12500
+Result  1: 2000 op, 6192453.33 ns, 3.0962 us/op
+Result  2: 2000 op, 5763153.33 ns, 2.8816 us/op
+Result  3: 2000 op, 6252953.33 ns, 3.1265 us/op
+Result  4: 2000 op, 5726353.33 ns, 2.8632 us/op
+Result  5: 2000 op, 6140653.33 ns, 3.0703 us/op
+GC:  0 0 0 0 10000
 
 
 // Run, Diagnostic
-// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParametersAndAutoCompletion_Job-OAFXIK.exe diagnoserAttached
+// Execute: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.4.3.0\TypeFactory_Benchmark_CreateInstanceWithParametersAndAutoCompletion_Job-QDCEMC.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 // GC=Concurrent Workstation
-// Job: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
 // AfterGlobalSetup
 // BeforeMainRun
 // BeforeGlobalCleanup
-Result  1: 2500 op, 8312700.00 ns, 3.3251 us/op
-Result  2: 2500 op, 7555300.00 ns, 3.0221 us/op
-Result  3: 2500 op, 7788400.00 ns, 3.1154 us/op
-Result  4: 2500 op, 8511400.00 ns, 3.4046 us/op
-Result  5: 2500 op, 7850500.00 ns, 3.1402 us/op
-GC:  0 0 0 13717872 12500
+Result  1: 2000 op, 6111040.00 ns, 3.0555 us/op
+Result  2: 2000 op, 5611540.00 ns, 2.8058 us/op
+Result  3: 2000 op, 6236440.00 ns, 3.1182 us/op
+Result  4: 2000 op, 5612140.00 ns, 2.8061 us/op
+Result  5: 2000 op, 6185740.00 ns, 3.0929 us/op
+GC:  0 0 0 10892840 10000
 
 
-Mean = 3.2660 us, StdErr = 0.0427 us (1.31%); N = 10, StdDev = 0.1350 us
-Min = 3.1169 us, Q1 = 3.1653 us, Median = 3.2044 us, Q3 = 3.4229 us, Max = 3.4398 us
-IQR = 0.2576 us, LowerFence = 2.7789 us, UpperFence = 3.8092 us
-ConfidenceInterval = [3.0618 us; 3.4701 us] (CI 99.9%), Margin = 0.2041 us (6.25% of Mean)
-Skewness = 0.26, Kurtosis = 1.06
+Mean = 2.9731 us, StdErr = 0.0427 us (1.44%); N = 10, StdDev = 0.1351 us
+Min = 2.7673 us, Q1 = 2.8632 us, Median = 3.0300 us, Q3 = 3.0773 us, Max = 3.1265 us
+IQR = 0.2141 us, LowerFence = 2.5420 us, UpperFence = 3.3984 us
+ConfidenceInterval = [2.7689 us; 3.1774 us] (CI 99.9%), Margin = 0.2043 us (6.87% of Mean)
+Skewness = -0.36, Kurtosis = 1.26
 
 
 // ***** BenchmarkRunner: Finish  *****
@@ -557,43 +563,43 @@ Skewness = 0.26, Kurtosis = 1.06
   BenchmarkDotNet.Artifacts\results\TypeFactory_Benchmark-measurements.csv
 
 // * Detailed results *
-TypeFactory_Benchmark.CreateInstance: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+TypeFactory_Benchmark.CreateInstance: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 Runtime = Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0; GC = Concurrent Workstation
-Mean = 2.2790 us, StdErr = 0.0209 us (0.92%); N = 10, StdDev = 0.0661 us
-Min = 2.1902 us, Q1 = 2.2551 us, Median = 2.2619 us, Q3 = 2.3073 us, Max = 2.4034 us
-IQR = 0.0521 us, LowerFence = 2.1769 us, UpperFence = 2.3855 us
-ConfidenceInterval = [2.1790 us; 2.3790 us] (CI 99.9%), Margin = 0.1000 us (4.39% of Mean)
-Skewness = 0.41, Kurtosis = 2.04
+Mean = 2.2153 us, StdErr = 0.0643 us (2.90%); N = 10, StdDev = 0.2033 us
+Min = 1.8991 us, Q1 = 2.1536 us, Median = 2.2050 us, Q3 = 2.4451 us, Max = 2.4881 us
+IQR = 0.2915 us, LowerFence = 1.7163 us, UpperFence = 2.8823 us
+ConfidenceInterval = [1.9079 us; 2.5227 us] (CI 99.9%), Margin = 0.3074 us (13.88% of Mean)
+Skewness = -0.11, Kurtosis = 1.65
 
 
-TypeFactory_Benchmark.CreateInstance_PropertyInjection: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+TypeFactory_Benchmark.CreateInstance_PropertyInjection: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 Runtime = Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0; GC = Concurrent Workstation
-Mean = 2.2039 us, StdErr = 0.0257 us (1.17%); N = 10, StdDev = 0.0814 us
-Min = 2.0953 us, Q1 = 2.1622 us, Median = 2.1900 us, Q3 = 2.2631 us, Max = 2.3793 us
-IQR = 0.1009 us, LowerFence = 2.0108 us, UpperFence = 2.4145 us
-ConfidenceInterval = [2.0808 us; 2.3269 us] (CI 99.9%), Margin = 0.1231 us (5.58% of Mean)
-Skewness = 0.72, Kurtosis = 2.65
+Mean = 2.3846 us, StdErr = 0.1407 us (5.90%); N = 10, StdDev = 0.4450 us
+Min = 1.9049 us, Q1 = 2.1725 us, Median = 2.2951 us, Q3 = 2.5086 us, Max = 3.4495 us
+IQR = 0.3362 us, LowerFence = 1.6682 us, UpperFence = 3.0129 us
+ConfidenceInterval = [1.7118 us; 3.0573 us] (CI 99.9%), Margin = 0.6727 us (28.21% of Mean)
+Skewness = 1.12, Kurtosis = 3.56
 
 
-TypeFactory_Benchmark.CreateInstanceWithParameters: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+TypeFactory_Benchmark.CreateInstanceWithParameters: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 Runtime = Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0; GC = Concurrent Workstation
-Mean = 3.0002 us, StdErr = 0.0443 us (1.48%); N = 10, StdDev = 0.1402 us
-Min = 2.8370 us, Q1 = 2.8598 us, Median = 2.9572 us, Q3 = 3.1592 us, Max = 3.1789 us
-IQR = 0.2994 us, LowerFence = 2.4108 us, UpperFence = 3.6082 us
-ConfidenceInterval = [2.7883 us; 3.2122 us] (CI 99.9%), Margin = 0.2119 us (7.06% of Mean)
-Skewness = 0.17, Kurtosis = 1.07
+Mean = 2.6309 us, StdErr = 0.0413 us (1.57%); N = 10, StdDev = 0.1305 us
+Min = 2.4516 us, Q1 = 2.4928 us, Median = 2.7147 us, Q3 = 2.7274 us, Max = 2.7539 us
+IQR = 0.2346 us, LowerFence = 2.1408 us, UpperFence = 3.0794 us
+ConfidenceInterval = [2.4337 us; 2.8282 us] (CI 99.9%), Margin = 0.1973 us (7.50% of Mean)
+Skewness = -0.37, Kurtosis = 1.05
 
 
-TypeFactory_Benchmark.CreateInstanceWithParametersAndAutoCompletion: Job-OAFXIK(InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2)
+TypeFactory_Benchmark.CreateInstanceWithParametersAndAutoCompletion: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 Runtime = Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0; GC = Concurrent Workstation
-Mean = 3.2660 us, StdErr = 0.0427 us (1.31%); N = 10, StdDev = 0.1350 us
-Min = 3.1169 us, Q1 = 3.1653 us, Median = 3.2044 us, Q3 = 3.4229 us, Max = 3.4398 us
-IQR = 0.2576 us, LowerFence = 2.7789 us, UpperFence = 3.8092 us
-ConfidenceInterval = [3.0618 us; 3.4701 us] (CI 99.9%), Margin = 0.2041 us (6.25% of Mean)
-Skewness = 0.26, Kurtosis = 1.06
+Mean = 2.9731 us, StdErr = 0.0427 us (1.44%); N = 10, StdDev = 0.1351 us
+Min = 2.7673 us, Q1 = 2.8632 us, Median = 3.0300 us, Q3 = 3.0773 us, Max = 3.1265 us
+IQR = 0.2141 us, LowerFence = 2.5420 us, UpperFence = 3.3984 us
+ConfidenceInterval = [2.7689 us; 3.1774 us] (CI 99.9%), Margin = 0.2043 us (6.87% of Mean)
+Skewness = -0.36, Kurtosis = 1.26
 
 
-Total time: 00:00:14 (14.13 sec)
+Total time: 00:00:13 (13.5 sec)
 
 // * Summary *
 
@@ -601,7 +607,7 @@ BenchmarkDotNet=v0.10.8, OS=Windows 10 Redstone 2 (10.0.15063)
 Processor=Intel Core i7-3960X CPU 3.30GHz (Ivy Bridge), ProcessorCount=8
 Frequency=10000000 Hz, Resolution=100.0000 ns, Timer=UNKNOWN
   [Host]     : Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
-  Job-OAFXIK : Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
+  Job-QDCEMC : Clr 4.0.30319.42000, 64bit RyuJIT-v4.7.2098.0
 
 
 
@@ -613,7 +619,7 @@ Frequency=10000000 Hz, Resolution=100.0000 ns, Timer=UNKNOWN
 
 // * Hints *
 Outliers
-  TypeFactory_Benchmark.CreateInstance: InvocationCount=2500, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, UnrollFactor=1, WarmupCount=2 -> Something went wrong with outliers: Size(MainTarget) = 10, Size(MainTarget/Outliers) = 1, Size(Result) = 10), RemoveOutliers = True
+  TypeFactory_Benchmark.CreateInstance_PropertyInjection: InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2 -> Something went wrong with outliers: Size(MainTarget) = 10, Size(MainTarget/Outliers) = 1, Size(Result) = 10), RemoveOutliers = True
 
 // * Legends *
   1 us : 1 Microsecond (0.000001 sec)
