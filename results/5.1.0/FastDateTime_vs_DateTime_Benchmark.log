@@ -24,16 +24,17 @@ BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.5.1.0\Fa
 // GC=Concurrent Workstation
 // Job: Job-RCQMUY(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
-IdleWarmup  1: 2000 op, 129900.00 ns, 64.9500 ns/op
-IdleWarmup  2: 2000 op, 4500.00 ns, 2.2500 ns/op
-IdleWarmup  3: 2000 op, 4500.00 ns, 2.2500 ns/op
+IdleWarmup  1: 2000 op, 130900.00 ns, 65.4500 ns/op
+IdleWarmup  2: 2000 op, 4400.00 ns, 2.2000 ns/op
+IdleWarmup  3: 2000 op, 4300.00 ns, 2.1500 ns/op
 IdleWarmup  4: 2000 op, 4400.00 ns, 2.2000 ns/op
-IdleWarmup  5: 2000 op, 4500.00 ns, 2.2500 ns/op
+IdleWarmup  5: 2000 op, 4400.00 ns, 2.2000 ns/op
 IdleWarmup  6: 2000 op, 4400.00 ns, 2.2000 ns/op
+IdleWarmup  7: 2000 op, 4300.00 ns, 2.1500 ns/op
 
-IdleTarget  1: 2000 op, 4400.00 ns, 2.2000 ns/op
+IdleTarget  1: 2000 op, 4300.00 ns, 2.1500 ns/op
 IdleTarget  2: 2000 op, 4400.00 ns, 2.2000 ns/op
-IdleTarget  3: 2000 op, 4500.00 ns, 2.2500 ns/op
+IdleTarget  3: 2000 op, 4400.00 ns, 2.2000 ns/op
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileLoadException: Could not load file or assembly 'System.ValueTuple, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) ---> System.IO.FileLoadException: Could not load file or assembly 'System.ValueTuple, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
    --- End of inner exception stack trace ---
    at BenchmarkDotNet.Mathematics.ConfidenceLevelExtensions.ToPercent(ConfidenceLevel level)
@@ -99,16 +100,15 @@ BuildScript: C:\Source\Catel.Benchmarks\output\release\Catel.Benchmarks.5.1.0\Fa
 // GC=Concurrent Workstation
 // Job: Job-RCQMUY(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
 
-IdleWarmup  1: 2000 op, 132700.00 ns, 66.3500 ns/op
+IdleWarmup  1: 2000 op, 135300.00 ns, 67.6500 ns/op
 IdleWarmup  2: 2000 op, 4500.00 ns, 2.2500 ns/op
-IdleWarmup  3: 2000 op, 4400.00 ns, 2.2000 ns/op
-IdleWarmup  4: 2000 op, 4500.00 ns, 2.2500 ns/op
-IdleWarmup  5: 2000 op, 4500.00 ns, 2.2500 ns/op
+IdleWarmup  3: 2000 op, 4500.00 ns, 2.2500 ns/op
+IdleWarmup  4: 2000 op, 4400.00 ns, 2.2000 ns/op
+IdleWarmup  5: 2000 op, 4400.00 ns, 2.2000 ns/op
 IdleWarmup  6: 2000 op, 4400.00 ns, 2.2000 ns/op
-IdleWarmup  7: 2000 op, 4400.00 ns, 2.2000 ns/op
 
 IdleTarget  1: 2000 op, 4600.00 ns, 2.3000 ns/op
-IdleTarget  2: 2000 op, 4400.00 ns, 2.2000 ns/op
+IdleTarget  2: 2000 op, 4500.00 ns, 2.2500 ns/op
 IdleTarget  3: 2000 op, 4400.00 ns, 2.2000 ns/op
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileLoadException: Could not load file or assembly 'System.ValueTuple, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) ---> System.IO.FileLoadException: Could not load file or assembly 'System.ValueTuple, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
    --- End of inner exception stack trace ---
@@ -170,7 +170,7 @@ FastDateTime_vs_DateTime_Benchmark.FastDateTime_Now: Job-RCQMUY(InvocationCount=
 Runtime = ; GC = 
 There are no any results runs
 
-Total time: 00:00:01 (1.63 sec)
+Total time: 00:00:01 (1.66 sec)
 
 // * Summary *
 
