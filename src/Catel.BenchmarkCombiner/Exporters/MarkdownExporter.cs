@@ -69,30 +69,33 @@ namespace Catel.BenchmarkCombiner.Exporters
                     streamWriter.WriteLine();
                     streamWriter.WriteLine("## Important benchmarks");
 
-                    WriteSummaries("High priority (current version slower than previous one)", exportContext.HighPriority.OrderByDescending(x => x.Percentage), 
+                    WriteSummaries(exportContext, "High priority (current version slower than previous one)", exportContext.HighPriority.OrderByDescending(x => x.Percentage),
                         x => $"v{x.CurrentVersion} is **{x.Percentage:0.00}%** (Δ: {x.DeltaInNanoSeconds:0.000} ns) slower than v{x.PreviousVersion}", streamWriter);
-                    WriteSummaries("Improved (current version faster than previous one)", exportContext.Improved.OrderBy(x => x.Percentage),
+                    WriteSummaries(exportContext, "Improved (current version faster than previous one)", exportContext.Improved.OrderBy(x => x.Percentage),
                         x => $"v{x.CurrentVersion} is **{(x.Percentage * -1):0.00}%** (Δ: {x.DeltaInNanoSeconds:0.000} ns) faster than v{x.PreviousVersion}", streamWriter);
 
                     streamWriter.WriteLine();
 
-                    // Table of contents
-                    streamWriter.WriteLine("## Table of contents");
-
                     var measurementGroups = exportContext.ExportSummaries.ConvertToMeasurementGroups();
 
-                    foreach (var measurementGroup in measurementGroups.GroupBy(x => x.Container))
+                    // Table of contents
+                    if (exportContext.Configuration.GenerateToC)
                     {
-                        streamWriter.WriteLine($"* [{measurementGroup.Key}](#{measurementGroup.Key})");
+                        streamWriter.WriteLine("## Table of contents");
 
-                        foreach (var measurementGroupGroup in measurementGroup)
+                        foreach (var measurementGroup in measurementGroups.GroupBy(x => x.Container))
                         {
-                            var linkId = $"{measurementGroup.Key}_{measurementGroupGroup.Benchmark}";
-                            streamWriter.WriteLine($"  * [{measurementGroupGroup.Benchmark}](#{linkId})");
-                        }
-                    }
+                            streamWriter.WriteLine($"* [{measurementGroup.Key}](#{measurementGroup.Key})");
 
-                    streamWriter.WriteLine();
+                            foreach (var measurementGroupGroup in measurementGroup)
+                            {
+                                var linkId = $"{measurementGroup.Key}_{measurementGroupGroup.Benchmark}";
+                                streamWriter.WriteLine($"  * [{measurementGroupGroup.Benchmark}](#{linkId})");
+                            }
+                        }
+
+                        streamWriter.WriteLine();
+                    }
 
                     // Data
                     foreach (var measurementGroup in measurementGroups.GroupBy(x => x.Container))
@@ -107,10 +110,10 @@ namespace Catel.BenchmarkCombiner.Exporters
                             streamWriter.WriteLine();
 
                             // Performance
-                            WritePerformance(measurementGroupGroup, streamWriter);
+                            WritePerformance(exportContext, measurementGroupGroup, streamWriter);
 
                             // Memory
-                            WriteMemory(measurementGroupGroup, streamWriter);
+                            WriteMemory(exportContext, measurementGroupGroup, streamWriter);
 
                             streamWriter.WriteLine();
                         }
@@ -119,7 +122,7 @@ namespace Catel.BenchmarkCombiner.Exporters
             }
         }
 
-        private void WriteSummaries<TBenchmarkSummary>(string title, IEnumerable<TBenchmarkSummary> summaries, 
+        private void WriteSummaries<TBenchmarkSummary>(ExportContext context, string title, IEnumerable<TBenchmarkSummary> summaries,
             Func<TBenchmarkSummary, string> formatter, StreamWriter streamWriter)
             where TBenchmarkSummary : BenchmarkSummaryBase
         {
@@ -138,23 +141,30 @@ namespace Catel.BenchmarkCombiner.Exporters
                     var benchmarkSummary = collection[i];
 
                     streamWriter.WriteLine($"{i + 1}. [{benchmarkSummary.Name}](#{benchmarkSummary.Key}) {formatter(benchmarkSummary)}\n");
+
+                    if (i >= context.Configuration.MaxItemsInSummaryLists - 1)
+                    {
+                        var itemsLeft = collection.Count - context.Configuration.MaxItemsInSummaryLists;
+                        streamWriter.WriteLine($"Skipping {itemsLeft} items since maximum list length is {context.Configuration.MaxItemsInSummaryLists}");
+                        break;
+                    }
                 }
             }
 
             streamWriter.WriteLine();
         }
 
-        private void WritePerformance(MeasurementGroup measurementGroup, StreamWriter streamWriter)
+        private void WritePerformance(ExportContext context, MeasurementGroup measurementGroup, StreamWriter streamWriter)
         {
             streamWriter.WriteLine($"#### Performance\n");
 
-            WritePerformanceSummaryAsHtml(measurementGroup, streamWriter);
-            WritePerformanceTableAsHtml(measurementGroup, streamWriter);
+            WritePerformanceSummaryAsHtml(context, measurementGroup, streamWriter);
+            WritePerformanceTableAsHtml(context, measurementGroup, streamWriter);
 
             streamWriter.WriteLine();
         }
 
-        private void WritePerformanceSummaryAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter)
+        private void WritePerformanceSummaryAsHtml(ExportContext context, MeasurementGroup measurementGroup, StreamWriter streamWriter)
         {
             var fastest = measurementGroup.Fastest();
             var slowest = measurementGroup.Slowest();
@@ -166,7 +176,7 @@ namespace Catel.BenchmarkCombiner.Exporters
             streamWriter.WriteLine();
         }
 
-        private void WritePerformanceTableAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter)
+        private void WritePerformanceTableAsHtml(ExportContext context, MeasurementGroup measurementGroup, StreamWriter streamWriter)
         {
             streamWriter.WriteLine("<table>");
 
@@ -182,21 +192,21 @@ namespace Catel.BenchmarkCombiner.Exporters
             streamWriter.WriteLine("</tr>");
 
             // Table content - percentage
-            WritePerformanceTableRowAsHtml(measurementGroup, streamWriter, "%", x => x.AverageNanoSecondsPerOperation);
+            WritePerformanceTableRowAsHtml(context, measurementGroup, streamWriter, "%", x => x.AverageNanoSecondsPerOperation);
 
             // Table content - nanoseconds
-            WritePerformanceTableRowAsHtml(measurementGroup, streamWriter, "ns", x => x.AverageNanoSecondsPerOperation);
+            WritePerformanceTableRowAsHtml(context, measurementGroup, streamWriter, "ns", x => x.AverageNanoSecondsPerOperation);
 
             // Table content - microseconds
-            WritePerformanceTableRowAsHtml(measurementGroup, streamWriter, "μs", x => x.AverageNanoSecondsPerOperation.ConvertNanoSecondsToMicroSeconds());
+            WritePerformanceTableRowAsHtml(context, measurementGroup, streamWriter, "μs", x => x.AverageNanoSecondsPerOperation.ConvertNanoSecondsToMicroSeconds());
 
             // Table content - milliseconds
-            WritePerformanceTableRowAsHtml(measurementGroup, streamWriter, "ms", x => x.AverageNanoSecondsPerOperation.ConvertNanoSecondsToMilliSeconds());
+            WritePerformanceTableRowAsHtml(context, measurementGroup, streamWriter, "ms", x => x.AverageNanoSecondsPerOperation.ConvertNanoSecondsToMilliSeconds());
 
             streamWriter.WriteLine("</table>");
         }
 
-        private void WritePerformanceTableRowAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter, string unit, Func<VersionMeasurements, double> valueRetriever)
+        private void WritePerformanceTableRowAsHtml(ExportContext context, MeasurementGroup measurementGroup, StreamWriter streamWriter, string unit, Func<VersionMeasurements, double> valueRetriever)
         {
             streamWriter.WriteLine("<tr>");
 
@@ -213,6 +223,12 @@ namespace Catel.BenchmarkCombiner.Exporters
 
             streamWriter.Write("</td>");
 
+            var threshold = new ExportThreshold
+            {
+                PercentualThreshold = context.Configuration.PercentualPerformanceThreshold,
+                AbsoluteThreshold = context.Configuration.AbsolutePerformanceThreshold,
+            };
+
             VersionMeasurements lastVersion = null;
 
             foreach (var version in measurementGroup.Measurements)
@@ -226,17 +242,21 @@ namespace Catel.BenchmarkCombiner.Exporters
                 if (lastVersion != null)
                 {
                     previousValue = valueRetriever(lastVersion);
+                    deltaAbsolute = currentValue - previousValue;
 
-                    if (currentValue.IsLarger(previousValue))
+                    if (currentValue.IsLarger(previousValue, threshold))
                     {
                         background = IncreasedBackgroundColor;
                     }
-                    else if (currentValue.IsSmaller(previousValue))
+                    else if (currentValue.IsSmaller(previousValue, threshold))
                     {
                         background = DecreasedBackgroundColor;
                     }
-
-                    deltaAbsolute = currentValue - previousValue;
+                    else
+                    {
+                        // Ignore delta values, within the threshold       
+                        deltaAbsolute = null;
+                    }
                 }
 
                 streamWriter.Write($"<td align=\"right\" bgcolor=\"{background}\">");
@@ -271,17 +291,17 @@ namespace Catel.BenchmarkCombiner.Exporters
             streamWriter.WriteLine("</tr>");
         }
 
-        private void WriteMemory(MeasurementGroup measurementGroup, StreamWriter streamWriter)
+        private void WriteMemory(ExportContext context, MeasurementGroup measurementGroup, StreamWriter streamWriter)
         {
             streamWriter.WriteLine($"#### Memory (per 1k operations)\n");
 
-            WriteMemorySummaryAsHtml(measurementGroup, streamWriter);
-            WriteMemoryTableAsHtml(measurementGroup, streamWriter);
+            WriteMemorySummaryAsHtml(context, measurementGroup, streamWriter);
+            WriteMemoryTableAsHtml(context, measurementGroup, streamWriter);
 
             streamWriter.WriteLine();
         }
 
-        private void WriteMemorySummaryAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter)
+        private void WriteMemorySummaryAsHtml(ExportContext context, MeasurementGroup measurementGroup, StreamWriter streamWriter)
         {
             streamWriter.WriteLine("<table>");
 
@@ -295,29 +315,29 @@ namespace Catel.BenchmarkCombiner.Exporters
             // Gen 0
             var leastGen0 = measurementGroup.LeastGen0();
             var mostGen0 = measurementGroup.MostGen0();
-            WriteMemorySummaryLine("Gen 0", leastGen0, mostGen0, streamWriter);
+            WriteMemorySummaryLine(context, "Gen 0", leastGen0, mostGen0, streamWriter);
 
             // Gen 1
             var leastGen1 = measurementGroup.LeastGen1();
             var mostGen1 = measurementGroup.MostGen1();
-            WriteMemorySummaryLine("Gen 1", leastGen1, mostGen1, streamWriter);
+            WriteMemorySummaryLine(context, "Gen 1", leastGen1, mostGen1, streamWriter);
 
             // Gen 2
             var leastGen2 = measurementGroup.LeastGen2();
             var mostGen2 = measurementGroup.MostGen2();
-            WriteMemorySummaryLine("Gen 2", leastGen2, mostGen2, streamWriter);
+            WriteMemorySummaryLine(context, "Gen 2", leastGen2, mostGen2, streamWriter);
 
             // Allocated bytes
             var leastAllocatedBytes = measurementGroup.LeastAllocatedBytes();
             var mostAllocatedBytes = measurementGroup.MostAllocatedBytes();
-            WriteMemorySummaryLine("Allocated Bytes", leastAllocatedBytes, mostAllocatedBytes, streamWriter);
+            WriteMemorySummaryLine(context, "Allocated Bytes", leastAllocatedBytes, mostAllocatedBytes, streamWriter);
 
             streamWriter.WriteLine("</table>");
 
             streamWriter.WriteLine();
         }
 
-        private void WriteMemoryTableAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter)
+        private void WriteMemoryTableAsHtml(ExportContext context, MeasurementGroup measurementGroup, StreamWriter streamWriter)
         {
             streamWriter.WriteLine("<table>");
 
@@ -332,30 +352,30 @@ namespace Catel.BenchmarkCombiner.Exporters
             streamWriter.WriteLine("</tr>");
 
             // Table content - Gen 0
-            WriteMemoryTableRowAsHtml(measurementGroup, streamWriter, "Gen 0", x => x.AverageGen0Per1000Operations);
+            WriteMemoryTableRowAsHtml(context, measurementGroup, streamWriter, "Gen 0", x => x.AverageGen0Per1000Operations);
 
             // Table content - Gen 1
-            WriteMemoryTableRowAsHtml(measurementGroup, streamWriter, "Gen 1", x => x.AverageGen1Per1000Operations);
+            WriteMemoryTableRowAsHtml(context, measurementGroup, streamWriter, "Gen 1", x => x.AverageGen1Per1000Operations);
 
             // Table content - Gen 2
-            WriteMemoryTableRowAsHtml(measurementGroup, streamWriter, "Gen 2", x => x.AverageGen2Per1000Operations);
+            WriteMemoryTableRowAsHtml(context, measurementGroup, streamWriter, "Gen 2", x => x.AverageGen2Per1000Operations);
 
             // Table content - Allocated bytes %
-            WriteMemoryTableRowAsHtml(measurementGroup, streamWriter, "%", x => x.AverageAllocatedBytesPer1000Operations);
+            WriteMemoryTableRowAsHtml(context, measurementGroup, streamWriter, "%", x => x.AverageAllocatedBytesPer1000Operations);
 
             // Table content - Allocated bytes
-            WriteMemoryTableRowAsHtml(measurementGroup, streamWriter, "Allocated Bytes", x => x.AverageAllocatedBytesPer1000Operations);
+            WriteMemoryTableRowAsHtml(context, measurementGroup, streamWriter, "Allocated Bytes", x => x.AverageAllocatedBytesPer1000Operations);
 
             // Table content - Allocated kilo bytes
-            WriteMemoryTableRowAsHtml(measurementGroup, streamWriter, "Allocated Kilobytes", x => x.AverageAllocatedBytesPer1000Operations.ConvertBytesToKilobytes());
+            WriteMemoryTableRowAsHtml(context, measurementGroup, streamWriter, "Allocated Kilobytes", x => x.AverageAllocatedBytesPer1000Operations.ConvertBytesToKilobytes());
 
             // Table content - Allocated mega bytes
-            WriteMemoryTableRowAsHtml(measurementGroup, streamWriter, "Allocated Megabytes", x => x.AverageAllocatedBytesPer1000Operations.ConvertBytesToMegabytes());
+            WriteMemoryTableRowAsHtml(context, measurementGroup, streamWriter, "Allocated Megabytes", x => x.AverageAllocatedBytesPer1000Operations.ConvertBytesToMegabytes());
 
             streamWriter.WriteLine("</table>");
         }
 
-        private void WriteMemoryTableRowAsHtml(MeasurementGroup measurementGroup, StreamWriter streamWriter, string unit, Func<VersionMeasurements, double> valueRetriever)
+        private void WriteMemoryTableRowAsHtml(ExportContext context, MeasurementGroup measurementGroup, StreamWriter streamWriter, string unit, Func<VersionMeasurements, double> valueRetriever)
         {
             streamWriter.WriteLine("<tr>");
 
@@ -372,6 +392,12 @@ namespace Catel.BenchmarkCombiner.Exporters
 
             streamWriter.Write("</td>");
 
+            var threshold = new ExportThreshold
+            {
+                PercentualThreshold = context.Configuration.PercentualMemoryThreshold,
+                AbsoluteThreshold = context.Configuration.AbsoluteMemoryThreshold,
+            };
+
             VersionMeasurements lastVersion = null;
 
             foreach (var version in measurementGroup.Measurements)
@@ -385,17 +411,21 @@ namespace Catel.BenchmarkCombiner.Exporters
                 if (lastVersion != null)
                 {
                     previousValue = valueRetriever(lastVersion);
+                    deltaAbsolute = currentValue - previousValue;
 
-                    if (currentValue.IsLarger(previousValue))
+                    if (currentValue.IsLarger(previousValue, null))
                     {
                         background = IncreasedBackgroundColor;
                     }
-                    else if (currentValue.IsSmaller(previousValue))
+                    else if (currentValue.IsSmaller(previousValue, null))
                     {
                         background = DecreasedBackgroundColor;
                     }
-
-                    deltaAbsolute = currentValue - previousValue;
+                    else
+                    {
+                        // Ignore delta values, within the threshold       
+                        deltaAbsolute = null;
+                    }
                 }
 
                 streamWriter.Write($"<td align=\"right\" bgcolor=\"{background}\">");
@@ -430,7 +460,7 @@ namespace Catel.BenchmarkCombiner.Exporters
             streamWriter.WriteLine("</tr>");
         }
 
-        private void WriteMemorySummaryLine(string title, VersionMeasurements least, VersionMeasurements most, StreamWriter streamWriter)
+        private void WriteMemorySummaryLine(ExportContext context, string title, VersionMeasurements least, VersionMeasurements most, StreamWriter streamWriter)
         {
             var hasMost = most != null;
             var leastValue = hasMost ? least.Version : "-";

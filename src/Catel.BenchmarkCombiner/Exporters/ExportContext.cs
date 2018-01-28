@@ -13,8 +13,11 @@ namespace Catel.BenchmarkCombiner.Exporters
 
     public class ExportContext
     {
-        public ExportContext(string exportDirectory, List<ExportSummary> exportSummaries)
+        public ExportContext(ExportConfig config, string exportDirectory, List<ExportSummary> exportSummaries)
         {
+            Argument.IsNotNull(() => config);
+
+            Configuration = config;
             HostEnvironmentInfo = new List<string>();
             HighPriority = new List<SlowerBenchmarkSummary>();
             //LowPriority = new List<SlowerBenchmarkSummary>();
@@ -23,6 +26,8 @@ namespace Catel.BenchmarkCombiner.Exporters
             ExportDirectory = exportDirectory;
             ExportSummaries = exportSummaries;
         }
+
+        public ExportConfig Configuration { get; private set; }
 
         public List<string> HostEnvironmentInfo { get; private set; }
 

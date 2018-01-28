@@ -123,7 +123,16 @@ namespace Catel.BenchmarkCombiner
             var summaries = FindExportSummaries(exportDirectory);
             if (summaries.Count > 0)
             {
-                var exportContext = new ExportContext(exportDirectory, summaries)
+                // TODO: Consider reading from yaml in the future
+                var config = new ExportConfig
+                {
+                    GenerateToC = false,
+                    AbsolutePerformanceThreshold = 500,
+                    PercentualPerformanceThreshold = 3,
+                    MaxItemsInSummaryLists = 25
+                };
+
+                var exportContext = new ExportContext(config, exportDirectory, summaries)
                 {
                     BenchmarkDuration = benchmarkDuration
                 };
@@ -240,12 +249,12 @@ namespace Catel.BenchmarkCombiner
 
                     BenchmarkSummaryBase benchmarkSummary = null;
 
-                    if (currentValue.IsLarger(previousValue))
+                    if (currentValue.IsLarger(previousValue, null))
                     {
                         benchmarkSummary = new SlowerBenchmarkSummary(previousVersion.Version, currentVersion.Version, 
                             previousValue, currentValue);
                     }
-                    else if (currentValue.IsSmaller(previousValue))
+                    else if (currentValue.IsSmaller(previousValue, null))
                     {
                         benchmarkSummary = new FasterBenchmarkSummary(previousVersion.Version, currentVersion.Version,
                             previousValue, currentValue);
