@@ -1,6 +1,6 @@
 # Benchmarks
 
-Benchmark report generated on 28-jan-2018 22:31
+Benchmark report generated on 28-jan-2018 22:36
 
 All timings are average time per operation (thus the time represents a single operation)
 
@@ -58,13 +58,13 @@ Processor=Intel Core i7-3960X CPU 3.30GHz (Ivy Bridge), ProcessorCount=8
 
 4 item(s)
 
-1. [TagHelper_Benchmark::ToString_](#TagHelper_Benchmark_ToString_) v5.3.0 is **66053,04%** (Δ: -334,462 ns) faster than v5.2.0
+1. [TypeExtensions_Benchmark::GetCollectionElementType](#TypeExtensions_Benchmark_GetCollectionElementType) v5.3.0 is **62,00%** (Δ: -604,898 ns) faster than v5.2.0
 
-2. [Type_ReflectionExtensions_Benchmark::GetCustomAttributeEx_Inherit](#Type_ReflectionExtensions_Benchmark_GetCustomAttributeEx_Inherit) v5.3.0 is **45238,19%** (Δ: -429,859 ns) faster than v5.2.0
+2. [Type_ReflectionExtensions_Benchmark::GetCustomAttributesEx](#Type_ReflectionExtensions_Benchmark_GetCustomAttributesEx) v5.3.0 is **8,88%** (Δ: -346,828 ns) faster than v5.2.0
 
-3. [Type_ReflectionExtensions_Benchmark::GetCustomAttributesEx](#Type_ReflectionExtensions_Benchmark_GetCustomAttributesEx) v5.3.0 is **13551,85%** (Δ: -346,828 ns) faster than v5.2.0
+3. [Type_ReflectionExtensions_Benchmark::GetCustomAttributeEx_Inherit](#Type_ReflectionExtensions_Benchmark_GetCustomAttributeEx_Inherit) v5.3.0 is **4,08%** (Δ: -429,859 ns) faster than v5.2.0
 
-4. [TypeExtensions_Benchmark::GetCollectionElementType](#TypeExtensions_Benchmark_GetCollectionElementType) v5.3.0 is **5901,31%** (Δ: -604,898 ns) faster than v5.2.0
+4. [TagHelper_Benchmark::ToString_](#TagHelper_Benchmark_ToString_) v5.3.0 is **1,69%** (Δ: -334,462 ns) faster than v5.2.0
 
 
 

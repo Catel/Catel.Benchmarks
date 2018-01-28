@@ -19,7 +19,10 @@ namespace Catel.BenchmarkCombiner.Models
             CurrentVersionInNanoSeconds = currentVersionInNanoSeconds;
 
             DeltaInNanoSeconds = currentVersionInNanoSeconds - previousVersionInNanoSeconds;
-            Percentage = (previousVersionInNanoSeconds / 100) * DeltaInNanoSeconds;
+
+            var percentage = (currentVersionInNanoSeconds * 100d) / previousVersionInNanoSeconds;
+            var deltaPercentage = percentage - 100d;
+            DeltaInPercentage = deltaPercentage;
         }
 
         public string PreviousVersion { get; private set; }
@@ -30,7 +33,7 @@ namespace Catel.BenchmarkCombiner.Models
 
         public double CurrentVersionInNanoSeconds { get; private set; }
 
-        public double Percentage { get; private set; }
+        public double DeltaInPercentage { get; private set; }
 
         public double DeltaInNanoSeconds { get; private set; }
     }
