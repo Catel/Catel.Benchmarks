@@ -127,8 +127,8 @@ namespace Catel.BenchmarkCombiner
                 var config = new ExportConfig
                 {
                     GenerateToC = false,
-                    AbsolutePerformanceThreshold = 500,
-                    PercentualPerformanceThreshold = 3,
+                    AbsolutePerformanceThreshold = 250,
+                    PercentualPerformanceThreshold = 1,
                     MaxItemsInSummaryLists = 25
                 };
 
@@ -137,14 +137,27 @@ namespace Catel.BenchmarkCombiner
                     BenchmarkDuration = benchmarkDuration
                 };
 
+                var threshold = new ExportThreshold
+                {
+                    PercentualThreshold = config.PercentualPerformanceThreshold,
+                    AbsoluteThreshold = config.AbsolutePerformanceThreshold
+                };
+
                 Log.Info("Calculating important benchmark summaries");
 
                 var measurementGroups = exportContext.ExportSummaries.ConvertToMeasurementGroups();
 
                 var benchmarkSummaries = CalculateBenchmarkSummaries(measurementGroups);
 
-                exportContext.HighPriority.AddRange(benchmarkSummaries.Where(x => x is SlowerBenchmarkSummary).Cast<SlowerBenchmarkSummary>());
-                exportContext.Improved.AddRange(benchmarkSummaries.Where(x => x is FasterBenchmarkSummary).Cast<FasterBenchmarkSummary>());
+                var highPriority = (from benchmarkSummary in benchmarkSummaries.Where(x => x is SlowerBenchmarkSummary).Cast<SlowerBenchmarkSummary>()
+                                    where !benchmarkSummary.PreviousVersionInNanoSeconds.AreEqual(benchmarkSummary.CurrentVersionInNanoSeconds, threshold)
+                                    select benchmarkSummary).ToList();
+                exportContext.HighPriority.AddRange(highPriority);
+
+                var improved = (from benchmarkSummary in benchmarkSummaries.Where(x => x is FasterBenchmarkSummary).Cast<FasterBenchmarkSummary>()
+                                where !benchmarkSummary.PreviousVersionInNanoSeconds.AreEqual(benchmarkSummary.CurrentVersionInNanoSeconds, threshold)
+                                select benchmarkSummary).ToList();
+                exportContext.Improved.AddRange(improved);
 
                 var hostEnvironmentInfo = HostEnvironmentInfo.GetCurrent();
                 exportContext.HostEnvironmentInfo.AddRange(hostEnvironmentInfo.ToFormattedString());
@@ -241,17 +254,17 @@ namespace Catel.BenchmarkCombiner
                     var previousValue = previousVersion.AverageNanoSecondsPerOperation;
                     var currentValue = currentVersion.AverageNanoSecondsPerOperation;
 
-	                var percentage = (previousValue / 100) * (currentValue - previousValue);
-	                if (percentage < 1d && percentage > -1d)
-	                {
-		                continue;
-	                }
+                    var percentage = (previousValue / 100) * (currentValue - previousValue);
+                    if (percentage < 1d && percentage > -1d)
+                    {
+                        continue;
+                    }
 
                     BenchmarkSummaryBase benchmarkSummary = null;
 
                     if (currentValue.IsLarger(previousValue, null))
                     {
-                        benchmarkSummary = new SlowerBenchmarkSummary(previousVersion.Version, currentVersion.Version, 
+                        benchmarkSummary = new SlowerBenchmarkSummary(previousVersion.Version, currentVersion.Version,
                             previousValue, currentValue);
                     }
                     else if (currentValue.IsSmaller(previousValue, null))

@@ -69,8 +69,8 @@ namespace Catel.BenchmarkCombiner.Exporters
                     streamWriter.WriteLine();
                     streamWriter.WriteLine("## Important benchmarks");
 
-                    WriteSummaries(exportContext, "High priority (current version slower than previous one)", exportContext.HighPriority.OrderByDescending(x => x.Percentage),
-                        x => $"v{x.CurrentVersion} is **{x.Percentage:0.00}%** (Δ: {x.DeltaInNanoSeconds:0.000} ns) slower than v{x.PreviousVersion}", streamWriter);
+                    WriteSummaries(exportContext, "High priority (current version slower than previous one)", exportContext.HighPriority.OrderByDescending(x => x.DeltaInPercentage),
+                        x => $"v{x.CurrentVersion} is **{x.DeltaInPercentage:0.00}%** (Δ: {x.DeltaInNanoSeconds:0.000} ns) slower than v{x.PreviousVersion}", streamWriter);
                     WriteSummaries(exportContext, "Improved (current version faster than previous one)", exportContext.Improved.OrderBy(x => x.Percentage),
                         x => $"v{x.CurrentVersion} is **{(x.Percentage * -1):0.00}%** (Δ: {x.DeltaInNanoSeconds:0.000} ns) faster than v{x.PreviousVersion}", streamWriter);
 
