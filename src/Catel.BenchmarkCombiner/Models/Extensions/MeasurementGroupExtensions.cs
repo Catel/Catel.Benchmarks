@@ -24,6 +24,47 @@ namespace Catel.BenchmarkCombiner
             return ordered.FirstOrDefault();
         }
 
+        public static bool UsesNoGenMemory(this MeasurementGroup group)
+        {
+            foreach (var version in group.Measurements)
+            {
+                if (version.AverageGen0Per1000Operations > 0)
+                {
+                    return false;
+                }
+
+                if (version.AverageGen1Per1000Operations > 0)
+                {
+                    return false;
+                }
+
+                if (version.AverageGen2Per1000Operations > 0)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public static bool UsesNoMemory(this MeasurementGroup group)
+        {
+            foreach (var version in group.Measurements)
+            {
+                if (version.AverageAllocatedBytesPer1000Operations > 0)
+                {
+                    return false;
+                }
+            }
+
+            if (!group.UsesNoGenMemory())
+            {
+                return false;
+            }
+
+            return true;
+        }
+
         public static VersionMeasurements MostGen0(this MeasurementGroup group)
         {
             var ordered = group.GetOrderedMeasurements(x => x.AverageGen0Per1000Operations);
