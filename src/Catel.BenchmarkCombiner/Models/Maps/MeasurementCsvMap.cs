@@ -9,7 +9,7 @@ namespace Catel.BenchmarkCombiner.Models.Maps
 {
     using CsvHelper.Configuration;
 
-    public class MeasurementCsvMap : CsvClassMap<Measurement>
+    public class MeasurementCsvMap : ClassMap<Measurement>
     {
         public MeasurementCsvMap()
         {

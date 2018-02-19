@@ -193,12 +193,11 @@ namespace Catel.BenchmarkCombiner
 
                 if (Directory.Exists(summaryOutputDirectory))
                 {
-                    var factory = new CsvFactory();
-                    var configuration = new CsvConfiguration
+                    var configuration = new Configuration
                     {
                         Delimiter = ";",
                         CultureInfo = new CultureInfo("en-US"),
-                        IgnoreHeaderWhiteSpace = false
+                        TrimOptions = TrimOptions.InsideQuotes
                     };
 
                     configuration.RegisterClassMap<MeasurementCsvMap>();
@@ -209,7 +208,7 @@ namespace Catel.BenchmarkCombiner
 
                         using (var stream = new FileStream(measurementsCsvFile, FileMode.Open, FileAccess.Read))
                         {
-                            using (var csvReader = factory.CreateReader(new StreamReader(stream), configuration))
+                            using (var csvReader = new CsvReader(new StreamReader(stream), configuration))
                             {
                                 while (csvReader.Read())
                                 {
