@@ -6,7 +6,7 @@
 
 using System.Reflection;
 
-// All other assembly info is defined in SharedAssembly.cs
+// All other assembly info is defined in SolutionAssemblyInfo.cs
 
 [assembly: AssemblyTitle("Catel.BenchmarkCombiner")]
 [assembly: AssemblyProduct("Catel.BenchmarkCombiner")]

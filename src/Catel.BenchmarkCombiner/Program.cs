@@ -43,8 +43,8 @@ namespace Catel.BenchmarkCombiner
             // have to run this one and everything will be combined
 
             var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            var outputDirectory = Path.GetFullPath(Path.Combine(baseDirectory, ".."));
-            var exportDirectory = Path.GetFullPath(Path.Combine(baseDirectory, "..", "..", "..", "results"));
+            var outputDirectory = Path.GetFullPath(Path.Combine(baseDirectory, "..", ".."));
+            var exportDirectory = Path.GetFullPath(Path.Combine(baseDirectory, "..", "..", "..", "..", "results"));
 
             var benchmarkDuration = TimeSpan.Zero;
 
@@ -89,8 +89,8 @@ namespace Catel.BenchmarkCombiner
 
         static bool RunBenchmarksForSpecificVersion(string directory)
         {
-            var exe = Path.Combine(directory, "Catel.Benchmarks.exe");
-            if (!File.Exists(exe))
+            var exe = Directory.GetFiles(directory, "Catel.Benchmarks.*.exe", SearchOption.AllDirectories).FirstOrDefault();
+            if (exe == null)
             {
                 return false;
             }

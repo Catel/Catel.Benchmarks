@@ -16,7 +16,7 @@ using System.Resources;
 ////[assembly: AssemblyDescription("DEFINED IN ACTUAL ASSEMBLYINFO")]
 
 [assembly: AssemblyCompany("CatenaLogic")]
-[assembly: AssemblyCopyright("Copyright © CatenaLogic 2010 - 2017")]
+[assembly: AssemblyCopyright("Copyright © CatenaLogic 2010 - 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: NeutralResourcesLanguage("en-US")]

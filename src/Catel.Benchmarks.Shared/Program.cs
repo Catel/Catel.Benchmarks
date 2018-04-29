@@ -55,8 +55,12 @@ namespace Catel.Benchmarks
         private static void CopyArtifacts()
         {
             var tempOutputFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "BenchmarkDotNet.Artifacts");
+            if (!Directory.Exists(tempOutputFolder))
+            {
+                tempOutputFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "BenchmarkDotNet.Artifacts");
+            }
 
-            var resultsFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "results", IdentifierHelper.GetIdentifier());
+            var resultsFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "..", "results", IdentifierHelper.GetIdentifier());
             resultsFolder = Path.GetFullPath(resultsFolder);
 
             CopyDirectory(tempOutputFolder, resultsFolder);
