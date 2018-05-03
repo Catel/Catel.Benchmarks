@@ -213,7 +213,10 @@ namespace Catel.BenchmarkCombiner
                                 while (csvReader.Read())
                                 {
                                     var record = csvReader.GetRecord<Measurement>();
-                                    measurements.Add(record);
+                                    if (record != null)
+                                    {
+                                        measurements.Add(record);
+                                    }
                                 }
                             }
                         }

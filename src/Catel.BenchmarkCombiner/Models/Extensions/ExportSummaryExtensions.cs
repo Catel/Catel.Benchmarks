@@ -25,8 +25,7 @@ namespace Catel.BenchmarkCombiner
                     {
                         var key = $"{containerGroup.Key}_{benchmarkGroup.Key}";
 
-                        MeasurementGroup measurementGroup = null;
-                        if (!measurementGroups.TryGetValue(key, out measurementGroup))
+                        if (!measurementGroups.TryGetValue(key, out var measurementGroup))
                         {
                             measurementGroup = new MeasurementGroup
                             {
