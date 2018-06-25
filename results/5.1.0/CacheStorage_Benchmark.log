@@ -1,747 +1,1219 @@
 // ***** BenchmarkRunner: Start   *****
 // Found benchmarks:
-//   CacheStorage_Benchmark.GetValue_From_An_Already_Initialized_Cache: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
-//   CacheStorage_Benchmark.Overwrite_An_Existing_Cached_Value: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
-//   CacheStorage_Benchmark.GetFromCacheOrFetch: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
-//   CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
-//   CacheStorage_Benchmark.RemoveItem_From_Cache: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
-//   CacheStorage_Benchmark.Clear_Cache: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+//   CacheStorage_Benchmark.GetValue_From_An_Already_Initialized_Cache: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
+//   CacheStorage_Benchmark.Overwrite_An_Existing_Cached_Value: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
+//   CacheStorage_Benchmark.GetFromCacheOrFetch: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
+//   CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
+//   CacheStorage_Benchmark.RemoveItem_From_Cache: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
+//   CacheStorage_Benchmark.Clear_Cache: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 
 // Validating benchmarks:
 No column providers defined, result table will be empty.
 // ***** Building 6 benchmark(s) in Parallel: Start   *****
-// ***** Done, took 00:00:00 (0.07 sec)   *****
+// ***** Done, took 00:00:00 (0.08 sec)   *****
 // **************************
-// Benchmark: CacheStorage_Benchmark.GetValue_From_An_Already_Initialized_Cache: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Benchmark: CacheStorage_Benchmark.GetValue_From_An_Already_Initialized_Cache: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 // *** Execute ***
-// Launch: 1 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache_Job-QDCEMC.exe 
+// Launch: 1 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache_Job-BSOCTM.exe 
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
 // GC=Concurrent Workstation
-// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 2000 op, 482500.00 ns, 241.2500 ns/op
-IdleWarmup  2: 2000 op, 13800.00 ns, 6.9000 ns/op
-IdleWarmup  3: 2000 op, 8600.00 ns, 4.3000 ns/op
-IdleWarmup  4: 2000 op, 7900.00 ns, 3.9500 ns/op
-IdleWarmup  5: 2000 op, 7600.00 ns, 3.8000 ns/op
-IdleWarmup  6: 2000 op, 7600.00 ns, 3.8000 ns/op
-IdleWarmup  7: 2000 op, 7100.00 ns, 3.5500 ns/op
-IdleWarmup  8: 2000 op, 6900.00 ns, 3.4500 ns/op
-IdleWarmup  9: 2000 op, 6600.00 ns, 3.3000 ns/op
-IdleWarmup 10: 2000 op, 6300.00 ns, 3.1500 ns/op
+IdleWarmup  1: 5000 op, 254900.00 ns, 50.9800 ns/op
+IdleWarmup  2: 5000 op, 18700.00 ns, 3.7400 ns/op
+IdleWarmup  3: 5000 op, 14900.00 ns, 2.9800 ns/op
+IdleWarmup  4: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleWarmup  5: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleWarmup  6: 5000 op, 14900.00 ns, 2.9800 ns/op
+IdleWarmup  7: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleWarmup  8: 5000 op, 15000.00 ns, 3.0000 ns/op
 
-IdleTarget  1: 2000 op, 6000.00 ns, 3.0000 ns/op
-IdleTarget  2: 2000 op, 5900.00 ns, 2.9500 ns/op
-IdleTarget  3: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleTarget  4: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget  5: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget  6: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleTarget  7: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget  8: 2000 op, 5600.00 ns, 2.8000 ns/op
-IdleTarget  9: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget 10: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget 11: 2000 op, 5000.00 ns, 2.5000 ns/op
-IdleTarget 12: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleTarget 13: 2000 op, 5000.00 ns, 2.5000 ns/op
-IdleTarget 14: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget 15: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget 16: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleTarget 17: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget 18: 2000 op, 7600.00 ns, 3.8000 ns/op
-IdleTarget 19: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget 20: 2000 op, 5300.00 ns, 2.6500 ns/op
+IdleTarget  1: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget  2: 5000 op, 14400.00 ns, 2.8800 ns/op
+IdleTarget  3: 5000 op, 14600.00 ns, 2.9200 ns/op
+IdleTarget  4: 5000 op, 14100.00 ns, 2.8200 ns/op
+IdleTarget  5: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget  6: 5000 op, 14600.00 ns, 2.9200 ns/op
+IdleTarget  7: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget  8: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget  9: 5000 op, 15100.00 ns, 3.0200 ns/op
+IdleTarget 10: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleTarget 11: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleTarget 12: 5000 op, 25100.00 ns, 5.0200 ns/op
+IdleTarget 13: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget 14: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget 15: 5000 op, 14900.00 ns, 2.9800 ns/op
 
-MainWarmup  1: 2000 op, 572900.00 ns, 286.4500 ns/op
-MainWarmup  2: 2000 op, 572600.00 ns, 286.3000 ns/op
+MainWarmup  1: 5000 op, 1278100.00 ns, 255.6200 ns/op
+MainWarmup  2: 5000 op, 1224300.00 ns, 244.8600 ns/op
 
 // BeforeMainRun
-MainTarget  1: 2000 op, 593000.00 ns, 296.5000 ns/op
-MainTarget  2: 2000 op, 686600.00 ns, 343.3000 ns/op
-MainTarget  3: 2000 op, 768000.00 ns, 384.0000 ns/op
-MainTarget  4: 2000 op, 813200.00 ns, 406.6000 ns/op
-MainTarget  5: 2000 op, 828600.00 ns, 414.3000 ns/op
+MainTarget  1: 5000 op, 1183200.00 ns, 236.6400 ns/op
+MainTarget  2: 5000 op, 1178100.00 ns, 235.6200 ns/op
+MainTarget  3: 5000 op, 1244600.00 ns, 248.9200 ns/op
+MainTarget  4: 5000 op, 1220700.00 ns, 244.1400 ns/op
+MainTarget  5: 5000 op, 1222300.00 ns, 244.4600 ns/op
+MainTarget  6: 5000 op, 1234600.00 ns, 246.9200 ns/op
+MainTarget  7: 5000 op, 1258900.00 ns, 251.7800 ns/op
+MainTarget  8: 5000 op, 1254800.00 ns, 250.9600 ns/op
+MainTarget  9: 5000 op, 1246000.00 ns, 249.2000 ns/op
+MainTarget 10: 5000 op, 1254300.00 ns, 250.8600 ns/op
 
 // AfterMainRun
-Result  1: 2000 op, 587545.00 ns, 293.7725 ns/op
-Result  2: 2000 op, 681145.00 ns, 340.5725 ns/op
-Result  3: 2000 op, 762545.00 ns, 381.2725 ns/op
-Result  4: 2000 op, 807745.00 ns, 403.8725 ns/op
-Result  5: 2000 op, 823145.00 ns, 411.5725 ns/op
-GC:  0 0 0 245760 2000
+Result  1: 5000 op, 1167906.67 ns, 233.5813 ns/op
+Result  2: 5000 op, 1162806.67 ns, 232.5613 ns/op
+Result  3: 5000 op, 1229306.67 ns, 245.8613 ns/op
+Result  4: 5000 op, 1205406.67 ns, 241.0813 ns/op
+Result  5: 5000 op, 1207006.67 ns, 241.4013 ns/op
+Result  6: 5000 op, 1219306.67 ns, 243.8613 ns/op
+Result  7: 5000 op, 1243606.67 ns, 248.7213 ns/op
+Result  8: 5000 op, 1239506.67 ns, 247.9013 ns/op
+Result  9: 5000 op, 1230706.67 ns, 246.1413 ns/op
+Result 10: 5000 op, 1239006.67 ns, 247.8013 ns/op
+GC:  0 0 0 606208 5000
 
 // AfterAll
-// Launch: 2 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache_Job-QDCEMC.exe diagnoserAttached
+// Launch: 2 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache_Job-BSOCTM.exe 
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
 // GC=Concurrent Workstation
-// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 2000 op, 321400.00 ns, 160.7000 ns/op
-IdleWarmup  2: 2000 op, 7400.00 ns, 3.7000 ns/op
-IdleWarmup  3: 2000 op, 4400.00 ns, 2.2000 ns/op
-IdleWarmup  4: 2000 op, 4600.00 ns, 2.3000 ns/op
-IdleWarmup  5: 2000 op, 4600.00 ns, 2.3000 ns/op
-IdleWarmup  6: 2000 op, 4600.00 ns, 2.3000 ns/op
-IdleWarmup  7: 2000 op, 4400.00 ns, 2.2000 ns/op
+IdleWarmup  1: 5000 op, 250200.00 ns, 50.0400 ns/op
+IdleWarmup  2: 5000 op, 16800.00 ns, 3.3600 ns/op
+IdleWarmup  3: 5000 op, 27000.00 ns, 5.4000 ns/op
+IdleWarmup  4: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleWarmup  5: 5000 op, 14600.00 ns, 2.9200 ns/op
+IdleWarmup  6: 5000 op, 14900.00 ns, 2.9800 ns/op
+IdleWarmup  7: 5000 op, 14900.00 ns, 2.9800 ns/op
 
-IdleTarget  1: 2000 op, 4700.00 ns, 2.3500 ns/op
-IdleTarget  2: 2000 op, 4500.00 ns, 2.2500 ns/op
-IdleTarget  3: 2000 op, 4800.00 ns, 2.4000 ns/op
-IdleTarget  4: 2000 op, 5000.00 ns, 2.5000 ns/op
-IdleTarget  5: 2000 op, 4600.00 ns, 2.3000 ns/op
-IdleTarget  6: 2000 op, 4300.00 ns, 2.1500 ns/op
-IdleTarget  7: 2000 op, 4500.00 ns, 2.2500 ns/op
-IdleTarget  8: 2000 op, 4600.00 ns, 2.3000 ns/op
-IdleTarget  9: 2000 op, 4700.00 ns, 2.3500 ns/op
-IdleTarget 10: 2000 op, 4800.00 ns, 2.4000 ns/op
-IdleTarget 11: 2000 op, 6800.00 ns, 3.4000 ns/op
-IdleTarget 12: 2000 op, 4900.00 ns, 2.4500 ns/op
-IdleTarget 13: 2000 op, 4800.00 ns, 2.4000 ns/op
-IdleTarget 14: 2000 op, 4700.00 ns, 2.3500 ns/op
-IdleTarget 15: 2000 op, 4700.00 ns, 2.3500 ns/op
+IdleTarget  1: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleTarget  2: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleTarget  3: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleTarget  4: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleTarget  5: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleTarget  6: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleTarget  7: 5000 op, 14400.00 ns, 2.8800 ns/op
+IdleTarget  8: 5000 op, 14400.00 ns, 2.8800 ns/op
+IdleTarget  9: 5000 op, 14400.00 ns, 2.8800 ns/op
+IdleTarget 10: 5000 op, 14400.00 ns, 2.8800 ns/op
+IdleTarget 11: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget 12: 5000 op, 16600.00 ns, 3.3200 ns/op
+IdleTarget 13: 5000 op, 14900.00 ns, 2.9800 ns/op
+IdleTarget 14: 5000 op, 17000.00 ns, 3.4000 ns/op
+IdleTarget 15: 5000 op, 14900.00 ns, 2.9800 ns/op
 
-MainWarmup  1: 2000 op, 577200.00 ns, 288.6000 ns/op
-MainWarmup  2: 2000 op, 541900.00 ns, 270.9500 ns/op
+MainWarmup  1: 5000 op, 1269700.00 ns, 253.9400 ns/op
+MainWarmup  2: 5000 op, 1216400.00 ns, 243.2800 ns/op
 
 // BeforeMainRun
-MainTarget  1: 2000 op, 592500.00 ns, 296.2500 ns/op
-MainTarget  2: 2000 op, 579900.00 ns, 289.9500 ns/op
-MainTarget  3: 2000 op, 570800.00 ns, 285.4000 ns/op
-MainTarget  4: 2000 op, 568700.00 ns, 284.3500 ns/op
-MainTarget  5: 2000 op, 588300.00 ns, 294.1500 ns/op
+MainTarget  1: 5000 op, 1216200.00 ns, 243.2400 ns/op
+MainTarget  2: 5000 op, 1239500.00 ns, 247.9000 ns/op
+MainTarget  3: 5000 op, 1229700.00 ns, 245.9400 ns/op
+MainTarget  4: 5000 op, 1199300.00 ns, 239.8600 ns/op
+MainTarget  5: 5000 op, 1297400.00 ns, 259.4800 ns/op
+MainTarget  6: 5000 op, 1199200.00 ns, 239.8400 ns/op
+MainTarget  7: 5000 op, 1229000.00 ns, 245.8000 ns/op
+MainTarget  8: 5000 op, 1217100.00 ns, 243.4200 ns/op
+MainTarget  9: 5000 op, 1194400.00 ns, 238.8800 ns/op
+MainTarget 10: 5000 op, 1216300.00 ns, 243.2600 ns/op
 
 // AfterMainRun
-Result  1: 2000 op, 587673.33 ns, 293.8367 ns/op
-Result  2: 2000 op, 575073.33 ns, 287.5367 ns/op
-Result  3: 2000 op, 565973.33 ns, 282.9867 ns/op
-Result  4: 2000 op, 563873.33 ns, 281.9367 ns/op
-Result  5: 2000 op, 583473.33 ns, 291.7367 ns/op
-GC:  0 0 0 245760 2000
+Result  1: 5000 op, 1201400.00 ns, 240.2800 ns/op
+Result  2: 5000 op, 1224700.00 ns, 244.9400 ns/op
+Result  3: 5000 op, 1214900.00 ns, 242.9800 ns/op
+Result  4: 5000 op, 1184500.00 ns, 236.9000 ns/op
+Result  5: 5000 op, 1184400.00 ns, 236.8800 ns/op
+Result  6: 5000 op, 1214200.00 ns, 242.8400 ns/op
+Result  7: 5000 op, 1202300.00 ns, 240.4600 ns/op
+Result  8: 5000 op, 1179600.00 ns, 235.9200 ns/op
+Result  9: 5000 op, 1201500.00 ns, 240.3000 ns/op
+GC:  0 0 0 606208 5000
 
 // AfterAll
-
-Mean = 326.9096 ns, StdErr = 16.7213 ns (5.11%); N = 10, StdDev = 52.8774 ns
-Min = 281.9367 ns, Q1 = 287.5367 ns, Median = 293.8046 ns, Q3 = 381.2725 ns, Max = 411.5725 ns
-IQR = 93.7358 ns, LowerFence = 146.9329 ns, UpperFence = 521.8763 ns
-ConfidenceInterval = [246.9666 ns; 406.8526 ns] (CI 99.9%), Margin = 79.9430 ns (24.45% of Mean)
-Skewness = 0.59, Kurtosis = 1.4, MValue = 2.67
-
-// **************************
-// Benchmark: CacheStorage_Benchmark.Overwrite_An_Existing_Cached_Value: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
-// *** Execute ***
-// Launch: 1 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_Overwrite_An_Existing_Cached_Value_Job-QDCEMC.exe 
+// Launch: 3 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetValue_From_An_Already_Initialized_Cache_Job-BSOCTM.exe diagnoserAttached
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
 // GC=Concurrent Workstation
-// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 2000 op, 313700.00 ns, 156.8500 ns/op
-IdleWarmup  2: 2000 op, 7700.00 ns, 3.8500 ns/op
-IdleWarmup  3: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleWarmup  4: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleWarmup  5: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleWarmup  6: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleWarmup  7: 2000 op, 5100.00 ns, 2.5500 ns/op
+IdleWarmup  1: 5000 op, 397800.00 ns, 79.5600 ns/op
+IdleWarmup  2: 5000 op, 22400.00 ns, 4.4800 ns/op
+IdleWarmup  3: 5000 op, 17700.00 ns, 3.5400 ns/op
+IdleWarmup  4: 5000 op, 17100.00 ns, 3.4200 ns/op
+IdleWarmup  5: 5000 op, 16500.00 ns, 3.3000 ns/op
+IdleWarmup  6: 5000 op, 16500.00 ns, 3.3000 ns/op
+IdleWarmup  7: 5000 op, 16000.00 ns, 3.2000 ns/op
+IdleWarmup  8: 5000 op, 15900.00 ns, 3.1800 ns/op
+IdleWarmup  9: 5000 op, 15400.00 ns, 3.0800 ns/op
+IdleWarmup 10: 5000 op, 14900.00 ns, 2.9800 ns/op
 
-IdleTarget  1: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleTarget  2: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleTarget  3: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget  4: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget  5: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget  6: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleTarget  7: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleTarget  8: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget  9: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget 10: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget 11: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget 12: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget 13: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget 14: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget 15: 2000 op, 5600.00 ns, 2.8000 ns/op
+IdleTarget  1: 5000 op, 14900.00 ns, 2.9800 ns/op
+IdleTarget  2: 5000 op, 14600.00 ns, 2.9200 ns/op
+IdleTarget  3: 5000 op, 14600.00 ns, 2.9200 ns/op
+IdleTarget  4: 5000 op, 14600.00 ns, 2.9200 ns/op
+IdleTarget  5: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleTarget  6: 5000 op, 15300.00 ns, 3.0600 ns/op
+IdleTarget  7: 5000 op, 15500.00 ns, 3.1000 ns/op
+IdleTarget  8: 5000 op, 15400.00 ns, 3.0800 ns/op
+IdleTarget  9: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget 10: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget 11: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget 12: 5000 op, 15100.00 ns, 3.0200 ns/op
+IdleTarget 13: 5000 op, 15300.00 ns, 3.0600 ns/op
+IdleTarget 14: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleTarget 15: 5000 op, 15100.00 ns, 3.0200 ns/op
 
-MainWarmup  1: 2000 op, 604400.00 ns, 302.2000 ns/op
-MainWarmup  2: 2000 op, 568700.00 ns, 284.3500 ns/op
-
-// BeforeMainRun
-MainTarget  1: 2000 op, 563100.00 ns, 281.5500 ns/op
-MainTarget  2: 2000 op, 550800.00 ns, 275.4000 ns/op
-MainTarget  3: 2000 op, 547900.00 ns, 273.9500 ns/op
-MainTarget  4: 2000 op, 574900.00 ns, 287.4500 ns/op
-MainTarget  5: 2000 op, 580200.00 ns, 290.1000 ns/op
-
-// AfterMainRun
-Result  1: 2000 op, 557693.33 ns, 278.8467 ns/op
-Result  2: 2000 op, 545393.33 ns, 272.6967 ns/op
-Result  3: 2000 op, 542493.33 ns, 271.2467 ns/op
-Result  4: 2000 op, 569493.33 ns, 284.7467 ns/op
-Result  5: 2000 op, 574793.33 ns, 287.3967 ns/op
-GC:  0 0 0 245760 2000
-
-// AfterAll
-// Launch: 2 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_Overwrite_An_Existing_Cached_Value_Job-QDCEMC.exe diagnoserAttached
-// BeforeAnythingElse
-
-// Benchmark Process Environment Information:
-// Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
-// GC=Concurrent Workstation
-// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
-
-IdleWarmup  1: 2000 op, 291700.00 ns, 145.8500 ns/op
-IdleWarmup  2: 2000 op, 7200.00 ns, 3.6000 ns/op
-IdleWarmup  3: 2000 op, 4500.00 ns, 2.2500 ns/op
-IdleWarmup  4: 2000 op, 5000.00 ns, 2.5000 ns/op
-IdleWarmup  5: 2000 op, 4800.00 ns, 2.4000 ns/op
-IdleWarmup  6: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleWarmup  7: 2000 op, 5000.00 ns, 2.5000 ns/op
-
-IdleTarget  1: 2000 op, 5000.00 ns, 2.5000 ns/op
-IdleTarget  2: 2000 op, 4800.00 ns, 2.4000 ns/op
-IdleTarget  3: 2000 op, 4800.00 ns, 2.4000 ns/op
-IdleTarget  4: 2000 op, 4700.00 ns, 2.3500 ns/op
-IdleTarget  5: 2000 op, 4800.00 ns, 2.4000 ns/op
-IdleTarget  6: 2000 op, 4700.00 ns, 2.3500 ns/op
-IdleTarget  7: 2000 op, 4800.00 ns, 2.4000 ns/op
-IdleTarget  8: 2000 op, 4500.00 ns, 2.2500 ns/op
-IdleTarget  9: 2000 op, 4700.00 ns, 2.3500 ns/op
-IdleTarget 10: 2000 op, 4500.00 ns, 2.2500 ns/op
-IdleTarget 11: 2000 op, 4500.00 ns, 2.2500 ns/op
-IdleTarget 12: 2000 op, 4600.00 ns, 2.3000 ns/op
-IdleTarget 13: 2000 op, 4700.00 ns, 2.3500 ns/op
-IdleTarget 14: 2000 op, 4800.00 ns, 2.4000 ns/op
-IdleTarget 15: 2000 op, 4700.00 ns, 2.3500 ns/op
-
-MainWarmup  1: 2000 op, 515800.00 ns, 257.9000 ns/op
-MainWarmup  2: 2000 op, 505000.00 ns, 252.5000 ns/op
+MainWarmup  1: 5000 op, 1249200.00 ns, 249.8400 ns/op
+MainWarmup  2: 5000 op, 1235900.00 ns, 247.1800 ns/op
 
 // BeforeMainRun
-MainTarget  1: 2000 op, 489500.00 ns, 244.7500 ns/op
-MainTarget  2: 2000 op, 496800.00 ns, 248.4000 ns/op
-MainTarget  3: 2000 op, 524400.00 ns, 262.2000 ns/op
-MainTarget  4: 2000 op, 490200.00 ns, 245.1000 ns/op
-MainTarget  5: 2000 op, 515500.00 ns, 257.7500 ns/op
+MainTarget  1: 5000 op, 1255100.00 ns, 251.0200 ns/op
+MainTarget  2: 5000 op, 1233100.00 ns, 246.6200 ns/op
+MainTarget  3: 5000 op, 1239900.00 ns, 247.9800 ns/op
+MainTarget  4: 5000 op, 1268800.00 ns, 253.7600 ns/op
+MainTarget  5: 5000 op, 1331500.00 ns, 266.3000 ns/op
+MainTarget  6: 5000 op, 1425300.00 ns, 285.0600 ns/op
+MainTarget  7: 5000 op, 1384800.00 ns, 276.9600 ns/op
+MainTarget  8: 5000 op, 1324600.00 ns, 264.9200 ns/op
+MainTarget  9: 5000 op, 1323700.00 ns, 264.7400 ns/op
+MainTarget 10: 5000 op, 1338200.00 ns, 267.6400 ns/op
 
 // AfterMainRun
-Result  1: 2000 op, 484793.33 ns, 242.3967 ns/op
-Result  2: 2000 op, 492093.33 ns, 246.0467 ns/op
-Result  3: 2000 op, 519693.33 ns, 259.8467 ns/op
-Result  4: 2000 op, 485493.33 ns, 242.7467 ns/op
-Result  5: 2000 op, 510793.33 ns, 255.3967 ns/op
-GC:  0 0 0 245760 2000
+Result  1: 5000 op, 1240140.00 ns, 248.0280 ns/op
+Result  2: 5000 op, 1218140.00 ns, 243.6280 ns/op
+Result  3: 5000 op, 1224940.00 ns, 244.9880 ns/op
+Result  4: 5000 op, 1253840.00 ns, 250.7680 ns/op
+Result  5: 5000 op, 1316540.00 ns, 263.3080 ns/op
+Result  6: 5000 op, 1410340.00 ns, 282.0680 ns/op
+Result  7: 5000 op, 1369840.00 ns, 273.9680 ns/op
+Result  8: 5000 op, 1309640.00 ns, 261.9280 ns/op
+Result  9: 5000 op, 1308740.00 ns, 261.7480 ns/op
+Result 10: 5000 op, 1323240.00 ns, 264.6480 ns/op
+GC:  0 0 0 606208 5000
 
 // AfterAll
 
-Mean = 264.1367 ns, StdErr = 5.4347 ns (2.06%); N = 10, StdDev = 17.1859 ns
-Min = 242.3967 ns, Q1 = 246.0467 ns, Median = 265.5467 ns, Q3 = 278.8467 ns, Max = 287.3967 ns
-IQR = 32.8000 ns, LowerFence = 196.8467 ns, UpperFence = 328.0467 ns
-ConfidenceInterval = [238.1540 ns; 290.1194 ns] (CI 99.9%), Margin = 25.9827 ns (9.84% of Mean)
-Skewness = -0.02, Kurtosis = 1.23, MValue = 3.5
+Mean = 247.7756 ns, StdErr = 2.2075 ns (0.89%); N = 29, StdDev = 11.8878 ns
+Min = 232.5613 ns, Q1 = 240.3800 ns, Median = 244.9400 ns, Q3 = 249.7447 ns, Max = 282.0680 ns
+IQR = 9.3647 ns, LowerFence = 226.3330 ns, UpperFence = 263.7917 ns
+ConfidenceInterval = [239.6655 ns; 255.8858 ns] (CI 99.9%), Margin = 8.1102 ns (3.27% of Mean)
+Skewness = 1.22, Kurtosis = 3.85, MValue = 2.24
 
 // **************************
-// Benchmark: CacheStorage_Benchmark.GetFromCacheOrFetch: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Benchmark: CacheStorage_Benchmark.Overwrite_An_Existing_Cached_Value: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 // *** Execute ***
-// Launch: 1 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetFromCacheOrFetch_Job-QDCEMC.exe 
+// Launch: 1 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_Overwrite_An_Existing_Cached_Value_Job-BSOCTM.exe 
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
 // GC=Concurrent Workstation
-// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 2000 op, 354800.00 ns, 177.4000 ns/op
-IdleWarmup  2: 2000 op, 9000.00 ns, 4.5000 ns/op
-IdleWarmup  3: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleWarmup  4: 2000 op, 5800.00 ns, 2.9000 ns/op
-IdleWarmup  5: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleWarmup  6: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleWarmup  7: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleWarmup  8: 2000 op, 5600.00 ns, 2.8000 ns/op
-IdleWarmup  9: 2000 op, 5600.00 ns, 2.8000 ns/op
+IdleWarmup  1: 5000 op, 285600.00 ns, 57.1200 ns/op
+IdleWarmup  2: 5000 op, 18400.00 ns, 3.6800 ns/op
+IdleWarmup  3: 5000 op, 14100.00 ns, 2.8200 ns/op
+IdleWarmup  4: 5000 op, 14100.00 ns, 2.8200 ns/op
+IdleWarmup  5: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleWarmup  6: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleWarmup  7: 5000 op, 14000.00 ns, 2.8000 ns/op
 
-IdleTarget  1: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget  2: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget  3: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget  4: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget  5: 2000 op, 5800.00 ns, 2.9000 ns/op
-IdleTarget  6: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleTarget  7: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget  8: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget  9: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget 10: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget 11: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget 12: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget 13: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget 14: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget 15: 2000 op, 5100.00 ns, 2.5500 ns/op
+IdleTarget  1: 5000 op, 13900.00 ns, 2.7800 ns/op
+IdleTarget  2: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleTarget  3: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleTarget  4: 5000 op, 14100.00 ns, 2.8200 ns/op
+IdleTarget  5: 5000 op, 13900.00 ns, 2.7800 ns/op
+IdleTarget  6: 5000 op, 14300.00 ns, 2.8600 ns/op
+IdleTarget  7: 5000 op, 17200.00 ns, 3.4400 ns/op
+IdleTarget  8: 5000 op, 20000.00 ns, 4.0000 ns/op
+IdleTarget  9: 5000 op, 24500.00 ns, 4.9000 ns/op
+IdleTarget 10: 5000 op, 24300.00 ns, 4.8600 ns/op
+IdleTarget 11: 5000 op, 23100.00 ns, 4.6200 ns/op
+IdleTarget 12: 5000 op, 23100.00 ns, 4.6200 ns/op
+IdleTarget 13: 5000 op, 23900.00 ns, 4.7800 ns/op
+IdleTarget 14: 5000 op, 22000.00 ns, 4.4000 ns/op
+IdleTarget 15: 5000 op, 21900.00 ns, 4.3800 ns/op
+IdleTarget 16: 5000 op, 21900.00 ns, 4.3800 ns/op
+IdleTarget 17: 5000 op, 20900.00 ns, 4.1800 ns/op
+IdleTarget 18: 5000 op, 20800.00 ns, 4.1600 ns/op
+IdleTarget 19: 5000 op, 20000.00 ns, 4.0000 ns/op
+IdleTarget 20: 5000 op, 19200.00 ns, 3.8400 ns/op
 
-MainWarmup  1: 2000 op, 634000.00 ns, 317.0000 ns/op
-MainWarmup  2: 2000 op, 622600.00 ns, 311.3000 ns/op
+MainWarmup  1: 5000 op, 1538800.00 ns, 307.7600 ns/op
+MainWarmup  2: 5000 op, 1476300.00 ns, 295.2600 ns/op
 
 // BeforeMainRun
-MainTarget  1: 2000 op, 614000.00 ns, 307.0000 ns/op
-MainTarget  2: 2000 op, 591800.00 ns, 295.9000 ns/op
-MainTarget  3: 2000 op, 624900.00 ns, 312.4500 ns/op
-MainTarget  4: 2000 op, 616800.00 ns, 308.4000 ns/op
-MainTarget  5: 2000 op, 616400.00 ns, 308.2000 ns/op
+MainTarget  1: 5000 op, 1445600.00 ns, 289.1200 ns/op
+MainTarget  2: 5000 op, 1411700.00 ns, 282.3400 ns/op
+MainTarget  3: 5000 op, 1364700.00 ns, 272.9400 ns/op
+MainTarget  4: 5000 op, 1315200.00 ns, 263.0400 ns/op
+MainTarget  5: 5000 op, 1261000.00 ns, 252.2000 ns/op
+MainTarget  6: 5000 op, 1361500.00 ns, 272.3000 ns/op
+MainTarget  7: 5000 op, 1240200.00 ns, 248.0400 ns/op
+MainTarget  8: 5000 op, 1295600.00 ns, 259.1200 ns/op
+MainTarget  9: 5000 op, 1239000.00 ns, 247.8000 ns/op
+MainTarget 10: 5000 op, 1250700.00 ns, 250.1400 ns/op
 
 // AfterMainRun
-Result  1: 2000 op, 608620.00 ns, 304.3100 ns/op
-Result  2: 2000 op, 586420.00 ns, 293.2100 ns/op
-Result  3: 2000 op, 619520.00 ns, 309.7600 ns/op
-Result  4: 2000 op, 611420.00 ns, 305.7100 ns/op
-Result  5: 2000 op, 611020.00 ns, 305.5100 ns/op
-GC:  0 0 0 278528 2000
+Result  1: 5000 op, 1426250.00 ns, 285.2500 ns/op
+Result  2: 5000 op, 1392350.00 ns, 278.4700 ns/op
+Result  3: 5000 op, 1345350.00 ns, 269.0700 ns/op
+Result  4: 5000 op, 1295850.00 ns, 259.1700 ns/op
+Result  5: 5000 op, 1241650.00 ns, 248.3300 ns/op
+Result  6: 5000 op, 1342150.00 ns, 268.4300 ns/op
+Result  7: 5000 op, 1220850.00 ns, 244.1700 ns/op
+Result  8: 5000 op, 1276250.00 ns, 255.2500 ns/op
+Result  9: 5000 op, 1219650.00 ns, 243.9300 ns/op
+Result 10: 5000 op, 1231350.00 ns, 246.2700 ns/op
+GC:  0 0 0 606208 5000
 
 // AfterAll
-// Launch: 2 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetFromCacheOrFetch_Job-QDCEMC.exe diagnoserAttached
+// Launch: 2 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_Overwrite_An_Existing_Cached_Value_Job-BSOCTM.exe 
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
 // GC=Concurrent Workstation
-// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 2000 op, 311400.00 ns, 155.7000 ns/op
-IdleWarmup  2: 2000 op, 7800.00 ns, 3.9000 ns/op
-IdleWarmup  3: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleWarmup  4: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleWarmup  5: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleWarmup  6: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleWarmup  7: 2000 op, 5400.00 ns, 2.7000 ns/op
+IdleWarmup  1: 5000 op, 320200.00 ns, 64.0400 ns/op
+IdleWarmup  2: 5000 op, 22000.00 ns, 4.4000 ns/op
+IdleWarmup  3: 5000 op, 16100.00 ns, 3.2200 ns/op
+IdleWarmup  4: 5000 op, 15500.00 ns, 3.1000 ns/op
+IdleWarmup  5: 5000 op, 15500.00 ns, 3.1000 ns/op
+IdleWarmup  6: 5000 op, 16100.00 ns, 3.2200 ns/op
+IdleWarmup  7: 5000 op, 16000.00 ns, 3.2000 ns/op
+IdleWarmup  8: 5000 op, 16100.00 ns, 3.2200 ns/op
 
-IdleTarget  1: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget  2: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget  3: 2000 op, 5600.00 ns, 2.8000 ns/op
-IdleTarget  4: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleTarget  5: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget  6: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget  7: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget  8: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleTarget  9: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget 10: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget 11: 2000 op, 5000.00 ns, 2.5000 ns/op
-IdleTarget 12: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget 13: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget 14: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget 15: 2000 op, 5100.00 ns, 2.5500 ns/op
+IdleTarget  1: 5000 op, 15500.00 ns, 3.1000 ns/op
+IdleTarget  2: 5000 op, 15500.00 ns, 3.1000 ns/op
+IdleTarget  3: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget  4: 5000 op, 16200.00 ns, 3.2400 ns/op
+IdleTarget  5: 5000 op, 19400.00 ns, 3.8800 ns/op
+IdleTarget  6: 5000 op, 19300.00 ns, 3.8600 ns/op
+IdleTarget  7: 5000 op, 20200.00 ns, 4.0400 ns/op
+IdleTarget  8: 5000 op, 20200.00 ns, 4.0400 ns/op
+IdleTarget  9: 5000 op, 20100.00 ns, 4.0200 ns/op
+IdleTarget 10: 5000 op, 20200.00 ns, 4.0400 ns/op
+IdleTarget 11: 5000 op, 20400.00 ns, 4.0800 ns/op
+IdleTarget 12: 5000 op, 19400.00 ns, 3.8800 ns/op
+IdleTarget 13: 5000 op, 19400.00 ns, 3.8800 ns/op
+IdleTarget 14: 5000 op, 19300.00 ns, 3.8600 ns/op
+IdleTarget 15: 5000 op, 18600.00 ns, 3.7200 ns/op
+IdleTarget 16: 5000 op, 18700.00 ns, 3.7400 ns/op
+IdleTarget 17: 5000 op, 18100.00 ns, 3.6200 ns/op
+IdleTarget 18: 5000 op, 17300.00 ns, 3.4600 ns/op
+IdleTarget 19: 5000 op, 17200.00 ns, 3.4400 ns/op
+IdleTarget 20: 5000 op, 16700.00 ns, 3.3400 ns/op
 
-MainWarmup  1: 2000 op, 682000.00 ns, 341.0000 ns/op
-MainWarmup  2: 2000 op, 608500.00 ns, 304.2500 ns/op
+MainWarmup  1: 5000 op, 1329700.00 ns, 265.9400 ns/op
+MainWarmup  2: 5000 op, 1337200.00 ns, 267.4400 ns/op
 
 // BeforeMainRun
-MainTarget  1: 2000 op, 629900.00 ns, 314.9500 ns/op
-MainTarget  2: 2000 op, 637000.00 ns, 318.5000 ns/op
-MainTarget  3: 2000 op, 589100.00 ns, 294.5500 ns/op
-MainTarget  4: 2000 op, 593900.00 ns, 296.9500 ns/op
-MainTarget  5: 2000 op, 582400.00 ns, 291.2000 ns/op
+MainTarget  1: 5000 op, 1288000.00 ns, 257.6000 ns/op
+MainTarget  2: 5000 op, 1283100.00 ns, 256.6200 ns/op
+MainTarget  3: 5000 op, 1325300.00 ns, 265.0600 ns/op
+MainTarget  4: 5000 op, 1468200.00 ns, 293.6400 ns/op
+MainTarget  5: 5000 op, 1547300.00 ns, 309.4600 ns/op
+MainTarget  6: 5000 op, 1602000.00 ns, 320.4000 ns/op
+MainTarget  7: 5000 op, 1602100.00 ns, 320.4200 ns/op
+MainTarget  8: 5000 op, 1620800.00 ns, 324.1600 ns/op
+MainTarget  9: 5000 op, 1731700.00 ns, 346.3400 ns/op
+MainTarget 10: 5000 op, 1702500.00 ns, 340.5000 ns/op
 
 // AfterMainRun
-Result  1: 2000 op, 624633.33 ns, 312.3167 ns/op
-Result  2: 2000 op, 631733.33 ns, 315.8667 ns/op
-Result  3: 2000 op, 583833.33 ns, 291.9167 ns/op
-Result  4: 2000 op, 588633.33 ns, 294.3167 ns/op
-Result  5: 2000 op, 577133.33 ns, 288.5667 ns/op
-GC:  0 0 0 278528 2000
+Result  1: 5000 op, 1269665.00 ns, 253.9330 ns/op
+Result  2: 5000 op, 1264765.00 ns, 252.9530 ns/op
+Result  3: 5000 op, 1306965.00 ns, 261.3930 ns/op
+Result  4: 5000 op, 1449865.00 ns, 289.9730 ns/op
+Result  5: 5000 op, 1528965.00 ns, 305.7930 ns/op
+Result  6: 5000 op, 1583665.00 ns, 316.7330 ns/op
+Result  7: 5000 op, 1583765.00 ns, 316.7530 ns/op
+Result  8: 5000 op, 1602465.00 ns, 320.4930 ns/op
+Result  9: 5000 op, 1713365.00 ns, 342.6730 ns/op
+Result 10: 5000 op, 1684165.00 ns, 336.8330 ns/op
+GC:  0 0 0 606208 5000
+
+// AfterAll
+// Launch: 3 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_Overwrite_An_Existing_Cached_Value_Job-BSOCTM.exe diagnoserAttached
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
+// GC=Concurrent Workstation
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
+
+IdleWarmup  1: 5000 op, 312100.00 ns, 62.4200 ns/op
+IdleWarmup  2: 5000 op, 17100.00 ns, 3.4200 ns/op
+IdleWarmup  3: 5000 op, 14100.00 ns, 2.8200 ns/op
+IdleWarmup  4: 5000 op, 14600.00 ns, 2.9200 ns/op
+IdleWarmup  5: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleWarmup  6: 5000 op, 14900.00 ns, 2.9800 ns/op
+IdleWarmup  7: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleWarmup  8: 5000 op, 15000.00 ns, 3.0000 ns/op
+
+IdleTarget  1: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget  2: 5000 op, 15100.00 ns, 3.0200 ns/op
+IdleTarget  3: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget  4: 5000 op, 14600.00 ns, 2.9200 ns/op
+IdleTarget  5: 5000 op, 14600.00 ns, 2.9200 ns/op
+IdleTarget  6: 5000 op, 15100.00 ns, 3.0200 ns/op
+IdleTarget  7: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget  8: 5000 op, 15200.00 ns, 3.0400 ns/op
+IdleTarget  9: 5000 op, 14900.00 ns, 2.9800 ns/op
+IdleTarget 10: 5000 op, 15500.00 ns, 3.1000 ns/op
+IdleTarget 11: 5000 op, 15400.00 ns, 3.0800 ns/op
+IdleTarget 12: 5000 op, 15400.00 ns, 3.0800 ns/op
+IdleTarget 13: 5000 op, 15600.00 ns, 3.1200 ns/op
+IdleTarget 14: 5000 op, 15500.00 ns, 3.1000 ns/op
+IdleTarget 15: 5000 op, 15500.00 ns, 3.1000 ns/op
+
+MainWarmup  1: 5000 op, 1346800.00 ns, 269.3600 ns/op
+MainWarmup  2: 5000 op, 1244800.00 ns, 248.9600 ns/op
+
+// BeforeMainRun
+MainTarget  1: 5000 op, 1281200.00 ns, 256.2400 ns/op
+MainTarget  2: 5000 op, 1254100.00 ns, 250.8200 ns/op
+MainTarget  3: 5000 op, 1231300.00 ns, 246.2600 ns/op
+MainTarget  4: 5000 op, 1252800.00 ns, 250.5600 ns/op
+MainTarget  5: 5000 op, 1238100.00 ns, 247.6200 ns/op
+MainTarget  6: 5000 op, 1306700.00 ns, 261.3400 ns/op
+MainTarget  7: 5000 op, 1275500.00 ns, 255.1000 ns/op
+MainTarget  8: 5000 op, 1248300.00 ns, 249.6600 ns/op
+MainTarget  9: 5000 op, 1284300.00 ns, 256.8600 ns/op
+MainTarget 10: 5000 op, 1320500.00 ns, 264.1000 ns/op
+
+// AfterMainRun
+Result  1: 5000 op, 1266040.00 ns, 253.2080 ns/op
+Result  2: 5000 op, 1238940.00 ns, 247.7880 ns/op
+Result  3: 5000 op, 1216140.00 ns, 243.2280 ns/op
+Result  4: 5000 op, 1237640.00 ns, 247.5280 ns/op
+Result  5: 5000 op, 1222940.00 ns, 244.5880 ns/op
+Result  6: 5000 op, 1291540.00 ns, 258.3080 ns/op
+Result  7: 5000 op, 1260340.00 ns, 252.0680 ns/op
+Result  8: 5000 op, 1233140.00 ns, 246.6280 ns/op
+Result  9: 5000 op, 1269140.00 ns, 253.8280 ns/op
+Result 10: 5000 op, 1305340.00 ns, 261.0680 ns/op
+GC:  0 0 0 606208 5000
 
 // AfterAll
 
-Mean = 302.1483 ns, StdErr = 2.9973 ns (0.99%); N = 10, StdDev = 9.4784 ns
-Min = 288.5667 ns, Q1 = 293.2100 ns, Median = 304.9100 ns, Q3 = 309.7600 ns, Max = 315.8667 ns
-IQR = 16.5500 ns, LowerFence = 268.3850 ns, UpperFence = 334.5850 ns
-ConfidenceInterval = [287.8183 ns; 316.4783 ns] (CI 99.9%), Margin = 14.3300 ns (4.74% of Mean)
-Skewness = -0.07, Kurtosis = 1.3, MValue = 4
+Mean = 270.1370 ns, StdErr = 5.4647 ns (2.02%); N = 30, StdDev = 29.9312 ns
+Min = 243.2280 ns, Q1 = 247.7880 ns, Median = 256.7790 ns, Q3 = 285.2500 ns, Max = 342.6730 ns
+IQR = 37.4620 ns, LowerFence = 191.5950 ns, UpperFence = 341.4430 ns
+ConfidenceInterval = [250.1396 ns; 290.1344 ns] (CI 99.9%), Margin = 19.9974 ns (7.40% of Mean)
+Skewness = 1.12, Kurtosis = 2.86, MValue = 2.63
 
 // **************************
-// Benchmark: CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Benchmark: CacheStorage_Benchmark.GetFromCacheOrFetch: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 // *** Execute ***
-// Launch: 1 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy_Job-QDCEMC.exe 
+// Launch: 1 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetFromCacheOrFetch_Job-BSOCTM.exe 
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
 // GC=Concurrent Workstation
-// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 2000 op, 568600.00 ns, 284.3000 ns/op
-IdleWarmup  2: 2000 op, 13100.00 ns, 6.5500 ns/op
-IdleWarmup  3: 2000 op, 7900.00 ns, 3.9500 ns/op
-IdleWarmup  4: 2000 op, 8300.00 ns, 4.1500 ns/op
-IdleWarmup  5: 2000 op, 8400.00 ns, 4.2000 ns/op
-IdleWarmup  6: 2000 op, 8000.00 ns, 4.0000 ns/op
-IdleWarmup  7: 2000 op, 8700.00 ns, 4.3500 ns/op
-IdleWarmup  8: 2000 op, 9100.00 ns, 4.5500 ns/op
-IdleWarmup  9: 2000 op, 9300.00 ns, 4.6500 ns/op
-IdleWarmup 10: 2000 op, 8800.00 ns, 4.4000 ns/op
+IdleWarmup  1: 5000 op, 250700.00 ns, 50.1400 ns/op
+IdleWarmup  2: 5000 op, 30300.00 ns, 6.0600 ns/op
+IdleWarmup  3: 5000 op, 26600.00 ns, 5.3200 ns/op
+IdleWarmup  4: 5000 op, 13400.00 ns, 2.6800 ns/op
+IdleWarmup  5: 5000 op, 13400.00 ns, 2.6800 ns/op
+IdleWarmup  6: 5000 op, 13800.00 ns, 2.7600 ns/op
+IdleWarmup  7: 5000 op, 14600.00 ns, 2.9200 ns/op
+IdleWarmup  8: 5000 op, 14700.00 ns, 2.9400 ns/op
+IdleWarmup  9: 5000 op, 15200.00 ns, 3.0400 ns/op
+IdleWarmup 10: 5000 op, 14800.00 ns, 2.9600 ns/op
 
-IdleTarget  1: 2000 op, 7600.00 ns, 3.8000 ns/op
-IdleTarget  2: 2000 op, 7700.00 ns, 3.8500 ns/op
-IdleTarget  3: 2000 op, 7500.00 ns, 3.7500 ns/op
-IdleTarget  4: 2000 op, 7300.00 ns, 3.6500 ns/op
-IdleTarget  5: 2000 op, 7400.00 ns, 3.7000 ns/op
-IdleTarget  6: 2000 op, 7000.00 ns, 3.5000 ns/op
-IdleTarget  7: 2000 op, 7200.00 ns, 3.6000 ns/op
-IdleTarget  8: 2000 op, 7000.00 ns, 3.5000 ns/op
-IdleTarget  9: 2000 op, 6700.00 ns, 3.3500 ns/op
-IdleTarget 10: 2000 op, 8200.00 ns, 4.1000 ns/op
-IdleTarget 11: 2000 op, 9300.00 ns, 4.6500 ns/op
-IdleTarget 12: 2000 op, 9300.00 ns, 4.6500 ns/op
-IdleTarget 13: 2000 op, 10000.00 ns, 5.0000 ns/op
-IdleTarget 14: 2000 op, 9600.00 ns, 4.8000 ns/op
-IdleTarget 15: 2000 op, 8200.00 ns, 4.1000 ns/op
-IdleTarget 16: 2000 op, 6500.00 ns, 3.2500 ns/op
-IdleTarget 17: 2000 op, 6800.00 ns, 3.4000 ns/op
-IdleTarget 18: 2000 op, 6200.00 ns, 3.1000 ns/op
-IdleTarget 19: 2000 op, 6000.00 ns, 3.0000 ns/op
-IdleTarget 20: 2000 op, 5700.00 ns, 2.8500 ns/op
+IdleTarget  1: 5000 op, 14800.00 ns, 2.9600 ns/op
+IdleTarget  2: 5000 op, 14800.00 ns, 2.9600 ns/op
+IdleTarget  3: 5000 op, 14700.00 ns, 2.9400 ns/op
+IdleTarget  4: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget  5: 5000 op, 14600.00 ns, 2.9200 ns/op
+IdleTarget  6: 5000 op, 14800.00 ns, 2.9600 ns/op
+IdleTarget  7: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget  8: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget  9: 5000 op, 13700.00 ns, 2.7400 ns/op
+IdleTarget 10: 5000 op, 13800.00 ns, 2.7600 ns/op
+IdleTarget 11: 5000 op, 47200.00 ns, 9.4400 ns/op
+IdleTarget 12: 5000 op, 13800.00 ns, 2.7600 ns/op
+IdleTarget 13: 5000 op, 13700.00 ns, 2.7400 ns/op
+IdleTarget 14: 5000 op, 13700.00 ns, 2.7400 ns/op
+IdleTarget 15: 5000 op, 13300.00 ns, 2.6600 ns/op
 
-MainWarmup  1: 2000 op, 677500.00 ns, 338.7500 ns/op
-MainWarmup  2: 2000 op, 737700.00 ns, 368.8500 ns/op
+MainWarmup  1: 5000 op, 1736200.00 ns, 347.2400 ns/op
+MainWarmup  2: 5000 op, 1402700.00 ns, 280.5400 ns/op
 
 // BeforeMainRun
-MainTarget  1: 2000 op, 1465900.00 ns, 732.9500 ns/op
-MainTarget  2: 2000 op, 900100.00 ns, 450.0500 ns/op
-MainTarget  3: 2000 op, 948200.00 ns, 474.1000 ns/op
-MainTarget  4: 2000 op, 1024800.00 ns, 512.4000 ns/op
-MainTarget  5: 2000 op, 1002100.00 ns, 501.0500 ns/op
+MainTarget  1: 5000 op, 1386600.00 ns, 277.3200 ns/op
+MainTarget  2: 5000 op, 1369700.00 ns, 273.9400 ns/op
+MainTarget  3: 5000 op, 1354400.00 ns, 270.8800 ns/op
+MainTarget  4: 5000 op, 1311400.00 ns, 262.2800 ns/op
+MainTarget  5: 5000 op, 1315300.00 ns, 263.0600 ns/op
+MainTarget  6: 5000 op, 1381200.00 ns, 276.2400 ns/op
+MainTarget  7: 5000 op, 1337000.00 ns, 267.4000 ns/op
+MainTarget  8: 5000 op, 1332500.00 ns, 266.5000 ns/op
+MainTarget  9: 5000 op, 1398600.00 ns, 279.7200 ns/op
+MainTarget 10: 5000 op, 1434200.00 ns, 286.8400 ns/op
 
 // AfterMainRun
-Result  1: 2000 op, 1458340.00 ns, 729.1700 ns/op
-Result  2: 2000 op, 892540.00 ns, 446.2700 ns/op
-Result  3: 2000 op, 940640.00 ns, 470.3200 ns/op
-Result  4: 2000 op, 1017240.00 ns, 508.6200 ns/op
-Result  5: 2000 op, 994540.00 ns, 497.2700 ns/op
-GC:  0 0 0 278528 2000
+Result  1: 5000 op, 1370233.33 ns, 274.0467 ns/op
+Result  2: 5000 op, 1353333.33 ns, 270.6667 ns/op
+Result  3: 5000 op, 1338033.33 ns, 267.6067 ns/op
+Result  4: 5000 op, 1295033.33 ns, 259.0067 ns/op
+Result  5: 5000 op, 1298933.33 ns, 259.7867 ns/op
+Result  6: 5000 op, 1364833.33 ns, 272.9667 ns/op
+Result  7: 5000 op, 1320633.33 ns, 264.1267 ns/op
+Result  8: 5000 op, 1316133.33 ns, 263.2267 ns/op
+Result  9: 5000 op, 1382233.33 ns, 276.4467 ns/op
+Result 10: 5000 op, 1417833.33 ns, 283.5667 ns/op
+GC:  0 0 0 688128 5000
 
 // AfterAll
-// Launch: 2 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy_Job-QDCEMC.exe diagnoserAttached
+// Launch: 2 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetFromCacheOrFetch_Job-BSOCTM.exe 
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
 // GC=Concurrent Workstation
-// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 2000 op, 496100.00 ns, 248.0500 ns/op
-IdleWarmup  2: 2000 op, 12200.00 ns, 6.1000 ns/op
-IdleWarmup  3: 2000 op, 7500.00 ns, 3.7500 ns/op
-IdleWarmup  4: 2000 op, 6900.00 ns, 3.4500 ns/op
-IdleWarmup  5: 2000 op, 6500.00 ns, 3.2500 ns/op
-IdleWarmup  6: 2000 op, 6300.00 ns, 3.1500 ns/op
-IdleWarmup  7: 2000 op, 6700.00 ns, 3.3500 ns/op
-IdleWarmup  8: 2000 op, 6000.00 ns, 3.0000 ns/op
-IdleWarmup  9: 2000 op, 5900.00 ns, 2.9500 ns/op
-IdleWarmup 10: 2000 op, 5800.00 ns, 2.9000 ns/op
+IdleWarmup  1: 5000 op, 309100.00 ns, 61.8200 ns/op
+IdleWarmup  2: 5000 op, 19700.00 ns, 3.9400 ns/op
+IdleWarmup  3: 5000 op, 15500.00 ns, 3.1000 ns/op
+IdleWarmup  4: 5000 op, 15700.00 ns, 3.1400 ns/op
+IdleWarmup  5: 5000 op, 16000.00 ns, 3.2000 ns/op
+IdleWarmup  6: 5000 op, 16100.00 ns, 3.2200 ns/op
+IdleWarmup  7: 5000 op, 15300.00 ns, 3.0600 ns/op
+IdleWarmup  8: 5000 op, 16600.00 ns, 3.3200 ns/op
+IdleWarmup  9: 5000 op, 14700.00 ns, 2.9400 ns/op
 
-IdleTarget  1: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleTarget  2: 2000 op, 5600.00 ns, 2.8000 ns/op
-IdleTarget  3: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget  4: 2000 op, 4900.00 ns, 2.4500 ns/op
-IdleTarget  5: 2000 op, 4700.00 ns, 2.3500 ns/op
-IdleTarget  6: 2000 op, 4600.00 ns, 2.3000 ns/op
-IdleTarget  7: 2000 op, 4500.00 ns, 2.2500 ns/op
-IdleTarget  8: 2000 op, 4500.00 ns, 2.2500 ns/op
-IdleTarget  9: 2000 op, 4500.00 ns, 2.2500 ns/op
-IdleTarget 10: 2000 op, 4300.00 ns, 2.1500 ns/op
-IdleTarget 11: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleTarget 12: 2000 op, 7700.00 ns, 3.8500 ns/op
-IdleTarget 13: 2000 op, 8100.00 ns, 4.0500 ns/op
-IdleTarget 14: 2000 op, 9700.00 ns, 4.8500 ns/op
-IdleTarget 15: 2000 op, 8200.00 ns, 4.1000 ns/op
-IdleTarget 16: 2000 op, 7800.00 ns, 3.9000 ns/op
-IdleTarget 17: 2000 op, 7900.00 ns, 3.9500 ns/op
-IdleTarget 18: 2000 op, 7700.00 ns, 3.8500 ns/op
-IdleTarget 19: 2000 op, 7700.00 ns, 3.8500 ns/op
-IdleTarget 20: 2000 op, 7400.00 ns, 3.7000 ns/op
+IdleTarget  1: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget  2: 5000 op, 13700.00 ns, 2.7400 ns/op
+IdleTarget  3: 5000 op, 13200.00 ns, 2.6400 ns/op
+IdleTarget  4: 5000 op, 13100.00 ns, 2.6200 ns/op
+IdleTarget  5: 5000 op, 12500.00 ns, 2.5000 ns/op
+IdleTarget  6: 5000 op, 13400.00 ns, 2.6800 ns/op
+IdleTarget  7: 5000 op, 13700.00 ns, 2.7400 ns/op
+IdleTarget  8: 5000 op, 14100.00 ns, 2.8200 ns/op
+IdleTarget  9: 5000 op, 15300.00 ns, 3.0600 ns/op
+IdleTarget 10: 5000 op, 15800.00 ns, 3.1600 ns/op
+IdleTarget 11: 5000 op, 15900.00 ns, 3.1800 ns/op
+IdleTarget 12: 5000 op, 15700.00 ns, 3.1400 ns/op
+IdleTarget 13: 5000 op, 14900.00 ns, 2.9800 ns/op
+IdleTarget 14: 5000 op, 14700.00 ns, 2.9400 ns/op
+IdleTarget 15: 5000 op, 14300.00 ns, 2.8600 ns/op
+IdleTarget 16: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget 17: 5000 op, 14100.00 ns, 2.8200 ns/op
+IdleTarget 18: 5000 op, 14800.00 ns, 2.9600 ns/op
+IdleTarget 19: 5000 op, 14700.00 ns, 2.9400 ns/op
+IdleTarget 20: 5000 op, 15200.00 ns, 3.0400 ns/op
 
-MainWarmup  1: 2000 op, 868900.00 ns, 434.4500 ns/op
-MainWarmup  2: 2000 op, 810400.00 ns, 405.2000 ns/op
+MainWarmup  1: 5000 op, 2136900.00 ns, 427.3800 ns/op
+MainWarmup  2: 5000 op, 1809700.00 ns, 361.9400 ns/op
 
 // BeforeMainRun
-MainTarget  1: 2000 op, 717400.00 ns, 358.7000 ns/op
-MainTarget  2: 2000 op, 733100.00 ns, 366.5500 ns/op
-MainTarget  3: 2000 op, 712400.00 ns, 356.2000 ns/op
-MainTarget  4: 2000 op, 675500.00 ns, 337.7500 ns/op
-MainTarget  5: 2000 op, 670200.00 ns, 335.1000 ns/op
+MainTarget  1: 5000 op, 1677400.00 ns, 335.4800 ns/op
+MainTarget  2: 5000 op, 1620300.00 ns, 324.0600 ns/op
+MainTarget  3: 5000 op, 1605700.00 ns, 321.1400 ns/op
+MainTarget  4: 5000 op, 1514300.00 ns, 302.8600 ns/op
+MainTarget  5: 5000 op, 1455700.00 ns, 291.1400 ns/op
+MainTarget  6: 5000 op, 1440200.00 ns, 288.0400 ns/op
+MainTarget  7: 5000 op, 1408700.00 ns, 281.7400 ns/op
+MainTarget  8: 5000 op, 1355800.00 ns, 271.1600 ns/op
+MainTarget  9: 5000 op, 1356700.00 ns, 271.3400 ns/op
+MainTarget 10: 5000 op, 1338700.00 ns, 267.7400 ns/op
 
 // AfterMainRun
-Result  1: 2000 op, 711105.00 ns, 355.5525 ns/op
-Result  2: 2000 op, 726805.00 ns, 363.4025 ns/op
-Result  3: 2000 op, 706105.00 ns, 353.0525 ns/op
-Result  4: 2000 op, 669205.00 ns, 334.6025 ns/op
-Result  5: 2000 op, 663905.00 ns, 331.9525 ns/op
-GC:  0 0 0 278528 2000
+Result  1: 5000 op, 1663025.00 ns, 332.6050 ns/op
+Result  2: 5000 op, 1605925.00 ns, 321.1850 ns/op
+Result  3: 5000 op, 1591325.00 ns, 318.2650 ns/op
+Result  4: 5000 op, 1499925.00 ns, 299.9850 ns/op
+Result  5: 5000 op, 1441325.00 ns, 288.2650 ns/op
+Result  6: 5000 op, 1425825.00 ns, 285.1650 ns/op
+Result  7: 5000 op, 1394325.00 ns, 278.8650 ns/op
+Result  8: 5000 op, 1341425.00 ns, 268.2850 ns/op
+Result  9: 5000 op, 1342325.00 ns, 268.4650 ns/op
+Result 10: 5000 op, 1324325.00 ns, 264.8650 ns/op
+GC:  0 0 0 688128 5000
+
+// AfterAll
+// Launch: 3 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetFromCacheOrFetch_Job-BSOCTM.exe diagnoserAttached
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
+// GC=Concurrent Workstation
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
+
+IdleWarmup  1: 5000 op, 302600.00 ns, 60.5200 ns/op
+IdleWarmup  2: 5000 op, 17600.00 ns, 3.5200 ns/op
+IdleWarmup  3: 5000 op, 13800.00 ns, 2.7600 ns/op
+IdleWarmup  4: 5000 op, 14400.00 ns, 2.8800 ns/op
+IdleWarmup  5: 5000 op, 14900.00 ns, 2.9800 ns/op
+IdleWarmup  6: 5000 op, 14800.00 ns, 2.9600 ns/op
+IdleWarmup  7: 5000 op, 14800.00 ns, 2.9600 ns/op
+IdleWarmup  8: 5000 op, 15000.00 ns, 3.0000 ns/op
+
+IdleTarget  1: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget  2: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget  3: 5000 op, 25700.00 ns, 5.1400 ns/op
+IdleTarget  4: 5000 op, 13400.00 ns, 2.6800 ns/op
+IdleTarget  5: 5000 op, 13000.00 ns, 2.6000 ns/op
+IdleTarget  6: 5000 op, 13000.00 ns, 2.6000 ns/op
+IdleTarget  7: 5000 op, 12600.00 ns, 2.5200 ns/op
+IdleTarget  8: 5000 op, 12500.00 ns, 2.5000 ns/op
+IdleTarget  9: 5000 op, 13000.00 ns, 2.6000 ns/op
+IdleTarget 10: 5000 op, 13500.00 ns, 2.7000 ns/op
+IdleTarget 11: 5000 op, 13400.00 ns, 2.6800 ns/op
+IdleTarget 12: 5000 op, 13400.00 ns, 2.6800 ns/op
+IdleTarget 13: 5000 op, 13400.00 ns, 2.6800 ns/op
+IdleTarget 14: 5000 op, 13500.00 ns, 2.7000 ns/op
+IdleTarget 15: 5000 op, 13400.00 ns, 2.6800 ns/op
+
+MainWarmup  1: 5000 op, 1646100.00 ns, 329.2200 ns/op
+MainWarmup  2: 5000 op, 1353200.00 ns, 270.6400 ns/op
+
+// BeforeMainRun
+MainTarget  1: 5000 op, 1394000.00 ns, 278.8000 ns/op
+MainTarget  2: 5000 op, 1369400.00 ns, 273.8800 ns/op
+MainTarget  3: 5000 op, 1370800.00 ns, 274.1600 ns/op
+MainTarget  4: 5000 op, 1463900.00 ns, 292.7800 ns/op
+MainTarget  5: 5000 op, 1425800.00 ns, 285.1600 ns/op
+MainTarget  6: 5000 op, 1444200.00 ns, 288.8400 ns/op
+MainTarget  7: 5000 op, 1378500.00 ns, 275.7000 ns/op
+MainTarget  8: 5000 op, 1334800.00 ns, 266.9600 ns/op
+MainTarget  9: 5000 op, 1352900.00 ns, 270.5800 ns/op
+MainTarget 10: 5000 op, 1326600.00 ns, 265.3200 ns/op
+
+// AfterMainRun
+Result  1: 5000 op, 1379800.00 ns, 275.9600 ns/op
+Result  2: 5000 op, 1355200.00 ns, 271.0400 ns/op
+Result  3: 5000 op, 1356600.00 ns, 271.3200 ns/op
+Result  4: 5000 op, 1449700.00 ns, 289.9400 ns/op
+Result  5: 5000 op, 1411600.00 ns, 282.3200 ns/op
+Result  6: 5000 op, 1430000.00 ns, 286.0000 ns/op
+Result  7: 5000 op, 1364300.00 ns, 272.8600 ns/op
+Result  8: 5000 op, 1320600.00 ns, 264.1200 ns/op
+Result  9: 5000 op, 1338700.00 ns, 267.7400 ns/op
+Result 10: 5000 op, 1312400.00 ns, 262.4800 ns/op
+GC:  0 0 0 688128 5000
 
 // AfterAll
 
-Mean = 439.0213 ns, StdErr = 38.8585 ns (8.85%); N = 10, StdDev = 122.8812 ns
-Min = 331.9525 ns, Q1 = 353.0525 ns, Median = 404.8363 ns, Q3 = 497.2700 ns, Max = 729.1700 ns
-IQR = 144.2175 ns, LowerFence = 136.7263 ns, UpperFence = 713.5963 ns
-ConfidenceInterval = [253.2424 ns; 624.8001 ns] (CI 99.9%), Margin = 185.7789 ns (42.32% of Mean)
-Skewness = 1.13, Kurtosis = 3.29, MValue = 3.2
+Mean = 278.7059 ns, StdErr = 3.3354 ns (1.20%); N = 30, StdDev = 18.2687 ns
+Min = 259.0067 ns, Q1 = 267.6067 ns, Median = 272.9133 ns, Q3 = 285.1650 ns, Max = 332.6050 ns
+IQR = 17.5583 ns, LowerFence = 241.2692 ns, UpperFence = 311.5025 ns
+ConfidenceInterval = [266.5003 ns; 290.9114 ns] (CI 99.9%), Margin = 12.2056 ns (4.38% of Mean)
+Skewness = 1.48, Kurtosis = 4.48, MValue = 2.22
 
 // **************************
-// Benchmark: CacheStorage_Benchmark.RemoveItem_From_Cache: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Benchmark: CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 // *** Execute ***
-// Launch: 1 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_RemoveItem_From_Cache_Job-QDCEMC.exe 
+// Launch: 1 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy_Job-BSOCTM.exe 
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
 // GC=Concurrent Workstation
-// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 2000 op, 322500.00 ns, 161.2500 ns/op
-IdleWarmup  2: 2000 op, 7900.00 ns, 3.9500 ns/op
-IdleWarmup  3: 2000 op, 4800.00 ns, 2.4000 ns/op
-IdleWarmup  4: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleWarmup  5: 2000 op, 5800.00 ns, 2.9000 ns/op
-IdleWarmup  6: 2000 op, 6300.00 ns, 3.1500 ns/op
-IdleWarmup  7: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleWarmup  8: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleWarmup  9: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleWarmup 10: 2000 op, 5700.00 ns, 2.8500 ns/op
+IdleWarmup  1: 5000 op, 296700.00 ns, 59.3400 ns/op
+IdleWarmup  2: 5000 op, 19200.00 ns, 3.8400 ns/op
+IdleWarmup  3: 5000 op, 16900.00 ns, 3.3800 ns/op
+IdleWarmup  4: 5000 op, 17400.00 ns, 3.4800 ns/op
+IdleWarmup  5: 5000 op, 17600.00 ns, 3.5200 ns/op
+IdleWarmup  6: 5000 op, 16700.00 ns, 3.3400 ns/op
+IdleWarmup  7: 5000 op, 16700.00 ns, 3.3400 ns/op
+IdleWarmup  8: 5000 op, 16800.00 ns, 3.3600 ns/op
 
-IdleTarget  1: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget  2: 2000 op, 5900.00 ns, 2.9500 ns/op
-IdleTarget  3: 2000 op, 5600.00 ns, 2.8000 ns/op
-IdleTarget  4: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget  5: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget  6: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleTarget  7: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleTarget  8: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleTarget  9: 2000 op, 5800.00 ns, 2.9000 ns/op
-IdleTarget 10: 2000 op, 6100.00 ns, 3.0500 ns/op
-IdleTarget 11: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleTarget 12: 2000 op, 5800.00 ns, 2.9000 ns/op
-IdleTarget 13: 2000 op, 5900.00 ns, 2.9500 ns/op
-IdleTarget 14: 2000 op, 6100.00 ns, 3.0500 ns/op
-IdleTarget 15: 2000 op, 6500.00 ns, 3.2500 ns/op
+IdleTarget  1: 5000 op, 16100.00 ns, 3.2200 ns/op
+IdleTarget  2: 5000 op, 16300.00 ns, 3.2600 ns/op
+IdleTarget  3: 5000 op, 15900.00 ns, 3.1800 ns/op
+IdleTarget  4: 5000 op, 15800.00 ns, 3.1600 ns/op
+IdleTarget  5: 5000 op, 16400.00 ns, 3.2800 ns/op
+IdleTarget  6: 5000 op, 16200.00 ns, 3.2400 ns/op
+IdleTarget  7: 5000 op, 16900.00 ns, 3.3800 ns/op
+IdleTarget  8: 5000 op, 16900.00 ns, 3.3800 ns/op
+IdleTarget  9: 5000 op, 16300.00 ns, 3.2600 ns/op
+IdleTarget 10: 5000 op, 16300.00 ns, 3.2600 ns/op
+IdleTarget 11: 5000 op, 16300.00 ns, 3.2600 ns/op
+IdleTarget 12: 5000 op, 16200.00 ns, 3.2400 ns/op
+IdleTarget 13: 5000 op, 16300.00 ns, 3.2600 ns/op
+IdleTarget 14: 5000 op, 15700.00 ns, 3.1400 ns/op
+IdleTarget 15: 5000 op, 17000.00 ns, 3.4000 ns/op
 
-MainWarmup  1: 2000 op, 817400.00 ns, 408.7000 ns/op
-MainWarmup  2: 2000 op, 802300.00 ns, 401.1500 ns/op
+MainWarmup  1: 5000 op, 2165500.00 ns, 433.1000 ns/op
+MainWarmup  2: 5000 op, 1716200.00 ns, 343.2400 ns/op
 
 // BeforeMainRun
-MainTarget  1: 2000 op, 949900.00 ns, 474.9500 ns/op
-MainTarget  2: 2000 op, 763100.00 ns, 381.5500 ns/op
-MainTarget  3: 2000 op, 743300.00 ns, 371.6500 ns/op
-MainTarget  4: 2000 op, 714700.00 ns, 357.3500 ns/op
-MainTarget  5: 2000 op, 664200.00 ns, 332.1000 ns/op
+MainTarget  1: 5000 op, 1796200.00 ns, 359.2400 ns/op
+MainTarget  2: 5000 op, 1750300.00 ns, 350.0600 ns/op
+MainTarget  3: 5000 op, 1673900.00 ns, 334.7800 ns/op
+MainTarget  4: 5000 op, 1665200.00 ns, 333.0400 ns/op
+MainTarget  5: 5000 op, 1582000.00 ns, 316.4000 ns/op
+MainTarget  6: 5000 op, 1557900.00 ns, 311.5800 ns/op
+MainTarget  7: 5000 op, 1538200.00 ns, 307.6400 ns/op
+MainTarget  8: 5000 op, 1585800.00 ns, 317.1600 ns/op
+MainTarget  9: 5000 op, 1552800.00 ns, 310.5600 ns/op
+MainTarget 10: 5000 op, 1557300.00 ns, 311.4600 ns/op
 
 // AfterMainRun
-Result  1: 2000 op, 944100.00 ns, 472.0500 ns/op
-Result  2: 2000 op, 757300.00 ns, 378.6500 ns/op
-Result  3: 2000 op, 737500.00 ns, 368.7500 ns/op
-Result  4: 2000 op, 708900.00 ns, 354.4500 ns/op
-Result  5: 2000 op, 658400.00 ns, 329.2000 ns/op
-GC:  0 0 0 434176 2000
+Result  1: 5000 op, 1779893.33 ns, 355.9787 ns/op
+Result  2: 5000 op, 1733993.33 ns, 346.7987 ns/op
+Result  3: 5000 op, 1657593.33 ns, 331.5187 ns/op
+Result  4: 5000 op, 1648893.33 ns, 329.7787 ns/op
+Result  5: 5000 op, 1565693.33 ns, 313.1387 ns/op
+Result  6: 5000 op, 1541593.33 ns, 308.3187 ns/op
+Result  7: 5000 op, 1521893.33 ns, 304.3787 ns/op
+Result  8: 5000 op, 1569493.33 ns, 313.8987 ns/op
+Result  9: 5000 op, 1536493.33 ns, 307.2987 ns/op
+Result 10: 5000 op, 1540993.33 ns, 308.1987 ns/op
+GC:  0 0 0 688128 5000
 
 // AfterAll
-// Launch: 2 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_RemoveItem_From_Cache_Job-QDCEMC.exe diagnoserAttached
+// Launch: 2 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy_Job-BSOCTM.exe 
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
 // GC=Concurrent Workstation
-// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 2000 op, 336800.00 ns, 168.4000 ns/op
-IdleWarmup  2: 2000 op, 9600.00 ns, 4.8000 ns/op
-IdleWarmup  3: 2000 op, 5600.00 ns, 2.8000 ns/op
-IdleWarmup  4: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleWarmup  5: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleWarmup  6: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleWarmup  7: 2000 op, 6100.00 ns, 3.0500 ns/op
-IdleWarmup  8: 2000 op, 6200.00 ns, 3.1000 ns/op
-IdleWarmup  9: 2000 op, 6500.00 ns, 3.2500 ns/op
-IdleWarmup 10: 2000 op, 6700.00 ns, 3.3500 ns/op
+IdleWarmup  1: 5000 op, 283200.00 ns, 56.6400 ns/op
+IdleWarmup  2: 5000 op, 17500.00 ns, 3.5000 ns/op
+IdleWarmup  3: 5000 op, 14400.00 ns, 2.8800 ns/op
+IdleWarmup  4: 5000 op, 14700.00 ns, 2.9400 ns/op
+IdleWarmup  5: 5000 op, 14600.00 ns, 2.9200 ns/op
+IdleWarmup  6: 5000 op, 15100.00 ns, 3.0200 ns/op
+IdleWarmup  7: 5000 op, 15100.00 ns, 3.0200 ns/op
 
-IdleTarget  1: 2000 op, 7000.00 ns, 3.5000 ns/op
-IdleTarget  2: 2000 op, 6400.00 ns, 3.2000 ns/op
-IdleTarget  3: 2000 op, 6100.00 ns, 3.0500 ns/op
-IdleTarget  4: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleTarget  5: 2000 op, 5600.00 ns, 2.8000 ns/op
-IdleTarget  6: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget  7: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget  8: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget  9: 2000 op, 5800.00 ns, 2.9000 ns/op
-IdleTarget 10: 2000 op, 5900.00 ns, 2.9500 ns/op
-IdleTarget 11: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget 12: 2000 op, 5600.00 ns, 2.8000 ns/op
-IdleTarget 13: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget 14: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget 15: 2000 op, 5800.00 ns, 2.9000 ns/op
-IdleTarget 16: 2000 op, 5800.00 ns, 2.9000 ns/op
-IdleTarget 17: 2000 op, 6700.00 ns, 3.3500 ns/op
-IdleTarget 18: 2000 op, 7100.00 ns, 3.5500 ns/op
-IdleTarget 19: 2000 op, 6600.00 ns, 3.3000 ns/op
-IdleTarget 20: 2000 op, 6500.00 ns, 3.2500 ns/op
+IdleTarget  1: 5000 op, 15700.00 ns, 3.1400 ns/op
+IdleTarget  2: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget  3: 5000 op, 15200.00 ns, 3.0400 ns/op
+IdleTarget  4: 5000 op, 15500.00 ns, 3.1000 ns/op
+IdleTarget  5: 5000 op, 15700.00 ns, 3.1400 ns/op
+IdleTarget  6: 5000 op, 16000.00 ns, 3.2000 ns/op
+IdleTarget  7: 5000 op, 16200.00 ns, 3.2400 ns/op
+IdleTarget  8: 5000 op, 16900.00 ns, 3.3800 ns/op
+IdleTarget  9: 5000 op, 16200.00 ns, 3.2400 ns/op
+IdleTarget 10: 5000 op, 16200.00 ns, 3.2400 ns/op
+IdleTarget 11: 5000 op, 15800.00 ns, 3.1600 ns/op
+IdleTarget 12: 5000 op, 15700.00 ns, 3.1400 ns/op
+IdleTarget 13: 5000 op, 15800.00 ns, 3.1600 ns/op
+IdleTarget 14: 5000 op, 15800.00 ns, 3.1600 ns/op
+IdleTarget 15: 5000 op, 15700.00 ns, 3.1400 ns/op
 
-MainWarmup  1: 2000 op, 730200.00 ns, 365.1000 ns/op
-MainWarmup  2: 2000 op, 714500.00 ns, 357.2500 ns/op
+MainWarmup  1: 5000 op, 1780600.00 ns, 356.1200 ns/op
+MainWarmup  2: 5000 op, 1333200.00 ns, 266.6400 ns/op
 
 // BeforeMainRun
-MainTarget  1: 2000 op, 730600.00 ns, 365.3000 ns/op
-MainTarget  2: 2000 op, 687200.00 ns, 343.6000 ns/op
-MainTarget  3: 2000 op, 649600.00 ns, 324.8000 ns/op
-MainTarget  4: 2000 op, 635700.00 ns, 317.8500 ns/op
-MainTarget  5: 2000 op, 621100.00 ns, 310.5500 ns/op
+MainTarget  1: 5000 op, 1552400.00 ns, 310.4800 ns/op
+MainTarget  2: 5000 op, 1683400.00 ns, 336.6800 ns/op
+MainTarget  3: 5000 op, 1793700.00 ns, 358.7400 ns/op
+MainTarget  4: 5000 op, 1795400.00 ns, 359.0800 ns/op
+MainTarget  5: 5000 op, 1800800.00 ns, 360.1600 ns/op
+MainTarget  6: 5000 op, 1878200.00 ns, 375.6400 ns/op
+MainTarget  7: 5000 op, 1872900.00 ns, 374.5800 ns/op
+MainTarget  8: 5000 op, 1800800.00 ns, 360.1600 ns/op
+MainTarget  9: 5000 op, 1795400.00 ns, 359.0800 ns/op
+MainTarget 10: 5000 op, 1793300.00 ns, 358.6600 ns/op
 
 // AfterMainRun
-Result  1: 2000 op, 724665.00 ns, 362.3325 ns/op
-Result  2: 2000 op, 681265.00 ns, 340.6325 ns/op
-Result  3: 2000 op, 643665.00 ns, 321.8325 ns/op
-Result  4: 2000 op, 629765.00 ns, 314.8825 ns/op
-Result  5: 2000 op, 615165.00 ns, 307.5825 ns/op
-GC:  0 0 0 434176 2000
+Result  1: 5000 op, 1777873.33 ns, 355.5747 ns/op
+Result  2: 5000 op, 1779573.33 ns, 355.9147 ns/op
+Result  3: 5000 op, 1784973.33 ns, 356.9947 ns/op
+Result  4: 5000 op, 1784973.33 ns, 356.9947 ns/op
+Result  5: 5000 op, 1779573.33 ns, 355.9147 ns/op
+Result  6: 5000 op, 1777473.33 ns, 355.4947 ns/op
+GC:  0 0 0 688128 5000
+
+// AfterAll
+// Launch: 3 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy_Job-BSOCTM.exe diagnoserAttached
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
+// GC=Concurrent Workstation
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
+
+IdleWarmup  1: 5000 op, 308800.00 ns, 61.7600 ns/op
+IdleWarmup  2: 5000 op, 19900.00 ns, 3.9800 ns/op
+IdleWarmup  3: 5000 op, 16100.00 ns, 3.2200 ns/op
+IdleWarmup  4: 5000 op, 16100.00 ns, 3.2200 ns/op
+IdleWarmup  5: 5000 op, 16300.00 ns, 3.2600 ns/op
+IdleWarmup  6: 5000 op, 15600.00 ns, 3.1200 ns/op
+IdleWarmup  7: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleWarmup  8: 5000 op, 15000.00 ns, 3.0000 ns/op
+
+IdleTarget  1: 5000 op, 15800.00 ns, 3.1600 ns/op
+IdleTarget  2: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget  3: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleTarget  4: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget  5: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget  6: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleTarget  7: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleTarget  8: 5000 op, 14100.00 ns, 2.8200 ns/op
+IdleTarget  9: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleTarget 10: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleTarget 11: 5000 op, 25900.00 ns, 5.1800 ns/op
+IdleTarget 12: 5000 op, 14300.00 ns, 2.8600 ns/op
+IdleTarget 13: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget 14: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget 15: 5000 op, 14200.00 ns, 2.8400 ns/op
+
+MainWarmup  1: 5000 op, 1655400.00 ns, 331.0800 ns/op
+MainWarmup  2: 5000 op, 1320100.00 ns, 264.0200 ns/op
+
+// BeforeMainRun
+MainTarget  1: 5000 op, 1301200.00 ns, 260.2400 ns/op
+MainTarget  2: 5000 op, 1294200.00 ns, 258.8400 ns/op
+MainTarget  3: 5000 op, 1292700.00 ns, 258.5400 ns/op
+MainTarget  4: 5000 op, 1261300.00 ns, 252.2600 ns/op
+MainTarget  5: 5000 op, 1254000.00 ns, 250.8000 ns/op
+MainTarget  6: 5000 op, 1284600.00 ns, 256.9200 ns/op
+MainTarget  7: 5000 op, 1324900.00 ns, 264.9800 ns/op
+MainTarget  8: 5000 op, 1298600.00 ns, 259.7200 ns/op
+MainTarget  9: 5000 op, 1273300.00 ns, 254.6600 ns/op
+MainTarget 10: 5000 op, 1262500.00 ns, 252.5000 ns/op
+
+// AfterMainRun
+Result  1: 5000 op, 1286180.00 ns, 257.2360 ns/op
+Result  2: 5000 op, 1279180.00 ns, 255.8360 ns/op
+Result  3: 5000 op, 1277680.00 ns, 255.5360 ns/op
+Result  4: 5000 op, 1246280.00 ns, 249.2560 ns/op
+Result  5: 5000 op, 1238980.00 ns, 247.7960 ns/op
+Result  6: 5000 op, 1269580.00 ns, 253.9160 ns/op
+Result  7: 5000 op, 1309880.00 ns, 261.9760 ns/op
+Result  8: 5000 op, 1283580.00 ns, 256.7160 ns/op
+Result  9: 5000 op, 1258280.00 ns, 251.6560 ns/op
+Result 10: 5000 op, 1247480.00 ns, 249.4960 ns/op
+GC:  0 0 0 688128 5000
 
 // AfterAll
 
-Mean = 355.0363 ns, StdErr = 15.0308 ns (4.23%); N = 10, StdDev = 47.5314 ns
-Min = 307.5825 ns, Q1 = 321.8325 ns, Median = 347.5413 ns, Q3 = 368.7500 ns, Max = 472.0500 ns
-IQR = 46.9175 ns, LowerFence = 251.4563 ns, UpperFence = 439.1263 ns
-ConfidenceInterval = [283.1755 ns; 426.8970 ns] (CI 99.9%), Margin = 71.8607 ns (20.24% of Mean)
-Skewness = 1.29, Kurtosis = 3.86, MValue = 2.67
+Mean = 303.6775 ns, StdErr = 8.5694 ns (2.82%); N = 26, StdDev = 43.6954 ns
+Min = 247.7960 ns, Q1 = 255.8360 ns, Median = 308.2587 ns, Q3 = 355.4947 ns, Max = 356.9947 ns
+IQR = 99.6587 ns, LowerFence = 106.3480 ns, UpperFence = 504.9827 ns
+ConfidenceInterval = [271.7553 ns; 335.5996 ns] (CI 99.9%), Margin = 31.9221 ns (10.51% of Mean)
+Skewness = -0.06, Kurtosis = 1.28, MValue = 3.8
 
 // **************************
-// Benchmark: CacheStorage_Benchmark.Clear_Cache: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Benchmark: CacheStorage_Benchmark.RemoveItem_From_Cache: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 // *** Execute ***
-// Launch: 1 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_Clear_Cache_Job-QDCEMC.exe 
+// Launch: 1 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_RemoveItem_From_Cache_Job-BSOCTM.exe 
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
 // GC=Concurrent Workstation
-// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 2000 op, 302300.00 ns, 151.1500 ns/op
-IdleWarmup  2: 2000 op, 8200.00 ns, 4.1000 ns/op
-IdleWarmup  3: 2000 op, 5000.00 ns, 2.5000 ns/op
-IdleWarmup  4: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleWarmup  5: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleWarmup  6: 2000 op, 5600.00 ns, 2.8000 ns/op
-IdleWarmup  7: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleWarmup  8: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleWarmup  9: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleWarmup 10: 2000 op, 5300.00 ns, 2.6500 ns/op
+IdleWarmup  1: 5000 op, 366000.00 ns, 73.2000 ns/op
+IdleWarmup  2: 5000 op, 22100.00 ns, 4.4200 ns/op
+IdleWarmup  3: 5000 op, 18400.00 ns, 3.6800 ns/op
+IdleWarmup  4: 5000 op, 18300.00 ns, 3.6600 ns/op
+IdleWarmup  5: 5000 op, 18700.00 ns, 3.7400 ns/op
+IdleWarmup  6: 5000 op, 18200.00 ns, 3.6400 ns/op
+IdleWarmup  7: 5000 op, 19100.00 ns, 3.8200 ns/op
+IdleWarmup  8: 5000 op, 19000.00 ns, 3.8000 ns/op
 
-IdleTarget  1: 2000 op, 5600.00 ns, 2.8000 ns/op
-IdleTarget  2: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget  3: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget  4: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleTarget  5: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleTarget  6: 2000 op, 5000.00 ns, 2.5000 ns/op
-IdleTarget  7: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget  8: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleTarget  9: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleTarget 10: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleTarget 11: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget 12: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget 13: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget 14: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget 15: 2000 op, 5100.00 ns, 2.5500 ns/op
+IdleTarget  1: 5000 op, 19100.00 ns, 3.8200 ns/op
+IdleTarget  2: 5000 op, 18200.00 ns, 3.6400 ns/op
+IdleTarget  3: 5000 op, 17300.00 ns, 3.4600 ns/op
+IdleTarget  4: 5000 op, 17600.00 ns, 3.5200 ns/op
+IdleTarget  5: 5000 op, 18200.00 ns, 3.6400 ns/op
+IdleTarget  6: 5000 op, 18100.00 ns, 3.6200 ns/op
+IdleTarget  7: 5000 op, 18200.00 ns, 3.6400 ns/op
+IdleTarget  8: 5000 op, 18800.00 ns, 3.7600 ns/op
+IdleTarget  9: 5000 op, 18800.00 ns, 3.7600 ns/op
+IdleTarget 10: 5000 op, 18900.00 ns, 3.7800 ns/op
+IdleTarget 11: 5000 op, 18900.00 ns, 3.7800 ns/op
+IdleTarget 12: 5000 op, 20200.00 ns, 4.0400 ns/op
+IdleTarget 13: 5000 op, 19100.00 ns, 3.8200 ns/op
+IdleTarget 14: 5000 op, 18100.00 ns, 3.6200 ns/op
+IdleTarget 15: 5000 op, 18400.00 ns, 3.6800 ns/op
 
-MainWarmup  1: 2000 op, 632400.00 ns, 316.2000 ns/op
-MainWarmup  2: 2000 op, 640300.00 ns, 320.1500 ns/op
+MainWarmup  1: 5000 op, 1823100.00 ns, 364.6200 ns/op
+MainWarmup  2: 5000 op, 1769700.00 ns, 353.9400 ns/op
 
 // BeforeMainRun
-MainTarget  1: 2000 op, 654900.00 ns, 327.4500 ns/op
-MainTarget  2: 2000 op, 622200.00 ns, 311.1000 ns/op
-MainTarget  3: 2000 op, 617500.00 ns, 308.7500 ns/op
-MainTarget  4: 2000 op, 616800.00 ns, 308.4000 ns/op
-MainTarget  5: 2000 op, 647500.00 ns, 323.7500 ns/op
+MainTarget  1: 5000 op, 1769500.00 ns, 353.9000 ns/op
+MainTarget  2: 5000 op, 1766000.00 ns, 353.2000 ns/op
+MainTarget  3: 5000 op, 1711800.00 ns, 342.3600 ns/op
+MainTarget  4: 5000 op, 1693500.00 ns, 338.7000 ns/op
+MainTarget  5: 5000 op, 1709600.00 ns, 341.9200 ns/op
+MainTarget  6: 5000 op, 1708100.00 ns, 341.6200 ns/op
+MainTarget  7: 5000 op, 1625400.00 ns, 325.0800 ns/op
+MainTarget  8: 5000 op, 1707000.00 ns, 341.4000 ns/op
+MainTarget  9: 5000 op, 1707000.00 ns, 341.4000 ns/op
+MainTarget 10: 5000 op, 1777900.00 ns, 355.5800 ns/op
 
 // AfterMainRun
-Result  1: 2000 op, 649573.33 ns, 324.7867 ns/op
-Result  2: 2000 op, 616873.33 ns, 308.4367 ns/op
-Result  3: 2000 op, 612173.33 ns, 306.0867 ns/op
-Result  4: 2000 op, 611473.33 ns, 305.7367 ns/op
-Result  5: 2000 op, 642173.33 ns, 321.0867 ns/op
-GC:  0 0 0 434176 2000
+Result  1: 5000 op, 1750973.33 ns, 350.1947 ns/op
+Result  2: 5000 op, 1747473.33 ns, 349.4947 ns/op
+Result  3: 5000 op, 1693273.33 ns, 338.6547 ns/op
+Result  4: 5000 op, 1674973.33 ns, 334.9947 ns/op
+Result  5: 5000 op, 1691073.33 ns, 338.2147 ns/op
+Result  6: 5000 op, 1689573.33 ns, 337.9147 ns/op
+Result  7: 5000 op, 1606873.33 ns, 321.3747 ns/op
+Result  8: 5000 op, 1688473.33 ns, 337.6947 ns/op
+Result  9: 5000 op, 1688473.33 ns, 337.6947 ns/op
+Result 10: 5000 op, 1759373.33 ns, 351.8747 ns/op
+GC:  0 0 0 1081344 5000
 
 // AfterAll
-// Launch: 2 / 2
-// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_Clear_Cache_Job-QDCEMC.exe diagnoserAttached
+// Launch: 2 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_RemoveItem_From_Cache_Job-BSOCTM.exe 
 // BeforeAnythingElse
 
 // Benchmark Process Environment Information:
 // Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
 // GC=Concurrent Workstation
-// Job: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 
-IdleWarmup  1: 2000 op, 300500.00 ns, 150.2500 ns/op
-IdleWarmup  2: 2000 op, 7100.00 ns, 3.5500 ns/op
-IdleWarmup  3: 2000 op, 4400.00 ns, 2.2000 ns/op
-IdleWarmup  4: 2000 op, 4500.00 ns, 2.2500 ns/op
-IdleWarmup  5: 2000 op, 4900.00 ns, 2.4500 ns/op
-IdleWarmup  6: 2000 op, 5000.00 ns, 2.5000 ns/op
-IdleWarmup  7: 2000 op, 25300.00 ns, 12.6500 ns/op
-IdleWarmup  8: 2000 op, 5600.00 ns, 2.8000 ns/op
-IdleWarmup  9: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleWarmup 10: 2000 op, 5100.00 ns, 2.5500 ns/op
+IdleWarmup  1: 5000 op, 332200.00 ns, 66.4400 ns/op
+IdleWarmup  2: 5000 op, 18700.00 ns, 3.7400 ns/op
+IdleWarmup  3: 5000 op, 13900.00 ns, 2.7800 ns/op
+IdleWarmup  4: 5000 op, 13500.00 ns, 2.7000 ns/op
+IdleWarmup  5: 5000 op, 13500.00 ns, 2.7000 ns/op
+IdleWarmup  6: 5000 op, 16800.00 ns, 3.3600 ns/op
+IdleWarmup  7: 5000 op, 16900.00 ns, 3.3800 ns/op
+IdleWarmup  8: 5000 op, 16900.00 ns, 3.3800 ns/op
+IdleWarmup  9: 5000 op, 16100.00 ns, 3.2200 ns/op
 
-IdleTarget  1: 2000 op, 6000.00 ns, 3.0000 ns/op
-IdleTarget  2: 2000 op, 5600.00 ns, 2.8000 ns/op
-IdleTarget  3: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget  4: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget  5: 2000 op, 5100.00 ns, 2.5500 ns/op
-IdleTarget  6: 2000 op, 4700.00 ns, 2.3500 ns/op
-IdleTarget  7: 2000 op, 5900.00 ns, 2.9500 ns/op
-IdleTarget  8: 2000 op, 6100.00 ns, 3.0500 ns/op
-IdleTarget  9: 2000 op, 5600.00 ns, 2.8000 ns/op
-IdleTarget 10: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleTarget 11: 2000 op, 5500.00 ns, 2.7500 ns/op
-IdleTarget 12: 2000 op, 5700.00 ns, 2.8500 ns/op
-IdleTarget 13: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget 14: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget 15: 2000 op, 5200.00 ns, 2.6000 ns/op
-IdleTarget 16: 2000 op, 5400.00 ns, 2.7000 ns/op
-IdleTarget 17: 2000 op, 5300.00 ns, 2.6500 ns/op
-IdleTarget 18: 2000 op, 5000.00 ns, 2.5000 ns/op
-IdleTarget 19: 2000 op, 4800.00 ns, 2.4000 ns/op
-IdleTarget 20: 2000 op, 5400.00 ns, 2.7000 ns/op
+IdleTarget  1: 5000 op, 15500.00 ns, 3.1000 ns/op
+IdleTarget  2: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget  3: 5000 op, 16000.00 ns, 3.2000 ns/op
+IdleTarget  4: 5000 op, 14900.00 ns, 2.9800 ns/op
+IdleTarget  5: 5000 op, 14400.00 ns, 2.8800 ns/op
+IdleTarget  6: 5000 op, 14200.00 ns, 2.8400 ns/op
+IdleTarget  7: 5000 op, 13700.00 ns, 2.7400 ns/op
+IdleTarget  8: 5000 op, 13400.00 ns, 2.6800 ns/op
+IdleTarget  9: 5000 op, 13600.00 ns, 2.7200 ns/op
+IdleTarget 10: 5000 op, 13100.00 ns, 2.6200 ns/op
+IdleTarget 11: 5000 op, 13900.00 ns, 2.7800 ns/op
+IdleTarget 12: 5000 op, 13500.00 ns, 2.7000 ns/op
+IdleTarget 13: 5000 op, 13500.00 ns, 2.7000 ns/op
+IdleTarget 14: 5000 op, 13500.00 ns, 2.7000 ns/op
+IdleTarget 15: 5000 op, 13500.00 ns, 2.7000 ns/op
+IdleTarget 16: 5000 op, 13800.00 ns, 2.7600 ns/op
+IdleTarget 17: 5000 op, 13800.00 ns, 2.7600 ns/op
 
-MainWarmup  1: 2000 op, 586000.00 ns, 293.0000 ns/op
-MainWarmup  2: 2000 op, 584400.00 ns, 292.2000 ns/op
+MainWarmup  1: 5000 op, 1502300.00 ns, 300.4600 ns/op
+MainWarmup  2: 5000 op, 1375900.00 ns, 275.1800 ns/op
 
 // BeforeMainRun
-MainTarget  1: 2000 op, 565700.00 ns, 282.8500 ns/op
-MainTarget  2: 2000 op, 538300.00 ns, 269.1500 ns/op
-MainTarget  3: 2000 op, 548300.00 ns, 274.1500 ns/op
-MainTarget  4: 2000 op, 556000.00 ns, 278.0000 ns/op
-MainTarget  5: 2000 op, 543100.00 ns, 271.5500 ns/op
+MainTarget  1: 5000 op, 1888400.00 ns, 377.6800 ns/op
+MainTarget  2: 5000 op, 1400000.00 ns, 280.0000 ns/op
+MainTarget  3: 5000 op, 1397900.00 ns, 279.5800 ns/op
+MainTarget  4: 5000 op, 1366900.00 ns, 273.3800 ns/op
+MainTarget  5: 5000 op, 1390600.00 ns, 278.1200 ns/op
+MainTarget  6: 5000 op, 1408300.00 ns, 281.6600 ns/op
+MainTarget  7: 5000 op, 1329700.00 ns, 265.9400 ns/op
+MainTarget  8: 5000 op, 1322000.00 ns, 264.4000 ns/op
+MainTarget  9: 5000 op, 1308900.00 ns, 261.7800 ns/op
+MainTarget 10: 5000 op, 1450700.00 ns, 290.1400 ns/op
 
 // AfterMainRun
-Result  1: 2000 op, 560285.00 ns, 280.1425 ns/op
-Result  2: 2000 op, 532885.00 ns, 266.4425 ns/op
-Result  3: 2000 op, 542885.00 ns, 271.4425 ns/op
-Result  4: 2000 op, 550585.00 ns, 275.2925 ns/op
-Result  5: 2000 op, 537685.00 ns, 268.8425 ns/op
-GC:  0 0 0 434176 2000
+Result  1: 5000 op, 1385923.53 ns, 277.1847 ns/op
+Result  2: 5000 op, 1383823.53 ns, 276.7647 ns/op
+Result  3: 5000 op, 1352823.53 ns, 270.5647 ns/op
+Result  4: 5000 op, 1376523.53 ns, 275.3047 ns/op
+Result  5: 5000 op, 1394223.53 ns, 278.8447 ns/op
+Result  6: 5000 op, 1315623.53 ns, 263.1247 ns/op
+Result  7: 5000 op, 1307923.53 ns, 261.5847 ns/op
+Result  8: 5000 op, 1294823.53 ns, 258.9647 ns/op
+Result  9: 5000 op, 1436623.53 ns, 287.3247 ns/op
+GC:  0 0 0 1081344 5000
+
+// AfterAll
+// Launch: 3 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_RemoveItem_From_Cache_Job-BSOCTM.exe diagnoserAttached
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
+// GC=Concurrent Workstation
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
+
+IdleWarmup  1: 5000 op, 317800.00 ns, 63.5600 ns/op
+IdleWarmup  2: 5000 op, 17100.00 ns, 3.4200 ns/op
+IdleWarmup  3: 5000 op, 13000.00 ns, 2.6000 ns/op
+IdleWarmup  4: 5000 op, 13600.00 ns, 2.7200 ns/op
+IdleWarmup  5: 5000 op, 13400.00 ns, 2.6800 ns/op
+IdleWarmup  6: 5000 op, 13400.00 ns, 2.6800 ns/op
+IdleWarmup  7: 5000 op, 13600.00 ns, 2.7200 ns/op
+
+IdleTarget  1: 5000 op, 13200.00 ns, 2.6400 ns/op
+IdleTarget  2: 5000 op, 13100.00 ns, 2.6200 ns/op
+IdleTarget  3: 5000 op, 13000.00 ns, 2.6000 ns/op
+IdleTarget  4: 5000 op, 13500.00 ns, 2.7000 ns/op
+IdleTarget  5: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleTarget  6: 5000 op, 14100.00 ns, 2.8200 ns/op
+IdleTarget  7: 5000 op, 14400.00 ns, 2.8800 ns/op
+IdleTarget  8: 5000 op, 13900.00 ns, 2.7800 ns/op
+IdleTarget  9: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleTarget 10: 5000 op, 14100.00 ns, 2.8200 ns/op
+IdleTarget 11: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleTarget 12: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleTarget 13: 5000 op, 14100.00 ns, 2.8200 ns/op
+IdleTarget 14: 5000 op, 13600.00 ns, 2.7200 ns/op
+IdleTarget 15: 5000 op, 14000.00 ns, 2.8000 ns/op
+
+MainWarmup  1: 5000 op, 1380100.00 ns, 276.0200 ns/op
+MainWarmup  2: 5000 op, 1399800.00 ns, 279.9600 ns/op
+
+// BeforeMainRun
+MainTarget  1: 5000 op, 1354700.00 ns, 270.9400 ns/op
+MainTarget  2: 5000 op, 1342800.00 ns, 268.5600 ns/op
+MainTarget  3: 5000 op, 1339100.00 ns, 267.8200 ns/op
+MainTarget  4: 5000 op, 1303100.00 ns, 260.6200 ns/op
+MainTarget  5: 5000 op, 1340300.00 ns, 268.0600 ns/op
+MainTarget  6: 5000 op, 1343600.00 ns, 268.7200 ns/op
+MainTarget  7: 5000 op, 1304200.00 ns, 260.8400 ns/op
+MainTarget  8: 5000 op, 1284700.00 ns, 256.9400 ns/op
+MainTarget  9: 5000 op, 1383200.00 ns, 276.6400 ns/op
+MainTarget 10: 5000 op, 1307400.00 ns, 261.4800 ns/op
+
+// AfterMainRun
+Result  1: 5000 op, 1340866.67 ns, 268.1733 ns/op
+Result  2: 5000 op, 1328966.67 ns, 265.7933 ns/op
+Result  3: 5000 op, 1325266.67 ns, 265.0533 ns/op
+Result  4: 5000 op, 1289266.67 ns, 257.8533 ns/op
+Result  5: 5000 op, 1326466.67 ns, 265.2933 ns/op
+Result  6: 5000 op, 1329766.67 ns, 265.9533 ns/op
+Result  7: 5000 op, 1290366.67 ns, 258.0733 ns/op
+Result  8: 5000 op, 1270866.67 ns, 254.1733 ns/op
+Result  9: 5000 op, 1369366.67 ns, 273.8733 ns/op
+Result 10: 5000 op, 1293566.67 ns, 258.7133 ns/op
+GC:  0 0 0 1081344 5000
 
 // AfterAll
 
-Mean = 292.8296 ns, StdErr = 7.1517 ns (2.44%); N = 10, StdDev = 22.6157 ns
-Min = 266.4425 ns, Q1 = 271.4425 ns, Median = 292.9396 ns, Q3 = 308.4367 ns, Max = 324.7867 ns
-IQR = 36.9942 ns, LowerFence = 215.9513 ns, UpperFence = 363.9279 ns
-ConfidenceInterval = [258.6379 ns; 327.0213 ns] (CI 99.9%), Margin = 34.1917 ns (11.68% of Mean)
-Skewness = 0.12, Kurtosis = 1.13, MValue = 3.6
+Mean = 292.4387 ns, StdErr = 6.6927 ns (2.29%); N = 29, StdDev = 36.0413 ns
+Min = 254.1733 ns, Q1 = 264.0890 ns, Median = 275.3047 ns, Q3 = 337.6947 ns, Max = 351.8747 ns
+IQR = 73.6056 ns, LowerFence = 153.6806 ns, UpperFence = 448.1031 ns
+ConfidenceInterval = [267.8503 ns; 317.0271 ns] (CI 99.9%), Margin = 24.5884 ns (8.41% of Mean)
+Skewness = 0.57, Kurtosis = 1.47, MValue = 3.13
+
+// **************************
+// Benchmark: CacheStorage_Benchmark.Clear_Cache: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
+// *** Execute ***
+// Launch: 1 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_Clear_Cache_Job-BSOCTM.exe 
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
+// GC=Concurrent Workstation
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
+
+IdleWarmup  1: 5000 op, 331100.00 ns, 66.2200 ns/op
+IdleWarmup  2: 5000 op, 18100.00 ns, 3.6200 ns/op
+IdleWarmup  3: 5000 op, 14900.00 ns, 2.9800 ns/op
+IdleWarmup  4: 5000 op, 16300.00 ns, 3.2600 ns/op
+IdleWarmup  5: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleWarmup  6: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleWarmup  7: 5000 op, 14900.00 ns, 2.9800 ns/op
+
+IdleTarget  1: 5000 op, 14300.00 ns, 2.8600 ns/op
+IdleTarget  2: 5000 op, 14400.00 ns, 2.8800 ns/op
+IdleTarget  3: 5000 op, 14300.00 ns, 2.8600 ns/op
+IdleTarget  4: 5000 op, 14400.00 ns, 2.8800 ns/op
+IdleTarget  5: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget  6: 5000 op, 15300.00 ns, 3.0600 ns/op
+IdleTarget  7: 5000 op, 15500.00 ns, 3.1000 ns/op
+IdleTarget  8: 5000 op, 15000.00 ns, 3.0000 ns/op
+IdleTarget  9: 5000 op, 14400.00 ns, 2.8800 ns/op
+IdleTarget 10: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleTarget 11: 5000 op, 15100.00 ns, 3.0200 ns/op
+IdleTarget 12: 5000 op, 14900.00 ns, 2.9800 ns/op
+IdleTarget 13: 5000 op, 14300.00 ns, 2.8600 ns/op
+IdleTarget 14: 5000 op, 14500.00 ns, 2.9000 ns/op
+IdleTarget 15: 5000 op, 14400.00 ns, 2.8800 ns/op
+
+MainWarmup  1: 5000 op, 1428200.00 ns, 285.6400 ns/op
+MainWarmup  2: 5000 op, 1480100.00 ns, 296.0200 ns/op
+
+// BeforeMainRun
+MainTarget  1: 5000 op, 1384000.00 ns, 276.8000 ns/op
+MainTarget  2: 5000 op, 1373900.00 ns, 274.7800 ns/op
+MainTarget  3: 5000 op, 1418900.00 ns, 283.7800 ns/op
+MainTarget  4: 5000 op, 1407400.00 ns, 281.4800 ns/op
+MainTarget  5: 5000 op, 1421900.00 ns, 284.3800 ns/op
+MainTarget  6: 5000 op, 1357600.00 ns, 271.5200 ns/op
+MainTarget  7: 5000 op, 1330300.00 ns, 266.0600 ns/op
+MainTarget  8: 5000 op, 1374800.00 ns, 274.9600 ns/op
+MainTarget  9: 5000 op, 1369200.00 ns, 273.8400 ns/op
+MainTarget 10: 5000 op, 1304300.00 ns, 260.8600 ns/op
+
+// AfterMainRun
+Result  1: 5000 op, 1369313.33 ns, 273.8627 ns/op
+Result  2: 5000 op, 1359213.33 ns, 271.8427 ns/op
+Result  3: 5000 op, 1404213.33 ns, 280.8427 ns/op
+Result  4: 5000 op, 1392713.33 ns, 278.5427 ns/op
+Result  5: 5000 op, 1407213.33 ns, 281.4427 ns/op
+Result  6: 5000 op, 1342913.33 ns, 268.5827 ns/op
+Result  7: 5000 op, 1315613.33 ns, 263.1227 ns/op
+Result  8: 5000 op, 1360113.33 ns, 272.0227 ns/op
+Result  9: 5000 op, 1354513.33 ns, 270.9027 ns/op
+Result 10: 5000 op, 1289613.33 ns, 257.9227 ns/op
+GC:  0 0 0 1081344 5000
+
+// AfterAll
+// Launch: 2 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_Clear_Cache_Job-BSOCTM.exe 
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
+// GC=Concurrent Workstation
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
+
+IdleWarmup  1: 5000 op, 315000.00 ns, 63.0000 ns/op
+IdleWarmup  2: 5000 op, 34800.00 ns, 6.9600 ns/op
+IdleWarmup  3: 5000 op, 17400.00 ns, 3.4800 ns/op
+IdleWarmup  4: 5000 op, 17300.00 ns, 3.4600 ns/op
+IdleWarmup  5: 5000 op, 17300.00 ns, 3.4600 ns/op
+IdleWarmup  6: 5000 op, 17400.00 ns, 3.4800 ns/op
+IdleWarmup  7: 5000 op, 17300.00 ns, 3.4600 ns/op
+IdleWarmup  8: 5000 op, 17600.00 ns, 3.5200 ns/op
+
+IdleTarget  1: 5000 op, 18100.00 ns, 3.6200 ns/op
+IdleTarget  2: 5000 op, 18100.00 ns, 3.6200 ns/op
+IdleTarget  3: 5000 op, 18100.00 ns, 3.6200 ns/op
+IdleTarget  4: 5000 op, 19000.00 ns, 3.8000 ns/op
+IdleTarget  5: 5000 op, 19800.00 ns, 3.9600 ns/op
+IdleTarget  6: 5000 op, 19800.00 ns, 3.9600 ns/op
+IdleTarget  7: 5000 op, 19000.00 ns, 3.8000 ns/op
+IdleTarget  8: 5000 op, 19100.00 ns, 3.8200 ns/op
+IdleTarget  9: 5000 op, 18800.00 ns, 3.7600 ns/op
+IdleTarget 10: 5000 op, 19100.00 ns, 3.8200 ns/op
+IdleTarget 11: 5000 op, 19000.00 ns, 3.8000 ns/op
+IdleTarget 12: 5000 op, 18800.00 ns, 3.7600 ns/op
+IdleTarget 13: 5000 op, 18900.00 ns, 3.7800 ns/op
+IdleTarget 14: 5000 op, 18200.00 ns, 3.6400 ns/op
+IdleTarget 15: 5000 op, 18300.00 ns, 3.6600 ns/op
+
+MainWarmup  1: 5000 op, 1865200.00 ns, 373.0400 ns/op
+MainWarmup  2: 5000 op, 1812800.00 ns, 362.5600 ns/op
+
+// BeforeMainRun
+MainTarget  1: 5000 op, 1699100.00 ns, 339.8200 ns/op
+MainTarget  2: 5000 op, 1749000.00 ns, 349.8000 ns/op
+MainTarget  3: 5000 op, 1973100.00 ns, 394.6200 ns/op
+MainTarget  4: 5000 op, 1845500.00 ns, 369.1000 ns/op
+MainTarget  5: 5000 op, 1880000.00 ns, 376.0000 ns/op
+MainTarget  6: 5000 op, 1901600.00 ns, 380.3200 ns/op
+MainTarget  7: 5000 op, 1885300.00 ns, 377.0600 ns/op
+MainTarget  8: 5000 op, 2000200.00 ns, 400.0400 ns/op
+MainTarget  9: 5000 op, 1937200.00 ns, 387.4400 ns/op
+MainTarget 10: 5000 op, 1927700.00 ns, 385.5400 ns/op
+
+// AfterMainRun
+Result  1: 5000 op, 1730193.33 ns, 346.0387 ns/op
+Result  2: 5000 op, 1954293.33 ns, 390.8587 ns/op
+Result  3: 5000 op, 1826693.33 ns, 365.3387 ns/op
+Result  4: 5000 op, 1861193.33 ns, 372.2387 ns/op
+Result  5: 5000 op, 1882793.33 ns, 376.5587 ns/op
+Result  6: 5000 op, 1866493.33 ns, 373.2987 ns/op
+Result  7: 5000 op, 1981393.33 ns, 396.2787 ns/op
+Result  8: 5000 op, 1918393.33 ns, 383.6787 ns/op
+Result  9: 5000 op, 1908893.33 ns, 381.7787 ns/op
+GC:  0 0 0 1081344 5000
+
+// AfterAll
+// Launch: 3 / 3
+// Execute: C:\Source\Catel.Benchmarks\output\Release\Catel.Benchmarks.5.1.0\net47\CacheStorage_Benchmark_Clear_Cache_Job-BSOCTM.exe diagnoserAttached
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
+// GC=Concurrent Workstation
+// Job: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
+
+IdleWarmup  1: 5000 op, 329100.00 ns, 65.8200 ns/op
+IdleWarmup  2: 5000 op, 16300.00 ns, 3.2600 ns/op
+IdleWarmup  3: 5000 op, 12900.00 ns, 2.5800 ns/op
+IdleWarmup  4: 5000 op, 13100.00 ns, 2.6200 ns/op
+IdleWarmup  5: 5000 op, 13000.00 ns, 2.6000 ns/op
+IdleWarmup  6: 5000 op, 13000.00 ns, 2.6000 ns/op
+IdleWarmup  7: 5000 op, 13500.00 ns, 2.7000 ns/op
+
+IdleTarget  1: 5000 op, 14000.00 ns, 2.8000 ns/op
+IdleTarget  2: 5000 op, 13800.00 ns, 2.7600 ns/op
+IdleTarget  3: 5000 op, 13900.00 ns, 2.7800 ns/op
+IdleTarget  4: 5000 op, 13400.00 ns, 2.6800 ns/op
+IdleTarget  5: 5000 op, 13600.00 ns, 2.7200 ns/op
+IdleTarget  6: 5000 op, 13400.00 ns, 2.6800 ns/op
+IdleTarget  7: 5000 op, 13600.00 ns, 2.7200 ns/op
+IdleTarget  8: 5000 op, 13700.00 ns, 2.7400 ns/op
+IdleTarget  9: 5000 op, 13400.00 ns, 2.6800 ns/op
+IdleTarget 10: 5000 op, 12900.00 ns, 2.5800 ns/op
+IdleTarget 11: 5000 op, 13500.00 ns, 2.7000 ns/op
+IdleTarget 12: 5000 op, 13500.00 ns, 2.7000 ns/op
+IdleTarget 13: 5000 op, 13700.00 ns, 2.7400 ns/op
+IdleTarget 14: 5000 op, 13500.00 ns, 2.7000 ns/op
+IdleTarget 15: 5000 op, 13400.00 ns, 2.6800 ns/op
+
+MainWarmup  1: 5000 op, 1339200.00 ns, 267.8400 ns/op
+MainWarmup  2: 5000 op, 1313600.00 ns, 262.7200 ns/op
+
+// BeforeMainRun
+MainTarget  1: 5000 op, 1308600.00 ns, 261.7200 ns/op
+MainTarget  2: 5000 op, 1316100.00 ns, 263.2200 ns/op
+MainTarget  3: 5000 op, 1388400.00 ns, 277.6800 ns/op
+MainTarget  4: 5000 op, 1360800.00 ns, 272.1600 ns/op
+MainTarget  5: 5000 op, 1291800.00 ns, 258.3600 ns/op
+MainTarget  6: 5000 op, 1323900.00 ns, 264.7800 ns/op
+MainTarget  7: 5000 op, 1343000.00 ns, 268.6000 ns/op
+MainTarget  8: 5000 op, 1358000.00 ns, 271.6000 ns/op
+MainTarget  9: 5000 op, 1335000.00 ns, 267.0000 ns/op
+MainTarget 10: 5000 op, 1329600.00 ns, 265.9200 ns/op
+
+// AfterMainRun
+Result  1: 5000 op, 1295046.67 ns, 259.0093 ns/op
+Result  2: 5000 op, 1302546.67 ns, 260.5093 ns/op
+Result  3: 5000 op, 1374846.67 ns, 274.9693 ns/op
+Result  4: 5000 op, 1347246.67 ns, 269.4493 ns/op
+Result  5: 5000 op, 1278246.67 ns, 255.6493 ns/op
+Result  6: 5000 op, 1310346.67 ns, 262.0693 ns/op
+Result  7: 5000 op, 1329446.67 ns, 265.8893 ns/op
+Result  8: 5000 op, 1344446.67 ns, 268.8893 ns/op
+Result  9: 5000 op, 1321446.67 ns, 264.2893 ns/op
+Result 10: 5000 op, 1316046.67 ns, 263.2093 ns/op
+GC:  0 0 0 1081344 5000
+
+// AfterAll
+
+Mean = 301.6927 ns, StdErr = 9.6320 ns (3.19%); N = 29, StdDev = 51.8697 ns
+Min = 255.6493 ns, Q1 = 263.7493 ns, Median = 272.0227 ns, Q3 = 368.7887 ns, Max = 396.2787 ns
+IQR = 105.0393 ns, LowerFence = 106.1903 ns, UpperFence = 526.3477 ns
+ConfidenceInterval = [266.3058 ns; 337.0796 ns] (CI 99.9%), Margin = 35.3869 ns (11.73% of Mean)
+Skewness = 0.8, Kurtosis = 1.74, MValue = 2.9
 
 // ***** BenchmarkRunner: Finish  *****
 
@@ -749,99 +1221,111 @@ Skewness = 0.12, Kurtosis = 1.13, MValue = 3.6
   BenchmarkDotNet.Artifacts\results\CacheStorage_Benchmark-measurements.csv
 
 // * Detailed results *
-CacheStorage_Benchmark.GetValue_From_An_Already_Initialized_Cache: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+CacheStorage_Benchmark.GetValue_From_An_Already_Initialized_Cache: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 Runtime = .NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0; GC = Concurrent Workstation
-Mean = 326.9096 ns, StdErr = 16.7213 ns (5.11%); N = 10, StdDev = 52.8774 ns
-Min = 281.9367 ns, Q1 = 287.5367 ns, Median = 293.8046 ns, Q3 = 381.2725 ns, Max = 411.5725 ns
-IQR = 93.7358 ns, LowerFence = 146.9329 ns, UpperFence = 521.8763 ns
-ConfidenceInterval = [246.9666 ns; 406.8526 ns] (CI 99.9%), Margin = 79.9430 ns (24.45% of Mean)
-Skewness = 0.59, Kurtosis = 1.4, MValue = 2.67
+Mean = 247.7756 ns, StdErr = 2.2075 ns (0.89%); N = 29, StdDev = 11.8878 ns
+Min = 232.5613 ns, Q1 = 240.3800 ns, Median = 244.9400 ns, Q3 = 249.7447 ns, Max = 282.0680 ns
+IQR = 9.3647 ns, LowerFence = 226.3330 ns, UpperFence = 263.7917 ns
+ConfidenceInterval = [239.6655 ns; 255.8858 ns] (CI 99.9%), Margin = 8.1102 ns (3.27% of Mean)
+Skewness = 1.22, Kurtosis = 3.85, MValue = 2.24
 -------------------- Histogram --------------------
-[266.411 ns ; 309.362 ns) | @@@@@@
-[309.362 ns ; 362.048 ns) | @
-[362.048 ns ; 417.898 ns) | @@@
+[231.345 ns ; 238.116 ns) | @@@@@
+[238.116 ns ; 246.596 ns) | @@@@@@@@@@@@@
+[246.596 ns ; 252.670 ns) | @@@@@
+[252.670 ns ; 259.812 ns) | 
+[259.812 ns ; 270.582 ns) | @@@@
+[270.582 ns ; 277.354 ns) | @
+[277.354 ns ; 285.454 ns) | @
 ---------------------------------------------------
 
-CacheStorage_Benchmark.Overwrite_An_Existing_Cached_Value: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+CacheStorage_Benchmark.Overwrite_An_Existing_Cached_Value: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 Runtime = .NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0; GC = Concurrent Workstation
-Mean = 264.1367 ns, StdErr = 5.4347 ns (2.06%); N = 10, StdDev = 17.1859 ns
-Min = 242.3967 ns, Q1 = 246.0467 ns, Median = 265.5467 ns, Q3 = 278.8467 ns, Max = 287.3967 ns
-IQR = 32.8000 ns, LowerFence = 196.8467 ns, UpperFence = 328.0467 ns
-ConfidenceInterval = [238.1540 ns; 290.1194 ns] (CI 99.9%), Margin = 25.9827 ns (9.84% of Mean)
-Skewness = -0.02, Kurtosis = 1.23, MValue = 3.5
+Mean = 270.1370 ns, StdErr = 5.4647 ns (2.02%); N = 30, StdDev = 29.9312 ns
+Min = 243.2280 ns, Q1 = 247.7880 ns, Median = 256.7790 ns, Q3 = 285.2500 ns, Max = 342.6730 ns
+IQR = 37.4620 ns, LowerFence = 191.5950 ns, UpperFence = 341.4430 ns
+ConfidenceInterval = [250.1396 ns; 290.1344 ns] (CI 99.9%), Margin = 19.9974 ns (7.40% of Mean)
+Skewness = 1.12, Kurtosis = 2.86, MValue = 2.63
 -------------------- Histogram --------------------
-[241.917 ns ; 255.877 ns) | @@@@
-[255.877 ns ; 271.017 ns) | @
-[271.017 ns ; 284.977 ns) | @@@@
-[284.977 ns ; 294.377 ns) | @
+[242.770 ns ; 259.628 ns) | @@@@@@@@@@@@@@@@@
+[259.628 ns ; 275.793 ns) | @@@@
+[275.793 ns ; 292.650 ns) | @@@
+[292.650 ns ; 304.714 ns) | 
+[304.714 ns ; 321.572 ns) | @@@@
+[321.572 ns ; 331.324 ns) | 
+[331.324 ns ; 351.102 ns) | @@
 ---------------------------------------------------
 
-CacheStorage_Benchmark.GetFromCacheOrFetch: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+CacheStorage_Benchmark.GetFromCacheOrFetch: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 Runtime = .NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0; GC = Concurrent Workstation
-Mean = 302.1483 ns, StdErr = 2.9973 ns (0.99%); N = 10, StdDev = 9.4784 ns
-Min = 288.5667 ns, Q1 = 293.2100 ns, Median = 304.9100 ns, Q3 = 309.7600 ns, Max = 315.8667 ns
-IQR = 16.5500 ns, LowerFence = 268.3850 ns, UpperFence = 334.5850 ns
-ConfidenceInterval = [287.8183 ns; 316.4783 ns] (CI 99.9%), Margin = 14.3300 ns (4.74% of Mean)
-Skewness = -0.07, Kurtosis = 1.3, MValue = 4
+Mean = 278.7059 ns, StdErr = 3.3354 ns (1.20%); N = 30, StdDev = 18.2687 ns
+Min = 259.0067 ns, Q1 = 267.6067 ns, Median = 272.9133 ns, Q3 = 285.1650 ns, Max = 332.6050 ns
+IQR = 17.5583 ns, LowerFence = 241.2692 ns, UpperFence = 311.5025 ns
+ConfidenceInterval = [266.5003 ns; 290.9114 ns] (CI 99.9%), Margin = 12.2056 ns (4.38% of Mean)
+Skewness = 1.48, Kurtosis = 4.48, MValue = 2.22
 -------------------- Histogram --------------------
-[287.592 ns ; 295.291 ns) | @@@@
-[295.291 ns ; 303.185 ns) | 
-[303.185 ns ; 310.885 ns) | @@@@
-[310.885 ns ; 319.716 ns) | @@
+[253.862 ns ; 262.952 ns) | @@@
+[262.952 ns ; 273.241 ns) | @@@@@@@@@@@@@
+[273.241 ns ; 286.125 ns) | @@@@@@@@
+[286.125 ns ; 294.247 ns) | @@
+[294.247 ns ; 305.130 ns) | @
+[305.130 ns ; 314.581 ns) | 
+[314.581 ns ; 324.870 ns) | @@
+[324.870 ns ; 337.750 ns) | @
 ---------------------------------------------------
 
-CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 Runtime = .NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0; GC = Concurrent Workstation
-Mean = 439.0213 ns, StdErr = 38.8585 ns (8.85%); N = 10, StdDev = 122.8812 ns
-Min = 331.9525 ns, Q1 = 353.0525 ns, Median = 404.8363 ns, Q3 = 497.2700 ns, Max = 729.1700 ns
-IQR = 144.2175 ns, LowerFence = 136.7263 ns, UpperFence = 713.5963 ns
-ConfidenceInterval = [253.2424 ns; 624.8001 ns] (CI 99.9%), Margin = 185.7789 ns (42.32% of Mean)
-Skewness = 1.13, Kurtosis = 3.29, MValue = 3.2
+Mean = 303.6775 ns, StdErr = 8.5694 ns (2.82%); N = 26, StdDev = 43.6954 ns
+Min = 247.7960 ns, Q1 = 255.8360 ns, Median = 308.2587 ns, Q3 = 355.4947 ns, Max = 356.9947 ns
+IQR = 99.6587 ns, LowerFence = 106.3480 ns, UpperFence = 504.9827 ns
+ConfidenceInterval = [271.7553 ns; 335.5996 ns] (CI 99.9%), Margin = 31.9221 ns (10.51% of Mean)
+Skewness = -0.06, Kurtosis = 1.28, MValue = 3.8
 -------------------- Histogram --------------------
-[297.771 ns ; 397.584 ns) | @@@@@
-[397.584 ns ; 527.352 ns) | @@@@
-[527.352 ns ; 627.166 ns) | 
-[627.166 ns ; 679.263 ns) | 
-[679.263 ns ; 779.077 ns) | @
+[241.980 ns ; 267.792 ns) | @@@@@@@@@@
+[267.792 ns ; 304.173 ns) | 
+[304.173 ns ; 331.351 ns) | @@@@@@@
+[331.351 ns ; 357.163 ns) | @@@@@@@@@
 ---------------------------------------------------
 
-CacheStorage_Benchmark.RemoveItem_From_Cache: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+CacheStorage_Benchmark.RemoveItem_From_Cache: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 Runtime = .NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0; GC = Concurrent Workstation
-Mean = 355.0363 ns, StdErr = 15.0308 ns (4.23%); N = 10, StdDev = 47.5314 ns
-Min = 307.5825 ns, Q1 = 321.8325 ns, Median = 347.5413 ns, Q3 = 368.7500 ns, Max = 472.0500 ns
-IQR = 46.9175 ns, LowerFence = 251.4563 ns, UpperFence = 439.1263 ns
-ConfidenceInterval = [283.1755 ns; 426.8970 ns] (CI 99.9%), Margin = 71.8607 ns (20.24% of Mean)
-Skewness = 1.29, Kurtosis = 3.86, MValue = 2.67
+Mean = 292.4387 ns, StdErr = 6.6927 ns (2.29%); N = 29, StdDev = 36.0413 ns
+Min = 254.1733 ns, Q1 = 264.0890 ns, Median = 275.3047 ns, Q3 = 337.6947 ns, Max = 351.8747 ns
+IQR = 73.6056 ns, LowerFence = 153.6806 ns, UpperFence = 448.1031 ns
+ConfidenceInterval = [267.8503 ns; 317.0271 ns] (CI 99.9%), Margin = 24.5884 ns (8.41% of Mean)
+Skewness = 0.57, Kurtosis = 1.47, MValue = 3.13
 -------------------- Histogram --------------------
-[304.803 ns ; 343.412 ns) | @@@@@
-[343.412 ns ; 385.854 ns) | @@@@
-[385.854 ns ; 424.463 ns) | 
-[424.463 ns ; 452.746 ns) | 
-[452.746 ns ; 491.354 ns) | @
+[243.909 ns ; 257.254 ns) | @
+[257.254 ns ; 277.784 ns) | @@@@@@@@@@@@@@@@
+[277.784 ns ; 293.349 ns) | @@
+[293.349 ns ; 311.110 ns) | 
+[311.110 ns ; 333.170 ns) | @
+[333.170 ns ; 353.699 ns) | @@@@@@@@@
 ---------------------------------------------------
 
-CacheStorage_Benchmark.Clear_Cache: Job-QDCEMC(InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2)
+CacheStorage_Benchmark.Clear_Cache: Job-BSOCTM(InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2)
 Runtime = .NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0; GC = Concurrent Workstation
-Mean = 292.8296 ns, StdErr = 7.1517 ns (2.44%); N = 10, StdDev = 22.6157 ns
-Min = 266.4425 ns, Q1 = 271.4425 ns, Median = 292.9396 ns, Q3 = 308.4367 ns, Max = 324.7867 ns
-IQR = 36.9942 ns, LowerFence = 215.9513 ns, UpperFence = 363.9279 ns
-ConfidenceInterval = [258.6379 ns; 327.0213 ns] (CI 99.9%), Margin = 34.1917 ns (11.68% of Mean)
-Skewness = 0.12, Kurtosis = 1.13, MValue = 3.6
+Mean = 301.6927 ns, StdErr = 9.6320 ns (3.19%); N = 29, StdDev = 51.8697 ns
+Min = 255.6493 ns, Q1 = 263.7493 ns, Median = 272.0227 ns, Q3 = 368.7887 ns, Max = 396.2787 ns
+IQR = 105.0393 ns, LowerFence = 106.1903 ns, UpperFence = 526.3477 ns
+ConfidenceInterval = [266.3058 ns; 337.0796 ns] (CI 99.9%), Margin = 35.3869 ns (11.73% of Mean)
+Skewness = 0.8, Kurtosis = 1.74, MValue = 2.9
 -------------------- Histogram --------------------
-[264.107 ns ; 282.478 ns) | @@@@@
-[282.478 ns ; 304.227 ns) | 
-[304.227 ns ; 322.597 ns) | @@@@
-[322.597 ns ; 333.972 ns) | @
+[253.773 ns ; 283.319 ns) | @@@@@@@@@@@@@@@@@@@@
+[283.319 ns ; 312.864 ns) | 
+[312.864 ns ; 340.916 ns) | 
+[340.916 ns ; 369.486 ns) | @@
+[369.486 ns ; 399.031 ns) | @@@@@@@
 ---------------------------------------------------
 
-Total time: 00:00:15 (15.02 sec)
+Total time: 00:00:20 (20.09 sec)
 
 // * Summary *
 
 BenchmarkDotNet=v0.10.14, OS=Windows 10.0.17134, VM=Hyper-V
 Intel Core i7-3960X CPU 3.30GHz (Ivy Bridge), 1 CPU, 8 logical and 8 physical cores
   [Host]     : .NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
-  Job-QDCEMC : .NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
+  Job-BSOCTM : .NET Framework 4.7.1 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3110.0
 
 
 
@@ -859,8 +1343,11 @@ Environment
 
 // * Hints *
 Outliers
-  CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2 -> Something went wrong with outliers: Size(MainTarget) = 10, Size(MainTarget/Outliers) = 1, Size(Result) = 10), RemoveOutliers = True
-  CacheStorage_Benchmark.RemoveItem_From_Cache: InvocationCount=2000, LaunchCount=2, RunStrategy=Throughput, TargetCount=5, WarmupCount=2                                   -> Something went wrong with outliers: Size(MainTarget) = 10, Size(MainTarget/Outliers) = 1, Size(Result) = 10), RemoveOutliers = True
+  CacheStorage_Benchmark.GetValue_From_An_Already_Initialized_Cache: InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2              -> Something went wrong with outliers: Size(MainTarget) = 30, Size(MainTarget/Outliers) = 2, Size(Result) = 29), RemoveOutliers = True
+  CacheStorage_Benchmark.GetFromCacheOrFetch: InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2                                     -> Something went wrong with outliers: Size(MainTarget) = 30, Size(MainTarget/Outliers) = 3, Size(Result) = 30), RemoveOutliers = True
+  CacheStorage_Benchmark.GetFromCacheOrFetch_From_A_Cache_With_Expiration_Policy: InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2 -> Something went wrong with outliers: Size(MainTarget) = 30, Size(MainTarget/Outliers) = 0, Size(Result) = 26), RemoveOutliers = True
+  CacheStorage_Benchmark.RemoveItem_From_Cache: InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2                                   -> Something went wrong with outliers: Size(MainTarget) = 30, Size(MainTarget/Outliers) = 0, Size(Result) = 29), RemoveOutliers = True
+  CacheStorage_Benchmark.Clear_Cache: InvocationCount=5000, LaunchCount=3, RunStrategy=Throughput, TargetCount=10, UnrollFactor=1, WarmupCount=2                                             -> Something went wrong with outliers: Size(MainTarget) = 30, Size(MainTarget/Outliers) = 0, Size(Result) = 29), RemoveOutliers = True
 
 // * Legends *
   1 ns : 1 Nanosecond (0.000000001 sec)
