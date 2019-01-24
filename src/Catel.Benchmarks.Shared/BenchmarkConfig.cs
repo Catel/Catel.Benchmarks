@@ -38,11 +38,14 @@ namespace Catel.Benchmarks
 
             // Diagnosers
             Add(MemoryDiagnoser.Default);
+            //Add(InliningDiagnoser.Default);
+            //Add(MemoryDiagnoser.Default);
 
             // Validators
             Add((IValidator)BaselineValidator.FailOnError);
-            Add(JitOptimizationsValidator.DontFailOnError);
-            Add(UnrollFactorValidator.Default);
+            Add(JitOptimizationsValidator.FailOnError);
+            Add(ExecutionValidator.FailOnError);
+            Add(ReturnValueValidator.FailOnError);
         }
     }
 }

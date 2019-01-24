@@ -7,7 +7,7 @@
 
 namespace Catel.Benchmarks
 {
-    using BenchmarkDotNet.Attributes.Jobs;
+    using BenchmarkDotNet.Attributes;
     using BenchmarkDotNet.Engines;
 
     // Uncomment to make all benchmarks slower (but probably more accurate)

@@ -21,12 +21,12 @@ namespace Catel.BenchmarkCombiner
     using Models;
     using Models.Maps;
 
-    class Program
+    internal class Program
     {
         private static readonly ILog Log = LogManager.GetCurrentClassLogger();
 
         #region Methods
-        static void Main(string[] args)
+        internal static void Main(string[] args)
         {
             var consoleLogger = new ConsoleLogListener
             {
@@ -64,7 +64,7 @@ namespace Catel.BenchmarkCombiner
             CreateExportSummary(exportDirectory, benchmarkDuration);
         }
 
-        static void RunBenchmarks(string baseDirectory, string outputDirectory)
+        internal static void RunBenchmarks(string baseDirectory, string outputDirectory)
         {
             var stopwatch = Stopwatch.StartNew();
             var benchmarkCount = 0;
@@ -87,7 +87,7 @@ namespace Catel.BenchmarkCombiner
             Log.Info($"Running {benchmarkCount} benchmarks took '{stopwatch.Elapsed}'");
         }
 
-        static bool RunBenchmarksForSpecificVersion(string directory)
+        internal static bool RunBenchmarksForSpecificVersion(string directory)
         {
             var exe = Directory.GetFiles(directory, "Catel.Benchmarks.*.exe", SearchOption.AllDirectories).FirstOrDefault();
             if (exe == null)
@@ -116,7 +116,7 @@ namespace Catel.BenchmarkCombiner
             return true;
         }
 
-        static void CreateExportSummary(string exportDirectory, TimeSpan benchmarkDuration)
+        internal static void CreateExportSummary(string exportDirectory, TimeSpan benchmarkDuration)
         {
             var stopwatch = Stopwatch.StartNew();
 
@@ -180,7 +180,7 @@ namespace Catel.BenchmarkCombiner
             Log.Info($"Generating {summaries.Count} export summary took '{stopwatch.Elapsed}'");
         }
 
-        static List<ExportSummary> FindExportSummaries(string outputDirectory)
+        internal static List<ExportSummary> FindExportSummaries(string outputDirectory)
         {
             var summaries = new List<ExportSummary>();
 
@@ -235,7 +235,7 @@ namespace Catel.BenchmarkCombiner
             return summaries;
         }
 
-        static List<BenchmarkSummaryBase> CalculateBenchmarkSummaries(List<MeasurementGroup> measurementGroups)
+        internal static List<BenchmarkSummaryBase> CalculateBenchmarkSummaries(List<MeasurementGroup> measurementGroups)
         {
             var benchmarkSummaries = new List<BenchmarkSummaryBase>();
 
