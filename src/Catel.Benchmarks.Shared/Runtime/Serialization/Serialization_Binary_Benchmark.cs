@@ -18,7 +18,9 @@ namespace Catel.Benchmarks.Runtime.Serialization
         protected override ISerializer GetSerializer()
         {
             var typeFactory = TypeFactory.Default;
+#pragma warning disable CS0618 // Type or member is obsolete
             var serializer = typeFactory.CreateInstance<BinarySerializer>();
+#pragma warning restore CS0618 // Type or member is obsolete
             return serializer;
         }
     }
