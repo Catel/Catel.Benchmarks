@@ -34,9 +34,11 @@ namespace Catel.BenchmarkCombiner
 
         public string Job_MinIterationTime { get; set; }
 
-        public string Job_RemoveOutliers { get; set; }
+        public string Job_OutlierMode { get; set; }
 
         public string Job_Affinity { get; set; }
+
+        public string Job_EnvironmentVariables { get; set; }
 
         public string Job_Jit { get; set; }
 
@@ -52,25 +54,47 @@ namespace Catel.BenchmarkCombiner
 
         public string Job_Force { get; set; }
 
+        public string Job_HeapAffinitizeMask { get; set; }
+
+        public string Job_HeapCount { get; set; }
+
+        public string Job_NoAffinitize { get; set; }
+
         public string Job_RetainVm { get; set; }
 
         public string Job_Server { get; set; }
+
+        public string Job_Arguments { get; set; }
+
+        public string Job_BuildConfiguration { get; set; }
 
         public string Job_Clock { get; set; }
 
         public string Job_EngineFactory { get; set; }
 
+        public string Job_NuGetReferences { get; set; }
+
         public string Job_Toolchain { get; set; }
 
+        public string Job_IsMutator { get; set; }
+
         public string Job_InvocationCount { get; set; }
+
+        public string Job_IterationCount { get; set; }
 
         public string Job_IterationTime { get; set; }
 
         public string Job_LaunchCount { get; set; }
 
-        public string Job_RunStrategy { get; set; }
+        public string Job_MaxIterationCount { get; set; }
 
-        public string Job_TargetCount { get; set; }
+        public string Job_MaxWarmupIterationCount { get; set; }
+
+        public string Job_MinIterationCount { get; set; }
+
+        public string Job_MinWarmupIterationCount { get; set; }
+
+        public string Job_RunStrategy { get; set; }
 
         public string Job_UnrollFactor { get; set; }
 
@@ -83,6 +107,8 @@ namespace Catel.BenchmarkCombiner
         public int Measurement_LaunchIndex { get; set; }
 
         public string Measurement_IterationMode { get; set; }
+
+        public string Measurement_IterationStage { get; set; }
 
         public int Measurement_IterationIndex { get; set; }
 

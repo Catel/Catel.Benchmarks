@@ -55,7 +55,8 @@ namespace Catel.BenchmarkCombiner
         private List<Measurement> GetResultMeasurements()
         {
             var resultMeasurements = (from measurement in Measurements
-                                      where measurement.Measurement_IterationMode.Equals("Result", StringComparison.OrdinalIgnoreCase)
+                                      where measurement.Measurement_IterationMode.Equals("Workload", StringComparison.OrdinalIgnoreCase) &&
+                                            measurement.Measurement_IterationStage.Equals("Result", StringComparison.OrdinalIgnoreCase)
                                       orderby measurement.Measurement_IterationIndex
                                       select measurement).ToList();
 
