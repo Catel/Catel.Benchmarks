@@ -8,6 +8,7 @@
 namespace Catel.Benchmarks
 {
     using BenchmarkDotNet.Analysers;
+    using BenchmarkDotNet.Columns;
     using BenchmarkDotNet.Configs;
     using BenchmarkDotNet.Diagnosers;
     using BenchmarkDotNet.Exporters.Csv;
@@ -18,7 +19,7 @@ namespace Catel.Benchmarks
     {
         public BenchmarkConfig()
         {
-            KeepBenchmarkFiles = true;
+            Options = ConfigOptions.KeepBenchmarkFiles;
 
             // Exporters
             //Add(MarkdownExporter.Default);
@@ -28,6 +29,9 @@ namespace Catel.Benchmarks
             //Add(CsvExporter.Default);
             Add(CsvMeasurementsExporter.Default);
             //Add(RPlotExporter.Default);
+
+            // Columns
+            Add(DefaultColumnProviders.Instance);
 
             // Loggers
             Add(ConsoleLogger.Default);
