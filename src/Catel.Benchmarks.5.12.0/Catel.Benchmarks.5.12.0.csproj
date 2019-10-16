@@ -1,37 +1,34 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras">
   <PropertyGroup>
     <TargetFrameworks>net47</TargetFrameworks>
-    <AssemblyName>Catel.BenchmarkCombiner</AssemblyName>
-    <RootNamespace>Catel.BenchmarkCombiner</RootNamespace>
+    <AssemblyName>Catel.Benchmarks.5.12.0</AssemblyName>
+    <RootNamespace>Catel.Benchmarks</RootNamespace>
     <DefaultLanguage>en-US</DefaultLanguage>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <StartupObject />
-    <NoWarn>$(NoWarn);SA1652</NoWarn>
+    <PackageId>Catel.Benchmarks</PackageId>
+    <PackageVersion>1.0.0-alpha0001</PackageVersion>
+    <Description>Catel.Benchmarks library.</Description>
+    <PackageTags></PackageTags>
+    <DefineConstants>$(DefineConstants);CATEL_5;CATEL_5_12;CATEL_5_12_0</DefineConstants>
     <ApplicationIcon />
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net47|AnyCPU'">
-    <Optimize>false</Optimize>
+    <OutputType>Exe</OutputType>
+    <StartupObject>Catel.Benchmarks.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BenchmarkDotNet" Version="0.11.3" />
-    <PackageReference Include="Catel.Core" Version="5.3.0" />
+    <PackageReference Include="BenchmarkDotNet" Version="0.11.3" />  
+    <PackageReference Include="Catel.Core" Version="5.11.0" />
     <PackageReference Include="Catel.Fody" Version="3.8.0" PrivateAssets="all" />
-    <PackageReference Include="CsvHelper" Version="7.1.1" />
+    <PackageReference Include="Catel.MVVM" Version="5.11.0" />
+    <PackageReference Include="Catel.Serialization.Json" Version="5.11.0" />
     <PackageReference Include="Fody" Version="3.3.5" PrivateAssets="all">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="MethodTimer.Fody" Version="2.3.0" PrivateAssets="all" />
+    <PackageReference Include="ModuleInit.Fody" Version="1.9.0" PrivateAssets="all" />
+    <PackageReference Include="Obsolete.Fody" Version="4.4.3" PrivateAssets="all" />
     <PackageReference Include="WpfAnalyzers" Version="2.2.0.2" PrivateAssets="all">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="NETStandard.Library" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,6 +45,12 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="NETStandard.Library" Version="2.0.1" />
+  </ItemGroup>
+
+  <Import Project="..\Catel.Benchmarks.Shared\Catel.Benchmarks.Shared.projitems" Label="Shared" />
   
   <Import Project="$(MSBuildProjectDirectory)\..\Directory.build.shared.explicit.props" Condition="Exists('$(MSBuildProjectDirectory)\..\Directory.build.shared.explicit.props')" />
 </Project>
