@@ -477,8 +477,8 @@ namespace Catel.BenchmarkCombiner.Exporters
         private void WriteMemorySummaryLine(ExportContext context, string title, VersionMeasurements least, VersionMeasurements most, StreamWriter streamWriter)
         {
             var hasMost = most != null;
-            var leastValue = hasMost ? least.Version : "-";
-            var mostValue = hasMost ? most.Version : "-";
+            var leastValue = hasMost ? least.Title : "-";
+            var mostValue = hasMost ? most.Title : "-";
 
             streamWriter.Write("<tr>");
             streamWriter.Write($"<td>{title}</td>");

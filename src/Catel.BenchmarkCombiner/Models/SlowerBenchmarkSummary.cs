@@ -4,12 +4,13 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-
 namespace Catel.BenchmarkCombiner.Models
 {
+    using Semver;
+
     public class SlowerBenchmarkSummary : BenchmarkSummaryBase
     {
-        public SlowerBenchmarkSummary(string previousVersion, string currentVersion, 
+        public SlowerBenchmarkSummary(SemVersion previousVersion, SemVersion currentVersion,
             double previousVersionInNanoSeconds, double currentVersionInNanoSeconds)
         {
             PreviousVersion = previousVersion;
@@ -25,11 +26,11 @@ namespace Catel.BenchmarkCombiner.Models
             DeltaInPercentage = deltaPercentage;
         }
 
-        public string PreviousVersion { get; private set; }
+        public SemVersion PreviousVersion { get; private set; }
 
         public double PreviousVersionInNanoSeconds { get; private set; }
 
-        public string CurrentVersion { get; private set; }
+        public SemVersion CurrentVersion { get; private set; }
 
         public double CurrentVersionInNanoSeconds { get; private set; }
 

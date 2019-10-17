@@ -20,6 +20,7 @@ namespace Catel.BenchmarkCombiner
     using Logging;
     using Models;
     using Models.Maps;
+    using Semver;
 
     internal class Program
     {
@@ -193,6 +194,8 @@ namespace Catel.BenchmarkCombiner
 
                 if (Directory.Exists(summaryOutputDirectory))
                 {
+                    Log.Info($"Reading benchmark measurements from '{summaryOutputDirectory}'");
+
                     var configuration = new Configuration
                     {
                         Delimiter = ";",
@@ -204,7 +207,7 @@ namespace Catel.BenchmarkCombiner
 
                     foreach (var measurementsCsvFile in Directory.GetFiles(summaryOutputDirectory, "*-measurements.csv", SearchOption.TopDirectoryOnly))
                     {
-                        Log.Info($"Reading benchmark measurements from '{measurementsCsvFile}'");
+                        Log.Debug($"Reading benchmark measurements from '{measurementsCsvFile}'");
 
                         using (var stream = new FileStream(measurementsCsvFile, FileMode.Open, FileAccess.Read))
                         {
@@ -223,9 +226,8 @@ namespace Catel.BenchmarkCombiner
                     }
                 }
 
-                var summary = new ExportSummary(measurements)
+                var summary = new ExportSummary(directoryInfo.Name, SemVersion.Parse(directoryInfo.Name), measurements)
                 {
-                    Title = directoryInfo.Name,
                     Directory = summaryOutputDirectory
                 };
 

@@ -9,15 +9,20 @@ namespace Catel.BenchmarkCombiner
 {
     using System.Collections.Generic;
     using Models;
+    using Semver;
 
     public class ExportSummary
     {
-        public ExportSummary(IEnumerable<Measurement> measurements)
+        public ExportSummary(string title, SemVersion version, IEnumerable<Measurement> measurements)
         {
+            Title = title;
+            Version = version;
             Measurements = new List<Measurement>(measurements);
         }
 
         public string Title { get; set; }
+
+        public SemVersion Version { get; set; }
 
         public string Directory { get; set; }
 

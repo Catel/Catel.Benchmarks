@@ -38,17 +38,14 @@ namespace Catel.BenchmarkCombiner
 
                         foreach (var measurement in benchmarkGroup)
                         {
-                            var version = exportSummary.Title;
+                            var version = exportSummary.Version;
 
                             var versionMeasurement = (from x in measurementGroup.Measurements
-                                                      where x.Version.Equals(version, StringComparison.OrdinalIgnoreCase)
+                                                      where x.Version == version
                                                       select x).FirstOrDefault();
                             if (versionMeasurement == null)
                             {
-                                versionMeasurement = new VersionMeasurements
-                                {
-                                    Version = version
-                                };
+                                versionMeasurement = new VersionMeasurements(exportSummary.Title, exportSummary.Version);
 
                                 measurementGroup.Measurements.Add(versionMeasurement);
                             }
@@ -63,7 +60,7 @@ namespace Catel.BenchmarkCombiner
 
             foreach (var finalGroup in finalGroups)
             {
-                finalGroup.Measurements.Sort((x, y) => string.Compare(x.Version, y.Version, StringComparison.Ordinal));
+                finalGroup.Measurements.Sort((x, y) => x.Version.CompareTo(y.Version));
             }
 
             return finalGroups;

@@ -10,15 +10,20 @@ namespace Catel.BenchmarkCombiner
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using Semver;
 
     public class VersionMeasurements
     {
-        public VersionMeasurements()
+        public VersionMeasurements(string title, SemVersion version)
         {
+            Title = title;
+            Version = version;
             Measurements = new List<Measurement>();
         }
 
-        public string Version { get; set; }
+        public string Title { get; set; }
+
+        public SemVersion Version { get; set; }
 
         public double AverageNanoSeconds
         {
