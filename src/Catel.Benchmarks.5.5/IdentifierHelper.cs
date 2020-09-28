@@ -11,7 +11,7 @@ namespace Catel.Benchmarks
     {
         private static string GetCatelVersion()
         {
-            return "5.6.0";
+            return "5.5";
         }
     }
 }

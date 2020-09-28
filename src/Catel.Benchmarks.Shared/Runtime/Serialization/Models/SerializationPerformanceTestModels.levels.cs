@@ -31,10 +31,12 @@ namespace Catel.Benchmarks.Runtime.Serialization
         {
         }
 
+#if CATEL_5
         protected IniEntry(SerializationInfo info, StreamingContext context)
             : base(info, context)
         {
         }
+#endif
         #endregion
 
         #region Properties
@@ -60,10 +62,12 @@ namespace Catel.Benchmarks.Runtime.Serialization
             IniEntryCollection = new List<IniEntry>();
         }
 
+#if CATEL_5
         protected IniFile(SerializationInfo info, StreamingContext context)
             : base(info, context)
         {
         }
+#endif
         #endregion
 
         #region Properties
@@ -85,10 +89,12 @@ namespace Catel.Benchmarks.Runtime.Serialization
             IniFileCollection = InitializeDefaultIniFileCollection();
         }
 
+#if CATEL_5
         protected ComputerSettings(SerializationInfo info, StreamingContext context)
             : base(info, context)
         {
         }
+#endif
         #endregion
 
         #region Properties

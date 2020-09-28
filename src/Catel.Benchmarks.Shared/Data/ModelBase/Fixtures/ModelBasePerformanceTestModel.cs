@@ -11,30 +11,12 @@ namespace Catel.Benchmarks.Data.ModelBase.Fixtures
 
     public class ModelBasePerformanceTestModel : Catel.Data.ModelBase
     {
-        public string StringProperty
-        {
-            get { return GetValue<string>(StringPropertyProperty); }
-            set { SetValue(StringPropertyProperty, value); }
-        }
-
-        public static readonly PropertyData StringPropertyProperty = RegisterProperty("StringProperty", typeof(string), null);
+        public string StringProperty { get; set; }
 
  
-        public int IntProperty
-        {
-            get { return GetValue<int>(IntPropertyProperty); }
-            set { SetValue(IntPropertyProperty, value); }
-        }
-
-        public static readonly PropertyData IntPropertyProperty = RegisterProperty("IntProperty", typeof(int), null);
+        public int IntProperty { get; set; }
 
 
-        public bool BoolProperty
-        {
-            get { return GetValue<bool>(BoolPropertyProperty); }
-            set { SetValue(BoolPropertyProperty, value); }
-        }
-
-        public static readonly PropertyData BoolPropertyProperty = RegisterProperty("BoolProperty", typeof(bool), null);
+        public bool BoolProperty { get; set; }
     }
 }

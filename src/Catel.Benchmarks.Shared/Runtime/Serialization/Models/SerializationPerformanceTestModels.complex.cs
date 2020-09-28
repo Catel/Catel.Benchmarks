@@ -11,7 +11,6 @@ namespace Catel.Benchmarks.Runtime.Serialization
     using System.Collections.Generic;
     using System.Runtime.Serialization;
     using Catel.Data;
-    using Data;
 
     public enum SortDirection
     {
@@ -104,10 +103,12 @@ namespace Catel.Benchmarks.Runtime.Serialization
             ScheduledGridSettings = new GridSettings();
         }
 
+#if CATEL_5
         protected ScheduleAssistantSettings(SerializationInfo info, StreamingContext context)
             : base(info, context)
         {
         }
+#endif
         #endregion
 
         public string SelectedResource { get; set; }
@@ -130,10 +131,12 @@ namespace Catel.Benchmarks.Runtime.Serialization
             ColumnSettings = new List<ColumnSettings>();
         }
 
+#if CATEL_5
         protected GridSettings(SerializationInfo info, StreamingContext context)
             : base(info, context)
         {
         }
+#endif
         #endregion
 
         public List<SortSetting> SortSettings { get; set; }
@@ -161,7 +164,7 @@ namespace Catel.Benchmarks.Runtime.Serialization
         {
             unchecked
             {
-                return ((ColumnName != null ? ColumnName.GetHashCode() : 0)*397) ^ (int) SortDirection;
+                return ((ColumnName != null ? ColumnName.GetHashCode() : 0) * 397) ^ (int)SortDirection;
             }
         }
 
@@ -177,12 +180,12 @@ namespace Catel.Benchmarks.Runtime.Serialization
                 return true;
             }
 
-            if (obj.GetType() != this.GetType())
+            if (obj.GetType() != GetType())
             {
                 return false;
             }
 
-            return Equals((SortSetting) obj);
+            return Equals((SortSetting)obj);
         }
         #endregion
     }
@@ -207,8 +210,8 @@ namespace Catel.Benchmarks.Runtime.Serialization
             unchecked
             {
                 int hashCode = (ColumnName != null ? ColumnName.GetHashCode() : 0);
-                hashCode = (hashCode*397) ^ Width.GetHashCode();
-                hashCode = (hashCode*397) ^ IsHidden.GetHashCode();
+                hashCode = (hashCode * 397) ^ Width.GetHashCode();
+                hashCode = (hashCode * 397) ^ IsHidden.GetHashCode();
                 return hashCode;
             }
         }
@@ -225,12 +228,12 @@ namespace Catel.Benchmarks.Runtime.Serialization
                 return true;
             }
 
-            if (obj.GetType() != this.GetType())
+            if (obj.GetType() != GetType())
             {
                 return false;
             }
 
-            return Equals((ColumnSettings) obj);
+            return Equals((ColumnSettings)obj);
         }
         #endregion
     }

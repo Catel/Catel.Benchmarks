@@ -28,21 +28,33 @@ namespace Catel.Benchmarks.Data.PropertyBag
         [Benchmark]
         public string GetStringValue()
         {
+#if CATEL_5 && !CATEL_5_12
             var value = _propertyBag.GetPropertyValue("string", "default");
+#else
+            var value = _propertyBag.GetValue<string>("string", "default");
+#endif
             return value;
         }
 
         [Benchmark]
         public int GetIntValue()
         {
+#if CATEL_5 && !CATEL_5_12
             var value = _propertyBag.GetPropertyValue("int", 0);
+#else
+            var value = _propertyBag.GetValue<int>("int", 0);
+#endif
             return value;
         }
 
         [Benchmark]
         public bool GetBoolValue()
         {
+#if CATEL_5 && !CATEL_5_12
             var value = _propertyBag.GetPropertyValue("bool", false);
+#else
+            var value = _propertyBag.GetValue<bool>("bool", false);
+#endif
             return value;
         }
         #endregion

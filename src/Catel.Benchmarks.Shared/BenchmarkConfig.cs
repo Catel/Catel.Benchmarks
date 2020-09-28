@@ -27,29 +27,29 @@ namespace Catel.Benchmarks
             //Add(AsciiDocExporter.Default);
             //Add(HtmlExporter.Default);
             //Add(CsvExporter.Default);
-            Add(CsvMeasurementsExporter.Default);
+            AddExporter(CsvMeasurementsExporter.Default);
             //Add(RPlotExporter.Default);
 
             // Columns
-            Add(DefaultColumnProviders.Instance);
+            AddColumnProvider(DefaultColumnProviders.Instance);
 
             // Loggers
-            Add(ConsoleLogger.Default);
+            AddLogger(ConsoleLogger.Default);
 
             // Analyzers
-            Add(EnvironmentAnalyser.Default);
-            Add(OutliersAnalyser.Default);
+            AddAnalyser(EnvironmentAnalyser.Default);
+            AddAnalyser(OutliersAnalyser.Default);
 
             // Diagnosers
-            Add(MemoryDiagnoser.Default);
-            //Add(InliningDiagnoser.Default);
-            //Add(MemoryDiagnoser.Default);
+            AddDiagnoser(MemoryDiagnoser.Default);
+            //AddDiagnoser(InliningDiagnoser.Default);
+            //AddDiagnoser(MemoryDiagnoser.Default);
 
             // Validators
-            Add((IValidator)BaselineValidator.FailOnError);
-            Add(JitOptimizationsValidator.FailOnError);
-            Add(ExecutionValidator.FailOnError);
-            Add(ReturnValueValidator.FailOnError);
+            AddValidator((IValidator)BaselineValidator.FailOnError);
+            AddValidator(JitOptimizationsValidator.FailOnError);
+            AddValidator(ExecutionValidator.FailOnError);
+            AddValidator(ReturnValueValidator.FailOnError);
         }
     }
 }

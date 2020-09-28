@@ -91,7 +91,7 @@ namespace Catel.BenchmarkCombiner
         internal static bool RunBenchmarksForSpecificVersion(string directory)
         {
             var exe = Directory.GetFiles(directory, "Catel.Benchmarks.*.exe", SearchOption.AllDirectories).FirstOrDefault();
-            if (exe == null)
+            if (exe is null)
             {
                 return false;
             }
@@ -100,7 +100,7 @@ namespace Catel.BenchmarkCombiner
 
             var processStartInfo = new ProcessStartInfo(exe)
             {
-                WorkingDirectory = directory,
+                WorkingDirectory = directory
             };
 
             var stopwatch = Stopwatch.StartNew();
@@ -196,10 +196,9 @@ namespace Catel.BenchmarkCombiner
                 {
                     Log.Info($"Reading benchmark measurements from '{summaryOutputDirectory}'");
 
-                    var configuration = new Configuration
+                    var configuration = new CsvConfiguration(new CultureInfo("en-US"))
                     {
                         Delimiter = ";",
-                        CultureInfo = new CultureInfo("en-US"),
                         TrimOptions = TrimOptions.InsideQuotes
                     };
 

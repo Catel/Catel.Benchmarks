@@ -14,10 +14,14 @@ namespace Catel.Benchmarks
     using System;
     using BenchmarkDotNet.Attributes;
     using Catel.Reflection;
+    using BenchmarkDotNet.Configs;
+    using BenchmarkDotNet.Jobs;
+    using BenchmarkDotNet.Environments;
+    using BenchmarkDotNet.Toolchains.InProcess.Emit;
 
     public static class Program
     {
-        public static void Main()
+        public static void Main(string[] args)
         {
             var benchmarkTypes = new List<Type>();
             var allTypes = typeof(Program).Assembly.GetAllTypesSafely();
@@ -42,7 +46,22 @@ namespace Catel.Benchmarks
                 }
             }
 
-            var config = new BenchmarkConfig();
+            var config = new BenchmarkConfig()
+                .AddJob(Job.Default
+#if CATEL_5 && !CATEL_5_12
+                    .WithRuntime(ClrRuntime.Net47)
+#else
+                    .WithToolchain(InProcessEmitToolchain.Instance)
+                    .WithRuntime(CoreRtRuntime.CoreRt31)
+#endif
+                    .WithLaunchCount(3)
+                    .WithWarmupCount(2)
+                    .WithInvocationCount(16 * 150) // must be multiply of unroll factor
+                    .WithUnrollFactor(16));
+
+            //BenchmarkSwitcher
+            //    .FromAssembly(typeof(Program).Assembly)
+            //    .Run(args, config);
 
             foreach (var type in benchmarkTypes)
             {

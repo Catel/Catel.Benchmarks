@@ -4,13 +4,14 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
+#if CATEL_5
 
 namespace Catel.Benchmarks.Runtime.Serialization
 {
     using Catel.IoC;
     using Catel.Runtime.Serialization;
     using Catel.Runtime.Serialization.Binary;
-   
+
     public class Serialization_Binary_Benchmark : SerializationBenchmarkBase
     {
         protected override ISerializer GetSerializer()
@@ -23,3 +24,5 @@ namespace Catel.Benchmarks.Runtime.Serialization
         }
     }
 }
+
+#endif
