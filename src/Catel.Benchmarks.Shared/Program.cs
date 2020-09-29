@@ -50,9 +50,8 @@
 #endif
                     .WithLaunchCount(1)
                     .WithWarmupCount(3)
-                    //.WithIterationTime(TimeInterval.FromMilliseconds(500))
                     .WithIterationCount(50)
-                    .WithInvocationCount(16 * 10) // must be multiply of unroll factor
+                    .WithInvocationCount(16 * 50) // must be multiply of unroll factor. The higher, the more reliable, but the slower the tests
                     .WithUnrollFactor(16));
 
             //BenchmarkSwitcher
