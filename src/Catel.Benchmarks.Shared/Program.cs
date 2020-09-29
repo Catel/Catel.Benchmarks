@@ -18,6 +18,7 @@ namespace Catel.Benchmarks
     using BenchmarkDotNet.Jobs;
     using BenchmarkDotNet.Environments;
     using BenchmarkDotNet.Toolchains.InProcess.Emit;
+    using Perfolizer.Horology;
 
     public static class Program
     {
@@ -54,9 +55,11 @@ namespace Catel.Benchmarks
                     .WithToolchain(InProcessEmitToolchain.Instance)
                     .WithRuntime(CoreRtRuntime.CoreRt31)
 #endif
-                    .WithLaunchCount(3)
-                    .WithWarmupCount(2)
-                    .WithInvocationCount(16 * 150) // must be multiply of unroll factor
+                    .WithLaunchCount(1)
+                    .WithWarmupCount(3)
+                    //.WithIterationTime(TimeInterval.FromMilliseconds(500))
+                    .WithIterationCount(50)
+                    .WithInvocationCount(16 * 100) // must be multiply of unroll factor
                     .WithUnrollFactor(16));
 
             //BenchmarkSwitcher
