@@ -28,19 +28,19 @@ namespace Catel.Benchmarks
         }
 
         [Benchmark]
-        public void ExecuteInParallel_ItemsPerBash_1000()
+        public void ExecuteInParallel_ItemsPerBatch_1000()
         {
             ParallelHelper.ExecuteInParallel(_ints, i => { });
         }
 
         [Benchmark]
-        public void ExecuteInParallel_ItemsPerBash_500()
+        public void ExecuteInParallel_ItemsPerBatch_500()
         {
             ParallelHelper.ExecuteInParallel(_ints, i => { }, 500);
         }
 
         [Benchmark]
-        public void ExecuteInParallel_ItemsPerBash_100()
+        public void ExecuteInParallel_ItemsPerBatch_100()
         {
             ParallelHelper.ExecuteInParallel(_ints, i => { }, 100);
         }

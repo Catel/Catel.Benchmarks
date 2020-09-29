@@ -21,25 +21,25 @@
         }
 
         [Benchmark]
-        public void ObservableCollection_BashInsert()
+        public void ObservableCollection_BatchInsert()
         {
             _observableCollection.AddRange(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
         }
 
         [Benchmark]
-        public void FastObservableCollection_BashInsert()
+        public void FastObservableCollection_BatchInsert()
         {
             _fastObservableCollection.AddItems(new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
         }
 
         [Benchmark]
-        public void FastBindingList_BashInsert()
+        public void FastBindingList_BatchInsert()
         {
             _fastBindingList.AddItems(new[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
         }
 
         [Benchmark]
-        public void ObservableCollection_BashRemove()
+        public void ObservableCollection_BatchRemove()
         {
             for (var i = _observableCollection.Count; i >= 0; i--)
             {
@@ -48,7 +48,7 @@
         }
 
         [Benchmark]
-        public void FastObservableCollection_BashRemove()
+        public void FastObservableCollection_BatchRemove()
         {
             using (_fastObservableCollection.SuspendChangeNotifications(SuspensionMode.Removing))
             {
@@ -60,7 +60,7 @@
         }
 
         [Benchmark]
-        public void FastBindingList_BashRemove()
+        public void FastBindingList_BatchRemove()
         {
             _fastBindingList.RemoveItems(new[] {-1, -2, -3, -4, -5, -6, -7, -8, -9, -10});
         }
