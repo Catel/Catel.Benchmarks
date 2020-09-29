@@ -32,13 +32,11 @@ namespace Catel.Benchmarks.Reflection
             }
         }
 
-#if !CATEL_4_4 && !CATEL_4_3 && !CATEL_4_2
         [Benchmark]
         public void GetSafeFullName()
         {
             typeof(C).GetSafeFullName(true);
         }
-#endif
 
         [Benchmark]
         public void GetCustomAttributeEx()
@@ -142,13 +140,11 @@ namespace Catel.Benchmarks.Reflection
             typeof(List<A>).IsGenericTypeEx();
         }
 
-#if !CATEL_4_3 && !CATEL_4_2
         [Benchmark]
         public void IsGenericTypeDefinitionEx()
         {
             typeof(List<>).IsGenericTypeDefinitionEx();
         }
-#endif
 
         [Benchmark]
         public void ImplementsInterfaceEx()
@@ -496,7 +492,6 @@ namespace Catel.Benchmarks.Reflection
         }
         #endregion
 
-#if !CATEL_4_3 && !CATEL_4_2
         [Benchmark]
         public void GetMemberEx_Flatten_Static()
         {
@@ -520,6 +515,5 @@ namespace Catel.Benchmarks.Reflection
         {
             typeof(C).GetMemberEx("Clone", BindingFlags.Instance);
         }
-#endif
     }
 }

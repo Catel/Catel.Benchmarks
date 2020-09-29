@@ -1,12 +1,4 @@
-// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Log_Status_Benchmark.cs" company="Catel development team">
-//   Copyright (c) 2008 - 2017 Catel development team. All rights reserved.
-// </copyright>
-// --------------------------------------------------------------------------------------------------------------------
-
-#if !CATEL_4_2 && !CATEL_4_3 && !CATEL_4_4
-
-namespace Catel.Benchmarks.Logging
+﻿namespace Catel.Benchmarks.Logging
 {
     using BenchmarkDotNet.Attributes;
 
@@ -70,5 +62,3 @@ namespace Catel.Benchmarks.Logging
         #endregion
     }
 }
-
-#endif

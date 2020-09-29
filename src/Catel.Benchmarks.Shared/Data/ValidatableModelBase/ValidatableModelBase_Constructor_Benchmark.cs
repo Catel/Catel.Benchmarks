@@ -1,12 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="SerializationPerformanceTests.cs" company="Catel development team">
-//   Copyright (c) 2008 - 2015 Catel development team. All rights reserved.
-// </copyright>
-// --------------------------------------------------------------------------------------------------------------------
-
-#if !CATEL_4
-
-namespace Catel.Benchmarks.ModelBase
+﻿namespace Catel.Benchmarks.ModelBase
 {
     using BenchmarkDotNet.Attributes;
     using Data.ModelBase.Fixtures;
@@ -21,5 +13,3 @@ namespace Catel.Benchmarks.ModelBase
         }
     }
 }
-
-#endif

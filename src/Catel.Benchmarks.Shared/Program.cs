@@ -1,11 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Program.cs" company="Catel development team">
-//   Copyright (c) 2008 - 2016 Catel development team. All rights reserved.
-// </copyright>
-// --------------------------------------------------------------------------------------------------------------------
-
-
-namespace Catel.Benchmarks
+﻿namespace Catel.Benchmarks
 {
     using System.IO;
     using System.Linq;
@@ -59,7 +52,7 @@ namespace Catel.Benchmarks
                     .WithWarmupCount(3)
                     //.WithIterationTime(TimeInterval.FromMilliseconds(500))
                     .WithIterationCount(50)
-                    .WithInvocationCount(16 * 100) // must be multiply of unroll factor
+                    .WithInvocationCount(16 * 10) // must be multiply of unroll factor
                     .WithUnrollFactor(16));
 
             //BenchmarkSwitcher

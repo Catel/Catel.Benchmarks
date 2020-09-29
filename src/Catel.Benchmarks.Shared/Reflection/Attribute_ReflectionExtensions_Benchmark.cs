@@ -1,4 +1,4 @@
-// --------------------------------------------------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="Attribute_ReflectionExtensions_Benchmark.cs" company="Catel development team">
 //   Copyright (c) 2008 - 2017 Catel development team. All rights reserved.
 // </copyright>
@@ -53,7 +53,6 @@ namespace Catel.Benchmarks.Reflection
         }
         #endregion
 
-#if !CATEL_4_3 && !CATEL_4_2
         [Benchmark]
         public void GetAttribute_Generic_From_Member()
         {
@@ -129,6 +128,5 @@ namespace Catel.Benchmarks.Reflection
         {
             _aType.IsDecoratedWithAttribute(typeof(ATypeAttribute));
         }
-#endif
     }
 }

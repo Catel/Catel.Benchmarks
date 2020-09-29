@@ -1,23 +1,12 @@
-﻿
-// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="PropertyBag_GetPropertyValue_Benchmark.cs" company="Catel development team">
-//   Copyright (c) 2008 - 2017 Catel development team. All rights reserved.
-// </copyright>
-// --------------------------------------------------------------------------------------------------------------------
-
-
-namespace Catel.Benchmarks.Data.PropertyBag
+﻿namespace Catel.Benchmarks.Data.PropertyBag
 {
     using BenchmarkDotNet.Attributes;
     using Catel.Data;
 
     public class PropertyBag_SetPropertyValue_Benchmark : BenchmarkBase
     {
-        #region Fields
         private readonly PropertyBag _propertyBag = new PropertyBag();
-        #endregion
 
-        #region Methods
         [Benchmark]
         public void SetStringValue()
         {
@@ -47,6 +36,5 @@ namespace Catel.Benchmarks.Data.PropertyBag
             _propertyBag.SetValue<bool>("bool", true);
 #endif
         }
-        #endregion
     }
 }

@@ -1,11 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="TypeExtensions_Benchmark.cs" company="Catel development team">
-//   Copyright (c) 2008 - 2017 Catel development team. All rights reserved.
-// </copyright>
-// --------------------------------------------------------------------------------------------------------------------
-
-
-namespace Catel.Benchmarks.Reflection
+﻿namespace Catel.Benchmarks.Reflection
 {
     using System.Collections.Generic;
     using BenchmarkDotNet.Attributes;
@@ -52,7 +45,6 @@ namespace Catel.Benchmarks.Reflection
         }
         #endregion
 
-#if !CATEL_4_3 && !CATEL_4_2
         [Benchmark]
         public void IsModelBase()
         {
@@ -64,6 +56,5 @@ namespace Catel.Benchmarks.Reflection
         {
             typeof(List<A>).GetCollectionElementType();
         }
-#endif
     }
 }

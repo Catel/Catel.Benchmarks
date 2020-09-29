@@ -1,4 +1,4 @@
-// --------------------------------------------------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="ValidationSummary_Benchmark.cs" company="Catel development team">
 //   Copyright (c) 2008 - 2017 Catel development team. All rights reserved.
 // </copyright>
@@ -77,15 +77,11 @@ namespace Catel.Benchmarks.Data
             var validationSummaryHasBusinessRuleWarnings = _validationSummary.BusinessRuleErrors;
         }
 
-#if !CATEL_4_2 && !CATEL_4_3 && !CATEL_4_4
-
         [Benchmark]
         public void BusinessRuleWarnings()
         {
             var validationSummaryBusinessRuleWarnings = _validationSummary.BusinessRuleWarnings;
         }
-
-#endif
 
         [Benchmark]
         public void FieldErrors()
